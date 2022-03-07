@@ -18,7 +18,7 @@ Podemos Usar Tablas para organizar los datos.
 | Nombre | Puesto | Departamento | Nivel |
 |-|:-:|:-:|:-:|
 Flavio Villanueva | Responsable | B | 10 
-Nicolas | Coordinador | B | 10 
+Ignacio Oliva Velez | Coordinador | B | 10 
 Frank Escudero | Director de Technologia | - | 10 
 
 ## ¿Cómo funcionan los niveles?
