@@ -21,6 +21,7 @@ Flavio Villanueva | Responsable | B |
 Ignacio Oliva Velez | Coordinador | B |
 Frank Escudero | Director de Technologia | - |
 
+<!--
 ## ¿Cómo funcionan los niveles?
 > Idea borrador para aplicar en Sistemas.
 
@@ -34,7 +35,7 @@ Cada una de estas cosas suma puntos al nivel y también podrian ser "Badges".
 1|Explicar que es Inkua.
 10|Llegar a responsable o coordinador. 
 > Completar
-
+-->
 
 ## Recomendaciones Sistemas
 - Ingresar a la intranet y revisar las actualizaciones al menos una vez por semana. Esto se puede hacer también desde la webapp en el celular. 
