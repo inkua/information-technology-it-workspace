@@ -16,7 +16,7 @@ Hay que mantener este repositorio actualizado.
 
 Podemos Usar Tablas para organizar los datos.
 | Nombre | Puesto | Departamento |
-|-|:-:|:-:|:-:|
+|-|:-:|:-:|
 Flavio Villanueva | Responsable | B |
 Ignacio Oliva Velez | Coordinador | B |
 Frank Escudero | Director de Technologia | - |
