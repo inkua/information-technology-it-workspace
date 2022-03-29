@@ -15,11 +15,11 @@ Hay que mantener este repositorio actualizado.
 > Completar
 
 Podemos Usar Tablas para organizar los datos.
-| Nombre | Puesto | Departamento | Nivel |
+| Nombre | Puesto | Departamento |
 |-|:-:|:-:|:-:|
-Flavio Villanueva | Responsable | B | 10 
-Ignacio Oliva Velez | Coordinador | B | 10 
-Frank Escudero | Director de Technologia | - | 10 
+Flavio Villanueva | Responsable | B |
+Ignacio Oliva Velez | Coordinador | B |
+Frank Escudero | Director de Technologia | - |
 
 ## ¿Cómo funcionan los niveles?
 > Idea borrador para aplicar en Sistemas.
