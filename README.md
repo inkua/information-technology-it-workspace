@@ -9,7 +9,7 @@ Hay que mantener este repositorio actualizado.
 
 
 ## Departamentos
-> Completar
+- Departamento de sistemas B
 
 ## Participantes y roles
 > Completar
@@ -38,12 +38,12 @@ Cada una de estas cosas suma puntos al nivel y también podrian ser "Badges".
 -->
 
 ## Recomendaciones Sistemas
-- Ingresar a la intranet y revisar las actualizaciones al menos una vez por semana. Esto se puede hacer también desde la webapp en el celular. 
-- Participar de las reuniones semanales de alineamiento.
+- Registrar en la intranet sobre nuestra actividad al menos una vez por semana.
+- Participar de las reuniones semanales de alineamiento en el Discord del departamento.
 - Participar de los eventos de Inkua.
-- Realizar aportes y comentarios en la intranet y en Github.
+- Realizar aportes y comentarios en la intranet y en GitHub.
 - Realizar reuniones con los demas miembros de la comunidad.
-- 
+- Ver y trabajar sobre los issues pendientes en el repositorio
 
 ## Manuales de Procedimientos
 > Completar
