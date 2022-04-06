@@ -2,6 +2,10 @@
 Repositorio con links a otros repositorios de proyectos o desarrollos activos, lista de integrantes y roles, lista de departamentos.
 Hay que mantener este repositorio actualizado.
 
+## Link Equipo Sistemas:
+- En Github: [Link](https://github.com/orgs/inkua/teams/sistemas)
+
+
 ## Links Repositorios
 - Proyecto Diseño Web. [Link]()
 - Desarrollo Website Inkua. [Link](https://github.com/inkua/Website)
