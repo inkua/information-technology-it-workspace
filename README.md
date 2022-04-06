@@ -5,6 +5,8 @@ Hay que mantener este repositorio actualizado.
 ## Link Equipo Sistemas:
 - En Github: [Link](https://github.com/orgs/inkua/teams/sistemas)
 
+## Reuniones:
+- Lunes 14hs Arg. en Discorde InkuA. 
 
 ## Links Repositorios
 - Proyecto Diseño Web. [Link]()
@@ -25,21 +27,7 @@ Flavio Villanueva | Responsable | B |
 Ignacio Oliva Velez | Coordinador | B |
 Frank Escudero | Director de Technologia | - |
 
-<!--
-## ¿Cómo funcionan los niveles?
-> Idea borrador para aplicar en Sistemas.
 
-Cada una de estas cosas suma puntos al nivel y también podrian ser "Badges".
-| Puntos | Nivel |
-|:-:|-|
-1|Participación en Reuniones.
-1|Participación en trabajos grupales.
-1|Crear aportes en Github.
-1|Crear y liderar reuniones.
-1|Explicar que es Inkua.
-10|Llegar a responsable o coordinador. 
-> Completar
--->
 
 ## Recomendaciones Sistemas
 - Registrar en la intranet sobre nuestra actividad al menos una vez por semana.
