@@ -3,7 +3,7 @@ Repositorio con links a otros repositorios de proyectos o desarrollos activos, l
 Hay que mantener este repositorio actualizado.
 
 ## Link Equipo Sistemas:
-- En Github: [Link](https://github.com/orgs/inkua/teams/sistemas)
+- En Github: [Link](https://github.com/orgs/inkua/teams/sistemas) (Van a ver un error 404 si no son miembros. Creen un Issue o comenten en Disussions para que se los agregue como miembros)
 
 ## Reuniones:
 - Lunes 14hs Arg. en Discorde InkuA. 
