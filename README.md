@@ -18,14 +18,18 @@ Hay que mantener este repositorio actualizado.
 - Departamento de sistemas B
 
 ## Participantes y roles
-> Completar
 
-Podemos Usar Tablas para organizar los datos.
 | Nombre | Puesto | Departamento |
 |-|:-:|:-:|
+Frank Escudero | Director de Technologia | - |
 Flavio Villanueva | Responsable | B |
 Ignacio Oliva Velez | Coordinador | B |
-Frank Escudero | Director de Technologia | - |
+Joaquin Pandolfi | Integrante | B |
+Camila Di Giorno | Integrante | B |
+Valentin Schneider | Integrante | B |
+Nicolas Natale | Integrante | B |
+Lucas Alvarez | Integrante | B |
+Yuriangel Pérez | Integrante | B |
 
 
 
