@@ -6,7 +6,7 @@ Hay que mantener este repositorio actualizado.
 - En Github: [Link](https://github.com/orgs/inkua/teams/sistemas) (Van a ver un error 404 si no son miembros. Creen un Issue o comenten en Disussions para que se los agregue como miembros)
 
 ## Reuniones:
-- Lunes 14hs Arg. en Discorde InkuA. 
+- Lunes 14hs Arg. en el Discord de InkuA. 
 
 ## Links Repositorios
 - Proyecto Diseño Web. [Link]()
@@ -31,7 +31,7 @@ Frank Escudero | Director de Technologia | - |
 
 ## Recomendaciones Sistemas
 - Registrar en la intranet sobre nuestra actividad al menos una vez por semana.
-- Participar de las reuniones semanales en Discord del departamento. Todos los lunes 14Hs
+- Participar de las reuniones semanales en Discord del departamento.
 - Participar de los eventos de Inkua.
 - Realizar aportes y comentarios en la intranet y en GitHub.
 - Realizar reuniones con los demas miembros de la comunidad.
