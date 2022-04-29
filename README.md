@@ -21,7 +21,7 @@ Hay que mantener este repositorio actualizado.
 
 | Nombre | Puesto | Departamento |
 |-|:-:|:-:|
-Frank Escudero | Director de Technologia | - |
+Frank Escudero | Director de Tecnologia | - |
 Flavio Villanueva | Coordinador | B |
 Ignacio Oliva Velez | Responsable | B |
 Joaquin Pandolfi | Integrante | B |
