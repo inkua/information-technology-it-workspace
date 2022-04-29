@@ -22,8 +22,8 @@ Hay que mantener este repositorio actualizado.
 | Nombre | Puesto | Departamento |
 |-|:-:|:-:|
 Frank Escudero | Director de Technologia | - |
-Flavio Villanueva | Responsable | B |
-Ignacio Oliva Velez | Coordinador | B |
+Flavio Villanueva | Coordinador | B |
+Ignacio Oliva Velez | Responsable | B |
 Joaquin Pandolfi | Integrante | B |
 Camila Di Giorno | Integrante | B |
 Valentin Schneider | Integrante | B |
