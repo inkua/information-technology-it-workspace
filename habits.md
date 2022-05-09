@@ -4,8 +4,7 @@ La idea es tener una base en la cual apoyarse para estar al tanto y poder tener 
   - Revisar las notificaciones en Intranet
   - Revisar los emails
   - Revisar notificaciones en github
-  - Llevar una agenda
-  - Utilizar Calendar (calendario de outlook)
+  - Llevar una agenda con un calendario (calendario de outlook)
   - Las tareas relizadas deben reportarse en la Intranet
 
 # Herramientas.
