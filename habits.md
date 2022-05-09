@@ -19,7 +19,7 @@ Las siguientes herramientas son a modo de muestra de la forma en la cual esto se
 ***
 #### [Barra de marcadores de Outlook.](https://chrome.google.com/webstore/detail/microsoft-outlook/ajanlknhcmbhbdafadmkobjnfkhdiegm)
 
-> agregar gif
+> ![Outlook](https://user-images.githubusercontent.com/45984434/167482317-7d712539-ecfc-4e16-a71a-50d4a0daa5a0.gif)
 
 *Características*
   - Leer los correos electrónicos importantes 
@@ -30,7 +30,7 @@ Las siguientes herramientas son a modo de muestra de la forma en la cual esto se
  
 #### [GitHub para Android/iOS.](https://github.com/mobile/)
 
-> agregar gif
+> ![github](https://user-images.githubusercontent.com/45984434/167482405-81b6c200-23a4-41e8-aad0-bc6a88b2a98c.gif)
 
 *Características*
   - Explorar tus notificaciones recientes
@@ -42,7 +42,7 @@ Las siguientes herramientas son a modo de muestra de la forma en la cual esto se
 
 #### [Trello Web, Mobile, Desktop](https://trello.com/platforms)
 
-> agregar gif
+> ![trello](https://user-images.githubusercontent.com/45984434/167484870-48e12f69-58a3-455e-8fab-9f068d5f9853.gif)
 
 *Caracteristicas* 
   - Gestiona proyectos
@@ -51,7 +51,7 @@ Las siguientes herramientas son a modo de muestra de la forma en la cual esto se
 
 #### [Notas para iOS](https://apps.apple.com/es/app/notas/id1110145109)
 
-> agregar gif
+> ![notas](https://user-images.githubusercontent.com/45984434/167482462-ed79a89e-781e-4796-8cfb-6b9290cd9eea.gif)
 
 *Caracteristicas* 
   - Apuntar rápidamente ideas 
@@ -59,7 +59,7 @@ Las siguientes herramientas son a modo de muestra de la forma en la cual esto se
 
 #### [Simplenote](https://simplenote.com/)
 
-> agregar gif
+> ![simplenote](https://user-images.githubusercontent.com/45984434/167482496-a559f67e-0b12-4421-9c5a-dbf4911f927e.gif)
 
 *Caracteristicas* 
   - Una experiencia sencilla de toma de notas
@@ -69,7 +69,7 @@ Las siguientes herramientas son a modo de muestra de la forma en la cual esto se
 
 #### [Standard Notes](https://standardnotes.com/)
 
-> agregar gif
+> ![standarnotes](https://user-images.githubusercontent.com/45984434/167482524-dc277854-446f-428a-a10d-dab3ba8d4527.gif)
 
 *Caracteristicas* 
   - Sin límite en el número de dispositivos.
