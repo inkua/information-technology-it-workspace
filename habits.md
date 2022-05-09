@@ -10,11 +10,11 @@ La idea es tener una base en la cual apoyarse para estar al tanto y poder tener 
 # Herramientas.
 Las siguientes herramientas son a modo de muestra de la forma en la cual esto se podria automatizar mediante apps multidispositivo
 
-  - [Barra de marcadores de Outlook en Google Chrome o Microsoft Edge](https://github.com/inkua/Area-Sistemas/edit/main/habits.md#barra-de-marcadores-de-outlook)
-  - [Github para Android/iOS](https://github.com/inkua/Area-Sistemas/edit/main/habits.md#github-para-androidios)
-  - [Trello,](https://github.com/inkua/Area-Sistemas/edit/main/habits.md#trello-web-mobile-desktop) [Notas](https://github.com/inkua/Area-Sistemas/edit/main/habits.md#notas-para-ios)
-  - [simplenote.com](https://github.com/inkua/Area-Sistemas/edit/main/habits.md#notas-para-ios)
-  - [standarnotes.org](https://github.com/inkua/Area-Sistemas/edit/main/habits.md#standard-notes)
+  - Barra de marcadores de Outlook en Google Chrome o Microsoft Edge
+  - Github para Android/iOS
+  - Trello, Notas
+  - simplenote.com
+  - standarnotes.org
 
 ***
 #### [Barra de marcadores de Outlook.](https://chrome.google.com/webstore/detail/microsoft-outlook/ajanlknhcmbhbdafadmkobjnfkhdiegm)
