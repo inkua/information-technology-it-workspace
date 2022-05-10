@@ -14,22 +14,6 @@ Hay que mantener este repositorio actualizado.
 ## Departamentos
 - Departamento de sistemas B
 
-## Participantes y roles
-
-| Nombre | Puesto | Departamento |
-|-|:-:|:-:|
-Frank Escudero | Director de Tecnologia | - |
-Flavio Villanueva | Coordinador | B |
-Ignacio Oliva Velez | Responsable | B |
-Joaquin Pandolfi | Integrante | B |
-Camila Di Giorno | Integrante | B |
-Valentin Schneider | Integrante | B |
-Nicolas Natale | Integrante | B |
-Lucas Alvarez | Integrante | B |
-Yuriangel Pérez | Integrante | B |
-
-
-
 ## Recomendaciones Sistemas
 - Registrar en la intranet sobre nuestra actividad al menos una vez por semana.
 - Participar de las reuniones semanales en Discord del departamento.
