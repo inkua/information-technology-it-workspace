@@ -9,10 +9,7 @@ Hay que mantener este repositorio actualizado.
 - Lunes 14hs Arg. en el Discord de InkuA. 
 
 ## Links Repositorios
-- Proyecto Diseño Web. [Link]()
 - Desarrollo Website Inkua. [Link](https://github.com/inkua/Website)
-- Desarrollo Hub/Intranet. (En Pausa)
-
 
 ## Departamentos
 - Departamento de sistemas B
