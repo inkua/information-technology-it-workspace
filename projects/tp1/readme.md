@@ -14,7 +14,7 @@ Crear en esa carpeta un archivo llamado index.html que tenga las siguientes cara
 
 ¡Pueden pedir ayuda a sus compañeros en el chat de #sistemas! 
 
-Crear en esa carpeta un readme.md describiendo las herramientas, proceso y reflexiones sobre la creación del proyecto.
+Crear en esa carpeta un readme.md describiendo quienes son, las herramientas, proceso y reflexiones sobre la creación del proyecto. Y poner links a RRSS e usuario de Discord. 
 
 Resultado Final:
 
