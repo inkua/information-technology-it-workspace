@@ -12,12 +12,13 @@ Crear en esa carpeta un archivo llamado index.html que tenga las siguientes cara
 
 ¡No tiene que respetar las buenas prácticas! Tiene que ser 100% original y creativo. 
 
-¡Pueden pedir ayuda a sus compañeros en el chat de #sistemas! 
+¡Para subir los archivos, van a tener que hacer un pull request! Aprender a usar Github es importante. ¡Pueden pedir ayuda a sus compañeros en el chat de #sistemas! 
 
 Crear en esa carpeta un readme.md describiendo quienes son, las herramientas, proceso y reflexiones sobre la creación del proyecto. Y poner links a RRSS e usuario de Discord. 
 
-Resultado Final:
 
+
+Resultado Final:
 nombre-nombre-apellido-apellido/
 - index.html
 - readme.md
