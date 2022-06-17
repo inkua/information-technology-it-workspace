@@ -7,7 +7,7 @@ nombre-nombre-apellido-apellido/
 Crear en esa carpeta un archivo llamado index.html que tenga las siguientes características:
 - Contener HTML, CSS y JAVASCRIPT.
 - No llamar a recursos externos, imagenes, javascripts o css externos (está permitido incluirlas en el HTML).
-- Crear un CV interactivo, que use las siguientes tecnologías: eventos onclick, onload, loop, array, if, date, localstorage, input, button, base64, canvas. 
+- Crear un CV o sitio interactivo, que use las siguientes tecnologías: eventos onclick, onload, loop, array, if, date, localstorage, input, button, base64, canvas. 
 - Pesar menos de 1MB. 
 
 ¡No tiene que respetar las buenas prácticas! Tiene que ser 100% original y creativo. 
