@@ -2762,7 +2762,7 @@ body > footer {
           <p>I remember the amount of times you refreshed this website: <span id="refresh" style="font-size: 20;color:red;">1</span></p>
 
           <h3>Canvas example:</h3>
-          <p>I'll build a random size and movement red bouncing ball as a Canvas example:</p>
+          <p>I'll build red bouncing ball in a Canvas:</p>
           <canvas id="canvas" width="300" height="200"></canvas>
           <script>
             const canvas = document.getElementById('canvas');
@@ -2773,7 +2773,7 @@ body > footer {
             let y = canvas.height / 2;
             let dx = 2;
             let dy = 2;
-            let radius = 50;
+            let radius = 30;
             let color = '#ff0000';
             let gravity = 0.1;
             let speed = 1;
@@ -2818,13 +2818,13 @@ body > footer {
               ball.y += ball.dy;
               ball.dy += gravity;
               // random speed boosts
-              if (Math.random() < 0.01) {
-                ball.dx = speed;
-              }
+              // if (Math.random() < 0.01) {
+              //   ball.dx = speed;
+              // }
               // randomize ball size
-              if (Math.random() < 0.01) {
-                ball.radius = Math.random() * 20;
-              }
+              // if (Math.random() < 0.01) {
+              //   ball.radius = Math.random() * 20;
+              // }
               
             }
             function draw() {
