@@ -1,8 +1,3 @@
-Buen día, mucho gusto.
-Mi nombre es Manuel Alejandro Paredes Varas. 
-Edad: 27 años.
-Estudios: Recién Egresado de Ingenieria de Sistemas.
-Ubicación: Trujillo (GMT-5). Perú. 
-Intereses: Inteligencia de Negocios, Bases de datos, Gestión de proyectos ágiles, Matemática financiera y Diseño Gráfico. 
-Idiomas: Español nativo, Inglés basico.
-Sobre mí: Me apasiona el diseño gráfico y la tecnología. En mis tiempos libres me gusta editar imágenes en Photoshop y en general me gusta todo lo relacionado al arte. Me gusta pensar antes de actuar. Me gusta crear estrategias, y lo utilizo en cualquier entorno donde me encuentre para poder tomar siempre la mejor decisión, y siempre lo aplico en el día a día. Espero conocer a muchas personas y hacer muchos amigos y amigas.
+Buen día, mucho gusto.Mi nombre es Manuel Alejandro Paredes Varas.
+Mi discord es alejoleo23#5222 
+Sobre la reflexión del trabajo, me guie principalmente de mi cv que había elaborado en word y trate de utilizar colores del logo de inKua. Utilicé html y css, me faltó añadir js. Esta es la primera vez que utilicé Base64, no lo conocía y creo que es muy útil para el manejo de imágenes. Intente que sea responsive la página. Y me agradó mucho realizar este primer ejercicio y en el futuro espero poder colaborar con mis demás compañeros en la creación de nuevos proyectos. 
