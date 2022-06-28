@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="css/normalize.css">-->
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <script src="https://kit.fontawesome.com/0f4420efbe.js" crossorigin="anonymous"></script>
+    <title>CV Facundo Piñeyro</title>
+</head>
+<body>
+    <!--INICIO DEL CSS-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+        *, 
+        *:after,
+        *:before {
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body{
+            min-height: 100vh;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(90deg, rgba(1,4,42,0.9054972330729166) 0%, rgba(195,190,190,1) 48%, rgba(227,234,236,1) 100%);
+        }
+
+        #contenedor {
+            width: 100%;
+        }
+
+        /*** NAVEGACION ***/
+
+        #encabezado {
+            margin-bottom: 100px;
+        }
+
+        #navbar {
+            display: flex;
+            width: 100%;
+            height: auto;
+            position: fixed;
+            top: 0;
+            overflow: hidden;
+            z-index: 100%;
+            justify-content: center;
+            background-color: #000000;
+            /*background-color: linear-gradient(90deg, rgba(1,4,42,0.9054972330729166) 0%, rgba(195,190,190,1) 48%, rgba(227,234,236,1) 100%);*/
+            margin-bottom: 200px;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 25px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        nav ul {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        nav ul li {
+            display: inline;
+            padding: 60px;
+        }
+
+        .link {
+            background-color: #0077C0;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            text-decoration: none;
+            color: #FFFFFF;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .link:hover {
+            color: #000000;
+            letter-spacing: .2rem;
+        }
+
+
+        /*** PRESENTACION ***/
+
+        #contenedor2 {
+            display: flex;
+            width: 100%;
+            height: auto;
+        }
+
+        #presentacion {
+            width: 30%;
+            height: auto;
+            margin: 15px;
+            margin-left: 50px;
+            padding: 10px;
+            background-color: #EEEEEE;
+            box-shadow: -19px 16px 41px -8px rgba(0,0,0,1);
+        }
+
+        img {
+            display: block;
+            width: 300px;
+            height: auto;
+            margin: auto;
+            border-radius: 50%;
+        }
+
+        .title {
+            text-align: center;
+            font-weight: 700;
+            padding: 10px;
+        }
+
+        #presentacion ul li {
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+
+        /*** SOBRE MI ***/
+
+        #acercademi {
+            width: 70%;
+            height: 400px;
+            margin: 50px;
+            padding: 50px;
+            background-color: #EEEEEE;
+            box-shadow: -19px 16px 41px -8px rgba(0,0,0,1);
+        }
+
+        .subtitulo {
+            margin-bottom: 50px;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: underline;
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
+
+        .texto {
+            text-align: justify;
+            font-size: 1.2rem;
+            padding: 20px;
+        }
+
+        /*** EDUCACION ***/
+
+        #educacion {
+            margin: 20px;
+            padding: 30px;
+            height: 350px;
+            background-color: #EEEEEE;
+            box-shadow: -19px 16px 41px -8px rgba(0,0,0,1);
+        }
+
+        #educacion h2 {
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: underline;
+
+        }
+        .lista {
+            padding: 10px;
+            font-size: 1.2rem;
+            list-style-type: circle;
+        }
+
+        /*** CONOCIMIENTOS ***/
+
+        .cajas {
+            display: flex;
+            width: 100%;
+            height: 200px;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+
+        .caja1 {
+            display: block;
+            width: 33.33%;
+            height: 200px;
+            border: 5px solid;
+            margin-right: 50px;
+            margin-left: 50px;
+            background-color: #EEEEEE;
+            box-shadow: -19px 16px 41px -8px rgba(0,0,0,1);
+        }
+
+        .caja2 {
+            display: block;
+            width: 33.33%;
+            height: 200px;
+            margin-right: 50px;
+            border: 5px solid;
+            background-color: #EEEEEE;
+            box-shadow: -19px 16px 41px -8px rgba(0,0,0,1);
+        }
+
+        .caja3 {
+            display: block;
+            width: 33.33%;
+            height: 200px;
+            margin-right: 50px;
+            border: 5px solid;
+            background-color: #EEEEEE;
+            box-shadow: -19px 16px 41px -8px rgba(0,0,0,1);
+        }
+
+        .iconos {
+            display: flex;
+            justify-content: center; 
+            margin: 20px;
+        }
+
+        .icono-titulos {
+            display: flex;
+            justify-content: center;
+            font-size: 1.3rem;
+        }
+
+        /*** PROYECTOS ****/
+
+        #proyectos {
+            display: flex;
+            justify-content: center;
+            margin: 40px;
+            padding: 15px;
+            height: 150px;
+            background-color: #EEEEEE;
+            box-shadow: -19px 16px 41px -8px rgba(0,0,0,1);
+        }
+
+        #proyectos h2 {
+            align-items: center;
+            text-transform: uppercase;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .proyecto {
+            width: 800px;
+            height: 100px;
+            display: block;
+            margin: 10px;
+            border: 1px solid;
+        }
+
+        #proyectos .proyecto h4 {
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            font-size: 1.5rem;
+        }
+
+        .deploys {
+            text-decoration: none;
+            color: #000000;
+            text-transform: uppercase;
+        }
+
+        .deploys:hover {
+            color: red;
+            font-size: 2rem;
+        }
+
+        /*** CONTACTO ***/
+
+        #contacto {
+            width: 50%;
+            height: 500px;
+            background-color: #EEEEEE;
+            box-shadow: -19px 16px 41px -8px rgba(0,0,0,1);
+            margin: 0 auto;
+        }
+
+        .titulo-contact {
+            margin: 20px;
+            padding: 10px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        #formulario {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .label, .mensaje {
+            display: block;
+            padding: 10px;
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        #nombre, #telefono, #email {
+            width: 350px;
+            height: 25px;
+        }
+
+        #comentarios {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin-top: 15px;
+        }
+
+        .btn {
+            border-radius: 20px;
+            padding: 5px;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+        }
+
+        .btn:hover {
+            padding: 10px;
+        }
+
+        /*** FOOTER ***/
+
+        #footer {
+            background-color: #000000;
+            height: 40px;
+            margin-top: 50px;
+        }
+
+        .copia {
+            padding: 10px;
+            color: #FFFFFF;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        /*** MEDIA QUERIES ***/
+
+        @media screen and (max-width: 820px) {
+
+            body {
+                width: 100%;
+                height: 100%;
+            }
+
+            /*** NAVEGACION ***/
+
+            nav ul li {
+            display: inline;
+            padding: 5px;
+            }
+
+            .link {
+                font-size: 1.1rem;
+            }
+
+            /*** PRESENTACION ***/
+
+            #presentacion {
+                height: 650px;
+            }
+
+            img {
+                display: block;
+                width: 150px;
+                height: auto;
+            }
+
+            .title {
+                font-size: 1.4rem;
+            }
+
+            #presentacion ul {
+                margin: 5px;
+                padding: 5px;
+            }
+            
+            #presentacion ul li {
+                padding: 5px;
+                font-size: 1rem;
+            }
+
+            /*** ACERCA DE MI ***/
+
+            #contenedor2 {
+                height: auto;
+                margin-bottom: 40px;
+            }
+
+            #acercademi {
+                height: 580px;
+            }
+            
+            .subtitulo {
+                margin-bottom: 30Px;
+                font-size: 1.5rem;
+            }
+            
+            .texto {
+                font-size: 1rem;
+            }
+
+            /*** EDUCACION ***/
+
+            #educacion {
+                margin-top: 0px;
+                height: 300px;
+            }
+
+            #educacion h2 {
+                margin-bottom: 10px;
+                font-size: 1.4rem;
+            }
+
+            .lista {
+                font-size: 1rem;
+            }
+
+            /*** PROYECTOS ****/
+
+            #proyectos {
+                width: 800px;
+                height: 150px;
+                margin: 10px;
+                margin-bottom: 40px;
+            }
+
+            #proyectos h2 {
+                margin-top: 25px;
+            }
+
+            .proyecto {
+                width: auto;
+                height: 100px;
+                margin: 5px;
+            }
+
+            #proyectos .proyecto h4 {
+                margin-top: 25px;
+                padding: 15px;
+                font-size: 1rem;
+            }
+
+            /*** CONTACTO ***/
+
+            #contacto {
+                height: 380px;
+                background-color: #EEEEEE;
+            }
+
+            .titulo-contact {
+                margin: 10px;
+                padding: 5px;
+                font-size: 1.3rem;
+            }
+
+            .label, .mensaje {
+                font-size: 1rem;
+            }
+
+            #nombre, #telefono, #email {
+                width: 200px;
+                height: 23px;
+            }
+
+            #comentarios {
+                width: 300px;
+                height: 100px    ;
+            }
+
+            .btn {
+                font-size: 0.8rem;
+            }
+
+            /*** FOOTER ***/
+
+            #footer p {
+                font-size: 0.6rem;
+            }
+        }
+
+        @media screen and (max-width: 320px) and (max-width:480px){
+
+            /*** GENERALES ***/
+
+
+            /*** NAVEGACION ***/
+
+            #encabezado {
+                width: 100%;
+                height: auto;
+                margin-bottom: 150px;
+            }
+        
+            #navbar {
+                display: flex;
+                justify-content: center;
+                padding: 0;
+            }
+
+            #navbar ul {
+                padding-left: 0px;
+                margin-left: 0px;
+            }
+
+            #navbar ul li {
+                display: flex;
+                justify-content: center;
+            }
+
+            .link {
+                font-size: 0.6rem;
+            }
+
+            /*** PRESENTACION ***/
+
+            #contenedor2 {
+                display: block;
+            }
+            
+            #presentacion {
+                width: 300px;
+                height: auto;
+                margin-left: 10px;
+                padding: 5px;
+            }
+            
+            img {
+                width: 100px;
+            }
+            
+            .title {
+                font-size: 1rem;
+            }
+            
+            #presentacion ul li {
+                padding: 5px;
+                font-size: 0.8rem;
+            }
+
+            /*** ACERCA DE MI ***/
+
+            #contenedor2 {
+                height: auto;
+                margin-bottom: 40px;
+            }
+            
+            #acercademi {
+                width: 300px;
+                height: auto;
+                margin-left: 10px;
+                padding: 5px;
+            }
+                
+            .subtitulo {
+                margin-bottom: 5px;
+                font-size: 1rem;
+            }
+                
+            .texto {
+                font-size: 0.8rem;
+            }
+
+        /*** EDUCACION ***/
+
+        #educacion {
+            width: 300px;
+            height: auto;
+            margin-left: 10px;
+            padding: 5px;
+        }
+
+        #educacion h2 {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 1rem;
+
+        }
+        .lista {
+            padding: 5px;
+            font-size: 0.8rem;
+        }
+
+        /*** CONOCIMIENTOS ***/
+
+        .cajas {
+            display: block;
+            width: 300px;
+            height: auto;
+            margin-left: 10px;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+
+        .caja1 {
+            width: 100%;
+            height: 200px;
+            border: 3px solid;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        .caja2 {
+            width: 100%;
+            height: 200px;
+            border: 3px solid;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        .caja3 {
+            width: 100%;
+            height: 200px;
+            border: 3px solid;
+            margin: 0;
+        }
+
+        .icono-titulos {
+            font-size: 0.8rem;
+        }
+
+        /*** PROYECTOS ****/
+
+        #proyectos {
+            display: block;
+            width: 300px;
+            height: auto;
+            margin: 10px;
+            padding: 5px; 
+        }
+
+        .proyecto {
+            width: 280px;
+            height: 50px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #proyectos .proyecto h4 {
+            display: flex;
+            justify-content: center;
+            margin: 15px;
+            padding: 0px;
+            font-size: 0.8rem;
+        }
+
+        .deploys {
+            text-decoration: none;
+            color: #000000;
+            text-transform: uppercase;
+        }
+
+        .deploys:hover {
+            color: red;
+            font-size: 2rem;
+        }
+
+        #proyectos h2 {
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        /*** CONTACTO ***/
+
+        #contacto {
+            width: 80%;
+            height: auto;
+        }
+
+        .titulo-contact {
+            margin: 20px;
+            padding: 5px;
+            font-size: 1rem;
+        }
+
+        #formulario {
+            width: 100%;
+            height: auto;
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .label, .mensaje {
+            display: block;
+            padding: 5px;
+            font-size: 0.6rem;
+        }
+
+        #nombre, #telefono, #email {
+            width: 150px;
+            height: 15px;
+        }
+
+        #comentarios {
+            display: block;
+            width: 100px;
+            margin-top: 10px;
+        }
+
+        .btn {
+            border: 1px solid bla;
+            padding: 5px;
+            font-size: 0.8rem;
+            margin: 5px;
+        }
+
+        /*** FOOTER ***/
+
+        #footer {
+            height: 50px;
+        }
+
+        }
+    </style>
+    <!--FIN DEL CSS-->
+
+    <header id="encabezado">
+        <nav id="navbar">
+            <ul>
+                <li><a class="link" href="#presentacion">Acerca de Mi</a></li>
+                <li><a class="link" href="#educacion">Educacion</a></li>
+                <li><a class="link" href="#proyectos">Proyectos</a></li>
+                <li><a class="link" href="#contacto" onclick="contact()">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="contenedor">
+        <div id="contenedor2">
+            <div id="presentacion">
+                <img onload="loadImage()" src="https://images.unsplash.com/photo-1650295751050-b184e54e177c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80" alt="usuario">
+                <h1 class="title">Facundo G. Piñeyro</h1>
+                <ul>
+                    <li>Edad: 33 años</li>
+                    <li>Lugar de Residencia: Argentina, Buenos Aires</li>
+                    <li>Email: faacup@gmail.com</li>
+                    <li>Telefono: +54 9 536462</li>
+                    <li>Grado: Estudiante en Desarrollo Web</li>
+                </ul>
+            </div>
+
+            <div id="acercademi">
+                <h2 class="subtitulo">Acerca de Mi</h2>
+
+                <p class="texto">Actualmente soy estudiante de Desarrollo Web. Pero me desempeño en el area de Logistica para Loginte SA, administrando el patrimonio de Pirelli como Supervisor de Operaciones.</p>
+
+                <p class="texto">Me considero una persona responsable y colaborativa. Apuesto al trabajo en equipo y al aprendizaje continuo. Me interesa formar parte de un equipo de trabajo desafiante y dinámico.
+                Aspiro a desarrollarme en un espacio en el que pueda implementar e incrementar mis conocimientos, adquirir nuevas herramientas y experiencias.</p>
+
+            </div>
+        </div>
+
+        <div id="educacion">
+            <h2>Cursos y Certificaciones</h2>
+            <ul>
+                <li class="lista">Desarrollo Web con HTML, Educacion IT</li>
+                <li class="lista">Responsive Web Desing, freeCodeCamp</li>
+                <li class="lista">JavaScript desde Cero (en curso), Educacion IT</li>
+                <li class="lista">Introduccion al Desarrollo Web, Google Activate</li>
+                <li class="lista">Introducción al Desarrollo Web Responsive con HTML y CSS, Domestika</li>
+            </ul>
+
+        </div>
+
+        <div class="cajas">
+            <div class="caja1">
+                <i class="fa-solid fa-code fa-6x iconos"></i>
+                <h4 class="icono-titulos">HTML</h4>
+            </div>
+            <div class="caja2">
+                <i class="fa-solid fa-file-code fa-6x iconos"></i>
+                <h4 class="icono-titulos">CSS</h4>
+            </div>
+            <div class="caja3">
+                <i class="fa-solid fa-bars-staggered fa-6x iconos"></i>
+                <h4 class="icono-titulos">JavaScript</h4>
+            </div>
+        </div>
+
+        <div id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="proyecto">
+                <h4><a href="https://unrivaled-beignet-8e97f8.netlify.app" target="_blank" class="deploys">Tribute Page</a></h4>
+            </div>
+            <div class="proyecto">
+                <h4><a href="https://effortless-granita-334ef2.netlify.app" target="_blank" class="deploys">Documentation Page</a></h4>
+            </div>
+            <div class="proyecto">
+                <h4><a href="https://legendary-entremet-151eb7.netlify.app" target="_blank" class="deploys">Form Page</a></h4>
+            </div>
+        </div>
+
+        <div id="contacto">
+            <h4 class="titulo-contact">Contacto</h4>
+            <form action="https://formspree.io/f/mbjwelwv" method="post" id="formulario">
+                <label for="name" class="label">Nombre y Apellido: <input type="text" name="nombre" id="nombre" required></label>
+
+                <label for="telefono" class="label">Telefeno: <input type="tel" name="telefono" id="telefono"required></label>
+
+                <label for="email" class="label">Email: <input type="email" name="email" id="email" required></label>
+
+                <label for="comentarios" class="mensaje">Mensaje: <textarea name="comentarios" id="comentarios" cols="120" rows="10"></textarea></label>
+
+                <input type="submit" value="Enviar" class="btn">
+            </form>
+        </div>
+
+        <footer id="footer">
+            <p class="copia">&#9400 By Piñeyro Facundo G.</p>
+        </footer>
+    </div>
+
+    <!--<script>
+        var saludo = "Bienvenidos, Soy Facundo Piñeyro";
+        alert(saludo);
+
+        var usuario = prompt("Cual es tu nombre?");
+        confirm("Hola " + usuario + " ," + " quieres ingresar a ver mi CV?");
+
+        if(confirm("Estas seguro?")){
+            alert("Gracias");
+        } else {
+            window.location =  "http://google.com";
+        }
+
+        function loadImage() {
+            console.log("okey");
+        }
+
+        function contact(){
+            alert("Bien, contactame!!");
+        }
+    </script> -->
+</body>
+</html>
+
+
+
