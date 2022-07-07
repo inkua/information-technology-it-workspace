@@ -9,7 +9,7 @@
 
 - 📫 ¿Cómo contactarme? **ricardoyepezz@gmail.com**
 
-- Hablando especificamente de este proyecto, sin duda fue divertido y en cierto modo desafiante al no usar frameworks u otras tecnologías para front end. Fue una gran oportunidad de prácticar un poco de código nativo de html y javascript. He incluido: 
+Hablando especificamente de este proyecto, sin duda fue divertido y en cierto modo desafiante al no usar frameworks u otras tecnologías para front end. Fue una gran oportunidad de prácticar un poco de código nativo de html y javascript. He incluido: 
 
 - Eventos onclick en funciones para cada uno de los botones de la web (Incluyendo los del navbar). 
 - También un evento onload al recargar la página para limpiar los datos almacenados en el localstorage.
