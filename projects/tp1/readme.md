@@ -1,4 +1,4 @@
-# Trabajo Páctico 1
+# Trabajo Práctico 1
 
 Crear una carpeta dentro de esta carpeta con su nombre completo siguiendo este formato:
 
