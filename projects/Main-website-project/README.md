@@ -1,4 +1,4 @@
-## Copia del sitio web principal de inkua para propositos de prueba y desarrollo.
+## Copia del sitio web principal de Inkua para propósitos de prueba y desarrollo.
 
 Se buscaron una serie de templates para el sitio. [Link](templates.md)
 
