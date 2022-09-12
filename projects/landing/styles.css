@@ -1,19 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap");
 
 :root {
+    /*Colors Palette*/
+    --sky-blue-color: #4594D9;
+    --blue-color: #034C8C;
+    --dark-blue-color: #1C3661;
+    --light-gray-color: #E6E6E6;
+    --white-color: #FFFFFF;
+    
+
     /* Fonts */
-    --ubuntu-font: 'Ubuntu', sans-serif;
-
-    /* Colors */
-    --nav-bar-link: #1C3661;
-    --nav-bar-link-hover: #4594D9;
-
-    --description-color: #444444;
-    --home-button-color: #034C8C;
-
-    --que-hacemos-bg-description: #f6f9ff;
-
-    --white-color: #fff;
+    --ubuntu-font: "Ubuntu", sans-serif;
 }
 
 * {
@@ -28,6 +25,8 @@ html {
     scroll-behavior: smooth;
 }
 
+
+/* !--------------- Starts Navbar Styling -------------- */
 .navbar {
     position: fixed;
     top: 0;
@@ -61,24 +60,38 @@ html {
     list-style: none;
     display: inline-block;
 }
-.navbar .menu li a {
+.navbar .menu li .menu-btn {
+    position: relative;
     display: block;
-    color: var(--home-button-color);
+    color: var(--blue-color);
     font-size: 1.8rem;
     font-weight: 500;
     text-decoration: none;
     margin-left: 2.5rem;
     transition: color 0.3s ease;
 }
-.navbar .menu li a:hover {
-    color: var(--black-hover-color-text);
+
+.navbar .menu li .menu-btn::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    top: 25px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--blue-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
 }
-.navbar.sticky .menu li a:hover {
-    color: #000;
+.navbar .menu li .menu-btn:hover::before {
+    transform: scaleX(1);
+}
+.navbar.sticky .menu li .menu-btn:hover {
+    color: var(--blue-color);
 }
 
-/* menu btn styling */
-.menu-btn {
+.navbar .bars-btn {
     color: #000;
     font-size: 2.3rem;
     cursor: pointer;
@@ -87,44 +100,66 @@ html {
 
 .navbar .ingresar-btn {
     width: 120px;
-    background: rgba(255, 255, 255, 0.8);
     padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 30px;
     text-align: center;
-    border: 1px solid var(--home-button-color);
+    border: 1px solid var(--blue-color);
+    display: block;
+    color: var(--blue-color);
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 2.5rem;
+    transition: color 0.3s ease;
 }
 
 .navbar .donar-btn {
     width: 120px;
-    background-color: var(--home-button-color);
+    background-color: var(--blue-color);
     color: var(--white-color) !important;
     padding: 10px;
     border-radius: 30px;
     text-align: center;
+    position: relative;
+    display: block;
+    color: var(--blue-color);
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 2.5rem;
+    transition: color 0.3s ease;
 }
-/* .navbar .bars-button {
-    height: 100%;
-    background-color: transparent;
-    border: none;
-}
-.navbar .bars-button i {
-    font-size: 3rem;
-} */
+/* !--------------- Finishes Navbar Styling -------------- */
 
+
+/* !--------------- Starts Unirse (First Section) Styling -------------- */
 .unirse {
     width: 100%;
     height: 100vh;
-    padding: 130px;
-    background-image: url("./img/group-of-business-executives-using-laptop-at-their-desk\ 1.png");
+    padding: 1rem 2rem;
+    background: url("./img/group-of-business-executives-using-laptop-at-their-desk\ 1.png") no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+}
+
+.unirse .max-width {
+    width: 100%;
+    height: 100%;
+    max-width: 1100px;
+    height: 100%;
+    display: flex;
+    justify-content: start;
     align-items: center;
 }
 
 .unirse .container {
     padding: 50px;
-    width: 600px;
-    height: 450px;
+    width: 580px;
+    height: max-content;
     background: rgba(255, 255, 255, 0.8);
     display: flex;
     flex-direction: column;
@@ -137,7 +172,7 @@ html {
 .unirse .container .title {
     font-weight: 700;
     font-size: 5.5rem;
-    color: var(--home-button-color);
+    color: var(--blue-color);
 }
 
 .unirse .container .description {
@@ -150,15 +185,14 @@ html {
 .unirse .container .unirse-btn {
     width: 200px;
     padding: 10px;
-    background: #034C8C;
+    background: var(--blue-color);
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
     border-radius: 30px;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 2.6rem;
     line-height: 30px;
     text-align: center;
-
-    /* blanco */
-    color: #FFFFFF;
+    color: var(--white-color);
     text-decoration: none;
 }
+/* !--------------- Finishes Unirse (First Section) Styling -------------- */
