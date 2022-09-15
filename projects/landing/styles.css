@@ -45,7 +45,7 @@ html {
 }
 .navbar .max-width {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1200px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -133,8 +133,8 @@ html {
 /* !--------------- Finishes Navbar Styling -------------- */
 
 
-/* !--------------- Starts Unirse (First Section) Styling -------------- */
-.unirse {
+/* !--------------- Starts Unirse (SECTION 1) Styling -------------- */
+.section1-unirse {
     width: 100%;
     height: 100vh;
     padding: 1rem 2rem;
@@ -146,17 +146,17 @@ html {
     align-items: center;
 }
 
-.unirse .max-width {
+.section1-unirse .max-width {
     width: 100%;
     height: 100%;
-    max-width: 1100px;
+    max-width: 1200px;
     height: 100%;
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
-.unirse .container {
+.section1-unirse .container {
     padding: 50px;
     width: 580px;
     height: max-content;
@@ -169,20 +169,20 @@ html {
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
 }
 
-.unirse .container .title {
+.section1-unirse .container .title {
     font-weight: 700;
     font-size: 5.5rem;
     color: var(--blue-color);
 }
 
-.unirse .container .description {
+.section1-unirse .container .description {
     font-weight: 400;
     font-size: 2.5rem;
     line-height: 150.9%;
     color: #000000;
 }
 
-.unirse .container .unirse-btn {
+.section1-unirse .container .unirse-btn {
     width: 200px;
     padding: 10px;
     background: var(--blue-color);
@@ -195,4 +195,74 @@ html {
     color: var(--white-color);
     text-decoration: none;
 }
-/* !--------------- Finishes Unirse (First Section) Styling -------------- */
+/* !--------------- Finishes Unirse (SECTION 1) Styling -------------- */
+
+
+/* !--------------- Starts Ser Parte Reasons (SECTION 2) Styling -------------- */
+
+/*
+* SECTION 2 STYLING GOES HERE
+* ASSIGNED TO: Mario Chavez
+*/
+
+/* !--------------- Finishes Ser Parte Reasons (SECTION 2) Styling -------------- */
+
+
+/* !--------------- Starts Ser Parte (SECTION 3) Styling -------------- */
+
+/*
+* SECTION 3 STYLING GOES HERE
+* ASSIGNED TO: Mario Chavez
+*/
+
+/* !--------------- Finishes Ser Parte (SECTION 3) Styling -------------- */
+
+
+/* !--------------- Starts Ingresar (SECTION 4) Styling -------------- */
+
+/*
+* SECTION 4 STYLING GOES HERE
+* ASSIGNED TO: Andrés Campos
+*/
+
+/* !--------------- Finishes Ingresar (SECTION 4) Styling -------------- */
+
+
+/* !--------------- Starts Inkua Números (SECTION 5) Styling -------------- */
+
+/*
+* SECTION 5 STYLING GOES HERE
+* ASSIGNED TO: Erick Arias
+*/
+
+/* !--------------- Finishes Inkua Números (SECTION 5) Styling -------------- */
+
+
+/* !--------------- Starts Partners (SECTION 6) Styling -------------- */
+
+/*
+* SECTION 6 STYLING GOES HERE
+* ASSIGNED TO: Erick Arias
+*/
+
+/* !--------------- Finishes Partners (SECTION 6) Styling -------------- */
+
+
+/* !--------------- Starts Newsletter (SECTION 7) Styling -------------- */
+
+/*
+* SECTION 7 STYLING GOES HERE
+* ASSIGNED TO: Debora Cuestas
+*/
+
+/* !--------------- Finishes Newsletter (SECTION 7) Styling -------------- */
+
+
+/* !--------------- Starts Footer (FOOTER - SECTION 8) Styling -------------- */
+
+/*
+* SECTION 8 STYLING GOES HERE
+* ASSIGNED TO: Pedro Gascon
+*/
+
+/* !--------------- Finishes Footer (FOOTER - SECTION 8) Styling -------------- */
