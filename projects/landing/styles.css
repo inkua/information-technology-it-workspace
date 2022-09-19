@@ -257,7 +257,7 @@ html {
 
 /* !--------------- Finishes Newsletter (SECTION 7) Styling -------------- */
 #section7-newsletter{
-    background-image: url("/Landing/img/Imagen-overlay.png");
+    background-image: url("../img/Imagen-overlay.png");
     background-color: #1C3661;
     background-repeat: no-repeat;
     background-size: 100% 100%; 
