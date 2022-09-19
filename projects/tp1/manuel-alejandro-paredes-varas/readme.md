@@ -1,0 +1,3 @@
+Buen día, mucho gusto.Mi nombre es Manuel Alejandro Paredes Varas.
+Mi discord es alejoleo23#5222 
+Sobre la reflexión del trabajo, me guie principalmente de mi cv que había elaborado en word y trate de utilizar colores del logo de inKua. Utilicé html y css, me faltó añadir js. Esta es la primera vez que utilicé Base64, no lo conocía y creo que es muy útil para el manejo de imágenes. Intente que sea responsive la página. Y me agradó mucho realizar este primer ejercicio y en el futuro espero poder colaborar con mis demás compañeros en la creación de nuevos proyectos. 

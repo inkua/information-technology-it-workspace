@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TAC-TOE</title>
+</head>
+<style>
+    body {
+        background-color: #F9F5EB;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header {
+        background-color: #1C3879;
+        color: #F9F5EB;
+        width: 90vw;
+        border: 5px solid gray;
+        text-align: center;
+    }
+
+    .inputContainer {
+        background-color: #607EAA;
+        width: 40vw;
+        height: 100px;
+        display: grid;
+        place-items: center;
+    }
+
+    #sectionGame {
+        background-color: #EAE3D2;
+        display: flex;
+        gap: 3px;
+    }
+
+    .userList {
+        width: 200px;
+        padding: 10px;
+    }
+
+    .container {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .info {
+        width: 200px;
+        padding: 10px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: #1C3879;
+        padding: 15px;
+    }
+
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        display: grid;
+        place-items: center;
+        color: whitesmoke;
+    }
+
+    .grid-item:hover {
+        background-color: lightcyan;
+    }
+</style>
+
+<body onload="init()">
+    <header>
+        <h1 class="title">WELCOME TO "TIC-TAC-TOE GAME"</h1>
+        <div id="score">
+            <h2>User: <span class="scoreUser">user</span></h2>
+            <p>
+                Played: <span class="scorePlayed">0</span><br>
+                Wins: <span class="scoreWins">0</span><br>
+                Draws: <span class="scoreDraws">0</span><br>
+            </p>
+        </div>
+    </header>
+
+    <div class="inputContainer">
+        <input id="userName" type="text" placeholder="type your username" required>
+    </div>
+
+    <section id="sectionGame">
+        <div class="userList">
+            <h3>User List</h3>
+            <ul id="list"></ul>
+        </div>
+        <div class="container">
+            <div class="grid-container" id="grid-container">
+                <div class="grid-item item item1" value="1"></div>
+                <div class="grid-item item item2" value="2"></div>
+                <div class="grid-item item item3" value="3"></div>
+                <div class="grid-item item item4" value="4"></div>
+                <div class="grid-item item item5" value="5"></div>
+                <div class="grid-item item item6" value="6"></div>
+                <div class="grid-item item item7" value="7"></div>
+                <div class="grid-item item item8" value="8"></div>
+                <div class="grid-item item item9" value="9"></div>
+            </div>
+        </div>
+        <div class="info">
+            <h3>info</h3>
+            <p>This project has been built to InkuA practice.<br>I hope you like it:)</p><br><br>
+            <h4>Manuel Esteban Florez Lopez</h4><br>
+            <p>E-mail: manuel14mds@gmail.com</p><br>
+            <a href="https://github.com/manuel14mds">GitHub</a><br>
+            <a href="https://www.linkedin.com/in/manuel14mds/">Linkedin</a><br>
+        </div>
+
+    </section>
+
+
+
+    <script>
+        function init() {
+            document.getElementById('userName').focus()
+            refreshListView()
+        }
+
+        let currentUser
+        let winnerOptions = [
+            [1, 2, 3], [4, 5, 6],
+            [7, 8, 9], [1, 4, 7],
+            [2, 5, 8], [3, 6, 9],
+            [1, 5, 9], [7, 3, 5]]
+
+        let options = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        let userChoiced = []
+        let machineChoiced = []
+
+        /* utils functions ___________*/
+        //get user list from localStorage
+        function getUserStorage() {
+            let userList = JSON.parse(localStorage.getItem("userList"))
+            if (userList == null || userList == undefined) {
+                return []
+            }
+            return userList
+        }
+        //set user list from localStorage
+        function setUserStorage(newUserList) {
+            localStorage.setItem("userList", JSON.stringify(newUserList))
+        }
+        //update localStorage list user with new user score
+        function updateUserstorage(user, obj) {
+            user.played++
+            if (obj.type === 'win') {
+                user.wins++
+            } else if (obj.type === 'draw') {
+                user.draws++
+            }
+
+            let userList = getUserStorage()
+            let newUserList = []
+            for (const item of userList) {
+                if (item.userName === user.userName) {
+                    newUserList.push(user)
+                    continue
+                }
+                newUserList.push(item)
+            }
+            setUserStorage(newUserList)
+            re_start()
+        }
+
+        function userValidater(newUser) {
+            let userList = getUserStorage()
+            if (userList.length === 0) {
+                userList.push(newUser)
+                setUserStorage(userList)
+                return newUser
+            } else {
+                for (const user of userList) {
+                    if (user.userName === newUser.userName) {
+                        return user
+                    }
+                }
+                userList.push(newUser)
+                setUserStorage(userList)
+                return newUser
+            }
+        }
+
+        function scoreHTMLMaker(user) {
+            return `
+                <h2>User: <span class="scoreUser">${user.userName}</span></h2>
+                <p>
+                    Played: <span class="scorePlayed">${user.played}</span><br>
+                    Wins: <span class="scoreWins">${user.wins}</span><br>
+                    Draws: <span class="scoreDraws">${user.draws}</span><br>
+                </p>
+            `
+        }
+
+        function getRandomItem(arr) {
+            const randomIndex = Math.floor(Math.random() * arr.length);
+            const item = arr[randomIndex];
+            return item;
+        }
+
+        function arrayPop(list, value) {
+            let newList = []
+            for (const num of list) {
+                if (num === value) continue
+                newList.push(num)
+            }
+            return newList
+        }
+
+        function isWinner(choice) {
+            for (const option of winnerOptions) {
+                if (choice.includes(option[0]) && choice.includes(option[1]) && choice.includes(option[2])) {
+                    return true
+                }
+            }
+            return false
+        }
+
+        function refreshListView() {
+            const list = document.getElementById('list')
+            list.innerText = ''
+            let userList = getUserStorage()
+            if (userList.length === 0) {
+                list.innerText = 'There are Not users added'
+            } else {
+                let liTag
+                userList.forEach((user) => {
+                    liTag = document.createElement('li')
+                    liTag.innerText = `${user.userName}`
+                    list.appendChild(liTag)
+                })
+            }
+        }
+
+        // DOM ENGINE-------------------------------------------------------
+        const scoreTable = document.getElementById('score')
+        const boxUser = document.getElementById('userName')
+        boxUser.addEventListener('keyup', (e) => {
+            if (e.key === 'Enter') {
+                if (boxUser.value.trim().length > 0) {
+                    currentUser = userValidater({ userName: boxUser.value.trim(), played: 0, wins: 0, draws: 0 })
+                    scoreTable.innerText = ''
+                    scoreTable.innerHTML = scoreHTMLMaker(currentUser)
+                }
+                boxUser.value = ''
+                refreshListView()
+            }
+        })
+
+        document.querySelectorAll(".item").forEach(el => {
+            el.addEventListener("click", e => {
+                if (!currentUser) {
+                    alert('Type your user name')
+                    document.getElementById('userName').focus()
+                } else {
+                    let value = parseInt(e.target.getAttribute("value"))
+                    if (!options.includes(value)) {
+                        alert('option has been already selected')
+                    } else {
+                        userChoiced.push(value)
+                        options = arrayPop(options, value)
+                        el.innerText = 'o'
+                        el.style.backgroundColor = 'green'
+                        if (isWinner(userChoiced)) {
+                            alert('YOU WON!!!')
+                            updateUserstorage(currentUser, { type: 'win' })
+                        } else if (options.length === 0) {
+                            alert('DRAW, Try again')
+                            updateUserstorage(currentUser, { type: 'draw' })
+                        } else {
+                            machineChoice()
+                        }
+                    }
+                }
+            })
+        })
+
+        function machineChoice() {
+            let value = getRandomItem(options)
+            const element = document.querySelector(`.item${value}`)
+            machineChoiced.push(value)
+            options = arrayPop(options, value)
+            element.innerText = 'x'
+            element.style.backgroundColor = 'red'
+            if (isWinner(machineChoiced)) {
+                alert('XXX YOU LOST, Try again')
+                updateUserstorage(currentUser, { type: 'lost' })
+            } else if (options.length === 0) {
+                alert('DARW, Try again')
+                updateUserstorage(currentUser, { type: 'draw' })
+            }
+        }
+
+        function re_start() {
+            console.log('entra a re-start')
+            options = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+            userChoiced = []
+            machineChoiced = []
+            document.querySelectorAll(".item").forEach(el => {
+                el.innerText = ''
+                el.style.backgroundColor = 'lightcyan'
+            })
+            scoreTable.innerText = ''
+            scoreTable.innerHTML = scoreHTMLMaker(currentUser)
+        }
+    </script>
+</body>
+
+</html>

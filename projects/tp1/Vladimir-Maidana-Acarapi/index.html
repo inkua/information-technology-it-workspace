@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Lobster+Two&family=Lora:ital@0;1&family=Patrick+Hand&family=Permanent+Marker&family=Rubik+Glitch&family=Rubik+Wet+Paint&family=Satisfy&display=swap" rel="stylesheet">
+  <title>CV-Vladimir</title>
+
+
+  <!-- PAGE STYLES -->
+  <style>
+    
+    body{
+      box-sizing: border-box;
+      background-color: rgb(61, 55, 148);
+      margin: 0px;
+      padding: 20px;
+    }
+    @media (max-width: 700px){
+      .container{
+        flex-direction: column-reverse;
+      }
+      .containerSide{
+        width: 100% !important;
+      }
+      .containerInfo{
+        width: 100% !important;
+      }
+    }
+    .container{
+      background-color: white;
+      border-radius: 10px;
+      max-width: 1400px;
+      min-height: 95vh;
+      margin: auto;
+      display: flex;
+      border-radius: 10px;
+    }
+    .sidebar{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 85%;
+      height: 90%;
+    }
+    .containerSide{
+      box-shadow: 0px 0px 20px 0px  rgb(61, 55, 148);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      height: 95vh;
+    }
+    .containerInfo{
+      box-shadow: 0px 0px 20px 0px  rgb(61, 55, 148);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70%;
+      height: 95vh;
+    }
+    .information-content{
+      display: flex;
+      flex-direction: column;
+      width: 95%;
+      height: 95%;
+      overflow-y: scroll;
+      scrollbar-width: none;
+    }
+    .information-content::-webkit-scrollbar
+    {
+      display: none;
+    }
+    p{
+      color: rgb(61, 55, 148);
+      margin: 0px;
+      font-size: 15px;
+      font-family:'Times New Roman', Times, serif
+    }
+    .title{
+      color: rgb(30, 25, 109);
+      text-align: center;
+      font-family: 'Caveat', cursive;
+    }
+    h1{
+      color: rgb(30, 25, 109);
+      font-size: 40px;
+      font-family: 'Caveat', cursive;
+      margin: 0;
+    }
+    li{
+      color: rgb(61, 55, 148);
+      font-size: 25px;
+      font-family: 'Lobster Two', cursive;
+      margin-top: 5px;
+    }
+    .customForm{
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      align-items: center;
+    }
+    .customInput{
+      width: 95%;
+      height: 30px;
+      border-radius: 10px;
+      border: 0.5px solid rgb(61, 55, 148);
+      padding: 5px;
+      margin: 5px;
+    }
+    label{
+      color: rgb(61, 55, 148);
+      margin: 5px 0px 5px 0px;
+    }
+    input:focus {
+      outline: none;
+      background: rgba(111, 160, 201, 0.226);
+      box-shadow: 0px 0px 10px 0px  rgb(61, 55, 148);
+    }
+    textarea{
+      width: 95%;
+      height: 50px;
+      margin: 5px;
+      padding: 5px;
+      border-radius: 10px;
+      border: 0.5px solid rgb(61, 55, 148);
+    }
+    textarea:focus{
+      outline: none;
+      background: rgba(111, 160, 201, 0.226);
+      box-shadow: 0px 0px 10px 0px  rgb(61, 55, 148);
+    }
+    button{
+      margin-top: 5px;
+      color: white;
+      border-radius: 10px;
+      background-color: rgb(61, 55, 148);
+      width: 150px;
+      height: 30px;
+      border: 1px solid rgb(61, 55, 148);
+    }
+    button:hover{
+      background-color:rgba(63, 70, 133, 0.712);
+    }
+    button:active{
+      width: 148px;
+      height: 28px;
+    }
+    .ContainerComments{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 5px;
+      width: 90%;
+      height: 100%;
+      overflow-y: scroll;
+      scrollbar-width: none;
+    }
+    .comments{
+      padding: 5px;
+      background-color: rgba(111, 160, 201, 0.226);
+      box-shadow: 0px 0px 10px 0px  rgb(61, 55, 148);
+      width: 95%;
+      margin: 5px;
+      border-radius: 5px;
+    }
+    .ContainerComments::-webkit-scrollbar
+    {
+      display: none;
+    }
+    a{
+      text-decoration: none;
+      cursor: pointer;
+      font-weight: bold;
+      color: red;
+    }
+    hr{
+      width: 100%;
+      color: rgb(61, 55, 148);
+      box-shadow: 0px 0px 10px 0px  rgb(61, 55, 148);
+    }
+  </style>
+  <!-- END PAGE STLES -->
+</head>
+<body>
+  <div class="container">
+    <div class="containerSide">
+      <div class="sidebar">
+        <h1 class="title">Hi!!! write your name, please</h1>
+        <form id="form" class="customForm">
+          <input
+            id="name"
+            class="customInput"
+            placeholder="What's your name"
+          >
+          <label>
+            Please, comment what you think of this little "simple" example of a CV
+            in the following field
+          </label>
+          <textarea
+            id="comment"
+            placeholder="Comment here!"
+          >
+          </textarea>
+          <button type="submit">Comment</button>
+        </form>
+        <hr>
+        <h1 class="title">Comments</h1>
+        <div id="ContainerComments" class="ContainerComments">
+        </div>
+      </div>
+    </div>
+    <div class="containerInfo">
+      <div class="information-content">
+        <h1 class="title">
+          Vladimir Maidana Acarapi <br>
+          ("!"PooL"!"") <br>
+          Frontend Developer
+        </h1>
+        <h1>About me!</h1>
+        <p>To summarize, my name is vladimir and I have a degree in computer science, 
+          I just graduated and I am a frontend developer, I like animals, reading books,
+           video games and the odd sport. My favorite language is JavaScript.
+        </p>
+  
+        <h1>Experience</h1>
+        <ul id="list-experiences"></ul>
+  
+        <h1>Education</h1>
+        <ul>
+          <li>
+            Degree In Computer Science
+            <p>Universidad Mayor de San Andrés - Bolivia</p>
+          </li>
+        </ul>
+  
+        <h1>Skills</h1>
+        <ul id="list-skills"></ul>
+  
+        <h1>Projects</h1>
+        <ol id="list-project"></ol>
+        <h1 class="title">Check my page for more details,<a href="https://vladimir-maidana.netlify.app/" target='_blank'>see</a></h1>
+      </div>
+    </div>
+   
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    const form = document.querySelector('#form');
+    const containetComment = document.querySelector('#ContainerComments');
+    const containetSkills = document.querySelector('#list-skills');
+    const containerProject = document.querySelector('#list-project');
+    const containerExperience = document.querySelector('#list-experiences');
+    let listComments = [];
+
+    const skills = [
+      {name: 'HTML'},
+      {name: 'JavaScript'},
+      {name: 'Css'},
+      {name: 'ReactJS'},
+      {name: 'React Native'},
+      {name: 'Firebase'},
+      {name: 'Styled-Component'}
+    ];
+    const projects = [
+      {name: 'Online purchases'},
+      {name: 'Image search engine'},
+      {name: 'Customer management system'},
+      {name: 'Veterinary system'},
+      {name: 'Expense control'},
+      {name: 'Auto insurance quote'},
+      {name: 'Car finder'},
+      {name: 'Pet registration system'},
+      {name: 'Loan quoter'},
+      {name: 'APV – Veterinary Patient Manager'},
+    ];
+
+    const experiences = [
+      {
+        title: 'Frontend Developer ( 2022/02 - Current )',
+        location: 'Independent Professional'
+      },
+      {
+        title: 'React Native Develeper ( 2021/08 - 2021/12 )',
+        location: 'Bright Coders, Colima, México'
+      },
+      {
+        title: 'Volunteering ( 2020/02 - 2020/12 )',
+        location: 'Universidad Mayor de San Andrés, La Paz, Bolivia'
+      },
+      {
+        title: 'Teacher ( 2017/02 - 2017/11 )',
+        location: 'Universidad Mayor de San Andrés, La Paz - Bolivia'
+      },
+    ];
+
+    eventListeners();
+    function eventListeners(){
+      listSkills();
+      listProject();
+      listExperience();
+      form.addEventListener('submit', addComments);
+      document.addEventListener('DOMContentLoaded', ()=>{
+        listComments = JSON.parse(localStorage.getItem('listComments')) || [];
+        createHTML();
+      })
+    };
+    //Funtions
+    //createSkills
+    function listSkills(){
+      skills.forEach(skill => {
+        const li = document.createElement('li');
+        li.innerText = skill.name;
+        containetSkills.appendChild(li);
+      })
+    };
+    //createProject
+    function listProject(){
+      projects.forEach(project => {
+        const li = document.createElement('li');
+        li.innerText = project.name;
+        containerProject.appendChild(li);
+      })
+    };
+    //create List Experiences
+    function listExperience(){
+      experiences.forEach(experience => {
+        const li = document.createElement('li');
+        li.innerText = experience.title;
+        const p = document.createElement('p');
+        p.innerText = experience.location;
+        li.appendChild(p);
+        containerExperience.appendChild(li);
+      })
+    };
+
+    //add commets
+    function addComments(e){
+      e.preventDefault();
+      const comment = document.querySelector('#comment').value;
+      const name = document.querySelector('#name').value;
+      if(comment == '' || name == ''){
+        alert('Todos los campos deben llenarse');
+        return;
+      }
+      const commentObj = {
+        id: Date.now(),
+        comment,
+        name
+      };
+      console.log(commentObj)
+      listComments = [...listComments, commentObj];
+      createHTML();
+      form.reset();
+    };
+
+    function createHTML(){
+      clearHTML();
+      if (listComments.length > 0) {
+        listComments.forEach( comment => {
+          const boxComment = document.createElement('div');
+          boxComment.classList.add('comments');
+          const pName = document.createElement('p');
+          pName.innerText = comment.name;
+          boxComment.appendChild(pName);
+          const pComment = document.createElement('p');
+          pComment.innerText = comment.comment;
+          boxComment.appendChild(pComment);
+          const remove = document.createElement('a');
+          remove.innerText = 'remove'
+          boxComment.appendChild(remove);
+          remove.onclick = () => {
+            removeComment(comment.id);
+          };
+          containetComment.appendChild(boxComment);
+        })
+      }
+      synchronizeStorage();
+    };
+
+    function removeComment(id){
+      listComments = listComments.filter( comment => comment.id !== id);
+      createHTML();
+    };
+
+    function synchronizeStorage(){
+      localStorage.setItem("listComments", JSON.stringify(listComments));
+    };
+
+    function clearHTML(){
+      while (containetComment.firstChild) {
+        containetComment.removeChild(containetComment.firstChild);
+      }
+    }
+  </script>
+</body>
+</html>
