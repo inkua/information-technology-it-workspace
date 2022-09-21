@@ -220,11 +220,74 @@ html {
 
 /* !--------------- Starts Ingresar (SECTION 4) Styling -------------- */
 
-/*
-* SECTION 4 STYLING GOES HERE
-* ASSIGNED TO: Andrés Campos
-*/
 
+.section4-ingresar{
+    width: 100%;
+    height: 450px;
+    background: var(--white-color);
+    border-radius: 50px 50px 0px 0px;
+    padding: 50px;
+    margin-top: -50px;
+}
+
+.section4-ingresar .max-width .section4-ingresar_logo{
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin: 0 auto;
+}
+
+.section4-ingresar_texto{
+    width: 750px;
+    height: 300px;
+    margin: 0 auto;
+    
+}
+
+.section4-ingresar_texto .section4-ingresar_texto_text-oscuro{
+    font-family: var(--ubuntu-font);
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: center;
+    color: var(--blue-color);
+    padding: 10px;
+}
+
+.section4-ingresar_texto  .section4-ingresar_texto_text-claro{
+    color: var(--blue-color);
+    font-weight: 400;
+    font-family: var(--ubuntu-font);
+}
+
+.section4-ingresar_texto .section4-ingresar_texto_parrafo{
+    font-family: var(--ubuntu-font);
+    text-align: center;
+    font-size: 2.1rem;
+    font-weight: 300;
+    padding: 10px;
+    line-height: 140%;
+    color: #000000;
+}
+
+.section4-ingresar_texto button{
+    width: 150px;
+    height: 40px;
+    display: block;
+    margin: 10px auto;
+    background-color: var(--blue-color);
+    border: none;
+    border-radius: 30px;
+}
+
+.section4-ingresar_texto .section4-ingresar_texto_boton{
+    font-family: var(--ubuntu-font);
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--white-color);
+
+}
 /* !--------------- Finishes Ingresar (SECTION 4) Styling -------------- */
 
 
@@ -301,7 +364,6 @@ html {
     text-align: center;
     min-height: 60px;
 }
-
 /* !--------------- Finishes Inkua Números (SECTION 5) Styling -------------- */
 
 
