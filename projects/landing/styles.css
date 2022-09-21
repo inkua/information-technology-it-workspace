@@ -461,9 +461,104 @@ html {
 
 /* !--------------- Starts Footer (FOOTER - SECTION 8) Styling -------------- */
 
-/*
-* SECTION 8 STYLING GOES HERE
-* ASSIGNED TO: Pedro Gascon
-*/
+
+.footer {
+    width: 100%;
+    padding: 1rem 15rem;
+    height: 100%;
+    
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border: 2px solid #E6E6E6;
+    border-radius: 1px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+}
+
+.footer .container{
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+
+}
+
+
+/* ------ Secciones ----------------*/
+.footer .container .box-group h3:hover{
+    padding: 0.8rem;
+}
+
+.footer .container .box-group ul li{
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.footer .container .box-group ul li:hover{
+    
+    color: #034C8C;
+    transition: color 0.3s;
+    transform: scaleX();
+}
+
+.footer .container .box-group ul li i{
+    padding: 0.3rem;
+}
+
+
+
+
+/*--------------- Contacts -------------------*/
+
+.footer .container .box-group p{
+    
+    padding: 0.7rem;
+}
+
+
+/*--------------------- Siguenos + Icons ---------------------*/
+
+.footer .container .box-group h3{
+    padding: 0.8rem;
+}
+
+.footer .container .box-group .icons-one{
+    
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    
+}
+
+.footer .container .box-group .icons-one a{
+    padding: 1rem 1rem; 
+    color:#E6E6E6 ;
+}
+
+.footer .container .box-group .icons-one a:hover{
+    color: #1C3661;
+    transform: scale(1.5);
+    transition: 400ms;
+}
+
+
+
+.footer .container .box-group .icons-two{
+    
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;   
+}
+
+.footer .container .box-group .icons-two a{
+    padding: 1rem 1rem;
+    color:#E6E6E6 ; 
+    
+}
+
+.footer .container .box-group .icons-two a:hover{
+    color: #1C3661;
+    transform: scale(1.5);
+    transition: 400ms;
+}
 
 /* !--------------- Finishes Footer (FOOTER - SECTION 8) Styling -------------- */
