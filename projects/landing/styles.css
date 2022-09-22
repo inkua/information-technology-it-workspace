@@ -272,7 +272,7 @@ html {
 
 .section3-ser-parte
 {
-    background-image: url(/img/image_2.png);
+    background-image: url("./img/image_2.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
