@@ -200,20 +200,146 @@ html {
 
 /* !--------------- Starts Ser Parte Reasons (SECTION 2) Styling -------------- */
 
-/*
-* SECTION 2 STYLING GOES HERE
-* ASSIGNED TO: Mario Chavez
-*/
+.section2-ser-parte-reasons
+{
+    height: 350px;
+    width: 100%;
+    font-size: 1.6rem;
+    font-family: var(--ubuntu-font);
+}
+
+.max-width .text-section2
+{
+    display: block;
+    margin: 0 3.5em;
+}
+
+.section2-ser-parte-reasons h1
+{
+    width: 100%;
+    color: var(--dark-blue-color);   
+    font-size: 3rem;
+    text-align: center;
+    margin: 2em 0;
+}
+
+.puntos
+{
+    color: var(--dark-blue-color);
+    width: 80%;
+    display: grid;
+    grid-template-columns:  repeat(2, 1rf);
+    grid-gap: 10px;
+    grid-auto-rows: 100px;
+    grid-template-areas: 
+    "a b"
+    "c d";
+    align-items: start;
+    margin: auto auto;
+    font-size: 2.6rem;
+}
+
+.uno
+{
+    grid-area: a;
+}
+
+.dos
+{
+    grid-area: b;
+}
+
+.tres
+{
+    grid-area: c;
+}
+
+.cuatro
+{
+    grid-area: d;
+}
+
+.vineta
+{
+    color: var(--sky-blue-color);
+    padding: .5em;
+}
 
 /* !--------------- Finishes Ser Parte Reasons (SECTION 2) Styling -------------- */
 
 
 /* !--------------- Starts Ser Parte (SECTION 3) Styling -------------- */
 
-/*
-* SECTION 3 STYLING GOES HERE
-* ASSIGNED TO: Mario Chavez
-*/
+.section3-ser-parte
+{
+    background-image: url(/img/image_2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: var(--ubuntu-font);
+}
+
+.max-width
+{
+    /* display: block; */
+    height: 100%;
+}
+
+.text-section3
+{
+    color: var(--dark-blue-color);
+    background: #fff;
+    background: linear-gradient(90deg,
+    rgba(255, 255, 255, .95) .4%,
+    rgba(255, 255, 255, .95) 26.22%,
+    rgba(255, 255, 255, 0) 69.62%);
+    /* position: absolute; */
+    height: 100%;
+}
+
+.section3-ser-parte .max-width .text-section3 .textos
+{
+    width: 70%;
+    height: 60%;
+    margin: 0 20rem;
+    padding: 8rem 0;
+
+}
+
+.textos h1
+{
+    width: 50%;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.textos p
+{
+    font-style: normal;
+    font-size: 2.6rem;
+    width: 50%;
+    margin: 1.5rem 0;
+}
+
+.textos p span
+{
+    font-weight: 600;
+}
+
+.btnser-parte
+{
+    background-color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+    border-radius: 50px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
+    color: var(--white-color);
+    font-size: 2.6rem;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+}
 
 /* !--------------- Finishes Ser Parte (SECTION 3) Styling -------------- */
 
