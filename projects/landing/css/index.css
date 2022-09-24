@@ -139,7 +139,7 @@ html {
     width: 100%;
     height: 100vh;
     padding: 1rem 2rem;
-    background: url("./img/inicio/section1-unirse-bg.png") no-repeat;
+    background: url("../img/inicio/section1-unirse-bg.png") no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -267,7 +267,7 @@ html {
 
 .section3-ser-parte
 {
-    background-image: url("./img/inicio/section3-ser-parte-bg.png");
+    background-image: url("../img/inicio/section3-ser-parte-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -529,7 +529,7 @@ html {
 /* !--------------- Starts Newsletter (SECTION 7) Styling -------------- */
 
 .section7-newsletter{ 
-    background-image: url("img/inicio/section7-newsletter-bg.png");
+    background-image: url("../img/inicio/section7-newsletter-bg.png");
     background-color: #1C3661;
     background-repeat: no-repeat;
     background-size: 100% 100%; 
