@@ -28,21 +28,25 @@ html {
 
 /* !--------------- Starts Navbar Styling -------------- */
 .navbar {
-    position: relative;
+    position: fixed;
     top: 0;
     width: 100%;
     height: 75px;
     padding: 1rem 2rem;
-
     background: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 999;
+    z-index: 20;
+    transition: all 0.3s ease;
 }
+
 .navbar.sticky {
     padding: 1rem 2rem;
+    background-color: var(--white-color);
+    box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.12);
 }
+
 .navbar .max-width {
     width: 100%;
     max-width: 1200px;
@@ -52,15 +56,18 @@ html {
     justify-content: space-between;
 }
 
-.navbar .logo-rame {
+.navbar .logo-inkua {
     height: 100%;
+    position: relative;
+    z-index: 30;
 }
 
 .navbar .menu li {
     list-style: none;
     display: inline-block;
 }
-.navbar .menu li .menu-btn {
+
+.navbar .menu li a {
     position: relative;
     display: block;
     color: var(--blue-color);
@@ -70,8 +77,13 @@ html {
     margin-left: 2.5rem;
     transition: color 0.3s ease;
 }
-
-.navbar .menu li .menu-btn::before {
+.navbar .menu li a:hover {
+    color: var(--blue-color);
+}
+.navbar.sticky .menu li a:hover {
+    color: var(--blue-color);
+}
+.navbar .menu li a:not(.ingresar-btn, .donar-btn)::before {
     content: "";
     position: absolute;
     display: block;
@@ -84,18 +96,8 @@ html {
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
-.navbar .menu li .menu-btn:hover::before {
+.navbar .menu li a:hover::before {
     transform: scaleX(1);
-}
-.navbar.sticky .menu li .menu-btn:hover {
-    color: var(--blue-color);
-}
-
-.navbar .bars-btn {
-    color: #000;
-    font-size: 2.3rem;
-    cursor: pointer;
-    display: none;
 }
 
 .navbar .ingresar-btn {
@@ -105,13 +107,11 @@ html {
     border-radius: 30px;
     text-align: center;
     border: 1px solid var(--blue-color);
-    display: block;
     color: var(--blue-color);
-    font-size: 1.8rem;
-    font-weight: 500;
-    text-decoration: none;
-    margin-left: 2.5rem;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+}
+.navbar .ingresar-btn:hover {
+    transform: scale(1.05);
 }
 
 .navbar .donar-btn {
@@ -121,14 +121,19 @@ html {
     padding: 10px;
     border-radius: 30px;
     text-align: center;
-    position: relative;
-    display: block;
-    color: var(--blue-color);
-    font-size: 1.8rem;
-    font-weight: 500;
-    text-decoration: none;
-    margin-left: 2.5rem;
-    transition: color 0.3s ease;
+    border: 1px solid var(--blue-color);
+    transition: all 0.3s ease;
+}
+.navbar .donar-btn:hover {
+    transform: scale(1.05);
+}
+
+.bars-btn {
+    padding: 10px;
+    color: var(--dark-blue-color);
+    font-size: 2.3rem;
+    cursor: pointer;
+    display: none;
 }
 /* !--------------- Finishes Navbar Styling -------------- */
 
@@ -171,3 +176,40 @@ html {
 */
 
 /* !--------------- Finishes Footer (FOOTER) Styling -------------- */
+
+@media (max-width: 947px) {
+    
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active::before {
+        content: "\f00d";
+    }
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background-color: var(--white-color);
+        text-align: center;
+        padding-top: 8rem;
+        transition: all 0.3s ease;
+    }
+    
+    .navbar .menu.active {
+        left: 0;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 2rem 0;
+        font-size: 2.5rem;
+    }
+    .navbar .menu li a:not(.ingresar-btn, .donar-btn)::before {
+        top: 32px;
+    }
+}
