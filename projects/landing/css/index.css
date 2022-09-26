@@ -344,11 +344,22 @@ html {
 
 .section4-ingresar{
     width: 100%;
-    height: 450px;
+    min-height: 450px;
     background: var(--white-color);
     border-radius: 50px 50px 0px 0px;
     padding: 50px;
     margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4-ingresar .max-width {
+    height: 100%;
+    max-width: 1200px;
+    display: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .section4-ingresar .max-width .section4-ingresar_logo{
@@ -356,13 +367,13 @@ html {
     height: 90px;
     display: block;
     margin: 0 auto;
+    
 }
 
 .section4-ingresar_texto{
-    width: 750px;
-    height: 300px;
-    margin: 0 auto;
-    
+   height: 100%;
+   margin: 0 auto;
+   padding: 10px;
 }
 
 .section4-ingresar_texto .section4-ingresar_texto_text-oscuro{
@@ -388,7 +399,7 @@ html {
     font-weight: 300;
     padding: 10px;
     line-height: 140%;
-    color: #000000;
+    color: #000000;;
 }
 
 .section4-ingresar_texto button{
