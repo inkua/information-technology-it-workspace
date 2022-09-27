@@ -136,6 +136,30 @@ html {
     cursor: pointer;
     display: none;
 }
+
+.scroll-up-btn {
+    position: fixed;
+    height: 4.5rem;
+    width: 4.2rem;
+    background: var(--dark-blue-color);
+    right: 3rem;
+    bottom: 1rem;
+    text-align: center;
+    line-height: 4.5rem;
+    color: #fff;
+    z-index: 9999;
+    font-size: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show {
+    bottom: 3rem;
+    opacity: 1;
+    pointer-events: auto;
+}
 /* !--------------- Finishes Navbar Styling -------------- */
 
 
