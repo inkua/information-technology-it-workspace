@@ -293,78 +293,74 @@ html {
 
 
 /* !--------------- Starts Ser Parte (SECTION 3) Styling -------------- */
-
-.section3-ser-parte
-{
-    background-image: url("../img/inicio/section3-ser-parte-bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    font-family: var(--ubuntu-font);
-}
-
-.max-width
-{
-    /* display: block; */
-    height: 100%;
-}
-
-.text-section3
-{
-    color: var(--dark-blue-color);
-    background: #fff;
-    background: linear-gradient(90deg,
+.section3-ser-parte {
+    width: 100%;
+    padding: 1rem 2rem;
+    min-height: 100vh;
+    background-image: linear-gradient(90deg,
     rgba(255, 255, 255, .95) .4%,
     rgba(255, 255, 255, .95) 26.22%,
-    rgba(255, 255, 255, 0) 69.62%);
-    /* position: absolute; */
+    rgba(255, 255, 255, 0) 69.62%), url("../img/inicio/section3-ser-parte-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--dark-blue-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3-ser-parte .max-width {
+    width: 100%;
     height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
-.section3-ser-parte .max-width .text-section3 .textos
-{
-    width: 70%;
-    height: 60%;
-    margin: 0 20rem;
-    padding: 8rem 0;
-
+.section3-ser-parte .container {
+    padding: 50px;
+    max-width: 1000px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 30px;
+    border-radius: 0 90px 0 90px;
 }
 
-.textos h1
-{
-    width: 50%;
+.section3-ser-parte .container .title {
     font-size: 3rem;
     font-weight: 500;
 }
 
-.textos p
-{
-    font-style: normal;
+.section3-ser-parte .container .description {
     font-size: 2.6rem;
-    width: 50%;
-    margin: 1.5rem 0;
+
 }
 
-.textos p span
-{
+.section3-ser-parte .container .description span {
     font-weight: 600;
 }
 
-.btnser-parte
-{
-    background-color: var(--blue-color);
-    border: 1px solid var(--blue-color);
-    border-radius: 50px;
+.section3-ser-parte .container .ser-parte-btn {
+    width: 200px;
+    padding: 10px;
+    background: var(--blue-color);
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
-    color: var(--white-color);
-    font-size: 2.6rem;
+    border-radius: 30px;
     font-weight: 500;
+    font-size: 2.6rem;
     line-height: 30px;
     text-align: center;
-    width: 200px;
-    height: 50px;
+    color: var(--white-color);
+    text-decoration: none;
+    transition: scale 0.3s ease;
 }
-
+.section3-ser-parte .container .ser-parte-btn:hover {
+    transform: scale(1.05);
+}
 /* !--------------- Finishes Ser Parte (SECTION 3) Styling -------------- */
 
 
@@ -725,6 +721,19 @@ html {
 /* !--------------- Finishes Footer (FOOTER - SECTION 8) Styling -------------- */
 
 
+@media (max-width: 1500px) {
+    .section3-ser-parte .container {
+        padding: 50px;
+        max-width: 600px;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        gap: 30px;
+        border-radius: 0 90px 0 90px;
+    }
+}
+
 @media (max-width: 947px) {
     .menu-btn {
         display: block;
@@ -757,5 +766,15 @@ html {
     }
     .navbar .menu li a:not(.ingresar-btn, .donar-btn)::before {
         top: 32px;
+    }
+}
+
+@media (max-width: 850px) {
+    .section3-ser-parte {
+        padding: 4rem 0rem;
+        background-image: linear-gradient(90deg,
+        rgba(255, 255, 255, .75) 100%,
+        rgba(255, 255, 255, .75) 100%), url("../img/inicio/section3-ser-parte-bg.png");
+        background-attachment: scroll;
     }
 }
