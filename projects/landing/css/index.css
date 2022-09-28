@@ -165,8 +165,8 @@ html {
 
 /* !--------------- Starts Unirse (SECTION 1) Styling -------------- */
 .section1-unirse {
-    width: 100%;
-    height: 100vh;
+    min-width: 100%;
+    min-height: 100vh;
     padding: 1rem 2rem;
     background: url("../img/inicio/section1-unirse-bg.png") no-repeat;
     background-size: cover;
@@ -200,7 +200,7 @@ html {
 
 .section1-unirse .container .title {
     font-weight: 700;
-    font-size: 5.5rem;
+    font-size: 4.5rem;
     color: var(--blue-color);
 }
 
@@ -223,6 +223,10 @@ html {
     text-align: center;
     color: var(--white-color);
     text-decoration: none;
+    transition: scale 0.3s ease;
+}
+.section1-unirse .container .unirse-btn:hover {
+    transform: scale(1.05);
 }
 /* !--------------- Finishes Unirse (SECTION 1) Styling -------------- */
 
@@ -723,14 +727,7 @@ html {
 
 @media (max-width: 1500px) {
     .section3-ser-parte .container {
-        padding: 50px;
         max-width: 600px;
-        height: max-content;
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        gap: 30px;
-        border-radius: 0 90px 0 90px;
     }
 }
 
@@ -770,6 +767,19 @@ html {
 }
 
 @media (max-width: 850px) {
+    .section1-unirse {
+        padding: 8rem 2rem;
+    }
+    .section1-unirse .container {
+        padding: 50px 25px;
+        border-radius: 0 60px 0 60px;
+    }
+    .section1-unirse .container .title {
+        font-size: 4rem;
+    }
+    .section1-unirse .container .description {
+        line-height: 120.9%;
+    }
     .section3-ser-parte {
         padding: 4rem 0rem;
         background-image: linear-gradient(90deg,
