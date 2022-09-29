@@ -166,8 +166,128 @@ html {
 
 /*
 * SECTION 1 STYLING GOES HERE
-* ASSIGNED TO: Lucía Canevaro
-*/
+* ASSIGNED TO: Lucía Canevaro */
+
+.section1-sobre-nosotros {
+    padding: 5% 5% 0 5%;
+    text-align: center;
+}
+.section1-sobre-nosotros .max-width {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.section1-sobre-nosotros .max-width .title {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1C3661;
+    font-weight: 600;
+    font-size: 2.2rem;
+    flex: 0 0 auto;
+}
+.section1-containerI {
+    display: flex;
+    flex-direction: column;  
+}
+.section1-containerII {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;    
+}
+.section1-containerII .section1-content {
+    padding: 3rem;
+    width: 40%;
+    margin-left: 10rem;
+}
+.border-about {
+    border-top: 4px solid #33bee8;
+    width: 10%;
+    margin-bottom: 20px;
+}
+.section1-containerII .subtitle {
+    color: #034C8C;
+    font-size: 1.8rem;
+    font-weight: 400; 
+    margin-bottom: 0.5rem;   
+}
+.subtitle .strong{
+    font-weight: bolder; 
+}
+.section1-containerII p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+.section1-containerII .section1-content1{
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem; 
+    font-weight: 400;
+}
+.section1-containerII .section1-content2{
+    color: #1C3661;
+    margin-top: 30px;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem; 
+    font-weight: 500;
+}
+.section1-sobre-nosotros .max-width .section1-containerI .section1-containerII .section1-img {
+    width: 40%;
+}
+.section1-sobre-nosotros .max-width .section1-containerI .section1-containerII .section1-img img{
+    border-radius: 0.5rem;
+    max-width: 80%;
+    height: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 7rem;
+    vertical-align: middle;
+    border-style: none;
+}
+.section1-containerII .section1-content3, .section1-content4{
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem; 
+    font-weight: 400;
+}
+
+@media screen and (min-width: 1200px) {
+    .section1-containerII p{
+        text-align: left;
+    }
+    .section1-containerII .subtitle{
+        text-align: left;
+    }
+    .section1-sobre-nosotros .max-width .section1-containerI .section1-containerII .section1-img {
+        display: block;
+    }
+}
+
+/* dejar todo centrado en pantallas de menos de 1200px
+@media screen and (max-width: 1200px) {
+    
+    .section1-sobre-nosotros .max-width .section1-containerI {
+        display: flex;
+        flex-direction: column;    
+    }
+    .section1-sobre-nosotros .max-width .section1-containerII {
+        display: flex;
+        flex-wrap: wrap;    
+    }
+    .section1-sobre-nosotros .max-width .section1-containerI .section1-containerII .section1-content {
+        width: 100%;   
+    }
+}*/
 
 /* !--------------- Finishes Sobre Nosotros (SECTION 1) Styling -------------- */
 
