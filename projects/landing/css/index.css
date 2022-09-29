@@ -738,6 +738,65 @@ html {
 }
 /* !--------------- Finishes Footer (FOOTER - SECTION 8) Styling -------------- */
 
+
+@media (max-width: 1500px) {
+    .section3-ser-parte .container {
+        padding: 50px;
+        max-width: 600px;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        gap: 30px;
+        border-radius: 0 90px 0 90px;
+    }
+}
+
+@media (max-width: 947px) {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active::before {
+        content: "\f00d";
+    }
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background-color: var(--white-color);
+        text-align: center;
+        padding-top: 8rem;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active {
+        left: 0;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 2rem 0;
+        font-size: 2.5rem;
+    }
+    .navbar .menu li a:not(.ingresar-btn, .donar-btn)::before {
+        top: 32px;
+    }
+}
+
+@media (max-width: 850px) {
+    .section3-ser-parte {
+        padding: 4rem 0rem;
+        background-image: linear-gradient(90deg,
+        rgba(255, 255, 255, .75) 100%,
+        rgba(255, 255, 255, .75) 100%), url("../img/inicio/section3-ser-parte-bg.png");
+        background-attachment: scroll;
+    }
+}
+
 @media (max-width: 539px) {
     .footer {
         padding: 5rem 1rem;
