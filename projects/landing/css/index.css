@@ -859,7 +859,7 @@ html {
         gap: 20px;
     }
     .footer .container .subcontainer .box-group {
-        width: 200px;
+        width: 250px;
         height: max-content;
         display: flex;
         flex-direction: column;
