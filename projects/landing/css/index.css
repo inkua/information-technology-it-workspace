@@ -603,6 +603,13 @@ html {
     text-align: center;
     filter: box-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+.section7-newsletter .max-width {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
 .section7-newsletter h2{
     font-family:'Ubuntu', sans-serif;
     font-weight: 500;
