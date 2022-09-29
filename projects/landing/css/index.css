@@ -813,6 +813,20 @@ html {
 }
 
 @media (max-width: 850px) {
+    .section1-unirse {
+        padding: 8rem 2rem;
+    }
+    .section1-unirse .container {
+        padding: 50px 25px;
+        border-radius: 0 60px 0 60px;
+    }
+    .section1-unirse .container .title {
+        font-size: 4rem;
+    }
+    .section1-unirse .container .description {
+        line-height: 120.9%;
+    }
+    
     .section3-ser-parte {
         padding: 4rem 0rem;
         background-image: linear-gradient(90deg,
