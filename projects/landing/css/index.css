@@ -393,45 +393,43 @@ html {
 
 
 /* !--------------- Starts Ingresar (SECTION 4) Styling -------------- */
-
-
 .section4-ingresar{
     width: 100%;
     min-height: 450px;
+    margin-top: -70px;
+    padding: 8rem 2rem;
     background: var(--white-color);
-    border-radius: 50px 50px 0px 0px;
-    padding: 50px;
-    margin-top: -50px;
+    border-radius: 70px 70px 0px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .section4-ingresar .max-width {
+    width: 100%;
     height: 100%;
     max-width: 1200px;
-    display: column;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.section4-ingresar .max-width .section4-ingresar_logo{
-    width: 90px;
-    height: 90px;
-    display: block;
-    margin: 0 auto;
-    
+.section4-ingresar .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
 }
 
-.section4-ingresar_texto{
-   height: 100%;
-   margin: 0 auto;
-   padding: 10px;
+.section4-ingresar .container .description {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.section4-ingresar_texto .section4-ingresar_texto_text-oscuro{
-    font-family: var(--ubuntu-font);
-    font-size: 2.5rem;
+.section4-ingresar .container .description .main {
+    font-size: 3.5rem;
     font-weight: 700;
     line-height: 140%;
     text-align: center;
@@ -439,39 +437,39 @@ html {
     padding: 10px;
 }
 
-.section4-ingresar_texto  .section4-ingresar_texto_text-claro{
+.section4-ingresar .container .description .main span{
     color: var(--blue-color);
     font-weight: 400;
-    font-family: var(--ubuntu-font);
 }
 
-.section4-ingresar_texto .section4-ingresar_texto_parrafo{
-    font-family: var(--ubuntu-font);
+.section4-ingresar .container .description .secondary {
+    justify-self: center;
+    align-self: center;
+    max-width: 1100px;
     text-align: center;
-    font-size: 2.1rem;
-    font-weight: 300;
+    font-size: 2.8rem;
+    font-weight: 400;
     padding: 10px;
     line-height: 140%;
     color: #000000;
 }
 
-.section4-ingresar_texto button{
-    width: 150px;
-    height: 40px;
-    display: block;
-    margin: 10px auto;
-    background-color: var(--blue-color);
-    border: none;
+.section4-ingresar .container .ingresar-btn {
+    width: 200px;
+    padding: 10px;
+    background: var(--blue-color);
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
     border-radius: 30px;
-}
-
-.section4-ingresar_texto .section4-ingresar_texto_boton{
-    font-family: var(--ubuntu-font);
-    font-size: 1.5rem;
-    font-weight: 700;
-    font-style: normal;
+    font-weight: 500;
+    font-size: 2.6rem;
+    line-height: 30px;
+    text-align: center;
     color: var(--white-color);
-
+    text-decoration: none;
+    transition: scale 0.3s ease;
+}
+.section4-ingresar .container .ingresar-btn:hover {
+    transform: scale(1.05);
 }
 /* !--------------- Finishes Ingresar (SECTION 4) Styling -------------- */
 
@@ -826,13 +824,18 @@ html {
     .section1-unirse .container .description {
         line-height: 120.9%;
     }
-    
+
     .section3-ser-parte {
         padding: 4rem 0rem;
         background-image: linear-gradient(90deg,
         rgba(255, 255, 255, .75) 100%,
         rgba(255, 255, 255, .75) 100%), url("../img/inicio/section3-ser-parte-bg.png");
         background-attachment: scroll;
+    }
+
+    .section4-ingresar{
+        margin-top: -50px;
+        border-radius: 50px 50px 0px 0px;
     }
 }
 
