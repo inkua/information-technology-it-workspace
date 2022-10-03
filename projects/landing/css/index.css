@@ -678,10 +678,12 @@ html {
 .footer {
     min-width: 100%;
     padding: 5rem 1rem;
+    background-color: #F6F9FF;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.6rem;
+    border: 1px solid #D9D9D9;
 }
 
 .footer .max-width {
