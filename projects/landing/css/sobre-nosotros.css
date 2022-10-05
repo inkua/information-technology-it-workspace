@@ -200,7 +200,7 @@ html {
 .section1-sobre-nosotros .max-width {
     width: 100%;
     height: 100%;
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: space-between;
     padding-top: 3rem;
@@ -211,6 +211,7 @@ html {
     height: 100px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     color: #1C3661;
@@ -220,6 +221,7 @@ html {
 }
 .section1-containerI {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;  
 }
 .section1-containerII {
@@ -229,8 +231,7 @@ html {
 }
 .section1-containerII .section1-content {
     padding: 3rem;
-    width: 40%;
-    margin-left: 10rem;
+    width: 50%;
 }
 .border-about {
     border-top: 4px solid #33bee8;
@@ -241,9 +242,9 @@ html {
     color: #034C8C;
     font-size: 1.8rem;
     font-weight: 400; 
-    margin-bottom: 0.5rem;   
+    margin-bottom: 0.5rem;
 }
-.subtitle .strong{
+strong{
     font-weight: bolder; 
 }
 .section1-containerII p{
@@ -265,10 +266,10 @@ html {
     font-size: 1.8rem; 
     font-weight: 500;
 }
-.section1-sobre-nosotros .max-width .section1-containerI .section1-containerII .section1-img {
-    width: 40%;
+.section1-containerII .section1-img {
+    width: 50%;
 }
-.section1-sobre-nosotros .max-width .section1-containerI .section1-containerII .section1-img img{
+.section1-containerII .section1-img img{
     border-radius: 0.5rem;
     max-width: 80%;
     height: auto;
@@ -286,6 +287,12 @@ html {
     font-weight: 400;
 }
 
+.section1-content3 .cursiva, .section1-content4 .cursiva{
+    font-style: italic;
+    color: #034C8C;
+    font-weight: 500;
+}
+
 @media screen and (min-width: 1200px) {
     .section1-containerII p{
         text-align: left;
@@ -293,26 +300,20 @@ html {
     .section1-containerII .subtitle{
         text-align: left;
     }
-    .section1-sobre-nosotros .max-width .section1-containerI .section1-containerII .section1-img {
+    .section1-containerII .section1-img {
         display: block;
     }
 }
 
-/* dejar todo centrado en pantallas de menos de 1200px
 @media screen and (max-width: 1200px) {
-    
-    .section1-sobre-nosotros .max-width .section1-containerI {
-        display: flex;
-        flex-direction: column;    
+    .section1-containerI {
+        align-items: center;   
     }
-    .section1-sobre-nosotros .max-width .section1-containerII {
-        display: flex;
-        flex-wrap: wrap;    
-    }
-    .section1-sobre-nosotros .max-width .section1-containerI .section1-containerII .section1-content {
-        width: 100%;   
-    }
-}*/
+    .section1-containerII {
+        flex-direction: column; 
+        justify-content: space-around;   
+    }   
+}
 
 /* !--------------- Finishes Sobre Nosotros (SECTION 1) Styling -------------- */
 
