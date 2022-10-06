@@ -378,70 +378,80 @@ strong{
 
 /* !--------------- Starts Departamentos (SECTION 3) Styling -------------- */
 
-.section3-departamentos .max-width
-{
+.section3-departamentos {
+    background-color: var(--white-color);
+    width: 100%;
+    padding: 7rem 0;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section3-departamentos .max-width {
     width: 100%;
     height: 100%;
+    max-width: 1200px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
-.section3-departamentos .max-width .title
-{
-    height: 150px;
+.section3-departamentos .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7rem;
+}
+
+.section3-departamentos .max-width .title {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #1C3661;
-    font-size: 1.6rem;
+    font-size: 3rem;
+    text-align: center;
 }
 
-.section3-departamentos .max-width .content-cards
-{
+.section3-departamentos .max-width .content-cards {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
 }
 
-.section3-departamentos .card
-{
+.section3-departamentos .card {
     position: relative;
-    width: 300px;
-    height: 180px;
+    width: 283px;
+    height: 200px;
 }
 
-.section3-departamentos .card .face
-{
+.section3-departamentos .card .face {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
     border-radius: 15px;
     overflow: hidden;
-    transition: .5s;
+    transition: .9s;
 }
 
-.section3-departamentos .card .front
-{
+.section3-departamentos .card .front {
     transform: perspective(600px) rotateY(0deg);
 }
 
-.section3-departamentos .card .front img
-{
+.section3-departamentos .card .front img {
     width: 100%;
     height: 100%;
     position: absolute;
     object-fit: cover;
 }
 
-.section3-departamentos .card .front h4
-{
+.section3-departamentos .card .front h4 {
     width: 100%;
     height: 48px;
     background-color: #034C8C;
@@ -455,8 +465,11 @@ strong{
     text-transform: uppercase;
 }
 
-.section3-departamentos .card .back
-{
+.section3-departamentos .card .front .special-bg {
+    background-color: #33BEE8;
+}
+
+.section3-departamentos .card .back {
     transform: perspective(600px) rotateY(180deg);
     background-color: #034C8C;
     padding: 35px;
@@ -474,23 +487,18 @@ strong{
     text-transform: uppercase;
 }
 
-.section3-departamentos .card .back p
-{
+.section3-departamentos .card .back p {
     text-align: justify;
     font-style: italic;
 }
 
-.section3-departamentos .card:hover .front
-{
+.section3-departamentos .card:hover .front {
     transform: perspective(600px) rotateY(180deg);
 }
 
-.section3-departamentos .card:hover .back
-{
+.section3-departamentos .card:hover .back {
     transform: perspective(600px) rotateY(360deg);
 }
-
-
 /* !--------------- Finishes Departamentos (SECTION 3) Styling -------------- */
 
 
@@ -582,6 +590,15 @@ strong{
     transform: scale(1.5);
 }
 /* !--------------- Finishes Footer (FOOTER) Styling -------------- */
+
+@media (max-width: 1776px) {
+    .section3-departamentos {
+        padding: 7rem 2rem;
+    }
+    .section3-departamentos .max-width .content-cards {
+        justify-content: space-evenly;
+    }
+}
 
 @media (max-width: 947px) {
     
