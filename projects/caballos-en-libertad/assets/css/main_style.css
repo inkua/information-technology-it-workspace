@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #00638c;
+  background-color: var(--color-two);
 }
 
 .navbar ul li {
@@ -21,47 +21,93 @@
   display: block;
   color: white;
   text-align: center;
-  margin: 14px 8px 14px 8px;
+  margin: 14px 8px;
   padding-top: 6px;
   padding-bottom: 4px;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
+  font: var(--font);
 }
 
-.navbar img {
+.navbar .redes {
   margin-right: 9px;
-  image-rendering: auto;
   width: auto;
   height: 15px;
 }
 
-.navbar .logo {
+.navbar .redes:hover{
+    filter: invert(58%) sepia(98%) saturate(934%) hue-rotate(345deg) brightness(92%) contrast(84%);
+}
+
+.navbar .logo{
   float: left;
   margin-left: 10px;
+  margin-top: 5px;
 }
 
 .navbar .options:hover {
-  color: #d98729;
+  color: var(--color-one);
 }
 
-.adoptar_donar {
-    border: 1.5px solid #d98729;
-    padding: 6px 10px 3px 10px;
+.navbar .adoptar_donar {
+    margin: 12px 8px;
+    border: 2px solid var(--color-one);
+    padding: 5px 20px;
     border-radius: 5px;
 }
 
 .adoptar_donar.donar {
-    background-color: #d98729;
+    background-color: var(--color-one);
     color: white;
 }
 
 .adoptar_donar:hover {
-    background-color: #d98729;
+    background-color: var(--color-one);
     color: white;
-    font-style: italic;
+    filter: opacity(0.8);
 }
 
 .landing img {
   width: 100%;
   height: 100%;
 }
+
+.wpp{
+    padding: 5px 0px 20px 0px;
+    color: white;
+    position: fixed;
+    text-decoration: none;
+    background-color: #00e677;
+    border: 2px solid #00e677;
+    border-radius: 50px;
+    bottom: 30px;
+    right: 30px;
+    width: 200px;
+    height: 60px;
+}
+
+.wpp:hover{
+    filter: brightness(1.2) ;
+}
+
+.wpp p{
+    padding-top: 5px;
+    font-size: 14px;
+    margin-right:20px;
+    float: right;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    font-weight: bold;
+    font: var(--font);
+}
+
+.wpp img{
+    margin-right: 10px;
+    float: right;
+    width: 40px;
+    height: auto;
+}
+
+
