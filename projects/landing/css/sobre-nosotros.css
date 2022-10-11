@@ -200,7 +200,7 @@ html {
 .section1-sobre-nosotros .max-width {
     width: 100%;
     height: 100%;
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: space-between;
     padding-top: 3rem;
@@ -211,6 +211,7 @@ html {
     height: 100px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     color: #1C3661;
@@ -220,6 +221,7 @@ html {
 }
 .section1-containerI {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;  
 }
 .section1-containerII {
@@ -229,8 +231,7 @@ html {
 }
 .section1-containerII .section1-content {
     padding: 3rem;
-    width: 40%;
-    margin-left: 10rem;
+    width: 50%;
 }
 .border-about {
     border-top: 4px solid #33bee8;
@@ -241,9 +242,9 @@ html {
     color: #034C8C;
     font-size: 1.8rem;
     font-weight: 400; 
-    margin-bottom: 0.5rem;   
+    margin-bottom: 0.5rem;
 }
-.subtitle .strong{
+strong{
     font-weight: bolder; 
 }
 .section1-containerII p{
@@ -265,10 +266,10 @@ html {
     font-size: 1.8rem; 
     font-weight: 500;
 }
-.section1-sobre-nosotros .max-width .section1-containerI .section1-containerII .section1-img {
-    width: 40%;
+.section1-containerII .section1-img {
+    width: 50%;
 }
-.section1-sobre-nosotros .max-width .section1-containerI .section1-containerII .section1-img img{
+.section1-containerII .section1-img img{
     border-radius: 0.5rem;
     max-width: 80%;
     height: auto;
@@ -286,6 +287,12 @@ html {
     font-weight: 400;
 }
 
+.section1-content3 .cursiva, .section1-content4 .cursiva{
+    font-style: italic;
+    color: #034C8C;
+    font-weight: 500;
+}
+
 @media screen and (min-width: 1200px) {
     .section1-containerII p{
         text-align: left;
@@ -293,26 +300,20 @@ html {
     .section1-containerII .subtitle{
         text-align: left;
     }
-    .section1-sobre-nosotros .max-width .section1-containerI .section1-containerII .section1-img {
+    .section1-containerII .section1-img {
         display: block;
     }
 }
 
-/* dejar todo centrado en pantallas de menos de 1200px
 @media screen and (max-width: 1200px) {
-    
-    .section1-sobre-nosotros .max-width .section1-containerI {
-        display: flex;
-        flex-direction: column;    
+    .section1-containerI {
+        align-items: center;   
     }
-    .section1-sobre-nosotros .max-width .section1-containerII {
-        display: flex;
-        flex-wrap: wrap;    
-    }
-    .section1-sobre-nosotros .max-width .section1-containerI .section1-containerII .section1-content {
-        width: 100%;   
-    }
-}*/
+    .section1-containerII {
+        flex-direction: column; 
+        justify-content: space-around;   
+    }   
+}
 
 /* !--------------- Finishes Sobre Nosotros (SECTION 1) Styling -------------- */
 
@@ -377,70 +378,80 @@ html {
 
 /* !--------------- Starts Departamentos (SECTION 3) Styling -------------- */
 
-.section3-departamentos .max-width
-{
+.section3-departamentos {
+    background-color: var(--white-color);
+    width: 100%;
+    padding: 7rem 0;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section3-departamentos .max-width {
     width: 100%;
     height: 100%;
+    max-width: 1200px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
-.section3-departamentos .max-width .title
-{
-    height: 150px;
+.section3-departamentos .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7rem;
+}
+
+.section3-departamentos .max-width .title {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #1C3661;
-    font-size: 1.6rem;
+    font-size: 3rem;
+    text-align: center;
 }
 
-.section3-departamentos .max-width .content-cards
-{
+.section3-departamentos .max-width .content-cards {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
 }
 
-.section3-departamentos .card
-{
+.section3-departamentos .card {
     position: relative;
-    width: 300px;
-    height: 180px;
+    width: 283px;
+    height: 200px;
 }
 
-.section3-departamentos .card .face
-{
+.section3-departamentos .card .face {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
     border-radius: 15px;
     overflow: hidden;
-    transition: .5s;
+    transition: .9s;
 }
 
-.section3-departamentos .card .front
-{
+.section3-departamentos .card .front {
     transform: perspective(600px) rotateY(0deg);
 }
 
-.section3-departamentos .card .front img
-{
+.section3-departamentos .card .front img {
     width: 100%;
     height: 100%;
     position: absolute;
     object-fit: cover;
 }
 
-.section3-departamentos .card .front h4
-{
+.section3-departamentos .card .front h4 {
     width: 100%;
     height: 48px;
     background-color: #034C8C;
@@ -454,8 +465,11 @@ html {
     text-transform: uppercase;
 }
 
-.section3-departamentos .card .back
-{
+.section3-departamentos .card .front .special-bg {
+    background-color: #33BEE8;
+}
+
+.section3-departamentos .card .back {
     transform: perspective(600px) rotateY(180deg);
     background-color: #034C8C;
     padding: 35px;
@@ -473,23 +487,18 @@ html {
     text-transform: uppercase;
 }
 
-.section3-departamentos .card .back p
-{
+.section3-departamentos .card .back p {
     text-align: justify;
     font-style: italic;
 }
 
-.section3-departamentos .card:hover .front
-{
+.section3-departamentos .card:hover .front {
     transform: perspective(600px) rotateY(180deg);
 }
 
-.section3-departamentos .card:hover .back
-{
+.section3-departamentos .card:hover .back {
     transform: perspective(600px) rotateY(360deg);
 }
-
-
 /* !--------------- Finishes Departamentos (SECTION 3) Styling -------------- */
 
 
@@ -581,6 +590,15 @@ html {
     transform: scale(1.5);
 }
 /* !--------------- Finishes Footer (FOOTER) Styling -------------- */
+
+@media (max-width: 1776px) {
+    .section3-departamentos {
+        padding: 7rem 2rem;
+    }
+    .section3-departamentos .max-width .content-cards {
+        justify-content: space-evenly;
+    }
+}
 
 @media (max-width: 947px) {
     
