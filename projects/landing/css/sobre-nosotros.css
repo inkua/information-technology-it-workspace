@@ -217,13 +217,13 @@ html {
     padding: 4rem 0;
     color: var(--dark-blue-color);
     font-size: 4.2rem;
+    text-align: center;
 }
 
 .section1-sobre-nosotros .subcontainer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    
     gap: 40px;
 }
 
@@ -567,6 +567,15 @@ html {
     }
 }
 
+@media (max-width: 1200px) {
+    .section1-sobre-nosotros {
+        padding: 6rem 3rem;
+    }
+    .section1-sobre-nosotros .subcontainer .top, .bottom {
+        justify-content: space-evenly;
+    }
+}
+
 @media (max-width: 947px) {
     
     .menu-btn {
@@ -605,6 +614,9 @@ html {
 }
 
 @media (max-width: 539px) {
+    .section1-sobre-nosotros .subcontainer .top .right img {
+        max-width: 330px;
+    }
     .section7-newsletter {
         padding: 8rem 1rem;
     }
