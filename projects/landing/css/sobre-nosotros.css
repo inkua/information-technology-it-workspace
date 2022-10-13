@@ -286,55 +286,62 @@ html {
 
 
 /* !--------------- Starts Nuestros Proyectos (SECTION 2) Styling -------------- */
-.section2-nuestros-proyectos{
+.section2-nuestros-proyectos {
+    background-color: var(--blue-color);
     width: 100%;
-    height: 100%;
-    min-height: 700px;
-    background-color: #034c8c;
-    border-radius: 120px 120px 0px 0px;
-}
-  .section2-nuestros-proyectos .max-width{
-    width: 100%;
-    min-height: 680px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-  }
-  .section2-title{
-    padding: 20px;
+    padding: 7rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 120px 120px 0px 0px;
+}
+.section2-nuestros-proyectos .max-width {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section2-nuestros-proyectos .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+.section2-title{
+    padding: 0 20px;
+    text-align: center;
     color: #ffffff;
     font-size: 2.6rem;
-  }
-  .section2-nuestros-proyectos .container{
+}
+.section2-nuestros-proyectos .subcontainer{
     max-height: 1920px;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 30px;
-  }
-  .section2-nuestros-proyectos .card {
-    width: 320px;
+}
+.section2-nuestros-proyectos .card {
+    max-width: 280px;
     height: 415px;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 30px;
     text-align: center;
     padding: 50px 10px;
-  }
-  .section2-nuestros-proyectos .card h3 {
-    justify-content: center;
-    align-items: center;
-    font-size: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.section2-nuestros-proyectos .card h3 {
+    text-align: center;
+    font-size: 3rem;
     font-weight: 700;
     color: #034c8c;
-    margin: 20px;
-  }
-  .section2-nuestros-proyectos .card p {
+}
+.section2-nuestros-proyectos .card p {
     font-size: 2.2rem;
     text-align:center;
     font-weight: 400;
@@ -577,7 +584,6 @@ html {
 }
 
 @media (max-width: 947px) {
-    
     .menu-btn {
         display: block;
         z-index: 999;
@@ -611,12 +617,21 @@ html {
     .navbar .menu li a:not(.ingresar-btn, .donar-btn)::before {
         top: 32px;
     }
+
+    .section2-nuestros-proyectos {
+        border-radius: 80px 80px 0px 0px;
+    }
 }
 
 @media (max-width: 539px) {
     .section1-sobre-nosotros .subcontainer .top .right img {
         max-width: 330px;
     }
+
+    .section2-nuestros-proyectos {
+        border-radius: 60px 60px 0px 0px;
+    }
+
     .section7-newsletter {
         padding: 8rem 1rem;
     }
