@@ -201,9 +201,55 @@ html {
 
 /*
 * SECTION 2 STYLING GOES HERE
-* ASSIGNED TO: Lucía Canevaro
-*/
+* ASSIGNED TO: Lucía Canevaro */
+.section2-frase1, .section4-frase2, .section6-frase3 {
+    display: flex;
+    height: 220px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.section2-frase1 .max-width, .section4-frase2 .max-width, .section6-frase3 .max-width {
+    display: flex;
+    width: 100%;
+    max-height: 100%;
+    background-color: #b9c0cc;
+    justify-content: center;
+    align-items: center;
+}
+.section2-frase1-containerI, .section4-frase2-containerI, .section6-frase3-containerI{
+    max-height: 100%;
+    display: flex;
+}
+.section2-frase1-containerII, .section4-frase2-containerII, .section6-frase3-containerII{
+    text-align: center;
+}
+.section2-frase1-name, .section4-frase2-name, .section6-frase3-name {
+    color: #24416e;
+    font-weight: 600;
+    font-size: 15px ;
+}
+.section2-frase1-area, .section4-frase2-area, .section6-frase3-area {
+    color: #03355e;
+    padding-bottom: 12px;
+    font-size: 20px;
+}
+.section2-frase1-frase, .section4-frase2-frase, .section6-frase3-frase {
+    color:#034C8C;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    font-style: italic;
+}
+/*.section2-frase1-quotes, .section4-frase2-quotes, .section6-frase3-quotes {
+    position: absolute;
+    transform: translate(350%, -50%);
+}
 
+@media screen and (max-width: 400px) {
+    .section2-frase1-quotes {
+        transform: translate(90%, -135%);
+    }   
+}*/
 /* !--------------- Finishes Frase 1 (SECTION 2) Styling -------------- */
 
 
