@@ -204,21 +204,27 @@ html {
 * ASSIGNED TO: Lucía Canevaro */
 .section2-frase1, .section4-frase2, .section6-frase3 {
     display: flex;
-    height: 220px;
+    height: 120%;
     margin-top: 200px;
     margin-bottom: 200px;
 }
 .section2-frase1 .max-width, .section4-frase2 .max-width, .section6-frase3 .max-width {
     display: flex;
     width: 100%;
-    max-height: 100%;
-    background-color: #b9c0cc;
     justify-content: center;
     align-items: center;
+}
+.section2-frase1 .max-width{
+    background-color: #b9c0cc;
+}
+.section4-frase2 .max-width, .section6-frase3 .max-width{
+    background-color: #b2d2e0;
 }
 .section2-frase1-containerI, .section4-frase2-containerI, .section6-frase3-containerI{
     max-height: 100%;
     display: flex;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 .section2-frase1-containerII, .section4-frase2-containerII, .section6-frase3-containerII{
     text-align: center;
@@ -226,30 +232,57 @@ html {
 .section2-frase1-name, .section4-frase2-name, .section6-frase3-name {
     color: #24416e;
     font-weight: 600;
-    font-size: 15px ;
+    font-size: 1.5rem ;
 }
 .section2-frase1-area, .section4-frase2-area, .section6-frase3-area {
     color: #03355e;
     padding-bottom: 12px;
-    font-size: 20px;
+    font-size: 2rem;
 }
 .section2-frase1-frase, .section4-frase2-frase, .section6-frase3-frase {
     color:#034C8C;
     padding-bottom: 10px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 2rem;
     font-style: italic;
 }
-/*.section2-frase1-quotes, .section4-frase2-quotes, .section6-frase3-quotes {
-    position: absolute;
-    transform: translate(350%, -50%);
+.section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img{
+    width: 150px;
+    object-fit: contain;
+    transform: translate(15%, -40%);
 }
 
-@media screen and (max-width: 400px) {
-    .section2-frase1-quotes {
-        transform: translate(90%, -135%);
+@media screen and (max-width: 900px) {
+    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img {
+        transform: translate(0%, -40%);
     }   
-}*/
+}
+@media screen and (max-width: 826px) {
+    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img {
+        transform: translate(0%, -50%);
+    }   
+}
+@media screen and (max-width: 506px) {
+    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img {
+        transform: translate(0%, -65%);
+    }   
+}
+@media screen and (max-width: 430px) {
+    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img {
+        transform: translate(0%, -75%);
+    }   
+}
+@media screen and (max-width: 404px) {
+    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img {
+        transform: translate(0%, -85%);
+    }   
+}
+@media screen and (max-width: 350px) {
+    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img {
+        width: 100px;
+        transform: translate(0%, -140%);
+    }   
+}
 /* !--------------- Finishes Frase 1 (SECTION 2) Styling -------------- */
 
 
