@@ -1,52 +1,46 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat", "Roboto", sans-serif;
-}
-
 /* Header */
 .navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: var(--color-two);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--color-two);
 }
 
 .navbar ul li {
-  float: right;
+    float: right;
 }
 
 .navbar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  margin: 14px 8px;
-  padding-top: 6px;
-  padding-bottom: 4px;
-  text-decoration: none;
-  font-size: 14px;
-  font: var(--font);
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 14px 8px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font: var(--font);
 }
 
 .navbar .redes {
-  margin-right: 9px;
-  width: auto;
-  height: 15px;
+    margin-right: 9px;
+    width: auto;
+    height: 15px;
 }
 
-.navbar .redes:hover{
+.navbar .redes:hover {
     filter: invert(58%) sepia(98%) saturate(934%) hue-rotate(345deg) brightness(92%) contrast(84%);
 }
 
-.navbar .logo{
-  float: left;
-  margin-left: 10px;
-  margin-top: 5px;
+.navbar .logo {
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
 .navbar .options:hover {
-  color: var(--color-one);
+    color: var(--color-one);
 }
 
 .navbar .adoptar_donar {
@@ -67,16 +61,16 @@
     filter: opacity(0.8);
 }
 
-main{
-  background-image: url("/projects/caballos-en-libertad/assets/img/group62.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100vw;
-  height: 100vh;
+main {
+    background-image: url("/projects/caballos-en-libertad/assets/img/group62.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
 }
 
-.wpp{
+.wpp {
     padding: 5px 0px 20px 0px;
     color: white;
     position: fixed;
@@ -90,14 +84,14 @@ main{
     height: 60px;
 }
 
-.wpp:hover{
-    filter: brightness(1.2) ;
+.wpp:hover {
+    filter: brightness(1.2);
 }
 
-.wpp p{
+.wpp p {
     padding-top: 5px;
     font-size: 14px;
-    margin-right:20px;
+    margin-right: 20px;
     float: right;
     color: white;
     text-decoration: none;
@@ -107,7 +101,7 @@ main{
     font: var(--font);
 }
 
-.wpp img{
+.wpp img {
     margin-right: 10px;
     float: right;
     width: 40px;
@@ -115,10 +109,97 @@ main{
 }
 
 footer {
-  background-image: url("/projects/caballos-en-libertad/assets/img/footer.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100vw;
-  height: 50vh;
+    background-image: url("/projects/caballos-en-libertad/assets/img/footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 50vh;
 }
+
+
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+.pruebaRescatados {
+    background-color: gray;
+    height: 800px;
+}
+.rescatado_imageContainer {
+    background-color: #00e677;
+    width: 100vw;
+    height: 400px;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.rescatado_imageContainer .rescatado_image {
+    background-color: aqua;
+    background-image: url('https://www.yourhorse.co.uk/wp-content/uploads/sites/6/vet-lethargy-.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.rescatado_imageContainer .rescatado_image:hover {
+    filter: grayscale(50%);
+}
+.rescatado_imageContainer .rescatado_image .rescatado_Name {
+    background-color: blue;
+    color: azure;
+    margin: 0;
+    width: fit-content;
+    padding: 3px;
+}
+.rescatado_imageContainer .rescatado_image .rescatado_NameHover {
+    opacity: 0;
+    display: block;
+}
+
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+
+
+
+
+
+/* Tablet 768px */
+@media (min-width: 768px) {
+    /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+    .rescatado_imageContainer .rescatado_image {
+        width: 400px;
+        height: 400px;
+        display: grid;
+        place-items: center;
+    }
+    .rescatado_imageContainer .rescatado_image:hover .rescatado_NameHover {
+        padding: 3px;
+        width: fit-content;
+        opacity: 1;
+
+
+    }
+    .rescatado_imageContainer .rescatado_image .rescatado_Name {
+        display: none;
+    }
+    /* .rescatado_imageContainer .rescatado_image .rescatado_NameHover:hover {
+    } */
+    /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+}
+
+/* Laptop 1280px */
+@media (min-width: 1280px) {
+    .rescatado_imageContainer {
+        max-width: 1600px;
+        padding: 10px;
+    }
+    
+}
+
+/* Desktop 1920px */
+@media (min-width: 1920px) {}
