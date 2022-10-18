@@ -18,16 +18,20 @@ h1{
 }
 
 /* Tablet 768px */
-@media (min-width: 992px){
+@media (min-width: 768px){
 
 }
 
 /* Laptop 1280px */
-@media (min-width: 992px){
+@media all and (min-width: 1280px) and (max-width: 1919px){
+    
+    .navbar li a {
+        font-size: 5px;
+    }
 
 }
 
 /* Desktop 1920px */
-@media (min-width: 992px){
+@media (min-width: 1920px){
 
 }
