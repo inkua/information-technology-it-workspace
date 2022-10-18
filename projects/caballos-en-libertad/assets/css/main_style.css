@@ -120,12 +120,28 @@ footer {
 
 
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
-.pruebaRescatados {
-    background-color: gray;
-    height: 800px;
+.rescatados {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font);
+}
+.rescatado_sentence{
+    color: var(--color-two);
+    width: fit-content;
+    font-size: 1rem;
+    padding: 1.6rem 2rem 1rem 2rem;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.rescatado_textLine{
+    background-color: var(--color-two);
+    width: 15%;
+    height: 4px;
+    margin-bottom: 20px;
 }
 .rescatado_imageContainer {
-    background-color: #00e677;
     width: 100vw;
     height: 400px;
     overflow-y: scroll;
@@ -136,27 +152,30 @@ footer {
     gap: 10px;
 }
 .rescatado_imageContainer .rescatado_image {
-    background-color: aqua;
     background-image: url('https://www.yourhorse.co.uk/wp-content/uploads/sites/6/vet-lethargy-.jpg');
     background-position: center;
     background-size: cover;
-    width: 300px;
-    height: 300px;
+    width: 340px;
+    height: 340px;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    margin-bottom: 10px;
 }
 .rescatado_imageContainer .rescatado_image:hover {
     filter: grayscale(50%);
 }
 .rescatado_imageContainer .rescatado_image .rescatado_Name {
-    background-color: blue;
-    color: azure;
+    background-color: var(--color-two);
+    color: white;
     margin: 0;
     width: fit-content;
-    padding: 3px;
+    padding: 3px 15px;
 }
 .rescatado_imageContainer .rescatado_image .rescatado_NameHover {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
     opacity: 0;
     display: block;
 }
@@ -171,9 +190,26 @@ footer {
 /* Tablet 768px */
 @media (min-width: 768px) {
     /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+    .rescatado_imageContainer {
+        max-width: 1050px;
+        height: 700px;
+    }
+    .rescatado_sentence{
+        font-size: 1.5rem;
+    }
+    /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+}
+
+/* Laptop 1280px */
+@media (min-width: 1280px) {
+    /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+    .rescatado_imageContainer {
+        max-width: 1090px;
+        padding: 10px;
+    }
     .rescatado_imageContainer .rescatado_image {
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 350px;
         display: grid;
         place-items: center;
     }
@@ -181,25 +217,16 @@ footer {
         padding: 3px;
         width: fit-content;
         opacity: 1;
-
-
     }
     .rescatado_imageContainer .rescatado_image .rescatado_Name {
         display: none;
     }
-    /* .rescatado_imageContainer .rescatado_image .rescatado_NameHover:hover {
-    } */
     /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
-}
 
-/* Laptop 1280px */
-@media (min-width: 1280px) {
-    .rescatado_imageContainer {
-        max-width: 1600px;
-        padding: 10px;
-    }
-    
 }
 
 /* Desktop 1920px */
-@media (min-width: 1920px) {}
+@media (min-width: 1920px) {
+    /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+    /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+}
