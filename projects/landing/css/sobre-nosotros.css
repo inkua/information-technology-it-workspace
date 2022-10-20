@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 :root {
     /*Colors Palette*/
@@ -188,186 +188,160 @@ html {
 
 
 /* !--------------- Starts Sobre Nosotros (SECTION 1) Styling -------------- */
-
-/*
-* SECTION 1 STYLING GOES HERE
-* ASSIGNED TO: Lucía Canevaro */
-
 .section1-sobre-nosotros {
-    padding: 5% 5% 0 5%;
-    text-align: center;
+    background-color: var(--white-color);
+    width: 100%;
+    padding: 6rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .section1-sobre-nosotros .max-width {
     width: 100%;
     height: 100%;
-    display: block;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-.section1-sobre-nosotros .max-width .title {
-    height: 100px;
-    width: 100%;
+    max-width: 1200px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    color: #1C3661;
-    font-weight: 600;
-    font-size: 2.2rem;
-    flex: 0 0 auto;
-}
-.section1-containerI {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;  
-}
-.section1-containerII {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;    
-}
-.section1-containerII .section1-content {
-    padding: 3rem;
-    width: 50%;
-}
-.border-about {
-    border-top: 4px solid #33bee8;
-    width: 10%;
-    margin-bottom: 20px;
-}
-.section1-containerII .subtitle {
-    color: #034C8C;
-    font-size: 1.8rem;
-    font-weight: 400; 
-    margin-bottom: 0.5rem;
-}
-strong{
-    font-weight: bolder; 
-}
-.section1-containerII p{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-}
-.section1-containerII .section1-content1{
-    color: black;
-    margin-top: 30px;
-    margin-bottom: 1.5rem;
-    font-size: 1.8rem; 
-    font-weight: 400;
-}
-.section1-containerII .section1-content2{
-    color: #1C3661;
-    margin-top: 30px;
-    margin-bottom: 1.5rem;
-    font-size: 1.8rem; 
-    font-weight: 500;
-}
-.section1-containerII .section1-img {
-    width: 50%;
-}
-.section1-containerII .section1-img img{
-    border-radius: 0.5rem;
-    max-width: 80%;
-    height: auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    margin-left: 7rem;
-    vertical-align: middle;
-    border-style: none;
-}
-.section1-containerII .section1-content3, .section1-content4{
-    color: black;
-    margin-top: 30px;
-    margin-bottom: 1.5rem;
-    font-size: 1.8rem; 
-    font-weight: 400;
 }
 
-.section1-content3 .cursiva, .section1-content4 .cursiva{
+.section1-sobre-nosotros .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section1-sobre-nosotros .title {
+    padding: 4rem 0;
+    color: var(--dark-blue-color);
+    font-size: 4.2rem;
+    text-align: center;
+}
+
+.section1-sobre-nosotros .subcontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.section1-sobre-nosotros .subcontainer .line {
+    border-top: 5px solid var(--separator);
+    width: 53px;
+}
+
+.section1-sobre-nosotros .subcontainer .top, .bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px
+}
+
+.section1-sobre-nosotros .subcontainer .top .subtitle, .bottom .subtitle {
+    font-size: 4rem;
+    font-weight: 500;
+    color:  var(--blue-color);
+}
+
+.section1-sobre-nosotros .subcontainer .top .subtitle span, .bottom .subtitle span {
+    font-weight: bolder;
+}
+
+.section1-sobre-nosotros .subcontainer .top .description, .bottom .description {
+    font-size: 2.3rem;
+}
+
+.section1-sobre-nosotros .subcontainer .top .description span, .bottom .description span {
+    color: var(--blue-color);
+    font-weight: 500;
     font-style: italic;
-    color: #034C8C;
+}
+
+.section1-sobre-nosotros .subcontainer .top .important-description {
+    font-size: 2.5rem;
     font-weight: 500;
+    color: var(--dark-blue-color);
 }
 
-@media screen and (min-width: 1200px) {
-    .section1-containerII p{
-        text-align: left;
-    }
-    .section1-containerII .subtitle{
-        text-align: left;
-    }
-    .section1-containerII .section1-img {
-        display: block;
-    }
+.section1-sobre-nosotros .subcontainer .top .left, .bottom .left {
+    max-width: 565px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
 }
 
-@media screen and (max-width: 1200px) {
-    .section1-containerI {
-        align-items: center;   
-    }
-    .section1-containerII {
-        flex-direction: column; 
-        justify-content: space-around;   
-    }   
+.section1-sobre-nosotros .subcontainer .top .right, .bottom .right {
+    max-width: 565px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
 }
 
+.section1-sobre-nosotros .subcontainer .top .right img {
+    max-width: 530px;
+}
 /* !--------------- Finishes Sobre Nosotros (SECTION 1) Styling -------------- */
 
 
 /* !--------------- Starts Nuestros Proyectos (SECTION 2) Styling -------------- */
-.section2-nuestros-proyectos{
+.section2-nuestros-proyectos {
+    background-color: var(--blue-color);
     width: 100%;
-    height: 100%;
-    min-height: 700px;
-    background-color: #034c8c;
-    border-radius: 120px 120px 0px 0px;
-}
-  .section2-nuestros-proyectos .max-width{
-    width: 100%;
-    min-height: 680px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-  }
-  .section2-title{
-    padding: 20px;
+    padding: 7rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 120px 120px 0px 0px;
+}
+.section2-nuestros-proyectos .max-width {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section2-nuestros-proyectos .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+.section2-title{
+    padding: 0 20px;
+    text-align: center;
     color: #ffffff;
     font-size: 2.6rem;
-  }
-  .section2-nuestros-proyectos .container{
+}
+.section2-nuestros-proyectos .subcontainer{
     max-height: 1920px;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 30px;
-  }
-  .section2-nuestros-proyectos .card {
-    width: 320px;
+}
+.section2-nuestros-proyectos .card {
+    max-width: 280px;
     height: 415px;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 30px;
     text-align: center;
     padding: 50px 10px;
-  }
-  .section2-nuestros-proyectos .card h3 {
-    justify-content: center;
-    align-items: center;
-    font-size: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.section2-nuestros-proyectos .card h3 {
+    text-align: center;
+    font-size: 3rem;
     font-weight: 700;
     color: #034c8c;
-    margin: 20px;
-  }
-  .section2-nuestros-proyectos .card p {
+}
+.section2-nuestros-proyectos .card p {
     font-size: 2.2rem;
     text-align:center;
     font-weight: 400;
@@ -600,8 +574,16 @@ strong{
     }
 }
 
+@media (max-width: 1200px) {
+    .section1-sobre-nosotros {
+        padding: 6rem 3rem;
+    }
+    .section1-sobre-nosotros .subcontainer .top, .bottom {
+        justify-content: space-evenly;
+    }
+}
+
 @media (max-width: 947px) {
-    
     .menu-btn {
         display: block;
         z-index: 999;
@@ -635,9 +617,21 @@ strong{
     .navbar .menu li a:not(.ingresar-btn, .donar-btn)::before {
         top: 32px;
     }
+
+    .section2-nuestros-proyectos {
+        border-radius: 80px 80px 0px 0px;
+    }
 }
 
 @media (max-width: 539px) {
+    .section1-sobre-nosotros .subcontainer .top .right img {
+        max-width: 330px;
+    }
+
+    .section2-nuestros-proyectos {
+        border-radius: 60px 60px 0px 0px;
+    }
+
     .section7-newsletter {
         padding: 8rem 1rem;
     }

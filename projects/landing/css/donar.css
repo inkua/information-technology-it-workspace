@@ -185,3 +185,51 @@ html {
     pointer-events: auto;
 }
 /* !--------------- Finishes Navbar Styling -------------- */
+
+.section_donar_header {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/inicio/section1-unirse-bg.png") no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section_donar_header .section_donar_header_contenedor{
+    width: 500px;
+    height: auto;
+}
+
+.section_donar_header .section_donar_header_contenedor .section_donar_header_contenedor_titulo{
+    font-family: var(--ubuntu-font);
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--white-color);
+    text-align: center;
+    padding: 8px;
+}
+
+.section_donar_header .section_donar_header_contenedor .section_donar_header_contenedor_description{
+    font-family: var(--ubuntu-font);
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--white-color);
+    text-align: center;
+    padding: 10px;
+}
+
+.section_donar_header .section_donar_header_contenedor .footer{
+    color: var(--white-color);
+    font-family: var(--ubuntu-font);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.section_donar_header .section_donar_header_contenedor .footer a{
+    color: var(--white-color);
+}

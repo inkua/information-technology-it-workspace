@@ -53,7 +53,7 @@ html {
 
 /* !--------------- Starts Navbar Styling -------------- */
 .navbar {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     width: 100%;
     height: 75px;
@@ -189,11 +189,97 @@ html {
 
 /* !--------------- Starts Ser Parte (SECTION 1) Styling -------------- */
 
-/*
-* SECTION 1 STYLING GOES HERE
-* ASSIGNED TO: Débora Cuestas
-*/
+.section1-ser-parte
+{
+    width: 100%;
+    height: 30vh; 
+    font-family: var(--ubuntu-font);
+}
+.section1-ser-parte .max-width
+{
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.section1-ser-parte .title{
+    padding: 4rem 0;
+    color: var(--dark-blue-color);
+    font-size: 4.2rem;
+    text-align: center;
+}
+.section1-ser-parte .subcontainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.section1-ser-parte .max-width .part1
+{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
+.section1-ser-parte .max-width .part1 h3
+{
+    font-size: 2.188rem;
+    color: var(--blue-color);
+}
+
+.section1-ser-parte .max-width .part1 div
+{
+    background-color: var(--separator);
+    width: 4rem;
+    height: 0.4rem;
+    border-radius: 10px;
+    margin: -10px 0px 0px 0px;
+}
+
+.section1-ser-parte .max-width .part1 p
+{
+    width: 34.125rem;
+    font-size: 1.563rem;
+}
+.section1-ser-parte .max-width .part1 input
+{
+    width: 15rem;
+    height: 3.75rem;
+    border: 0;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: normal;
+    background-color: var(--dark-blue-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.section1-ser-parte .max-width .part2
+{
+    background-color: var(--dark-blue-color);
+    width: 30rem;/*  width: 40rem;*/
+    height: 28.5rem;/*height: 25rem;*/
+    border-radius: 30px;
+    color: var(--white-color);
+    font-size: 1.5rem;
+    padding: 25px;
+}
+
+.section1-ser-parte .max-width .part2 p
+{
+    font-weight: bolder;
+    font-style: italic;
+    line-height: 2rem;
+    margin-bottom: 10px;
+}
+.section1-ser-parte .max-width .part2 ul
+{
+    line-height: 25px;
+    margin: -5px 0px 0px 25px;
+}
 /* !--------------- Finishes Ser Parte (SECTION 1) Styling -------------- */
 
 
@@ -201,9 +287,87 @@ html {
 
 /*
 * SECTION 2 STYLING GOES HERE
-* ASSIGNED TO: Lucía Canevaro
-*/
+* ASSIGNED TO: Lucía Canevaro */
+.section2-frase1, .section4-frase2, .section6-frase3 {
+    display: flex;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.section2-frase1 .max-width, .section4-frase2 .max-width, .section6-frase3 .max-width {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.section2-frase1 .max-width{
+    background-color: #b9c0cc;
+}
+.section4-frase2 .max-width, .section6-frase3 .max-width{
+    background-color: #b2d2e0;
+}
+.section2-frase1-containerI, .section4-frase2-containerI, .section6-frase3-containerI{
+    max-height: 100%;
+    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.section2-frase1-containerII, .section4-frase2-containerII, .section6-frase3-containerII{
+    text-align: center;
+}
+.section2-frase1-name, .section4-frase2-name, .section6-frase3-name {
+    color: #24416e;
+    font-weight: 600;
+    font-size: 1.5rem ;
+}
+.section2-frase1-area, .section4-frase2-area, .section6-frase3-area {
+    color: #03355e;
+    padding-bottom: 12px;
+    font-size: 2rem;
+}
+.section2-frase1-frase, .section4-frase2-frase, .section6-frase3-frase {
+    color:#034C8C;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 2rem;
+    font-style: italic;
+}
+.section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img{
+    width: 150px;
+    object-fit: contain;
+    transform: translate(15%, -40%);
+}
 
+@media screen and (max-width: 900px) {
+    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img {
+        transform: translate(0%, -40%);
+    }   
+}
+@media screen and (max-width: 826px) {
+    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img {
+        transform: translate(0%, -50%);
+    }   
+}
+@media screen and (max-width: 506px) {
+    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img {
+        transform: translate(0%, -65%);
+    }   
+}
+@media screen and (max-width: 430px) {
+    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img {
+        transform: translate(0%, -75%);
+    }   
+}
+@media screen and (max-width: 404px) {
+    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img {
+        transform: translate(0%, -85%);
+    }   
+}
+@media screen and (max-width: 350px) {
+    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img {
+        width: 100px;
+        transform: translate(0%, -140%);
+    }   
+}
 /* !--------------- Finishes Frase 1 (SECTION 2) Styling -------------- */
 
 
@@ -229,10 +393,95 @@ html {
 
 /* !--------------- Starts Organizaciones (SECTION 5) Styling -------------- */
 
-/*
-* SECTION 5 STYLING GOES HERE
-* ASSIGNED TO: Mario Chavez
-*/
+.section5-organizaciones
+{
+    width: 100%;
+    height: 100vh;
+    font-family: var(--ubuntu-font);
+}
+
+.section5-organizaciones .max-width
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section5-organizaciones .max-width .part1
+{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.section5-organizaciones .max-width .part1 h3
+{
+    font-size: 2.188rem;
+    color: var(--blue-color);
+}
+
+.section5-organizaciones .max-width .part1 div
+{
+    background-color: var(--separator);
+    width: 4rem;
+    height: 0.4rem;
+    border-radius: 10px;
+    margin: -25px 0px 0px 0px;
+}
+
+.section5-organizaciones .max-width .part1 p
+{
+    width: 34.125rem;
+    font-size: 1.563rem;
+}
+
+.section5-organizaciones .max-width .part1 span
+{
+    font-size: 1.563rem;
+    color: var(--blue-color);
+    font-weight: 500;
+}
+
+.section5-organizaciones .max-width .part1 input
+{
+    width: 15rem;
+    height: 3.75rem;
+    border: 0;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: normal;
+    background-color: var(--sky-blue-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.section5-organizaciones .max-width .part2
+{
+    background-color: var(--sky-blue-color);
+    width: 30rem;
+    height: 28.5rem;
+    border-radius: 30px;
+    color: var(--white-color);
+    font-size: 1.5rem;
+}
+
+.section5-organizaciones .max-width .part2 p
+{
+    font-weight: bolder;
+    font-style: italic;
+    margin: 15px;
+}
+
+.section5-organizaciones .max-width .part2 ul
+{
+    line-height: 25px;
+    margin: -5px 0px 0px 25px;
+}
 
 /* !--------------- Finishes Organizaciones (SECTION 5) Styling -------------- */
 
@@ -336,6 +585,40 @@ html {
 }
 /* !--------------- Finishes Footer (FOOTER) Styling -------------- */
 
+@media (max-width: 947px) {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active::before {
+        content: "\f00d";
+    }
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background-color: var(--white-color);
+        text-align: center;
+        padding-top: 8rem;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active {
+        left: 0;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 2rem 0;
+        font-size: 2.5rem;
+    }
+    .navbar .menu li a:not(.ingresar-btn, .donar-btn)::before {
+        top: 32px;
+    }
+}
 
 @media (max-width: 539px) {
     .section7-newsletter {
