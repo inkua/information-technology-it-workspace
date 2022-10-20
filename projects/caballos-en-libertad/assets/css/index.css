@@ -23,11 +23,7 @@ h1{
 }
 
 /* Laptop 1280px */
-@media all and (min-width: 1280px) and (max-width: 1919px){
-    
-    .navbar li a {
-        font-size: 5px;
-    }
+@media (min-width: 768px){
 
 }
 

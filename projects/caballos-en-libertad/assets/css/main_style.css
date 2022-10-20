@@ -154,3 +154,47 @@ footer ul li a{
 .footer-caballos img{
   margin-left: 180px;
 }
+
+/* Laptop */
+@media (max-width: 1280px){
+  .navbar ul li a {
+    font-size: 12px;
+  }
+
+  .navbar .redes {
+    margin-right: 5px;
+    width: auto;
+    height: 9px;
+  }
+
+  .wpp{
+    width: 130px;
+    height: 50px;
+  }
+
+  .wpp p{
+    font-size: 12px;
+    margin-right: 10px;
+    width: 70px;
+  }
+
+  .wpp img{
+    margin-right: 5px;
+    width: 30px;
+    height: auto;
+  }
+  /* TODO: el logo es demasiado grande*/
+}
+
+/* TODO: menores resoluciones */
+
+/* tablet
+@media (max-width: 768px){
+  
+}
+
+/* mobile 
+@media (max-width: 768px){
+  
+}
+*/
