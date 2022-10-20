@@ -4,47 +4,47 @@
 
 /* Header */
 .navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: var(--color-two);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--color-two);
 }
 
 .navbar ul li {
-  float: right;
+    float: right;
 }
 
 .navbar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  margin: 14px 8px;
-  padding-top: 6px;
-  padding-bottom: 4px;
-  text-decoration: none;
-  font: var(--font);
-  font-size: 14px;
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 14px 8px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font: var(--font);
 }
 
 .navbar .redes {
-  margin-right: 9px;
-  width: auto;
-  height: 15px;
+    margin-right: 9px;
+    width: auto;
+    height: 15px;
 }
 
-.navbar .redes:hover{
+.navbar .redes:hover {
     filter: invert(58%) sepia(98%) saturate(934%) hue-rotate(345deg) brightness(92%) contrast(84%);
 }
 
-.navbar .logo{
-  float: left;
-  margin-left: 10px;
-  margin-top: 5px;
+.navbar .logo {
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
 .navbar .options:hover {
-  color: var(--color-one);
+    color: var(--color-one);
 }
 
 .navbar .adoptar_donar {
@@ -66,7 +66,7 @@
 }
 
 .nosotros{
-  background-image: url("../img/group62.png");
+  background-image: url("../img/fondo-nosotros.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -74,7 +74,7 @@
   height: 700px;
 }
 
-.wpp{
+.wpp {
     padding: 5px 0px 20px 0px;
     color: white;
     position: fixed;
@@ -88,14 +88,14 @@
     height: 60px;
 }
 
-.wpp:hover{
-    filter: brightness(1.2) ;
+.wpp:hover {
+    filter: brightness(1.2);
 }
 
-.wpp p{
+.wpp p {
     padding-top: 5px;
     font-size: 14px;
-    margin-right:20px;
+    margin-right: 20px;
     float: right;
     color: white;
     text-decoration: none;
@@ -105,7 +105,7 @@
     font: var(--font);
 }
 
-.wpp img{
+.wpp img {
     margin-right: 10px;
     float: right;
     width: 40px;
@@ -119,38 +119,153 @@ footer {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 50vh;
+  height: 400px;
 }
 
-footer div{
-  margin: 50px 0px 0px 450px;
+footer div {
+  margin: 50px 0px 0px 30%;
   font-size: 14px;
   color: #FFFFFF;
 }
 
-footer ul{
-  list-style-type: none;
-  display: inline-table;
-  padding-left: 20px;
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+.rescatados {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font);
+}
+.rescatado_sentence{
+    color: var(--color-two);
+    width: fit-content;
+    font-size: 1rem;
+    padding: 1.6rem 2rem 1rem 2rem;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.rescatado_textLine{
+    background-color: var(--color-two);
+    width: 15%;
+    height: 4px;
+    margin-bottom: 20px;
+}
+.rescatado_imageContainer {
+    width: 100vw;
+    height: 400px;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.rescatado_imageContainer .rescatado_image {
+    background-image: url('https://www.yourhorse.co.uk/wp-content/uploads/sites/6/vet-lethargy-.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 340px;
+    height: 340px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.rescatado_imageContainer .rescatado_image:hover {
+    filter: grayscale(50%);
+}
+.rescatado_imageContainer .rescatado_image .rescatado_Name {
+    background-color: var(--color-two);
+    color: white;
+    margin: 0;
+    width: fit-content;
+    padding: 3px 15px;
+}
+.rescatado_imageContainer .rescatado_image .rescatado_NameHover {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    opacity: 0;
+    display: block;
 }
 
-footer li{
-  max-width: 300px;
-  padding-bottom: 20px;
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+
+
+
+
+
+/* Tablet 768px */
+@media (min-width: 768px) {
+    /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+    .rescatado_imageContainer {
+        max-width: 1050px;
+        height: 700px;
+    }
+    .rescatado_sentence{
+        font-size: 1.5rem;
+    }
+    /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 }
 
-footer ul li a{
-  margin-right: 10px;
+/* Laptop 1280px */
+@media (min-width: 1280px) {
+    /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+    .rescatado_imageContainer {
+        max-width: 1090px;
+        padding: 10px;
+    }
+    .rescatado_imageContainer .rescatado_image {
+        width: 350px;
+        height: 350px;
+        display: grid;
+        place-items: center;
+    }
+    .rescatado_imageContainer .rescatado_image:hover .rescatado_NameHover {
+        padding: 3px;
+        width: fit-content;
+        opacity: 1;
+    }
+    .rescatado_imageContainer .rescatado_image .rescatado_Name {
+        display: none;
+    }
+    /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+
 }
 
-.footer-caballos{
-  padding-left: 100px;
+/* Desktop 1920px */
+@media (min-width: 1920px) {
+    /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+    /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 }
-
-.footer-caballos li{
-  max-width: none;
+  
 }
 
 .footer-caballos img{
+  width: 150px;
   margin-left: 180px;
+}
+
+@media all and (min-width: 768px) and (max-width: 1279px){
+
+  footer {
+    background-image: url("../img/footer-tablet.png");
+  }
+
+  footer div{
+    margin: 50px 0px 0px 10%;
+    font-size: 14px;
+    color: #FFFFFF;
+  }
+
+  footer li{
+    max-width: 300px;
+  }
+
+  .footer-caballos img{
+    margin: 0px 0px 0px 30%;
+    width: 140px;
+  }
 }
