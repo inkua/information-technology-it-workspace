@@ -1,0 +1,61 @@
+*{
+   
+    --color-one: #D98729;
+    --color-two: #00638C;
+    --color-three: #C6EAFF;
+
+    /* thin-100, light-300, regular-400, medium-500, bold-700 */
+    --font-family: 'Roboto', sans-serif;
+    
+}
+/* :root {
+    --fa-style-family-classic:  'Roboto', sans-serif;
+    --fa-font-solid: normal 900 1em/1 'Roboto', sans-serif;
+} */
+
+.voluntariado{
+    background-color: var(--color-three);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--font-family);
+  
+}
+
+.tittle{
+   /*  margin: 3rem; */
+  
+}
+
+h3{
+    color: var(--color-two);
+    padding-top: 1.5rem ;
+    
+}
+span{
+    color: var(--color-two);
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+
+
+/* Icons */
+.bi::before {
+    color: var(--color-one);
+    font-size: 2.5rem;
+    margin: 0.7rem;
+  }
+
+
+
+@media screen and (min-width: 768px){
+}
+
+
+@media screen and (min-width: 1280px) {
+}
+
+@media screen and (min-width: 1920px) {
+
+}
