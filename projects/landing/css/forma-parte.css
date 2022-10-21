@@ -53,7 +53,7 @@ html {
 
 /* !--------------- Starts Navbar Styling -------------- */
 .navbar {
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     width: 100%;
     height: 75px;
@@ -191,8 +191,8 @@ html {
 
 .section1-ser-parte
 {
+    margin-top: 75px;
     width: 100%;
-    height: 30vh; 
     font-family: var(--ubuntu-font);
 }
 .section1-ser-parte .max-width
@@ -289,8 +289,7 @@ html {
 * SECTION 2 STYLING GOES HERE
 * ASSIGNED TO: Lucía Canevaro */
 .section2-frase1, .section4-frase2, .section6-frase3 {
-    margin-top: 200px;
-    margin-bottom: 200px;
+    
     display: flex;
     justify-content: center;
 }
@@ -372,7 +371,7 @@ html {
 .section5-organizaciones
 {
     width: 100%;
-    height: 100vh;
+    
     font-family: var(--ubuntu-font);
 }
 
