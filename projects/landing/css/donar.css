@@ -53,7 +53,7 @@ html {
 
 /* !--------------- Starts Navbar Styling -------------- */
 .navbar {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     width: 100%;
     height: 75px;
@@ -186,50 +186,202 @@ html {
 }
 /* !--------------- Finishes Navbar Styling -------------- */
 
-.section_donar_header {
+
+/* !--------------- Starts Apoya (SECTION 1) Styling -------------- */
+
+/*
+* SECTION 1 STYLING GOES HERE
+* ASSIGNED TO: Andrés Campos
+*/
+
+/* !--------------- Finishes Apoya (SECTION 1) Styling -------------- */
+
+
+/* !--------------- Starts Donación (SECTION 2) Styling -------------- */
+
+/*
+* SECTION 2 STYLING GOES HERE
+* ASSIGNED TO: Andrés Campos
+*/
+
+/* !--------------- Finishes Donación (SECTION 2) Styling -------------- */
+
+
+/* !--------------- Starts Alcance (SECTION 3) Styling -------------- */
+
+/*
+* SECTION 3 STYLING GOES HERE
+* ASSIGNED TO: Erick Arias
+*/
+
+/* !--------------- Finishes Alcance (SECTION 3) Styling -------------- */
+
+
+/* !--------------- Starts Referencias (SECTION 4) Styling -------------- */
+
+/*
+* SECTION 4 STYLING GOES HERE
+* ASSIGNED TO: Lucía Canevaro
+*/
+
+/* !--------------- Finishes Referencias (SECTION 4) Styling -------------- */
+
+
+/* !--------------- Starts Seguridad (SECTION 5) Styling -------------- */
+
+/*
+* SECTION 5 STYLING GOES HERE
+* ASSIGNED TO: Débora Cuestas
+*/
+
+/* !--------------- Finishes Seguridad (SECTION 5) Styling -------------- */
+
+
+/* !--------------- Starts Footer (FOOTER) Styling -------------- */
+.footer {
+    min-width: 100%;
+    padding: 5rem 1rem;
+    background-color: #F6F9FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    border: 1px solid #D9D9D9;
+}
+
+.footer .max-width {
     width: 100%;
-    height: 100vh;
-    background: url("../img/inicio/section1-unirse-bg.png") no-repeat;
-    background-position: center;
+    height: 100%;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-.section_donar_header .section_donar_header_contenedor{
-    width: 500px;
-    height: auto;
-}
-
-.section_donar_header .section_donar_header_contenedor .section_donar_header_contenedor_titulo{
-    font-family: var(--ubuntu-font);
-    font-size: 4rem;
-    font-weight: 700;
-    color: var(--white-color);
-    text-align: center;
-    padding: 8px;
-}
-
-.section_donar_header .section_donar_header_contenedor .section_donar_header_contenedor_description{
-    font-family: var(--ubuntu-font);
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: var(--white-color);
-    text-align: center;
-    padding: 10px;
-}
-
-.section_donar_header .section_donar_header_contenedor .footer{
-    color: var(--white-color);
-    font-family: var(--ubuntu-font);
-    padding: 10px;
+.footer .container {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.section_donar_header .section_donar_header_contenedor .footer a{
-    color: var(--white-color);
+.footer .container .subcontainer {
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer .container .subcontainer .box-group {
+    width: 240px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .container .subcontainer .box-group .title {
+    padding: 0.8rem;
+}
+
+.footer .container .subcontainer .box-group .sections-list li {
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.footer .container .subcontainer .box-group .sections-list li a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer .container .subcontainer .box-group .sections-list li a:hover {
+    color: var(--sky-blue-color);
+    transform: scaleX();
+}
+
+.footer .container .subcontainer .box-group .sections-list li i {
+    padding: 0.3rem;
+}
+
+.footer .container .subcontainer .box-group .contact-description {
+    padding: 0.7rem;
+}
+
+.footer .container .subcontainer .box-group .social-media-icons {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5rem;
+}
+
+.footer .container .subcontainer .box-group .social-media-icons a {
+    padding: 1rem 1rem;
+    color: #8094b7;
+    transition: 400ms;
+}
+.footer .container .subcontainer .box-group .social-media-icons a:hover {
+    color: var(--dark-blue-color);
+    transform: scale(1.5);
+}
+/* !--------------- Finishes Footer (FOOTER) Styling -------------- */
+
+
+@media (max-width: 947px) {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active::before {
+        content: "\f00d";
+    }
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background-color: var(--white-color);
+        text-align: center;
+        padding-top: 8rem;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active {
+        left: 0;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 2rem 0;
+        font-size: 2.5rem;
+    }
+    .navbar .menu li a:not(.ingresar-btn, .donar-btn)::before {
+        top: 32px;
+    }
+}
+
+@media (max-width: 539px) {
+    .footer {
+        padding: 5rem 1rem;
+    }
+    .footer .container .subcontainer {
+        width: 550px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .footer .container .subcontainer .box-group {
+        width: 250px;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .container .subcontainer .box-group .logo-inkua {
+        margin: 0 auto;
+    }
 }
