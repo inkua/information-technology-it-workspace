@@ -289,21 +289,27 @@ html {
 * SECTION 2 STYLING GOES HERE
 * ASSIGNED TO: Lucía Canevaro */
 .section2-frase1, .section4-frase2, .section6-frase3 {
-    display: flex;
     margin-top: 200px;
     margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
 }
 .section2-frase1 .max-width, .section4-frase2 .max-width, .section6-frase3 .max-width {
+    position: relative;
     display: flex;
     width: 100%;
+    max-width: 1200px;
     justify-content: center;
     align-items: center;
 }
-.section2-frase1 .max-width{
-    background-color: #b9c0cc;
+.section2-frase1 {
+    background-color: rgba(28, 54, 97, 0.3);
 }
-.section4-frase2 .max-width, .section6-frase3 .max-width{
-    background-color: #b2d2e0;
+.section4-frase2 {
+    background-color: rgba(3, 76, 140, 0.3)
+}
+.section6-frase3 {
+    background-color: rgba(69, 148, 217, 0.3);
 }
 .section2-frase1-containerI, .section4-frase2-containerI, .section6-frase3-containerI{
     max-height: 100%;
@@ -334,39 +340,9 @@ html {
 .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img{
     width: 150px;
     object-fit: contain;
-    transform: translate(15%, -40%);
-}
-
-@media screen and (max-width: 900px) {
-    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img {
-        transform: translate(0%, -40%);
-    }   
-}
-@media screen and (max-width: 826px) {
-    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img {
-        transform: translate(0%, -50%);
-    }   
-}
-@media screen and (max-width: 506px) {
-    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img {
-        transform: translate(0%, -65%);
-    }   
-}
-@media screen and (max-width: 430px) {
-    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img {
-        transform: translate(0%, -75%);
-    }   
-}
-@media screen and (max-width: 404px) {
-    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img {
-        transform: translate(0%, -85%);
-    }   
-}
-@media screen and (max-width: 350px) {
-    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img {
-        width: 100px;
-        transform: translate(0%, -140%);
-    }   
+    position: absolute;
+    top: -45px;
+    right: 0;
 }
 /* !--------------- Finishes Frase 1 (SECTION 2) Styling -------------- */
 
@@ -618,9 +594,22 @@ html {
     .navbar .menu li a:not(.ingresar-btn, .donar-btn)::before {
         top: 32px;
     }
+    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img{
+        width: 135px;
+        object-fit: contain;
+        position: absolute;
+        top: -45px;
+        right: 15px;
+    }
 }
 
 @media (max-width: 539px) {
+    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img{
+        width: 115px;
+        object-fit: contain;
+        position: absolute;
+        top: -42px;
+    }
     .section7-newsletter {
         padding: 8rem 1rem;
     }
@@ -648,5 +637,19 @@ html {
     }
     .footer .container .subcontainer .box-group .logo-inkua {
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 430px) {
+    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img{
+        width: 90px;
+        top: -30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img{
+        width: 80px;
+        top: -27px;
     }
 }
