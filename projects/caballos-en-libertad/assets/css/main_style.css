@@ -3,7 +3,7 @@
 }
 
 /* Header */
-.navbar ul {
+.nabar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -11,11 +11,11 @@
     background-color: var(--color-two);
 }
 
-.navbar ul li {
+.nabar ul li {
     float: right;
 }
 
-.navbar li a {
+.nabar li a {
     display: block;
     color: white;
     text-align: center;
@@ -27,27 +27,27 @@
     font: var(--font);
 }
 
-.navbar .redes {
+.nabar .redes {
     margin-right: 9px;
     width: auto;
     height: 15px;
 }
 
-.navbar .redes:hover {
+.nabar .redes:hover {
     filter: invert(58%) sepia(98%) saturate(934%) hue-rotate(345deg) brightness(92%) contrast(84%);
 }
 
-.navbar .logo {
+.nabar .logo {
     float: left;
     margin-left: 10px;
     margin-top: 5px;
 }
 
-.navbar .options:hover {
+.nabar .options:hover {
     color: var(--color-one);
 }
 
-.navbar .adoptar_donar {
+.nabar .adoptar_donar {
     margin: 12px 8px;
     border: 2px solid var(--color-one);
     padding: 5px 20px;
@@ -122,10 +122,27 @@ footer {
   height: 400px;
 }
 
+
 footer div {
-  margin: 50px 0px 0px 30%;
   font-size: 14px;
   color: #FFFFFF;
+}
+
+.footer-inkua{
+    margin: 50px 0px 0px 0px;
+}
+
+.redes{
+    margin-right: 10px;
+}
+
+.footer-caballos img{
+    width: 70px;
+    margin-top: 40px;
+}
+
+.footer-caballos p{
+    margin-top: 50px;
 }
 
 
@@ -242,29 +259,11 @@ footer div {
 }
 
 
-.footer-caballos img{
-  width: 150px;
-  margin-left: 180px;
-}
+
 
 @media all and (min-width: 768px) and (max-width: 1279px){
 
-  footer {
-    background-image: url("../img/footer-tablet.png");
-  }
-
-  footer div{
-    margin: 50px 0px 0px 10%;
-    font-size: 14px;
-    color: #FFFFFF;
-  }
-
-  footer li{
-    max-width: 300px;
-  }
-
-  .footer-caballos img{
-    margin: 0px 0px 0px 30%;
-    width: 140px;
-  }
+    footer {
+        background-image: url("../img/footer-tablet.png");
+    }
 }
