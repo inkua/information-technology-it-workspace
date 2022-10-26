@@ -208,12 +208,53 @@ html {
 
 
 /* !--------------- Starts Alcance (SECTION 3) Styling -------------- */
+.section3-alcance {
+    min-width: 100%;
+    min-height: 700px;
+    padding: 1rem 2rem;
+    background: url("../img/donar/section3-alcance-bg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/*
-* SECTION 3 STYLING GOES HERE
-* ASSIGNED TO: Erick Arias
-*/
+.section3-alcance .max-width {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
 
+.section3-alcance .container {
+    padding: 50px 0;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.section3-alcance .container .top .line {
+    border-top: 5px solid var(--separator);
+    width: 53px;
+}
+.section3-alcance .container .top .title {
+    padding: 1.5rem 0;
+    color: var(--white-color);
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+.section3-alcance .container .bottom .description {
+    padding: 1.5rem 0;
+    max-width: 420px;
+    color: var(--white-color);
+    font-size: 1.5rem;
+    font-style: italic;
+}
 /* !--------------- Finishes Alcance (SECTION 3) Styling -------------- */
 
 
@@ -326,6 +367,17 @@ html {
 }
 /* !--------------- Finishes Footer (FOOTER) Styling -------------- */
 
+@media (min-width: 1800px) {
+    .section3-alcance {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/donar/section3-alcance-bg.png");
+    }
+}
+
+@media (max-width: 1150px) {
+    .section3-alcance {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/donar/section3-alcance-bg.png");
+    }
+}
 
 @media (max-width: 947px) {
     .menu-btn {
@@ -363,6 +415,13 @@ html {
 }
 
 @media (max-width: 539px) {
+    .section3-alcance {
+        min-height: 500px;
+    }
+
+    .section3-alcance .container {
+        height: 500px;
+    }
     .footer {
         padding: 5rem 1rem;
     }
