@@ -123,12 +123,12 @@ body{
 }
 
 .form_contenedor .form_grupo .icon{
-color: var(--black-color);
-text-decoration: none;
-font-size: 12px;
-position: absolute;
-top: 17px;
-left: 232px;
+  color: var(--black-color);
+  text-decoration: none;
+  font-size: 12px;
+  position: absolute;
+  top: 17px;
+  left: 232px;
 }
 
 .form_contenedor .form_grupo .form_input{
@@ -197,6 +197,18 @@ left: 232px;
   font-size: 1.2rem;
   font-weight: 400;
   color: var(--white-color);
+}
+
+@media (max-width: 385px) {
+  .titulo{
+    padding: 0px 10px;
+  }
+  .form{
+    margin: 10px auto;
+  }
+  .container {
+    padding: 20px 0;
+  }
 }
 
 
