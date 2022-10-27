@@ -164,6 +164,65 @@ footer div {
   font-size: 0.6rem;
   padding-right: 45%;
 }
+
+.nosotros_second {
+  background-color: var(--color-three);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.nosotros_second .row i {
+  color: var(--color-two);
+  font-size: 40px;
+}
+.nosotros_second .row h4 {
+  color: var(--color-two);
+  font-size: 40px;
+  font-weight: 500;
+}
+.nosotros_second .row p {
+  color: var(--color-two);
+  font-size: 25px;
+  font-weight: 500;
+}
+.nosotros_second p {
+  color: var(--color-two);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px;
+}
+.sobre_nosotros {
+  background-image: url(https://www.ociocaballo.com/wp-content/uploads/2020/04/ancce_037.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 400px;
+  filter: grayscale(0.7);
+}
+.sobre_nosotros .sobre {
+  text-align: center;
+  color: white;
+  max-height: 110px;
+  width: 100%;
+}
+.sobre_nosotros .sobre h3 {
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  padding-top: 12px;
+}
+.sobre_nosotros .sobre span {
+  text-align: center;
+  color: white;
+}
+.sobre_nosotros .sobre p {
+  padding: 15px;
+  font-size: 10px;
+}
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
@@ -248,6 +307,25 @@ footer div {
     font-size: 0.9rem;
     padding-right: 50%;
   }
+  .nosotros_second p {
+    color: var(--color-two);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
+  }
+  .sobre_nosotros {
+    height: 500px;
+  }
+  .sobre_nosotros .sobre h3 {
+    padding-top: 15px;
+    font-size: 30px;
+  }
+  .sobre_nosotros .sobre p {
+    padding: 30px;
+    margin: 0px 30px;
+    font-size: 15px;
+  }
+
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
   .rescatado_imageContainer {
@@ -279,6 +357,44 @@ footer div {
     font-size: 1.4rem;
     font-weight: 500;
     padding-right: 64%;
+  }
+  .nosotros_second {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .nosotros_second .row .icon {
+    background-color: tomato;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nosotros_second .row p {
+    color: var(--color-two);
+    font-size: 25px;
+    font-weight: 500;
+    display: block;
+  }
+
+  .nosotros_second p {
+    font-size: 30px;
+    width: 36%;
+    text-align: left;
+    margin-right: 25px;
+  }
+  .sobre_nosotros {
+    height: 600px;
+  }
+  .sobre_nosotros .sobre h3 {
+    padding-top: 25px;
+    font-size: 40px;
+  }
+  .sobre_nosotros .sobre span {
+    font-size: 35px;
+  }
+  .sobre_nosotros .sobre p {
+    padding: 30px;
+    margin: 0px 45px;
+    font-size: 20px;
   }
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
