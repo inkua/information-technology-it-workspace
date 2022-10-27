@@ -55,13 +55,13 @@ body{
   background-color: var(--dark-blue-color);
 }
 
-.contenedor{
+.container {
   width: 100%;
-  max-width: 2000px;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .titulo{
@@ -86,7 +86,6 @@ body{
   flex-direction: column;
   margin: 20px auto;
   border-radius: 10px;
-
 }
 
 .form .form_titulo{
@@ -105,10 +104,10 @@ body{
 
 .form .form_parafo{
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-family: var(--ubuntu-font);
   font-weight: 300;
-  padding: 10px;
+  padding: 10px 10px 0px 10px;
 }
 
 .form_contenedor{
@@ -129,13 +128,11 @@ text-decoration: none;
 font-size: 12px;
 position: absolute;
 top: 17px;
-left: 180px;
+left: 232px;
 }
 
-
-
 .form_contenedor .form_grupo .form_input{
-  width: 200px;
+  width: 250px;
   border-radius: 5px;
   padding: 10px;
   border: 1px solid var(--light-gray-color);
@@ -150,7 +147,9 @@ left: 180px;
 
 .form_contenedor .checkbox{
   padding: 10px;
-
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .form_contenedor .checkbox label{
@@ -159,14 +158,15 @@ left: 180px;
   font-weight: 300;
 }
 
-.form_contenedor .footer{
+.form_contenedor .bottom{
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 10px;
   gap: 20px;
 }
 
-.form_contenedor .footer .btn{
+.form_contenedor .bottom .btn{
   width: 100px;
   height: 35px;
   background-color: var(--dark-blue-color);
@@ -176,12 +176,12 @@ left: 180px;
   font-weight: 400;
   padding: 10px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
-.form_contenedor .footer a{
+.form_contenedor .bottom a{
   color: var(--sky-blue-color);
   text-decoration: none;
-  margin-top: 20px;
 }
 
 .idioma{
@@ -190,7 +190,7 @@ left: 180px;
   justify-content: center;
   align-items: center;
   gap: 5px;
-  padding: 10px;
+  
 }
 
 .idioma h3{
