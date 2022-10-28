@@ -9,6 +9,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
+        <!-- Bootstrap v4.0 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
         <!--  eventos CSS file -->
         <link rel="stylesheet" href="./assets/css/eventos.css">
     </head>
@@ -45,15 +51,80 @@
                     <p>Charlá con nosotros</p>
                     <a href="#"><img src="./assets/img/whatsapp.png" alt="whatsapp"></a>
                 </div>
-                <div>
-                    <img src="./assets/img/fotoeventos.png">
+
+                <div class="portada-ev">
+                    <div class="texto-ev-izq">
+                        <h2>Eventos Benéficos</h2>
+                        <p>Conocé todas las actividades y concursos <br> que nos ayudan a seguir creciendo</p>
+                    </div>
                 </div>
+
+                <div class="proximos-eventos">
+                    <h3>Próximos eventos</h3>
+                    <span>━━━</span>
+                    <!--Carrousel-->
+                    <div class="container-fluid py-2">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <a class="h1" href="#carouselExampleControls" role="button" data-slide="prev">
+                                    <span>&lt;</span>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="row align-items-center">
+                                                <div class="col-md py-2">
+                                                    <img class="d-block img-fluid" src="./assets/img/tattoo.png" alt="First slide">
+                                                </div>
+                                                <div class="col-md py-2">
+                                                    <p><h4>FERIA DEL TATOO SOLIDARIO</h4></p>
+                                                    <p>Organizado por @feriadetattoosolidario</p>
+                                                    <p>Tatuadores amigos invitados</p>
+                                                    <p><strong>¿CUÁNDO?</strong></p>
+                                                    <p>Domingo 17 de abril</p>
+                                                    <p><strong>¿DÓNDE?</strong></p>
+                                                    <p>57 esquina 15 y 16 - La Plata </p>
+                                                    <button class="btn btn-primary">Mas info</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row align-items-center">
+                                                <div class="col">
+                                                    <img class="d-block img-fluid" src="./assets/img/feria.png" alt="2nd slide">
+                                                </div>
+                                                <div class="col">
+                                                    <p><h4>FERIA PLAZA MALVINAS</h4></p>
+                                                    <p>Feria de diferentes stands y recibimiento de los insumos básicos y medicamentos.</p>
+                                                    <p><strong>¿CUÁNDO?</strong></p>
+                                                    <p>Domingo 8 de mayo</p>
+                                                    <p><strong>¿DÓNDE?</strong></p>
+                                                    <p>En calle 19, entre 50 y 53.La Plata.</p>
+                                                    <p>Desde 10 a 19 hs</p>
+                                                    <button class="btn btn-primary">Mas info</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <a class="h1" href="#carouselExampleControls" role="button" data-slide="next">
+                                    <span>&gt;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin carrousel-->
+                </div>
+
+                
             </section>
         </main>
 
-        <footer>
-
-        </footer>
+      
 
     </body>
 </html>

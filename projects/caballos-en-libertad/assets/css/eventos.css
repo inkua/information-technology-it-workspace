@@ -1,2 +1,55 @@
 @import "index.css";
 @import "main_style.css";
+
+html{
+    font-size: 16px;
+}
+
+.portada-ev{
+    background-image: url('../img/fotoeventos.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 46rem;
+    text-align: left;
+    color: white;
+}
+
+.texto-ev-izq{
+    position: absolute;
+    bottom: -4rem;
+    left: 1.5rem;
+}
+
+.proximos-eventos{
+    background-color: var(--color-three);
+    text-align: center;
+}
+
+.proximos-eventos h3{
+    color: var(--color-two);
+    padding-top: 3rem;
+}
+
+.proximos-eventos h4{
+    color: var(--color-two);
+}
+
+span{
+    color: var(--color-two);
+    margin-bottom: 2rem;
+}
+
+.btn-primary{
+    background-color: var(--color-one);
+    color: white;
+    border: 2px solid var(--color-one);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-one);
+    color: white;
+    border: 2px solid var(--color-one);
+    filter: opacity(0.8);
+
+}
