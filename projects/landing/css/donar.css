@@ -215,7 +215,7 @@ html {
     padding: 10px;
     color: var(--white-color);
     font-weight: 700;
-    max-width: 700px;
+    max-width: auto;
     text-align: center;
 }
 
@@ -225,7 +225,7 @@ html {
     padding: 10px;
     color: var(--white-color);
     font-weight: 300;
-    max-width: 700px;
+    max-width: auto;
     text-align: center;
 
 }
