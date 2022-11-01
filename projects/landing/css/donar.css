@@ -189,10 +189,66 @@ html {
 
 /* !--------------- Starts Apoya (SECTION 1) Styling -------------- */
 
-/*
-* SECTION 1 STYLING GOES HERE
-* ASSIGNED TO: Andrés Campos
-*/
+.section1-apoya{
+    min-width: 100%;
+    min-height: 700px;
+    background: url("../img/donar/section1-apoya-bg.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1-apoya .max-width{
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1-apoya .max-width .titulo{
+    font-family: var(--ubuntu-font);
+    font-size: 50px;
+    padding: 10px;
+    color: var(--white-color);
+    font-weight: 700;
+    max-width: 700px;
+    text-align: center;
+}
+
+.section1-apoya .max-width .parrafo{
+    font-family: var(--ubuntu-font);
+    font-size: 25px;
+    padding: 10px;
+    color: var(--white-color);
+    font-weight: 300;
+    max-width: 700px;
+    text-align: center;
+
+}
+
+.section1-apoya .max-width .footer_parrafo{
+    font-family: var(--ubuntu-font);
+    font-size: 20px;
+    padding: 10px;
+    color: var(--white-color);
+    font-weight: 300; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.section1-apoya .max-width .footer_parrafo .link{
+    color: var(--white-color);
+}
+
+
+
 
 /* !--------------- Finishes Apoya (SECTION 1) Styling -------------- */
 
