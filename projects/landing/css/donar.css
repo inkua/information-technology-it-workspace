@@ -194,6 +194,7 @@ html {
     min-height: 700px;
     background: url("../img/donar/section1-apoya-bg.png");
     background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
