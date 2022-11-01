@@ -194,6 +194,7 @@ html {
     min-height: 700px;
     background: url("../img/donar/section1-apoya-bg.png");
     background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -215,7 +216,7 @@ html {
     padding: 10px;
     color: var(--white-color);
     font-weight: 700;
-    max-width: auto;
+    max-width: 700px;
     text-align: center;
 }
 
@@ -225,7 +226,7 @@ html {
     padding: 10px;
     color: var(--white-color);
     font-weight: 300;
-    max-width: auto;
+    max-width: 700px;
     text-align: center;
 
 }
