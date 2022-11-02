@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Caballos en libertad</title>
 
         <!-- Google Fonts-->
@@ -9,12 +10,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
-        <!-- Bootstrap v4.0 -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        
+        <!-- Bootstrap v5.1 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+       
         <!--  eventos CSS file -->
         <link rel="stylesheet" href="./assets/css/eventos.css">
     </head>
@@ -62,69 +61,105 @@
                 <div class="proximos-eventos">
                     <h3>Próximos eventos</h3>
                     <span>━━━</span>
-                    <!--Carrousel-->
-                    <div class="container-fluid py-2">
-                        <div class="row align-items-center">
-                            <div class="col-auto">
-                                <a class="h1" href="#carouselExampleControls" role="button" data-slide="prev">
-                                    <span>&lt;</span>
-                                </a>
-                            </div>
+                    <!--nuevo carrousel-->
+                    <div class="container-fluid">
+                        <div class="row">
                             <div class="col">
-                                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <div class="row align-items-center">
-                                                <div class="col-md py-2">
-                                                    <img class="d-block img-fluid" src="./assets/img/tattoo.png" alt="First slide">
+                                <div class="col">
+                                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="row align-items-center">
+                                                    <div class="col-md py-2">
+                                                        <img src="./assets/img/tattoo.png" class="d-block img-fluid" alt="first_slide">
+                                                    </div>
+                                                    <div class="col-md py-2">
+                                                        <p><h4>FERIA DEL TATOO SOLIDARIO</h4></p>
+                                                        <p>Organizado por @feriadetattoosolidario</p>
+                                                        <p>Tatuadores amigos invitados</p>
+                                                        <p><strong>¿CUÁNDO?</strong></p>
+                                                        <p>Domingo 17 de abril</p>
+                                                        <p><strong>¿DÓNDE?</strong></p>
+                                                        <p>57 esquina 15 y 16 - La Plata </p>
+                                                        <p>Desde 10 a 19 hs</p>
+                                                        <button class="btn btn-primary">Mas info</button>
+                                                    </div>
                                                 </div>
-                                                <div class="col-md py-2">
-                                                    <p><h4>FERIA DEL TATOO SOLIDARIO</h4></p>
-                                                    <p>Organizado por @feriadetattoosolidario</p>
-                                                    <p>Tatuadores amigos invitados</p>
-                                                    <p><strong>¿CUÁNDO?</strong></p>
-                                                    <p>Domingo 17 de abril</p>
-                                                    <p><strong>¿DÓNDE?</strong></p>
-                                                    <p>57 esquina 15 y 16 - La Plata </p>
-                                                    <button class="btn btn-primary">Mas info</button>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row align-items-center">
+                                                    <div class="col-md py-2">
+                                                        <img src="./assets/img/feria.png" class="d-block img-fluid" alt="second_slide">
+                                                    </div>
+                                                    <div class="col-md py-2">
+                                                        <p><h4>FERIA PLAZA MALVINAS</h4></p>
+                                                        <p>Feria de diferentes stands y recibimiento de los insumos básicos <br> y medicamentos.</p>
+                                                        <p><strong>¿CUÁNDO?</strong></p>
+                                                        <p>Domingo 8 de mayo</p>
+                                                        <p><strong>¿DÓNDE?</strong></p>
+                                                        <p>En calle 19, entre 50 y 53.La Plata.</p>
+                                                        <p>Desde 10 a 19 hs</p>
+                                                        <button class="btn btn-primary">Mas info</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="carousel-item">
-                                            <div class="row align-items-center">
-                                                <div class="col">
-                                                    <img class="d-block img-fluid" src="./assets/img/feria.png" alt="2nd slide">
-                                                </div>
-                                                <div class="col">
-                                                    <p><h4>FERIA PLAZA MALVINAS</h4></p>
-                                                    <p>Feria de diferentes stands y recibimiento de los insumos básicos y medicamentos.</p>
-                                                    <p><strong>¿CUÁNDO?</strong></p>
-                                                    <p>Domingo 8 de mayo</p>
-                                                    <p><strong>¿DÓNDE?</strong></p>
-                                                    <p>En calle 19, entre 50 y 53.La Plata.</p>
-                                                    <p>Desde 10 a 19 hs</p>
-                                                    <button class="btn btn-primary">Mas info</button>
-                                                </div>
-                                            </div>
-                                        </div>
+                                       
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                          </button>
+                                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-auto">
-                                <a class="h1" href="#carouselExampleControls" role="button" data-slide="next">
-                                    <span>&gt;</span>
-                                </a>
+                        </div>
+                    </div>
+                    <!--fin nuevo carrousel-->
+
+                </div>
+
+                <footer>
+                    <div class="footer-inkua">
+                        <div class="container-md">
+                            <div class="row">
+                                    <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-2 col-xl-4 offset-xl-2 col-xxl-3 offset-xxl-3">
+                                        <div class="footer-redes">
+                                            <p>¡Si te gustaría saber más podés visitar nuestras redes sociales!</p>
+                                            <a href="#"><img class="redes" src="./assets/img/twitter.png" alt="twitter"></a>
+                                            <a href="#"><img class="redes" src="./assets/img/instagram.png" alt="instagram"></a>
+                                            <a href="#"><img class="redes" src="./assets/img/twitter.png" alt="wpp"></a>
+                                            <a href="#"><img class="redes" src="./assets/img/face.png" alt="facebook"></a>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                                        <div class="footer-menciones"></div>
+                                            <p>El diseño y desarrollo de este sitio web fue donado por la fundación inkuA.</p>
+                                            <p>Diseñadores: Cristian Hernández, Candela Sanó, Fernanda Suarez, Camila Lange.</p>
+                                        </div>
+                                    </div>
                             </div>
                         </div>
                     </div>
-                    <!--fin carrousel-->
-                </div>
-
+                    <div class="footer-caballos">
+                        <div class="container text-center">
+                            <div class="col-sm-12 col-md-12"></div>
+                                <img src="./assets/img/logo-footer.png"  alt="logo">
+                                <p>2022 - Ⓡ CABALLOS EN LIBERTAD | Todos los derechos reservados</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
                 
             </section>
         </main>
 
       
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     </body>
 </html>
