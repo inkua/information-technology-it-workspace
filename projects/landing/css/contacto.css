@@ -189,11 +189,154 @@ html {
 
 /* !--------------- Starts CONTACT FORM Styling -------------- */
 
-/*
-* CONTACT FORM STYLING GOES HERE
-* ASSIGNED TO: Mario Chávez
-*/
+.contact-form
+{
+    background-image: url(/img/contacto/fondo-web\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--ubuntu-font);
+    font-size: 1.6rem;
+    width: 100%;
+    height: 100vh;
+}
 
+.contact-form .max-width
+{
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-form .max-width h1
+{
+    color: var(--white-color);
+    font-size: 3em;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.contact-form .max-width form
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 8em;
+}
+
+.contact-form .max-width form .block
+{
+    grid-column: 1 / 3;
+}
+
+.contact-form .max-width form div
+{
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form .max-width form input,
+.contact-form .max-width form select,
+.contact-form .max-width form textarea,
+.contact-form .max-width form .recatcha p
+{
+    width: 100%;
+    padding: 0.7em;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.contact-form .max-width form .check
+{
+    color: var(--white-color);
+}
+
+.contact-form .max-width form .check input
+{
+    width: 2rem;
+    height: 2rem;
+    padding: none;
+    margin: 0 1rem 0 0;
+}
+
+.contact-form .max-width form .check label
+{
+    line-height: 1rem;
+}
+
+.contact-form .max-width form .recatcha p
+{
+    background-color: var(--light-gray-color);
+}
+
+.contact-form .max-width form button
+{
+    width: 15rem;
+    height: 5rem;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--white-color);
+    color: var(--blue-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--white-color);
+    cursor: pointer;
+    padding: 0.5em;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.contact-form .max-width form button:hover
+{
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    transition: background-color 0.5s ease-out;
+    transition: color 0.5s ease-out;
+}
+
+@media (max-width: 720px) 
+{
+    .contact-form .max-width h1
+    {
+        font-size: 1.5em;
+        padding: 1.5em 0;
+    }
+
+    .contact-form .max-width form
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1em 4em;
+    }
+
+    .contact-form .max-width form div
+    {
+        grid-column: 1 / 3;
+        padding: 0.4em;
+    }
+
+    .contact-form .max-width form input,
+    .contact-form .max-width form select,
+    .contact-form .max-width form textarea,
+    .contact-form .max-width form .recatcha p
+    {
+        padding: 0.5em;
+    }
+
+    .contact-form .max-width form .check input
+    {
+        width: 1.5rem;
+        height: 1.5rem;
+        padding: none;
+        margin: 0 0.5rem 0 0;
+    }
+
+    .contact-form .max-width form .check label
+    {
+        line-height: 0.5rem;
+        font-size: 1.5rem;
+    }
+}
 /* !--------------- Finishes CONTACT FORM Styling -------------- */
 
 
