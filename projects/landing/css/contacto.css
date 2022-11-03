@@ -191,7 +191,7 @@ html {
 
 .contact-form
 {
-    background-image: url(/img/contacto/fondo-web\ 1.png);
+    background-image: url("../img/contacto/fondo-web.png");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: var(--ubuntu-font);
@@ -237,7 +237,7 @@ html {
 .contact-form .max-width form input,
 .contact-form .max-width form select,
 .contact-form .max-width form textarea,
-.contact-form .max-width form .recatcha p
+.contact-form .max-width form .recaptcha p
 {
     width: 100%;
     padding: 0.7em;
@@ -264,7 +264,7 @@ html {
     line-height: 1rem;
 }
 
-.contact-form .max-width form .recatcha p
+.contact-form .max-width form .recaptcha p
 {
     background-color: var(--light-gray-color);
 }
