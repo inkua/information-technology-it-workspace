@@ -389,7 +389,7 @@ html {
     width: 120px;
     object-fit: contain;
     position: absolute;
-    top: -45px;
+    top: -65px;
     /*ver cómo centrarlo en el div class="section4-picture"*/
     left: 15rem;
 }
