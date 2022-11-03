@@ -375,6 +375,7 @@ html {
 }
 .section4-card1 p, .section4-card2 p, .section4-card3 p{
     color:#034C8C;
+    margin-top: 100px;
     padding-bottom: 10px;
     font-weight: 500;
     font-size: 1.5rem;
@@ -382,9 +383,53 @@ html {
     padding: 0.5rem;
 }
 .section4-card1 img, .section4-card2 img, .section4-card3 img{
-    top: -45%;
+    width: 120px;
+    object-fit: contain;
+    position: absolute;
+    top: -45px;
+    left: 6.5em;
 }
 
+/*@media screen and (max-width:850px) {
+    .section4-card1 img, .section4-card2 img, .section4-card3 img{
+        left: 5.5em;
+    }   
+}
+@media screen and (max-width:760px) {
+    .section4-card1 img, .section4-card2 img, .section4-card3 img{
+        left: 5em;
+    }   
+}
+@media screen and (max-width:720px) {
+    .section4-card1 img, .section4-card2 img, .section4-card3 img{
+        left: 4.5em;
+    }   
+}
+@media screen and (max-width:680px) {
+    .section4-card1 img, .section4-card2 img, .section4-card3 img{
+        left: 4em;
+    }   
+}
+@media screen and (max-width:640px) {
+    .section4-card1 img, .section4-card2 img, .section4-card3 img{
+        left: 3.5em;
+    }   
+}
+@media screen and (max-width:620px) {
+    .section4-card1 img, .section4-card2 img, .section4-card3 img{
+        left: 3em;
+    }   
+}
+@media screen and (max-width:580px) {
+    .section4-card1 img, .section4-card2 img, .section4-card3 img{
+        left: 2.5em;
+    }   
+}
+@media screen and (max-width:560px) {
+    .section4-card1 img, .section4-card2 img, .section4-card3 img{
+        left: 2em;
+    }   
+}*/
 /* !--------------- Finishes Referencias (SECTION 4) Styling -------------- */
 
 
