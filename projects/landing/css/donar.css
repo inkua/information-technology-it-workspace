@@ -321,6 +321,69 @@ html {
 * SECTION 4 STYLING GOES HERE
 * ASSIGNED TO: Lucía Canevaro
 */
+.section4-referencias {
+    min-width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4-referencias .max-width {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.section4-referencias .max-width .section4-container{
+    display: flex;
+    text-align: center;
+    position: relative;
+    justify-content: space-between;
+    color: #000;
+}
+.section4-cardcontainer {
+    flex-wrap: wrap;
+    max-width: 30%;
+    margin-bottom: 5%;
+}
+.section4-card1, .section4-card2, .section4-card3 {
+    position: relative;
+    display: block;
+    min-width: 100%;
+    height: 100%;
+    /*word-wrap: break-word;*/
+    border: rgb(233, 231, 231) 2px solid;
+    border-radius: 1.75rem;
+} 
+.section4-card1 h1, .section4-card2 h1, .section4-card3 h1{
+    color: #345d9b;
+    padding-top: 12px;
+    padding-bottom: 5px;
+    font-weight: 600;
+    font-size: 2rem ;
+    padding: 0.5rem;
+}
+.section4-card1 h2, .section4-card2 h2, .section4-card3 h2{
+    color: #345d9b;
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+.section4-card1 p, .section4-card2 p, .section4-card3 p{
+    color:#034C8C;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-style: italic;
+    padding: 0.5rem;
+}
+.section4-card1 img, .section4-card2 img, .section4-card3 img{
+    top: -45%;
+}
 
 /* !--------------- Finishes Referencias (SECTION 4) Styling -------------- */
 
