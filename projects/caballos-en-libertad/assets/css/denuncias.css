@@ -41,6 +41,10 @@ hr {
 
 }
 
+.denunciasIcon {
+    margin-top: 21px;
+}
+
 .contenedor i {
     color: var(--color-one);
     font-size: 75px;
@@ -107,6 +111,11 @@ hr {
 
     }
     
+    .denunciasIcon {
+        width: 75px;
+        margin-top: 21px;
+    }
+
     .contenedor i {
         color: var(--color-one);
         font-size: 75px;
@@ -176,6 +185,11 @@ hr {
     .contenedor div:nth-child(odd) {
         margin-right: 64px;
     }
+
+    .denunciasIcon {
+        width: auto;
+        height: 45px;
+    }
     
     .contenedor i {
         color: var(--color-one);
@@ -243,6 +257,11 @@ hr {
     
     .contenedor div:nth-child(odd) {
         margin-right: 64px;
+    }
+
+    .denunciasIcon {
+        width: 45px;
+        height: 45px;
     }
     
     .contenedor i {
