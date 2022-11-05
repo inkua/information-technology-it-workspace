@@ -404,7 +404,7 @@ html {
 .section5-seguridad {
     background-color: var(--white-color);
     width: 100%;
-    padding: 1rem 2rem;
+    padding-bottom: 3rem;
     display: flex;
     justify-content: space-evenly;
 }
@@ -420,7 +420,7 @@ html {
 
 .section5-seguridad .container {
     width: 100%;
-    padding: 50px 0;
+    padding: 5rem 0;
     display: flex;
     align-items: baseline;
     justify-content: space-evenly;
