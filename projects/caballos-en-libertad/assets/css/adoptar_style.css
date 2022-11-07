@@ -66,6 +66,10 @@
         font-weight: 700;
     }
 
+    hr {
+        height: 0;
+    }
+
     .adoptar-contenido-info {
         display: flex;
         flex-direction: column;
