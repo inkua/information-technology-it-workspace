@@ -1,0 +1,94 @@
+@import "index.css";
+@import "main_style.css";
+
+html{
+    font-size: 16px;
+}
+
+.portada-ev{
+    background-image: url('../img/fotoeventos.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+.texto-ev-izq{
+    color: white;
+    margin: 0 0 3rem 3rem;
+}
+
+.proximos-eventos{
+    background-color: var(--color-three);
+    text-align: center;
+}
+
+.proximos-eventos h3{
+    color: var(--color-two);
+    padding-top: 3rem;
+}
+
+.proximos-eventos h4{
+    color: var(--color-two);
+}
+
+span{
+    color: var(--color-two);
+    margin-bottom: 2rem;
+}
+
+.btn-primary{
+    background-color: var(--color-one);
+    color: white;
+    border: 2px solid var(--color-one);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-one);
+    color: white;
+    border: 2px solid var(--color-one);
+    filter: opacity(0.8);
+
+}
+
+.col{
+    margin-bottom: 3rem;
+}
+
+img.d-block.img-fluid {
+    margin: auto;
+}
+
+@media only screen and (max-width: 480px){
+    .portada-ev{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .texto-ev-izq{
+        margin: 2rem;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .portada-ev{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        justify-content: left;
+        align-items: flex-end;
+    }
+    .texto-ev-izq{
+        margin: 15rem 0 1rem 2rem;
+    }
+   
+
+}

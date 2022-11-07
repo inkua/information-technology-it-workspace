@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;800&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -8,6 +8,7 @@
     --color-one: #D98729;
     --color-two: #00638C;
     --color-three: #C6EAFF;
+    --color-four: #E4F3FB;
 
     /* thin-100, light-300, regular-400, medium-500, bold-700 */
     --font: 'Roboto', sans-serif;
@@ -18,16 +19,16 @@ h1{
 }
 
 /* Tablet 768px */
-@media (min-width: 992px){
+@media (min-width: 768px) {
 
 }
 
 /* Laptop 1280px */
-@media (min-width: 992px){
+@media (min-width: 1280px) {
 
 }
 
 /* Desktop 1920px */
-@media (min-width: 992px){
+@media (min-width: 1920px) {
 
 }
