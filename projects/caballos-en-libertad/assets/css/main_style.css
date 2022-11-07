@@ -153,17 +153,20 @@ footer div {
   flex-direction: column-reverse;
   overflow: auto;
 }
+
 .nosotros_principal_titulo {
   height: 70%;
   color: white;
   margin-bottom: 30px;
   max-height: 110px;
 }
+
 .nosotros_principal_titulo h1 {
   font-size: 1.2rem;
   padding-right: 45%;
   font-weight: 700;
 }
+
 .nosotros_principal_titulo p {
   font-size: 0.6rem;
   padding-right: 45%;
@@ -181,11 +184,13 @@ footer div {
   color: var(--color-two);
   font-size: 40px;
 }
+
 .nosotros_second .row h4 {
   color: var(--color-two);
   font-size: 40px;
   font-weight: 500;
 }
+
 .nosotros_second .row p {
   color: var(--color-two);
   font-size: 25px;
@@ -193,12 +198,14 @@ footer div {
   justify-content: center;
   text-align: center;
 }
+
 .nosotros_second p {
   color: var(--color-two);
   font-size: 20px;
   font-weight: 500;
   padding: 15px;
 }
+
 .sobre_nosotros {
   background-image: url(https://www.ociocaballo.com/wp-content/uploads/2020/04/ancce_037.jpg);
   background-position: center;
@@ -208,12 +215,14 @@ footer div {
   height: 400px;
   filter: grayscale(0.7);
 }
+
 .sobre_nosotros .sobre {
   text-align: center;
   color: white;
   max-height: 110px;
   width: 100%;
 }
+
 .sobre_nosotros .sobre h3 {
   text-align: center;
   color: white;
@@ -221,10 +230,12 @@ footer div {
   font-size: 20px;
   padding-top: 12px;
 }
+
 .sobre_nosotros .sobre span {
   text-align: center;
   color: white;
 }
+
 .sobre_nosotros .sobre .row p {
   padding: 15px;
   font-size: 0.6rem;
@@ -240,6 +251,7 @@ footer div {
   align-items: center;
   font-family: var(--font);
 }
+
 .rescatado_sentence {
   color: var(--color-two);
   width: fit-content;
@@ -248,12 +260,14 @@ footer div {
   text-align: center;
   margin-bottom: 0px;
 }
+
 .rescatado_textLine {
   background-color: var(--color-two);
   width: 15%;
   height: 4px;
   margin-bottom: 20px;
 }
+
 .rescatado_imageContainer {
   width: 100vw;
   height: 400px;
@@ -264,6 +278,7 @@ footer div {
   justify-content: center;
   gap: 10px;
 }
+
 .rescatado_imageContainer .rescatado_image {
   background-image: url("https://www.yourhorse.co.uk/wp-content/uploads/sites/6/vet-lethargy-.jpg");
   background-position: center;
@@ -275,9 +290,11 @@ footer div {
   align-items: center;
   margin-bottom: 10px;
 }
+
 .rescatado_imageContainer .rescatado_image:hover {
   filter: grayscale(50%);
 }
+
 .rescatado_imageContainer .rescatado_image .rescatado_Name {
   background-color: var(--color-two);
   color: white;
@@ -285,6 +302,7 @@ footer div {
   width: fit-content;
   padding: 3px 15px;
 }
+
 .rescatado_imageContainer .rescatado_image .rescatado_NameHover {
   text-transform: uppercase;
   color: white;
@@ -292,54 +310,60 @@ footer div {
   opacity: 0;
   display: block;
 }
-
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 
 /* Tablet 768px */
 @media (min-width: 768px) {
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
-
   .nosotros_principal {
     padding: 70px;
     height: 400px;
   }
+
   .nosotros_principal .nosotros_principal_titulo {
     margin-bottom: 50px;
     max-height: 150px;
   }
+
   .nosotros_principal .nosotros_principal_titulo h1 {
     font-size: 2rem;
   }
+
   .nosotros_principal .nosotros_principal_titulo p {
     font-size: 0.9rem;
     padding-right: 50%;
   }
+
   .nosotros_second p {
     color: var(--color-two);
     font-size: 20px;
     font-weight: 500;
     padding: 20px;
   }
+
   .sobre_nosotros {
     height: 500px;
   }
+
   .sobre_nosotros .sobre h3 {
     padding-top: 15px;
     font-size: 30px;
   }
+
   .sobre_nosotros .sobre .row p {
     padding: 30px;
     margin: 0px 30px;
     font-size: 1rem;
     max-height: 700px;
   }
-
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
   .rescatado_imageContainer {
     max-width: 1050px;
     height: 700px;
   }
+
   .rescatado_sentence {
     font-size: 1.5rem;
   }
@@ -354,33 +378,40 @@ footer div {
     height: 700px;
     padding: 120px;
   }
+
   .nosotros_principal .nosotros_principal_titulo {
     max-height: 170px;
     margin-bottom: 100px;
   }
+
   .nosotros_principal .nosotros_principal_titulo h1 {
     font-size: 3.7rem;
   }
+
   .nosotros_principal .nosotros_principal_titulo p {
     font-size: 1.4rem;
     font-weight: 500;
     padding-right: 64%;
   }
+
   .nosotros_second {
     display: inline-flex;
     flex-direction: row-reverse;
     height: 300px;
     padding-left: 40px;
   }
+
   .nosotros_second .row {
     display: flex;
     width: 60%;
     justify-content: center;
     text-align: center;
   }
+
   .nosotros_second .row i {
     font-size: 25px;
   }
+
   .nosotros_second .row .icon {
     flex-direction: row;
     width: 20%;
@@ -398,6 +429,7 @@ footer div {
     align-items: center;
     padding: 0%;
   }
+
   .nosotros_second .row .icon h4 {
     font-size: 40px;
     font-weight: 500;
@@ -411,38 +443,46 @@ footer div {
     padding-left: 55px;
     margin: 0;
   }
+
   .sobre_nosotros {
     height: 600px;
   }
+
   .sobre_nosotros .sobre h3 {
     padding-top: 25px;
     font-size: 40px;
   }
+
   .sobre_nosotros .sobre span {
     font-size: 35px;
   }
+
   .sobre_nosotros .sobre .row p {
     padding: 30px;
     margin: 0px 45px;
     font-size: 1.3rem;
   }
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
   .rescatado_imageContainer {
     max-width: 1090px;
     padding: 10px;
   }
+
   .rescatado_imageContainer .rescatado_image {
     width: 350px;
     height: 350px;
     display: grid;
     place-items: center;
   }
+
   .rescatado_imageContainer .rescatado_image:hover .rescatado_NameHover {
     padding: 3px;
     width: fit-content;
     opacity: 1;
   }
+
   .rescatado_imageContainer .rescatado_image .rescatado_Name {
     display: none;
   }
@@ -452,8 +492,8 @@ footer div {
 /* Desktop 1920px */
 @media (min-width: 1920px) {
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
-
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 }
