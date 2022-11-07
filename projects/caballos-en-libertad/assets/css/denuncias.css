@@ -17,6 +17,7 @@ h2 {
 
 hr {
     border: solid 2px var(--color-two);
+    background-color: var(--color-two);
     width: 127px;
     margin-left: auto;
     margin-right: auto;
@@ -27,37 +28,259 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .contenedor div {
     text-align: center;
     background-color: white;
     border-radius: 10px;
-    width: 472px;
-    height: 264px;
-    margin-bottom: 58px;
+    width: 90%;
+    height: 350px;
+    margin-bottom: 48px;
+
 }
 
-.contenedor div:nth-child(odd) {
-    margin-right: 64px;
+.denunciasIcon {
+    margin-top: 21px;
 }
 
 .contenedor i {
     color: var(--color-one);
-    font-size: 45px;
+    font-size: 75px;
     margin-top: 21px;
 }
 
 .contenedor h3 {
-    font-size: 24px;
+    font-size: 34px;
     color: var(--color-two);
 }
 
 .contenedor div h3 {
-    margin: 20px;
+    margin: 10px;
+    margin-top: 35px;
 }
 
 .contenedor div p {
     padding: 24px 24px 0 24px;
-    font-size: 16px;
+    font-size: 24px;
+}
+
+/* Tablet 768px */
+@media (min-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat", "Roboto", sans-serif;
+      }
+      
+    body {
+        background-color: var(--color-four);
+    }
+    
+    h2 {
+        color: var(--color-two);
+        text-align: center;
+        font-size: 40px;
+        margin: 115px 0 24px 0;
+    }
+    
+    hr {
+        border: solid 2px var(--color-two);
+        background-color: var(--color-two);
+        width: 127px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 98px;
+    }
+    
+    .contenedor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .contenedor div {
+        text-align: center;
+        background-color: white;
+        border-radius: 10px;
+        width: 90%;
+        height: 350px;
+        margin-bottom: 48px;
+
+    }
+    
+    .denunciasIcon {
+        width: 75px;
+        margin-top: 21px;
+    }
+
+    .contenedor i {
+        color: var(--color-one);
+        font-size: 75px;
+        margin-top: 21px;
+    }
+    
+    .contenedor h3 {
+        font-size: 34px;
+        color: var(--color-two);
+    }
+    
+    .contenedor div h3 {
+        margin: 10px;
+        margin-top: 35px;
+    }
+    
+    .contenedor div p {
+        padding: 24px 24px 0 24px;
+        font-size: 24px;
+    }
+}
+
+/* Laptop 1280px */
+@media (min-width: 1280px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat", "Roboto", sans-serif;
+      }
+      
+    body {
+        background-color: var(--color-four);
+    }
+    
+    h2 {
+        color: var(--color-two);
+        text-align: center;
+        font-size: 40px;
+        margin: 115px 0 24px 0;
+    }
+    
+    hr {
+        border: solid 2px var(--color-two);
+        background-color: var(--color-two);
+        width: 127px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 98px;
+    }
+    
+    .contenedor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    .contenedor div {
+        text-align: center;
+        background-color: white;
+        border-radius: 10px;
+        width: 472px;
+        height: 264px;
+        margin-bottom: 58px;
+    }
+    
+    .contenedor div:nth-child(odd) {
+        margin-right: 64px;
+    }
+
+    .denunciasIcon {
+        width: auto;
+        height: 45px;
+    }
+    
+    .contenedor i {
+        color: var(--color-one);
+        font-size: 45px;
+        margin-top: 21px;
+    }
+    
+    .contenedor h3 {
+        font-size: 24px;
+        color: var(--color-two);
+    }
+    
+    .contenedor div h3 {
+        margin: 20px;
+    }
+    
+    .contenedor div p {
+        padding: 24px 24px 0 24px;
+        font-size: 16px;
+    }
+}
+
+/* Desktop 1920px */
+@media (min-width: 1920px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat", "Roboto", sans-serif;
+      }
+      
+    body {
+        background-color: var(--color-four);
+    }
+    
+    h2 {
+        color: var(--color-two);
+        text-align: center;
+        font-size: 40px;
+        margin: 115px 0 24px 0;
+    }
+    
+    hr {
+        border: solid 2px var(--color-two);
+        background-color: var(--color-two);
+        width: 127px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 98px;
+    }
+    
+    .contenedor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contenedor div {
+        text-align: center;
+        background-color: white;
+        border-radius: 10px;
+        width: 472px;
+        height: 264px;
+        margin-bottom: 58px;
+    }
+    
+    .contenedor div:nth-child(odd) {
+        margin-right: 64px;
+    }
+
+    .denunciasIcon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .contenedor i {
+        color: var(--color-one);
+        font-size: 45px;
+        margin-top: 21px;
+    }
+    
+    .contenedor h3 {
+        font-size: 24px;
+        color: var(--color-two);
+    }
+    
+    .contenedor div h3 {
+        margin: 20px;
+    }
+    
+    .contenedor div p {
+        padding: 24px 24px 0 24px;
+        font-size: 16px;
+    }
 }
