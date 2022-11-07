@@ -13,7 +13,7 @@
     --font: "Montserrat", "Roboto", sans-serif;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 0px) {  /* Mobile */
     body {
         font-family: var(--font);
     }
@@ -72,7 +72,7 @@
         justify-content: center;
         background-color: var(--color-four);
         border-radius: 10px;
-        margin: 10px 20px;
+        margin: 30px 50px;
         padding: 30px 20px;
     }
 
@@ -133,7 +133,14 @@
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 768px){  /* Tablet */
+    .adoptar-contenido-info {
+        margin: 30px 100px;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {  /* Laptop */
     .adoptar-portada h1 {
         font-size: 36px;
         margin-left: 40px;
@@ -175,7 +182,7 @@
     }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1920px) {  /* Desktop */
     .adoptar-contenido-titulo {
         font-size: 24px;
     }
