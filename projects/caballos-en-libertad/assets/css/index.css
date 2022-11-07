@@ -1,34 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;800&display=swap');
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: 0;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
 
-    --color-one: #D98729;
-    --color-two: #00638C;
-    --color-three: #C6EAFF;
-    --color-four: #E4F3FB;
+  --color-one: #d98729;
+  --color-two: #00638c;
+  --color-three: #c6eaff;
+  --color-four: #e4f3fb;
 
-    /* thin-100, light-300, regular-400, medium-500, bold-700 */
-    --font: 'Roboto', sans-serif;
+  /* thin-100, light-300, regular-400, medium-500, bold-700 */
+  --font: "Roboto", sans-serif;
 }
-h1{
-    font-family: var(--font);
-    background-color: var(--color-one);
+h1 {
+  font-family: var(--font);
 }
 
 /* Tablet 768px */
 @media (min-width: 768px) {
-
 }
 
 /* Laptop 1280px */
 @media (min-width: 1280px) {
-
 }
 
 /* Desktop 1920px */
 @media (min-width: 1920px) {
-
 }

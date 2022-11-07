@@ -4,116 +4,108 @@
 
 /* Header */
 .nabar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: var(--color-two);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--color-two);
 }
 
 .nabar ul li {
-    float: right;
+  float: right;
 }
 
 .nabar li a {
-    display: block;
-    color: white;
-    text-align: center;
-    margin: 14px 8px;
-    padding-top: 6px;
-    padding-bottom: 4px;
-    text-decoration: none;
-    font-size: 14px;
-    font: var(--font);
+  display: block;
+  color: white;
+  text-align: center;
+  margin: 14px 8px;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  font: var(--font);
 }
 
 .nabar .redes {
-    margin-right: 9px;
-    width: auto;
-    height: 15px;
+  margin-right: 9px;
+  width: auto;
+  height: 15px;
 }
 
 .nabar .redes:hover {
-    filter: invert(58%) sepia(98%) saturate(934%) hue-rotate(345deg) brightness(92%) contrast(84%);
+  filter: invert(58%) sepia(98%) saturate(934%) hue-rotate(345deg)
+    brightness(92%) contrast(84%);
 }
 
 .nabar .logo {
-    float: left;
-    margin-left: 10px;
-    margin-top: 5px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 
 .nabar .options:hover {
-    color: var(--color-one);
+  color: var(--color-one);
 }
 
 .nabar .adoptar_donar {
-    margin: 12px 8px;
-    border: 2px solid var(--color-one);
-    padding: 5px 20px;
-    border-radius: 5px;
+  margin: 12px 8px;
+  border: 2px solid var(--color-one);
+  padding: 5px 20px;
+  border-radius: 5px;
 }
 
 .adoptar_donar.donar {
-    background-color: var(--color-one);
-    color: white;
+  background-color: var(--color-one);
+  color: white;
 }
 
 .adoptar_donar:hover {
-    background-color: var(--color-one);
-    color: white;
-    filter: opacity(0.8);
-}
-
-.nosotros{
-  background-image: url("../img/fondo-nosotros.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 700px;
+  background-color: var(--color-one);
+  color: white;
+  filter: opacity(0.8);
 }
 
 .wpp {
-    padding: 5px 0px 20px 0px;
-    color: white;
-    position: fixed;
-    text-decoration: none;
-    background-color: #00e677;
-    border: 2px solid #00e677;
-    border-radius: 50px;
-    bottom: 30px;
-    right: 30px;
-    width: 200px;
-    height: 60px;
+  padding: 5px 0px 20px 0px;
+  color: white;
+  position: fixed;
+  text-decoration: none;
+  background-color: #00e677;
+  border: 2px solid #00e677;
+  border-radius: 50px;
+  bottom: 30px;
+  right: 30px;
+  width: 200px;
+  height: 60px;
 }
 
 .wpp:hover {
-    filter: brightness(1.2);
+  filter: brightness(1.2);
 }
 
 .wpp p {
-    padding-top: 5px;
-    font-size: 14px;
-    margin-right: 20px;
-    float: right;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    width: 100px;
-    font-weight: bold;
-    font: var(--font);
+  padding-top: 5px;
+  font-size: 14px;
+  margin-right: 20px;
+  float: right;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  width: 100px;
+  font-weight: bold;
+  font: var(--font);
 }
 
 .wpp img {
-    margin-right: 10px;
-    float: right;
-    width: 40px;
-    height: auto;
+  margin-right: 10px;
+  float: right;
+  width: 40px;
+  height: auto;
 }
 
 footer {
-  float:right;
+  float: right;
   background-image: url("../img/footer.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -122,148 +114,352 @@ footer {
   height: 400px;
 }
 
-
 footer div {
   font-size: 14px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.footer-inkua{
-    margin: 50px 0px 0px 0px;
+.footer-inkua {
+  margin: 50px 0px 0px 0px;
 }
 
-.redes{
-    margin-right: 10px;
+.redes {
+  margin-right: 10px;
 }
 
-.footer-caballos img{
-    width: 70px;
-    margin-top: 40px;
+.footer-caballos img {
+  width: 70px;
+  margin-top: 40px;
 }
 
-.footer-caballos p{
-    margin-top: 50px;
+.footer-caballos p {
+  margin-top: 50px;
 }
 
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+.nosotros {
+  background-color: var(--color-three);
+}
+
+.nosotros_principal {
+  background-image: url(../img/fondo-nosotros.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 240px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: auto;
+}
+.nosotros_principal_titulo {
+  height: 70%;
+  color: white;
+  margin-bottom: 30px;
+  max-height: 110px;
+}
+.nosotros_principal_titulo h1 {
+  font-size: 1.2rem;
+  padding-right: 45%;
+  font-weight: 700;
+}
+.nosotros_principal_titulo p {
+  font-size: 0.6rem;
+  padding-right: 45%;
+}
+
+.nosotros_second {
+  background-color: var(--color-three);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.nosotros_second .row i {
+  color: var(--color-two);
+  font-size: 40px;
+}
+.nosotros_second .row h4 {
+  color: var(--color-two);
+  font-size: 40px;
+  font-weight: 500;
+}
+.nosotros_second .row p {
+  color: var(--color-two);
+  font-size: 25px;
+  font-weight: 500;
+  justify-content: center;
+  text-align: center;
+}
+.nosotros_second p {
+  color: var(--color-two);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px;
+}
+.sobre_nosotros {
+  background-image: url(https://www.ociocaballo.com/wp-content/uploads/2020/04/ancce_037.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 400px;
+  filter: grayscale(0.7);
+}
+.sobre_nosotros .sobre {
+  text-align: center;
+  color: white;
+  max-height: 110px;
+  width: 100%;
+}
+.sobre_nosotros .sobre h3 {
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  padding-top: 12px;
+}
+.sobre_nosotros .sobre span {
+  text-align: center;
+  color: white;
+}
+.sobre_nosotros .sobre .row p {
+  padding: 15px;
+  font-size: 0.6rem;
+  overflow: hidden;
+}
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 .rescatados {
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: var(--font);
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font);
 }
-.rescatado_sentence{
-    color: var(--color-two);
-    width: fit-content;
-    font-size: 1rem;
-    padding: 1.6rem 2rem 1rem 2rem;
-    text-align: center;
-    margin-bottom: 0px;
+.rescatado_sentence {
+  color: var(--color-two);
+  width: fit-content;
+  font-size: 1rem;
+  padding: 1.6rem 2rem 1rem 2rem;
+  text-align: center;
+  margin-bottom: 0px;
 }
-.rescatado_textLine{
-    background-color: var(--color-two);
-    width: 15%;
-    height: 4px;
-    margin-bottom: 20px;
+.rescatado_textLine {
+  background-color: var(--color-two);
+  width: 15%;
+  height: 4px;
+  margin-bottom: 20px;
 }
 .rescatado_imageContainer {
-    width: 100vw;
-    height: 400px;
-    overflow-y: scroll;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+  width: 100vw;
+  height: 400px;
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 .rescatado_imageContainer .rescatado_image {
-    background-image: url('https://www.yourhorse.co.uk/wp-content/uploads/sites/6/vet-lethargy-.jpg');
-    background-position: center;
-    background-size: cover;
-    width: 340px;
-    height: 340px;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    margin-bottom: 10px;
+  background-image: url("https://www.yourhorse.co.uk/wp-content/uploads/sites/6/vet-lethargy-.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 340px;
+  height: 340px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-bottom: 10px;
 }
 .rescatado_imageContainer .rescatado_image:hover {
-    filter: grayscale(50%);
+  filter: grayscale(50%);
 }
 .rescatado_imageContainer .rescatado_image .rescatado_Name {
-    background-color: var(--color-two);
-    color: white;
-    margin: 0;
-    width: fit-content;
-    padding: 3px 15px;
+  background-color: var(--color-two);
+  color: white;
+  margin: 0;
+  width: fit-content;
+  padding: 3px 15px;
 }
 .rescatado_imageContainer .rescatado_image .rescatado_NameHover {
-    text-transform: uppercase;
-    color: white;
-    font-weight: 700;
-    opacity: 0;
-    display: block;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  opacity: 0;
+  display: block;
 }
-
 
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 
-
-
-
-
 /* Tablet 768px */
 @media (min-width: 768px) {
-    /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
-    .rescatado_imageContainer {
-        max-width: 1050px;
-        height: 700px;
-    }
-    .rescatado_sentence{
-        font-size: 1.5rem;
-    }
-    /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+  /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+
+  .nosotros_principal {
+    padding: 70px;
+    height: 400px;
+  }
+  .nosotros_principal .nosotros_principal_titulo {
+    margin-bottom: 50px;
+    max-height: 150px;
+  }
+  .nosotros_principal .nosotros_principal_titulo h1 {
+    font-size: 2rem;
+  }
+  .nosotros_principal .nosotros_principal_titulo p {
+    font-size: 0.9rem;
+    padding-right: 50%;
+  }
+  .nosotros_second p {
+    color: var(--color-two);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
+  }
+  .sobre_nosotros {
+    height: 500px;
+  }
+  .sobre_nosotros .sobre h3 {
+    padding-top: 15px;
+    font-size: 30px;
+  }
+  .sobre_nosotros .sobre .row p {
+    padding: 30px;
+    margin: 0px 30px;
+    font-size: 1rem;
+    max-height: 700px;
+  }
+
+  /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+  /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+  .rescatado_imageContainer {
+    max-width: 1050px;
+    height: 700px;
+  }
+  .rescatado_sentence {
+    font-size: 1.5rem;
+  }
+  /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 }
 
 /* Laptop 1280px */
 @media (min-width: 1280px) {
-    /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
-    .rescatado_imageContainer {
-        max-width: 1090px;
-        padding: 10px;
-    }
-    .rescatado_imageContainer .rescatado_image {
-        width: 350px;
-        height: 350px;
-        display: grid;
-        place-items: center;
-    }
-    .rescatado_imageContainer .rescatado_image:hover .rescatado_NameHover {
-        padding: 3px;
-        width: fit-content;
-        opacity: 1;
-    }
-    .rescatado_imageContainer .rescatado_image .rescatado_Name {
-        display: none;
-    }
-    /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+  /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+  .nosotros_principal {
+    width: 100%;
+    height: 700px;
+    padding: 120px;
+  }
+  .nosotros_principal .nosotros_principal_titulo {
+    max-height: 170px;
+    margin-bottom: 100px;
+  }
+  .nosotros_principal .nosotros_principal_titulo h1 {
+    font-size: 3.7rem;
+  }
+  .nosotros_principal .nosotros_principal_titulo p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding-right: 64%;
+  }
+  .nosotros_second {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    height: 300px;
+    padding-left: 40px;
+  }
+  .nosotros_second .row {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    text-align: center;
+  }
+  .nosotros_second .row i {
+    font-size: 25px;
+  }
+  .nosotros_second .row .icon {
+    flex-direction: row;
+    width: 20%;
+    height: 150px;
+    justify-content: center;
+    text-align: center;
+  }
 
+  .nosotros_second .row .icon .p-icon {
+    color: var(--color-two);
+    font-size: 15px;
+    font-weight: 500;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+  }
+  .nosotros_second .row .icon h4 {
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  .nosotros_second .p-nosotros-second {
+    font-size: 22px;
+    font-weight: 500;
+    width: 30%;
+    text-align: left;
+    padding-left: 55px;
+    margin: 0;
+  }
+  .sobre_nosotros {
+    height: 600px;
+  }
+  .sobre_nosotros .sobre h3 {
+    padding-top: 25px;
+    font-size: 40px;
+  }
+  .sobre_nosotros .sobre span {
+    font-size: 35px;
+  }
+  .sobre_nosotros .sobre .row p {
+    padding: 30px;
+    margin: 0px 45px;
+    font-size: 1.3rem;
+  }
+  /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+  /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+  .rescatado_imageContainer {
+    max-width: 1090px;
+    padding: 10px;
+  }
+  .rescatado_imageContainer .rescatado_image {
+    width: 350px;
+    height: 350px;
+    display: grid;
+    place-items: center;
+  }
+  .rescatado_imageContainer .rescatado_image:hover .rescatado_NameHover {
+    padding: 3px;
+    width: fit-content;
+    opacity: 1;
+  }
+  .rescatado_imageContainer .rescatado_image .rescatado_Name {
+    display: none;
+  }
+  /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 }
 
 /* Desktop 1920px */
 @media (min-width: 1920px) {
-    /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
-    /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+  /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+
+  /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+  /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+  /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 }
 
-
-
-
-@media all and (min-width: 768px) and (max-width: 1279px){
-
-    footer {
-        background-image: url("../img/footer-tablet.png");
-    }
+@media all and (min-width: 768px) and (max-width: 1279px) {
+  footer {
+    background-image: url("../img/footer-tablet.png");
+  }
 }
