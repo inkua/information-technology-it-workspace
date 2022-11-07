@@ -137,6 +137,9 @@ footer div {
 }
 
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+.nosotros {
+  background-color: var(--color-three);
+}
 
 .nosotros_principal {
   background-image: url(../img/fondo-nosotros.png);
@@ -148,6 +151,7 @@ footer div {
   padding: 35px;
   display: flex;
   flex-direction: column-reverse;
+  overflow: auto;
 }
 .nosotros_principal_titulo {
   height: 70%;
@@ -186,6 +190,8 @@ footer div {
   color: var(--color-two);
   font-size: 25px;
   font-weight: 500;
+  justify-content: center;
+  text-align: center;
 }
 .nosotros_second p {
   color: var(--color-two);
@@ -219,9 +225,10 @@ footer div {
   text-align: center;
   color: white;
 }
-.sobre_nosotros .sobre p {
+.sobre_nosotros .sobre .row p {
   padding: 15px;
-  font-size: 10px;
+  font-size: 0.6rem;
+  overflow: hidden;
 }
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 
@@ -320,10 +327,11 @@ footer div {
     padding-top: 15px;
     font-size: 30px;
   }
-  .sobre_nosotros .sobre p {
+  .sobre_nosotros .sobre .row p {
     padding: 30px;
     margin: 0px 30px;
-    font-size: 15px;
+    font-size: 1rem;
+    max-height: 700px;
   }
 
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
@@ -359,27 +367,49 @@ footer div {
     padding-right: 64%;
   }
   .nosotros_second {
-    display: flex;
+    display: inline-flex;
     flex-direction: row-reverse;
+    height: 300px;
+    padding-left: 40px;
+  }
+  .nosotros_second .row {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    text-align: center;
+  }
+  .nosotros_second .row i {
+    font-size: 25px;
   }
   .nosotros_second .row .icon {
-    background-color: tomato;
     flex-direction: row;
-    align-items: center;
+    width: 20%;
+    height: 150px;
+    justify-content: center;
+    text-align: center;
   }
 
-  .nosotros_second .row p {
+  .nosotros_second .row .icon .p-icon {
     color: var(--color-two);
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 500;
     display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+  }
+  .nosotros_second .row .icon h4 {
+    font-size: 40px;
+    font-weight: 500;
   }
 
-  .nosotros_second p {
-    font-size: 30px;
-    width: 36%;
+  .nosotros_second .p-nosotros-second {
+    font-size: 22px;
+    font-weight: 500;
+    width: 30%;
     text-align: left;
-    margin-right: 25px;
+    padding-left: 55px;
+    margin: 0;
   }
   .sobre_nosotros {
     height: 600px;
@@ -391,10 +421,10 @@ footer div {
   .sobre_nosotros .sobre span {
     font-size: 35px;
   }
-  .sobre_nosotros .sobre p {
+  .sobre_nosotros .sobre .row p {
     padding: 30px;
     margin: 0px 45px;
-    font-size: 20px;
+    font-size: 1.3rem;
   }
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
