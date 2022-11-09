@@ -22,6 +22,7 @@ hr {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 98px;
+    opacity: 1;
 }
 
 .contenedor {
@@ -31,6 +32,10 @@ hr {
     flex-direction: column;
 }
 
+body div:nth-child(odd) {
+    margin-bottom: 50px;
+}
+
 .contenedor div {
     text-align: center;
     background-color: white;
@@ -38,7 +43,6 @@ hr {
     width: 90%;
     height: 350px;
     margin-bottom: 48px;
-
 }
 
 .denunciasIcon {
@@ -53,6 +57,7 @@ hr {
 
 .contenedor h3 {
     font-size: 34px;
+    font-weight: bold;
     color: var(--color-two);
 }
 
@@ -64,6 +69,7 @@ hr {
 .contenedor div p {
     padding: 24px 24px 0 24px;
     font-size: 24px;
+    line-height: normal;
 }
 
 /* Tablet 768px */
@@ -83,6 +89,7 @@ hr {
         text-align: center;
         font-size: 40px;
         margin: 115px 0 24px 0;
+        font-weight: bold;
     }
     
     hr {
@@ -92,6 +99,7 @@ hr {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 98px;
+        opacity: 1;
     }
     
     .contenedor {
@@ -99,6 +107,10 @@ hr {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+    }
+
+    body div:nth-child(odd) {
+        margin-bottom: 50px;
     }
     
     .contenedor div {
@@ -108,7 +120,6 @@ hr {
         width: 90%;
         height: 350px;
         margin-bottom: 48px;
-
     }
     
     .denunciasIcon {
@@ -124,6 +135,7 @@ hr {
     
     .contenedor h3 {
         font-size: 34px;
+        font-weight: bold;
         color: var(--color-two);
     }
     
@@ -135,6 +147,7 @@ hr {
     .contenedor div p {
         padding: 24px 24px 0 24px;
         font-size: 24px;
+        line-height: normal;
     }
 }
 
@@ -155,6 +168,7 @@ hr {
         text-align: center;
         font-size: 40px;
         margin: 115px 0 24px 0;
+        font-weight: bold;
     }
     
     hr {
@@ -164,6 +178,7 @@ hr {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 98px;
+        opacity: 1;
     }
     
     .contenedor {
@@ -171,6 +186,10 @@ hr {
         align-items: center;
         justify-content: center;
         flex-direction: row;
+    }
+
+    body div:nth-child(odd) {
+        margin-bottom: 50px;
     }
     
     .contenedor div {
@@ -199,6 +218,7 @@ hr {
     
     .contenedor h3 {
         font-size: 24px;
+        font-weight: bold;
         color: var(--color-two);
     }
     
@@ -209,6 +229,7 @@ hr {
     .contenedor div p {
         padding: 24px 24px 0 24px;
         font-size: 16px;
+        line-height: normal;
     }
 }
 
@@ -229,6 +250,7 @@ hr {
         text-align: center;
         font-size: 40px;
         margin: 115px 0 24px 0;
+        font-weight: bold;
     }
     
     hr {
@@ -238,12 +260,17 @@ hr {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 98px;
+        opacity: 1;
     }
     
     .contenedor {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    body div:nth-child(odd) {
+        margin-bottom: 50px;
     }
     
     .contenedor div {
@@ -282,5 +309,6 @@ hr {
     .contenedor div p {
         padding: 24px 24px 0 24px;
         font-size: 16px;
+        line-height: normal;
     }
 }
