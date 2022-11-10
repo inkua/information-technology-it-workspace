@@ -76,8 +76,14 @@
   border-radius: 50px;
   bottom: 30px;
   right: 30px;
-  width: 200px;
+  width: 180px;
   height: 60px;
+}
+
+.wpp a img {
+  position: absolute;
+  bottom: 9px;
+  left: 15px;
 }
 
 .wpp:hover {
@@ -85,6 +91,8 @@
 }
 
 .wpp p {
+  position: relative;
+  bottom: 5px; 
   padding-top: 5px;
   font-size: 14px;
   margin-right: 20px;
@@ -94,7 +102,7 @@
   text-align: center;
   width: 100px;
   font-weight: bold;
-  font: var(--font);
+  font: var(--font, regular-400);
 }
 
 .wpp img {
