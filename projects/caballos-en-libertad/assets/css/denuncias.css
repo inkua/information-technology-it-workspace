@@ -143,7 +143,59 @@ body .contenedor:nth-child(odd) {
     body {
         background-color: var(--color-four);
     }
+
+    .contenedor_titulo {
+        width: 100%;
+        height: 150px;
+        background-position: 80% 100%;
+        background-size: auto;
+        min-height: 520px; 
+        background-image: url("../img/img_denuncias.png");
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: -1;
+        object-fit: cover;
+    }
+
+    .contenedor_titulo::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(17, 15, 14, 0.7) 0.01%, rgba(51, 45, 39, 0.58) 25%, rgba(0, 0, 0, 0.15) 60%);
+        z-index: -2;
+    }
     
+    .titulo_volver {
+        display: none;
+    }
+    
+    .titulo_flecha {
+        display: none;
+    }
+    
+    .titulo_texto {
+        position: absolute;
+        font-size: 60px;
+        color: white;
+        left: 48px;
+        bottom: 150px;
+        text-shadow: none;
+    }
+    
+    .titulo_desc {
+        position: absolute;
+        font-size: 30px;
+        color: white;
+        font-weight: 500;
+        width: 70%;
+        left: 48px;
+        bottom: 50px;
+        line-height: 40px;
+    }
+
     h2 {
         color: var(--color-two);
         text-align: center;
@@ -223,6 +275,66 @@ body .contenedor:nth-child(odd) {
       
     body {
         background-color: var(--color-four);
+    }
+
+    .contenedor_titulo {
+        width: 100%;
+        height: 90vh;
+        background-position: center;
+        background-size: cover;
+        min-height: 500px; 
+        background-image: url("../img/img_denuncias.png");
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: -1;
+    }
+    
+    .contenedor_titulo::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(17, 15, 14, 0.7) 0.01%, rgba(51, 45, 39, 0.58) 25%, rgba(0, 0, 0, 0.15) 60%);
+        z-index: -2;
+    }
+    
+    .titulo_volver {
+        display: inline;
+        position: absolute;
+        top: 34px;
+        left: 95px;
+        color: white;
+    }
+    
+    .titulo_flecha {
+        display: inline;
+        position: absolute;
+        top: 30px;
+        left: 48px;
+        font-size: 30px;
+        color: white;
+    }
+    
+    .titulo_texto {
+        position: absolute;
+        font-size: 50px;
+        color: white;
+        left: 48px;
+        bottom: 120px;
+        text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+    }
+    
+    .titulo_desc {
+        position: absolute;
+        font-size: 26px;
+        color: white;
+        font-weight: 500;
+        width: 40%;
+        left: 48px;
+        bottom: 50px;
+        line-height: 28px;
     }
     
     h2 {
@@ -306,6 +418,64 @@ body .contenedor:nth-child(odd) {
     body {
         background-color: var(--color-four);
     }
+
+    .contenedor_titulo {
+        width: 100%;
+        height: 90vh;
+        background-position: center;
+        background-size: cover;
+        min-height: 500px; 
+        background-image: url("../img/img_denuncias.png");
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: -1;
+    }
+    
+    .contenedor_titulo::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(17, 15, 14, 0.7) 0.01%, rgba(51, 45, 39, 0.58) 25%, rgba(0, 0, 0, 0.15) 60%);
+        z-index: -2;
+    }
+    
+    .titulo_volver {
+        position: absolute;
+        top: 34px;
+        left: 95px;
+        color: white;
+    }
+    
+    .titulo_flecha {
+        position: absolute;
+        top: 30px;
+        left: 48px;
+        font-size: 30px;
+        color: white;
+    }
+    
+    .titulo_texto {
+        position: absolute;
+        font-size: 50px;
+        color: white;
+        left: 48px;
+        bottom: 120px;
+        text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+    }
+    
+    .titulo_desc {
+        position: absolute;
+        font-size: 26px;
+        color: white;
+        font-weight: 500;
+        width: 40%;
+        left: 48px;
+        bottom: 50px;
+        line-height: 28px;
+    }
     
     h2 {
         color: var(--color-two);
@@ -331,7 +501,7 @@ body .contenedor:nth-child(odd) {
         justify-content: center;
     }
 
-    body div:nth-child(odd) {
+    body .contenedor:nth-child(odd) {
         margin-bottom: 50px;
     }
     
