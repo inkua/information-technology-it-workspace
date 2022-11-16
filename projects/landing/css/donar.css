@@ -398,6 +398,58 @@ html {
 }
 /* !--------------- Finishes Referencias (SECTION 4) Styling -------------- */
 
+/* !--------------- Starts Donación (Donar) Styling -------------- */
+*{
+   
+    --color-one: #fff;
+    --color-two: #00638C;
+    --color-three: #C6EAFF;
+
+    /* thin-100, light-300, regular-400, medium-500, bold-700 */
+    --font-family: 'Roboto', sans-serif;
+    
+}
+/* :root {
+    --fa-style-family-classic:  'Roboto', sans-serif;
+    --fa-font-solid: normal 900 1em/1 'Roboto', sans-serif;
+} */
+
+.text--center{
+    background-image: url("https://i.pinimg.com/originals/a9/bb/1c/a9bb1c177a9b21359870a4a78ef1666f.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--font-family);
+  
+}
+
+.tittle{
+   /*  margin: 3rem; */
+  
+}
+
+h3{
+    color: var(--color-one);
+    padding-top: 1.5rem ;
+    
+}
+strong{
+    color: var(--color-one);
+    padding-top: 1.5rem ;
+}
+span{
+    color: var(--color-one);
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+button{
+    color: var(--color-one);
+    width: 20%;
+}
+
+
 
 /* !--------------- Starts Seguridad (SECTION 5) Styling -------------- */
 
