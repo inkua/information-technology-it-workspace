@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap v5.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- CDNJS FontAwesome 6.2.0-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="./assets/css/index.css">
@@ -31,16 +35,18 @@
                     <li><a href="#"><img class="redes" src="./assets/img/face.png" alt="facebook"></a></li>
                     <li><a href="#"><img class="redes" src="./assets/img/instagram.png" alt="instagram"></a></li>
                     <li><a href="#"><img class="redes" src="./assets/img/twitter.png" alt="twitter"></a></li>
-                    
-                    <li><a class="adoptar_donar" href="#">ADOPTAR</a></li>
+
+                    <li><a class="adoptar_donar" href="./pages/adoptar.html">ADOPTAR</a></li>
                     <li><a class="adoptar_donar donar" href="#">DONAR</a></li>
                     <li><a class="options" href="#">CONTACTANOS</a></li>
-                    <li><a class="options" href="#">EVENTOS</a></li>
-                    <li><a class="options" href="#">RESCATADOS</a></li>
-                    <li><a class="options" href="#">DENUNCIAS</a></li>
-                    <li><a class="options" href="#">VOLUNTARIADO</a></li>
-                    <li><a class="options" href="main.html">SOBRE NOSOTROS</a></li>
-                    <li class="logo"><img src="./assets/img/caballos-en-libertad1.png" alt="logo"></li>
+                    <li><a class="options" href="./pages/eventos.html">EVENTOS</a></li>
+                    <li><a class="options" href="#rescatados">RESCATADOS</a></li>
+                    <li><a class="options" href="./pages/denuncias.html">DENUNCIAS</a></li>
+                    <li><a class="options" href="#voluntariado">VOLUNTARIADO</a></li>
+                    <li><a class="options" href="#nosotros">SOBRE NOSOTROS</a></li>
+                    <li class="logo"><a href="#">
+                            <img src="./assets/img/caballos-en-libertad1.png" alt="logo"></a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -53,24 +59,25 @@
         </div>
 
         <!-- Nosotros (Yuri Vanegas)-->
-        <section class="nosotros">
-             <div class="nosotros_principal ">
-                  <div class="nosotros_principal_titulo ">
+        <section class="nosotros" id="nosotros">
+            <div class="nosotros_principal ">
+                <div class="nosotros_principal_titulo ">
                     <h1>Fundación <br> Caballos en Libertad</h1>
-                   <p>
-                    Somos una organización sin fines de lucro, encargada de la protección,
-                    cuidado y rescate de equinos. De las más importantes de la Provincia
-                    de Buenos Aires.
-                  </p>
-                  </div>
-              </div>
-              <div class="nosotros_second">
+                    <p>
+                        Somos una organización sin fines de lucro, encargada de la protección,
+                        cuidado y rescate de equinos. De las más importantes de la Provincia
+                        de Buenos Aires.
+                    </p>
+                </div>
+            </div>
+
+            <div class="nosotros_second container-fluid">
                 <div class="row">
                     <div class="icon col-xs-6 col-sm-6 col-md-6">
                         <i class="fa-solid fa-circle-plus"></i>
                         <h4>+ 500</h4>
                         <p class="p-icon">Rescates</p>
-                    </div>   
+                    </div>
                     <div class="icon col-xs-6 col-sm-6 col-md-6">
                         <i class="fa-solid fa-hand-holding-heart"></i>
                         <h4>15</h4>
@@ -79,8 +86,8 @@
                     <div class="icon col-xs-6 col-sm-6 col-md-6 ">
                         <i class="fa-solid fa-truck-medical"></i>
                         <h4>10</h4>
-                        <p class="p-icon" >En tratamiento</p>
-                    </div>   
+                        <p class="p-icon">En tratamiento</p>
+                    </div>
                     <div class="icon col-xs-6 col-sm-6 col-md-6">
                         <i class="fa-regular fa-calendar-days"></i>
                         <h4>10</h4>
@@ -89,38 +96,40 @@
                 </div>
                 <p class="p-nosotros-second">Nuestro trabajo ha ayudado a mejorar la calidad de vida de cientos de
                     caballos</p>
-              </div>
-              <div class="sobre_nosotros">
-                <div class="sobre">
-                  <h3>Sobre nosotros</h3>
-                  <span>━━━━</span>
-                  <div class="row">
-                    <p class="col-xs-12 col-sm-11 col-md-11">
-                        <b>Caballos en libertad</b> nació hace 10 años como una Asociación
-                        civil sin fines de lucro, nos ubicamos en Zona Sur ciudad de La Plata,
-                        uno de los principales epicentros de maltrato y abandono equino.
-                        <br /><br />
-                        Nuestra ONG cuenta con el apoyo de una eminencia en veterinaria, el
-                        doctor Juan Oliden, que junto a nuestros voluntarios y a la
-                        colaboración ciudadana nos encargamos de brindarles a nuestros
-                        rescatados la atención, el <b>amor</b> y la medicación que en algunos
-                        casos corresponde. <br /><br />
-                        Con la <b> esperanza</b> de un día verlos libres, felices y sin ser
-                        utilizados como objetos para la tracción a sangre, esperamos poder
-                        construir un futuro libre de crueldad animal, en donde cada persona
-                        aporte su granito de arena y participe en casos de indiferencia o
-                        maltrato a cualquier ser vivo. <br /><br />
-                        <b>Por un futuro con derechos e igualdad para todos los animales.</b>
-                      </p>
-                  </div>
+            </div>
+
+
+            <div class="sobre_nosotros">
+                <div class="sobre container-fluid">
+                    <h3>Sobre nosotros</h3>
+                    <span>━━━━</span>
+                    <div class="row">
+                        <p class="col-xs-12 col-sm-11 col-md-11">
+                            <b>Caballos en libertad</b> nació hace 10 años como una Asociación
+                            civil sin fines de lucro, nos ubicamos en Zona Sur ciudad de La Plata,
+                            uno de los principales epicentros de maltrato y abandono equino.
+                            <br /><br />
+                            Nuestra ONG cuenta con el apoyo de una eminencia en veterinaria, el
+                            doctor Juan Oliden, que junto a nuestros voluntarios y a la
+                            colaboración ciudadana nos encargamos de brindarles a nuestros
+                            rescatados la atención, el <b>amor</b> y la medicación que en algunos
+                            casos corresponde. <br /><br />
+                            Con la <b> esperanza</b> de un día verlos libres, felices y sin ser
+                            utilizados como objetos para la tracción a sangre, esperamos poder
+                            construir un futuro libre de crueldad animal, en donde cada persona
+                            aporte su granito de arena y participe en casos de indiferencia o
+                            maltrato a cualquier ser vivo. <br /><br />
+                            <b>Por un futuro con derechos e igualdad para todos los animales.</b>
+                        </p>
+                    </div>
                 </div>
-              </div>
-               
+            </div>
+
         </section>
-    
+
 
         <!-- Rescatados (Manuel Florez)-->
-        <section class="rescatados">
+        <section class="rescatados" id="rescatados">
 
             <p class="rescatado_sentence">Ya rescatamos mas de 500 caballos. Conocé sus historias</p>
             <div class="rescatado_textLine"></div>
@@ -151,64 +160,67 @@
         </section>
 
         <!-- Voluntariado (Romina Valdez)-->
-         <section class="voluntariado">
-            <div class="tittle" >
+        <section class="voluntariado" id="voluntariado">
+            <div class="tittle">
                 <div>
                     <h3>Sé parte de nuestro equipo</h3>
                     <span>━━━</span>
-                </div>   
-            </div> 
-                <div class="container text-center">
-                    <div class="row">
-                            <div class="col-sm-12 col-md-4">
-                            <i class="bi bi-truck"></i>
-                            <h4>Area de logística</h4>
-                            <p>Encargado de logística de alimento y/o de viruta.</p>
-                            </p> Traslado de voluntarios al predio en casos excepcionales o de urgencia.</p>
-                            <p>Traslado de equinos.</p>
-                            <p>Colecta y traslado de donaciones.</p>
-                            </div>
-
-                            <div class="col-sm-12 col-md-4">
-                            <i class="bi bi-pc-display"></i>
-                            <h4>Area fuera del campo</h4>
-                            <p>Generador/a de ideas para recaudar fondos.</p>
-                            </p>Administrador/a de redes.</p>
-                            <p>Aportando conocimientos de tu profesión y/o dictando cursos a beneficio.</p>
-                            <p>Manejo de Photoshop para diseño de flyers.</p>
-                            </div>
-
-                            <div class="col-sm-12 col-md-4">
-                            <i class="bi bi-check2-all"></i>
-                            <h4>Area dentro del campo</h4>
-                            <p>Chequeo de caballos de campo a campo.</p>
-                            </p>Alimentación.</p>
-                            <p>Ayudar con el tratamiento de los internados.</p>
-                            <p>Limpieza de camas.</p>
-                            <p>Guardias nocturnas.</p>
-                            <p>Levantarlos si no pueden.</p>
-                            </div>
-                    </div>
                 </div>
-                
-                <div class="tittle" >
-                    <h3>Convertite en voluntario</h3>
-                    <span>━━━</span>
-                </div>
+            </div>
+            <div class="container text-center">
                 <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <h3>foto</h3>
-                    </div>
                     <div class="col-sm-12 col-md-4">
+                        <i class="bi bi-truck"></i>
+                        <h4>Area de logística</h4>
+                        <p>Encargado de logística de alimento y/o de viruta.</p>
+                        </p> Traslado de voluntarios al predio en casos excepcionales o de urgencia.</p>
+                        <p>Traslado de equinos.</p>
+                        <p>Colecta y traslado de donaciones.</p>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <i class="bi bi-pc-display"></i>
+                        <h4>Area fuera del campo</h4>
+                        <p>Generador/a de ideas para recaudar fondos.</p>
+                        </p>Administrador/a de redes.</p>
+                        <p>Aportando conocimientos de tu profesión y/o dictando cursos a beneficio.</p>
+                        <p>Manejo de Photoshop para diseño de flyers.</p>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <i class="bi bi-check2-all"></i>
+                        <h4>Area dentro del campo</h4>
+                        <p>Chequeo de caballos de campo a campo.</p>
+                        </p>Alimentación.</p>
+                        <p>Ayudar con el tratamiento de los internados.</p>
+                        <p>Limpieza de camas.</p>
+                        <p>Guardias nocturnas.</p>
+                        <p>Levantarlos si no pueden.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tittle">
+                <h3>Convertite en voluntario</h3>
+                <span>━━━</span>
+            </div>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6">
+                        <img class="img-fluid" src="./assets/img/voluntariado1.png" alt="voluntariado1">
+                    </div>
+                    <div class="col-sm-12 col-lg-6">
                         <p>Buscamos personas que estén comprometidos con la causa y tengan conocimientos en:</p>
                         <p> Marketing digital</p>
                         <p>Veterinaria</p>
                         <p>Trabajo con caballos en el campo</p>
                         <p>Posean licencia de conducir</p>
-                        <p><strong> No poseemos ningún tipo de subsidio por parte del Estado. Realizamos nuestra tarea gracias al aporte de la gente</strong></p>
+                        <p><strong> No poseemos ningún tipo de subsidio por parte del Estado. Realizamos nuestra tarea
+                                gracias al aporte de la gente</strong></p>
                         <button>SER VOLUNTARIO</button>
                     </div>
                 </div>
+            </div>
             </div>
 
 
@@ -223,7 +235,6 @@
             </form>
 
         </section>
-        <br>
 
 
     </main>
@@ -233,38 +244,42 @@
         <div class="footer-inkua">
             <div class="container-md">
                 <div class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-2 col-xl-4 offset-xl-2 col-xxl-3 offset-xxl-3">
-                            <div class="footer-redes">
-                                <p>¡Si te gustaría saber más podés visitar nuestras redes sociales!</p>
-                                <a href="#"><img class="redes" src="./assets/img/twitter.png" alt="twitter"></a>
-                                <a href="#"><img class="redes" src="./assets/img/instagram.png" alt="instagram"></a>
-                                <a href="#"><img class="redes" src="./assets/img/twitter.png" alt="wpp"></a>
-                                <a href="#"><img class="redes" src="./assets/img/face.png" alt="facebook"></a>
-                            </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-2 col-xl-4 offset-xl-2 col-xxl-3 offset-xxl-3">
+                        <div class="footer-redes">
+                            <p>¡Si te gustaría saber más podés visitar nuestras redes sociales!</p>
+                            <a href="#"><img class="redes" src="./assets/img/twitter.png" alt="twitter"></a>
+                            <a href="#"><img class="redes" src="./assets/img/instagram.png" alt="instagram"></a>
+                            <a href="#"><img class="redes" src="./assets/img/twitter.png" alt="wpp"></a>
+                            <a href="#"><img class="redes" src="./assets/img/face.png" alt="facebook"></a>
                         </div>
+                    </div>
 
-                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
-                            <div class="footer-menciones"></div>
-                                <p>El diseño y desarrollo de este sitio web fue donado por la fundación inkuA.</p>
-                                <p>Diseñadores: Cristian Hernández, Candela Sanó, Fernanda Suarez, Camila Lange.</p>
-                            </div>
-                        </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                        <div class="footer-menciones"></div>
+                        <p>El diseño y desarrollo de este sitio web fue donado por la fundación inkuA.</p>
+                        <p>Diseñadores: Cristian Hernández, Candela Sanó, Fernanda Suarez, Camila Lange.</p>
+                    </div>
                 </div>
             </div>
+        </div>
         </div>
         <div class="footer-caballos">
             <div class="container text-center">
                 <div class="col-sm-12 col-md-12"></div>
-                    <img src="./assets/img/logo-footer.png"  alt="logo">
-                    <p>2022 - Ⓡ CABALLOS EN LIBERTAD | Todos los derechos reservados</p>
-                </div>
+                <img src="./assets/img/logo-footer.png" alt="logo">
+                <p>2022 - Ⓡ CABALLOS EN LIBERTAD | Todos los derechos reservados</p>
             </div>
+        </div>
         </div>
     </footer>
 
     <!-- Bootstrap v5.1 -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 
 </body>
 
