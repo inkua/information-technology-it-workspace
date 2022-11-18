@@ -132,6 +132,14 @@
         </section>
 
 
+
+
+
+
+
+
+
+
         <!-- Rescatados (Manuel Florez)-->
         <section class="rescatados" id="rescatados">
 
@@ -139,10 +147,10 @@
             <div class="rescatado_textLine"></div>
             <div class="rescatado_imageContainer">
 
-                <div class="rescatado_image">
+                <button class="rescatado_image" data-bs-toggle="modal" data-bs-target="#caballo1">
                     <p class="rescatado_Name">Nombre Caballo</p>
                     <p class="rescatado_NameHover">Nombre Caballo hover</p>
-                </div>
+                </button>
                 <div class="rescatado_image">
                     <p class="rescatado_Name">Nombre Caballo 2</p>
                     <p class="rescatado_NameHover">Nombre Caballo 2 hover</p>
@@ -156,8 +164,42 @@
                     <p class="rescatado_NameHover">Nombre Caballo 4 hover</p>
                 </div>
 
+
+                <div class="modal fade" id="caballo1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog .modal-fullscreen-md-down">
+                        <div class="modal-content">
+                            <div class="modalInfo">
+
+                            </div>
+                            <div class="modalHeader">
+                                <div class="modalTitle col-10"><h6>Nombre Caballo</h6></div>
+                                <div class="modalExit col-2">
+                                    <button type="button" class="btnCloseModal" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                                </div>
+                            </div>
+                            <div class="modalBody">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero officia rerum tempore aspernatur incidunt necessitatibus libero? Velit hic quibusdam natus, possimus itaque ut eaque, fugit necessitatibus tenetur rerum modi obcaecati.</p>
+                            </div>
+                            <div class="modalButton">
+                                <button type="button" class="btnModalInfo">MÁS INFO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
+
+
+
+
+
+
+
+
+
 
         <!-- Donar (Brenda Ledesma)-->
         <section class="text--center">
@@ -168,20 +210,20 @@
                     <h5>Dona a nuestra fundación Caballos en Libertad para que podamos seguir luchando por ellos</h5>
                     <strong>CADA APORTE HACE LA DIFERENCIA</strong>
                     <p>Los socios y socias de nuestra fundacion son aquellas personas que<br>
-                       creen que cada caballo merece un lugar digno para vivir por eso<br>
-                       su aporte econónimo es muy importante para que esto suceda.
+                        creen que cada caballo merece un lugar digno para vivir por eso<br>
+                        su aporte econónimo es muy importante para que esto suceda.
                     </p>
-                    
+
                     <strong>FORMA PARTE</strong>
                     <p>Vos podes desempeñar un papel fundamental en cada rescate, en cada<br>
-                       vida salvada. Con tu aporte del monto que sea, nos ayudas un montón.<br>
-                       Los fondos son destinados en su totalidad a los caballos. <br>
-                       Muchas gracias por ser parte.   
+                        vida salvada. Con tu aporte del monto que sea, nos ayudas un montón.<br>
+                        Los fondos son destinados en su totalidad a los caballos. <br>
+                        Muchas gracias por ser parte.
                     </p>
-                    
+
                     <button>Donar</button>
                     <p>Tu ayuda es imprescindible para que podamos continuar con nuestro labor</p>
-                    
+
                 </div>
             </div>
         </section>
@@ -251,17 +293,17 @@
             </div>
 
 
-        <!-- Contacto  (Sergio Delgado)-->
-        <section>
+            <!-- Contacto  (Sergio Delgado)-->
+            <section>
 
-            <form method="post">
-                <h1>¡Suscribete!</h1>
-                <input type="text" name="name" placeholder="Nombre completo">
-                <input type="email" name="email" placeholder="Email">
-                <input type="submit" name="register">
-            </form>
+                <form method="post">
+                    <h1>¡Suscribete!</h1>
+                    <input type="text" name="name" placeholder="Nombre completo">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="submit" name="register">
+                </form>
 
-        </section>
+            </section>
 
 
     </main>

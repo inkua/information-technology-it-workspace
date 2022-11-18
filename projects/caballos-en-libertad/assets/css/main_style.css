@@ -297,6 +297,7 @@ footer div {
   flex-direction: column-reverse;
   align-items: center;
   margin-bottom: 10px;
+  border-radius: 0px;
 }
 
 .rescatado_imageContainer .rescatado_image:hover {
@@ -318,6 +319,50 @@ footer div {
   opacity: 0;
   display: block;
 }
+
+.modal .modal-dialog .modal-content{
+  background-color: antiquewhite;
+  border-radius: 15px;
+  padding: 3px;
+  overflow: hidden;
+}
+.modal .modal-dialog .modal-content .modalInfo{
+  background-color: royalblue;
+}
+.modal .modal-dialog .modal-content .modalHeader{
+  background-color: #00e677;
+  display: flex;
+}
+.modal .modal-dialog .modal-content .modalHeader .modalTitle{
+  background-color: beige;
+  padding: 19px 0px 0px 10px;
+}
+.modal .modal-dialog .modal-content .modalHeader .modalTitle h6{
+  color: var(--color-two);
+  font-size: 700;
+}
+.modal .modal-dialog .modal-content .modalHeader .modalExit{
+  background-color: rgb(236, 236, 173);
+  display: flex;
+  justify-content: flex-end;
+}
+.modal .modal-dialog .modal-content .modalHeader .modalExit .btnCloseModal{
+  background-color: transparent;
+  background-image: url(../img/rescatados/modal-close.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.modal .modal-dialog .modal-content .modalBody{
+  padding: 10px;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.modal .modal-dialog .modal-content .modalButton .btnModalInfo{
+  background-color: var(--color-one);
+}
+
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 
 /* Tablet 768px */
