@@ -358,7 +358,6 @@ html {
 
 
 /* !--------------- Starts Mentores (SECTION 3) Styling -------------- */
-
 .section3-mentores {
     background-color: var(--white-color);
     width: 100%;
@@ -377,57 +376,56 @@ html {
     align-items: center;
 }
 
-.section3-mentores .subcontainer {
+.section3-mentores .container {
     width: 100%;
     padding: 50px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    line-height: 1.5;
 }
 
-.section3-mentores .subcontainer .part1 {
-    height: 30rem;
+.section3-mentores .container .subcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.section3-mentores .left {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
+    gap: 20px;
 }
 
-.section3-mentores .subcontainer .part1 h3 {
-
-    padding: .2rem 0;
-    color: var(--dark-blue-color);
-    font-size: 4rem;
-
-}
-
-.section3-mentores .max-width .part1 div {
-    border-top: 5px solid var(--separator);
-    width: 53px;
-    margin: 5px 0px; 
-}
-
-.section3-mentores .max-width .part1 p {
-    max-width: 540px;
-    font-size: 2.5rem;
-    
-
-}
-
-.section3-mentores .max-width .part1 :nth-child(5) {
-    max-width: 540px;
-    font-size: 2.5rem;
-    font-weight: bold;
+.section3-mentores .left .subtitle {
+    font-size: 3.5rem;
     color: var(--blue-color);
 }
 
-.section3-mentores .max-width .part1 input {
+.section3-mentores .container .subcontainer .left .line {
+    border-top: 5px solid var(--separator);
+    width: 53px;
+}
+
+.section3-mentores .left .description {
+    max-width: 540px;
+    font-size: 2.5rem;
+}
+
+.section3-mentores .left .important-description {
+    max-width: 540px;
+    font-size: 2.5rem;
+    color: var(--blue-color);
+    font-weight: bold;
+}
+
+.section3-mentores .left .unirse-btn {
     width: max-content;
     padding: 10px 40px;
     border: none;
-    background: var(--dark-blue-color);
+    background: var(--blue-color);
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
     border-radius: 30px;
     font-weight: 500;
@@ -437,12 +435,11 @@ html {
     text-decoration: none;
     transition: scale 0.3s ease;
 }
-
-.section3-mentores .max-width .part1 input:hover {
+.section3-mentores .left .unirse-btn:hover {
     transform: scale(1.05);
 }
 
-.section3-mentores .max-width .part2 {
+.section3-mentores .container .subcontainer .right {
     background-color: var(--blue-color);
     max-width: 60rem;/*  width: 40rem;*/
     height: max-content;
@@ -452,19 +449,19 @@ html {
     padding: 35px 25px;
 }
 
-.section3-mentores .max-width .part2 p {
+.section3-mentores .right .subtitle {
     font-weight: bolder;
     font-style: italic;
-    margin-bottom: 10px;
-    color: white;
-}
 
-.section3-mentores .max-width .part2 ul {
+    margin-bottom: 10px;
+}
+.section3-mentores .right ul {
     padding-top: 15px;
     line-height: 38px;
     margin: -5px 0px 0px 25px;
+}
+.section3-mentores .right ul .requirement {
     font-weight: 400;
-    color: white;
 }
 /* !--------------- Finishes Mentores (SECTION 3) Styling -------------- */
 
