@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap v5.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- CDNJS FontAwesome 6.2.0-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="./assets/css/index.css">
@@ -16,6 +20,12 @@
 
     <link rel="stylesheet" href="./assets/css/voluntariado_style.css">
     <link rel="stylesheet" href="./assets/css/button_style.css">
+
+    <!--  estos dos links estan rompiendo el codigo  -->
+    <!--<link rel="stylesheet" href="./assets/css/contacto.css">-->
+    <!--<link rel="stylesheet" href="./assets/css/donar.css">-->
+
+
     <title>Inicio</title>
 </head>
 
@@ -29,16 +39,18 @@
                     <li><a href="#"><img class="redes" src="./assets/img/face.png" alt="facebook"></a></li>
                     <li><a href="#"><img class="redes" src="./assets/img/instagram.png" alt="instagram"></a></li>
                     <li><a href="#"><img class="redes" src="./assets/img/twitter.png" alt="twitter"></a></li>
-                    
-                    <li><a class="adoptar_donar" href="#">ADOPTAR</a></li>
+
+                    <li><a class="adoptar_donar" href="./pages/adoptar.html">ADOPTAR</a></li>
                     <li><a class="adoptar_donar donar" href="#">DONAR</a></li>
                     <li><a class="options" href="#">CONTACTANOS</a></li>
-                    <li><a class="options" href="#">EVENTOS</a></li>
-                    <li><a class="options" href="#">RESCATADOS</a></li>
-                    <li><a class="options" href="#">DENUNCIAS</a></li>
-                    <li><a class="options" href="#">VOLUNTARIADO</a></li>
-                    <li><a class="options" href="main.html">SOBRE NOSOTROS</a></li>
-                    <li class="logo"><img src="./assets/img/caballos-en-libertad1.png" alt="logo"></li>
+                    <li><a class="options" href="./pages/eventos.html">EVENTOS</a></li>
+                    <li><a class="options" href="#rescatados">RESCATADOS</a></li>
+                    <li><a class="options" href="./pages/denuncias.html">DENUNCIAS</a></li>
+                    <li><a class="options" href="#voluntariado">VOLUNTARIADO</a></li>
+                    <li><a class="options" href="#nosotros">SOBRE NOSOTROS</a></li>
+                    <li class="logo"><a href="#">
+                            <img src="./assets/img/caballos-en-libertad1.png" alt="logo"></a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -51,24 +63,25 @@
         </div>
 
         <!-- Nosotros (Yuri Vanegas)-->
-        <section class="nosotros">
-             <div class="nosotros_principal ">
-                  <div class="nosotros_principal_titulo ">
+        <section class="nosotros" id="nosotros">
+            <div class="nosotros_principal ">
+                <div class="nosotros_principal_titulo ">
                     <h1>Fundación <br> Caballos en Libertad</h1>
-                   <p>
-                    Somos una organización sin fines de lucro, encargada de la protección,
-                    cuidado y rescate de equinos. De las más importantes de la Provincia
-                    de Buenos Aires.
-                  </p>
-                  </div>
-              </div>
-              <div class="nosotros_second">
+                    <p>
+                        Somos una organización sin fines de lucro, encargada de la protección,
+                        cuidado y rescate de equinos. De las más importantes de la Provincia
+                        de Buenos Aires.
+                    </p>
+                </div>
+            </div>
+
+            <div class="nosotros_second container-fluid">
                 <div class="row">
                     <div class="icon col-xs-6 col-sm-6 col-md-6">
                         <i class="fa-solid fa-circle-plus"></i>
                         <h4>+ 500</h4>
                         <p class="p-icon">Rescates</p>
-                    </div>   
+                    </div>
                     <div class="icon col-xs-6 col-sm-6 col-md-6">
                         <i class="fa-solid fa-hand-holding-heart"></i>
                         <h4>15</h4>
@@ -77,8 +90,8 @@
                     <div class="icon col-xs-6 col-sm-6 col-md-6 ">
                         <i class="fa-solid fa-truck-medical"></i>
                         <h4>10</h4>
-                        <p class="p-icon" >En tratamiento</p>
-                    </div>   
+                        <p class="p-icon">En tratamiento</p>
+                    </div>
                     <div class="icon col-xs-6 col-sm-6 col-md-6">
                         <i class="fa-regular fa-calendar-days"></i>
                         <h4>10</h4>
@@ -87,132 +100,400 @@
                 </div>
                 <p class="p-nosotros-second">Nuestro trabajo ha ayudado a mejorar la calidad de vida de cientos de
                     caballos</p>
-              </div>
-              <div class="sobre_nosotros">
-                <div class="sobre">
-                  <h3>Sobre nosotros</h3>
-                  <span>━━━━</span>
-                  <div class="row">
-                    <p class="col-xs-12 col-sm-11 col-md-11">
-                        <b>Caballos en libertad</b> nació hace 10 años como una Asociación
-                        civil sin fines de lucro, nos ubicamos en Zona Sur ciudad de La Plata,
-                        uno de los principales epicentros de maltrato y abandono equino.
-                        <br /><br />
-                        Nuestra ONG cuenta con el apoyo de una eminencia en veterinaria, el
-                        doctor Juan Oliden, que junto a nuestros voluntarios y a la
-                        colaboración ciudadana nos encargamos de brindarles a nuestros
-                        rescatados la atención, el <b>amor</b> y la medicación que en algunos
-                        casos corresponde. <br /><br />
-                        Con la <b> esperanza</b> de un día verlos libres, felices y sin ser
-                        utilizados como objetos para la tracción a sangre, esperamos poder
-                        construir un futuro libre de crueldad animal, en donde cada persona
-                        aporte su granito de arena y participe en casos de indiferencia o
-                        maltrato a cualquier ser vivo. <br /><br />
-                        <b>Por un futuro con derechos e igualdad para todos los animales.</b>
-                      </p>
-                  </div>
+            </div>
+
+
+            <div class="sobre_nosotros">
+                <div class="sobre container-fluid">
+                    <h3>Sobre nosotros</h3>
+                    <span>━━━━</span>
+                    <div class="row">
+                        <p class="col-xs-12 col-sm-11 col-md-11">
+                            <b>Caballos en libertad</b> nació hace 10 años como una Asociación
+                            civil sin fines de lucro, nos ubicamos en Zona Sur ciudad de La Plata,
+                            uno de los principales epicentros de maltrato y abandono equino.
+                            <br /><br />
+                            Nuestra ONG cuenta con el apoyo de una eminencia en veterinaria, el
+                            doctor Juan Oliden, que junto a nuestros voluntarios y a la
+                            colaboración ciudadana nos encargamos de brindarles a nuestros
+                            rescatados la atención, el <b>amor</b> y la medicación que en algunos
+                            casos corresponde. <br /><br />
+                            Con la <b> esperanza</b> de un día verlos libres, felices y sin ser
+                            utilizados como objetos para la tracción a sangre, esperamos poder
+                            construir un futuro libre de crueldad animal, en donde cada persona
+                            aporte su granito de arena y participe en casos de indiferencia o
+                            maltrato a cualquier ser vivo. <br /><br />
+                            <b>Por un futuro con derechos e igualdad para todos los animales.</b>
+                        </p>
+                    </div>
                 </div>
-              </div>
-               
+            </div>
+
         </section>
-    
+
+
+
+
+
+
+
 
         <!-- Rescatados (Manuel Florez)-->
-        <section class="rescatados">
+        <section class="rescatados" id="rescatados">
 
             <p class="rescatado_sentence">Ya rescatamos mas de 500 caballos. Conocé sus historias</p>
             <div class="rescatado_textLine"></div>
             <div class="rescatado_imageContainer">
+                <!-- Lista de Caballos -->
+                <button class="rescatado_image" data-bs-toggle="modal" data-bs-target="#caballo1"
+                style="background-image: url(./assets/img/rescatados/Guerrero.png);">
+                    <p class="rescatado_Name">Guerrero</p>
+                    <p class="rescatado_NameHover">Guerrero</p>
+                </button>
+                <button class="rescatado_image" data-bs-toggle="modal" data-bs-target="#caballo2"
+                style="background-image: url(./assets/img/rescatados/Kenai.png);">
+                    <p class="rescatado_Name">Kenai</p>
+                    <p class="rescatado_NameHover">Kenai</p>
+                </button>
+                <button class="rescatado_image" data-bs-toggle="modal" data-bs-target="#caballo3"
+                style="background-image: url(./assets/img/rescatados/Magnolia.png);">
+                    <p class="rescatado_Name">Magnolia</p>
+                    <p class="rescatado_NameHover">Magnolia</p>
+                </button>
+                <button class="rescatado_image" data-bs-toggle="modal" data-bs-target="#caballo4"
+                style="background-image: url(./assets/img/rescatados/Chimy.png);">
+                    <p class="rescatado_Name">Chimy</p>
+                    <p class="rescatado_NameHover">Chimy</p>
+                </button>
+                <button class="rescatado_image" data-bs-toggle="modal" data-bs-target="#caballo5"
+                style="background-image: url(./assets/img/rescatados/Charles.png);">
+                    <p class="rescatado_Name">Charles</p>
+                    <p class="rescatado_NameHover">Charles</p>
+                </button>
+                <button class="rescatado_image" data-bs-toggle="modal" data-bs-target="#caballo6"
+                style="background-image: url(./assets/img/rescatados/Ocaso.png);">
+                    <p class="rescatado_Name">Ocaso</p>
+                    <p class="rescatado_NameHover">Ocaso</p>
+                </button>
+                
+                
+            
+                
 
-                <div class="rescatado_image">
-                    <p class="rescatado_Name">Nombre Caballo</p>
-                    <p class="rescatado_NameHover">Nombre Caballo hover</p>
+                <!-- modals de caballos -->
+                <div class="modal fade" id="caballo1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="flexContain">
+                                <div class="modalImageContainer">
+                                    <div class="modalHorseImage"
+                                    style="background-image: url(./assets/img/rescatados/Guerrero.png);"
+                                    ></div>
+                                </div>
+                                <div class="modalInfo">
+                                    <div class="modalHeader">
+                                        <div class="modalTitleContainer col-10"><h6 class="modalTitle">Guerrero</h6></div>
+                                        <div class="modalExit col-2">
+                                            <button type="button" class="btnCloseModal" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                        </div>
+                                    </div>
+                                    <div class="modalBody">
+                                        <p>
+                                            Un grupo de hombres se encontraban llevándolo a tiro con otro caballo, su cuerpo deteriorado no lo soportó… Guerrero cayó agotado por tanto esfuerzo. <br>
+                                            Justo en ese momento pasaba Gonzalo en su vehículo
+                                            y salió a su defensa. Gonzalo nos dio aviso, la policía llegó para custodiarlo y comenzó la carrera a contrarreloj para salvarle la vida. </p>
+                                    </div>
+                                    <div class="modalButton">
+                                        <button type="button" class="btnModalInfo">MÁS INFO</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="rescatado_image">
-                    <p class="rescatado_Name">Nombre Caballo 2</p>
-                    <p class="rescatado_NameHover">Nombre Caballo 2 hover</p>
+
+                <div class="modal fade" id="caballo2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="flexContain">
+                                <div class="modalImageContainer">
+                                    <div class="modalHorseImage"
+                                    style="background-image: url(./assets/img/rescatados/Kenai.png);"
+                                    ></div>
+                                </div>
+                                <div class="modalInfo">
+                                    <div class="modalHeader">
+                                        <div class="modalTitleContainer col-10"><h6 class="modalTitle">Kenai</h6></div>
+                                        <div class="modalExit col-2">
+                                            <button type="button" class="btnCloseModal" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                        </div>
+                                    </div>
+                                    <div class="modalBody">
+                                        <p>
+                                            Llego a nosotros desde el Campo de Ezeiza, no tenia fuerzas para mantenerse de pie, de lo desnutrida que estaba. Necesitamos 10 voluntarios para trasladarla hasta donde se encuentra ahora. 
+                                        </p>
+                                    </div>
+                                    <div class="modalButton">
+                                        <button type="button" class="btnModalInfo">MÁS INFO</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="rescatado_image">
-                    <p class="rescatado_Name">Nombre Caballo 3</p>
-                    <p class="rescatado_NameHover">Nombre Caballo 3 hover</p>
+                
+                <div class="modal fade" id="caballo3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="flexContain">
+                                <div class="modalImageContainer">
+                                    <div class="modalHorseImage"
+                                    style="background-image: url(./assets/img/rescatados/Magnolia.png);"
+                                    ></div>
+                                </div>
+                                <div class="modalInfo">
+                                    <div class="modalHeader">
+                                        <div class="modalTitleContainer col-10"><h6 class="modalTitle">Magnolia</h6></div>
+                                        <div class="modalExit col-2">
+                                            <button type="button" class="btnCloseModal" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                        </div>
+                                    </div>
+                                    <div class="modalBody">
+                                        <p>
+                                            Más de 20 años de maltrato y abandono hicieron en su cuerpo estragos, dejando cicatrices de por vida. Pero ahora nadie la obliga a hacerlo llevando un enorme carro cargado a sus espaldas. <br>
+                                            Hoy Magnolia disfruta de una vida digna en libertad. Sin embargo, su potrillo aún sigue esperando a la burocracia de la UFI N°2 de Esteban Echeverría.
+                                        </p>
+                                    </div>
+                                    <div class="modalButton">
+                                        <button type="button" class="btnModalInfo">MÁS INFO</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="rescatado_image">
-                    <p class="rescatado_Name">Nombre Caballo 4</p>
-                    <p class="rescatado_NameHover">Nombre Caballo 4 hover</p>
+                
+                <div class="modal fade" id="caballo4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="flexContain">
+                                <div class="modalImageContainer">
+                                    <div class="modalHorseImage"
+                                    style="background-image: url(./assets/img/rescatados/Chimy.png);"
+                                    ></div>
+                                </div>
+                                <div class="modalInfo">
+                                    <div class="modalHeader">
+                                        <div class="modalTitleContainer col-10"><h6 class="modalTitle">Chimy</h6></div>
+                                        <div class="modalExit col-2">
+                                            <button type="button" class="btnCloseModal" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                        </div>
+                                    </div>
+                                    <div class="modalBody">
+                                        <p>
+                                            Sin esperanza y con pocas posibilidades de vida, fui superando hipoxia cerebrales, sepsis y una grave neumonía. <br>
+                                            El tratamiento fue muy largo, pero mi cuerpo empezó a responder. Se curó mi neumonía, las bacterias en mi sangre ya estaban controladas y desaparecieron 
+                                        </p>
+                                    </div>
+                                    <div class="modalButton">
+                                        <button type="button" class="btnModalInfo">MÁS INFO</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
+                <div class="modal fade" id="caballo5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="flexContain">
+                                <div class="modalImageContainer">
+                                    <div class="modalHorseImage"
+                                    style="background-image: url(./assets/img/rescatados/Charles.png);"
+                                    ></div>
+                                </div>
+                                <div class="modalInfo">
+                                    <div class="modalHeader">
+                                        <div class="modalTitleContainer col-10"><h6 class="modalTitle">Charles</h6></div>
+                                        <div class="modalExit col-2">
+                                            <button type="button" class="btnCloseModal" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                        </div>
+                                    </div>
+                                    <div class="modalBody">
+                                        <p>
+                                            Su comienzo en esta vida estuvo plagado de tristeza y obstáculos. Sin embargo, hoy crece grande y fuerte gracias al apoyo de todos ustedes que nos ayudaron a criarlo con sustituto lácteo.
+                                        </p>
+                                    </div>
+                                    <div class="modalButton">
+                                        <button type="button" class="btnModalInfo">MÁS INFO</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal fade" id="caballo6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="flexContain">
+                                <div class="modalImageContainer">
+                                    <div class="modalHorseImage"
+                                    style="background-image: url(./assets/img/rescatados/Ocaso.png);"
+                                    ></div>
+                                </div>
+                                <div class="modalInfo">
+                                    <div class="modalHeader">
+                                        <div class="modalTitleContainer col-10"><h6 class="modalTitle">Ocaso</h6></div>
+                                        <div class="modalExit col-2">
+                                            <button type="button" class="btnCloseModal" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                        </div>
+                                    </div>
+                                    <div class="modalBody">
+                                        <p>
+                                            Llegó de Ezeiza en estado de desnutrición. Siempre curioso y con una mirada tierna, eso nunca cambió. <br>
+                                            Está creciendo bello, sano, libre y fuerte, con energías para galopar junto a su compañera Teela.
+                                        </p>
+                                    </div>
+                                    <div class="modalButton">
+                                        <button type="button" class="btnModalInfo">MÁS INFO</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
 
             </div>
         </section>
 
+
+
+
+
+
+
+
+
+
         <!-- Donar (Brenda Ledesma)-->
-        <section>
+        <section class="text--center">
+            <div class="title">
+                <div>
+                    <h3>DONAR</h3>
+                    <span>━━━</span>
+                    <h5>Dona a nuestra fundación Caballos en Libertad para que podamos seguir luchando por ellos</h5>
+                    <strong>CADA APORTE HACE LA DIFERENCIA</strong>
+                    <p>Los socios y socias de nuestra fundacion son aquellas personas que<br>
+                        creen que cada caballo merece un lugar digno para vivir por eso<br>
+                        su aporte econónimo es muy importante para que esto suceda.
+                    </p>
+
+                    <strong>FORMA PARTE</strong>
+                    <p>Vos podes desempeñar un papel fundamental en cada rescate, en cada<br>
+                        vida salvada. Con tu aporte del monto que sea, nos ayudas un montón.<br>
+                        Los fondos son destinados en su totalidad a los caballos. <br>
+                        Muchas gracias por ser parte.
+                    </p>
+
+                    <button>Donar</button>
+                    <p>Tu ayuda es imprescindible para que podamos continuar con nuestro labor</p>
+
+                </div>
+            </div>
         </section>
 
         <!-- Voluntariado (Romina Valdez)-->
-         <section class="voluntariado">
-            <div class="tittle" >
+        <section class="voluntariado" id="voluntariado">
+            <div class="tittle">
                 <div>
                     <h3>Sé parte de nuestro equipo</h3>
                     <span>━━━</span>
-                </div>   
-            </div> 
-                <div class="container text-center">
-                    <div class="row">
-                            <div class="col-sm-12 col-md-4">
-                            <i class="bi bi-truck"></i>
-                            <h4>Area de logística</h4>
-                            <p>Encargado de logística de alimento y/o de viruta.</p>
-                            </p> Traslado de voluntarios al predio en casos excepcionales o de urgencia.</p>
-                            <p>Traslado de equinos.</p>
-                            <p>Colecta y traslado de donaciones.</p>
-                            </div>
-
-                            <div class="col-sm-12 col-md-4">
-                            <i class="bi bi-pc-display"></i>
-                            <h4>Area fuera del campo</h4>
-                            <p>Generador/a de ideas para recaudar fondos.</p>
-                            </p>Administrador/a de redes.</p>
-                            <p>Aportando conocimientos de tu profesión y/o dictando cursos a beneficio.</p>
-                            <p>Manejo de Photoshop para diseño de flyers.</p>
-                            </div>
-
-                            <div class="col-sm-12 col-md-4">
-                            <i class="bi bi-check2-all"></i>
-                            <h4>Area dentro del campo</h4>
-                            <p>Chequeo de caballos de campo a campo.</p>
-                            </p>Alimentación.</p>
-                            <p>Ayudar con el tratamiento de los internados.</p>
-                            <p>Limpieza de camas.</p>
-                            <p>Guardias nocturnas.</p>
-                            <p>Levantarlos si no pueden.</p>
-                            </div>
-                    </div>
                 </div>
-                
-                <div class="tittle" >
-                    <h3>Convertite en voluntario</h3>
-                    <span>━━━</span>
-                </div>
+            </div>
+            <div class="container text-center">
                 <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <h3>foto</h3>
-                    </div>
                     <div class="col-sm-12 col-md-4">
+                        <i class="bi bi-truck"></i>
+                        <h4>Area de logística</h4>
+                        <p>Encargado de logística de alimento y/o de viruta.</p>
+                        </p> Traslado de voluntarios al predio en casos excepcionales o de urgencia.</p>
+                        <p>Traslado de equinos.</p>
+                        <p>Colecta y traslado de donaciones.</p>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <i class="bi bi-pc-display"></i>
+                        <h4>Area fuera del campo</h4>
+                        <p>Generador/a de ideas para recaudar fondos.</p>
+                        </p>Administrador/a de redes.</p>
+                        <p>Aportando conocimientos de tu profesión y/o dictando cursos a beneficio.</p>
+                        <p>Manejo de Photoshop para diseño de flyers.</p>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <i class="bi bi-check2-all"></i>
+                        <h4>Area dentro del campo</h4>
+                        <p>Chequeo de caballos de campo a campo.</p>
+                        </p>Alimentación.</p>
+                        <p>Ayudar con el tratamiento de los internados.</p>
+                        <p>Limpieza de camas.</p>
+                        <p>Guardias nocturnas.</p>
+                        <p>Levantarlos si no pueden.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tittle">
+                <h3>Convertite en voluntario</h3>
+                <span>━━━</span>
+            </div>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6">
+                        <img class="img-fluid" src="./assets/img/voluntariado1.png" alt="voluntariado1">
+                    </div>
+                    <div class="col-sm-12 col-lg-6">
                         <p>Buscamos personas que estén comprometidos con la causa y tengan conocimientos en:</p>
                         <p> Marketing digital</p>
                         <p>Veterinaria</p>
                         <p>Trabajo con caballos en el campo</p>
                         <p>Posean licencia de conducir</p>
-                        <p><strong> No poseemos ningún tipo de subsidio por parte del Estado. Realizamos nuestra tarea gracias al aporte de la gente</strong></p>
+                        <p><strong> No poseemos ningún tipo de subsidio por parte del Estado. Realizamos nuestra tarea
+                                gracias al aporte de la gente</strong></p>
                         <button>SER VOLUNTARIO</button>
                     </div>
                 </div>
             </div>
+            </div>
 
 
-        <!-- Contacto  (Sergio Delgado)-->
-        <section>
-        </section>
+            <!-- Contacto  (Sergio Delgado)-->
+            <section>
+
+                <form method="post">
+                    <h1>¡Suscribete!</h1>
+                    <input type="text" name="name" placeholder="Nombre completo">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="submit" name="register">
+                </form>
+
+            </section>
 
 
     </main>
@@ -222,38 +503,42 @@
         <div class="footer-inkua">
             <div class="container-md">
                 <div class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-2 col-xl-4 offset-xl-2 col-xxl-3 offset-xxl-3">
-                            <div class="footer-redes">
-                                <p>¡Si te gustaría saber más podés visitar nuestras redes sociales!</p>
-                                <a href="#"><img class="redes" src="./assets/img/twitter.png" alt="twitter"></a>
-                                <a href="#"><img class="redes" src="./assets/img/instagram.png" alt="instagram"></a>
-                                <a href="#"><img class="redes" src="./assets/img/twitter.png" alt="wpp"></a>
-                                <a href="#"><img class="redes" src="./assets/img/face.png" alt="facebook"></a>
-                            </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-2 col-xl-4 offset-xl-2 col-xxl-3 offset-xxl-3">
+                        <div class="footer-redes">
+                            <p>¡Si te gustaría saber más podés visitar nuestras redes sociales!</p>
+                            <a href="#"><img class="redes" src="./assets/img/twitter.png" alt="twitter"></a>
+                            <a href="#"><img class="redes" src="./assets/img/instagram.png" alt="instagram"></a>
+                            <a href="#"><img class="redes" src="./assets/img/twitter.png" alt="wpp"></a>
+                            <a href="#"><img class="redes" src="./assets/img/face.png" alt="facebook"></a>
                         </div>
+                    </div>
 
-                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
-                            <div class="footer-menciones"></div>
-                                <p>El diseño y desarrollo de este sitio web fue donado por la fundación inkuA.</p>
-                                <p>Diseñadores: Cristian Hernández, Candela Sanó, Fernanda Suarez, Camila Lange.</p>
-                            </div>
-                        </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                        <div class="footer-menciones"></div>
+                        <p>El diseño y desarrollo de este sitio web fue donado por la fundación inkuA.</p>
+                        <p>Diseñadores: Cristian Hernández, Candela Sanó, Fernanda Suarez, Camila Lange.</p>
+                    </div>
                 </div>
             </div>
+        </div>
         </div>
         <div class="footer-caballos">
             <div class="container text-center">
                 <div class="col-sm-12 col-md-12"></div>
-                    <img src="./assets/img/logo-footer.png"  alt="logo">
-                    <p>2022 - Ⓡ CABALLOS EN LIBERTAD | Todos los derechos reservados</p>
-                </div>
+                <img src="./assets/img/logo-footer.png" alt="logo">
+                <p>2022 - Ⓡ CABALLOS EN LIBERTAD | Todos los derechos reservados</p>
             </div>
+        </div>
         </div>
     </footer>
 
     <!-- Bootstrap v5.1 -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 
 </body>
 
