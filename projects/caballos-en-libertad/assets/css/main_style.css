@@ -66,6 +66,7 @@
   filter: opacity(0.8);
 }
 
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- WHATSAPP ICON inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 .wpp {
   padding: 5px 0px 20px 0px;
   color: white;
@@ -76,23 +77,37 @@
   border-radius: 50px;
   bottom: 30px;
   right: 30px;
-  width: 180px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
+  z-index: 2;
+  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.4);
 }
 
-.wpp a img {
+.wpp::after{
+  content: "";
   position: absolute;
-  bottom: 9px;
-  left: 15px;
+  left: 60%;
+  border-top: 20px solid blue;
+  border-top-color: inherit;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
 }
-
+  
+.wpp_img{
+  position: absolute;
+  width: 55px;
+  bottom: 11px;
+  left: 11px;
+}
+  
 .wpp:hover {
   filter: brightness(1.2);
 }
-
-.wpp p {
+  
+.wpp .wpp_texto {
+  display: none;
   position: relative;
-  bottom: 5px; 
+  bottom: 2px; 
   padding-top: 5px;
   font-size: 14px;
   margin-right: 20px;
@@ -101,16 +116,9 @@
   text-decoration: none;
   text-align: center;
   width: 100px;
-  font-weight: bold;
-  font: var(--font, regular-400);
+  font-weight: 700;
 }
-
-.wpp img {
-  margin-right: 10px;
-  float: right;
-  width: 40px;
-  height: auto;
-}
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- WHATSAPP ICON final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 
 footer {
   float: right;
@@ -376,6 +384,28 @@ footer div {
     font-size: 1.5rem;
   }
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+  
+  /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- WHATSAPP ICON inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+  .wpp {
+    width: 180px;
+    height: 60px;
+  }
+
+  .wpp::after{
+    display: none;
+  }
+  
+  .wpp_img{
+    position: absolute;
+    width: auto;
+    bottom: 5px;
+    left: 12px;
+  }
+  
+  .wpp .wpp_texto {
+    display: block;
+  }
+  /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- WHATSAPP ICON final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 }
 
 /* Laptop 1280px */
@@ -495,6 +525,28 @@ footer div {
     display: none;
   }
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+
+    /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- WHATSAPP ICON inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+    .wpp {
+      width: 180px;
+      height: 60px;
+    }
+  
+    .wpp::after{
+      display: none;
+    }
+    
+    .wpp_img {
+      position: absolute;
+      width: auto;
+      bottom: 5px;
+      left: 12px;
+    }
+    
+    .wpp .wpp_texto {
+      display: block;
+    }
+    /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- WHATSAPP ICON final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 }
 
 /* Desktop 1920px */
