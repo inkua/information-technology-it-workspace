@@ -452,28 +452,6 @@ footer div {
     height: 250px;
   }
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
-  
-  /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- WHATSAPP ICON inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
-  .wpp {
-    width: 180px;
-    height: 60px;
-  }
-
-  .wpp::after{
-    display: none;
-  }
-  
-  .wpp_img{
-    position: absolute;
-    width: auto;
-    bottom: 5px;
-    left: 12px;
-  }
-  
-  .wpp .wpp_texto {
-    display: block;
-  }
-  /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- WHATSAPP ICON final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 }
 
 /* Laptop 1280px */
