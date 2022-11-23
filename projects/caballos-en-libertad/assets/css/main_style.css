@@ -308,7 +308,7 @@ footer div {
   color: white;
   margin: 0;
   width: fit-content;
-  padding: 3px 15px;
+  padding: 3px 55px;
 }
 
 .rescatado_imageContainer .rescatado_image .rescatado_NameHover {
@@ -363,10 +363,15 @@ footer div {
 .modal .modal-dialog .modal-content .flexContain .modalInfo .modalButton .btnModalInfo{
   background-color: var(--color-one);
 }
-
+.rescatados .rescatados_footer{
+  text-align: center;
+  padding: 30px;
+  font-size: 0.8rem;
+}
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 
-/* Tablet 768px */
+
+/* ############################################################## MEDIA QUERY - Tablet 768px - ############################################################## */
 @media (min-width: 768px) {
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
   .nosotros_principal {
@@ -443,10 +448,14 @@ footer div {
     width: 250px;
     height: 250px;
   }
+  .rescatados .rescatados_footer{
+    padding-top: 40px;
+    font-size: 1rem;
+  }
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 }
 
-/* Laptop 1280px */
+/* ############################################################## MEDIA QUERY - Laptop 1280px - ##############################################################*/
 @media (min-width: 1280px) {
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
   .nosotros_principal {
@@ -565,7 +574,7 @@ footer div {
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 }
 
-/* Desktop 1920px */
+/* ############################################################## MEDIA QUERY - Desktop 1920px - ##############################################################*/
 @media (min-width: 1920px) {
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
@@ -573,7 +582,7 @@ footer div {
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 }
-
+/* ############################################################## MEDIA QUERY ############################################################## */
 @media all and (min-width: 768px) and (max-width: 1279px) {
   footer {
     background-image: url("../img/footer-tablet.png");
