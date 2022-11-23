@@ -12,3 +12,54 @@
     /* thin-100, light-300, regular-400, medium-500, bold-700 */
     --font: "Montserrat", "Roboto", sans-serif;
 }
+
+@media screen and (min-width: 0px) and (max-width: 767px) {  /*Mobile*/
+    .contacto {
+        background-color: var(--color-four);
+        padding: 30px;
+    }
+
+    .contacto-titulo {
+        font-weight: 500;
+    }
+    
+    .contacto-contenido div {
+        margin: 40px auto;
+    }
+
+    .contacto-h6 {
+        font-weight: 700;
+        font-size: 17px;
+    }
+
+    .contacto-p {
+        margin: 0;
+    }
+
+    .contacto-icon {
+        color: var(--color-one);
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .contacto-contenido-img {
+        width: 80%;
+    }
+
+    .contacto-contenido-img img{
+        margin-top: -20px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {  /*Tablet*/
+    
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1919px) {  /*Laptop*/
+    
+}
+
+@media screen and (min-width: 1920px) {  /*Desktop*/
+    
+}
