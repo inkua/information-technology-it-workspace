@@ -12,6 +12,7 @@
 
   /* thin-100, light-300, regular-400, medium-500, bold-700 */
   --font: "Roboto", sans-serif;
+  font-family: var(--font);
 }
 
 /* Tablet 768px */
