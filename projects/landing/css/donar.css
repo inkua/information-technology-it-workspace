@@ -347,6 +347,7 @@ html {
 }
 
 .section2-donacion .max-width .group_form .form .form_body{
+    padding: 15px;
     display: flex;
     flex-direction: column;
 }
@@ -355,7 +356,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 15px 0;
 }
 
 .section2-donacion .max-width .group_form .form .form_body .group_boton .uno{
@@ -408,7 +409,6 @@ html {
 .section2-donacion .max-width .group_form .form .form_body .form_input_2{
     display: flex;
     justify-content: left;
-    margin: 0 15px;
 }
 
 .section2-donacion .max-width .group_form .form .form_body .form_input_2 input{
@@ -433,7 +433,6 @@ html {
     color: var(--light-gray-color);
     padding: 8px;
     border: 1px solid var(--light-gray-color);
-    margin: 0 15px;
     text-align: center;
 }
 
@@ -445,12 +444,12 @@ html {
 }
 
 .section2-donacion .max-width .group_form .form .form_body .form_boton button{
+    width: 100%;
+    padding: 10px;
     background-color: var(--blue-color);
     border: none;
     color: var(--light-gray-color);
-    padding: 10px;
-    width: 260px;
-    margin-left: 10px;
+    cursor: pointer;
 }
 
 .section2-donacion .max-width .group_form .form .form_body .form_boton button span{
@@ -469,9 +468,8 @@ html {
 .section2-donacion .max-width .group_form .form .form_body .linear{
     border: 1px solid var(--light-gray-color);
     height: 2px;
-    width: 96%;
+    width: 100%;
     padding: 0;
-    margin-left: 10px;
     margin-top: 10px;
 }
 
@@ -480,10 +478,8 @@ html {
     justify-content: center;
     align-items: center;
     text-align: justify;
-    width: 270px;
     font-size: 1rem;
     margin-top: 10px;
-    margin-left: 10px;
     color: grey
 }
 
