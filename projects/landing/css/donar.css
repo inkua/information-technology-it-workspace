@@ -356,6 +356,7 @@ html {
     padding: 15px;
     display: flex;
     flex-direction: column;
+    gap: 3px;
 }
 
 .section2-donacion .max-width .group_form .form .form_body .group_boton{
@@ -369,22 +370,26 @@ html {
     background-color: var(--blue-color);
     border: 1px solid var(--blue-color);
     color: var(--white-color);
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
+    border-radius: 3px 0 0 3px;
+    font-size: 1rem;
 }
 
 .section2-donacion .max-width .group_form .form .form_body .group_boton .dos{
     background-color: var(--white-color);
     border: 1px solid var(--blue-color);
     color: var(--blue-color);
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    font-size: 1rem;
 }
 
 .section2-donacion .max-width .group_form .form .form_body .group_boton .heart{
     color: var(--blue-color);
     font-size: 1rem;
-    padding-right: 2px;
+    padding-right: 4px;
 }
 
 .section2-donacion .max-width .group_form .form .form_body .select{
@@ -397,6 +402,16 @@ html {
    border: none;
 }
 
+.section2-donacion .max-width .group_form .form .form_body .select select {
+    width: 100%;
+    max-width: 255px;
+    padding: 3px;
+    border: none;
+    border-bottom: 2px solid var(--light-gray-color);
+    color: rgb(151, 144, 144);
+    outline: none;
+}
+
 .section2-donacion .max-width .group_form .form .form_body .form_input{
     display: flex;
     justify-content: space-between;
@@ -407,9 +422,14 @@ html {
 .section2-donacion .max-width .group_form .form .form_body .form_input input{
     margin-top: 10px;
     padding: 8px;
-    width: 75px;
+    width: 80px;
     text-align: center;
     border: 1px solid var(--light-gray-color);
+    color: rgb(151, 144, 144);
+    border-radius: 3px;
+}
+.section2-donacion .max-width .group_form .form .form_body .form_input input:focus {
+    outline: 2px solid var(--blue-color);
 }
 
 .section2-donacion .max-width .group_form .form .form_body .form_input_2{
@@ -420,9 +440,14 @@ html {
 .section2-donacion .max-width .group_form .form .form_body .form_input_2 input{
     margin-top: 10px;
     padding: 8px;
-    width: 75px;
+    width: 80px;
     text-align: center;
     border: 1px solid var(--light-gray-color);
+    color: rgb(151, 144, 144);
+    border-radius: 3px;
+}
+.section2-donacion .max-width .group_form .form .form_body .form_input_2 input:focus {
+    outline: 2px solid var(--blue-color);
 }
 
 .section2-donacion .max-width .group_form .form .form_body .form_input_3{
@@ -436,10 +461,14 @@ html {
     width: 100%;
     font-family: var(--ubuntu-font);
     font-size: 1.5rem;
-    color: var(--light-gray-color);
+    color: rgb(151, 144, 144);
     padding: 8px;
     border: 1px solid var(--light-gray-color);
     text-align: center;
+    border-radius: 3px;
+}
+.section2-donacion .max-width .group_form .form .form_body .form_input_3 input:focus{
+    outline: 2px solid var(--blue-color);
 }
 
 .section2-donacion .max-width .group_form .form .form_body .form_boton{    display: flex;
@@ -456,6 +485,7 @@ html {
     border: none;
     color: var(--light-gray-color);
     cursor: pointer;
+    border-radius: 3px;
 }
 
 .section2-donacion .max-width .group_form .form .form_body .form_boton button span{
