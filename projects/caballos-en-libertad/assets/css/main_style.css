@@ -283,8 +283,7 @@ footer div {
 
 .rescatado_imageContainer {
   width: 100vw;
-  height: 450px;
-  overflow-y: scroll;
+  height: fit-content;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -351,6 +350,7 @@ footer div {
 .modal .modal-dialog .modal-content .flexContain .modalInfo .modalHeader .modalTitleContainer .modalTitle{
   color: var(--color-two);
   font-weight: 700;
+  font-size: 1.2rem;
 }
 .modal .modal-dialog .modal-content .flexContain .modalInfo .modalHeader .modalExit{
   display: flex;
@@ -368,8 +368,13 @@ footer div {
   max-height: 400px;
   overflow-y: scroll;
 }
+.modal .modal-dialog .modal-content .flexContain .modalInfo .modalBody .textModalBody{
+  font-size: 0.8rem;
+}
 .modal .modal-dialog .modal-content .flexContain .modalInfo .modalButton .btnModalInfo{
   background-color: var(--color-one);
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 .rescatados .rescatados_footer{
   text-align: center;
@@ -426,10 +431,6 @@ footer div {
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
-  .rescatado_imageContainer {
-    max-width: 1050px;
-    height: 700px;
-  }
   .rescatado_imageContainer .rescatado_image {
     margin: 0px;
   }
@@ -455,6 +456,9 @@ footer div {
     background-size: cover;
     width: 250px;
     height: 250px;
+  }
+  .modal .modal-dialog .modal-content .flexContain .modalInfo .modalBody .textModalBody{
+    font-size: 1rem;
   }
   .rescatados .rescatados_footer{
     padding-top: 40px;
