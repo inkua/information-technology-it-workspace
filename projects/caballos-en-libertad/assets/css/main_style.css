@@ -224,7 +224,7 @@ footer div {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
+  /*width: 100vw; linea comentada por errores de width*/
   height: 400px;
   filter: grayscale(0.7);
 }
