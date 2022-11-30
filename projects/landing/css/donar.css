@@ -53,7 +53,7 @@ html {
 
 /* !--------------- Starts Navbar Styling -------------- */
 .navbar {
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     width: 100%;
     height: 75px;
@@ -95,7 +95,7 @@ html {
 .navbar .menu li a {
     position: relative;
     display: block;
-    color: var(--blue-color);
+    color: var(--white-color);
     font-size: 1.8rem;
     font-weight: 500;
     text-decoration: none;
@@ -103,6 +103,9 @@ html {
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover {
+    color: var(--blue-color);
+}
+.navbar.sticky .menu li a {
     color: var(--blue-color);
 }
 .navbar.sticky .menu li a:hover {
@@ -128,12 +131,15 @@ html {
 .navbar .ingresar-btn {
     width: 120px;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.185);
     border-radius: 30px;
     text-align: center;
-    border: 1px solid var(--blue-color);
+    border: 1px solid var(--white-color);
     color: var(--blue-color);
     transition: all 0.3s ease;
+}
+.navbar.sticky .ingresar-btn {
+    border: 1px solid var(--blue-color);
 }
 .navbar .ingresar-btn:hover {
     transform: scale(1.05);
@@ -256,10 +262,275 @@ html {
 
 /* !--------------- Starts Donación (SECTION 2) Styling -------------- */
 
-/*
-* SECTION 2 STYLING GOES HERE
-* ASSIGNED TO: Andrés Campos
-*/
+.section2-donacion {
+    min-width: 100%;
+    min-height: 400px;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2-donacion .max-width {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white-color);
+    flex-wrap: wrap;
+}
+
+.section2-donacion .max-width .group_one{
+    max-width: 700px;
+    height: auto;
+}
+
+.section2-donacion .max-width .group_one h2{
+    font-family: var(--ubuntu-font);
+    color: var(--blue-color);
+    font-weight: 700;
+    font-size: 3.5rem;
+    padding: 20px;
+}
+
+.section2-donacion .max-width .group_one p{
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: var(--ubuntu-font);
+    color: black;
+    padding: 10px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.section2-donacion .max-width .group_one p span{
+    color: var(--blue-color);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.section2-donacion .max-width .group_form .form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: var(--white-color);
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+}
+
+.section2-donacion .max-width .group_form .form .form_header{
+    width: 100%;
+    background-color: var(--blue-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: var(--white-color);
+    gap: 20px;
+}
+
+.section2-donacion .max-width .group_form .form .form_header p{
+    font-family: var(--ubuntu-font);
+    font-size: 1.3rem;
+}
+
+.section2-donacion .max-width .group_form .form .form_header .candado{
+    color: var(--light-gray-color);
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.section2-donacion .max-width .group_form .form .form_header .circle{
+    color: var(--light-gray-color);
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.section2-donacion .max-width .group_form .form .form_header i {
+    cursor: pointer;
+}
+
+.section2-donacion .max-width .group_form .form .form_body{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.section2-donacion .max-width .group_form .form .form_body .group_boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.section2-donacion .max-width .group_form .form .form_body .group_boton .uno{
+    background-color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+    color: var(--white-color);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 3px 0 0 3px;
+    font-size: 1rem;
+}
+
+.section2-donacion .max-width .group_form .form .form_body .group_boton .dos{
+    background-color: var(--white-color);
+    border: 1px solid var(--blue-color);
+    color: var(--blue-color);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    font-size: 1rem;
+}
+
+.section2-donacion .max-width .group_form .form .form_body .group_boton .heart{
+    color: var(--blue-color);
+    font-size: 1rem;
+    padding-right: 4px;
+}
+
+.section2-donacion .max-width .group_form .form .form_body .select{
+   width: 100%;
+   border: 0px;
+   outline: 0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: none;
+}
+
+.section2-donacion .max-width .group_form .form .form_body .select select {
+    width: 100%;
+    max-width: 255px;
+    padding: 3px;
+    border: none;
+    border-bottom: 2px solid var(--light-gray-color);
+    color: rgb(151, 144, 144);
+    outline: none;
+}
+
+.section2-donacion .max-width .group_form .form .form_body .form_input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.section2-donacion .max-width .group_form .form .form_body .form_input input{
+    margin-top: 10px;
+    padding: 8px;
+    width: 80px;
+    text-align: center;
+    border: 1px solid var(--light-gray-color);
+    color: rgb(151, 144, 144);
+    border-radius: 3px;
+}
+.section2-donacion .max-width .group_form .form .form_body .form_input input:focus {
+    outline: 2px solid var(--blue-color);
+}
+
+.section2-donacion .max-width .group_form .form .form_body .form_input_2{
+    display: flex;
+    justify-content: left;
+}
+
+.section2-donacion .max-width .group_form .form .form_body .form_input_2 input{
+    margin-top: 10px;
+    padding: 8px;
+    width: 80px;
+    text-align: center;
+    border: 1px solid var(--light-gray-color);
+    color: rgb(151, 144, 144);
+    border-radius: 3px;
+}
+.section2-donacion .max-width .group_form .form .form_body .form_input_2 input:focus {
+    outline: 2px solid var(--blue-color);
+}
+
+.section2-donacion .max-width .group_form .form .form_body .form_input_3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.section2-donacion .max-width .group_form .form .form_body .form_input_3 input{
+    width: 100%;
+    font-family: var(--ubuntu-font);
+    font-size: 1.5rem;
+    color: rgb(151, 144, 144);
+    padding: 8px;
+    border: 1px solid var(--light-gray-color);
+    text-align: center;
+    border-radius: 3px;
+}
+.section2-donacion .max-width .group_form .form .form_body .form_input_3 input:focus{
+    outline: 2px solid var(--blue-color);
+}
+
+.section2-donacion .max-width .group_form .form .form_body .form_boton{    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.section2-donacion .max-width .group_form .form .form_body .form_boton button{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--blue-color);
+    border: none;
+    color: var(--light-gray-color);
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.section2-donacion .max-width .group_form .form .form_body .form_boton button span{
+    margin-left: 8px;
+}
+
+.section2-donacion .max-width .group_form .form .form_body .form_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    color: var(--blue-color);
+    font-size: 0.8rem;
+}
+
+.section2-donacion .max-width .group_form .form .form_body .linear{
+    border: 1px solid var(--light-gray-color);
+    height: 2px;
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.section2-donacion .max-width .group_form .form .form_body .footer_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-size: 1rem;
+    margin-top: 10px;
+    color: grey
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* !--------------- Finishes Donación (SECTION 2) Styling -------------- */
 
@@ -554,6 +825,19 @@ html {
 @media (max-width: 1150px) {
     .section3-alcance {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/donar/section3-alcance-bg.png");
+    }
+}
+
+@media (max-width: 999px) {
+    .section2-donacion .max-width {
+        width: 100%;
+        height: 100%;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--white-color);
+        flex-wrap: wrap;
+        gap: 20px;
     }
 }
 
