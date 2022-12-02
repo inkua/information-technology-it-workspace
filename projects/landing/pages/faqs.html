@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="shortcut icon" href="../img/inkua-favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/blog.css">
-    <title>Blog - InkuA</title>
+    <link rel="stylesheet" href="../css/faqs.css">
+    <title>Forma Parte - InkuA</title>
 </head>
 
 <body>
@@ -24,25 +24,125 @@
                 <img src="../img/logo-inkua-white.svg" class="logo-inkua" alt="Logo InkuA">
             </a>
             <ul class="menu">
-                <li><a href="../pages/sobre-nosotros.html" class="menu-btn" aria-label="Ir a la página Sobre Nosotros InkuA"
-                        role="link">Sobre nosotros</a></li>
-                <li><a href="../pages/forma-parte.html" class="menu-btn" aria-label="Ir a la página Forma Parte de InkuA"
-                        role="link">Forma parte</a></li>
-                <li><a href="../pages/blog.html" class="menu-btn" aria-label="Ir al Blog de InkuA" role="link">Blog</a></li>
+                <li><a href="../pages/sobre-nosotros.html" class="menu-btn"
+                        aria-label="Ir a la página Sobre Nosotros InkuA" role="link">Sobre nosotros</a></li>
+                <li><a href="../pages/forma-parte.html" class="menu-btn"
+                        aria-label="Ir a la página Forma Parte de InkuA" role="link">Forma parte</a></li>
+                <li><a href="../pages/blog.html" class="menu-btn" aria-label="Ir al Blog de InkuA" role="link">Blog</a>
+                </li>
                 <li><a href="../pages/contacto.html" class="menu-btn" aria-label="Ir a la página de Contacto de InkuA"
                         role="link">Contacto</a></li>
                 <li><a href="../pages/ingresar.html" class="menu-btn ingresar-btn" aria-label="Ir a Ingresar a InkuA"
                         role="link">Ingresar</a></li>
-                <li><a href="../pages/donar.html" class="menu-btn donar-btn" aria-label="Ir a la página para Donar a InkuA"
-                        role="link">Donar</a></li>
+                <li><a href="../pages/donar.html" class="menu-btn donar-btn"
+                        aria-label="Ir a la página para Donar a InkuA" role="link">Donar</a></li>
             </ul>
             <div class="menu-btn bars-btn" aria-label="Press here to see menu button" role="button">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </header>
-    <section class="blog-content">
-        
+    <section class="faqs">
+        <div class="max-width">
+            <div class="container">
+                <h1 class="title">Preguntas Frecuentes</h1>
+                <div class="subcontainer">
+                    <div class="inner-container">
+                        <a href="#" class="top">
+                            Nuestra Plataforma
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <a href="#" class="bottom">
+                            Programa de Prácticas
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                    </div>
+                    <div class="inner-container">
+                        <a href="#" class="top">
+                            Sobre las Mentorías
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <a href="#" class="bottom">
+                            Colaboraciones y Proyectos
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-form">
+        <div class="max-width">
+    
+            <h1>Contacto</h1>
+    
+            <form action="">
+    
+                <div>
+                    <input type="text" name="" placeholder="Nombre">
+                </div>
+    
+                <div>
+                    <input type="text" name="" placeholder="Apellido(s)">
+                </div>
+    
+                <div>
+                    <input type="email" name="" placeholder="Email">
+                </div>
+    
+                <div>
+                    <input type="tel" name="" placeholder="Telefono">
+                </div>
+    
+                <div class="block">
+                    <select name="" id="combo-box" class="combo-box" required>
+                        <option value="" class="option0">País</option>
+    
+                    </select>
+                </div>
+    
+                <div class="block">
+                    <select name="" id="" class="combo-box" required>
+                        <option value="" class="option0" disabled selected>Yo quiero.</option>
+                        <option value="1">One</option>
+                    </select>
+                </div>
+    
+                <div class="block">
+                    <textarea name="" rows="7" placeholder="Comentario"></textarea>
+                </div>
+    
+                <div class="check">
+                    <input type="checkbox" name="" id="">
+                    <label for="">Deseo recibir novedades por mail.</label>
+                </div>
+    
+                <div class="recaptcha">
+                    <p>ReCaptcha</p>
+                </div>
+    
+                <div class="block">
+                    <button class="button">Enviar</button>
+                </div>
+    
+            </form>
+    
+        </div>
+    </section>
+    <section class="newsletter">
+        <div class="max-width">
+            <section class="container">
+                <h2 class="title">Recibe nuestras novedades</h2>
+                <div class="description">
+                    <p>Recibe información sobre nuestros eventos, cursos y lanzamientos.</p>
+                    <p>Puedes darte de baja en cualquier momento.</p>
+                </div>
+                <form class="email-form" action="">
+                    <input type="email" class="input-email" placeholder="Email">
+                    <input type="button" class="button" value="Suscribirse">
+                </form>
+            </section>
+        </div>
     </section>
     <footer class="footer">
         <div class="max-width">
@@ -97,5 +197,4 @@
     </footer>
     <script src="../scripts.js"></script>
 </body>
-
 </html>
