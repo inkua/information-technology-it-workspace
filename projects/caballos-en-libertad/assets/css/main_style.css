@@ -179,28 +179,29 @@ footer div {
 
 .nosotros_second .row i {
   color: var(--color-two);
-  font-size: 40px;
+  font-size: 20px;
 }
 .nosotros_second .row h4 {
   color: var(--color-two);
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 500;
 }
 .nosotros_second .row p {
   color: var(--color-two);
-  font-size: 25px;
+  font-size: 12px;
   font-weight: 500;
   justify-content: center;
   text-align: center;
+  padding: 0%;
 }
 .nosotros_second p {
   color: var(--color-two);
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 500;
   padding: 15px;
 }
 .sobre_nosotros {
-  background-image: url(https://www.ociocaballo.com/wp-content/uploads/2020/04/ancce_037.jpg);
+  background-image: url(../img/Union.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -226,9 +227,11 @@ footer div {
   color: white;
 }
 .sobre_nosotros .sobre .row p {
-  padding: 15px;
+  padding: 10px;
   font-size: 0.6rem;
   overflow: hidden;
+  width: 90%;
+  padding-left: 50px;
 }
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 
@@ -330,8 +333,10 @@ footer div {
   .sobre_nosotros .sobre .row p {
     padding: 30px;
     margin: 0px 30px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     max-height: 700px;
+    width: 85%;
+    padding-left: 150px;
   }
 
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
@@ -352,7 +357,7 @@ footer div {
   .nosotros_principal {
     width: 100%;
     height: 700px;
-    padding: 120px;
+    padding: 100px;
   }
   .nosotros_principal .nosotros_principal_titulo {
     max-height: 170px;
@@ -365,6 +370,7 @@ footer div {
     font-size: 1.4rem;
     font-weight: 500;
     padding-right: 64%;
+    margin-bottom: 10px;
   }
   .nosotros_second {
     display: inline-flex;
@@ -379,7 +385,7 @@ footer div {
     text-align: center;
   }
   .nosotros_second .row i {
-    font-size: 25px;
+    font-size: 30px;
   }
   .nosotros_second .row .icon {
     flex-direction: row;
@@ -400,7 +406,7 @@ footer div {
   }
   .nosotros_second .row .icon h4 {
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 700;
   }
 
   .nosotros_second .p-nosotros-second {
@@ -424,7 +430,9 @@ footer div {
   .sobre_nosotros .sobre .row p {
     padding: 30px;
     margin: 0px 45px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    width: 80%;
+    padding-left: 160px;
   }
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
@@ -452,7 +460,87 @@ footer div {
 /* Desktop 1920px */
 @media (min-width: 1920px) {
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+  .nosotros_principal {
+    width: 100%;
+    height: 750px;
+    padding: 90px;
+  }
+  .nosotros_principal .nosotros_principal_titulo {
+    max-height: 170px;
+    margin-bottom: 100px;
+    padding-left: 50px;
+  }
+  .nosotros_principal .nosotros_principal_titulo h1 {
+    font-size: 4rem;
+  }
+  .nosotros_principal .nosotros_principal_titulo p {
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding-right: 64%;
+    margin-bottom: 30px;
+  }
+  .nosotros_second {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    height: 300px;
+    padding-left: 200px;
+  }
+  .nosotros_second .row {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    text-align: center;
+  }
+  .nosotros_second .row i {
+    font-size: 30px;
+  }
+  .nosotros_second .row .icon {
+    flex-direction: row;
+    width: 20%;
+    height: 150px;
+    justify-content: center;
+    text-align: center;
+  }
 
+  .nosotros_second .row .icon .p-icon {
+    color: var(--color-two);
+    font-size: 15px;
+    font-weight: 500;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+  }
+  .nosotros_second .row .icon h4 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .nosotros_second .p-nosotros-second {
+    font-size: 22px;
+    font-weight: 500;
+    width: 30%;
+    text-align: left;
+    padding-left: 55px;
+    margin: 0;
+  }
+  .sobre_nosotros {
+    height: 600px;
+  }
+  .sobre_nosotros .sobre h3 {
+    padding-top: 25px;
+    font-size: 40px;
+  }
+  .sobre_nosotros .sobre span {
+    font-size: 35px;
+  }
+  .sobre_nosotros .sobre .row p {
+    padding: 30px;
+    margin: 0px 45px;
+    font-size: 1.3rem;
+    width: 80%;
+    padding-left: 300px;
+  }
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
