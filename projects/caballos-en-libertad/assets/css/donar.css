@@ -1,8 +1,4 @@
 *{
-   
-    --color-one: #fff;
-    --color-two: #00638C;
-    --color-three: #C6EAFF;
 
     /* thin-100, light-300, regular-400, medium-500, bold-700 */
     --font-family: 'Roboto', sans-serif;
@@ -13,7 +9,7 @@
     --fa-font-solid: normal 900 1em/1 'Roboto', sans-serif;
 } */
 
-.text--center{
+.text--center .title-donar{
     background-image: url("https://i.pinimg.com/originals/a9/bb/1c/a9bb1c177a9b21359870a4a78ef1666f.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,26 +20,36 @@
   
 }
 
-.tittle{
+.tittle-donar{
    /*  margin: 3rem; */
   
 }
 
-h3{
-    color: var(--color-one);
+.title-donar h3{
+    color: #00638C;
     padding-top: 1.5rem ;
     
 }
-strong{
-    color: var(--color-one);
+.p-d{
+    color:black;
+    text-decoration:solid;
+    font-size: 15px;
+}
+.p-d strong{
+    color: #00638C;
     padding-top: 1.5rem ;
 }
-span{
-    color: var(--color-one);
+.p-d-n {
+    color: #00638C;
+    padding-top: 1.5rem;
+}
+.title-donar span{
+    color: #fff;
     font-weight: bolder;
     margin-bottom: 2rem;
 }
-button{
-    color: var(--color-one);
+.title-donar button{
+    color: #fff;
     width: 20%;
 }
+
