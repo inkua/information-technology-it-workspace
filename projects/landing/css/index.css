@@ -2,13 +2,12 @@
 
 :root {
     /*Colors Palette*/
-    --sky-blue-color: #4594D9;
-    --blue-color: #034C8C;
-    --dark-blue-color: #1C3661;
-    --light-gray-color: #E6E6E6;
-    --white-color: #FFFFFF;
-    --separator: #33BEE8;
-    
+    --sky-blue-color: #4594d9;
+    --blue-color: #034c8c;
+    --dark-blue-color: #1c3661;
+    --light-gray-color: #e6e6e6;
+    --white-color: #ffffff;
+    --separator: #33bee8;
 
     /* Fonts */
     --ubuntu-font: "Ubuntu", sans-serif;
@@ -26,30 +25,28 @@ html {
     scroll-behavior: smooth;
 }
 
-
 /* !--------------- Starts Scrollbar Styling -------------- */
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--white-color); 
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background: var(--white-color);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--dark-blue-color); 
+    background: var(--dark-blue-color);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--blue-color); 
+    background: var(--blue-color);
 }
 /* !--------------- Finishes Scrollbar Styling -------------- */
-
 
 /* !--------------- Starts Navbar Styling -------------- */
 .navbar {
@@ -186,7 +183,6 @@ html {
 }
 /* !--------------- Finishes Navbar Styling -------------- */
 
-
 /* !--------------- Starts Unirse (SECTION 1) Styling -------------- */
 .section1-unirse {
     min-width: 100%;
@@ -254,7 +250,6 @@ html {
 }
 /* !--------------- Finishes Unirse (SECTION 1) Styling -------------- */
 
-
 /* !--------------- Starts Ser Parte Reasons (SECTION 2) Styling -------------- */
 
 .section2-ser-parte-reasons {
@@ -284,7 +279,7 @@ html {
 
 .section2-ser-parte-reasons .content-section2 .title {
     padding: 2rem 0;
-    color: var(--dark-blue-color);   
+    color: var(--dark-blue-color);
     font-size: 5rem;
     text-align: center;
 }
@@ -300,7 +295,8 @@ html {
     font-size: 3rem;
 }
 
-.section2-ser-parte-reasons .reasons-container .left, .right {
+.section2-ser-parte-reasons .reasons-container .left,
+.right {
     max-width: 500px;
     display: flex;
     flex-direction: column;
@@ -310,7 +306,7 @@ html {
 .section2-ser-parte-reasons .reasons-container .reason {
     display: flex;
     min-height: 90px;
-    gap: .3em;
+    gap: 0.3em;
 }
 
 .section2-ser-parte-reasons .reasons-container .reason .vineta {
@@ -319,16 +315,18 @@ html {
 
 /* !--------------- Finishes Ser Parte Reasons (SECTION 2) Styling -------------- */
 
-
 /* !--------------- Starts Ser Parte (SECTION 3) Styling -------------- */
 .section3-ser-parte {
     width: 100%;
     padding: 1rem 2rem;
     min-height: 100vh;
-    background-image: linear-gradient(90deg,
-    rgba(255, 255, 255, .95) .4%,
-    rgba(255, 255, 255, .95) 26.22%,
-    rgba(255, 255, 255, 0) 69.62%), url("../img/inicio/section3-ser-parte-bg.png");
+    background-image: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.95) 0.4%,
+            rgba(255, 255, 255, 0.95) 26.22%,
+            rgba(255, 255, 255, 0) 69.62%
+        ),
+        url("../img/inicio/section3-ser-parte-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -365,7 +363,6 @@ html {
 
 .section3-ser-parte .container .description {
     font-size: 2.6rem;
-
 }
 
 .section3-ser-parte .container .description span {
@@ -391,9 +388,8 @@ html {
 }
 /* !--------------- Finishes Ser Parte (SECTION 3) Styling -------------- */
 
-
 /* !--------------- Starts Ingresar (SECTION 4) Styling -------------- */
-.section4-ingresar{
+.section4-ingresar {
     width: 100%;
     min-height: 450px;
     margin-top: -70px;
@@ -437,7 +433,7 @@ html {
     padding: 10px;
 }
 
-.section4-ingresar .container .description .main span{
+.section4-ingresar .container .description .main span {
     color: var(--blue-color);
     font-weight: 400;
 }
@@ -472,7 +468,6 @@ html {
     transform: scale(1.05);
 }
 /* !--------------- Finishes Ingresar (SECTION 4) Styling -------------- */
-
 
 /* !--------------- Starts Inkua Números (SECTION 5) Styling -------------- */
 .section5-inkua-numeros {
@@ -549,7 +544,6 @@ html {
 }
 /* !--------------- Finishes Inkua Números (SECTION 5) Styling -------------- */
 
-
 /* !--------------- Starts Partners (SECTION 6) Styling -------------- */
 .section6-partners {
     background-color: var(--white-color);
@@ -587,14 +581,13 @@ html {
 }
 /* !--------------- Finishes Partners (SECTION 6) Styling -------------- */
 
-
 /* !--------------- Starts Newsletter (SECTION 7) Styling -------------- */
-.section7-newsletter{ 
+.section7-newsletter {
     width: 100%;
     min-height: 450px;
     padding: 1rem 2rem;
     background-image: url("../img/inicio/section7-newsletter-bg.png");
-    background-color: #1C3661;
+    background-color: #1c3661;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -653,7 +646,7 @@ html {
     font-weight: 400;
     font-size: 2rem;
     border-radius: 30px;
-    border: none; 
+    border: none;
 }
 
 .section7-newsletter .container .email-form .button {
@@ -673,17 +666,16 @@ html {
 }
 /* !--------------- Finishes Newsletter (SECTION 7) Styling -------------- */
 
-
 /* !--------------- Starts Footer (FOOTER - SECTION 8) Styling -------------- */
 .footer {
     min-width: 100%;
     padding: 5rem 1rem;
-    background-color: #F6F9FF;
+    background-color: #f6f9ff;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.6rem;
-    border: 1px solid #D9D9D9;
+    border: 1px solid #d9d9d9;
 }
 
 .footer .max-width {
@@ -763,7 +755,6 @@ html {
 }
 /* !--------------- Finishes Footer (FOOTER - SECTION 8) Styling -------------- */
 
-
 @media (max-width: 1500px) {
     .section3-ser-parte .container {
         padding: 50px;
@@ -829,13 +820,16 @@ html {
 
     .section3-ser-parte {
         padding: 4rem 0rem;
-        background-image: linear-gradient(90deg,
-        rgba(255, 255, 255, .75) 100%,
-        rgba(255, 255, 255, .75) 100%), url("../img/inicio/section3-ser-parte-bg.png");
+        background-image: linear-gradient(
+                90deg,
+                rgba(255, 255, 255, 0.75) 100%,
+                rgba(255, 255, 255, 0.75) 100%
+            ),
+            url("../img/inicio/section3-ser-parte-bg.png");
         background-attachment: scroll;
     }
 
-    .section4-ingresar{
+    .section4-ingresar {
         margin-top: -50px;
         border-radius: 50px 50px 0px 0px;
     }

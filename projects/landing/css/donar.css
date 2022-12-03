@@ -2,13 +2,12 @@
 
 :root {
     /*Colors Palette*/
-    --sky-blue-color: #4594D9;
-    --blue-color: #034C8C;
-    --dark-blue-color: #1C3661;
-    --light-gray-color: #E6E6E6;
-    --white-color: #FFFFFF;
-    --separator: #33BEE8;
-    
+    --sky-blue-color: #4594d9;
+    --blue-color: #034c8c;
+    --dark-blue-color: #1c3661;
+    --light-gray-color: #e6e6e6;
+    --white-color: #ffffff;
+    --separator: #33bee8;
 
     /* Fonts */
     --ubuntu-font: "Ubuntu", sans-serif;
@@ -26,30 +25,28 @@ html {
     scroll-behavior: smooth;
 }
 
-
 /* !--------------- Starts Scrollbar Styling -------------- */
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--white-color); 
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background: var(--white-color);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--dark-blue-color); 
+    background: var(--dark-blue-color);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--blue-color); 
+    background: var(--blue-color);
 }
 /* !--------------- Finishes Scrollbar Styling -------------- */
-
 
 /* !--------------- Starts Navbar Styling -------------- */
 .navbar {
@@ -192,10 +189,9 @@ html {
 }
 /* !--------------- Finishes Navbar Styling -------------- */
 
-
 /* !--------------- Starts Apoya (SECTION 1) Styling -------------- */
 
-.section1-apoya{
+.section1-apoya {
     min-width: 100%;
     min-height: 700px;
     background: url("../img/donar/section1-apoya-bg.png");
@@ -206,7 +202,7 @@ html {
     align-items: center;
 }
 
-.section1-apoya .max-width{
+.section1-apoya .max-width {
     width: 100%;
     height: 100%;
     max-width: 1200px;
@@ -216,7 +212,7 @@ html {
     align-items: center;
 }
 
-.section1-apoya .max-width .titulo{
+.section1-apoya .max-width .titulo {
     font-family: var(--ubuntu-font);
     font-size: 50px;
     padding: 10px;
@@ -226,7 +222,7 @@ html {
     text-align: center;
 }
 
-.section1-apoya .max-width .parrafo{
+.section1-apoya .max-width .parrafo {
     font-family: var(--ubuntu-font);
     font-size: 25px;
     padding: 10px;
@@ -234,31 +230,25 @@ html {
     font-weight: 300;
     max-width: 700px;
     text-align: center;
-
 }
 
-.section1-apoya .max-width .footer_parrafo{
+.section1-apoya .max-width .footer_parrafo {
     font-family: var(--ubuntu-font);
     font-size: 20px;
     padding: 10px;
     color: var(--white-color);
-    font-weight: 300; 
+    font-weight: 300;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-
 }
 
-.section1-apoya .max-width .footer_parrafo .link{
+.section1-apoya .max-width .footer_parrafo .link {
     color: var(--white-color);
 }
 
-
-
-
 /* !--------------- Finishes Apoya (SECTION 1) Styling -------------- */
-
 
 /* !--------------- Starts Donación (SECTION 2) Styling -------------- */
 
@@ -281,12 +271,12 @@ html {
     flex-wrap: wrap;
 }
 
-.section2-donacion .max-width .group_one{
+.section2-donacion .max-width .group_one {
     max-width: 700px;
     height: auto;
 }
 
-.section2-donacion .max-width .group_one h2{
+.section2-donacion .max-width .group_one h2 {
     font-family: var(--ubuntu-font);
     color: var(--blue-color);
     font-weight: 700;
@@ -294,7 +284,7 @@ html {
     padding: 20px;
 }
 
-.section2-donacion .max-width .group_one p{
+.section2-donacion .max-width .group_one p {
     font-size: 2.5rem;
     font-weight: 400;
     font-family: var(--ubuntu-font);
@@ -304,23 +294,23 @@ html {
     letter-spacing: 1px;
 }
 
-.section2-donacion .max-width .group_one p span{
+.section2-donacion .max-width .group_one p span {
     color: var(--blue-color);
     font-weight: 600;
     font-style: italic;
 }
 
-.section2-donacion .max-width .group_form .form{
+.section2-donacion .max-width .group_form .form {
     width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     background-color: var(--white-color);
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
 }
 
-.section2-donacion .max-width .group_form .form .form_header{
+.section2-donacion .max-width .group_form .form .form_header {
     width: 100%;
     background-color: var(--blue-color);
     display: flex;
@@ -331,18 +321,18 @@ html {
     gap: 20px;
 }
 
-.section2-donacion .max-width .group_form .form .form_header p{
+.section2-donacion .max-width .group_form .form .form_header p {
     font-family: var(--ubuntu-font);
     font-size: 1.3rem;
 }
 
-.section2-donacion .max-width .group_form .form .form_header .candado{
+.section2-donacion .max-width .group_form .form .form_header .candado {
     color: var(--light-gray-color);
     font-size: 0.8rem;
     cursor: pointer;
 }
 
-.section2-donacion .max-width .group_form .form .form_header .circle{
+.section2-donacion .max-width .group_form .form .form_header .circle {
     color: var(--light-gray-color);
     font-size: 0.8rem;
     cursor: pointer;
@@ -352,21 +342,21 @@ html {
     cursor: pointer;
 }
 
-.section2-donacion .max-width .group_form .form .form_body{
+.section2-donacion .max-width .group_form .form .form_body {
     padding: 15px;
     display: flex;
     flex-direction: column;
     gap: 3px;
 }
 
-.section2-donacion .max-width .group_form .form .form_body .group_boton{
+.section2-donacion .max-width .group_form .form .form_body .group_boton {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px 0;
 }
 
-.section2-donacion .max-width .group_form .form .form_body .group_boton .uno{
+.section2-donacion .max-width .group_form .form .form_body .group_boton .uno {
     background-color: var(--blue-color);
     border: 1px solid var(--blue-color);
     color: var(--white-color);
@@ -376,7 +366,7 @@ html {
     font-size: 1rem;
 }
 
-.section2-donacion .max-width .group_form .form .form_body .group_boton .dos{
+.section2-donacion .max-width .group_form .form .form_body .group_boton .dos {
     background-color: var(--white-color);
     border: 1px solid var(--blue-color);
     color: var(--blue-color);
@@ -386,20 +376,20 @@ html {
     font-size: 1rem;
 }
 
-.section2-donacion .max-width .group_form .form .form_body .group_boton .heart{
+.section2-donacion .max-width .group_form .form .form_body .group_boton .heart {
     color: var(--blue-color);
     font-size: 1rem;
     padding-right: 4px;
 }
 
-.section2-donacion .max-width .group_form .form .form_body .select{
-   width: 100%;
-   border: 0px;
-   outline: 0px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   border: none;
+.section2-donacion .max-width .group_form .form .form_body .select {
+    width: 100%;
+    border: 0px;
+    outline: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
 }
 
 .section2-donacion .max-width .group_form .form .form_body .select select {
@@ -412,14 +402,14 @@ html {
     outline: none;
 }
 
-.section2-donacion .max-width .group_form .form .form_body .form_input{
+.section2-donacion .max-width .group_form .form .form_body .form_input {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
 }
 
-.section2-donacion .max-width .group_form .form .form_body .form_input input{
+.section2-donacion .max-width .group_form .form .form_body .form_input input {
     margin-top: 10px;
     padding: 8px;
     width: 80px;
@@ -428,16 +418,22 @@ html {
     color: rgb(151, 144, 144);
     border-radius: 3px;
 }
-.section2-donacion .max-width .group_form .form .form_body .form_input input:focus {
+.section2-donacion
+    .max-width
+    .group_form
+    .form
+    .form_body
+    .form_input
+    input:focus {
     outline: 2px solid var(--blue-color);
 }
 
-.section2-donacion .max-width .group_form .form .form_body .form_input_2{
+.section2-donacion .max-width .group_form .form .form_body .form_input_2 {
     display: flex;
     justify-content: left;
 }
 
-.section2-donacion .max-width .group_form .form .form_body .form_input_2 input{
+.section2-donacion .max-width .group_form .form .form_body .form_input_2 input {
     margin-top: 10px;
     padding: 8px;
     width: 80px;
@@ -446,18 +442,24 @@ html {
     color: rgb(151, 144, 144);
     border-radius: 3px;
 }
-.section2-donacion .max-width .group_form .form .form_body .form_input_2 input:focus {
+.section2-donacion
+    .max-width
+    .group_form
+    .form
+    .form_body
+    .form_input_2
+    input:focus {
     outline: 2px solid var(--blue-color);
 }
 
-.section2-donacion .max-width .group_form .form .form_body .form_input_3{
+.section2-donacion .max-width .group_form .form .form_body .form_input_3 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
 }
 
-.section2-donacion .max-width .group_form .form .form_body .form_input_3 input{
+.section2-donacion .max-width .group_form .form .form_body .form_input_3 input {
     width: 100%;
     font-family: var(--ubuntu-font);
     font-size: 1.5rem;
@@ -467,18 +469,25 @@ html {
     text-align: center;
     border-radius: 3px;
 }
-.section2-donacion .max-width .group_form .form .form_body .form_input_3 input:focus{
+.section2-donacion
+    .max-width
+    .group_form
+    .form
+    .form_body
+    .form_input_3
+    input:focus {
     outline: 2px solid var(--blue-color);
 }
 
-.section2-donacion .max-width .group_form .form .form_body .form_boton{    display: flex;
+.section2-donacion .max-width .group_form .form .form_body .form_boton {
+    display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
 }
 
-.section2-donacion .max-width .group_form .form .form_body .form_boton button{
+.section2-donacion .max-width .group_form .form .form_body .form_boton button {
     width: 100%;
     padding: 10px;
     background-color: var(--blue-color);
@@ -488,11 +497,18 @@ html {
     border-radius: 3px;
 }
 
-.section2-donacion .max-width .group_form .form .form_body .form_boton button span{
+.section2-donacion
+    .max-width
+    .group_form
+    .form
+    .form_body
+    .form_boton
+    button
+    span {
     margin-left: 8px;
 }
 
-.section2-donacion .max-width .group_form .form .form_body .form_link{
+.section2-donacion .max-width .group_form .form .form_body .form_link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -501,7 +517,7 @@ html {
     font-size: 0.8rem;
 }
 
-.section2-donacion .max-width .group_form .form .form_body .linear{
+.section2-donacion .max-width .group_form .form .form_body .linear {
     border: 1px solid var(--light-gray-color);
     height: 2px;
     width: 100%;
@@ -509,31 +525,17 @@ html {
     margin-top: 10px;
 }
 
-.section2-donacion .max-width .group_form .form .form_body .footer_text{
+.section2-donacion .max-width .group_form .form .form_body .footer_text {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: justify;
     font-size: 1rem;
     margin-top: 10px;
-    color: grey
+    color: grey;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* !--------------- Finishes Donación (SECTION 2) Styling -------------- */
-
 
 /* !--------------- Starts Alcance (SECTION 3) Styling -------------- */
 .section3-alcance {
@@ -585,7 +587,6 @@ html {
 }
 /* !--------------- Finishes Alcance (SECTION 3) Styling -------------- */
 
-
 /* !--------------- Starts Referencias (SECTION 4) Styling -------------- */
 .section4-referencias {
     min-width: 100%;
@@ -604,7 +605,7 @@ html {
     justify-content: space-between;
     background-color: var(--white-color);
 }
-.section4-referencias .section4-container{
+.section4-referencias .section4-container {
     min-width: 100%;
     display: flex;
     word-wrap: break-word;
@@ -621,29 +622,37 @@ html {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
     border-radius: 1.75rem;
 }
-.section4-card1, .section4-card2, .section4-card3 {
+.section4-card1,
+.section4-card2,
+.section4-card3 {
     position: relative;
     display: block;
     height: 100%;
     border: rgb(233, 231, 231) 2px solid;
     border-radius: 1.75rem;
-} 
-.section4-card1 h1, .section4-card2 h1, .section4-card3 h1{
+}
+.section4-card1 h1,
+.section4-card2 h1,
+.section4-card3 h1 {
     color: #345d9b;
     padding-top: 12px;
     padding-bottom: 5px;
     font-weight: 600;
-    font-size: 2rem ;
+    font-size: 2rem;
     padding: 0.5rem;
 }
-.section4-card1 h2, .section4-card2 h2, .section4-card3 h2{
+.section4-card1 h2,
+.section4-card2 h2,
+.section4-card3 h2 {
     color: #345d9b;
     padding-bottom: 5px;
     font-size: 1.5rem;
     padding: 0.5rem;
 }
-.section4-card1 p, .section4-card2 p, .section4-card3 p{
-    color:#034C8C;
+.section4-card1 p,
+.section4-card2 p,
+.section4-card3 p {
+    color: #034c8c;
     margin-top: 100px;
     padding-bottom: 10px;
     font-weight: 500;
@@ -651,11 +660,13 @@ html {
     font-style: italic;
     padding: 0.5rem;
 }
-.section4-picture{
+.section4-picture {
     justify-items: center;
     position: relative;
 }
-.section4-card1 img, .section4-card2 img, .section4-card3 img{
+.section4-card1 img,
+.section4-card2 img,
+.section4-card3 img {
     width: 130px;
     object-fit: contain;
     position: absolute;
@@ -668,7 +679,6 @@ html {
     margin: 0 auto;
 }
 /* !--------------- Finishes Referencias (SECTION 4) Styling -------------- */
-
 
 /* !--------------- Starts Seguridad (SECTION 5) Styling -------------- */
 
@@ -703,7 +713,7 @@ html {
     max-width: 475px;
     display: flex;
     gap: 20px;
-    align-content:space-around;
+    align-content: space-around;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -720,17 +730,16 @@ html {
 
 /* !--------------- Finishes Seguridad (SECTION 5) Styling -------------- */
 
-
 /* !--------------- Starts Footer (FOOTER) Styling -------------- */
 .footer {
     min-width: 100%;
     padding: 5rem 1rem;
-    background-color: #F6F9FF;
+    background-color: #f6f9ff;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.6rem;
-    border: 1px solid #D9D9D9;
+    border: 1px solid #d9d9d9;
 }
 
 .footer .max-width {
@@ -812,19 +821,27 @@ html {
 
 @media (min-width: 1800px) {
     .section3-alcance {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/donar/section3-alcance-bg.png");
+        background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+            ),
+            url("../img/donar/section3-alcance-bg.png");
     }
 }
 
 @media (max-width: 1150px) {
-    .section4-referencias .section4-container{
+    .section4-referencias .section4-container {
         gap: 80px;
     }
 }
 
 @media (max-width: 1150px) {
     .section3-alcance {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/donar/section3-alcance-bg.png");
+        background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+            ),
+            url("../img/donar/section3-alcance-bg.png");
     }
 }
 
@@ -908,7 +925,7 @@ html {
 }
 
 @media (max-width: 387px) {
-    .section4-referencias .section4-container{
+    .section4-referencias .section4-container {
         padding: 10px;
     }
     .section4-cardcontainer {
