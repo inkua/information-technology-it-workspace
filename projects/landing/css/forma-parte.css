@@ -2,13 +2,12 @@
 
 :root {
     /*Colors Palette*/
-    --sky-blue-color: #4594D9;
-    --blue-color: #034C8C;
-    --dark-blue-color: #1C3661;
-    --light-gray-color: #E6E6E6;
-    --white-color: #FFFFFF;
-    --separator: #33BEE8;
-    
+    --sky-blue-color: #4594d9;
+    --blue-color: #034c8c;
+    --dark-blue-color: #1c3661;
+    --light-gray-color: #e6e6e6;
+    --white-color: #ffffff;
+    --separator: #33bee8;
 
     /* Fonts */
     --ubuntu-font: "Ubuntu", sans-serif;
@@ -26,30 +25,28 @@ html {
     scroll-behavior: smooth;
 }
 
-
 /* !--------------- Starts Scrollbar Styling -------------- */
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--white-color); 
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background: var(--white-color);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--dark-blue-color); 
+    background: var(--dark-blue-color);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--blue-color); 
+    background: var(--blue-color);
 }
 /* !--------------- Finishes Scrollbar Styling -------------- */
-
 
 /* !--------------- Starts Navbar Styling -------------- */
 .navbar {
@@ -186,7 +183,6 @@ html {
 }
 /* !--------------- Finishes Navbar Styling -------------- */
 
-
 /* !--------------- Starts Ser Parte (SECTION 1) Styling -------------- */
 .section1-ser-parte {
     background-color: var(--white-color);
@@ -269,7 +265,7 @@ html {
 
 .section1-ser-parte .container .subcontainer .right {
     background-color: var(--dark-blue-color);
-    max-width: 60rem;/*  width: 40rem;*/
+    max-width: 60rem; /*  width: 40rem;*/
     height: max-content;
     border-radius: 30px;
     color: var(--white-color);
@@ -293,18 +289,20 @@ html {
 }
 /* !--------------- Finishes Ser Parte (SECTION 1) Styling -------------- */
 
-
 /* !--------------- Starts Frase 1 (SECTION 2) Styling -------------- */
 
 /*
 * SECTION 2 STYLING GOES HERE
 * ASSIGNED TO: Lucía Canevaro */
-.section2-frase1, .section4-frase2, .section6-frase3 {
-    
+.section2-frase1,
+.section4-frase2,
+.section6-frase3 {
     display: flex;
     justify-content: center;
 }
-.section2-frase1 .max-width, .section4-frase2 .max-width, .section6-frase3 .max-width {
+.section2-frase1 .max-width,
+.section4-frase2 .max-width,
+.section6-frase3 .max-width {
     position: relative;
     display: flex;
     width: 100%;
@@ -316,38 +314,50 @@ html {
     background-color: rgba(28, 54, 97, 0.3);
 }
 .section4-frase2 {
-    background-color: rgba(3, 76, 140, 0.3)
+    background-color: rgba(3, 76, 140, 0.3);
 }
 .section6-frase3 {
     background-color: rgba(69, 148, 217, 0.3);
 }
-.section2-frase1-containerI, .section4-frase2-containerI, .section6-frase3-containerI{
+.section2-frase1-containerI,
+.section4-frase2-containerI,
+.section6-frase3-containerI {
     max-height: 100%;
     display: flex;
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
-.section2-frase1-containerII, .section4-frase2-containerII, .section6-frase3-containerII{
+.section2-frase1-containerII,
+.section4-frase2-containerII,
+.section6-frase3-containerII {
     text-align: center;
 }
-.section2-frase1-name, .section4-frase2-name, .section6-frase3-name {
+.section2-frase1-name,
+.section4-frase2-name,
+.section6-frase3-name {
     color: #24416e;
     font-weight: 600;
-    font-size: 1.5rem ;
+    font-size: 1.5rem;
 }
-.section2-frase1-area, .section4-frase2-area, .section6-frase3-area {
+.section2-frase1-area,
+.section4-frase2-area,
+.section6-frase3-area {
     color: #03355e;
     padding-bottom: 12px;
     font-size: 2rem;
 }
-.section2-frase1-frase, .section4-frase2-frase, .section6-frase3-frase {
-    color:#034C8C;
+.section2-frase1-frase,
+.section4-frase2-frase,
+.section6-frase3-frase {
+    color: #034c8c;
     padding-bottom: 10px;
     font-weight: 500;
     font-size: 2rem;
     font-style: italic;
 }
-.section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img{
+.section2-frase1-quotes img,
+.section4-frase2-quotes img,
+.section6-frase3-quotes img {
     width: 150px;
     object-fit: contain;
     position: absolute;
@@ -355,7 +365,6 @@ html {
     right: 0;
 }
 /* !--------------- Finishes Frase 1 (SECTION 2) Styling -------------- */
-
 
 /* !--------------- Starts Mentores (SECTION 3) Styling -------------- */
 .section3-mentores {
@@ -441,7 +450,7 @@ html {
 
 .section3-mentores .container .subcontainer .right {
     background-color: var(--blue-color);
-    max-width: 60rem;/*  width: 40rem;*/
+    max-width: 60rem; /*  width: 40rem;*/
     height: max-content;
     border-radius: 30px;
     color: var(--white-color);
@@ -465,7 +474,6 @@ html {
 }
 /* !--------------- Finishes Mentores (SECTION 3) Styling -------------- */
 
-
 /* !--------------- Starts Frase 2 (SECTION 4) Styling -------------- */
 
 /*
@@ -474,7 +482,6 @@ html {
 */
 
 /* !--------------- Finishes Frase 2 (SECTION 4) Styling -------------- */
-
 
 /* !--------------- Starts Organizaciones (SECTION 5) Styling -------------- */
 .section5-organizaciones {
@@ -560,7 +567,7 @@ html {
 
 .section5-organizaciones .container .subcontainer .right {
     background-color: var(--sky-blue-color);
-    max-width: 60rem;/*  width: 40rem;*/
+    max-width: 60rem; /*  width: 40rem;*/
     height: max-content;
     border-radius: 30px;
     color: var(--white-color);
@@ -584,7 +591,6 @@ html {
 }
 /* !--------------- Finishes Organizaciones (SECTION 5) Styling -------------- */
 
-
 /* !--------------- Starts Frase 3 (SECTION 6) Styling -------------- */
 
 /*
@@ -594,17 +600,16 @@ html {
 
 /* !--------------- Finishes Frase 3 (SECTION 6) Styling -------------- */
 
-
 /* !--------------- Starts Footer (FOOTER) Styling -------------- */
 .footer {
     min-width: 100%;
     padding: 5rem 1rem;
-    background-color: #F6F9FF;
+    background-color: #f6f9ff;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.6rem;
-    border: 1px solid #D9D9D9;
+    border: 1px solid #d9d9d9;
 }
 
 .footer .max-width {
@@ -621,7 +626,6 @@ html {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    
 }
 
 .footer .container .subcontainer {
@@ -685,7 +689,8 @@ html {
 /* !--------------- Finishes Footer (FOOTER) Styling -------------- */
 
 @media (max-width: 1200px) {
-    .section1-ser-parte .container .subcontainer, .section5-organizaciones .container .subcontainer {
+    .section1-ser-parte .container .subcontainer,
+    .section5-organizaciones .container .subcontainer {
         justify-content: space-evenly;
         gap: 30px;
     }
@@ -724,7 +729,9 @@ html {
     .navbar .menu li a:not(.ingresar-btn, .donar-btn)::before {
         top: 32px;
     }
-    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img{
+    .section2-frase1-quotes img,
+    .section4-frase2-quotes img,
+    .section6-frase3-quotes img {
         width: 135px;
         object-fit: contain;
         position: absolute;
@@ -734,7 +741,9 @@ html {
 }
 
 @media (max-width: 539px) {
-    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img{
+    .section2-frase1-quotes img,
+    .section4-frase2-quotes img,
+    .section6-frase3-quotes img {
         width: 115px;
         object-fit: contain;
         position: absolute;
@@ -771,14 +780,18 @@ html {
 }
 
 @media (max-width: 430px) {
-    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img{
+    .section2-frase1-quotes img,
+    .section4-frase2-quotes img,
+    .section6-frase3-quotes img {
         width: 90px;
         top: -30px;
     }
 }
 
 @media (max-width: 400px) {
-    .section2-frase1-quotes img, .section4-frase2-quotes img, .section6-frase3-quotes img{
+    .section2-frase1-quotes img,
+    .section4-frase2-quotes img,
+    .section6-frase3-quotes img {
         width: 80px;
         top: -27px;
     }
