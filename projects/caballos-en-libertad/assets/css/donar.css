@@ -1,49 +1,64 @@
-*{
-   
-    --color-one: #fff;
-    --color-two: #00638C;
-    --color-three: #C6EAFF;
-
-    /* thin-100, light-300, regular-400, medium-500, bold-700 */
-    --font-family: 'Roboto', sans-serif;
-    
+.donar{
+    background-color: var(--color-four);
+    padding-top: 4rem;;
+    padding-bottom: 4rem;
 }
-/* :root {
-    --fa-style-family-classic:  'Roboto', sans-serif;
-    --fa-font-solid: normal 900 1em/1 'Roboto', sans-serif;
-} */
 
-.text--center{
-    background-image: url("https://i.pinimg.com/originals/a9/bb/1c/a9bb1c177a9b21359870a4a78ef1666f.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
+.titulo-donar{
     text-align: center;
-    font-family: var(--font-family);
-  
 }
 
-.tittle{
-   /*  margin: 3rem; */
-  
+.cuerpo-donar{
+    margin-top: 4rem;
 }
 
-h3{
-    color: var(--color-one);
-    padding-top: 1.5rem ;
-    
+.opcion-donar{
+    border-radius: 7px;
+    background-color: white;
+    text-align: center;
+    height: 150px;
 }
-strong{
-    color: var(--color-one);
-    padding-top: 1.5rem ;
+
+.opcion-donar h5{
+    color: var(--color-two);
+    padding-top: 20px;
+    padding-left: 1px;
 }
-span{
-    color: var(--color-one);
-    font-weight: bolder;
-    margin-bottom: 2rem;
+
+#modalInsumos {
+    text-align: left;
 }
-button{
-    color: var(--color-one);
-    width: 20%;
+
+.mercado_libre{
+    padding-bottom: 4rem;
+}
+
+@media (max-width: 1024px){
+    .opcion-donar h5{
+        font-size: 17px;
+    }
+
+    .opcion-donar {
+        height: 160px;
+    }
+
+    .opcion-donar button{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px){
+    .opcion-donar {
+        height: 160px;
+        margin-bottom: 20px;
+    }
+    .opcion-donar h5{
+        font-size: 25px;
+    }
+    .donar-modals h3{
+        font-size: 35px;
+    }
+    .donar-modals p{
+        font-size: 20px;
+    }
 }

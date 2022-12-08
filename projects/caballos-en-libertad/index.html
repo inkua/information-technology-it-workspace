@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./assets/css/contacto.css">
 
     <!--  estos dos links estan rompiendo el codigo  -->
-    <!--<link rel="stylesheet" href="./assets/css/donar.css">-->
+    <link rel="stylesheet" href="./assets/css/donar.css">
 
 
     <title>Inicio</title>
@@ -40,7 +40,7 @@
                     <li><a href="#"><img class="redes" src="./assets/img/twitter.png" alt="twitter"></a></li>
 
                     <li><a class="adoptar_donar" href="./pages/adoptar.html">ADOPTAR</a></li>
-                    <li><a class="adoptar_donar donar" href="#">DONAR</a></li>
+                    <li><a class="adoptar_donar donar" href="#donar">DONAR</a></li>
                     <li><a class="options" href="#">CONTACTANOS</a></li>
                     <li><a class="options" href="./pages/eventos.html">EVENTOS</a></li>
                     <li><a class="options" href="#rescatados">RESCATADOS</a></li>
@@ -382,28 +382,171 @@
 
 
         <!-- Donar (Brenda Ledesma)-->
-        <section class="text--center">
-            <div class="title">
-                <div>
-                    <h3>DONAR</h3>
-                    <span>━━━</span>
-                    <h5>Dona a nuestra fundación Caballos en Libertad para que podamos seguir luchando por ellos</h5>
-                    <strong>CADA APORTE HACE LA DIFERENCIA</strong>
-                    <p>Los socios y socias de nuestra fundacion son aquellas personas que<br>
-                        creen que cada caballo merece un lugar digno para vivir por eso<br>
-                        su aporte econónimo es muy importante para que esto suceda.
-                    </p>
-
-                    <strong>FORMA PARTE</strong>
-                    <p>Vos podes desempeñar un papel fundamental en cada rescate, en cada<br>
-                        vida salvada. Con tu aporte del monto que sea, nos ayudas un montón.<br>
-                        Los fondos son destinados en su totalidad a los caballos. <br>
-                        Muchas gracias por ser parte.
-                    </p>
-
-                    <button>Donar</button>
-                    <p>Tu ayuda es imprescindible para que podamos continuar con nuestro labor</p>
-
+        <section class="donar" id="donar">
+            <div class="col-lg-8 offset-lg-2 col-md-6 offset-md-3 ">
+                <div class="titulo-donar">
+                    <strong><h3>Colaborá con la fundación</strong></h3>
+                    <span>━━━━━━━<span>
+                    <h5>Podés hacer donaciones o trabajar como voluntario. También podés ayudar compartiendo este sitio para que más personas se sumen.</h5>
+                </div>
+            </div>
+            <div class="cuerpo-donar">
+                <div class="container text-center">
+                    <div class="row align-items-start">
+                        <div class="col-lg-2 offset-lg-1 col-md-5 offset-md-1">
+                            <div class="opcion-donar">
+                                <h5>Alimentos y necesidades</h5>
+                                <button data-bs-toggle="modal" data-bs-target="#modalAlimentos">DONAR</button>
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1">
+                            <div class="opcion-donar">
+                                <h5>Colaboradores casuales</h5>
+                                <button data-bs-toggle="modal" data-bs-target="#modalCasuales">DONAR</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1">
+                            <div class="opcion-donar">
+                                <h5>Transferencias o depósito bancario</h5>
+                                <button data-bs-toggle="modal" data-bs-target="#modalTransferencias">DONAR</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-1">
+                            <div class="opcion-donar">
+                                <h5>Insumos<br> médicos</h5>
+                                <button data-bs-toggle="modal" data-bs-target="#modalInsumos">VER</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 offset-lg-0 col-md-5 offset-md-4">
+                            <div class="opcion-donar">
+                                <h5>Apadrinar<br><br></h5>
+                                <button data-bs-toggle="modal" data-bs-target="#modalApadrinar">MÁS INFO</button>
+                            </div>
+                        </div>
+                          
+                        <!-- Modals -->
+                        <div class="modal fade" id="modalAlimentos" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="donar-modals">
+                                            <h3><strong>Lista de alimentos</strong></h3>
+                                            <p>Es fundamental que la mayor parte de la alimentación de caballos <br>
+                                            sea forraje, es decir, heno, alfalfa, paja o pasto.<br>  
+                                            <br>Comunicate con nosotros para que te informemos de que manera<br> colaborar con dichos alimentos.</p>
+                                            <button>Comunicarme</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modalCasuales" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="donar-modals">
+                                            <h3><strong>Colaboradores casuales</strong></h3>
+                                            <br><br><a><img class="mercado_libre" src="./assets/img/logoMercadoLibre.png" alt="Mercado Libre"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modalTransferencias" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="donar-modals">
+                                            <h3><strong>Datos de transferencia</strong></h3>
+                                            <h5><br>BANCO SANTANDER RIO SUCURSAL: 743<br>
+                                            N° DE CUENTA : 003032 4<br>
+                                            CUIT: 000000033715048219<br>
+                                            CBU: 0720743520000000303240<br>
+                                            NOMBRE: CABALLOS EN LIBERTAD ASOC CIV<br></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modalInsumos" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="donar-modals">
+                                            <h3><strong>Lista de insumos médicos</strong></h3>
+                                            <p><br>-DMSO inyectable/tópico<br>
+                                                -Fenilbutazona inyectable/comprimidos<br>
+                                                -Dexametasona<br>
+                                                -Flunixin de Meglumina<br>
+                                                -Gasint<br>
+                                                -Equitrim<br>
+                                                -Penicilina G Sódica<br>
+                                                -Ceftiofur<br>
+                                                -Metronidazol<br>
+                                                -Omeprazol<br>
+                                                -Xilacina<br>
+                                                -Diazepam<br>
+                                                -Tramado<br>
+                                                -Aceproma cina<br>
+                                                -Metocarbamol<br>
+                                                -Lidocaína<br>
+                                                -Gentamicina<br>
+                                                -Terramicina<br>
+                                                -Duvamicina<br>
+                                                -Duvabron<br>
+                                                -Solución Fisiológica, CINa<br>
+                                                -Ringer-Lactato, Dextrosa<br>
+                                                -Glucosa Vitaminada<br>
+                                                -ACS<br>
+                                                -Red Cell<br>
+                                                -Aceite de Canola / arroz / pescado<br>
+                                                -Aminoácidos<br>
+                                                -Ácido Tióctico<br>
+                                                -Ácido zoledrónico<br>
+                                                -Amikacina<br>
+                                                -Betametasona<br>
+                                                -Enteropectin / Smectite<br>
+                                                -Curabichera en pasta/Aerosol<br>
+                                                -Vaselina líquida<br>
+                                                -Platul, propóleo,crema de ordeñe<br>
+                                                -Nitrofurasona<br>
+                                                -Sulfato de cobre<br>
+                                                -Azul de metileno / Cicatrizo<br>
+                                                -Catéter 14G - 16G - Arrow<br>
+                                                -Agujas 18G - 21G<br>
+                                                -Jeringas 5 - 10 - 20 - 60ml<br>
+                                                -Tubos de ensayo<br>
+                                                -Vendas Vetrap - Cambric - de descanso<br>
+                                                -Algodón, gasas,alcohol, agua oxigenada, iodo povidona, iodo
+                                                jabonoso, iodo doble
+                                                -Guías de suero macro gotero, llave de 3 vías<br>
+                                                Antiparasitario (Febendazol, ivermectina, praziquantel)<br></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modalApadrinar" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="donar-modals">
+                                            <h3><strong>Apadrinar</strong></h3>
+                                            <p><br>Para apadrinar, es necesario tomar el compromiso de depositar todos los<br>
+                                            meses, lo que pueda, no hay un monto mínimo. Se puede realizar mediante<br>
+                                            Paypal, mercado pago o nuestra cuenta bancaria (deposito o transferencia):<br></p>
+                                            <h5><br>BANCO SANTANDER RIO SUCURSAL: 743<br>
+                                            N° DE CUENTA : 003032 4<br>
+                                            CUIT: 000000033715048219<br>
+                                            CBU: 0720743520000000303240<br>
+                                            NOMBRE: CABALLOS EN LIBERTAD ASOC CIV<br></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
