@@ -225,35 +225,35 @@ footer div {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: white;
-  height: 400px;
+  padding: 20px 12px 17px 12px;
+  height: fit-content;
 }
 
 .sobre_nosotros .sobre {
-  text-align: center;
-  color: white;
-  max-height: 110px;
-  width: 100%;
+  display: grid;
+  align-items: center;
 }
 
-.sobre_nosotros .sobre h3 {
+.sobre_nosotros .sobre .sobre_title {
   text-align: center;
   color: white;
   font-weight: 500;
   font-size: 20px;
-  padding-top: 12px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  padding-top: 0;
 }
 
-.sobre_nosotros .sobre span {
+.sobre_nosotros .sobre .sobre_line {
   text-align: center;
+  margin-bottom: 12px;
   color: white;
 }
 
-.sobre_nosotros .sobre .row p {
-  padding: 10px;
-  font-size: 0.6rem;
-  overflow: hidden;
-  width: 90%;
-  padding-left: 50px;
+.sobre_nosotros .sobre .sobre_text_container .sobre_text {
+  font-size: 0.7rem;
+  text-align: center;
+  color: white;
 }
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 
@@ -466,22 +466,29 @@ footer div {
   }
 
   .sobre_nosotros {
-    height: 500px;
+    padding: 40px 30px 35px 30px;
   }
-
-  .sobre_nosotros .sobre h3 {
-    padding-top: 15px;
-    font-size: 30px;
+  
+  .sobre_nosotros .sobre {
+    display: grid;
+    align-items: center;
   }
-
-  .sobre_nosotros .sobre .row p {
-    padding: 30px;
-    margin: 0px 30px;
+  
+  .sobre_nosotros .sobre .sobre_title {
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-top: 0;
+  }
+  
+  .sobre_nosotros .sobre .sobre_line {
+    margin-bottom: 15px;
+  }
+  
+  .sobre_nosotros .sobre .sobre_text_container .sobre_text {
     font-size: 0.9rem;
-    max-height: 700px;
-    width: 90%;
-    padding-left: 100px;
   }
+
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- RESCATADOS inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
@@ -607,24 +614,32 @@ footer div {
   }
 
   .sobre_nosotros {
-    height: 600px;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    height: 645px;
   }
-
-  .sobre_nosotros .sobre h3 {
-    padding-top: 25px;
-    font-size: 40px;
+  
+  .sobre_nosotros .sobre {
+    display: grid;
+    place-items: center;
+    width: 948px;
+    height: fit-content;
   }
-
-  .sobre_nosotros .sobre span {
-    font-size: 35px;
+  
+  .sobre_nosotros .sobre .sobre_title {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-top: 0;
   }
-
-  .sobre_nosotros .sobre .row p {
-    padding: 30px;
-    margin: 0px 45px;
+  
+  .sobre_nosotros .sobre .sobre_line {
+    margin-bottom: 25px;
+  }
+  
+  .sobre_nosotros .sobre .sobre_text_container .sobre_text {
     font-size: 1.1rem;
-    width: 80%;
-    padding-left: 160px;
   }
   /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- NOSOTROS final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 
