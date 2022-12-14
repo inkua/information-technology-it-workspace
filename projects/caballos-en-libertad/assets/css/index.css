@@ -15,14 +15,135 @@
   font-family: var(--font);
 }
 
-/* Tablet 768px */
-@media (min-width: 768px) {
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- FOOTER inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+.footer {
+  background-image: url("../img/footer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--color-three);
+  padding: 30px 0px;
+}
+.footer .footer_info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}  
+.footer .footer_info .footer_media{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer .footer_info .footer_media .footer_mediaText{
+  color: var(--color-four);
+  font-weight: 600;
+  text-align: center;
+  padding: 0px 10px;
 }
 
-/* Laptop 1280px */
+.footer .footer_info .footer_media .footer_socialMedia {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.footer .footer_info .footer_media .footer_socialMedia a .fa-brands{
+  color: var(--color-four);
+  font-size: 1.3rem;
+  padding: 5px;
+}
+.footer .footer_info .footer_messageContainer{
+  padding: 10px;
+}
+.footer .footer_info .footer_messageContainer .footer_message{
+  color: var(--color-four);
+  text-align: center;
+  font-size: 0.8rem;
+}
+.footer .footer_info .footer_messageContainer .footer_message .mentions{
+  font-size: 0.6rem;
+  color: var(--color-four);
+  font-weight: 100;
+}
+.footer .footer_logo{
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  text-align: center;
+}
+.footer .footer_logo .footer_logoImg {
+  background-image: url('../img/logo-footer.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 6px;
+}
+.footer .footer_logo .footer_logoText{
+  text-align: center;
+  color: var(--color-four);
+
+}
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- FOOTER final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+
+/* ############################################################## MEDIA QUERY - Tablet 768px - ############################################################## */
+@media (min-width: 768px) {
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- FOOTER inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+.footer {
+  padding: 50px 0px 30px 0px;
+}
+.footer .footer_info{
+  flex-direction: row;
+}  
+.footer .footer_info .footer_media{
+  display: initial;
+  max-width: 390px;
+  max-width: 390px;
+  padding: 10px;
+}
+.footer .footer_info .footer_media .footer_mediaText{
+  padding: 0px;
+  font-size: 1.1rem;
+  text-align: left;
+  font-weight: 500;
+}
+
+.footer .footer_info .footer_media .footer_socialMedia a .fa-brands{
+  color: var(--color-four);
+  font-size: 1.5rem;
+  padding: 8px;
+}
+.footer .footer_info .footer_messageContainer{
+  display: initial;
+  max-width: 390px;
+  max-width: 390px;
+  padding: 10px;
+}
+.footer .footer_info .footer_messageContainer .footer_message{
+  text-align: left;
+  padding-top: 7px;
+  font-size: 0.9rem;
+}
+.footer .footer_info .footer_messageContainer .footer_message .mentions{
+  font-size: 0.7rem;
+}
+
+.footer .footer_logo .footer_logoImg {
+  width: 70px;
+  height: 70px;
+  margin: 20px 0px;
+}
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- FOOTER final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+}
+
+/* ############################################################## MEDIA QUERY - Laptop 1280px - ##############################################################*/
 @media (min-width: 1280px) {
 }
 
-/* Desktop 1920px */
+/* ############################################################## MEDIA QUERY - Desktop 1920px - ##############################################################*/
 @media (min-width: 1920px) {
 }
