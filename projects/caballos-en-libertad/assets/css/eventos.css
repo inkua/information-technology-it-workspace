@@ -5,6 +5,10 @@ html{
     font-size: 16px;
 }
 
+* {
+    font-family: "Montserrat", "Roboto", sans-serif;
+}
+
 .portada-ev{
     background-image: url('../img/fotoeventos.png');
     background-repeat: no-repeat;
