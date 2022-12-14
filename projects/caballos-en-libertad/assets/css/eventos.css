@@ -20,6 +20,23 @@ html{
     align-items: flex-end;
 }
 
+.regresar{
+    color:white;
+    position:absolute;
+    align-self: start;
+    margin: 3rem 0 0 5rem;
+}
+
+.regresar a{
+    color: white;
+    text-decoration: underline;
+}
+
+.titulo-flecha{
+    font-size: 2rem;
+    position: absolute;
+    left: -2rem;
+}
 .texto-ev-izq{
     color: white;
     margin: 0 0 3rem 3rem;
@@ -79,6 +96,10 @@ img.d-block.img-fluid {
     .texto-ev-izq{
         margin: 2rem;
         padding: 1rem;
+    }
+
+    .regresar{
+        display: none;
     }
 }
 
