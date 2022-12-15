@@ -153,6 +153,7 @@
 .header{
   gap: 10px;
   box-shadow: none;
+  border-bottom: none;
 }
 .header .header_logoContainer{
   height: 35px;
