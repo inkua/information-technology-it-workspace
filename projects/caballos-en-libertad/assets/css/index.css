@@ -137,7 +137,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 60px;
+  width: 80px;
   height: 60px;
   margin-bottom: 6px;
 }
@@ -234,7 +234,7 @@
 }
 
 .footer .footer_logo .footer_logoImg {
-  width: 70px;
+  width: 100px;
   height: 70px;
   margin: 20px 0px;
 }
