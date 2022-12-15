@@ -24,39 +24,43 @@
     <!--  estos dos links estan rompiendo el codigo  -->
     <link rel="stylesheet" href="./assets/css/donar.css">
 
-
     <title>Inicio</title>
 </head>
 
 <body>
-    <header>
-        <!--NavBar (Nicolas Natale / Fede Peralta)-->
-        <div>
-            <nav class="nabar">
-                <ul>
-                    <!-- icons-->
-                    <li><a href="#"><img class="redes" src="./assets/img/face.png" alt="facebook"></a></li>
-                    <li><a href="#"><img class="redes" src="./assets/img/instagram.png" alt="instagram"></a></li>
-                    <li><a href="#"><img class="redes" src="./assets/img/twitter.png" alt="twitter"></a></li>
-
-                    <li><a class="adoptar_donar" href="./pages/adoptar.html">ADOPTAR</a></li>
-                    <li><a class="adoptar_donar donar" href="#donar">DONAR</a></li>
-                    <li><a class="options" href="#">CONTACTANOS</a></li>
-                    <li><a class="options" href="./pages/eventos.html">EVENTOS</a></li>
-                    <li><a class="options" href="#rescatados">RESCATADOS</a></li>
-                    <li><a class="options" href="./pages/denuncias.html">DENUNCIAS</a></li>
-                    <li><a class="options" href="#voluntariado">VOLUNTARIADO</a></li>
-                    <li><a class="options" href="#nosotros">SOBRE NOSOTROS</a></li>
-                    <li class="logo"><a href="#">
-                            <img src="./assets/img/caballos-en-libertad1.png" alt="logo"></a>
-                    </li>
-                </ul>
-            </nav>
+    <!-- NavBar -->
+    <header class="headerContainer">
+        <div class="header">
+            <a class="header_logoContainer" href="#"></a>
+            <div class="header_menuContainer">
+                <a class="navItem" href="#nosotros"> sobre nosotros</a>
+                <a class="navItem" href="#voluntariado"> voluntariado </a>
+                <a class="navItem" href="./pages/denuncias.html"> denuncias </a>
+                <a class="navItem" href="#rescatados"> rescatados </a>
+                <a class="navItem" href="./pages/eventos.html"> eventos </a>
+                <a class="navItem" href="#contacto"> contactanos </a>
+                <a class="navItem navDonar" href="#donar"> donar </a>
+                <a class="navItem navAdoptar" href="./pages/adoptar.html"> adoptar</a>
+            </div>
+            <div class="header_mediaContainer">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+        <div class="menuMobile">
+            <a class="menuItem" href="#nosotros"> sobre nosotros</a>
+            <a class="menuItem" href="#voluntariado"> voluntariado </a>
+            <a class="menuItem" href="#rescatados"> rescatados </a>
+            <a class="menuItem" href="./pages/eventos.html"> eventos </a>
+            <a class="menuItem" href="#donar"> donar </a>
+            <a class="menuItem" href="#contacto"> contactanos </a>
+            <a class="menuItem" href="./pages/denuncias.html"> denuncias </a>
+            <a class="menuItem" href="./pages/adoptar.html"> adoptar</a>
         </div>
     </header>
 
     <main>
-
         <!-- WhatsApp -->
         <div class="wpp">
             <p class="wpp_texto">Charlá con nosotros</p>
@@ -131,13 +135,6 @@
             </div>
 
         </section>
-
-
-
-
-
-
-
 
         <!-- Rescatados (Manuel Florez)-->
         <section class="rescatados" id="rescatados">
@@ -380,7 +377,6 @@
             </p>
         </section>
 
-
         <!-- Donar (Brenda Ledesma)-->
         <section class="donar" id="donar">
             <div class="col-lg-8 offset-lg-2 col-md-6 offset-md-3 ">
@@ -611,11 +607,10 @@
                 </div>
             </div>
             </div>
-
-
+        </section>
 
         <!-- Contacto  (Sergio Delgado) | Correcciones: Luciana Vanelli-->  
-        <section class="contacto">
+        <section class="contacto" id="contacto">
             <h3 class="contacto-titulo">Encontranos por acá<br><span>━━━</span></h3>
             <div class="contacto-contenido">
                 <div class="contacto-contenido-ubicacion">
@@ -635,11 +630,10 @@
                 <div class="contacto-contenido-email">
                     <i class="fas fa-envelope contacto-icon"></i>
                     <h6 class="contacto-h6">EMAIL</h6>
-                    <p class="contacto-p">caballosenlibertad</p>
+                    <p class="contacto-p">caballosenlibertad@hotmail.com</p>
                 </div>
             </div>
         </section>
-
 
     </main>
 
