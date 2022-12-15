@@ -15,6 +15,63 @@
   font-family: var(--font);
 }
 
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- HEADER inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+.headerContainer{
+  background-color: var(--color-two)
+}
+.header{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 10px;
+  border-bottom: .5px solid whitesmoke;
+  box-shadow: 12px 5px 2px 1px #02567a;
+}
+.header .header_logoContainer{
+  height: 35px;
+  width: 63px;
+  margin-right: auto;
+  background-image: url('../img/logo-header.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header .header_menuContainer{
+  /* no showing on mobile resolution */
+  display: none;
+}
+.header .header_mediaContainer{
+  width: fit-content;
+}
+.header .header_mediaContainer .fa-brands{
+  color: var(--color-one);
+  font-size: 1.5rem;
+  margin-right: 7px;
+}
+.menuMobile{
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.menuMobile .menuItem{
+  color: var(--color-four);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 300;
+  padding: 2.5px;
+}
+.menuMobile .menuItem:hover{
+  color: var(--color-one);
+}
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- HEADER final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+
+
+
+
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- FOOTER inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 .footer {
   background-image: url("../img/footer.png");
@@ -84,12 +141,53 @@
 .footer .footer_logo .footer_logoText{
   text-align: center;
   color: var(--color-four);
-
 }
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- FOOTER final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 
 /* ############################################################## MEDIA QUERY - Tablet 768px - ############################################################## */
 @media (min-width: 768px) {
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- HEADER inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+.header{
+  gap: 10px;
+  box-shadow: none;
+}
+.header .header_logoContainer{
+  height: 35px;
+  width: 63px;
+}
+.header .header_menuContainer{
+  display: initial;
+}
+.header .header_menuContainer .navItem{
+  color: var(--color-four);
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 7px;
+  font-size: 0.5rem;
+}
+.header .header_menuContainer .navItem:hover{
+  color: var(--color-one);
+}
+.header .header_menuContainer .navDonar{
+  background-color: var(--color-one);
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+.header .header_menuContainer .navAdoptar{
+  background-color: transparent;
+  border: 2px solid var(--color-one);
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+.header .header_mediaContainer .fa-brands{
+  color: var(--color-four);
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+.menuMobile{
+  display: none;
+}
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- HEADER final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- FOOTER inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 .footer {
@@ -140,10 +238,61 @@
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- FOOTER final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 }
 
+/* ############################################################## MEDIA QUERY - 960px - ##############################################################*/
+@media (min-width: 960px) {
+
+  .header .header_menuContainer .navItem{
+    margin-right: 9px;
+    font-size: 0.7rem;
+  }
+}
 /* ############################################################## MEDIA QUERY - Laptop 1280px - ##############################################################*/
 @media (min-width: 1280px) {
+  /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- HEADER inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+
+.header{
+  padding: 15px;
+  gap: 10px;
+}
+.header .header_logoContainer{
+  height: 50px;
+  width: 90px;
+}
+.header .header_menuContainer{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header .header_menuContainer .navItem{
+  font-size: 0.9rem;
+}
+.header .header_menuContainer .navDonar{
+  padding: 5px 17px;
+}
+.header .header_menuContainer .navAdoptar{
+  padding: 5px 17px;
+}
+.header .header_mediaContainer{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.header .header_mediaContainer .fa-brands{
+  font-size: 1.6rem;
+}
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- HEADER final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+
 }
 
 /* ############################################################## MEDIA QUERY - Desktop 1920px - ##############################################################*/
 @media (min-width: 1920px) {
+  .headerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header{
+    width: 1852px;
+  }
 }
