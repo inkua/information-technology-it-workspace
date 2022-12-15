@@ -46,6 +46,7 @@
 .contacto-contenido-img img{
     margin-top: -20px;
     width: 100%;
+    max-width: 490px;
 }
 
 
@@ -65,7 +66,7 @@
     .contacto-contenido {
         text-align: center;
     }
-    
+
     .contacto-contenido-img {
         width: 50%;
     }
@@ -147,6 +148,11 @@
         font-size: 25px;
         display: inline;
         margin-right: 10px;
+    }
+
+    .contacto-icon-email {
+        margin-left: 3.2rem;
+        margin-right: 1.9rem;
     }
 
     .contacto-p {
