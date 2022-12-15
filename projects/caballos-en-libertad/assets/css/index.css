@@ -67,6 +67,9 @@
 .menuMobile .menuItem:hover{
   color: var(--color-one);
 }
+.focusItem {
+  color: var(--color-one) !important;
+}
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- HEADER final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 
 
