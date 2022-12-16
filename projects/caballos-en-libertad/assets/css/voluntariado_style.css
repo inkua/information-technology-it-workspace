@@ -25,7 +25,12 @@
 
 .tittle{
    /*  margin: 3rem; */
-  
+
+}
+
+.voluntariado-title {
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 h3{
@@ -85,7 +90,10 @@ span{
     margin: 0.7rem;
 }
 
-
+.voluntariado {
+    margin-top: 3rem;
+    border-radius: 100%/3rem;
+}
 
 @media screen and (min-width: 768px){
     .container-div-2 {
@@ -122,12 +130,66 @@ span{
         margin-top: 20px;
         margin-left: 70px;
     }
+
+    .voluntariado-areas {
+        padding-top: 2rem;
+    }
+
+    .voluntariado {
+        background-color: white;
+        margin-top: 3rem;
+        border-radius: 0;
+    }
+
+    .voluntariado-contenido {
+        background-color: var(--color-three);
+        width: 97%;
+        margin: auto;
+        margin-top: 2rem;
+        padding-bottom: 4rem;
+        border-radius: 0.6rem;
+    }
 }
 
 
 @media screen and (min-width: 1280px) {
+
+    .voluntariado-areas {
+        padding-top: 2rem;
+    }
+
+    .voluntariado {
+        background-color: white;
+        margin-top: 3rem;
+    }
+
+    .voluntariado-contenido {
+        background-color: var(--color-three);
+        width: 97%;
+        margin: auto;
+        margin-top: 2rem;
+        padding-bottom: 4rem;
+        border-radius: 0.6rem;
+    }
 }
 
 @media screen and (min-width: 1920px) {
+    .voluntariado-areas {
+        padding-top: 2rem;
+    }
 
+    .voluntariado {
+        background-color: white;
+        margin-top: 3rem;
+        border-radius: 0;
+    }
+
+    .voluntariado-contenido {
+        background-color: var(--color-three);
+        width: 97%;
+        margin: auto;
+        margin-top: 2rem;
+        padding-bottom: 4rem;
+        border-radius: 0.6rem;
+    }
 }
