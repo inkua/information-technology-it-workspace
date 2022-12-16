@@ -1,19 +1,3 @@
-*{
-   
-    --color-one: #D98729;
-    --color-two: #00638C;
-    --color-three: #C6EAFF;
-    --color-four: #E4F3FB;
-
-    /* thin-100, light-300, regular-400, medium-500, bold-700 */
-    --font-family: 'Roboto', sans-serif;
-    
-}
-/* :root {
-    --fa-style-family-classic:  'Roboto', sans-serif;
-    --fa-font-solid: normal 900 1em/1 'Roboto', sans-serif;
-} */
-
 .voluntariado{
     background-color: var(--color-three);
     justify-content: center;
@@ -21,11 +5,6 @@
     text-align: center;
     font-family: var(--font-family);
     padding: 40px 10px;
-}
-
-.tittle{
-   /*  margin: 3rem; */
-
 }
 
 .voluntariado-title {
