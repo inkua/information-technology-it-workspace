@@ -30,10 +30,22 @@
 }
 
 .mercado_libre{
+
     padding-bottom: 4rem;
 }
 
-@media (max-width: 1024px){
+
+.donar_modal_cerrar{
+  background-color: white;
+  background-image: url(../img/rescatados/modal-close.png);
+  background-position: right;
+}
+
+.donar_modal_cerrar:hover{
+    background-color: whitesmoke;
+}
+
+@media (max-width: 1200px){
     .opcion-donar h5{
         font-size: 17px;
     }
@@ -47,7 +59,7 @@
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 991px){
     .opcion-donar {
         height: 160px;
         margin-bottom: 20px;
@@ -60,5 +72,35 @@
     }
     .donar-modals p{
         font-size: 20px;
+    }
+}
+
+@media (max-width: 426px){
+    .opcion-donar h5{
+        font-size: 20px; 
+    }
+
+    .donar-modals h3{
+       font-size: 25px; 
+    }
+
+    .donar-modals p{
+        font-size: 15px; 
+     }
+     
+    .donar-modals h5{
+        font-size: 15px; 
+    }
+    .titulo-donar h3{
+        font-size: 25px; 
+    }
+    .titulo-donar h5{
+        font-size: 15px; 
+    }
+}
+
+@media (max-width: 375px){
+    .mercado_libre{
+        width: 100%;
     }
 }
