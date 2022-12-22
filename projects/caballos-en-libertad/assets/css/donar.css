@@ -47,14 +47,13 @@
 }
 
 .mercado_libre{
-
     padding-bottom: 4rem;
 }
-.btnDonar{
+.btnComunicarme{
     background-color: var(--color-one);
     border-color: transparent;
 }
-.btnDonar:hover{
+.btnComunicarme:hover{
     background-color: var(--color-one);
     border-color: transparent;
 }
