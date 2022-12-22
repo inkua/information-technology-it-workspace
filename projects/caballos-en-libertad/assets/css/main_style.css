@@ -159,6 +159,7 @@
 
 .sobre_nosotros .sobre .sobre_text_container .sobre_text {
   font-size: 0.7rem;
+  font-weight: 200;
   text-align: center;
   color: white;
 }
