@@ -115,6 +115,7 @@
 }
 .footer .footer_info .footer_messageContainer{
   padding: 10px;
+  max-width: 550px;
 }
 .footer .footer_info .footer_messageContainer .footer_message{
   color: var(--color-four);

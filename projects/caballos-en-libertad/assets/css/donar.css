@@ -7,11 +7,28 @@
 .titulo-donar{
     text-align: center;
 }
+.titulo-donar .donar-h5{
+    color: black;
+    font-weight: 200;
+    margin-top: 10px;
+}
 
 .cuerpo-donar{
     margin-top: 4rem;
 }
-
+.modal-body{
+    padding-top: 0;
+}
+.donar-modals h3{
+    font-size: 25px; 
+    padding: 0px 0px 10px 0px;
+    margin: 0;
+    text-align: center;
+}
+.control-size{
+    max-height: 400px;
+    overflow-y: scroll;
+}
 .opcion-donar{
     border-radius: 7px;
     background-color: white;
@@ -33,16 +50,47 @@
 
     padding-bottom: 4rem;
 }
+.btnDonar{
+    background-color: var(--color-one);
+    border-color: transparent;
+}
+.btnDonar:hover{
+    background-color: var(--color-one);
+    border-color: transparent;
+}
 
 
 .donar_modal_cerrar{
-  background-color: white;
-  background-image: url(../img/rescatados/modal-close.png);
-  background-position: right;
+    background-color: white;
+    background-image: url(../img/rescatados/modal-close.png);
+    background-position: right;
 }
 
 .donar_modal_cerrar:hover{
     background-color: whitesmoke;
+}
+
+.donar .logoContainer{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    padding-top: 35px;
+}
+.donar .logoContainer .mercadopago{
+    width: 105px;
+    height: 27px;
+    background-image: url('../img/mercadopago.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.donar .logoContainer .paypal{
+    width: 105px;
+    height: 25px;
+    background-image: url('../img/paypal.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 @media (max-width: 1200px){
@@ -64,8 +112,9 @@
         height: 160px;
         margin-bottom: 20px;
     }
-    .opcion-donar h5{
-        font-size: 25px;
+    .titulo-donar .donar-h5{
+        font-size: 1rem;
+        padding: 0px 20px 0px 20px;
     }
     .donar-modals h3{
         font-size: 35px;
@@ -73,30 +122,43 @@
     .donar-modals p{
         font-size: 20px;
     }
+    .donar .logoContainer{
+        display: none;
+    }
 }
 
 @media (max-width: 426px){
+    .donar{
+        background-color: var(--color-four);
+        padding-top: 4rem;;
+        padding-bottom: 4rem;
+    }
     .opcion-donar h5{
         font-size: 20px; 
     }
 
     .donar-modals h3{
-       font-size: 25px; 
+        font-size: 25px; 
     }
 
     .donar-modals p{
-        font-size: 15px; 
-     }
-     
+        font-size: 13px; 
+    }
     .donar-modals h5{
         font-size: 15px; 
     }
     .titulo-donar h3{
         font-size: 25px; 
     }
-    .titulo-donar h5{
-        font-size: 15px; 
+    .titulo-donar .donar-h5{
+        font-size: 15px;
+        font-weight: 100;
+        padding: 0px 20px 0px 20px;
     }
+    .control-size{
+        max-height: 250px;
+    }
+    
 }
 
 @media (max-width: 375px){
