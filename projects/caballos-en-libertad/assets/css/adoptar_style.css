@@ -121,6 +121,10 @@ hr {
     transition: background-color 0.5s;
 }
 
+.a-button {
+    text-decoration: none;
+}
+
 @media screen and (min-width: 768px) {
     /* Tablet */
     .adoptar-contenido-info {
