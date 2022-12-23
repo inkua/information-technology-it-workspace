@@ -351,26 +351,58 @@
     padding-right: 50%;
   }
 
-  .nosotros_second .icon i {
-    color: var(--color-two);
-    font-size: 30px;
+  .nosotros_second {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    height: 250px;
+    padding: 10px 10px 10px 20px;
   }
 
-  .nosotros_second .row h4 {
-    color: var(--color-two);
+  .nosotros_second .row {
+    display: flex;
+    width: 69%;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .nosotros_second .row i {
     font-size: 25px;
-    font-weight: 700;
+  }
+  
+  .nosotros_second .row .icon {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
   }
 
-  .nosotros_second .row p {
-    font-size: 15px;
-  }
-
-  .nosotros_second p {
+  .nosotros_second .row .icon .p-icon {
     color: var(--color-two);
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 500;
-    padding: 20px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+  }
+
+  .nosotros_second .row .icon h4 {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .nosotros_second .p-nosotros-second {
+    font-size: 15px;
+    font-weight: 300;
+    width: 30%;
+    text-align: left;
+    padding-left: 10px;
+    margin: 0;
   }
 
   .sobre_nosotros {
@@ -490,7 +522,6 @@
   }
 
   .nosotros_second .row .icon {
-    flex-direction: row;
     width: 20%;
     height: 150px;
     justify-content: center;
@@ -643,11 +674,8 @@
     font-size: 30px;
   }
   .nosotros_second .row .icon {
-    flex-direction: row;
     width: 20%;
     height: 150px;
-    justify-content: center;
-    text-align: center;
   }
 
   .nosotros_second .row .icon .p-icon {

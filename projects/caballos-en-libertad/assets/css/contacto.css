@@ -31,6 +31,8 @@
 }
 
 .contacto-contenido-img img{
+    border: 2px solid var(--color-one);
+    height: fit-content;
     margin-top: -20px;
     width: 100%;
     max-width: 490px;

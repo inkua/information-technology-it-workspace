@@ -77,9 +77,9 @@
 }
 .donar .logoContainer .mercadopago{
     width: 105px;
-    height: 27px;
+    height: 26px;
     background-image: url('../img/mercadopago.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
