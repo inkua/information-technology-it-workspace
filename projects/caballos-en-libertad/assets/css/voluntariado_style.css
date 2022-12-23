@@ -42,6 +42,18 @@ span{
 .voluntariado-button {
     width: 200px;
     margin: 0 auto 60px;
+    background-color: var(--color-one);
+    border-color: transparent;
+    display: grid;
+    place-items: center;
+}
+.voluntariado-button .text-button-voluntariado{
+    margin: 0;
+    padding: 0;
+}
+.voluntariado-button:hover {
+    background-color: var(--color-one);
+    border-color: transparent;
 }
 
 .container-div {

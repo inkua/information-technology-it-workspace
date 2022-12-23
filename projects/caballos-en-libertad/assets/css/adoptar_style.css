@@ -73,9 +73,9 @@ hr {
 
 .adoptar-contenido-info-texto .home-logo {
     background-image: url('../img/adoptar/home-logo.png');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
     width: 40px;
     height: 40px;
     margin-bottom: 17px;

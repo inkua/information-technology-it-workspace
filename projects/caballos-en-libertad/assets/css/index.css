@@ -82,6 +82,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--color-three);
+  color: white;
   padding: 30px 0px;
 }
 .footer .footer_info{
@@ -97,7 +98,6 @@
   flex-direction: column;
 }
 .footer .footer_info .footer_media .footer_mediaText{
-  color: var(--color-four);
   font-weight: 600;
   text-align: center;
   padding: 0px 10px;
@@ -109,7 +109,7 @@
   margin: 0;
 }
 .footer .footer_info .footer_media .footer_socialMedia a .fa-brands{
-  color: var(--color-four);
+  color: white;
   font-size: 1.3rem;
   padding: 5px;
 }
@@ -118,13 +118,12 @@
   max-width: 550px;
 }
 .footer .footer_info .footer_messageContainer .footer_message{
-  color: var(--color-four);
   text-align: center;
   font-size: 0.8rem;
 }
 .footer .footer_info .footer_messageContainer .footer_message .mentions{
+  color: white;
   font-size: 0.6rem;
-  color: var(--color-four);
   font-weight: 100;
 }
 .footer .footer_logo{
@@ -144,7 +143,6 @@
 }
 .footer .footer_logo .footer_logoText{
   text-align: center;
-  color: var(--color-four);
 }
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- FOOTER final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 
@@ -177,6 +175,9 @@
   background-color: var(--color-one);
   border-radius: 5px;
   padding: 5px 15px;
+}
+.header .header_menuContainer .navDonar:hover{
+  color: var(--color-two);
 }
 .header .header_menuContainer .navAdoptar{
   background-color: transparent;
