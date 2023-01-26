@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and Drop// // Arrastrar y soltar</title>
+  </head>
+  <style>
+    h1 {
+      color: darkslategrey;
+      text-align: center;
+    }
+    .seccion {
+      background-color: darkslategrey;
+      padding: 1rem;
+      margin: 1rem;
+    }
+
+    .parrafo {
+      background-color: white;
+      padding: 1rem;
+    }
+
+    .parrafo.dragging {
+      opacity: 0.3;
+    }
+
+    .imagen-fantasma {
+      width: 300px;
+      height: 300px;
+      background-color: blue;
+      position: absolute;
+      left: -100vw;
+    }
+  </style>
+  <body>
+    <h1>Evento de arrastrar y soltar</h1>
+    <!-- draggable="true" etiqueta para arrastrar-->
+    <div class="container">
+      <div class="seccion">
+        <p class="parrafo" draggable="true" id="parrafo-1">1. Primero</p>
+        <p class="parrafo" draggable="true" id="parrafo-2">2. Segundo</p>
+        <p class="parrafo" draggable="true" id="parrafo-3">3. Tercero</p>
+        <p class="parrafo" draggable="true" id="parrafo-4">4. Cuarto</p>
+      </div>
+      <div class="seccion">
+        <p class="parrafo" draggable="true" id="parrafo-5">5. Tercero</p>
+        <p class="parrafo" draggable="true" id="parrafo-6">6. Cuarto</p>
+        <p class="parrafo" draggable="true" id="parrafo-7">7. Tercero</p>
+        <p class="parrafo" draggable="true" id="parrafo-8">8. Cuarto</p>
+      </div>
+      <div class="imagen-fantasma"></div>
+    </div>
+  </body>
+
+  <script>
+    //parrafo
+    const parrafos = document.querySelectorAll(".parrafo");
+    // seccion
+    const secciones = document.querySelectorAll(".seccion");
+    // "dragover" "dragstart" es son eventos
+    parrafos.forEach((parrafo) => {
+      parrafo.addEventListener("dragstart", (event) => {
+        console.log("Estoy arrastrando el pÃ¡rrafo: " + parrafo.innerText);
+        parrafo.classList.add("dragging");
+        event.dataTransfer.setData("id", parrafo.id);
+        //imagen fastama
+        const elemento_fantasma = document.querySelector(".imagen-fantasma");
+        event.dataTransfer.setDragImage(elemento_fantasma, 0, 0);
+      });
+
+      parrafo.addEventListener("dragend", () => {
+        // console.log("He terminado de arrastrar")
+        //remove a lo que suelte de vuelve normal
+        parrafo.classList.remove("dragging");
+      });
+    });
+
+    // seccion
+    secciones.forEach((seccion) => {
+      seccion.addEventListener("dragover", (event) => {
+        event.preventDefault();
+        //event.dataTransfer tranfiere informacion &
+        // .dropEffect da efecto al cursor
+        event.dataTransfer.dropEffect = "move"; //none ,//link, //move imagen alado del cursors// copy por defecto
+        // console.log("Drag Over")
+        //
+      });
+
+      seccion.addEventListener("drop", (event) => {
+        console.log("Drop");
+        const id_parrafo = event.dataTransfer.getData("id");
+        // console.log("PÃ¡rrafo id: ", id_parrafo)
+        const parrafo = document.getElementById(id_parrafo);
+        seccion.appendChild(parrafo);
+      });
+    });
+  </script>
+</html>
