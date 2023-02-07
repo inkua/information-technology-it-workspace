@@ -98,7 +98,34 @@ html {
 * SECTION 1 STYLING GOES HERE
 * ASSIGNED TO: María Quintana & Jésica Ortiz
 */
+.section1-home {
+    width: 100%;
+    min-height: 450px;
+    margin-top: -70px;
+    padding: 8rem 2rem;
+    background: var(--white-color);
+    border-radius: 70px 70px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.section1-home .max-width {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1-home .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
 /* !--------------- Finishes Home (SECTION 1) Styling -------------- */
 
 /* !--------------- Starts About Us (SECTION 2) Styling -------------- */
