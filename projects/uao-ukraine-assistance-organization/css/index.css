@@ -98,7 +98,63 @@ html {
 * SECTION 1 STYLING GOES HERE
 * ASSIGNED TO: María Quintana & Jésica Ortiz
 */
+h1{
+    margin: 5%;
+    position: absolute;
+    width: 610px;
+    height: 196px;
+    left: 0px;
+    top: 0px;
 
+    font-size: 72px;
+    line-height: 84px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+
+    color: #353535;
+}
+
+h1.variante{
+    position: absolute;
+    width: 454px;
+    height: 294px;
+    left: 0px;
+    top: 12%;
+
+    font-family: 'Eina03-Bold';
+    font-size: 72px;
+    line-height: 84px;
+    letter-spacing: 0.01em;
+
+    background: linear-gradient(93.65deg, #4B77C0 26.71%, #E4C75B 64.37%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+}
+
+a.donate{
+    color:#E6EAF0;
+    font-size: small;
+    text-decoration: none;
+
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
+
+    position: absolute;
+    width: 124px;
+    height: 48px;
+    left: 0px;
+    top: 365px;
+
+    background: #4B77C0;
+    border-radius: 8px;
+}
 /* !--------------- Finishes Home (SECTION 1) Styling -------------- */
 
 /* !--------------- Starts About Us (SECTION 2) Styling -------------- */
