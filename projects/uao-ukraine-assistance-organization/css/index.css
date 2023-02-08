@@ -107,7 +107,27 @@ html {
 * SECTION 2 STYLING GOES HERE
 * ASSIGNED TO: Maximiliano Luján & Dana Sabrina Armella
 */
-
+.container-aboutus{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../assets/images/about-us/ukrania-country-background.svg');
+}
+.container-aboutus h2 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+.container-aboutus h2 span{
+    color: var(--blue-color-second);
+}
+.subtitle{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+.container-texts-images{
+    display: flex;
+}
 /* !--------------- Finishes About Us (SECTION 2) Styling -------------- */
 
 /* !--------------- Starts Get Involved (SECTION 3) Styling -------------- */
