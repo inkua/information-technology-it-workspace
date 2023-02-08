@@ -1,2 +1,0 @@
-Hola, soy Facundo Piñeyro, en primer lugar no soy desarrollador web, simplemente estoy tratando de iniciar en este mundo, el cual me parece muy interesante.
-Con respecto al proyecto, estuvo muy original el tratar de hacer un cv interactico, me llevo tiempo pero creo que salio bastante bien y acorde a lo que se solicitaba.
