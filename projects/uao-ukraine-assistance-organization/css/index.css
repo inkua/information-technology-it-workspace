@@ -144,6 +144,75 @@ html {
 * ASSIGNED TO: Sabrina Demetrio
 */
 
+.section6-partners {
+    width: 100%;
+    min-height: 450px;
+    /* margin-top: -70px; */
+    /* padding: 8rem 2rem; */
+    background: var(--white-color);
+    /* border-radius: 70px 70px 0px 0px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .your-section .max-width {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */ 
+.section6-partners .title-partners{
+    font-size: 38px;
+    font-family: var(--bebas-neue-font);
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 20px;
+    letter-spacing: 1px;
+}
+
+.section6-partners .color-title{
+    color: var(--primary-blue-color)
+}
+
+.title-partners::before {
+    content: "";
+    position: absolute;
+    margin-top:1.9%;
+    width: 22%;
+    height: 1px;
+    background-color: var(--gray-color);
+  }
+
+.title-partners::after {
+    content: "";
+    position: absolute;
+    margin-top: -2.2%;
+    width: 25%;
+    height: 1px;
+    background-color: var(--gray-color);
+  }
+
+.title-partners::before {
+  left: 5%;
+}
+
+.title-partners::after {
+    right: 2.5%;
+}
+
+.section6-partners .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+
+
 /* !--------------- Finishes PARTNERS (SECTION 6) Styling -------------- */
 
 /* !--------------- Starts FOOTER Styling -------------- */
