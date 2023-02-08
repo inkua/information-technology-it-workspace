@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    padding: 50px 10px;
+    background-color: #034C8C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container .arriba {
+    display: flex;
+    justify-content: center;
+}
+
+.container .abajo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container .abajo .card {
+    background-color: aquamarine;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  --color-one: #d98729;
+  --color-two: #00638c;
+  --color-three: #c6eaff;
+  --color-four: #e4f3fb;
+
+  /* thin-100, light-300, regular-400, medium-500, bold-700 */
+  --font: "Roboto", sans-serif;
+  font-family: var(--font);
+}
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- HEADER inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+.headerContainer{
+  background-color: var(--color-two)
+}
+.header{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 10px;
+  border-bottom: .5px solid whitesmoke;
+  box-shadow: 12px 5px 2px 1px #02567a;
+}
+.header .header_logoContainer{
+  height: 35px;
+  width: 63px;
+  margin-right: auto;
+  background-image: url('../img/logo-header.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header .header_menuContainer{
+  /* no showing on mobile resolution */
+  display: none;
+}
+.header .header_mediaContainer{
+  width: fit-content;
+}
+.header .header_mediaContainer .fa-brands{
+  color: var(--color-one);
+  font-size: 1.5rem;
+  margin-right: 7px;
+}
+.menuMobile{
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.menuMobile .menuItem{
+  color: var(--color-four);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 300;
+  padding: 2.5px;
+}
+.menuMobile .menuItem:hover{
+  color: var(--color-one);
+}
+.focusItem {
+  color: var(--color-one) !important;
+}
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- HEADER final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+
+
+
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- FOOTER inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+.footer {
+  background-image: url("../img/footer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--color-three);
+  color: white;
+  padding: 30px 0px;
+}
+.footer .footer_info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}  
+.footer .footer_info .footer_media{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer .footer_info .footer_media .footer_mediaText{
+  font-weight: 600;
+  text-align: center;
+  padding: 0px 10px;
+}
+
+.footer .footer_info .footer_media .footer_socialMedia {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.footer .footer_info .footer_media .footer_socialMedia a .fa-brands{
+  color: white;
+  font-size: 1.3rem;
+  padding: 5px;
+}
+.footer .footer_info .footer_messageContainer{
+  padding: 10px;
+  max-width: 550px;
+}
+.footer .footer_info .footer_messageContainer .footer_message{
+  text-align: center;
+  font-size: 0.8rem;
+}
+.footer .footer_info .footer_messageContainer .footer_message .mentions{
+  color: white;
+  font-size: 0.6rem;
+  font-weight: 100;
+}
+.footer .footer_logo{
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  text-align: center;
+}
+.footer .footer_logo .footer_logoImg {
+  background-image: url('../img/logo-footer.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 80px;
+  height: 60px;
+  margin-bottom: 6px;
+}
+.footer .footer_logo .footer_logoText{
+  text-align: center;
+}
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- FOOTER final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+
+/* ############################################################## MEDIA QUERY - Tablet 768px - ############################################################## */
+@media (min-width: 768px) {
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- HEADER inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+.header{
+  gap: 10px;
+  box-shadow: none;
+  border-bottom: none;
+}
+.header .header_logoContainer{
+  height: 35px;
+  width: 63px;
+}
+.header .header_menuContainer{
+  display: initial;
+}
+.header .header_menuContainer .navItem{
+  color: var(--color-four);
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 7px;
+  font-size: 0.5rem;
+}
+.header .header_menuContainer .navItem:hover{
+  color: var(--color-one);
+}
+.header .header_menuContainer .navDonar{
+  background-color: var(--color-one);
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+.header .header_menuContainer .navDonar:hover{
+  color: var(--color-two);
+}
+.header .header_menuContainer .navAdoptar{
+  background-color: transparent;
+  border: 2px solid var(--color-one);
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+.header .header_mediaContainer .fa-brands{
+  color: var(--color-four);
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+.menuMobile{
+  display: none;
+}
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- HEADER final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- FOOTER inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+.footer {
+  padding: 50px 0px 30px 0px;
+}
+.footer .footer_info{
+  flex-direction: row;
+}  
+.footer .footer_info .footer_media{
+  display: initial;
+  max-width: 390px;
+  max-width: 390px;
+  padding: 10px;
+}
+.footer .footer_info .footer_media .footer_mediaText{
+  padding: 0px;
+  font-size: 1.1rem;
+  text-align: left;
+  font-weight: 500;
+}
+
+.footer .footer_info .footer_media .footer_socialMedia a .fa-brands{
+  color: var(--color-four);
+  font-size: 1.5rem;
+  padding: 8px;
+}
+.footer .footer_info .footer_messageContainer{
+  display: initial;
+  max-width: 390px;
+  max-width: 390px;
+  padding: 10px;
+}
+.footer .footer_info .footer_messageContainer .footer_message{
+  text-align: left;
+  padding-top: 7px;
+  font-size: 0.9rem;
+}
+.footer .footer_info .footer_messageContainer .footer_message .mentions{
+  font-size: 0.7rem;
+}
+
+.footer .footer_logo .footer_logoImg {
+  width: 100px;
+  height: 70px;
+  margin: 20px 0px;
+}
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- FOOTER final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+}
+
+/* ############################################################## MEDIA QUERY - 960px - ##############################################################*/
+@media (min-width: 960px) {
+
+  .header .header_menuContainer .navItem{
+    margin-right: 9px;
+    font-size: 0.7rem;
+  }
+}
+/* ############################################################## MEDIA QUERY - Laptop 1280px - ##############################################################*/
+@media (min-width: 1280px) {
+  /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- HEADER inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+
+.header{
+  padding: 15px;
+  gap: 10px;
+}
+.header .header_logoContainer{
+  height: 50px;
+  width: 90px;
+}
+.header .header_menuContainer{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header .header_menuContainer .navItem{
+  font-size: 0.9rem;
+}
+.header .header_menuContainer .navDonar{
+  padding: 5px 17px;
+}
+.header .header_menuContainer .navAdoptar{
+  padding: 5px 17px;
+}
+.header .header_mediaContainer{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.header .header_mediaContainer .fa-brands{
+  font-size: 1.6rem;
+}
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- HEADER final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+
+}
+
+/* ############################################################## MEDIA QUERY - Desktop 1920px - ##############################################################*/
+@media (min-width: 1920px) {
+  .headerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header{
+    width: 1852px;
+  }
+    /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- Main inicio +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+    body {
+      background-color: var(--color-four);
+    }
+  
+    .main {
+      max-width: 2000px;
+      margin: auto;
+      box-shadow:
+      inset 0 0 3em rgba(0,0,0,0.1),
+            0 0 2em rgba(0,0,0,0.3);
+    }
+    /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- Main final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+}

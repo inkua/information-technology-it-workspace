@@ -1,0 +1,200 @@
+@import "index.css";
+@import "main_style.css";
+
+html{
+    font-size: 16px;
+}
+
+* {
+    font-family: "Montserrat", "Roboto", sans-serif;
+}
+
+.portada-ev{
+    background-image: url('../img/fotoeventos.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+.regresar{
+    color:white;
+    position:absolute;
+    align-self: start;
+    margin: 3rem 0 0 5rem;
+}
+
+.regresar a{
+    color: white;
+    text-decoration: underline;
+}
+
+.titulo-flecha{
+    font-size: 2rem;
+    position: absolute;
+    left: -2rem;
+}
+.texto-ev-izq{
+    color: white;
+    margin: 0 0 3rem 3rem;
+}
+.eventos{
+    background-color: var(--color-four);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+.eventos .eventos_title{
+    font-size: 1.2rem;
+    color: var(--color-two);
+    text-align: center;
+}
+.eventos .eventos_textLine {
+    background-color: var(--color-two);
+    width: 15%;
+    height: 4px;
+    margin-bottom: 20px;
+}
+.eventos .eventos_event{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.eventos .eventos_event .event_image{
+    width: 260px;
+    height: 351px;
+    border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.eventos .eventos_event .event_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.eventos .eventos_event .event_info .info_name{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-two);
+    margin: 20px 0px;
+}
+.eventos .eventos_event .event_info .info_p{
+    font-size: 0.7rem;
+}
+.eventos .eventos_event .event_info .info_h4{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.eventos .eventos_event .event_info .info_btn{
+    display: block;
+    text-decoration: unset;
+    background-color: var(--color-one);
+    color: white;
+    padding: 8px 15px;
+    width: 150px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+@media only screen and (max-width: 480px){
+    .portada-ev{
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        justify-content: left;
+        align-items: flex-end;
+    }
+    .texto-ev-izq{
+        margin: 15rem 0 1rem 2rem;
+    }
+    .texto-ev-izq .texto-ev-p{
+        margin: 0;
+        padding: 0;
+        font-size: 0.8rem;
+    }
+    .texto-ev-izq .texto-ev-h2{
+        font-size: 1.2rem;
+    }
+    .regresar{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .portada-ev{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        justify-content: left;
+        align-items: flex-end;
+    }
+    .texto-ev-izq{
+        margin: 15rem 0 1rem 2rem;
+    }
+    
+}
+
+/* ############################################################## MEDIA QUERY - Tablet 768px - ############################################################## */
+@media (min-width: 768px) {
+    .portada-ev{
+        height: 400px !important;
+    }
+    .eventos .eventos_event{
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 50px;
+        margin-bottom: 35px;
+    }
+    .eventos .eventos_textLine {
+        max-width: 84px;
+        margin: 20px;
+    }
+    .eventos .eventos_event .event_info{
+        align-items: flex-start;
+        text-align: start;
+    }
+    .eventos .eventos_event .event_info .info_btn{
+        text-align: center;
+    }
+}
+/* ############################################################## MEDIA QUERY - Laptop 1280px - ##############################################################*/
+@media (min-width: 1280px) {
+    .portada-ev{
+        height: 600px !important;
+    }
+    .eventos{
+        padding: 100px 0px 0px 0px;
+    }
+    .eventos .eventos_title{
+        font-size: 1.9rem;
+    }
+    .eventos .eventos_textLine {
+        max-width: 96px;
+        margin: 25px 0px 40px 0px;
+    }
+    .eventos .eventos_event{
+        gap: 100px;
+        margin-bottom: 100px;
+    }
+    .eventos .eventos_event .event_image{
+        width: 360px;
+        height: 486px;
+        border-radius: 20px;
+    }
+    .eventos .eventos_event .event_info .info_name{
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+    .eventos .eventos_event .event_info .info_p{
+        font-size: 1rem;
+    }
+    .eventos .eventos_event .event_info .info_h4{
+        font-size: 1.1rem;
+    }
+}

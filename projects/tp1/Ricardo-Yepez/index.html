@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP1 - Website</title>
+  </head>
+  <body onload="logout()">
+    <style>
+      body {
+        font-family: monaco, monospace;
+        color: white;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      a:hover {
+        background-color: rgba(0, 212, 255, 1);
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        text-align: center;
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: rgba(0, 212, 255, 1);
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(255, 251, 251, 0.2);
+        transition: 0.3s;
+        display: flex;
+      }
+
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .container {
+        margin: 20px;
+        padding: 50px;
+        box-shadow: 0 4px 8px 0 rgba(255, 251, 251, 0.2);
+      }
+
+      .containerTech {
+        margin: 20px;
+        padding: 50px;
+        list-style-type: none;
+        box-shadow: 0 4px 8px 0 rgba(255, 251, 251, 0.2);
+      }
+
+      .containerEducation {
+        margin: 20px;
+        padding: 50px;
+        list-style-type: none;
+      }
+      .about {
+        margin: 20px;
+        padding: 50px;
+        list-style-type: none;
+        box-shadow: 0 4px 8px 0 rgba(255, 251, 251, 0.2);
+      }
+
+      input {
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: rgba(0, 212, 255, 1);
+        color: rgb(0, 0, 0);
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+    <div id="main">
+      <!-- Navbar -->
+
+      <div class="navbar">
+        <ul>
+          <li><a onclick="showAbout()">Sobre Mi</a></li>
+          <li><a onclick="showTech()">Tecnologías</a></li>
+          <li><a onclick="showCourses()">Educación</a></li>
+        </ul>
+      </div>
+
+      <!-- Submit -->
+      <div id="containerName" class="container">
+        <div id="container">
+          <input type="text" id="name" placeholder="Coloca tu nombre" />
+          <button onclick="submit_by_id (), showName()">Ok</button>
+        </div>
+      </div>
+
+      <!-- About -->
+
+      <div id="about" class="about">
+        <h2>Sobre Mi</h2>
+        <p>
+          Desarrollador web en proceso..! apasionado por el mundo del desarrollo
+          de software y la tecnología. Actualmente finalizando un bootcamp en
+          4Geeks Academy Chile. Busco aplicar mis conocimientos adquiridos en
+          desarrollo web en proyectos que aporten positivamente a la sociedad.
+        </p>
+        <p>
+          Puedes conocer mas de mi en mi
+          <a href="https://www.linkedin.com/in/ricardoyepez/" target="_blank"
+            ><b>linkedin</b></a
+          >
+          😉 o en mi perfil de
+          <a href="https://github.com/ricardoyepezz" target="_blank"
+            ><b>github</b></a
+          >
+          🤖
+        </p>
+        <p>
+          También puedes entrar a mi web personal
+          <a href="https://ricardoyepez.dev" target="_blank"
+            ><b>ricardoyepez.dev</b></a
+          >
+          💻
+        </p>
+      </div>
+      <!-- Tecnologías -->
+
+      <div id="containerTech" class="containerTech">
+        <h2>Las Tecnologías que uso 😉</h2>
+      </div>
+
+      <!-- Educación -->
+      <div id="card" class="containerEducation">
+        <h2>Un poco de mi Educación 😉</h2>
+        <div class="card">
+          <div class="container">
+            <h2><b>Coderhouse - Argentina</b></h2>
+            <p>Desarrollo Web</p>
+            <p>Junio 2021 - Septiembre 2021</p>
+          </div>
+          <div class="container">
+            <h2><b>Coderhouse - Argentina</b></h2>
+            <p>Análisis de Datos</p>
+            <p>Octubre 2021 - Diciembre 2021</p>
+          </div>
+          <div class="container">
+            <h2><b>Coderhouse - Argentina</b></h2>
+            <p>React Js</p>
+            <p>Diciembre 2021 - Enero 2022</p>
+          </div>
+          <div class="container">
+            <h2><b>4Geeks Academy - Chile</b></h2>
+            <p>Full Stack Developer Program</p>
+            <p>Enero 2022 - Mayo 2022</p>
+          </div>
+        </div>
+     </div>
+
+    <script>
+      // Funciones Date
+      const time = new Date().getHours();
+
+      if (time < 6 || time > 19) {
+        document.body.style.background =
+          "linear-gradient(132deg, #F4D03F 0%, #16A085 100%)";
+        document.body.style.color = "black";
+      } else {
+        document.body.style.background =
+          "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,104,121,1) 50%, rgba(0,212,255,1) 100%)";
+      }
+      // Funciones para mostrar y ocultar divs, recorriendo array stack
+
+      let stack = ["HTML", "CSS", "Javascript", "React JS", "Python", "SQL"];
+      const fragment = document.querySelector(".containerTech");
+      for (let i = 0; i < stack.length; i++) {
+        const element = stack[i];
+        const div = document.createElement("p");
+        div.textContent = `-${element} `;
+        fragment.appendChild(div);
+      }
+
+      function showAbout() {
+        var x = document.getElementById("about");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      function showCourses() {
+        var x = document.getElementById("card");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      function showTech() {
+        var x = document.getElementById("containerTech");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      function showName() {
+        var x = document.getElementById("container");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      // funciones empleando localstorage
+      function logout() {
+        localStorage.clear();
+      }
+
+      function submit_by_id() {
+        var name = document.getElementById("name").value;
+        if (validation()) {
+          // Calling validation function
+          const inputName = document.getElementById("name");
+          const setName = localStorage.setItem("name", inputName.value);
+          const getName = localStorage.getItem("name");
+          const container = document.querySelector(".containerName");
+          const element = document.createElement("p");
+          element.textContent = `Hola ${getName}, conoce más de mi clickeando alguno de los botones del navbar 😉`;
+          containerName.appendChild(element);
+        }
+      }
+      function validation() {
+        var name = document.getElementById("name").value;
+        if (name === "") {
+          alert("Campo no puede estar vacio");
+          return false;
+        } else {
+          return true;
+        }
+      }
+    </script>
+  </body>
+</html>

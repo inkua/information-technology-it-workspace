@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish:wght@400;600;700;800&display=swap');
+
+:root {
+    /* Colors Palette */
+        /* Neutral Colors */
+        --black-color: #1D1F23;
+        --very-dark-gray-color: #51565E;
+        --dark-gray-color: #757A82;
+        --gray-color: #C2C2C2;
+        --light-gray-color: #E6EAF0;
+        --very-light-gray-color: #F4F6F8;
+
+        /* Primary Colors */
+        --primary-blue-color: #4B77C0;
+        --primary-yellow-color: #E4C75B;
+
+        /* Blue Colors */
+        --blue-color-first: #6399FF;
+        --blue-color-second: #4A92F1;
+        --blue-color-third: #63ADFF;
+        --blue-color-fourth: #63ADCB;
+
+        /* Yellow Colors */
+        --yellow-color-first: #FFD45B;
+        --yellow-color-second: #FFC700;
+        --yellow-color-third: #FFDE7E;
+        --yellow-color-fourth: #FFC77E;
+    /* End Colors Palette */ 
+
+    /* Fonts */
+    --bebas-neue-font: 'Bebas Neue', cursive;
+    --eina-03-font: 'Mulish', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--eina-03-font);
+    scroll-behavior: smooth;
+}
+
+/* !🚨 README 🚨 */
+/* !🚨 PLEASE, USE THE COLORS AND FONTS THAT ARE AT THE ROOT, DON'T WRITE THE COLORS/FONTS MANUALLY 🚨 */
+/* !🚨 README 🚨 */
+/* !🚨 PLEASE, USE CLEAR CLASS NAMES SO EVERYONE CAN UNDERSTAND ALL 🚨 */
+/* !🚨 README 🚨 */
+/* !🚨 THIS COULD SERVE YOU AS GUIDE TO UNDERSTAND HOW TO STYLE YOUR SECTION USING MAX-WIDTH CORRECTLY🚨 */
+.your-section {
+    width: 100%;
+    min-height: 450px;
+    margin-top: -70px;
+    padding: 8rem 2rem;
+    background: var(--white-color);
+    border-radius: 70px 70px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.your-section .max-width {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.your-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+/* !🚨 README 🚨 */
+/* !🚨 README 🚨 */
+/* !🚨 README 🚨 */
+/* !🚨 THIS COULD SERVE YOU AS GUIDE TO UNDERSTAND HOW TO STYLE YOUR SECTION 🚨 */
+
+/* !--------------- Starts NAVBAR Styling -------------- */
+
+/*
+* NAVBAR STYLING GOES HERE
+* ASSIGNED TO: Erick Arias
+*/
+
+/* !--------------- Finishes NAVBAR Styling -------------- */
+
+/* !--------------- Starts Home (SECTION 1) Styling -------------- */
+
+/*
+* SECTION 1 STYLING GOES HERE
+* ASSIGNED TO: María Quintana & Jésica Ortiz
+*/
+.section1-home {
+    width: 100%;
+    min-height: 450px;
+    margin-top: -70px;
+    padding: 8rem 2rem;
+    background: var(--white-color);
+    border-radius: 70px 70px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1-home .max-width {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1-home .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+/* !--------------- Finishes Home (SECTION 1) Styling -------------- */
+
+/* !--------------- Starts About Us (SECTION 2) Styling -------------- */
+
+/*
+* SECTION 2 STYLING GOES HERE
+* ASSIGNED TO: Maximiliano Luján & Dana Sabrina Armella
+*/
+
+/* !--------------- Finishes About Us (SECTION 2) Styling -------------- */
+
+/* !--------------- Starts Get Involved (SECTION 3) Styling -------------- */
+
+/*
+* SECTION 3 STYLING GOES HERE
+* ASSIGNED TO: Andrea Lucía Canevaro & Harold Osorio
+*/
+
+/* !--------------- Finishes Get Involved (SECTION 3) Styling -------------- */
+
+/* !--------------- Starts Stories (SECTION 4) Styling -------------- */
+
+/*
+* SECTION 4 STYLING GOES HERE
+* ASSIGNED TO: Gabriel Vázquez & Nadia Florencia Maldonado
+*/
+
+/* !--------------- Finishes Stories (SECTION 4) Styling -------------- */
+
+/* !--------------- Starts Home (SECTION 5) Styling -------------- */
+
+/*
+* SECTION 5 STYLING GOES HERE
+* ASSIGNED TO: Junior Alejandro Calva Pizarro
+*/
+
+/* !--------------- Finishes Home (SECTION 5) Styling -------------- */
+
+/* !--------------- Starts PARTNERS (SECTION 6) Styling -------------- */
+
+/*
+* SECTION 6 STYLING GOES HERE
+* ASSIGNED TO: Sabrina Demetrio
+*/
+
+/* !--------------- Finishes PARTNERS (SECTION 6) Styling -------------- */
+
+/* !--------------- Starts FOOTER Styling -------------- */
+
+/*
+* FOOTER STYLING GOES HERE
+* ASSIGNED TO: Rafael Rivera
+*/
+
+/* !--------------- Finishes FOOTER Styling -------------- */
