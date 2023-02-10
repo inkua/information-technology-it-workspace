@@ -14,8 +14,3 @@ $(document).ready(function () {
   });
 });
 
-// Section carousel
-const swiper = new Swiper('.mySwiper', {
-  // Optional parameters
-  loop: true,
-});

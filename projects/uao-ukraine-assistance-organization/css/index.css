@@ -273,7 +273,7 @@ html {
 * SECTION 4 STYLING GOES HERE
 * ASSIGNED TO: Gabriel Vázquez & Nadia Florencia Maldonado
 */
-.section4-stories {
+.section4-stories .max-width .container {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -298,23 +298,31 @@ html {
   align-items: center;
   text-align: center;
 }
-swiper-container {
+
+.swiper {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-swiper-slide {
-  width: 300px;
-  height: 300px;
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px !important;
+  height: 350px !important;
   filter: blur(4px);
 }
 
-swiper-slide img {
+.swiper-slide img {
   display: block;
   width: 100%;
 }
-.slide-carusel-swiper {
+
+.swiper-slide-active {
+  filter: blur(0px) !important;
+}
+
+.slide-carusel-swiper-uao {
   width: 100%;
   height: 100%;
   display: flex;
@@ -324,9 +332,7 @@ swiper-slide img {
   background-position: center !important;
   background-size: cover !important;
 }
-.swiper-slide-active {
-  filter: blur(0px) !important;
-}
+
 .description-slide-swiper {
   position: relative;
   font-family: "Mulish";
@@ -346,13 +352,6 @@ swiper-slide img {
   border-radius: 10px 10px 0px 0px;
 }
 
-.slide-carusel-swiper {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
 .description-slide-swiper h3 {
   font-size: 20px;
   text-align: center;
