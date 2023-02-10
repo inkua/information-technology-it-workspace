@@ -15,6 +15,7 @@ $(document).ready(function () {
 });
 
 // Section carousel
-var mySwiper = new Swiper('.mySwiper', {
-    initialSlide: 1, // iniciar en el segundo slide
-    });
+const swiper = new Swiper('.mySwiper', {
+  // Optional parameters
+  loop: true,
+});

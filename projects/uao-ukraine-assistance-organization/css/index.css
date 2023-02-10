@@ -280,42 +280,6 @@ html {
   align-content: center;
   align-items: center;
 }
-swiper-container {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-}
-
-swiper-slide img {
-  display: block;
-  width: 100%;
-}
-
-.description-slide-swiper {
-  position: relative;
-  font-family: "Mulish";
-  color: white;
-  width: 100%;
-  height: 116px;
-  z-index: 999;
-  margin-top: -140px;
-  padding: 20px;
-  background: linear-gradient(
-    97.62deg,
-    rgba(176, 176, 176, 0.51) 1.35%,
-    rgba(140, 140, 140, 0) 120.18%
-  );
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  backdrop-filter: blur(10.255px);
-  border-radius: 10px 10px 0px 0px;
-}
 .section4-stories h2 {
   font-family: "Bebas Neue";
   font-style: normal;
@@ -334,6 +298,61 @@ swiper-slide img {
   align-items: center;
   text-align: center;
 }
+swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+swiper-slide {
+  width: 300px;
+  height: 300px;
+  filter: blur(4px);
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.slide-carusel-swiper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 10px;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.swiper-slide-active {
+  filter: blur(0px) !important;
+}
+.description-slide-swiper {
+  position: relative;
+  font-family: "Mulish";
+  color: white;
+  width: 100%;
+  height: 116px;
+  z-index: 999;
+  margin-top: -140px;
+  padding: 20px;
+  background: linear-gradient(
+    97.62deg,
+    rgba(176, 176, 176, 0.51) 1.35%,
+    rgba(140, 140, 140, 0) 120.18%
+  );
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  backdrop-filter: blur(10.255px);
+  border-radius: 10px 10px 0px 0px;
+}
+
+.slide-carusel-swiper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 .description-slide-swiper h3 {
   font-size: 20px;
   text-align: center;
@@ -343,9 +362,6 @@ swiper-slide img {
   font-size: 13px;
 }
 
-.slider-swiper-img {
-  border-radius: 10px;
-}
 /* !--------------- Finishes Stories (SECTION 4) Styling -------------- */
 
 /* !--------------- Starts Home (SECTION 5) Styling -------------- */

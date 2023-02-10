@@ -91,35 +91,54 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <div class="max-width">
             <div class="container">
-                <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
-                slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
-                coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true" >
-                <swiper-slide>
-                  <div class="slide">
-                      <img class="slider-swiper-img" src="./assets/images/stories/three-people-local-fans.webp" />
-                </div> 
-                    
-                </swiper-slide>
-                <swiper-slide>
-                  <img class="slider-swiper-img" src="./assets/images/stories/five-people-delivering-medical-care.webp" />
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="slide-carusel-swiper">
-                        <img class="slider-swiper-img" src="./assets/images/stories/woman-and-pet-taking-care.webp" />
-                        <div class="description-slide-swiper">
-                            <h3>We care for their pets too!</h3>
-                            <p>Our babushkas often have pets they have difficulty caring for since the invasion.</p>
+                <div class="swiper">
+                    <swiper-container class="mySwiper" effect="coverflow" grab-cursor="true" centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="0" coverflow-effect-stretch="0" coverflow-effect-modifier="2" coverflow-effect-depth="100"
+                    coverflow-effect-modifier="2" coverflow-effect-slide-shadows="true" initial-slide='2' navigation="true" navigation-next-el="swiper-button-next"
+                    navigation-prev-el="swiper-button-prev">
+                    <swiper-slide>
+                        <div class="slide-carusel-swiper" style="background:url('./assets/images/stories/three-people-local-fans.webp')">
+                            <div class="description-slide-swiper">
+                                <h3>We care for their pets too!</h3>
+                                <p>Our babushkas often have pets they have difficulty caring for since the invasion.</p>
+                            </div>
+                        </div> 
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="slide-carusel-swiper" style="background:url('./assets/images/stories/five-people-delivering-medical-care.webp')">
+                            <div class="description-slide-swiper">
+                                <h3>We care for their pets too!</h3>
+                                <p>Our babushkas often have pets they have difficulty caring for since the invasion.</p>
+                            </div>
+                        </div> 
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="slide-carusel-swiper" style="background:url('./assets/images/stories/woman-and-pet-taking-care.webp')">
+                            <div class="description-slide-swiper">
+                                <h3>We care for their pets too!</h3>
+                                <p>Our babushkas often have pets they have difficulty caring for since the invasion.</p>
+                            </div>
                         </div>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                  <img class="slider-swiper-img" src="./assets/images/stories/helping-old-woman.webp" />
-                </swiper-slide>
-                <swiper-slide>
-                  <img class="slider-swiper-img" src="./assets/images/stories/old-woman-surprised.webp" />
-                </swiper-slide>
-                       </swiper-container>
-            
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="slide-carusel-swiper" style="background:url('./assets/images/stories/helping-old-woman.webp')">
+                            <div class="description-slide-swiper">
+                                <h3>We care for their pets too!</h3>
+                                <p>Our babushkas often have pets they have difficulty caring for since the invasion.</p>
+                            </div>
+                        </div>
+                      
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="slide-carusel-swiper" style="background:url('./assets/images/stories/old-woman-surprised.webp')">
+                            <div class="description-slide-swiper">
+                                <h3>We care for their pets too!</h3>
+                                <p>Our babushkas often have pets they have difficulty caring for since the invasion.</p>
+                            </div>
+                        </div>
+                       </swiper-slide>
+                    </swiper-container>
+                </div>
+                            
             </div>
         </div>
     </section>
@@ -154,16 +173,12 @@
         </div>
     </section>
     <!-- FINISHES FOOTER: Rafael Rivera -->
-    <script src="./scripts.js"></script>
+
+    <!-- Scripts from Swiper, carousel library -->
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-  <script type="module">
-  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
-
-  const swiper = new Swiper('.mySwiper', {
-    initialSlide: 2, // iniciar en el segundo slide
-    });
-</script>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./scripts.js"></script>
+ </body>
 
 </html>
