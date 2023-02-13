@@ -298,7 +298,147 @@ html {
 * FOOTER STYLING GOES HERE
 * ASSIGNED TO: Rafael Rivera
 */
+.footer {
+    background-color: #f6f6f6;
+    height: 300px;
+    min-width: 1280px;
+    mix-blend-mode: normal;
+    position: relative;
+}
 
+.flex-col-1 {
+    gap: 47px;
+    left: 0;
+    min-height: 72px;
+    position: absolute;
+    top: 179px;
+    width: 1280px;
+}
+
+.homepage-protipoanimadol .flex-col-3 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.line-3-1 {
+    height: 1px;
+    object-fit: cover;
+    width: 1280px;
+}
+
+.copyright-2022-ua {
+    color: var(--scarpa-flow);
+    font-weight: 400;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 80px;
+    white-space: nowrap;
+}
+
+.valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.homepage-protipoanimado1 .flex {
+    align-items: center;
+    display: flex;
+}
+
+.flex-row {
+    height: 184px;
+    left: 80px;
+    min-width: 1030px;
+    position: absolute;
+    top: 42px;
+}
+
+.image-2 {
+    height: 184px;
+    width: 108px;
+}
+
+.mask-group-1 {
+    height: 37px;
+    margin-bottom: 6.6px;
+    margin-left: 14px;
+    width: 42px;
+}
+
+
+.flex-col-2 {
+    margin-bottom: 9px;
+    margin-left: 177px;
+    min-height: 73px;
+    width: 689px;
+}
+
+.flex-row-1 {
+    align-items: flex-start;
+    display: flex;
+    min-width: 319px;
+    gap: 162px;
+}
+
+.contact-us-1 {
+    height: 24px;
+    letter-spacing: 0;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.follow-us {
+    height: 24px;
+    letter-spacing: 0;
+    line-height: 24px;
+    white-space: nowrap;
+    width: 74px;
+}
+
+.flex-row-2 {
+    align-items: flex-end;
+    display: flex;
+    height: 49px;
+    min-width: 689px;
+}
+
+.icbaseline-facebook {
+    height: 32px;
+    width: 32px;
+}
+
+.phinstagram-logo-fill {
+    height: 32px;
+    margin-left: 21px;
+    width: 32px;
+}
+
+.made-with {
+    align-self: flex-start;
+    color: var(--scarpa-flow);
+    font-family: var(--font-family-eina03-semibold-☞);
+    font-size: 24px;
+    font-weight: 400;
+    height: 24px;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-left: 203px;
+    white-space: nowrap;
+}
+
+.phone {
+    align-self: center;
+    color: var(--scarpa-flow);
+    font-weight: 400;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 151px;
+    margin-top: 7px;
+    min-width: 130px;
+    white-space: nowrap;
+}
 /* !--------------- Finishes FOOTER Styling -------------- */
 
 @media (max-width: 947px) {
