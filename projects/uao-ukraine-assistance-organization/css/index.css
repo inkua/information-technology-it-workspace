@@ -299,6 +299,183 @@ html {
 * ASSIGNED TO: Rafael Rivera
 */
 
+.footer {
+    box-shadow: 1px 1px 88px #4b77c024;
+    flex-direction: column;
+    gap: 33px;
+    mix-blend-mode: normal;
+    padding: 42px 0;
+    position: absolute;
+    top: 4097px;
+    width: 100%;
+    min-height: 450px;
+    margin-top: -70px;
+    padding: 8rem 2rem;
+    background: var(--white-color);
+    border-radius: 70px 70px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .max-width {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+
+.flex-col-1 {
+    align-items: flex-start;
+    gap: 47px;
+    margin-right: 2px;
+    min-height: 72px;
+    width: 100%;
+}
+
+.homepage-prototipoanimado2 .flex-col-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.line-3 {
+    width:auto;
+}
+
+.homepage-prototipoanimado2 .line {
+    height: 1px;
+    object-fit: cover;
+}
+
+.homepage-prototipoanimado2 .line {
+    height: 1px;
+    object-fit: cover;
+}
+
+.copyright-2022-ua {
+    color: var(--scarpa-flow);
+    line-height: 24px;
+    margin-left: 80px;
+    white-space: nowrap;
+    font-weight: 400;
+    height: 24px;
+}
+
+.valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-row {
+    align-items: center;
+    display: flex;
+    margin-right: 90.44px;
+    min-width: 1830px;
+}
+
+.flex-col {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 9px;
+    margin-left: 177px;
+    min-height: 73px;
+    width: 689px;
+}
+
+.flex-row-2 {
+    align-items: flex-end;
+    display: flex;
+    height: 49px;
+    min-width: 689px;
+}
+
+.phinstagram-logo-fill {
+    height: 32px;
+    margin-left: 21px;
+    width: 32px;
+}
+
+.phone {
+    align-self: center;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 151px;
+    color: var(--scarpa-flow);
+    font-weight: 400;
+    margin-top: 7px;
+    min-width: 130px;
+    white-space: nowrap;
+}
+
+.made-with {
+    align-self: flex-start;
+    font-family: var(-font-family-eina03-semibold-);
+    font-size: var(--font-size-x1); 
+    color: var(--scarpa-flow);
+    font-weight: 400;
+    height: 24px;
+    letter-spacing: 0;
+    line-height: 24px; margin-left: 203px;
+    white-space: nowrap;
+}
+
+
+
+.icbaseline-facebook {
+    width: 32px;
+    height: 32px;
+}
+
+.flex-row-1 {
+    align-items: flex-start;
+    display: flex;
+    gap: 162px;
+    min-width: 319px;
+}
+
+.follow-us {
+    height: 24px;
+    letter-spacing: 0;
+    line-height: 24px;
+    white-space: nowrap;
+    width: 74px;
+}
+
+.contact-us {
+    height: 24px;
+    letter-spacing: 0;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.image-2 {
+    height: 104px;
+    width: 108px;
+}
+
+.mask-group-1 {
+    height: 37px;
+    margin-bottom: 6.6px;
+    margin-left: 14px;
+    width: 42px;
+}
+
+
+
+
+
 /* !--------------- Finishes FOOTER Styling -------------- */
 
 @media (max-width: 947px) {
