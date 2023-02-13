@@ -146,24 +146,23 @@ html {
 
 .section6-partners {
     width: 100%;
-    min-height: 450px;
+    /* min-height: 450px; */
     /* margin-top: -70px; */
-    /* padding: 8rem 2rem; */
+    padding: 8rem 2rem; 
     background: var(--white-color);
-    /* border-radius: 70px 70px 0px 0px; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* .your-section .max-width {
+.section6-partners .max-width {
     width: 100%;
     height: 100%;
     max-width: 1200px;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-} */ 
+    align-items: center; */
+} 
 .section6-partners .title-partners{
     font-size: 38px;
     font-family: var(--bebas-neue-font);
