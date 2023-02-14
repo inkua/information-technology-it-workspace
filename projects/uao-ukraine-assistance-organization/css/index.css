@@ -331,6 +331,97 @@ html {
 * SECTION 2 STYLING GOES HERE
 * ASSIGNED TO: Maximiliano Luján & Dana Sabrina Armella
 */
+.section2-about-us{
+    width: 100%;
+    padding: 8rem 2rem;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section2-about-us .max-width{
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+.section2-about-us .container-aboutus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    background-image: url('../assets/images/about-us/ukrania-country-background.svg');
+}
+.section2-about-us .container-aboutus .subtitle{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 400;
+    text-align: center;
+    font-family: var(--bebas-neue-font);
+}
+.section2-about-us .container-aboutus h2 {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52px;
+    text-align: center;
+    font-family: var(--bebas-neue-font);
+}
+.section2-about-us .container-aboutus h2 span{
+    color: var(--primary-blue-color);
+}
+.section2-about-us .container-texts-images{
+    display: flex;
+    font-family: var(--eina-03-font);
+    max-width: 80%;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.section2-about-us .text-black{
+    font-size: 18px;
+    line-height: 27px;
+}
+.section2-about-us .text-black span {
+    color: var(--blue-color-first);
+}
+.section2-about-us .text-black-bold{
+    font-weight: 700;
+}
+.section2-about-us .container-buttons{
+    font-family: var(--eina-03-font);
+    display: flex;
+    gap: 2rem;
+}
+.section2-about-us .button-donate{
+    background-color: var(--primary-blue-color);
+    color: #FFFFFF;
+    border:none;
+    border-radius: 8px;
+    padding: 1.5rem;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.section2-about-us .button-see-more {
+    border: none;
+    padding: 1.5rem;
+    color: var(--blue-color-first);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.section2-about-us .Container-texts-buttons {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+.section2-about-us .container-texts-images img{
+    max-width: 100%;
+}
 
 /* !--------------- Finishes About Us (SECTION 2) Styling -------------- */
 
