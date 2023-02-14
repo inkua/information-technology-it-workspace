@@ -1,42 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish:wght@400;600;700;800&display=swap");
 
 :root {
-  /* Colors Palette */
-  /* Neutral Colors */
-  --black-color: #1d1f23;
-  --white-color: #ffffff;
-  --very-dark-gray-color: #51565e;
-  --dark-gray-color: #757a82;
-  --gray-color: #c2c2c2;
-  --light-gray-color: #e6eaf0;
-  --very-light-gray-color: #f4f6f8;
+    /* Colors Palette */
+    /* Neutral Colors */
+    --black-color: #1d1f23;
+    --white-color: #ffffff;
+    --very-dark-gray-color: #51565e;
+    --dark-gray-color: #757a82;
+    --gray-color: #c2c2c2;
+    --light-gray-color: #e6eaf0;
+    --very-light-gray-color: #f4f6f8;
 
-  /* Primary Colors */
-  --primary-blue-color: #4b77c0;
-  --primary-yellow-color: #e4c75b;
+    /* Primary Colors */
+    --primary-blue-color: #4b77c0;
+    --primary-yellow-color: #e4c75b;
 
-  /* Blue Colors */
-  --blue-color-first: #6399ff;
-  --blue-color-second: #4a92f1;
-  --blue-color-third: #63adff;
-  --blue-color-fourth: #63adcb;
+    /* Blue Colors */
+    --blue-color-first: #6399ff;
+    --blue-color-second: #4a92f1;
+    --blue-color-third: #63adff;
+    --blue-color-fourth: #63adcb;
 
-  /* Yellow Colors */
-  --yellow-color-first: #ffd45b;
-  --yellow-color-second: #ffc700;
-  --yellow-color-third: #ffde7e;
-  --yellow-color-fourth: #ffc77e;
-  /* End Colors Palette */
+    /* Yellow Colors */
+    --yellow-color-first: #ffd45b;
+    --yellow-color-second: #ffc700;
+    --yellow-color-third: #ffde7e;
+    --yellow-color-fourth: #ffc77e;
+    /* End Colors Palette */
 
-  /* Fonts */
-  --bebas-neue-font: "Bebas Neue", cursive;
-  --eina-03-font: "Mulish", sans-serif;
+    /* Fonts */
+    --bebas-neue-font: "Bebas Neue", cursive;
+    --eina-03-font: "Mulish", sans-serif;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -124,22 +124,22 @@ html {
 
 .navbar .menu li,
 .donate li {
-  list-style: none;
-  display: inline-block;
-  z-index: 30;
+    list-style: none;
+    display: inline-block;
+    z-index: 30;
 }
 
 .navbar .menu li a,
 .donate li a {
-  position: relative;
-  display: block;
-  color: var(--black-color);
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  font-weight: 700;
-  text-decoration: none;
-  margin-left: 2.5rem;
-  transition: color 0.3s ease;
+    position: relative;
+    display: block;
+    color: var(--black-color);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 2.5rem;
+    transition: color 0.3s ease;
 }
 .navbar .menu li a:hover {
   color: var(--primary-blue-color);
@@ -188,54 +188,54 @@ html {
 }
 
 .navbar .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
 }
 
 .navbar .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
 .navbar .switch .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
 }
 
 .navbar .switch .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
 }
 
 .navbar .switch input:checked + .slider {
-  background-color: var(--primary-blue-color);
+    background-color: var(--primary-blue-color);
 }
 
 .navbar .switch input:focus + .slider {
-  box-shadow: 0 0 1px var(--primary-blue-color);
+    box-shadow: 0 0 1px var(--primary-blue-color);
 }
 
 .navbar .switch input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
 }
 
 /* !--------------- Finishes NAVBAR Styling -------------- */
@@ -247,6 +247,82 @@ html {
 * ASSIGNED TO: María Quintana & Jésica Ortiz
 */
 
+.section1-home {
+    width: 100%;
+    min-height: 450px;
+    margin-top: -70px;
+    padding: 8rem 2rem;
+    background: var(--white-color);
+    border-radius: 70px 70px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1-home .max-width {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section1-home .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 22px;
+}
+
+.section1-home h1 {
+    max-width: 610px;
+    height: 196px;
+    margin-top: 99px;
+
+    font-size: 72px;
+    line-height: 84px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+
+    color: #353535;
+}
+
+.section1-home h1.variante {
+    max-width: 454px;
+    height: 294px;
+
+    font-family: "Eina03-Bold";
+    font-size: 72px;
+    line-height: 84px;
+    letter-spacing: 0.01em;
+
+    background: linear-gradient(93.65deg, #4b77c0 26.71%, #e4c75b 64.37%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section1-home a.donate-btn {
+    color: #e6eaf0;
+    font-size: small;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
+
+    max-width: 124px;
+    height: 48px;
+
+    background: #4b77c0;
+    border-radius: 8px;
+}
 /* !--------------- Finishes Home (SECTION 1) Styling -------------- */
 
 /* !--------------- Starts About Us (SECTION 2) Styling -------------- */
@@ -264,7 +340,60 @@ html {
 * SECTION 3 STYLING GOES HERE
 * ASSIGNED TO: Andrea Lucía Canevaro & Harold Osorio
 */
+.section3-get-involved {
+    width: 100%;
+    min-height: 450px;
+    margin-top: 30px;
+    padding: 8rem 2rem;
+    background: var(--white-color);
+    border-radius: 70px 70px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.section3-get-involved .max-width {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3-get-involved .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 22px;
+}
+
+.section3-get-involved .container_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
+.section3-get-involved .container_cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-around;
+    gap: 22px;
+}
+
+.section3-get-involved .container_cards-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 320px;
+    padding: 17px;
+    box-shadow: 0px 0px 30px var(--primary-blue-color);
+    border-radius: 6%;
+}
 /* !--------------- Finishes Get Involved (SECTION 3) Styling -------------- */
 
 /* !--------------- Starts Stories (SECTION 4) Styling -------------- */
@@ -379,6 +508,62 @@ html {
 * ASSIGNED TO: Sabrina Demetrio
 */
 
+.section6-partners {
+    width: 100%;
+    min-height: 650px;
+    /* margin-top: -70px; */
+    padding: 8rem 2rem;
+    background: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section6-partners .max-width {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section6-partners .container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.section6-partners .title-partners {
+    font-size: 38px;
+    font-family: var(--bebas-neue-font);
+    text-align: center;
+    letter-spacing: 1px;
+
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--gray-color);
+    line-height: 0em;
+    margin: 10px 0 20px;
+}
+
+.section6-partners .title-partners .title-line {
+    background: var(--white-color);
+    padding: 0 10px;
+}
+
+.section6-partners .color-title {
+    color: var(--primary-blue-color);
+}
+
+.section6-partners .subcontainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
 /* !--------------- Finishes PARTNERS (SECTION 6) Styling -------------- */
 
 /* !--------------- Starts FOOTER Styling -------------- */
@@ -388,39 +573,92 @@ html {
 * ASSIGNED TO: Rafael Rivera
 */
 
+.footer {
+    box-shadow: 1px 1px 88px #4b77c024;
+    flex-direction: column;
+    gap: 33px;
+    mix-blend-mode: normal;
+    padding: 42px 0;
+    width: 100%;
+    min-height: 300px;
+    margin-top: -70px;
+    padding: 8rem 2rem;
+    background: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .max-width {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .container {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer .container .top {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer .container .line {
+    width: 1280px;
+    min-width: 300px;
+    max-width: 100%;
+    border-bottom: 1px solid var(--gray-color);
+}
+
 /* !--------------- Finishes FOOTER Styling -------------- */
 
 @media (max-width: 947px) {
-  .menu-btn {
-    display: block;
-    z-index: 999;
-  }
-  .menu-btn i.active::before {
-    content: "\f00d";
-  }
-  .navbar .menu {
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    left: -100%;
-    top: 0;
-    background-color: var(--white-color);
-    text-align: center;
-    padding-top: 8rem;
-    transition: all 0.3s ease;
-  }
-  .navbar .menu.active {
-    left: 0;
-  }
-  .navbar .menu li {
-    display: block;
-  }
-  .navbar .menu li a {
-    display: inline-block;
-    margin: 2rem 0;
-    font-size: 2.5rem;
-  }
-  .navbar .menu li a:not(.ingresar-btn, .donar-btn)::before {
-    top: 32px;
-  }
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active::before {
+        content: "\f00d";
+    }
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background-color: var(--white-color);
+        text-align: center;
+        padding-top: 8rem;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active {
+        left: 0;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 2rem 0;
+        font-size: 2.5rem;
+    }
+    .navbar .menu li a:not(.ingresar-btn, .donar-btn)::before {
+        top: 32px;
+    }
 }
