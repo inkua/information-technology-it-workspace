@@ -333,8 +333,10 @@ html {
 */
 .section2-about-us{
     width: 100%;
-    padding: 8rem 2rem;
-    background-color: var(--white-color);
+    min-height: 887px;
+    background-image: url('../assets/images/about-us/ukrania-country-background.svg');
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -349,8 +351,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
-    background-image: url('../assets/images/about-us/ukrania-country-background.svg');
+    gap: 3.5rem;
 }
 .section2-about-us .container-aboutus .subtitle{
     font-weight: 600;
