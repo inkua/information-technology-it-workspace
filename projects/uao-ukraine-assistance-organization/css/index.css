@@ -121,14 +121,14 @@ html {
 }
 
 
-.container-aboutus{
+.section2-about-us .container-aboutus{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
     background-image: url('../assets/images/about-us/ukrania-country-background.svg');
 }
-.container-aboutus .subtitle{
+.section2-about-us .container-aboutus .subtitle{
     font-weight: 600;
     font-size: 32px;
     line-height: 42px;
@@ -136,38 +136,39 @@ html {
     text-align: center;
     font-family: var(--bebas-neue-font);
 }
-.container-aboutus h2 {
+.section2-about-us .container-aboutus h2 {
     font-size: 48px;
     font-weight: 400;
     line-height: 52px;
     text-align: center;
     font-family: var(--bebas-neue-font);
 }
-.container-aboutus h2 span{
+.section2-about-us .container-aboutus h2 span{
     color: var(--primary-blue-color);
 }
-.container-texts-images{
+.section2-about-us .container-texts-images{
     display: flex;
     font-family: var(--eina-03-font);
     max-width: 80%;
     flex-wrap: wrap;
+    gap: 1.5rem;
 }
-.text-black{
+.section2-about-us .text-black{
     font-size: 18px;
     line-height: 27px;
 }
-.text-black span {
+.section2-about-us .text-black span {
     color: var(--blue-color-first);
 }
-.text-black-bold{
+.section2-about-us .text-black-bold{
     font-weight: 700;
 }
-.container-buttons{
+.section2-about-us .container-buttons{
     font-family: var(--eina-03-font);
     display: flex;
     gap: 2rem;
 }
-.button-donate{
+.section2-about-us .button-donate{
     background-color: var(--primary-blue-color);
     color: #FFFFFF;
     border:none;
@@ -177,7 +178,7 @@ html {
     line-height: 24px;
     font-weight: 500;
 }
-.button-see-more {
+.section2-about-us .button-see-more {
     border: none;
     padding: 1.5rem;
     color: var(--blue-color-first);
@@ -188,13 +189,13 @@ html {
     align-items: center;
     gap: 1rem;
 }
-.Container-texts-buttons {
+.section2-about-us .Container-texts-buttons {
     display: flex;
     flex: 1;
     flex-direction: column;
     gap: 2rem;
 }
-.container-texts-images img{
+.section2-about-us .container-texts-images img{
     max-width: 100%;
 }
 
