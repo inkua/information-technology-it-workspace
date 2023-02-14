@@ -40,9 +40,9 @@
 }
 
 html {
-  font-size: 62.5%;
-  font-family: var(--eina-03-font);
-  scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: var(--eina-03-font);
+    scroll-behavior: smooth;
 }
 
 /* !🚨 README 🚨 */
@@ -52,32 +52,32 @@ html {
 /* !🚨 README 🚨 */
 /* !🚨 THIS COULD SERVE YOU AS GUIDE TO UNDERSTAND HOW TO STYLE YOUR SECTION USING MAX-WIDTH CORRECTLY🚨 */
 .your-section {
-  width: 100%;
-  min-height: 450px;
-  margin-top: -70px;
-  padding: 8rem 2rem;
-  background: var(--white-color);
-  border-radius: 70px 70px 0px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    min-height: 450px;
+    margin-top: -70px;
+    padding: 8rem 2rem;
+    background: var(--white-color);
+    border-radius: 70px 70px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .your-section .max-width {
-  width: 100%;
-  height: 100%;
-  max-width: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .your-section .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
 }
 /* !🚨 README 🚨 */
 /* !🚨 README 🚨 */
@@ -87,39 +87,39 @@ html {
 /* !--------------- Starts NAVBAR Styling -------------- */
 
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 99px;
-  padding: 1rem 2rem;
-  background: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 20;
-  transition: all 0.3s ease;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 99px;
+    padding: 1rem 2rem;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    transition: all 0.3s ease;
 }
 
 .navbar.sticky {
-  padding: 1rem 2rem;
-  background-color: var(--white-color);
-  box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.12);
+    padding: 1rem 2rem;
+    background-color: var(--white-color);
+    box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.12);
 }
 
 .navbar .max-width {
-  width: 100%;
-  max-width: 1200px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .navbar .logo-uao {
-  width: 6.882rem;
-  height: 6.88rem;
-  position: relative;
-  z-index: 30;
+    width: 6.882rem;
+    height: 6.88rem;
+    position: relative;
+    z-index: 30;
 }
 
 .navbar .menu li,
@@ -142,49 +142,49 @@ html {
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover {
-  color: var(--primary-blue-color);
+    color: var(--primary-blue-color);
 }
 .navbar.sticky .menu li a:hover {
-  color: var(--primary-blue-color);
+    color: var(--primary-blue-color);
 }
 .navbar .menu li a:not(.donar-btn)::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 2px;
-  top: 25px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--primary-blue-color);
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    top: 25px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-blue-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
 }
 .navbar .menu li a:hover::before {
-  transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 .navbar .donar-btn {
-  width: 120px;
-  background-color: var(--primary-blue-color);
-  color: var(--white-color) !important;
-  padding: 10px;
-  border-radius: 0.8rem;
-  text-align: center;
-  border: 1px solid var(--primary-blue-color);
-  transition: all 0.3s ease;
+    width: 120px;
+    background-color: var(--primary-blue-color);
+    color: var(--white-color) !important;
+    padding: 10px;
+    border-radius: 0.8rem;
+    text-align: center;
+    border: 1px solid var(--primary-blue-color);
+    transition: all 0.3s ease;
 }
 .navbar .donar-btn:hover {
-  background-color: var(--blue-color-first);
-  border: 1px solid var(--blue-color-first);
+    background-color: var(--blue-color-first);
+    border: 1px solid var(--blue-color-first);
 }
 
 .bars-btn {
-  padding: 10px;
-  color: var(--primary-blue-color);
-  font-size: 2.3rem;
-  cursor: pointer;
-  display: none;
+    padding: 10px;
+    color: var(--primary-blue-color);
+    font-size: 2.3rem;
+    cursor: pointer;
+    display: none;
 }
 
 .navbar .switch {
@@ -403,91 +403,91 @@ html {
 * ASSIGNED TO: Gabriel Vázquez & Nadia Florencia Maldonado
 */
 .section4-stories .max-width .container {
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
 .section4-stories h2 {
-  font-family: "Bebas Neue";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 63px;
-  color: #4b77c0;
-  display: flex;
-  align-items: center;
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 63px;
+    color: #4b77c0;
+    display: flex;
+    align-items: center;
 }
 .section4-stories h2 + p {
-  font-family: "Mulish";
-  font-size: 20px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
-  text-align: center;
+    font-family: "Mulish";
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px !important;
-  height: 350px !important;
-  filter: blur(4px);
+    background-position: center;
+    background-size: cover;
+    width: 300px !important;
+    height: 350px !important;
+    filter: blur(4px);
 }
 
 .swiper-slide img {
-  display: block;
-  width: 100%;
+    display: block;
+    width: 100%;
 }
 
 .swiper-slide-active {
-  filter: blur(0px) !important;
+    filter: blur(0px) !important;
 }
 
 .slide-carusel-swiper-uao {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  border-radius: 10px;
-  background-position: center !important;
-  background-size: cover !important;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    background-position: center !important;
+    background-size: cover !important;
 }
 
 .description-slide-swiper {
-  position: relative;
-  font-family: "Mulish";
-  color: white;
-  width: 100%;
-  height: 116px;
-  z-index: 999;
-  margin-top: -140px;
-  padding: 20px;
-  background: linear-gradient(
-    97.62deg,
-    rgba(176, 176, 176, 0.51) 1.35%,
-    rgba(140, 140, 140, 0) 120.18%
-  );
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  backdrop-filter: blur(10.255px);
-  border-radius: 10px 10px 0px 0px;
+    position: relative;
+    font-family: "Mulish";
+    color: white;
+    width: 100%;
+    height: 116px;
+    z-index: 999;
+    margin-top: -140px;
+    padding: 20px;
+    background: linear-gradient(
+        97.62deg,
+        rgba(176, 176, 176, 0.51) 1.35%,
+        rgba(140, 140, 140, 0) 120.18%
+    );
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(10.255px);
+    border-radius: 10px 10px 0px 0px;
 }
 
 .description-slide-swiper h3 {
-  font-size: 20px;
-  text-align: center;
+    font-size: 20px;
+    text-align: center;
 }
 .description-slide-swiper p {
-  padding: 10px;
-  font-size: 13px;
+    padding: 10px;
+    font-size: 13px;
 }
 
 /* !--------------- Finishes Stories (SECTION 4) Styling -------------- */
