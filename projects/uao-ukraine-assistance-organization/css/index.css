@@ -590,6 +590,60 @@ html {
 * SECTION 5 STYLING GOES HERE
 * ASSIGNED TO: Junior Alejandro Calva Pizarro
 */
+.section5-contact{
+    background: var(--white-color);
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 560px;
+}
+
+.section5-contact .background-contact{
+    width: 1120px;
+    height: 400px;
+}
+.section5-contact .contact{
+   background: var(--white-color);
+   opacity: 0.9;
+   width: 740px;
+   height: 224px;
+   text-align: center;
+   position: relative;
+   top: -312px;
+   left: 200px ;
+   border-radius: 0.8rem;
+
+}
+.section5-contact .contact p{
+    color: var(--blue-color-first);
+   text-transform: uppercase;
+   font-size: 4rem;
+   font-family: var(--bebas-neue-font);
+   font-weight: 400;
+   padding: 15px;
+   text-align: center;
+   
+}
+
+.section5-contact .contact .btn-contact{
+    background-color: var(--primary-blue-color);
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    width: 124px;
+    height: 48px;
+    border: none;
+    border-radius: 0.8rem;
+    margin-top: 15px;
+    opacity: 1;
+ }
+ .section5-contact .contact .btn-contact:hover{
+    background-color: var(--blue-color-first);
+   
+ }
+
+
 
 /* !--------------- Finishes Home (SECTION 5) Styling -------------- */
 
