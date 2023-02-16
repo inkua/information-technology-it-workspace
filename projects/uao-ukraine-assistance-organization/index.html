@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="./assets/favicon-uao.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/index.css">
     <title>Home - UAO</title>
@@ -20,21 +23,23 @@
             </a>
             <ul class="menu">
                 <li>
-                    <a href="#" class="menu-btn" aria-label="Ir a la página Sobre Nosotros InkuA" role="link">Home</a>
+                    <a href="#home" class="menu-btn" aria-label="Go to UAO Home Page" role="link">Home</a>
                 </li>
                 <li>
-                    <a href="#" class="menu-btn" aria-label="Ir a la página Forma Parte de InkuA" role="link">About us</a>
+                    <a href="#about-us" class="menu-btn" aria-label="Go to UAO About Us Page" role="link">About
+                        us</a>
                 </li>
                 <li>
-                    <a href="#" class="menu-btn" aria-label="Ir al Blog de InkuA" role="link">Blog</a></li>
-                <li>
-                    <a href="#" class="menu-btn" aria-label="Ir a la página de Contacto de InkuA" role="link">Get Involved</a>
+                    <a href="#get-involved" class="menu-btn" aria-label="Go to UAO Get Involved Page" role="link">Get
+                        Involved</a>
                 </li>
                 <li>
-                    <a href="#" class="menu-btn" aria-label="Ir a la página de Contacto de InkuA" role="link">Stories</a>
+                    <a href="#stories" class="menu-btn" aria-label="Go to UAO Stories Page"
+                        role="link">Stories</a>
                 </li>
                 <li>
-                    <a href="#" class="menu-btn" aria-label="Ir a la página de Contacto de InkuA" role="link">Contact</a>
+                    <a href="#contact" class="menu-btn" aria-label="Go to UAO About Us Page"
+                        role="link">Contact</a>
                 </li>
                 <!-- <li>
                     <a href="#" class="menu-btn donar-btn" aria-label="Ir a la página para Donar a InkuA" role="link">Donate Now</a>
@@ -42,7 +47,8 @@
             </ul>
             <ul class="donate">
                 <li>
-                    <a href="#" class="menu-btn donar-btn" aria-label="Ir a la página para Donar a InkuA" role="link">Donate Now</a>
+                    <a href="#" class="menu-btn donar-btn" aria-label="Ir a la página para Donar a InkuA"
+                        role="link">Donate Now</a>
                 </li>
             </ul>
             <label class="switch">
@@ -57,72 +63,269 @@
     <!-- FINISHES NAVBAR: Erick Arias -->
 
     <!-- STARTS SECTION 1: HOME: María Quintana & Jésica Ortiz -->
-    <section class="section1-home">
+    <section class="section1-home" id="home">
         <div class="max-width">
             <div class="container">
-                
+                <div class="left">
+                    <h1>Donating is about making a </h1>
+                    <h1 class="variante">Difference.</h1>
+                    <a href="#" class="donate-btn">Donate Now</a>
+                </div>
+                <div class="rigth">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+
             </div>
         </div>
+    </section>
     <!-- FINISHES SECTION 1: HOME: María Quintana & Jésica Ortiz -->
 
     <!-- STARTS SECTION 2: ABOUT US: Maximiliano Luján & Dana Sabrina Armella -->
-    <section class="section2-about-us">
+    <section class="section2-about-us" id="about-us">
         <div class="max-width">
-            <div class="container">
-    
+            <div class="container container-aboutus">
+                <!--Aca va el titulo-->
+                <h2>
+                    <span>ABOUT</span> US
+                </h2>
+                <!--Aca va el subtitulo-->
+                <p class="subtitle">
+                    THE UKRAINE ASSISTANCE ORGANIZATION HAS BEEN HELPING UKRAINE SINCE THE FIRST DAY OF THE WAR
+                </p>
+                <!--Aca va la seccion con las fotos y botones-->
+                <div class="container-texts-images">
+                    <!--Aca va la foto-->
+                    <img src="./assets/images/about-us/old-and-young-woman.svg" alt="people">
+                    <!--Aca va el texto con los botones-->
+                    <div class="Container-texts-buttons">
+                        <p class="text-black">
+                            We provide <span>medical assistance and medicines to shut-ins and remote villages.</span>
+                        </p>
+                        <p class="text-black">
+                            We are the only organization in the entire southern regions of Ukraine providing this
+                            service. Additionally, we give medical supplies to small village hospitals.
+                        </p>
+                        <p class="text-black">
+                            At UAO, it <span>is our mission to provide high quality holistic home health care (HHC) to
+                                the citizens of Ukraine</span>; during wartime conflict(s) or peacetime. Also to provide
+                            Ukraine with a Home Health Care service that reminds all citizens we serve, that their lives
+                            matter.
+                        </p>
+                        <p class="text-black-bold text-black">
+                            Your help will be very useful for them.
+                        </p>
+                        <!--Aca van los botones-->
+                        <div class="container-buttons">
+                            <button class="button-donate">Donate Now</button>
+                            <button class="button-see-more">
+                                See More
+                                <!--Aca va el icono-->
+                                <img src="./assets/icons/right-arrow-circled.svg" alt="Right arrow icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!-- FINISHES SECTION 2: ABOUT US: Maximiliano Luján & Dana Sabrina Armella -->
 
     <!-- STARTS SECTION 3: GET INVOLVED: Andrea Lucía Canevaro & Harold Osorio -->
-    <section class="section3-get-involved">
+    <section class="section3-get-involved" id="get-involved">
         <div class="max-width">
             <div class="container">
-    
+                <div class="container_header">
+                    <h2>GET INVOLVED</h2>
+                    <a href="">See more <img src="assets/icons/right-arrow-circled.svg" alt=""></a>
+                </div>
+                <div class="container_cards">
+                    <div class="container_cards-3">
+                        <div><img src="assets/images/get-involved/become-a-volunteer.svg" alt=""> </div>
+                        <div>
+                            <h4>Become a Volunteer!</h4>
+                            <p>We can always use experienced volunteers for medical care, logistics, interpreting,
+                                procurement, and security.</p>
+                            <button>Become a Volunteer</button>
+                        </div>
+                    </div>
+                    <div class="container_cards-3">
+                        <div class="img-1"><img src="assets/images/get-involved/donate.svg" alt=""></div>
+                        <div>
+                            <h4>Donate</h4>
+                            <p>A small amount of money goes a long way in Ukraine. Even $5 USD can buy a month of
+                                medications or a full box of wound dressings.</p>
+                            <button>Donate Now</button>
+                        </div>
+                    </div>
+                    <div class="container_cards-3">
+                        <div class="img-1">
+                            <img src="assets/images/get-involved/share-on-social-media.svg" alt="">
+                        </div>
+                        <div>
+                            <h4>Share on Social Media</h4>
+                            <p>Did you know that every share can help raise an average of $35 toward a campaign's goal?
+                            </p>
+                            <a href="http://" target="_blank">
+                                <img src="assets/icons/facebook-white.svg" alt="">
+                            </a>
+                            <a href="http://" target="_blank">
+                                <img src="assets/icons/instagram-white.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!-- FINISHES SECTION 3: GET INVOLVED: Andrea Lucía Canevaro & Harold Osorio -->
 
     <!-- STARTS SECTION 4: STORIES: Gabriel Vázquez & Nadia Florencia Maldonado -->
-    <section class="section4-stories">
+    <section class="section4-stories" id="stories">
         <div class="max-width">
             <div class="container">
-    
+                <h2>STORIES</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et
+                    dolore magna aliqua.</p>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-carusel-swiper-uao"
+                                style="background:url('./assets/images/stories/three-people-local-fans.webp')">
+                                <div class="description-slide-swiper">
+                                    <h3>We care for their pets too!</h3>
+                                    <p>Our babushkas often have pets they have difficulty caring for since the
+                                        invasion.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-carusel-swiper-uao"
+                                style="background:url('./assets/images/stories/five-people-delivering-medical-care.webp')">
+                                <div class="description-slide-swiper">
+                                    <h3>We care for their pets too!</h3>
+                                    <p>Our babushkas often have pets they have difficulty caring for since the
+                                        invasion.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-carusel-swiper-uao"
+                                style="background:url('./assets/images/stories/woman-and-pet-taking-care.webp')">
+                                <div class="description-slide-swiper">
+                                    <h3>We care for their pets too!</h3>
+                                    <p>Our babushkas often have pets they have difficulty caring for since the
+                                        invasion.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-carusel-swiper-uao"
+                                style="background:url('./assets/images/stories/helping-old-woman.webp')">
+                                <div class="description-slide-swiper">
+                                    <h3>We care for their pets too!</h3>
+                                    <p>Our babushkas often have pets they have difficulty caring for since the
+                                        invasion.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-carusel-swiper-uao"
+                                style="background:url('./assets/images/stories/old-woman-surprised.webp')">
+                                <div class="description-slide-swiper">
+                                    <h3>We care for their pets too!</h3>
+                                    <p>Our babushkas often have pets they have difficulty caring for since the
+                                        invasion.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </div>
     </section>
     <!-- FINISHES SECTION 4: STORIES: Gabriel Vázquez & Nadia Florencia Maldonado -->
 
     <!-- STARTS SECTION 5: CONTACT: Junior Alejandro Calva Pizarro -->
-    <section class="section5-contact">
+    <section class="section5-contact" id="contact">
         <div class="max-width">
-            <div class="container">
-    
-            </div>
+            <div class="background-contact">
+                <img src="./assets/images/contact/background-img-ukranian-people.svg" alt="background-contact">
+                <div class="contact">
+                    <p>Want to help? Are you looking for <br> humanitarian assistance in Ukraine?</p>   
+                    <button class="btn-contact">Contact Us</button>
+                </div>
+            </div>   
         </div>
     </section>
     <!-- FINISHES SECTION 5: CONTACT: Junior Alejandro Calva Pizarro -->
 
     <!-- STARTS SECTION 6: PARTNERS: Sabrina Demetrio -->
-    <section class="section6-partners">
+    <section class="section6-partners" id="partners">
         <div class="max-width">
             <div class="container">
-    
+                <div class="title-partners">
+                    <h1>
+                        <span class="title-line">
+                            OUR <span class="color-title">PARTNERS</span> AND GENEROUS <span
+                                class="color-title">DONORS</span>
+                        </span>
+                    </h1>
+                </div>
+                <div class="subcontainer">
+                    <img src="./assets/images/partners/partner-allaquix.webp" width="250px">
+                    <img src="./assets/images/partners/partner-gostinnahata.webp" height="120px">
+                    <img src="./assets/images/partners/partner-human-front-aid.webp" alt="" srcset="">
+                    <img src="./assets/images/partners/partner-nova-ukraine.webp">
+                    <img src="./assets/images/partners/partner-new-dawn.webp" alt="" srcset="">
+                    <img src="./assets/images/partners/partner-psa-protect-survive-achieve.webp" height="80px">
+                </div>
             </div>
         </div>
     </section>
     <!-- FINISHES SECTION 6: PARTNERS: Sabrina Demetrio -->
 
-    <!-- STARTS FOOTER: Rafael Rivera -->
-    <section class="footer">
+    <!-- STARTS FOOTER: Rafael Rivera-->
+    <footer class="footer">
         <div class="max-width">
             <div class="container">
-    
+                <div class="top">
+                    <div class="subcontainer">
+                        <img class="logo-uao" src="./assets/images/footer/uao-logo.svg" alt="image 2" />
+                    </div>
+                    <div class="subcontainer">
+                        <h2>Follow us</h2>
+                        <div class="icons">
+                            <img class="icbaseline-facebook" src="./assets/icons/facebook-black.svg"
+                                alt="ic:baseline-facebook" />
+                            <img class="phinstagram-logo-fill" src="./assets/icons/instagram-black.svg"
+                                alte="ph:instagram-logo-fill" />
+                        </div>
+                    </div>
+                    <div class="subcontainer">
+                        <h2>Contact us</h2>
+                        <p>+380 96562 2715</p>
+                    </div>
+                    <div class="subcontainer">
+                        <h2>Made with</h2>
+                        <span>
+                            <img class="logo-heart" src="./assets/images/footer/ukranian-heart.svg" alt="Mask group" />
+                        </span>
+                    </div>
+                </div>
+                <div class="line" size="2px" color="black"></div>
+                <div class="bottom">
+                    <p class="copyright-2022-ua valign-text-middle eina03body3-sb-16-20">
+                        Copyright 2022. UAO All rights reserved.
+                    </p>
+                </div>
             </div>
         </div>
-    </section>
+    </footer>
     <!-- FINISHES FOOTER: Rafael Rivera -->
     <script src="./scripts.js"></script>
 </body>

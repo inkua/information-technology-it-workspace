@@ -1,42 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish:wght@400;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish:wght@400;600;700;800&display=swap");
 
 :root {
     /* Colors Palette */
-        /* Neutral Colors */
-        --black-color: #1D1F23;
-        --white-color: #FFFFFF;
-        --very-dark-gray-color: #51565E;
-        --dark-gray-color: #757A82;
-        --gray-color: #C2C2C2;
-        --light-gray-color: #E6EAF0;
-        --very-light-gray-color: #F4F6F8;
+    /* Neutral Colors */
+    --black-color: #1d1f23;
+    --white-color: #ffffff;
+    --very-dark-gray-color: #51565e;
+    --dark-gray-color: #757a82;
+    --gray-color: #c2c2c2;
+    --light-gray-color: #e6eaf0;
+    --very-light-gray-color: #f4f6f8;
 
-        /* Primary Colors */
-        --primary-blue-color: #4B77C0;
-        --primary-yellow-color: #E4C75B;
+    /* Primary Colors */
+    --primary-blue-color: #4b77c0;
+    --primary-yellow-color: #e4c75b;
 
-        /* Blue Colors */
-        --blue-color-first: #6399FF;
-        --blue-color-second: #4A92F1;
-        --blue-color-third: #63ADFF;
-        --blue-color-fourth: #63ADCB;
+    /* Blue Colors */
+    --blue-color-first: #6399ff;
+    --blue-color-second: #4a92f1;
+    --blue-color-third: #63adff;
+    --blue-color-fourth: #63adcb;
 
-        /* Yellow Colors */
-        --yellow-color-first: #FFD45B;
-        --yellow-color-second: #FFC700;
-        --yellow-color-third: #FFDE7E;
-        --yellow-color-fourth: #FFC77E;
-    /* End Colors Palette */ 
+    /* Yellow Colors */
+    --yellow-color-first: #ffd45b;
+    --yellow-color-second: #ffc700;
+    --yellow-color-third: #ffde7e;
+    --yellow-color-fourth: #ffc77e;
+    /* End Colors Palette */
 
     /* Fonts */
-    --bebas-neue-font: 'Bebas Neue', cursive;
-    --eina-03-font: 'Mulish', sans-serif;
+    --bebas-neue-font: "Bebas Neue", cursive;
+    --eina-03-font: "Mulish", sans-serif;
 }
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 html {
@@ -122,13 +122,15 @@ html {
     z-index: 30;
 }
 
-.navbar .menu li, .donate li {
+.navbar .menu li,
+.donate li {
     list-style: none;
     display: inline-block;
     z-index: 30;
 }
 
-.navbar .menu li a, .donate li a {
+.navbar .menu li a,
+.donate li a {
     position: relative;
     display: block;
     color: var(--black-color);
@@ -186,54 +188,54 @@ html {
 }
 
 .navbar .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
 }
 
-.navbar .switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
+.navbar .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
 .navbar .switch .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
 }
 
 .navbar .switch .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
 }
 
 .navbar .switch input:checked + .slider {
-  background-color: var(--primary-blue-color);
+    background-color: var(--primary-blue-color);
 }
 
 .navbar .switch input:focus + .slider {
-  box-shadow: 0 0 1px var(--primary-blue-color);
+    box-shadow: 0 0 1px var(--primary-blue-color);
 }
 
 .navbar .switch input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
 }
 
 /* !--------------- Finishes NAVBAR Styling -------------- */
@@ -245,6 +247,82 @@ html {
 * ASSIGNED TO: María Quintana & Jésica Ortiz
 */
 
+.section1-home {
+    width: 100%;
+    min-height: 450px;
+    margin-top: -70px;
+    padding: 8rem 2rem;
+    background: var(--white-color);
+    border-radius: 70px 70px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1-home .max-width {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section1-home .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 22px;
+}
+
+.section1-home h1 {
+    max-width: 610px;
+    height: 196px;
+    margin-top: 99px;
+
+    font-size: 72px;
+    line-height: 84px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+
+    color: #353535;
+}
+
+.section1-home h1.variante {
+    max-width: 454px;
+    height: 294px;
+
+    font-family: "Eina03-Bold";
+    font-size: 72px;
+    line-height: 84px;
+    letter-spacing: 0.01em;
+
+    background: linear-gradient(93.65deg, #4b77c0 26.71%, #e4c75b 64.37%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section1-home a.donate-btn {
+    color: #e6eaf0;
+    font-size: small;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
+
+    max-width: 124px;
+    height: 48px;
+
+    background: #4b77c0;
+    border-radius: 8px;
+}
 /* !--------------- Finishes Home (SECTION 1) Styling -------------- */
 
 /* !--------------- Starts About Us (SECTION 2) Styling -------------- */
@@ -253,6 +331,98 @@ html {
 * SECTION 2 STYLING GOES HERE
 * ASSIGNED TO: Maximiliano Luján & Dana Sabrina Armella
 */
+.section2-about-us{
+    width: 100%;
+    min-height: 887px;
+    background-image: url('../assets/images/about-us/ukrania-country-background.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section2-about-us .max-width{
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+.section2-about-us .container-aboutus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+}
+.section2-about-us .container-aboutus .subtitle{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 400;
+    text-align: center;
+    font-family: var(--bebas-neue-font);
+}
+.section2-about-us .container-aboutus h2 {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52px;
+    text-align: center;
+    font-family: var(--bebas-neue-font);
+}
+.section2-about-us .container-aboutus h2 span{
+    color: var(--primary-blue-color);
+}
+.section2-about-us .container-texts-images{
+    display: flex;
+    font-family: var(--eina-03-font);
+    max-width: 80%;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.section2-about-us .text-black{
+    font-size: 18px;
+    line-height: 27px;
+}
+.section2-about-us .text-black span {
+    color: var(--blue-color-first);
+}
+.section2-about-us .text-black-bold{
+    font-weight: 700;
+}
+.section2-about-us .container-buttons{
+    font-family: var(--eina-03-font);
+    display: flex;
+    gap: 2rem;
+}
+.section2-about-us .button-donate{
+    background-color: var(--primary-blue-color);
+    color: #FFFFFF;
+    border:none;
+    border-radius: 8px;
+    padding: 1.5rem;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.section2-about-us .button-see-more {
+    border: none;
+    padding: 1.5rem;
+    color: var(--blue-color-first);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.section2-about-us .Container-texts-buttons {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+.section2-about-us .container-texts-images img{
+    max-width: 100%;
+}
 
 /* !--------------- Finishes About Us (SECTION 2) Styling -------------- */
 
@@ -262,7 +432,60 @@ html {
 * SECTION 3 STYLING GOES HERE
 * ASSIGNED TO: Andrea Lucía Canevaro & Harold Osorio
 */
+.section3-get-involved {
+    width: 100%;
+    min-height: 450px;
+    margin-top: 30px;
+    padding: 8rem 2rem;
+    background: var(--white-color);
+    border-radius: 70px 70px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.section3-get-involved .max-width {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3-get-involved .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 22px;
+}
+
+.section3-get-involved .container_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
+.section3-get-involved .container_cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-around;
+    gap: 22px;
+}
+
+.section3-get-involved .container_cards-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 320px;
+    padding: 17px;
+    box-shadow: 0px 0px 30px var(--primary-blue-color);
+    border-radius: 6%;
+}
 /* !--------------- Finishes Get Involved (SECTION 3) Styling -------------- */
 
 /* !--------------- Starts Stories (SECTION 4) Styling -------------- */
@@ -271,6 +494,93 @@ html {
 * SECTION 4 STYLING GOES HERE
 * ASSIGNED TO: Gabriel Vázquez & Nadia Florencia Maldonado
 */
+.section4-stories .max-width .container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.section4-stories h2 {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 63px;
+    color: #4b77c0;
+    display: flex;
+    align-items: center;
+}
+.section4-stories h2 + p {
+    font-family: "Mulish";
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px !important;
+    height: 350px !important;
+    filter: blur(4px);
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.swiper-slide-active {
+    filter: blur(0px) !important;
+}
+
+.slide-carusel-swiper-uao {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+.description-slide-swiper {
+    position: relative;
+    font-family: "Mulish";
+    color: white;
+    width: 100%;
+    height: 116px;
+    z-index: 999;
+    margin-top: -140px;
+    padding: 20px;
+    background: linear-gradient(
+        97.62deg,
+        rgba(176, 176, 176, 0.51) 1.35%,
+        rgba(140, 140, 140, 0) 120.18%
+    );
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(10.255px);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.description-slide-swiper h3 {
+    font-size: 20px;
+    text-align: center;
+}
+.description-slide-swiper p {
+    padding: 10px;
+    font-size: 13px;
+}
 
 /* !--------------- Finishes Stories (SECTION 4) Styling -------------- */
 
@@ -280,6 +590,60 @@ html {
 * SECTION 5 STYLING GOES HERE
 * ASSIGNED TO: Junior Alejandro Calva Pizarro
 */
+.section5-contact{
+    background: var(--white-color);
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 560px;
+}
+
+.section5-contact .background-contact{
+    width: 1120px;
+    height: 400px;
+}
+.section5-contact .contact{
+   background: var(--white-color);
+   opacity: 0.9;
+   width: 740px;
+   height: 224px;
+   text-align: center;
+   position: relative;
+   top: -312px;
+   left: 200px ;
+   border-radius: 0.8rem;
+
+}
+.section5-contact .contact p{
+    color: var(--blue-color-first);
+   text-transform: uppercase;
+   font-size: 4rem;
+   font-family: var(--bebas-neue-font);
+   font-weight: 400;
+   padding: 15px;
+   text-align: center;
+   
+}
+
+.section5-contact .contact .btn-contact{
+    background-color: var(--primary-blue-color);
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    width: 124px;
+    height: 48px;
+    border: none;
+    border-radius: 0.8rem;
+    margin-top: 15px;
+    opacity: 1;
+ }
+ .section5-contact .contact .btn-contact:hover{
+    background-color: var(--blue-color-first);
+   
+ }
+
+
 
 /* !--------------- Finishes Home (SECTION 5) Styling -------------- */
 
@@ -290,6 +654,62 @@ html {
 * ASSIGNED TO: Sabrina Demetrio
 */
 
+.section6-partners {
+    width: 100%;
+    min-height: 650px;
+    /* margin-top: -70px; */
+    padding: 8rem 2rem;
+    background: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section6-partners .max-width {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section6-partners .container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.section6-partners .title-partners {
+    font-size: 38px;
+    font-family: var(--bebas-neue-font);
+    text-align: center;
+    letter-spacing: 1px;
+
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--gray-color);
+    line-height: 0em;
+    margin: 10px 0 20px;
+}
+
+.section6-partners .title-partners .title-line {
+    background: var(--white-color);
+    padding: 0 10px;
+}
+
+.section6-partners .color-title {
+    color: var(--primary-blue-color);
+}
+
+.section6-partners .subcontainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
 /* !--------------- Finishes PARTNERS (SECTION 6) Styling -------------- */
 
 /* !--------------- Starts FOOTER Styling -------------- */
@@ -298,6 +718,59 @@ html {
 * FOOTER STYLING GOES HERE
 * ASSIGNED TO: Rafael Rivera
 */
+
+.footer {
+    box-shadow: 1px 1px 88px #4b77c024;
+    flex-direction: column;
+    gap: 33px;
+    mix-blend-mode: normal;
+    padding: 42px 0;
+    width: 100%;
+    min-height: 300px;
+    margin-top: -70px;
+    padding: 8rem 2rem;
+    background: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .max-width {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .container {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer .container .top {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer .container .line {
+    width: 1280px;
+    min-width: 300px;
+    max-width: 100%;
+    border-bottom: 1px solid var(--gray-color);
+}
 
 /* !--------------- Finishes FOOTER Styling -------------- */
 
