@@ -268,9 +268,9 @@ html {
     align-items: center;
 }
 
-.section1-home .container {
+.section1-home .container-home {
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     justify-content: space-between;
     align-items: center;
     gap: 22px;
@@ -323,6 +323,18 @@ html {
     background: #4b77c0;
     border-radius: 8px;
 }
+
+.images-home{
+    display: flex;
+}
+
+.home-img1{
+    position: relative;
+    left: 160px;
+    top: 170px;
+}
+
+
 /* !--------------- Finishes Home (SECTION 1) Styling -------------- */
 
 /* !--------------- Starts About Us (SECTION 2) Styling -------------- */
