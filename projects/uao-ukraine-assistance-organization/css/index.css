@@ -329,9 +329,21 @@ html {
 }
 
 .home-img1{
+    width: 75px;
+    height: 75px;
     position: relative;
-    left: 160px;
-    top: 170px;
+    left: 90px;
+    top: 310px;
+    transform: scale(3,3);
+	animation: T-animation 3.5s linear infinite normal;
+}
+@keyframes T-animation {
+	0% {
+		transform: scaleX(0) scaleY(0) rotate(-80deg);
+	}
+	100% {
+		transform: scaleX(3) scaleY(3) rotate(0deg);
+	}
 }
 
 
