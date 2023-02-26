@@ -457,6 +457,8 @@ html {
     flex-direction: column;
     width: 100%;
     gap: 22px;
+    font-family: "Bebas Neue";
+    font-style: normal;
 }
 
 .section3-get-involved .container_header {
@@ -464,6 +466,18 @@ html {
     flex-direction: row;
     justify-content: space-between;
     margin: 0 30px;
+    font-size: 25px;
+    line-height: 100px;
+}
+.section3-get-involved .container_header span{
+    color: #4a92f1;
+}
+.section3-get-involved .container_header a{
+    text-decoration: none;
+    color: #4a92f1;
+    font-family: "Mulish";
+    font-size: 15px;
+    font-weight: 800;
 }
 
 .section3-get-involved .container_cards {
@@ -473,6 +487,7 @@ html {
     margin-top: 20px;
     justify-content: space-around;
     gap: 22px;
+    font-family: "Mulish";
 }
 
 .section3-get-involved .container_cards-3 {
@@ -484,6 +499,57 @@ html {
     padding: 17px;
     box-shadow: 0px 0px 30px var(--primary-blue-color);
     border-radius: 6%;
+}
+.section3-get-involved .container_cards-3 .cards-title{
+    color: #1d1f23;
+    font-size: 15px;
+    font-weight: 1000;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.section3-get-involved .container_cards-3 .cards-description{
+    color: #707070;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.section3-get-involved .container_cards-3 .button1{
+    font-family: "Mulish";
+    height: 45px;
+    width: 55%;
+    padding: 10px;
+    font-weight: 800;
+    background-color: white;
+    color: var(--primary-blue-color);
+    border: 2px solid var(--primary-blue-color);
+    border-radius: 0.8rem;
+    text-align: center;
+}
+.section3-get-involved .container_cards-3 .button2{
+    font-family: "Mulish";
+    padding: 10px;
+    height: 45px;
+    width: 40%;
+    background-color: var(--primary-blue-color);
+    font-weight: 800;
+    color: var(--white-color) !important;
+    border: 1px solid var(--primary-blue-color);
+    border-radius: 0.8rem;
+    text-align: center;
+}
+.section3-get-involved .container_cards-3 .cards-socialmedia{
+    align-items: center;
+    display: flex;
+}
+.section3-get-involved .container_cards-3 .social-media-icons{
+    padding: 10px;
+    margin-right: 10px;
+    background-color: white;
+    color: var(--primary-blue-color);
+    border: 2px solid var(--primary-blue-color);
+    border-radius: 0.8rem;
+    align-items: center;
 }
 /* !--------------- Finishes Get Involved (SECTION 3) Styling -------------- */
 
