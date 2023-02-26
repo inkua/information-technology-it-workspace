@@ -600,10 +600,10 @@ html {
 * ASSIGNED TO: Sabrina Demetrio
 */
 
+  
 .section6-partners {
     width: 100%;
     min-height: 650px;
-    /* margin-top: -70px; */
     padding: 8rem 2rem;
     background: var(--white-color);
     display: flex;
@@ -629,9 +629,7 @@ html {
 .section6-partners .title-partners {
     font-size: 38px;
     font-family: var(--bebas-neue-font);
-    text-align: center;
     letter-spacing: 1px;
-
     width: 100%;
     text-align: center;
     border-bottom: 1px solid var(--gray-color);
@@ -650,11 +648,41 @@ html {
 
 .section6-partners .subcontainer {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    text-align: center;
     flex-wrap: wrap;
     gap: 15px;
 }
+
+.section6-partners .subcontainer .slider-frame {
+    width: 1280px;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+}
+
+.section6-partners .subcontainer .slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 300%;
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.section6-partners .subcontainer .slider-frame li {
+	width: 50%;
+	list-style: none;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	30% {margin-left: 0;}
+	
+	33% {margin-left: -100%;}
+	60% {margin-left: -100%;}
+	
+	66% {margin-left: -200%;}
+	100% {margin-left: -200%;}
+}
+
 
 /* !--------------- Finishes PARTNERS (SECTION 6) Styling -------------- */
 
@@ -753,4 +781,14 @@ html {
     .navbar .menu li a:not(.ingresar-btn, .donar-btn)::before {
         top: 32px;
     }
+
+    .section6-partners{
+        margin: 10%;
+    }
+    .section6-partners .title-partners {
+        font-size: 34px;
+        text-align: center;
+    }
+
+    
 }
