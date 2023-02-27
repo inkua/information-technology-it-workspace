@@ -35,3 +35,15 @@ $(document).ready(function () {
         },
     });
 });
+
+$(document).ready(function(){
+    setTimeout(() => {
+        $('#variante').text('Happy life.');
+    }, 3000);
+    setTimeout(() => {
+        $('#variante').text('Good Action.');
+    }, 6000);
+    setTimeout(() => {
+        $('#variante').text('Difference.');
+    }, 9000);
+});
