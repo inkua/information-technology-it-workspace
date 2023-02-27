@@ -126,6 +126,12 @@
   font-size: 0.6rem;
   font-weight: 100;
 }
+.footer .footer_info .footer_messageContainer #easter{
+  color: var(--color-two);
+}
+.footer .footer_info .footer_messageContainer .easter-egg{
+  color: var(--color-two);
+}
 .footer .footer_logo{
   display: grid;
   place-items: center;
@@ -144,6 +150,7 @@
 .footer .footer_logo .footer_logoText{
   text-align: center;
 }
+
 /* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- FOOTER final +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
 
 /* ############################################################## MEDIA QUERY - Tablet 768px - ############################################################## */
