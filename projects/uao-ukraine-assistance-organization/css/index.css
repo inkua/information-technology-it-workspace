@@ -268,9 +268,9 @@ html {
     align-items: center;
 }
 
-.section1-home .container {
+.section1-home .container-home {
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     justify-content: space-between;
     align-items: center;
     gap: 22px;
@@ -323,6 +323,43 @@ html {
     background: #4b77c0;
     border-radius: 8px;
 }
+
+.images-home{
+    display: flex;
+}
+
+.home-img1{
+    width: 75px;
+    height: 75px;
+    position: relative;
+    left: -10px;
+    top: 280px;
+    transform: scale(3,3);
+	animation: T-animation 3.5s linear infinite normal;
+}
+@keyframes T-animation {
+	0% {
+		transform: scaleX(0) scaleY(0) rotate(-80deg);
+	}
+	100% {
+		transform: scaleX(3) scaleY(3) rotate(0deg);
+	}
+}
+.home-img2{
+    width: 140px;
+    height: 140px;
+    transform: scale(3,3);
+	animation: T-animation 3.5s linear infinite normal;
+}
+@keyframes T-animation {
+	0% {
+		transform: scaleX(0) scaleY(0) rotate(-180deg) translateX(-50px) translateY(-50px) skewX(-82deg) skewY(-35deg);
+	}
+	100% {
+		transform: scaleX(3) scaleY(3) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+	}
+}
+
 /* !--------------- Finishes Home (SECTION 1) Styling -------------- */
 
 /* !--------------- Starts About Us (SECTION 2) Styling -------------- */
