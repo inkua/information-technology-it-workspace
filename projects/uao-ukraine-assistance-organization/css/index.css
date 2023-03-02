@@ -598,7 +598,7 @@ html {
 */
 .section4-stories {
     min-height: 768px;
-    padding: 8rem 2rem 20rem;
+    padding: 8rem 2rem 1rem;
 }
 
 .section4-stories .max-width .container {
@@ -699,8 +699,18 @@ html {
 */
 .section5-contact {
     width: 100%;
+    padding: 12rem 0 2rem;
+}
+
+.section5-contact .max-width {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: auto auto;
+}
+ .section5-contact .max-width .background-contact{
+    width: 100%;
     min-height: 400px;
-    margin-top: -70px;
     padding: 8rem 2rem;
     background-image: url("../assets/images/contact/background-img-ukranian-people.svg");
     background-repeat: no-repeat;
@@ -709,24 +719,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.section5-contact .max-width {
-    width: 100%;
-    height: 100%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.section5-contact .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 22px;
-}
+ }
 
 .section5-contact .contact-container {
     max-width: 740px;
@@ -755,7 +748,7 @@ html {
     height: 48px;
     background-color: var(--primary-blue-color);
     color: var(--white-color);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 500;
     border: none;
     border-radius: 0.8rem;
@@ -966,5 +959,12 @@ html {
         text-align: center;
     }
 
+    /*SECTION ABOUT US MEDYA QUERY*/
+
+    .section5-contact .contact-container p {
+        font-size: 3.3rem;
+        font-weight: 300;
+    
+    }
     
 }
