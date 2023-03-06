@@ -270,7 +270,7 @@ html {
 
 .section1-home .container-home {
     display: flex;
-    /*flex-direction: column;*/
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 22px;
@@ -324,18 +324,16 @@ html {
     border-radius: 8px;
 }
 
-.images-home{
-    display: flex;
-}
 
 .home-img1{
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     position: relative;
-    left: -10px;
-    top: 280px;
+    z-index: 2;
+    left: 80px;
+    top: 120px;
     transform: scale(3,3);
-	animation: T-animation 3.5s linear infinite normal;
+	animation: T-animation 4.3s ease infinite normal;
 }
 @keyframes T-animation {
 	0% {
@@ -346,10 +344,13 @@ html {
 	}
 }
 .home-img2{
-    width: 140px;
-    height: 140px;
+    width: 80px;
+    height: 80px;
+    margin-top: 160px;
+    position: relative;
+    left: 100px;
     transform: scale(3,3);
-	animation: T-animation 3.5s linear infinite normal;
+	animation: T-animation 4.3s ease infinite normal;
 }
 @keyframes T-animation {
 	0% {
