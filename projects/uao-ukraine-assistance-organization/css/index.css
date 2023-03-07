@@ -864,15 +864,9 @@ html {
 */
 
 .footer {
-    box-shadow: 1px 1px 88px #4b77c024;
-    flex-direction: column;
-    gap: 33px;
-    mix-blend-mode: normal;
+    box-shadow: 1px 1px 88px #4b77c024; 
     padding: 42px 0;
     width: 100%;
-    min-height: 300px;
-    margin-top: -70px;
-    padding: 8rem 2rem;
     background: var(--white-color);
     display: flex;
     justify-content: center;
@@ -909,11 +903,47 @@ html {
     gap: 20px;
 }
 
+.footer .container .top .subcontainer {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1.9rem;
+}
+
+.footer .container .top .subcontainer .icons {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .container .top .subcontainer .phone-link {
+    text-decoration: none;
+    color: var(--black-color)
+}
+
+.footer .container .top .flex {
+    font-size: 2.4rem;
+    line-height: 24px;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
 .footer .container .line {
     width: 1280px;
     min-width: 300px;
     max-width: 100%;
     border-bottom: 1px solid var(--gray-color);
+}
+
+.footer .container .bottom {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    font-size: 1.6rem;
 }
 
 /* !--------------- Finishes FOOTER Styling -------------- */
