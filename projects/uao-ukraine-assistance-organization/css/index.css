@@ -864,15 +864,14 @@ html {
 */
 
 .footer {
+    min-height: 300px;
    box-shadow: 1px 1px 88px #4b77c024;
-   padding: 42px 0;
    width: 100%;
    background: var(--white-color);
    display: flex;
    justify-content: center;
    align-items: center;
 }
-
 
 .footer .max-width {
    width: 100%;
@@ -883,7 +882,6 @@ html {
    align-items: center;
 }
 
-
 .footer .container {
    width: 100%;
    height: 100%;
@@ -892,9 +890,8 @@ html {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   gap: 30px;
+   gap: 42px;
 }
-
 
 .footer .container .top {
    width: 100%;
@@ -906,7 +903,6 @@ html {
    gap: 20px;
 }
 
-
 .footer .container .top .subcontainer {
    font-size: 1.6rem;
    display: flex;
@@ -917,19 +913,16 @@ html {
    gap: 1.9rem;
 }
 
-
 .footer .container .top .subcontainer .icons {
    width: 100px;
    display: flex;
    justify-content: space-between;
 }
 
-
 .footer .container .top .subcontainer .phone-link {
    text-decoration: none;
    color: var(--black-color)
 }
-
 
 .footer .container .top .flex {
    font-size: 2.4rem;
@@ -939,7 +932,6 @@ html {
    gap: 10px;
 }
 
-
 .footer .container .line {
    width: 1280px;
    min-width: 300px;
@@ -947,12 +939,12 @@ html {
    border-bottom: 1px solid var(--gray-color);
 }
 
-
 .footer .container .bottom {
+   height: 100%;
    width: 100%;
-   display: flex;
-   text-align: left;
    font-size: 1.6rem;
+   display: flex;
+   justify-content: flex-start;
 }
 
 
