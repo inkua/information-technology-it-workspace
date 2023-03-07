@@ -819,9 +819,32 @@ html {
 .section6-partners .subcontainer {
     display: flex;
     text-align: center;
-    flex-wrap: wrap;
-    gap: 15px;
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    height: 8%; 
+    margin: auto;
+    width: 100%;
+    position: relative;
+    
 }
+
+.subcontainer::before, .subcontainer::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 500px;
+    position: absolute;
+    width: 150px;
+    z-index: 2;
+}
+.subcontainer::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+/* .subcontainer::before {
+    left: 0;
+    top: 0;
+} */
 
 .section6-partners .subcontainer .slider-frame {
     width: 1280px;
@@ -833,24 +856,27 @@ html {
 .section6-partners .subcontainer .slider-frame ul {
 	display: flex;
 	padding: 0;
-	width: 300%;
-	animation: slide 20s infinite alternate ease-in-out;
+	width: 100%;
+    animation: scroll 40s linear infinite;
 }
+
 
 .section6-partners .subcontainer .slider-frame li {
-	width: 50%;
 	list-style: none;
+    margin-left: 10%;
 }
 
-@keyframes slide {
-	0% {margin-left: 0;}
-	30% {margin-left: 0;}
-	
-	33% {margin-left: -100%;}
-	60% {margin-left: -100%;}
-	
-	66% {margin-left: -200%;}
-	100% {margin-left: -200%;}
+.section6-partners .subcontainer .slider-frame img {
+    -webkit-filter: grayscale(95%)
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+   }
+    100% {
+        transform: translateX(calc(-25% * 6));
+   }
 }
 
 
