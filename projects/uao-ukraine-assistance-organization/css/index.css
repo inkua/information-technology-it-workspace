@@ -847,10 +847,10 @@ html {
     top: 0;
     transform: rotateZ(180deg);
 }
-.subcontainer::before {
+/* .subcontainer::before {
     left: 0;
     top: 0;
-}
+} */
 
 .section6-partners .subcontainer .slider-frame {
     width: 1280px;
