@@ -225,11 +225,11 @@ html {
 }
 
 .navbar .switch input:checked + .slider {
-    background-color: var(--primary-blue-color);
+    background-color: var(--dark-gray-color);
 }
 
 .navbar .switch input:focus + .slider {
-    box-shadow: 0 0 1px var(--primary-blue-color);
+    box-shadow: 0 0 1px var(--dark-gray-color);
 }
 
 .navbar .switch input:checked + .slider:before {
