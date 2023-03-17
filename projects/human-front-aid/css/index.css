@@ -1,0 +1,19 @@
+/* Sección Navbar */
+
+.navbar-contenedor {
+    padding-top: 20px;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.navbar-titulo {
+    margin-left: 13.06%;
+    font-family: var(--font-family-lato);
+}
+
+.navbar-contenido {
+    font-family: var(--font-family-lato);
+    margin-right: 13.06%;
+}
