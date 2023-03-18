@@ -7,12 +7,19 @@
 
     <title>Human Front Aid -</title>
 
-    <!-- Estilos CSS -->
-    <link rel="stylesheet" href="./css/index.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <!-- Bootstrap v5.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="./css/general-styles.css">
+    <link rel="stylesheet" href="./css/index.css">
 
 </head>
 <body>
@@ -20,12 +27,35 @@
     
     <header>
         <!-- SECCIÓN NAVBAR -->
-        <div>
-            <nav class="navbar bg-body-tertiary">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="./index.html">Human Front Aid</a>
+        <div class="navbar-contenedor-principal">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid navbar-contenedor">
+
+                    <a class="navbar-brand navbar-titulo" href="./index.html">Human Front Aid</a>
+
+                    <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link navbar-link navbar-home" href="#">Home</a>
+                            <a class="nav-link navbar-link navbar-about-us" href="#">About us</a>
+                            <button type="button" class="btn btn-primary navbar-need-help">Need help?</button>
+                            <button type="button" class="btn btn-warning navbar-donate">DONATE</button>
+                        </div>
+                    </div>
                 </div>
-              </nav>              
+            </nav>
+
+            <div class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid contenedor-idiomas">
+
+                    <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+                            <button type="button" class="btn btn-primary navbar-ikp">IKP</button>
+                            <button type="button" class="btn btn-warning navbar-en">EN</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
     </header>
