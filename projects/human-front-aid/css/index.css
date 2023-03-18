@@ -1,19 +1,78 @@
 /* Sección Navbar */
 
+.navbar-contenedor-principal {
+    background-color: var(--color-dos);
+}
+
 .navbar-contenedor {
     padding-top: 20px;
 }
 
-.navbar-brand {
-    color: white;
+.bg-body-tertiary {
+    --bs-bg-opacity: 0;
 }
 
 .navbar-titulo {
     margin-left: 13.06%;
     font-family: var(--font-family-lato);
+    color: var(--color-uno);
 }
 
 .navbar-contenido {
     font-family: var(--font-family-lato);
     margin-right: 13.06%;
+}
+
+.navbar-link {
+    color: var(--color-uno);
+}
+
+.navbar-about-us {
+    margin-right: 61px;
+}
+
+.navbar-home {
+    margin-right: 24px;
+}
+
+.navbar-need-help {
+    margin-right: 16px;
+    color: var(--color-uno);
+    border: 2px solid var(--color-uno);
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 0px 34px;
+}
+
+.navbar-donate {
+    color: var(--color-uno);
+    border-radius: 8px;
+    font-weight: 700;
+    color: var(--color-dos);
+    background-color: var(--color-tres);
+    padding: 0px 34px;
+}
+
+.contenedor-idiomas {
+    margin-top: 20px;
+}
+
+.navbar-ikp {
+    color: var(--color-uno);
+    border-radius: 8px 0 0 8px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: var(--color-uno);
+    width: 67.742px;
+    border: 0;
+}
+
+.navbar-en {
+    color: var(--color-uno);
+    border-radius: 0 8px 8px 0;
+    font-weight: 700;
+    color: var(--color-dos);
+    background-color: var(--color-tres);
+    width: 67.742px;
+    border: 0;
 }
