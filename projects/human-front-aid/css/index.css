@@ -1,78 +1,128 @@
 /* Sección Navbar */
 
 .navbar-contenedor-principal {
-    background-color: var(--color-dos);
+  background-color: var(--color-dos);
 }
 
 .navbar-contenedor {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .bg-body-tertiary {
-    --bs-bg-opacity: 0;
+  --bs-bg-opacity: 0;
 }
 
 .navbar-titulo {
-    margin-left: 13.06%;
-    font-family: var(--font-family-lato);
-    color: var(--color-uno);
+  margin-left: 13.06%;
+  font-family: var(--font-family-lato);
+  color: var(--color-uno);
 }
 
 .navbar-contenido {
-    font-family: var(--font-family-lato);
-    margin-right: 13.06%;
+  font-family: var(--font-family-lato);
+  margin-right: 13.06%;
 }
 
 .navbar-link {
-    color: var(--color-uno);
+  color: var(--color-uno);
 }
 
 .navbar-about-us {
-    margin-right: 61px;
+  margin-right: 61px;
 }
 
 .navbar-home {
-    margin-right: 24px;
+  margin-right: 24px;
 }
 
 .navbar-need-help {
-    margin-right: 16px;
-    color: var(--color-uno);
-    border: 2px solid var(--color-uno);
-    background-color: transparent;
-    border-radius: 8px;
-    padding: 0px 34px;
+  margin-right: 16px;
+  color: var(--color-uno);
+  border: 2px solid var(--color-uno);
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 0px 34px;
 }
 
 .navbar-donate {
-    color: var(--color-uno);
-    border-radius: 8px;
-    font-weight: 700;
-    color: var(--color-dos);
-    background-color: var(--color-tres);
-    padding: 0px 34px;
+  color: var(--color-uno);
+  border-radius: 8px;
+  font-weight: 700;
+  color: var(--color-dos);
+  background-color: var(--color-tres);
+  padding: 0px 34px;
 }
 
 .contenedor-idiomas {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .navbar-ikp {
-    color: var(--color-uno);
-    border-radius: 8px 0 0 8px;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 0.7);
-    background-color: var(--color-uno);
-    width: 67.742px;
-    border: 0;
+  color: var(--color-uno);
+  border-radius: 8px 0 0 8px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.7);
+  background-color: var(--color-uno);
+  width: 67.742px;
+  border: 0;
 }
 
 .navbar-en {
-    color: var(--color-uno);
-    border-radius: 0 8px 8px 0;
-    font-weight: 700;
-    color: var(--color-dos);
-    background-color: var(--color-tres);
-    width: 67.742px;
-    border: 0;
+  color: var(--color-uno);
+  border-radius: 0 8px 8px 0;
+  font-weight: 700;
+  color: var(--color-dos);
+  background-color: var(--color-tres);
+  width: 67.742px;
+  border: 0;
+}
+
+/* Sección About_us */
+.About-Us-Diego-Pardo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.About-Us-Diego-Pardo-texto{
+    padding-left: 170px;
+    padding-right: 54px;
+    padding-top: 100px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: last baseline;
+}
+.About-Us-Diego-Pardo-Image{
+    padding-right: 170px;
+    padding-left: 54px;   
+    padding-top: 80px;
+}
+.About-Us-Diego-Pardo-Image_imagen{
+    width: 450px;
+    height: 350px;
+}
+
+.About-Us-Diego-Pardo-texto_buton{
+    border: 2px solid #004EAA;
+    padding: 12px 21px;
+    border-radius: 8px;
+    gap: 8px;
+    width: 121px;
+    height: 48px;
+    background-color: white;
+    color: #004EAA;
+}
+
+.About-Us-Diego-Pardo-button{
+    padding-top: 400px;
+    padding-right: 20px;
+}
+.About-Us-Diego-Pardo-button-buton{
+    background-image: url("/projects/human-front-aid/Image/boton\ chatbot.png");
+    border-radius: 100px;
+    width: 70px;
+    height: 70px;
+    background-size:110%;
 }
