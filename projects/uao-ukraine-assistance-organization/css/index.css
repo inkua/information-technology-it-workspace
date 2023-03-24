@@ -202,8 +202,8 @@ html {
 }
 
 .navbar label {
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 1.6rem;
+    font-weight: 700;
     color: var(--white-color);
     font-weight: 700;
 }
@@ -216,32 +216,35 @@ html {
 
 .navbar .btn-color-mode-switch > label.btn-color-mode-switch-inner{
     margin: 0px;
-    width: 140px;
-    height: 30px;
+    width: 92px;
+    height: 40px;
     background: var(--very-light-gray-color);
     border-radius: 5px;
     overflow: hidden;
     position: relative;
     transition: all 0.3s ease;
-    /*box-shadow: 0px 0px 8px 0px rgba(17, 17, 17, 0.34) inset;*/
     display: block;
+    /*box-shadow: 0px 0px 8px 0px rgba(17, 17, 17, 0.34) inset;*/
+    /* display: block; */
 }
 
 .navbar .btn-color-mode-switch > label.btn-color-mode-switch-inner:before{
     content: attr(data-on);
     position: absolute;
-    font-size: 12px;
+    font-size: 1.6rem;
     font-weight: 700;
     color: var(--dark-gray-color);
-    top: 7px;
-    right: 20px;
+    top: 10px;
+    right: 14px;
 
 }
 
 .navbar .btn-color-mode-switch > label.btn-color-mode-switch-inner:after{
     content: attr(data-off);
-    width: 70px;
-    height: 16px;
+    font-weight: 700;
+    width: 44px;
+    height: 26px;
+    text-align: center;
     background: var(--dark-gray-color);
     border-radius: 5px;
     position: absolute;
@@ -262,30 +265,35 @@ html {
 
 .navbar .btn-color-mode-switch input[type="checkbox"]{
     cursor: pointer;
-    width: 50px;
-    height: 25px;
+    width: 46px;
+    height: 28px;
     opacity: 0;
     position: absolute;
-    top: 0;
+    top: 12px;
+    left: 6px;
     z-index: 1;
     margin: 0px;
+    font-size: 1.6rem;
 }
 
 .navbar .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner{
     background: var(--very-light-gray-color);
     color: #fff;
+    font-size: 1.6rem;
 }
 
 .navbar .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:after{
     content: attr(data-on);
-    left: 68px;
+    left: 46px;
     background: var(--dark-gray-color);
+    font-size: 1.6rem;
 }
 
 .navbar .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:before{
     content: attr(data-off);
     right: auto;
-    left: 20px;
+    left: 14px;
+    font-size: 1.6rem;
 }
 
 .navbar .btn-color-mode-switch input[type="checkbox"]:checked ~ .alert{
