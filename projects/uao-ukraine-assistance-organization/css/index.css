@@ -368,6 +368,10 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url("../assets/images/home/background-img-big.svg") 70% 65%
+            no-repeat,
+        url("../assets/images/home/background-img-medium.svg") -200px 40% no-repeat,
+        url("../assets/images/home/background-img-small.svg") 85% 100% no-repeat;
 }
 
 .section1-home .max-width {
@@ -380,29 +384,43 @@ html {
 }
 
 .section1-home .container-home {
+    width: 100%;
+    min-height: 450px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-content: center;
     align-items: center;
     gap: 22px;
     flex-wrap: wrap;
 }
 
+.section1-home .container-home .left {
+    padding: 250px 0 50px;
+    height: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 70px;
+}
+
+.section1-home .container-home .right {
+    max-width: 600px;
+    padding-right: 135px;
+}
+
 .section1-home .left h1 {
-    /* position: absolute; */
-    max-width: 610px;
     min-height: max-content;
-    left: 0%;
-    top: 15%;
     font-family: var(--eina-03-font);
     font-size: 72px;
     line-height: 84px;
     letter-spacing: 0.01em;
     color: #000;
-    margin-left: 5%;
 }
 
 .section1-home .roller {
-    height: 6.5rem;
+    height: 8.5rem;
     line-height: 4rem;
     position: relative;
     overflow: hidden;
@@ -419,7 +437,7 @@ html {
 
 .section1-home .roller #rolltext {
     position: absolute;
-    top: 0;
+    top: -1rem;
     animation: slide 7s infinite;
     font-family: var(--eina-03-font);
     font-size: 72px;
@@ -434,10 +452,14 @@ html {
 
 @keyframes slide {
     0% {
-        top: 0.5rem;
+        top: -1rem;
     }
 
-    50% {
+    20% {
+        top: -1rem;
+    }
+
+    70% {
         top: -11rem;
     }
 
@@ -471,10 +493,14 @@ html {
 
     @keyframes slide-mob {
         0% {
-            top: 0;
+            top: -1rem;
         }
 
-        50% {
+        20% {
+            top: -1rem;
+        }
+
+        70% {
             top: -5.5rem;
         }
 
@@ -495,20 +521,19 @@ html {
     align-items: center;
     gap: 10px;
 
-    width: 120px;
-    height: 65px;
+    width: 124px;
+    height: 48px;
 
     background: #4b77c0;
     border-radius: 8px;
 }
 
 .section1-home .home-img1 {
-    width: 50px;
-    height: 50px;
+    width: 70px;
     position: relative;
     z-index: 2;
-    left: 80px;
-    top: 120px;
+    top: 123px;
+    right: 45px;
     transform: scale(3, 3);
     animation: T-animation 4.3s ease normal;
 }
@@ -521,11 +546,9 @@ html {
     }
 }
 .section1-home .home-img2 {
-    width: 80px;
-    height: 80px;
+    width: 125px;
     margin-top: 160px;
     position: relative;
-    left: 100px;
     transform: scale(3, 3);
     animation: T-animation 4.3s ease normal;
 }
