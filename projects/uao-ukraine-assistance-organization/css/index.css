@@ -165,6 +165,15 @@ html {
     transform: scaleX(1);
 }
 
+.navbar .menu li a.active {
+    color: var(--primary-blue-color);
+}
+
+.navbar .menu li a.active::before,
+.navbar .menu li a:hover::before {
+    transform: scaleX(1);
+}
+
 .navbar .donar-btn {
     width: 120px;
     background-color: var(--primary-blue-color);
