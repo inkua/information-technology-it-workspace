@@ -127,6 +127,66 @@
   background-size: 110%;
 }
 
+/* Sección Patrons */
+
+.card-contenedor {
+  display: inline-block;
+  width: 250px;
+  background-color: var(--color-dos);
+  color: var(--color-uno);
+  border-radius: 8px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card-video-contenedor {
+  display: inline-block;
+  width: 500px; 
+  height: 372.156px;
+}
+
+.card-video {
+  border-radius: 8px;
+  background-color: black;
+}
+
+.card-imagen {
+width: 100%;
+border-radius: 10px 10px 0 0;
+}
+
+.card-titulo {
+  margin-top: 8px;
+}
+
+.card-descrip {
+  display: inline-block;
+  text-align: justify;
+  font-size: 12px;
+  width: 70%;
+}
+
+.card-add {
+  display: inline-block;
+  padding: 10px 0 10px 15px;
+}
+
+.carousel-indicators {
+  position: static;
+}
+
+.carousel-indicators .carousel-indicator {
+  background-color: var(--color-dos);
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 100%;
+}
+
+.carousel-indicators .active {
+  background-color: var(--color-dos);
+  width: 1rem;
+  border-radius: 25% / 50%;
+}
+
 /* Sección footer */
 
 .Secction_footer_Diego_pardo{
@@ -240,64 +300,4 @@
   margin-left: 183px;
   margin-right: 183px;
   margin-top: 40px;
-}
-
-/* Sección Patrons */
-
-.card-contenedor {
-    display: inline-block;
-    width: 250px;
-    background-color: var(--color-dos);
-    color: var(--color-uno);
-    border-radius: 8px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
-}
-
-.card-video-contenedor {
-    display: inline-block;
-    width: 500px; 
-    height: 372.156px;
-}
-
-.card-video {
-    border-radius: 8px;
-    background-color: black;
-}
-
-.card-imagen {
-  width: 100%;
-  border-radius: 10px 10px 0 0;
-}
-
-.card-titulo {
-    margin-top: 8px;
-}
-
-.card-descrip {
-    display: inline-block;
-    text-align: justify;
-    font-size: 12px;
-    width: 70%;
-}
-
-.card-add {
-    display: inline-block;
-    padding: 10px 0 10px 15px;
-}
-
-.carousel-indicators {
-    position: static;
-}
-
-.carousel-indicators .carousel-indicator {
-    background-color: var(--color-dos);
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 100%;
-}
-
-.carousel-indicators .active {
-    background-color: var(--color-dos);
-    width: 1rem;
-    border-radius: 25% / 50%;
 }
