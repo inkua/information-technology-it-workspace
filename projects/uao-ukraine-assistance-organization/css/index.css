@@ -422,7 +422,7 @@ html {
 .section1-home .left h1 {
     min-height: max-content;
     font-family: var(--eina-03-font);
-    font-size: 72px;
+    font-size: 7.2rem;
     line-height: 84px;
     letter-spacing: 0.01em;
     color: #000;
@@ -435,7 +435,7 @@ html {
     overflow: hidden;
     width: 100%;
     display: flex;
-    margin-top: 4%;
+    margin-top: 3%;
 }
 
 .section1-home #spare-time {
@@ -449,7 +449,7 @@ html {
     top: -1rem;
     animation: slide 7s infinite;
     font-family: var(--eina-03-font);
-    font-size: 72px;
+    font-size: 7.2rem;
     line-height: 95px;
     letter-spacing: 0.01em;
 
@@ -474,48 +474,6 @@ html {
 
     90% {
         top: -21rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .section1-home h1 {
-        background: linear-gradient(93.65deg, #4b77c0 26.71%, #e4c75b 64.37%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        font-size: 2.11rem;
-    }
-
-    .section1-home .roller {
-        height: 4rem;
-        line-height: 3.8rem;
-    }
-
-    .section1-home #spare-time {
-        font-size: 3rem;
-        letter-spacing: 0.5rem;
-    }
-
-    .section1-home .roller #rolltext {
-        animation: slide-mob 7s infinite;
-    }
-
-    @keyframes slide-mob {
-        0% {
-            top: -1rem;
-        }
-
-        20% {
-            top: -1rem;
-        }
-
-        70% {
-            top: -5.5rem;
-        }
-
-        90% {
-            top: -11rem;
-        }
     }
 }
 
@@ -569,6 +527,77 @@ html {
     100% {
         transform: scaleX(3) scaleY(3) rotate(0deg) translateX(0px)
             translateY(0px) skewX(0deg) skewY(0deg);
+    }
+}
+
+@media screen and (max-width: 994px) {
+    .section1-home .container-home .left {
+        padding: 250px 0 50px;
+        height: 100%;
+        max-width: 420px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 70px;
+    }
+
+    .section1-home .container-home .right {
+        max-width: 420px;
+        padding-right: 80px;
+    }
+    .section1-home .left h1 {
+        background-clip: text;
+        font-size: 5.11rem;
+        line-height: 6rem;
+    }
+
+    .section1-home .left .roller {
+        /* height: 4rem; */
+        line-height: 3.8rem;
+        margin-top: 1%;
+    }
+
+    .section1-home #spare-time {
+        font-size: 3rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .section1-home .roller #rolltext {
+        font-size: 5.11rem;
+        animation: slide-mob 7s infinite;
+    }
+
+    .section1-home .home-img1 {
+        width: 50px;
+        position: relative;
+        z-index: 2;
+        top: 85px;
+        right: 30px;
+        transform: scale(3, 3);
+        animation: T-animation 4.3s ease normal;
+    }
+    .section1-home .home-img2 {
+        width: 75px;
+        margin-top: 50px;
+        position: relative;
+        transform: scale(3, 3);
+        animation: T-animation 4.3s ease normal;
+    }
+}
+
+@media screen and (max-width: 689px) {
+    .section1-home {
+        margin-top: -200px;
+        margin-bottom: 100px;
+    }
+    .section1-home .container-home {
+        justify-content: space-around;
+    }
+
+    .section1-home .container-home .right {
+        max-width: 420px;
+        margin-left: 90px;
     }
 }
 
@@ -1227,7 +1256,7 @@ html {
 
 /* !--------------- Finishes FOOTER Styling -------------- */
 
-@media (max-width: 947px) {
+@media (max-width: 994px) {
     .menu-btn {
         display: block;
         z-index: 999;
