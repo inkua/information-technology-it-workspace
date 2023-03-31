@@ -531,6 +531,12 @@ html {
 }
 
 @media screen and (max-width: 994px) {
+    .navbar div.btn-container {
+        margin-top: 5px;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
     .section1-home .container-home .left {
         padding: 250px 0 50px;
         height: 100%;
@@ -1315,6 +1321,19 @@ html {
         margin-top: 150px;
     }
 }
+
+@media screen and (max-width: 391px) {
+    .navbar div.btn-container {
+        margin-top: 18px;
+    }
+}
+
+@media screen and (max-width: 388px) {
+    .navbar div.btn-container {
+        margin-top: 5px;
+    }
+}
+
 
 @media (max-width: 387px) {
     .footer .container .line {
