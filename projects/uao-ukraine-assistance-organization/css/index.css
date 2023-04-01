@@ -754,7 +754,7 @@ html {
     line-height: 100px;
 }
 .section3-get-involved .container_header span {
-    color: #4a92f1;
+    color: #4b77c0;
 }
 .section3-get-involved .container_header a {
     text-decoration: none;
@@ -762,6 +762,9 @@ html {
     font-family: "Mulish";
     font-size: 15px;
     font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .section3-get-involved .container_cards {
@@ -781,7 +784,7 @@ html {
     flex-wrap: wrap;
     width: 320px;
     padding: 17px;
-    box-shadow: 0px 0px 30px var(--primary-blue-color);
+    box-shadow: rgba(75, 119, 192, 0.2) 0px 7px 29px 0px,rgba(75, 119, 192, 0.2) 0px 7px 29px 0px,rgba(75, 119, 192, 0.2) 0px 7px 29px 0px;
     border-radius: 6%;
 }
 .section3-get-involved .container_cards-3 .cards-title {
