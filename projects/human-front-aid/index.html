@@ -21,9 +21,20 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 
-    <!-- Estilos CSS -->
+    <!-- Estilos CSS3 -->
     <link rel="stylesheet" href="./css/general-styles.css">
     <link rel="stylesheet" href="./css/index.css">
+
+    <!-- JQuery v3.6.4 -->
+    <script defer src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+    <!-- JavaScript -->
+    <script defer src="./js/carousel.js"></script>
+
+    <!-- VideoJS -->
+    <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
+    <script defer src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
+
 
 </head>
 
@@ -65,10 +76,11 @@
 
     </header>
 
-    <!-- Sesccion Diego Pardo - About Us -->
+    <!-- Sección Diego Pardo - About Us -->
+
     <section class="About-Us-Diego-Pardo">
 
-        <!-- Sesccion Diego Pardo - About Us Texto-->
+        <!-- Sección Diego Pardo - About Us Texto-->
         <section class="About-Us-Diego-Pardo-texto">
             <p>Our intention is to support projects regionally and locally.
                 People knowing the local conditions can help effectively by
@@ -84,13 +96,12 @@
             <button class="About-Us-Diego-Pardo-texto_buton">About us</button>
         </section>
 
-        <!-- Sesccion Diego Pardo - About Us Image-->
+        <!-- Sección Diego Pardo - About Us Image-->
         <section class="About-Us-Diego-Pardo-Image">
             <img class="About-Us-Diego-Pardo-Image_imagen" src="Image/Image-about-us.png" alt="About_us">
         </section>
 
-        <!-- Sesccion Diego Pardo - About Us button-->
-
+        <!-- Sección Diego Pardo - About Us button-->
         <section class="About-Us-Diego-Pardo-button">
             <button class="About-Us-Diego-Pardo-button-buton"></button>
 
@@ -100,15 +111,20 @@
 
     <!-- SECCIÓN PATRONS -->
 
-    <div id="carouselExampleCaptions" class="carousel slide mx-auto">
+    <!-- Patrons Título -->
+
+    <p class="patrons-title">Patrons</p>
+
+    <!-- Patrons Carousel -->
+
+    <div id="carouselExampleCaptions" class="carousel">
         <div class="carousel-inner">
 
-            <!-- Carrusel Fila Nº1 -->
+            <!-- Carousel de Cartas y Videos -->
 
             <div class="carousel-item active">
                 <!-- Carta nº1 normal -->
                 <div class="card-contenedor">
-
                     <img src="./img/imagen-card.png" class="d-block card-imagen" alt="...">
                     <div class="text-center card-info">
                         <h5 class="card-titulo">Reto Nause</h5>
@@ -116,14 +132,26 @@
                         <img src="./img/add.png" class="card-add" alt="+">
                     </div>
                 </div>
+            </div>
+
+            <div class="carousel-item">
                 <!-- Carta nº2 video probando como etiqueta iframe -->
-                <div class="card-video-contenedor">
-                    <div class="card-video-contenedor">
-                        <video class="card-video" width="500" height="340" controls>
-                            <source src="./video/VID-20221107-WA0019.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
+                <video
+                    id="my-video"
+                    class="card-video video-js"
+                    controls
+                    preload="auto"
+                    width="640"
+                    height="264"
+                    poster="MY_VIDEO_POSTER.jpg"
+                    data-setup="{}"
+                >
+                    <source src="./video/VID-20221107-WA0019.mp4" type="video/mp4" />
+                    <source src="./video/VID-20221107-WA0019.webm" type="video/webm" />
+                </video>
+            </div>
+            
+            <div class="carousel-item">
                 <!-- Carta nº3 normal-->
                 <div class="card-contenedor">
                     <img src="./img/imagen-card.png" class="d-block card-imagen" alt="...">
@@ -133,7 +161,10 @@
                         <img src="./img/add.png" class="card-add" alt="+">
                     </div>
                 </div>
-                <!-- Carta nº4 normal -->
+            </div>
+
+            <div class="carousel-item">
+                <!-- Carta nº4 normal-->
                 <div class="card-contenedor">
                     <img src="./img/imagen-card.png" class="d-block card-imagen" alt="...">
                     <div class="d-none d-md-block text-center card-info">
@@ -144,28 +175,8 @@
                 </div>
             </div>
 
-            <!-- Carrusel Fila Nº2 -->
-
             <div class="carousel-item">
-                <!-- Carta nº1 normal -->
-                <div class="card-contenedor">
-                    <img src="./img/imagen-card.png" class="d-block card-imagen" alt="...">
-                    <div class="text-center card-info">
-                        <h5 class="card-titulo">Reto Nause</h5>
-                        <p class="card-descrip">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <img src="./img/add.png" class="card-add" alt="+">
-                    </div>
-                </div>
-                <!-- Carta nº2 normal -->
-                <div class="card-contenedor">
-                    <img src="./img/imagen-card.png" class="d-block card-imagen" alt="...">
-                    <div class="text-center card-info">
-                        <h5 class="card-titulo">Reto Nause</h5>
-                        <p class="card-descrip">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <img src="./img/add.png" class="card-add" alt="+">
-                    </div>
-                </div>
-                <!-- Carta nº3 normal -->
+                <!-- Carta nº5 normal-->
                 <div class="card-contenedor">
                     <img src="./img/imagen-card.png" class="d-block card-imagen" alt="...">
                     <div class="d-none d-md-block text-center card-info">
@@ -176,31 +187,11 @@
                 </div>
             </div>
 
-            <!-- Carrusel Fila Nº3 -->
-
             <div class="carousel-item">
-                <!-- Carta nº1 normal -->
+                <!-- Carta nº6 normal -->
                 <div class="card-contenedor">
                     <img src="./img/imagen-card.png" class="d-block card-imagen" alt="...">
                     <div class="text-center card-info">
-                        <h5 class="card-titulo">Reto Nause</h5>
-                        <p class="card-descrip">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <img src="./img/add.png" class="card-add" alt="+">
-                    </div>
-                </div>
-                <!-- Carta nº2 normal -->
-                <div class="card-contenedor">
-                    <img src="./img/imagen-card.png" class="d-block card-imagen" alt="...">
-                    <div class="d-none d-md-block text-center card-info">
-                        <h5 class="card-titulo">Reto Nause</h5>
-                        <p class="card-descrip">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <img src="./img/add.png" class="card-add" alt="+">
-                    </div>
-                </div>
-                <!-- Carta nº3 normal -->
-                <div class="card-contenedor">
-                    <img src="./img/imagen-card.png" class="d-block card-imagen" alt="...">
-                    <div class="d-none d-md-block text-center card-info">
                         <h5 class="card-titulo">Reto Nause</h5>
                         <p class="card-descrip">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <img src="./img/add.png" class="card-add" alt="+">
@@ -210,7 +201,7 @@
 
         </div>
 
-        <!-- Carrusel Indicators -->
+        <!-- Carousel Indicators -->
         
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -221,13 +212,17 @@
             <span class="visually-hidden">Next</span>
         </button>
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="carousel-indicator active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="carousel-indicator" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="carousel-indicator" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="carousel-indicator active" aria-current="true" aria-label="Slide 0"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="carousel-indicator" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="carousel-indicator" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" class="carousel-indicator" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" class="carousel-indicator" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" class="carousel-indicator" aria-label="Slide 5"></button>
         </div>
     </div>
 
     <!-- SECCIÓN FOOTER -->
+
     <footer class="Secction_footer_Diego_pardo">
         <section class="Section_footer_Diego_body">
             <section class="Section_footer_Diego_body_title">

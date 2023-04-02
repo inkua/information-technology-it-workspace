@@ -1,7 +1,14 @@
 :root {
+
+    /* Font Family */
     --font-family-lato: 'Lato', sans-serif;
     --font-family-poppins: 'Poppins', sans-serif;
+
+    /* Colors */
     --color-uno: #FAFAFB;
     --color-dos: #003A7D;
     --color-tres: #F8D714;
+
+    /* Margin Left */
+    --margin-left: 13.06%;
 }
