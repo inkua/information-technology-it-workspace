@@ -841,7 +841,7 @@ html {
     cursor: pointer;
 }
 .section3-get-involved .container_cards-3 .button1:hover {
-    border: 1px solid var(--blue-color-first);
+    border: 2px solid var(--blue-color-first);
     color: var(--blue-color-first);
 }
 .section3-get-involved .container_cards-3 .button2 {
