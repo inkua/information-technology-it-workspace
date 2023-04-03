@@ -1018,7 +1018,6 @@ html {
 
 .section6-partners {
     min-height: 550px;
-    padding: 8rem 2rem;
     background: var(--white-color);
     display: flex;
     justify-content: center;
@@ -1042,7 +1041,6 @@ html {
 }
 
 .section6-partners .title-partners {
-    font-size: 38px;
     font-family: var(--bebas-neue-font);
     letter-spacing: 1px;
     width: 100%;
@@ -1054,6 +1052,11 @@ html {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    font-size: 3.8rem;
+}
+
+.section6-partners .title-partners2 {
+    display: none;
 }
 
 .section6-partners .title-partners .title-line {
@@ -1143,15 +1146,18 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+    .section6-partners .container {
+        gap: 20px;
+    }
     .section6-partners .slide .image-slider {
-        max-width: 75px;
+        max-width: 95px;
     }
     .section6-partners .slide-track2 {
-        width: calc(80px * 18);
+        width: calc(100px * 18);
     }
 
     .section6-partners .slide {
-        width: 80px;
+        width: 100px;
     }
 
     @keyframes scroll2 {
@@ -1159,7 +1165,7 @@ html {
             transform: translateX(0px);
         }
         100% {
-            transform: translateX(calc(-80px * 6));
+            transform: translateX(calc(-100px * 6));
         }
     }
 }
@@ -1312,7 +1318,38 @@ html {
     }
 }
 
+@media (max-width: 861px) {
+    .section6-partners {
+        min-height: 350px;
+        background: var(--white-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section6-partners .container {
+        gap: 20px;
+    }
+    .section6-partners .title-partners {
+        display: none;
+    }
+    .section6-partners .title-partners2 {
+        width: 100%;
+        font-size: 5.1rem;
+        font-family: var(--bebas-neue-font);
+        text-align: center;
+        letter-spacing: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        color: var(--primary-blue-color);
+    }
+}
+
 @media (max-width: 643px) {
+    .section6-partners .title-partners2 {
+        font-size: 4.8rem;
+    }
     .footer .container .top {
         justify-content: space-around;
     }
@@ -1326,6 +1363,9 @@ html {
     .navbar div.btn-container {
         margin-top: 18px;
     }
+    .section6-partners .title-partners2 {
+        font-size: 3.8rem;
+    }
 }
 
 @media screen and (max-width: 388px) {
@@ -1333,7 +1373,6 @@ html {
         margin-top: 5px;
     }
 }
-
 
 @media (max-width: 387px) {
     .footer .container .line {
