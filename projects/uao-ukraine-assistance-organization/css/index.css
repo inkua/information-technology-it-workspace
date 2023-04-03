@@ -216,6 +216,7 @@ html {
     font-weight: 700;
     color: var(--white-color);
     font-weight: 700;
+    cursor: pointer;
 }
 
 .navbar .btn-color-mode-switch {
@@ -477,22 +478,25 @@ html {
     }
 }
 
-.section1-home .seccion1_button {
-    color: #e6eaf0;
-    font-size: small;
-    font-weight: bold;
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
 
+
+.section1-home .donar-btn {
     width: 124px;
-    height: 48px;
-
-    background: #4b77c0;
-    border-radius: 8px;
+    background-color: var(--primary-blue-color);
+    color: var(--white-color) !important;
+    padding: 10px;
+    border-radius: 0.8rem;
+    text-align: center;
+    border: 1px solid var(--primary-blue-color);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.section1-home .donar-btn:hover {
+    background-color: var(--blue-color-first);
+    border: 1px solid var(--blue-color-first);
 }
 
 .section1-home .home-img1 {
@@ -686,16 +690,38 @@ html {
     line-height: 24px;
     font-weight: 500;
 }
+.section2-about-us .button-donate {
+    width: 124px;
+    background-color: var(--primary-blue-color);
+    color: var(--white-color) !important;
+    padding: 10px;
+    border-radius: 0.8rem;
+    text-align: center;
+    border: 1px solid var(--primary-blue-color);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.section2-about-us .button-donate:hover {
+    background-color: var(--blue-color-first);
+    border: 1px solid var(--blue-color-first);
+}
+
 .section2-about-us .button-see-more {
     border: none;
-    padding: 1.5rem;
-    color: var(--blue-color-first);
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
+    text-decoration: none;
+    color: #4a92f1;
+    background: none;
+    font-family: "Mulish";
+    font-size: 15px;
+    font-weight: 800;
     display: flex;
     align-items: center;
     gap: 1rem;
+    cursor: pointer;
 }
 .section2-about-us .Container-texts-buttons {
     display: flex;
@@ -718,8 +744,7 @@ html {
 .section3-get-involved {
     width: 100%;
     min-height: 450px;
-    margin-top: 30px;
-    padding: 8rem 2rem;
+    padding: 0rem 2rem 4rem;
     background: var(--white-color);
     border-radius: 70px 70px 0px 0px;
     display: flex;
@@ -803,8 +828,8 @@ html {
 }
 .section3-get-involved .container_cards-3 .button1 {
     font-family: "Mulish";
+    font-size: 1.6rem;
     height: 45px;
-    width: 55%;
     padding: 10px;
     font-weight: 800;
     background-color: white;
@@ -812,18 +837,31 @@ html {
     border: 2px solid var(--primary-blue-color);
     border-radius: 0.8rem;
     text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.section3-get-involved .container_cards-3 .button1:hover {
+    border: 1px solid var(--blue-color-first);
+    color: var(--blue-color-first);
 }
 .section3-get-involved .container_cards-3 .button2 {
-    font-family: "Mulish";
-    padding: 10px;
-    height: 45px;
-    width: 40%;
+    width: 124px;
     background-color: var(--primary-blue-color);
-    font-weight: 800;
     color: var(--white-color) !important;
-    border: 1px solid var(--primary-blue-color);
+    padding: 10px;
     border-radius: 0.8rem;
     text-align: center;
+    border: 1px solid var(--primary-blue-color);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.section3-get-involved .container_cards-3 .button2:hover {
+    background-color: var(--blue-color-first);
+    border: 1px solid var(--blue-color-first);
 }
 .section3-get-involved .container_cards-3 .cards-socialmedia {
     align-items: center;
@@ -847,8 +885,8 @@ html {
 * ASSIGNED TO: Gabriel Vázquez & Nadia Florencia Maldonado
 */
 .section4-stories {
-    min-height: 768px;
-    padding: 8rem 2rem 1rem;
+    min-height: 568px;
+    /* padding: 8rem 2rem 1rem; */
 }
 
 .section4-stories .max-width .container {
@@ -927,7 +965,7 @@ html {
     );
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     backdrop-filter: blur(10.255px);
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px;
 }
 
 .description-slide-swiper h3 {
@@ -995,19 +1033,22 @@ html {
 
 .section5-contact .contact-container .btn-contact {
     width: 124px;
-    height: 48px;
     background-color: var(--primary-blue-color);
-    color: var(--white-color);
-    font-size: 1.6rem;
-    font-weight: 500;
-    border: none;
+    color: var(--white-color) !important;
+    padding: 10px;
     border-radius: 0.8rem;
-    margin-top: 15px;
-    opacity: 1;
+    text-align: center;
+    border: 1px solid var(--primary-blue-color);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 .section5-contact .contact-container .btn-contact:hover {
     background-color: var(--blue-color-first);
+    border: 1px solid var(--blue-color-first);
 }
 
 /* !--------------- Finishes Home (SECTION 5) Styling -------------- */
