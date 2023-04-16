@@ -92,10 +92,6 @@
 
 /*Seccion About Us que contiene la imagen de fondo*/
 
-.about-us-imagen {
- 
-}
-
 .about-us-imagen img {
   z-index: -1;
   position: relative;
