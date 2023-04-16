@@ -92,10 +92,6 @@
 
 /*Seccion About Us que contiene la imagen de fondo*/
 
-.about-us-imagen {
- 
-}
-
 .about-us-imagen img {
   z-index: -1;
   position: relative;
@@ -197,6 +193,7 @@ left: 180px;
 
 
 /* Sección About_us */
+
 .About-Us-Diego-Pardo {
   display: flex;
   justify-content: center;
@@ -290,6 +287,7 @@ left: 180px;
 }
 
 .card-imagen {
+  display: block;
   width: 100%;
   border-radius: 10px 0;
 }
@@ -325,6 +323,37 @@ left: 180px;
   background-color: var(--color-dos);
   width: 1rem;
   border-radius: 25% / 50%;
+}
+
+/* Video card Sección */
+
+.video-js button {
+  color: var(--color-cuatro);
+}
+
+.video-js .vjs-control-bar {
+  background-color: #ffffff;
+  border: solid 1px var(--color-dos);
+  border-radius: 5px;
+}
+
+.video-js .vjs-volume-level {
+  background-color: var(--color-cuatro);
+}
+
+.video-js .vjs-progress-control .vjs-progress-holder {
+  color: var(--color-cuatro)
+}
+
+.video-js .vjs-big-play-button {
+  font-size: 3.5em;
+  height: 1.8em;
+  line-height: 1.8em;
+  background-color: var(--color-uno);
+}
+
+.vjs-progress-control .vjs-control {
+  background-color: var(--color-cuatro);
 }
 
 /* Sección footer */
