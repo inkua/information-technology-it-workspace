@@ -18,3 +18,7 @@ $('.carousel-control-prev').on('click', function() {
         $('.carousel-inner').animate({scrollLeft: scrollPosition}, 600);
     }
 });
+
+var style = document.createElement( 'style' )
+style.innerHTML = '.swiper-pagination-bullet-active { background-color: #000 !important; color: black; }'
+host.shadowRoot.appendChild( style )

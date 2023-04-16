@@ -1,3 +1,5 @@
+/* General Settings */
+
 :root {
 
     /* Font Family */
@@ -8,7 +10,15 @@
     --color-uno: #FAFAFB;
     --color-dos: #003A7D;
     --color-tres: #F8D714;
+    --color-cuatro: #005BBB;
 
     /* Margin Left */
     --margin-left: 13.06%;
+
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
 }

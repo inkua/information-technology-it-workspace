@@ -78,6 +78,7 @@
 }
 
 /* Sección About_us */
+
 .About-Us-Diego-Pardo {
   display: flex;
   justify-content: center;
@@ -167,8 +168,9 @@
 }
 
 .card-imagen {
-width: 100%;
-border-radius: 10px 0;
+  display: block;
+  width: 100%;
+  border-radius: 10px 0;
 }
 
 .card-titulo {
@@ -202,6 +204,37 @@ border-radius: 10px 0;
   background-color: var(--color-dos);
   width: 1rem;
   border-radius: 25% / 50%;
+}
+
+/* Video card Sección */
+
+.video-js button {
+  color: var(--color-cuatro);
+}
+
+.video-js .vjs-control-bar {
+  background-color: #ffffff;
+  border: solid 1px var(--color-dos);
+  border-radius: 5px;
+}
+
+.video-js .vjs-volume-level {
+  background-color: var(--color-cuatro);
+}
+
+.video-js .vjs-progress-control .vjs-progress-holder {
+  color: var(--color-cuatro)
+}
+
+.video-js .vjs-big-play-button {
+  font-size: 3.5em;
+  height: 1.8em;
+  line-height: 1.8em;
+  background-color: var(--color-uno);
+}
+
+.vjs-progress-control .vjs-control {
+  background-color: var(--color-cuatro);
 }
 
 /* Sección footer */
