@@ -10,11 +10,8 @@
   /* Sección Navbar */
 
   .navbar-contenedor-principal {
-    background-color: var(--color-dos);
-  }
-
-  .navbar-brand-logo{
-    left: 100px;
+    background-color: var(--color-dos); 
+    height: 0;
   }
 
   .navbar-brand-logo{
