@@ -26,7 +26,8 @@
     <link rel="stylesheet" href="./css/index.css">
 
     <!-- JQuery v3.6.4 -->
-    <script defer src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 
     <!-- JavaScript -->
     <script defer src="./js/carousel.js"></script>
@@ -46,7 +47,7 @@
         <div class="navbar-contenedor-principal">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid navbar-contenedor">
-
+                    <img src="Image/logo.png">
                     <a class="navbar-brand navbar-titulo" href="./index.html">Human Front Aid</a>
 
                     <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
@@ -73,6 +74,34 @@
                 </div>
             </div>
         </div>
+
+
+        <!-- Home Cabecera-->
+
+        <section class="home-title">
+            <div class="home-imagen">
+                <img src="Image/home-title.png" alt="About Us">
+            </div>
+            <div class="home-textos">
+                <h2 class="home-titulo">Human Front Aid </h2>
+                <p class="home-parrafo">Our intention is to <strong>support projects regionally and locally.</strong>
+                </p>
+                <p class="home-parrafo">People knowing the local conditions can help.</p>
+                <button class="home-btn">Donate</button>
+            </div>
+        </section>
+
+        <!-- Inicio efecto wave-->
+        <div class="wave-home">
+            <div style="height: 150px; overflow: hidden;" >
+                <div style="height: 150px; overflow: hidden;" >
+                    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                        <path d="M-6.77,81.22 C152.37,-134.90 385.44,168.05 502.82,-4.63 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffffff;"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- Fin efecto wave-->
 
     </header>
 
@@ -138,21 +167,13 @@
 
             <div class="carousel-item">
                 <!-- Carta nº2 video probando como etiqueta iframe -->
-                <video
-                    id="my-video"
-                    class="card-video video-js"
-                    controls
-                    preload="auto"
-                    width="640"
-                    height="264"
-                    poster="MY_VIDEO_POSTER.jpg"
-                    data-setup="{}"
-                >
+                <video id="my-video" class="card-video video-js" controls preload="auto" width="640" height="264"
+                    poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
                     <source src="./video/VID-20221107-WA0019.mp4" type="video/mp4" />
                     <source src="./video/VID-20221107-WA0019.webm" type="video/webm" />
                 </video>
             </div>
-            
+
             <div class="carousel-item">
                 <!-- Carta nº3 normal-->
                 <div class="card-contenedor">
@@ -204,22 +225,30 @@
         </div>
 
         <!-- Carousel Indicators -->
-        
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="carousel-indicator active" aria-current="true" aria-label="Slide 0"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="carousel-indicator" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="carousel-indicator" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" class="carousel-indicator" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" class="carousel-indicator" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" class="carousel-indicator" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                class="carousel-indicator active" aria-current="true" aria-label="Slide 0"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                class="carousel-indicator" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                class="carousel-indicator" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                class="carousel-indicator" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                class="carousel-indicator" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                class="carousel-indicator" aria-label="Slide 5"></button>
         </div>
     </div>
 
@@ -269,7 +298,7 @@
 
         </section>
     </footer>
-    
+
 </body>
 
 </html>
