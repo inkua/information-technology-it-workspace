@@ -19,33 +19,49 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 
+    <!-- JQuery v3.6.4 -->
+    <script defer src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    
+    <!-- VideoJS -->
+    <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
+    <script defer src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
+
+    <!-- SwiperJS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    
     <!-- Estilos CSS3 -->
     <link rel="stylesheet" href="./css/general-styles.css">
-    <link rel="stylesheet" href="./css/index.css">
-
-    <!-- JQuery v3.6.4 -->
-    <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"
-        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/about-us.css">
 
     <!-- JavaScript -->
     <script defer src="./js/carousel.js"></script>
 
-    <!-- VideoJS -->
-    <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
-    <script defer src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
 </head>
 
 <body>
     <header>
+
         <!-- SECCIÓN NAVBAR -->
         <div class="navbar-contenedor-principal">
+
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+                <!-- Contenedor del Navbar -->
+
                 <div class="container-fluid navbar-contenedor">
+
+                    <!-- Logo -->
                     <img class="navbar-brand navbar-logo" src="Image/logo.png" alt="">
+
+                    <!-- Título -->
                     <a class="navbar-brand navbar-titulo" href="./index.html">Human Front Aid</a>
+
+                    <!-- Opciones de Navegación -->
                     <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
-                            <a class="nav-link navbar-link navbar-home" href="#">Home</a>
+                            <a class="nav-link navbar-link navbar-home" href="./index.html">Home</a>
                             <a class="nav-link navbar-link navbar-about-us" href="#">About us</a>
                             <button type="button" class="btn btn-primary navbar-need-help">Need help?</button>
                             <button type="button" class="btn btn-warning navbar-donate">DONATE</button>
@@ -53,36 +69,54 @@
                     </div>
                 </div>
             </nav>
+
+            <!-- Sección de Idiomas -->
             <div class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid contenedor-idiomas">
 
                     <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
+                            <!-- Opción Ukrania -->
                             <button type="button" class="btn btn-primary navbar-ikp">IKP</button>
+                            <!-- Opción Inglés -->
                             <button type="button" class="btn btn-warning navbar-en">EN</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-    <!-- SECCION ABOUT US -->
-    <section class="about-us-imagen">
 
-        <div class="about-us-div">
-            <img src="Image/about-us-fondo.png" alt="About Us">
+        <!-- SECCIÓN TÍTULO -->
+
+        <!-- ... ... ... ... -->
+        <!-- ... ... ... ... -->
+        <!-- ... ... ... ... -->
+        <!-- ... ... ... ... -->
+
+        <!-- Imagen de fondo-->
+
+        <div class="about-us-imagen about-us-div">
+            <img src="Image/header-about-us.png" alt="About Us">
         </div>
+
+        <!-- Máscara de filtro azul -->
+
+        <div class="header-background-mascara"></div>
+
+        <!-- Efecto wave-->
+
+        <img class="wave" src="./Image/wave.png"></img>
+
+    </header>
+
+    <!-- SECCION ABOUT US -->
+
+    <section class="about-us-imagen">
 
         <div class="about-us-text">
             <h2 class="about-us-titulo">About Us </h2>
             <p class="about-us-parrafo">Know more about our <strong>mission</strong>,<br> <strong>projects</strong> and <strong>history.</strong></p>
         </div>
-
-        <!-- Inicio efecto wave-->
-        <div class="wave">
-            <div class="wave-1"></div>
-        </div>
-        <!-- Fin efecto wave-->
 
         <div class="about-us-history-container">
             <div class="about-us-history">
