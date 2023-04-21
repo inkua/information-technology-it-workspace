@@ -198,6 +198,7 @@
     position: absolute;
     right: 50px;
     top: 1500px;
+   
   }
   .emoji-saludar{
     font-size: 50px;
@@ -206,7 +207,6 @@
 
 
   /* Sección About_us */
-
   .About-Us-Diego-Pardo {
     display: flex;
     justify-content: center;
@@ -245,6 +245,7 @@
     height: 48px;
     background-color: white;
     color: #004eaa;
+    
   }
 
   .About-Us-Diego-Pardo-button {
@@ -258,7 +259,9 @@
     width: 70px;
     height: 70px;
     background-size: 110%;
+  
   }
+   
 
   /* Sección Patrons */
 
