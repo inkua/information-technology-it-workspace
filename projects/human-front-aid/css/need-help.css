@@ -1,0 +1,497 @@
+/* ################ MEDIA QUERY - Movile - ################ */
+
+@media (max-width: 767px) {
+  
+}
+
+/* ################ MEDIA QUERY - Tablet and Desktop - ################ */
+
+@media(min-width: 768px) {
+  /* Sección Navbar */
+
+  .navbar-contenedor-principal {
+    background-color: var(--color-dos); 
+    height: 0;
+  }
+
+  .navbar-brand-logo{
+    left: 100px;
+  }
+
+  .navbar-contenedor {
+    padding-top: 20px; 
+    
+  }
+
+  .bg-body-tertiary {
+    --bs-bg-opacity: 0;
+    
+  }
+
+  .navbar-titulo {
+    margin-left: 0;
+    font-family: var(--font-family-lato);
+    color: var(--color-uno);
+  }
+
+  .navbar-logo{
+    margin-left: var(--margin-left)
+  }
+
+  .navbar-contenido {
+    font-family: var(--font-family-lato);
+    margin-right: 13.06%;
+
+  }
+
+  .navbar-link {
+    color: var(--color-uno);
+  }
+
+  .navbar-need-help {
+    margin-right: 61px;
+  }
+
+  .navbar-home {
+    margin-right: 24px;
+  }
+
+  .navbar-need-help {
+    margin-right: 16px;
+    color: var(--color-uno);
+    border: 2px solid var(--color-uno);
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 0px 34px;
+  }
+
+  .navbar-donate {
+    color: var(--color-uno);
+    border-radius: 8px;
+    font-weight: 700;
+    color: var(--color-dos);
+    background-color: var(--color-tres);
+    padding: 0px 34px;
+  }
+
+  .contenedor-idiomas {
+    margin-top: 20px;
+  }
+
+  .navbar-ikp {
+    color: var(--color-uno);
+    border-radius: 8px 0 0 8px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: var(--color-uno);
+    width: 67.742px;
+    border: 0;
+  }
+
+  .navbar-en {
+    color: var(--color-uno);
+    border-radius: 0 8px 8px 0;
+    font-weight: 700;
+    color: var(--color-dos);
+    background-color: var(--color-tres);
+    width: 67.742px;
+    border: 0;
+  }
+
+  /*Seccion About Us que contiene la imagen de fondo*/
+
+  .need-help-div {
+    height: 800px;
+  }
+
+  .need-help-imagen img {
+    z-index: -1;
+    position: relative;
+    background: #02397A;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+  }
+
+  .header-background-mascara {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 800px;
+    background: #02397A;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: -2;
+    mix-blend-mode: multiply;
+  }
+
+  .need-help-text {
+  width: 40%;
+  position: relative;
+  bottom: 500px;
+  left: 180px;
+  }
+
+  .need-help-titulo {
+    color: var(--color-tres);
+    font-size: 100px;
+    font-weight: 700;
+    font-family: 'Lato';
+    text-shadow: 0 0 5px #000000;
+  }
+
+  .need-help-parrafo{
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Poppins';
+    text-shadow: 0 0 5px #000000;
+  }
+
+  .need-help-parrafo strong{
+    font-size: 27px;
+    font-weight: bold;
+  }
+
+  /* efecto wave*/
+  .wave {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 650px;
+  }
+
+  .need-help-history-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+  }
+
+  .need-help-history{
+    width: 30%;
+    margin-left: 50px;
+
+  }
+
+  .need-help-history p{
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .need-help-history img{
+    width: 423px;
+    height: 435px;
+  }
+
+  .history-titulo{
+    margin-left: 20%;
+  }
+
+  .circulo{
+  
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px #02397A solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 50px;
+    top: 1500px;
+   
+  }
+  .emoji-saludar{
+    font-size: 50px;
+
+  }
+
+
+  /* Sección About_us */
+  .need-help-Diego-Pardo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .need-help-Diego-Pardo-texto {
+    padding-left: 170px;
+    padding-right: 54px;
+    padding-top: 100px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: last baseline;
+  }
+
+  .need-help-Diego-Pardo-Image {
+    padding-right: 170px;
+    padding-left: 54px;
+    padding-top: 80px;
+  }
+
+  .need-help-Diego-Pardo-Image_imagen {
+    width: 450px;
+    height: 350px;
+  }
+
+  .need-help-Diego-Pardo-texto_buton {
+    border: 2px solid #004eaa;
+    padding: 12px 21px;
+    border-radius: 8px;
+    gap: 8px;
+    width: 121px;
+    height: 48px;
+    background-color: white;
+    color: #004eaa;
+    
+  }
+
+  .need-help-Diego-Pardo-button {
+    padding-top: 400px;
+    padding-right: 20px;
+  }
+
+  .need-help-Diego-Pardo-button-buton {
+    background-image: url("/Image/boton_chatbot.png");
+    border-radius: 100px;
+    width: 70px;
+    height: 70px;
+    background-size: 110%;
+  
+  }
+   
+
+  /* Sección Patrons */
+
+  .patrons-title {
+    margin-left: var(--margin-left);
+    font-family: var(--font-family-lato);
+    font-weight: 700;
+    font-size: 35px;
+    color: var(--color-dos);
+    margin-top: 4rem;
+  }
+
+  .carousel-inner {
+    display: flex;
+  }
+
+  .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100%/5);
+    padding: 1.2em 0.5em;
+    height: 26rem;
+  }
+
+  .card-contenedor {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-dos);
+    color: var(--color-uno);
+    border-radius: 8px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  .card-video {
+    border-radius: 8px;
+    background-color: black;
+    width: 500px;
+    height: 100%;
+  }
+
+  .card-imagen {
+    display: block;
+    width: 100%;
+    border-radius: 10px 0;
+  }
+
+  .card-titulo {
+    margin-top: 8px;
+  }
+
+  .card-descrip {
+    display: inline-block;
+    text-align: justify;
+    font-size: 13px;
+    width: 70%;
+  }
+
+  .card-add {
+    display: inline-block;
+    padding: 0 0 10px 15px;
+  }
+
+  .carousel-indicators {
+    position: static;
+  }
+
+  .carousel-indicators .carousel-indicator {
+    background-color: var(--color-dos);
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 100%;
+  }
+
+  .carousel-indicators .active {
+    background-color: var(--color-dos);
+    width: 1rem;
+    border-radius: 25% / 50%;
+  }
+
+  /* Video card Sección */
+
+  .video-js button {
+    color: var(--color-cuatro);
+  }
+
+  .video-js .vjs-control-bar {
+    background-color: #ffffff;
+    border: solid 1px var(--color-dos);
+    border-radius: 5px;
+  }
+
+  .video-js .vjs-volume-level {
+    background-color: var(--color-cuatro);
+  }
+
+  .video-js .vjs-progress-control .vjs-progress-holder {
+    color: var(--color-cuatro)
+  }
+
+  .video-js .vjs-big-play-button {
+    font-size: 3.5em;
+    height: 1.8em;
+    line-height: 1.8em;
+    background-color: var(--color-uno);
+  }
+
+  .vjs-progress-control .vjs-control {
+    background-color: var(--color-cuatro);
+  }
+
+  /* Sección footer */
+
+  .Secction_footer_Diego_pardo {
+    margin-top: 100px;
+  }
+
+  .Section_footer_Diego_body {
+    background: rgb(6, 83, 175);
+    background: linear-gradient(180deg,
+        rgba(6, 83, 175, 1) 4%,
+        rgba(2, 41, 88, 1) 41%,
+        rgba(0, 35, 75, 1) 55%);
+  }
+
+  .Section_footer_Diego_body_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Section_footer_Diego_body_title_p {
+    background: linear-gradient(180deg,
+        #02397a 16.98%,
+        #001c3d 75.31%,
+        #001c3d 100%);
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 30px;
+  }
+
+  .Section_footer_Diego_body_network {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Section_footer_Diego_body_network_Instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 166px;
+  }
+
+  .Section_footer_Diego_body_network_Whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 190px;
+  }
+
+  .Section_footer_Diego_body_network_facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+  }
+
+  .Section_footer_Diego_body_network_instagram_p {
+    color: #ffffff;
+    margin-top: 12px;
+    font-family: 'Lato';
+    font-style: normal;
+
+  }
+
+  .Section_footer_Diego_body_network_whatsapp_p {
+    color: #ffffff;
+    margin-top: 12px;
+    font-family: 'Lato';
+    font-style: normal;
+  }
+
+  .Section_footer_Diego_body_network_facebook_p {
+    color: #ffffff;
+    margin-top: 12px;
+    font-family: 'Lato';
+    font-style: normal;
+  }
+
+  .Section_footer_Diego_body_network_Instagram_button {
+    background-image: url("/Image/Instagram_logo.png");
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+    margin-right: 12px;
+  }
+
+  .Section_footer_Diego_body_network_button_whatsapp {
+    background-image: url("/Image/WhatsApp_logo.png");
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    background-size: 89%;
+    margin-right: 12px;
+  }
+
+  .Section_footer_Diego_body_network_facebook_button {
+    background-image: url("/Image/Facebook_logo.png");
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    background-size: 89%;
+    margin-right: 12px;
+  }
+
+  .Section_footer_Diego_body_network_line {
+    background-color: rgba(250, 251, 251, 1);
+    border: none;
+    height: 1px;
+    margin: 10px 10px;
+    margin-left: 183px;
+    margin-right: 183px;
+    margin-top: 40px;
+  }
+}
