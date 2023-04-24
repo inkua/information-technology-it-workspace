@@ -313,18 +313,32 @@
   background-color: white;
   color: #004eaa;
 }
-
+#toTop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+ 
+}
 .About-Us-Diego-Pardo-button {
+  
   padding-top: 400px;
   padding-right: 20px;
+
+
 }
 
 .About-Us-Diego-Pardo-button-buton {
+  border: 2px solid #004eaa;
   background-image: url("/Image/boton_chatbot.png");
   border-radius: 100px;
   width: 70px;
   height: 70px;
   background-size: 110%;
+  font-size: 40px;
+  box-shadow: 2px 3px 4px -2px #131313;
+  
 }
 
 /* Sección Patrons */

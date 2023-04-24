@@ -46,6 +46,11 @@
     <!-- JavaScript -->
     <script defer src="./js/carousel.js"></script>
 
+    
+<!------ Scroll button chatbot ---------->
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
 </head>
 
 <body>
@@ -65,7 +70,7 @@
                         <div class="navbar-nav ms-auto">
                             <a class="nav-link navbar-link navbar-home" href="#">Home</a>
                             <a class="nav-link navbar-link navbar-about-us" href="./about-us.html">About us</a>
-                            <button type="button" class="btn btn-primary navbar-need-help">Need help?</button>
+                            <a href="./need-help.html" class="btn btn-primary navbar-need-help">Need help?</a>
                             <button type="button" class="btn btn-warning navbar-donate">DONATE</button>
                         </div>
                     </div>
@@ -138,14 +143,21 @@
 
         <!-- Sección Diego Pardo - About Us Image-->
         <section class="About-Us-Diego-Pardo-Image">
+           
             <img class="About-Us-Diego-Pardo-Image_imagen" src="Image/Image-about-us.png" alt="About_us">
         </section>
 
         <!-- Sección Diego Pardo - About Us button-->
+       
         <section class="About-Us-Diego-Pardo-button">
-            <button class="About-Us-Diego-Pardo-button-buton"></button>
+            
+            <div id="toTop">  
+                <button class="About-Us-Diego-Pardo-button-buton">👋</button>
+            </div>
 
         </section>
+      
+
 
     </section>
 
@@ -319,6 +331,26 @@
         </section>
     </footer>
 
+
+
 </body>
 
+
 </html>
+
+<script>
+$(document).ready(function(){
+      $('body').append('<div id="toTop" class="About-Us-Diego-Pardo-button-buton"></div>');
+    	$(window).scroll(function () {
+			if ($(this).scrollTop() != 0) {
+				$('#toTop').fadeIn();
+			} else {
+				$('#toTop').fadeOut();
+			}
+		}); 
+    $('#toTop').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
+</script>
