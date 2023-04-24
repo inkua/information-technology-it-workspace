@@ -100,7 +100,8 @@
 .home-title img {
   z-index: -1;
   position: relative;
-  background: rgba(0, 41, 177, 0.979);
+  background: rgb(0, 33, 139);
+  width: 100%;
 }
 
 .home-textos {
@@ -146,10 +147,10 @@
 /* efecto wave*/
 
 .wave-home {
+  position: absolute;
   width: 100%;
   height: 50%;
-  position: absolute;
-  margin-top: -550px;
+  top: 780px;
 
 }
 
@@ -161,8 +162,7 @@
 .about-us-imagen img {
   z-index: -1;
   position: relative;
-  background: rgba(0, 52, 125, 0.75);
-
+  background: rgba(0, 6, 97, 0.884);
 }
 
 .about-us-text {
@@ -512,7 +512,7 @@
   margin-left: 183px;
   margin-right: 183px;
   margin-top: 40px;
-=======
+}
 @media (max-width: 767px) {
   
 }
