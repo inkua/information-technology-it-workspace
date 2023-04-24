@@ -3,7 +3,6 @@
 .navbar-contenedor-principal {
   background-color: var(--color-dos);
   height: 0;
-
 }
 
 .navbar-brand-logo {
@@ -100,8 +99,23 @@
 .home-title img {
   z-index: -1;
   position: relative;
-  background: rgb(0, 33, 139);
+  background: #02397A;
   width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+}
+
+
+.header-background-mascara-home{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 900px;
+  background: #02397A;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: -2;
+  mix-blend-mode: multiply;
 }
 
 .home-textos {
@@ -146,12 +160,11 @@
 
 /* efecto wave*/
 
-.wave-home {
+.wave-home{
   position: absolute;
   width: 100%;
-  height: 50%;
-  top: 780px;
-
+  height: 200px;
+  top: 750px;
 }
 
 
@@ -513,9 +526,8 @@
   margin-right: 183px;
   margin-top: 40px;
 }
-@media (max-width: 767px) {
-  
-}
+
+@media (max-width: 767px) {}
 
 /* ################ MEDIA QUERY - Tablet and Desktop - ################ */
 
@@ -526,22 +538,22 @@
     background-color: var(--color-dos);
   }
 
-  .navbar-brand-logo{
+  .navbar-brand-logo {
     left: 100px;
   }
 
-  .navbar-brand-logo{
+  .navbar-brand-logo {
     left: 100px;
   }
 
   .navbar-contenedor {
-    padding-top: 20px; 
-    
+    padding-top: 20px;
+
   }
 
   .bg-body-tertiary {
     --bs-bg-opacity: 0;
-    
+
   }
 
   .navbar-titulo {
@@ -550,7 +562,7 @@
     color: var(--color-uno);
   }
 
-  .navbar-logo{
+  .navbar-logo {
     margin-left: var(--margin-left)
   }
 
@@ -620,17 +632,17 @@
     z-index: -1;
     position: relative;
     background: rgba(0, 52, 125, 0.75);
-    
+
   }
 
-  .about-us-text{
-  width: 40%;
-  position: relative;
-  bottom: 500px;
-  left: 180px;
+  .about-us-text {
+    width: 40%;
+    position: relative;
+    bottom: 500px;
+    left: 180px;
   }
 
-  .about-us-titulo{
+  .about-us-titulo {
     color: var(--color-tres);
     font-size: 100px;
     font-weight: 700;
@@ -640,14 +652,15 @@
   }
 
 
-  .about-us-parrafo{
+  .about-us-parrafo {
     color: #ffffff;
     font-size: 25px;
     font-family: 'Poppins';
     text-shadow: 0 0 5px #000000;
 
   }
-  .about-us-parrafo strong{
+
+  .about-us-parrafo strong {
     font-size: 27px;
     font-weight: bold;
   }
@@ -655,7 +668,7 @@
 
   /* efecto wave*/
 
-  .wave{
+  .wave {
     width: 100%;
     height: 50%;
     position: absolute;
@@ -663,7 +676,7 @@
 
   }
 
-  .wave-1{
+  .wave-1 {
     height: 100%;
     width: 100%;
     position: relative;
@@ -671,34 +684,34 @@
     background-image: url(../Image/wave2.svg);
   }
 
-  .about-us-history-container{
+  .about-us-history-container {
     display: flex;
     justify-content: center;
     margin-bottom: 150px;
   }
 
-  .about-us-history{
+  .about-us-history {
     width: 30%;
     margin-left: 50px;
 
   }
 
-  .about-us-history p{
+  .about-us-history p {
     font-size: 1rem;
     text-align: justify;
   }
 
-  .about-us-history img{
+  .about-us-history img {
     width: 423px;
     height: 435px;
   }
 
-  .history-titulo{
+  .history-titulo {
     margin-left: 20%;
   }
 
-  .circulo{
-  
+  .circulo {
+
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -710,7 +723,8 @@
     right: 50px;
     top: 1500px;
   }
-  .emoji-saludar{
+
+  .emoji-saludar {
     font-size: 50px;
 
   }
