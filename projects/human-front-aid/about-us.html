@@ -100,6 +100,57 @@
                   DONATE
                 </button>
               </div>
+    <!------ Scroll button chatbot ---------->
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+
+        <!-- SECCIÓN NAVBAR -->
+        <div class="navbar-contenedor-principal">
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+                <!-- Contenedor del Navbar -->
+
+                <div class="container-fluid navbar-contenedor">
+
+                    <!-- Logo -->
+                    <img class="navbar-brand navbar-logo" src="Image/logo.png" alt="">
+
+                    <!-- Título -->
+                    <a class="navbar-brand navbar-titulo" href="./index.html">Human Front Aid</a>
+
+                    <!-- Opciones de Navegación -->
+                    <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link navbar-link navbar-home" href="./index.html">Home</a>
+                            <a class="nav-link navbar-link navbar-about-us" href="./about-us.html">About us</a>
+                          
+                            <a href="./need-help.html" class="btn btn-primary navbar-need-help">Need help?</a>
+                   
+                            <button type="button" class="btn btn-warning navbar-donate">DONATE</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Sección de Idiomas -->
+            <div class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid contenedor-idiomas">
+
+                    <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+                            <!-- Opción Ukrania -->
+                            <button type="button" class="btn btn-primary navbar-ikp">IKP</button>
+                            <!-- Opción Inglés -->
+                            <button type="button" class="btn btn-warning navbar-en">EN</button>
+                        </div>
+                    </div>
+                </div>
             </div>
           </div>
         </nav>
@@ -212,6 +263,12 @@
           </p>
         </div>
       </div>
+        <div id="toTop">  
+        <div class="circulo">
+         
+            <div class="emoji-saludar">👋</div>
+            </div>
+        </div>
     </section>
 
     <!-- SECCIÓN FOOTER -->
@@ -284,3 +341,35 @@
     </footer>
   </body>
 </html>
+
+</body>
+
+</html>
+<style>
+    
+#toTop{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+      $('body').append('<div id="toTop" class="emoji-saludar"></div>');
+    	$(window).scroll(function () {
+			if ($(this).scrollTop() != 0) {
+				$('#toTop').fadeIn();
+			} else {
+				$('#toTop').fadeOut();
+			}
+		}); 
+    $('#toTop').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
+</script>
+

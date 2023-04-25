@@ -48,7 +48,7 @@
     color: var(--color-uno);
   }
 
-  .navbar-about-us {
+  .navbar-need-help {
     margin-right: 61px;
   }
 
@@ -100,11 +100,11 @@
 
   /*Seccion About Us que contiene la imagen de fondo*/
 
-  .about-us-div {
+  .need-help-div {
     height: 800px;
   }
 
-  .about-us-imagen img {
+  .need-help-imagen img {
     z-index: -1;
     position: relative;
     background: #02397A;
@@ -125,14 +125,14 @@
     mix-blend-mode: multiply;
   }
 
-  .about-us-text {
+  .need-help-text {
   width: 40%;
   position: relative;
   bottom: 500px;
   left: 180px;
   }
 
-  .about-us-titulo {
+  .need-help-titulo {
     color: var(--color-tres);
     font-size: 100px;
     font-weight: 700;
@@ -140,14 +140,14 @@
     text-shadow: 0 0 5px #000000;
   }
 
-  .about-us-parrafo{
+  .need-help-parrafo{
     color: #ffffff;
     font-size: 25px;
     font-family: 'Poppins';
     text-shadow: 0 0 5px #000000;
   }
 
-  .about-us-parrafo strong{
+  .need-help-parrafo strong{
     font-size: 27px;
     font-weight: bold;
   }
@@ -160,24 +160,24 @@
     top: 650px;
   }
 
-  .about-us-history-container{
+  .need-help-history-container{
     display: flex;
     justify-content: center;
     margin-bottom: 150px;
   }
 
-  .about-us-history{
+  .need-help-history{
     width: 30%;
     margin-left: 50px;
 
   }
 
-  .about-us-history p{
+  .need-help-history p{
     font-size: 1rem;
     text-align: justify;
   }
 
-  .about-us-history img{
+  .need-help-history img{
     width: 423px;
     height: 435px;
   }
@@ -207,13 +207,13 @@
 
 
   /* Sección About_us */
-  .About-Us-Diego-Pardo {
+  .need-help-Diego-Pardo {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .About-Us-Diego-Pardo-texto {
+  .need-help-Diego-Pardo-texto {
     padding-left: 170px;
     padding-right: 54px;
     padding-top: 100px;
@@ -225,18 +225,18 @@
     align-items: last baseline;
   }
 
-  .About-Us-Diego-Pardo-Image {
+  .need-help-Diego-Pardo-Image {
     padding-right: 170px;
     padding-left: 54px;
     padding-top: 80px;
   }
 
-  .About-Us-Diego-Pardo-Image_imagen {
+  .need-help-Diego-Pardo-Image_imagen {
     width: 450px;
     height: 350px;
   }
 
-  .About-Us-Diego-Pardo-texto_buton {
+  .need-help-Diego-Pardo-texto_buton {
     border: 2px solid #004eaa;
     padding: 12px 21px;
     border-radius: 8px;
@@ -248,12 +248,12 @@
     
   }
 
-  .About-Us-Diego-Pardo-button {
+  .need-help-Diego-Pardo-button {
     padding-top: 400px;
     padding-right: 20px;
   }
 
-  .About-Us-Diego-Pardo-button-buton {
+  .need-help-Diego-Pardo-button-buton {
     background-image: url("/Image/boton_chatbot.png");
     border-radius: 100px;
     width: 70px;
