@@ -25,6 +25,7 @@
     <!-- JQuery v3.6.4 -->
     <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <script src="./js/chatbot.js"></script>
 
     <!-- JavaScript -->
     <script defer src="./js/carousel.js"></script>
@@ -48,8 +49,9 @@
 
     
 <!------ Scroll button chatbot ---------->
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="./js/chatbot.js"></script>
 
 </head>
 
@@ -154,7 +156,6 @@
             <div id="toTop">  
                 <button class="About-Us-Diego-Pardo-button-buton">👋</button>
             </div>
-
         </section>
       
 
@@ -338,19 +339,3 @@
 
 </html>
 
-<script>
-$(document).ready(function(){
-      $('body').append('<div id="toTop" class="About-Us-Diego-Pardo-button-buton"></div>');
-    	$(window).scroll(function () {
-			if ($(this).scrollTop() != 0) {
-				$('#toTop').fadeIn();
-			} else {
-				$('#toTop').fadeOut();
-			}
-		}); 
-    $('#toTop').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, 600);
-        return false;
-    });
-});
-</script>
