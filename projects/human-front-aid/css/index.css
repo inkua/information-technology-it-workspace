@@ -315,7 +315,7 @@
 }
 #toTop {
   position: fixed;
-  bottom: 10px;
+  bottom: 350px;
   right: 10px;
   cursor: pointer;
   display: none;
@@ -330,7 +330,7 @@
 }
 
 .About-Us-Diego-Pardo-button-buton {
-  border: 2px solid #004eaa;
+  border: 5px solid #004eaa;
   background-image: url("/Image/boton_chatbot.png");
   border-radius: 100px;
   width: 70px;

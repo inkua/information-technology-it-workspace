@@ -347,29 +347,3 @@
 </html>
 <style>
     
-#toTop{
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    cursor: pointer;
-    display: none;
-}
-</style>
-
-<script>
-$(document).ready(function(){
-      $('body').append('<div id="toTop" class="emoji-saludar"></div>');
-    	$(window).scroll(function () {
-			if ($(this).scrollTop() != 0) {
-				$('#toTop').fadeIn();
-			} else {
-				$('#toTop').fadeOut();
-			}
-		}); 
-    $('#toTop').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, 600);
-        return false;
-    });
-});
-</script>
-
