@@ -418,6 +418,16 @@
   border-radius: 25% / 50%;
 }
 
+/* Secciión supporters */
+
+.text-supporters{
+  text-decoration: none;
+}
+
+#row-supporters{
+  padding-top: 50px;
+}
+
 /* Sección footer */
 
 .Secction_footer_Diego_pardo {
