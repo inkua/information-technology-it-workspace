@@ -1,22 +1,18 @@
 
-$(document).ready(function(){
-      $('body').append('<div id="toTop" class="About-Us-Diego-Pardo-button-buton"></div>');
-    	
-      $(window).scroll(function () {
-			if ($(this).scrollTop() != 0) {
-    $( "#toTop" ).fadeIn( "slow", function() {
+$(function(){
+  $('<div>', { id: 'toTop', class: 'About-Us-Diego-Pardo-button-buton' }).appendTo('body');
   
-    $('#toTop').fadeOut(7000);
+  $(window).scroll(function () {
+    if ($(this).scrollTop() != 0) {
+      $( "#toTop" ).fadeIn( "slow", function() {
+        $('#toTop').fadeOut(5000);
+      });
+    } else {
+      $('#toTop').fadeIn();
+    }   
   });
-			} else {
-				$('#toTop').fadeIn();
-			}
-			
-		});
-    $('#toTop').click(function(){
-        $("html, body").animate({ scrollTop: 0 },600);
-        return false;
-    });
+  $('#toTop').click(function(){
+    $("html, body").animate({ scrollTop: 0 },600);
+    return false;
+  });
 });
-
-

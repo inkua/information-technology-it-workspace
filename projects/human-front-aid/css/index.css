@@ -265,6 +265,7 @@
   position: absolute;
   right: 50px;
   top: 1500px;
+  
 }
 
 .emoji-saludar {
@@ -296,6 +297,8 @@
   padding-right: 170px;
   padding-left: 54px;
   padding-top: 80px;
+  
+
 }
 
 .About-Us-Diego-Pardo-Image_imagen {
@@ -312,6 +315,7 @@
   height: 48px;
   background-color: white;
   color: #004eaa;
+  background-color: #004eaa;
 }
 #toTop {
   position: fixed;
@@ -330,14 +334,15 @@
 }
 
 .About-Us-Diego-Pardo-button-buton {
-  border: 5px solid #004eaa;
-  background-image: url("/Image/boton_chatbot.png");
+  border: 2px solid #004eaa;
+  background-image: url("../Image/boton_chatbot.png");
   border-radius: 100px;
   width: 70px;
   height: 70px;
   background-size: 110%;
   font-size: 40px;
   box-shadow: 2px 3px 4px -2px #131313;
+  
   
 }
 
@@ -1041,4 +1046,12 @@
     margin-top: 40px;
   }
 
+}
+
+
+@media (max-width: 2500px) {
+
+  .About-Us-Diego-Pardo-button-buton{
+    background-image: url(../Image/boton_chatbot.png);
+  }
 }
