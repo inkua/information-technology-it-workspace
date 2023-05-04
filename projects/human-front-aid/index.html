@@ -25,11 +25,11 @@
     <!-- JQuery v3.6.4 -->
     <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <script src="./js/chatbot.js"></script>
 
     <!-- JavaScript -->
     <script defer src="./js/carousel.js"></script>
     <script defer src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-    
     <!-- VideoJS -->
     <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
     <script defer src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
@@ -48,8 +48,9 @@
 
     
 <!------ Scroll button chatbot ---------->
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="./js/chatbot.js"></script>
 
 </head>
 
@@ -65,7 +66,6 @@
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid navbar-contenedor">
                     <img src="Image/logo.png">
-                    <img class="navbar-brand navbar-logo" src="Image/logo.png" alt="">
                     <a class="navbar-brand navbar-titulo" href="./index.html">Human Front Aid</a>
                     <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
@@ -108,16 +108,14 @@
             </div>
         </section>
 
+         <!-- Máscara de filtro azul -->
+
+      <div class="header-background-mascara-home"></div>
+        
         <!-- Inicio efecto wave-->
-        <div class="wave-home">
-            <div style="height: 150px; overflow: hidden;" >
-                <div style="height: 150px; overflow: hidden;" >
-                    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                        <path d="M-6.77,81.22 C152.37,-134.90 385.44,168.05 502.82,-4.63 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffffff;"></path>
-                    </svg>
-                </div>
-            </div>
-        </div>
+
+            <img class="wave-home" src="Image/wave.png" alt="">
+
         <!-- Fin efecto wave-->
 
     </header>
@@ -157,7 +155,6 @@
             <div id="toTop">  
                 <button class="About-Us-Diego-Pardo-button-buton">👋</button>
             </div>
-
         </section>
       
 
@@ -285,6 +282,110 @@
         </div>
     </div>
 
+    <!--SECCIÓN SUPPORTERS -->
+
+    <div class="tittle-supporters">
+        <h3> <strong> Supporters</strong></h3>
+    </div>
+
+    <div id="row-supporters" class="row">
+        <div class="col-3 offset-2">
+            <div id="card-supporters" class="card">
+                <div class="row g-0">
+
+                    <div class="col-md-3">
+                        <img src="./img/hotelodessa.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body text-center text">
+                            <a class="text-supporters" href="https://bristol-hotel.com.ua/"><h5><strong>Bristol Hotel  <br> Odessa</h5></strong></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3 ">
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <img src="./img/oldoak.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body text-center">
+                            <a class="text-supporters" href="https://www.instagram.com/enoteca.old_oak/"><h5><strong>Old Oak   <br> wine & more</strong></h5></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3">
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <img src="./img/salsasalat.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body text-center">
+                            <a class="text-supporters" href="https://www.salatundsandwich.ch/"><h5><strong>Salsa   <br> Salat & Sandwich</strong></h5></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="row-supporters" class="row">
+        <div class="col-3 offset-2">
+            <div class="card">
+                <div class="row g-0">
+
+                    <div class="col-md-3">
+                        <img src="./img/fourtwenty.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body text-center text">
+                            <a class="text-supporters" href="fourtwenty.ch"><h5><strong>Fourtwenty <br> fourtwenty.ch </strong></h5></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3 ">
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <img src="./img/amanahair.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body text-center">
+                            <a class="text-supporters" href="www.amana-hair.ch/"><h5><strong>Amana   <br> amana hair</strong></h5></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3">
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <img src="./img/rotary1980.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body text-center">
+                            <a class="text-supporters" href="rotary1980.ch"><h5><strong>Rotary  <br> distrikt 1980</strong></h5></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- SECCIÓN FOOTER -->
 
     <!-- SECCIÓN FOOTER -->
@@ -334,19 +435,3 @@
 </body>
 </html>
 
-<script>
-$(document).ready(function(){
-      $('body').append('<div id="toTop" class="About-Us-Diego-Pardo-button-buton"></div>');
-    	$(window).scroll(function () {
-			if ($(this).scrollTop() != 0) {
-				$('#toTop').fadeIn();
-			} else {
-				$('#toTop').fadeOut();
-			}
-		}); 
-    $('#toTop').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, 600);
-        return false;
-    });
-});
-</script>
