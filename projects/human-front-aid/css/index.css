@@ -422,11 +422,22 @@
 
 .text-supporters{
   text-decoration: none;
+  font-family: var(--font-family-lato);
+  color: var(--color-dos);
 }
 
 #row-supporters{
   padding-top: 50px;
+  margin: 0px;
 }
+
+.tittle-supporters {
+  margin-left: var(--margin-left);
+  font-family: var(--font-family-lato);
+  color: var(--color-dos);
+  margin-top: 4rem;
+}
+
 
 /* Sección footer */
 
