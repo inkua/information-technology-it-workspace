@@ -439,18 +439,20 @@
 }
 
 
-/* Sección footer */
+/* Sección footer - Mobile */
 
-.footer-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.footer_container{
+  background-color: #001C3D;
+  height: 129px;;
+}
+
+.footer_body{
   background-color: #001C3D;
   height: 129px;
 }
 
-.footer-container a,
-.footer-container p{
+.footer_body a,
+.footer_body p{
   text-decoration:none;
   color: #FAFAFB;
 }
@@ -460,7 +462,7 @@
   display: flex;
   justify-content: flex-start;
   padding-left: .7em;
-  margin-bottom: 3em;
+  
 }
 
 .footer_redsocial img{
@@ -520,6 +522,10 @@
   border-radius: .5em;
   width: 163px;
   height: 48px;
+
+  /* estilos provisionales, quitar al hacer el "Mobile": position y top */
+  position: relative;
+  top: 4em;
 }
 
 .footer_routes_navigation div:nth-child(3) a,
@@ -911,18 +917,24 @@
     background-color: var(--color-cuatro);
   }
 
-/* Section footer*/
+/* Section footer - Desktop*/
+  .footer_container{
+    background-color: #001C3D;
+    height: 357px;
+  }
 
-  .footer-container{
+  .footer_body{
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #001C3D;
     height: 357px;
+    max-width: 95vw;
+    margin: 0 auto;
   }
 
-  .footer-container a,
-  .footer-container p{
+  .footer_body a,
+  .footer_body p{
     text-decoration:none;
     color: #FAFAFB;
   }
@@ -930,11 +942,11 @@
 
   .footer_redsocial{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-left: .7em;
     position: relative;
     top: 2em;
-    
+    margin-bottom: 3em;
   }
 
   .footer_redsocial img{
@@ -955,7 +967,7 @@
 
   .footer_routes{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     top: 1em;
@@ -998,6 +1010,7 @@
   .footer_routes_navigation {
     display: flex;
     flex-direction:row;
+    
     position: relative;
     bottom: .6em;
   }
@@ -1007,6 +1020,11 @@
     display: flex;
     align-items: center;
     border-radius: .5em;
+
+    /* estilos provisionales, quitar al hacer el "Mobile": position y top */
+    position:relative;
+    top: 0;
+    /**/
   }
 
   .footer_routes_navigation div:nth-child(3) a,
