@@ -457,7 +457,6 @@
   color: #FAFAFB;
 }
 
-
 .footer_redsocial{
   display: flex;
   justify-content: flex-start;
@@ -505,14 +504,12 @@
   display: none;
 }
 
-
 .footer_routes_navigation {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   bottom: 5em;
-  
 }
 
 .footer_routes_navigation div:nth-child(3),
@@ -917,7 +914,8 @@
     background-color: var(--color-cuatro);
   }
 
-/* Section footer - Desktop*/
+
+/* Section footer - Desktop */
   .footer_container{
     background-color: #001C3D;
     height: 357px;
@@ -938,7 +936,6 @@
     text-decoration:none;
     color: #FAFAFB;
   }
-
 
   .footer_redsocial{
     display: flex;
@@ -993,16 +990,22 @@
     padding-left: .3em;
   }
 
-  .footer_routes_navigation div:nth-child(1){
-    display:block;
+  .footer_routes_container_home_navigation{
+    display: flex;
+    justify-content: space-between;
+    min-width: 51vw;
   }
 
-  .footer_routes_navigation div:nth-child(1) a:nth-child(1){
-    padding-right: 1vw;
+  .footer_routes_home-aboutUs {
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  .footer_routes_navigation div:nth-child(1),
-  .footer_routes_navigation div:nth-child(2){
+  .footer_routes_home-aboutUs a:nth-child(1){
+    padding-right: 3vw;
+  }
+
+  .footer_routes_home-aboutUs div:nth-child(1){
     position: relative;
     bottom: 0em;
   }
@@ -1010,8 +1013,6 @@
   .footer_routes_navigation {
     display: flex;
     flex-direction:row;
-    
-    position: relative;
     bottom: .6em;
   }
 
@@ -1033,7 +1034,7 @@
     align-items: center;
     justify-content: center;
     width: 163px;
-    height: 48px;
+    height: 48px; 
   }
 
   .footer_routes_navigation div:nth-child(3) {
