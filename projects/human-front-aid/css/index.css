@@ -439,130 +439,115 @@
 }
 
 
-/* Sección footer */
+/* Sección footer - Mobile */
 
-.Secction_footer_Diego_pardo {
-  margin-top: 100px;
+.footer_container{
+  background-color: #001C3D;
+  height: 129px;;
 }
 
-.Section_footer_Diego_body {
-  background: rgb(6, 83, 175);
-  background: linear-gradient(180deg,
-      rgba(6, 83, 175, 1) 4%,
-      rgba(2, 41, 88, 1) 41%,
-      rgba(0, 35, 75, 1) 55%);
+.footer_body{
+  background-color: #001C3D;
+  height: 129px;
 }
 
-.Section_footer_Diego_body_title {
+.footer_body a,
+.footer_body p{
+  text-decoration:none;
+  color: #FAFAFB;
+}
+
+.footer_redsocial{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: .7em;
+  
+}
+
+.footer_redsocial img{
+  cursor: pointer;
+  margin-right:2em;
+}
+
+.footer_redsocial a{
+  display: none;
+}
+
+.footer_routes{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3em;
+}
+
+.footer_routes_logo{
+  display: flex;
+  align-items: center;
+  margin-right: 1vw;
+  position: relative;
+  bottom: .1em;
+}
+
+.footer_routes_logo img{
+  width: 70px;
+  height: 70px;
+  position: relative;
+  bottom: .2em;
+}
+
+.footer_routes_logo p{
+  font-weight: bold;
+  padding-left: .3em;
+}
+
+.footer_routes_navigation div:nth-child(1){
+  display: none;
+}
+
+.footer_routes_navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 5em;
+}
+
+.footer_routes_navigation div:nth-child(3),
+.footer_routes_navigation div:nth-child(4){
+  display: flex;
+  align-items: center;
+  border-radius: .5em;
+  width: 163px;
+  height: 48px;
+
+  /* estilos provisionales, quitar al hacer el "Mobile": position y top */
+  position: relative;
+  top: 4em;
+}
+
+.footer_routes_navigation div:nth-child(3) a,
+.footer_routes_navigation div:nth-child(4) a{
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 163px;
+  height: 48px;
 }
 
-.Section_footer_Diego_body_title_p {
-  background: linear-gradient(180deg,
-      #02397a 16.98%,
-      #001c3d 75.31%,
-      #001c3d 100%);
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  background-clip: text;
-  color: transparent;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding-top: 30px;
+.footer_routes_navigation div:nth-child(3) {
+  border:3px solid #FAFAFB;
+  margin-right: 1em;
+  margin-left: 3vw;
 }
 
-.Section_footer_Diego_body_network {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.footer_routes_navigation div:nth-child(4){
+  background-color: #FFD500;
 }
 
-.Section_footer_Diego_body_network_Instagram {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-right: 166px;
+.footer_routes_navigation div:nth-child(4) a{
+  font-weight: bold;
+  color: #02397A;
 }
-
-.Section_footer_Diego_body_network_Whatsapp {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 100px;
-  padding-right: 190px;
-}
-
-.Section_footer_Diego_body_network_facebook {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 100px;
-}
-
-.Section_footer_Diego_body_network_instagram_p {
-  color: #ffffff;
-  margin-top: 12px;
-  font-family: 'Lato';
-  font-style: normal;
-
-}
-
-.Section_footer_Diego_body_network_whatsapp_p {
-  color: #ffffff;
-  margin-top: 12px;
-  font-family: 'Lato';
-  font-style: normal;
-}
-
-.Section_footer_Diego_body_network_facebook_p {
-  color: #ffffff;
-  margin-top: 12px;
-  font-family: 'Lato';
-  font-style: normal;
-}
-
-.Section_footer_Diego_body_network_Instagram_button {
-  background-image: url("/Image/Instagram_logo.png");
-  border-radius: 5px;
-  width: 30px;
-  height: 30px;
-  background-size: 100%;
-  margin-right: 12px;
-}
-
-.Section_footer_Diego_body_network_button_whatsapp {
-  background-image: url("/Image/WhatsApp_logo.png");
-  border-radius: 100px;
-  width: 30px;
-  height: 30px;
-  background-size: 89%;
-  margin-right: 12px;
-}
-
-.Section_footer_Diego_body_network_facebook_button {
-  background-image: url("/Image/Facebook_logo.png");
-  border-radius: 100px;
-  width: 30px;
-  height: 30px;
-  background-size: 89%;
-  margin-right: 12px;
-}
-
-.Section_footer_Diego_body_network_line {
-  background-color: rgba(250, 251, 251, 1);
-  border: none;
-  height: 1px;
-  margin: 10px 10px;
-  margin-left: 183px;
-  margin-right: 183px;
-  margin-top: 40px;
-}
-
-@media (max-width: 767px) {}
 
 /* ################ MEDIA QUERY - Tablet and Desktop - ################ */
 
@@ -929,127 +914,143 @@
     background-color: var(--color-cuatro);
   }
 
-  /* Sección footer */
 
-  .Secction_footer_Diego_pardo {
-    margin-top: 100px;
+/* Section footer - Desktop */
+  .footer_container{
+    background-color: #001C3D;
+    height: 357px;
   }
 
-  .Section_footer_Diego_body {
-    background: rgb(6, 83, 175);
-    background: linear-gradient(180deg,
-        rgba(6, 83, 175, 1) 4%,
-        rgba(2, 41, 88, 1) 41%,
-        rgba(0, 35, 75, 1) 55%);
+  .footer_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #001C3D;
+    height: 357px;
+    max-width: 95vw;
+    margin: 0 auto;
   }
 
-  .Section_footer_Diego_body_title {
+  .footer_body a,
+  .footer_body p{
+    text-decoration:none;
+    color: #FAFAFB;
+  }
+
+  .footer_redsocial{
+    display: flex;
+    justify-content: space-between;
+    padding-left: .7em;
+    position: relative;
+    top: 2em;
+    margin-bottom: 3em;
+  }
+
+  .footer_redsocial img{
+    cursor: pointer;
+    margin-right:0;
+  }
+  
+  .footer_redsocial a{
+    display: inline-block;
+    padding-left: 1em;
+  }
+
+  .footer_linea {
+    border-bottom: solid .1px #FAFAFB;
+    position: relative;
+    top: 1.5em;
+  }
+
+  .footer_routes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 1em;
+  }
+
+  .footer_routes_logo{
+    display: flex;
+    align-items: center;
+    margin-right: 1vw;
+    position: relative;
+    bottom: .1em;
+  }
+
+  .footer_routes_logo img{
+    width:91px;
+    height:104px;
+    position: relative;
+    bottom: .2em;
+  }
+
+  .footer_routes_logo p{
+    font-weight: bold;
+    padding-left: .3em;
+  }
+
+  .footer_routes_container_home_navigation{
+    display: flex;
+    justify-content: space-between;
+    min-width: 51vw;
+  }
+
+  .footer_routes_home-aboutUs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer_routes_home-aboutUs a:nth-child(1){
+    padding-right: 3vw;
+  }
+
+  .footer_routes_home-aboutUs div:nth-child(1){
+    position: relative;
+    bottom: 0em;
+  }
+
+  .footer_routes_navigation {
+    display: flex;
+    flex-direction:row;
+    bottom: .6em;
+  }
+
+  .footer_routes_navigation div:nth-child(3),
+  .footer_routes_navigation div:nth-child(4){
+    display: flex;
+    align-items: center;
+    border-radius: .5em;
+
+    /* estilos provisionales, quitar al hacer el "Mobile": position y top */
+    position:relative;
+    top: 0;
+    /**/
+  }
+
+  .footer_routes_navigation div:nth-child(3) a,
+  .footer_routes_navigation div:nth-child(4) a{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 163px;
+    height: 48px; 
   }
 
-  .Section_footer_Diego_body_title_p {
-    background: linear-gradient(180deg,
-        #02397a 16.98%,
-        #001c3d 75.31%,
-        #001c3d 100%);
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding-top: 30px;
+  .footer_routes_navigation div:nth-child(3) {
+    border:3px solid #FAFAFB;
+    margin-right: 1em;
+    margin-left: 3vw;
   }
 
-  .Section_footer_Diego_body_network {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .footer_routes_navigation div:nth-child(4){
+    background-color: #FFD500;
   }
 
-  .Section_footer_Diego_body_network_Instagram {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 166px;
+  .footer_routes_navigation div:nth-child(4) a{
+    font-weight: bold;
+    color: #02397A;
   }
-
-  .Section_footer_Diego_body_network_Whatsapp {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 100px;
-    padding-right: 190px;
-  }
-
-  .Section_footer_Diego_body_network_facebook {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 100px;
-  }
-
-  .Section_footer_Diego_body_network_instagram_p {
-    color: #ffffff;
-    margin-top: 12px;
-    font-family: 'Lato';
-    font-style: normal;
-
-  }
-
-  .Section_footer_Diego_body_network_whatsapp_p {
-    color: #ffffff;
-    margin-top: 12px;
-    font-family: 'Lato';
-    font-style: normal;
-  }
-
-  .Section_footer_Diego_body_network_facebook_p {
-    color: #ffffff;
-    margin-top: 12px;
-    font-family: 'Lato';
-    font-style: normal;
-  }
-
-  .Section_footer_Diego_body_network_Instagram_button {
-    background-image: url("/Image/Instagram_logo.png");
-    border-radius: 5px;
-    width: 30px;
-    height: 30px;
-    background-size: 100%;
-    margin-right: 12px;
-  }
-
-  .Section_footer_Diego_body_network_button_whatsapp {
-    background-image: url("/Image/WhatsApp_logo.png");
-    border-radius: 100px;
-    width: 30px;
-    height: 30px;
-    background-size: 89%;
-    margin-right: 12px;
-  }
-
-  .Section_footer_Diego_body_network_facebook_button {
-    background-image: url("/Image/Facebook_logo.png");
-    border-radius: 100px;
-    width: 30px;
-    height: 30px;
-    background-size: 89%;
-    margin-right: 12px;
-  }
-
-  .Section_footer_Diego_body_network_line {
-    background-color: rgba(250, 251, 251, 1);
-    border: none;
-    height: 1px;
-    margin: 10px 10px;
-    margin-left: 183px;
-    margin-right: 183px;
-    margin-top: 40px;
-  }
+ 
 
 }
