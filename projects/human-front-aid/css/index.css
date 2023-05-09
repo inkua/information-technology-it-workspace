@@ -382,7 +382,7 @@
 
 .card-imagen {
   width: 100%;
-  border-radius: 10px 0;
+  border-radius: 8px 8px 8px 8px;
 }
 
 .card-titulo {
@@ -828,6 +828,12 @@
     height: 26rem;
   }
 
+  .video-background {
+    background-image: url('./Image/Imagen0_Reto.png');
+    background-size: cover; 
+    background-position: center;
+  }
+
   .card-contenedor {
     width: 100%;
     height: 100%;
@@ -863,7 +869,9 @@
 
   .card-add {
     display: inline-block;
-    padding: 0 0 10px 15px;
+    position: absolute;
+    top: 34px;
+    right: 18px;
   }
 
   .carousel-indicators {
