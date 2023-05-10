@@ -30,6 +30,7 @@
     <!-- JavaScript -->
     <script defer src="./js/carousel.js"></script>
     <script defer src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    
     <!-- VideoJS -->
     <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
     <script defer src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
@@ -46,128 +47,176 @@
     <!-- JavaScript -->
     <script defer src="./js/carousel.js"></script>
 
-    
-<!------ Scroll button chatbot ---------->
-
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="./js/chatbot.js"></script>
-
 </head>
 
 <body>
 
-    <!-- SECCIÓN HEADER-->
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Diego N. Cabrera                                      │ -->
+    <!-- │ ► Luis Romano                                           │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
 
     <header>
-        
-        <!-- NAVBAR -->
+
+        <!--  Header - Sección Navbar  -->
 
         <div class="navbar-contenedor-principal">
+
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+                <!--  Contenedor del Navbar  -->
+
                 <div class="container-fluid navbar-contenedor">
-                    <img src="Image/logo.png">
+
+                    <!--  Logo  -->
+                    <img class="navbar-brand navbar-logo" src="./Image/logo.png" alt="">
+
+                    <!--  Título  -->
                     <a class="navbar-brand navbar-titulo" href="./index.html">Human Front Aid</a>
+
+                    <!--  Opciones de Navegación  -->
                     <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
-                            <a class="nav-link navbar-link navbar-home" href="#">Home</a>
-                            <a class="nav-link navbar-link navbar-about-us" href="./about-us.html">About us</a>
-                            <a href="./need-help.html" class="btn btn-primary navbar-need-help">Need help?</a>
+                            <a class="nav-link navbar-link navbar-home" href="./index.html">Home</a>
+                            <a class="nav-link navbar-link navbar-about-us" href="./pages/about-us.html">About us</a>
+                          
+                            <a href="./need-help.html" class="btn btn-primary navbar-need-help" href="./pages/need-help.html">Need help?</a>
+                   
                             <button type="button" class="btn btn-warning navbar-donate">DONATE</button>
                         </div>
                     </div>
                 </div>
             </nav>
 
+            <!--  Header - Sección idiomas  -->
+
             <div class="navbar navbar-expand-lg bg-body-tertiary">
+
                 <div class="container-fluid contenedor-idiomas">
 
                     <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
+
+                            <!-- Opción Ukrania -->
                             <button type="button" class="btn btn-primary navbar-ikp">IKP</button>
+                            <!-- Opción Inglés -->
                             <button type="button" class="btn btn-warning navbar-en">EN</button>
                         </div>
                     </div>
-
                 </div>
             </div>
-        </div>
 
+            <!--  Header - Sección Título  -->
 
-        <!-- Home Cabecera-->
-
-        <section class="home-title">
-            <div class="home-imagen">
-                <img src="Image/home-title.png" alt="About Us">
-            </div>
-            <div class="home-textos">
-                <h2 class="home-titulo">Human Front Aid </h2>
-                <p class="home-parrafo">Our intention is to <strong>support projects regionally and locally.</strong>
+            <div class="header-div">
+                <h2 class="header-titulo">Human Front Aid</h2>
+                <p class="header-subtitulo">
+                    Our intention is to <strong>support projects regionally and locally.</strong>
                 </p>
-                <p class="home-parrafo">People knowing the local conditions can help.</p>
+                <p class="header-subtitulo">
+                    People knowing the local conditions can help.
+                </p>
                 <button class="home-btn">Donate</button>
             </div>
-        </section>
 
-         <!-- Máscara de filtro azul -->
+            <!--  Header - Sección Backgrond  -->
+            
+            <!--  Imagen de fondo  -->
 
-      <div class="header-background-mascara-home"></div>
+            <img class="header-background-imagen" src="./Image/header-about-us.png" alt="About Us">
+
+            <!--  Máscara de filtro azul  -->
+
+            <div class="header-background-mascara"></div>
+
+            <!--  Efecto wave  -->
+
+            <img class="wave" src="./Image/wave.png" alt="" />
         
-        <!-- Inicio efecto wave-->
-
-            <img class="wave-home" src="Image/wave.png" alt="">
-
-        <!-- Fin efecto wave-->
+        </div>
 
     </header>
 
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
 
 
-    <!-- Sección Diego Pardo - About Us -->
 
-    <section class="About-Us-Diego-Pardo">
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■ INICIO CHATBOT ■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Diego N. Cabrera                                      │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
 
-        <!-- Sección Diego Pardo - About Us Texto-->
-        <section class="About-Us-Diego-Pardo-texto">
-            <p>Our intention is to support projects regionally and locally.
+    <button class="chatbot-button"></button>
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■■ FIN CHATBOT ■■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+    
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■ INICIO ABOUT-US ■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Diego Valentino Pardo Yepez                           │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+    <section class="about-us">
+
+        <!-- About Us - Sección Texto -->
+
+        <section class="about-us-texto">
+            <p>
+                Our intention is to support projects regionally and locally.
                 People knowing the local conditions can help effectively by
                 adapting to the situation on ground immediately. They know
                 best what is required at any moment, and we believe this is
-                a reassurance that the resources are used in the best way possible.</p>
-
-            <p>We will continue supporting on-going projects as long as it’s
+                a reassurance that the resources are used in the best way possible.
+            </p>
+            <p>
+                We will continue supporting on-going projects as long as it’s
                 needed. At the same time, we have all ears and eyes open for
                 new ways of supporting as directly as we can, wherever it is.
                 We find this crucial in order to stay open to new possibilities
-                of helping in the most effective manner.</p>
-            <button class="About-Us-Diego-Pardo-texto_buton">About us</button>
-        </section>
-
-        <!-- Sección Diego Pardo - About Us Image-->
-        <section class="About-Us-Diego-Pardo-Image">
-           
-            <img class="About-Us-Diego-Pardo-Image_imagen" src="Image/Image-about-us.png" alt="About_us">
-        </section>
-
-        <!-- Sección Diego Pardo - About Us button-->
-       
-        <section class="About-Us-Diego-Pardo-button">
+                of helping in the most effective manner.
+            </p>
             
-            <div id="toTop">  
-                <button class="About-Us-Diego-Pardo-button-buton">👋</button>
-            </div>
+            <button class="about-us-texto-button">About us</button>
         </section>
-      
 
+        <!-- About Us - Sección image -->
+
+        <section class="about-us-image">
+            <img class="about-us-image-imagen" src="Image/Image-about-us.png" alt="About_us">
+        </section>
 
     </section>
 
-    <!-- SECCIÓN PATRONS -->
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■ FIN ABOUT-US ■■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+    
 
-     <!-- Patrons Título -->
 
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■ INICIO PATRONS ■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Diego N. Cabrera                                      │ -->
+    <!-- │ ► Vania Belén Carlos Camones                            │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+    <!-- Patrons - Sección Título -->
     <p class="patrons-title">Patrons</p>
     
-    <!-- Patrons Carousel -->
+    <!-- Patrons - Sección Carousel -->
     <div id="carouselExampleCaptions" class="carousel">
         <div class="carousel-inner">
 
@@ -279,7 +328,17 @@
         </div>
     </div>
 
-    <!--SECCIÓN SUPPORTERS -->
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■■ FIN PATRONS ■■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■ INICIO SUPPORTERS ■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Federico Manuel Peralta                               │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
 
     <div class="tittle-supporters">
         <h3> <strong> Supporters</strong></h3>
@@ -381,11 +440,34 @@
         </div>
     </div>
 
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■ FIN SUPPORTERS ■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
 
 
-    <!-- SECCIÓN FOOTER -->
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■ INICIO PRESS-AND-NEWS ■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Luis Romano                                           │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
 
-    <!-- SECCIÓN FOOTER -->
+
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■ FIN PRESS-AND-NEWS ■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Diego Valentino Pardo Yepez                           │ -->
+    <!-- │ ► Santiago Elias Carranza                               │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
     <footer class="footer_container">
         <div class="footer_body">
 
@@ -434,6 +516,11 @@
     
         </div>
     </footer>
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
 </body>
 </html>
 

@@ -1,1064 +1,807 @@
-/* ################ MEDIA QUERY - Movile - ################ */
-
-.navbar-contenedor-principal {
-  background-color: var(--color-dos);
-  height: 0;
-}
-
-.navbar-brand-logo {
-  left: 100px;
-}
-
-.navbar-contenedor {
-  padding-top: 20px;
-  margin-left: 150px;
-
-}
-
-.bg-body-tertiary {
-  --bs-bg-opacity: 0;
-
-}
-
-.navbar-titulo {
-  margin-left: 0;
-  font-family: var(--font-family-lato);
-  color: var(--color-uno);
-}
-
-.navbar-logo {
-  margin-left: var(--margin-left);
-}
-
-.navbar-contenido {
-  font-family: var(--font-family-lato);
-  margin-right: 13.06%;
-
-}
-
-.navbar-link {
-  color: var(--color-uno);
-}
-
-.navbar-about-us {
-  margin-right: 61px;
-}
-
-.navbar-home {
-  margin-right: 24px;
-}
-
-.navbar-need-help {
-  margin-right: 16px;
-  color: var(--color-uno);
-  border: 2px solid var(--color-uno);
-  background-color: transparent;
-  border-radius: 8px;
-  padding: 0px 34px;
-}
-
-.navbar-donate {
-  color: var(--color-uno);
-  border-radius: 8px;
-  font-weight: 700;
-  color: var(--color-dos);
-  background-color: var(--color-tres);
-  padding: 0px 34px;
-}
-
-.contenedor-idiomas {
-  margin-top: 20px;
-  margin-left: 150px;
-}
-
-.navbar-ikp {
-  color: var(--color-uno);
-  border-radius: 8px 0 0 8px;
-  font-weight: 700;
-  color: rgba(0, 0, 0, 0.7);
-  background-color: var(--color-uno);
-  width: 67.742px;
-  border: 0;
-}
-
-.navbar-en {
-  color: var(--color-uno);
-  border-radius: 0 8px 8px 0;
-  font-weight: 700;
-  color: var(--color-dos);
-  background-color: var(--color-tres);
-  width: 67.742px;
-  border: 0;
-}
-
-/* Seccion Home Title */
-.home-title {
-  width: 100%;
-}
-
-.home-title img {
-  z-index: -1;
-  position: relative;
-  background: #02397A;
-  width: 100%;
-  height: 100%;
-  mix-blend-mode: multiply;
-}
-
-
-.header-background-mascara-home{
-  position: absolute;
-  width: 100%;
-  top: 0;
-  height: 900px;
-  background: #02397A;
-  border: 1px solid #000000;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  z-index: -2;
-  mix-blend-mode: multiply;
-}
-
-.home-textos {
-  width: 40%;
-  position: relative;
-  bottom: 700px;
-  left: 180px;
-}
-
-.home-titulo {
-  color: var(--color-tres);
-  font-size: 96px;
-  font-weight: 700;
-  font-family: 'Inter';
-
-}
-
-.home-parrafo {
-  color: #ffffff;
-  font-size: 25px;
-  font-family: 'Poppins';
-  text-shadow: 0 0 5px #000000;
-}
-
-.home-parrafo strong {
-  font-size: 27px;
-  font-weight: bold;
-}
-
-.home-btn {
-  background-color: var(--color-tres);
-  border-color: var(--color-tres);
-  position: absolute;
-  width: 254px;
-  height: 64px;
-  border-radius: 8px;
-  color: #004eaa;
-  font-size: 28px;
-  font-weight: 800;
-  font-family: 'Lato';
-}
-
-/* efecto wave*/
-
-.wave-home{
-  position: absolute;
-  width: 100%;
-  height: 200px;
-  top: 750px;
-}
-
-
-
-
-/*Seccion About Us que contiene la imagen de fondo*/
-
-.about-us-imagen img {
-  z-index: -1;
-  position: relative;
-  background: rgba(0, 6, 97, 0.884);
-}
-
-.about-us-text {
-  width: 40%;
-  position: relative;
-  bottom: 500px;
-  left: 180px;
-}
-
-.about-us-titulo {
-  color: var(--color-tres);
-  font-size: 100px;
-  font-weight: 700;
-  font-family: 'Lato';
-  text-shadow: 0 0 5px #000000;
-
-}
-
-
-.about-us-parrafo {
-  color: #ffffff;
-  font-size: 25px;
-  font-family: 'Poppins';
-  text-shadow: 0 0 5px #000000;
-
-}
-
-.about-us-parrafo strong {
-  font-size: 27px;
-  font-weight: bold;
-}
-
-
-/* efecto wave*/
-
-.wave {
-  width: 100%;
-  height: 50%;
-  position: absolute;
-  margin-top: -985px;
-
-}
-
-.wave-1 {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  margin-top: 460px;
-  background-image: url(../Image/wave2.svg);
-}
-
-.about-us-history-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 150px;
-}
-
-.about-us-history {
-  width: 30%;
-  margin-left: 50px;
-
-}
-
-.about-us-history p {
-  font-size: 1rem;
-  text-align: justify;
-}
-
-.about-us-history img {
-  width: 423px;
-  height: 435px;
-}
-
-.history-titulo {
-  margin-left: 20%;
-}
-
-.circulo {
-
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 5px #02397A solid;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: 50px;
-  top: 1500px;
-}
-
-.emoji-saludar {
-  font-size: 50px;
-
-}
-
-
-/* Sección About_us */
-.About-Us-Diego-Pardo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.About-Us-Diego-Pardo-texto {
-  padding-left: 170px;
-  padding-right: 54px;
-  padding-top: 100px;
-  text-align: justify;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: last baseline;
-}
-
-.About-Us-Diego-Pardo-Image {
-  padding-right: 170px;
-  padding-left: 54px;
-  padding-top: 80px;
-}
-
-.About-Us-Diego-Pardo-Image_imagen {
-  width: 450px;
-  height: 350px;
-}
-
-.About-Us-Diego-Pardo-texto_buton {
-  border: 2px solid #004eaa;
-  padding: 12px 21px;
-  border-radius: 8px;
-  gap: 8px;
-  width: 121px;
-  height: 48px;
-  background-color: white;
-  color: #004eaa;
-}
-#toTop {
-  position: fixed;
-  bottom: 350px;
-  right: 10px;
-  cursor: pointer;
-  display: none;
- 
-}
-.About-Us-Diego-Pardo-button {
-  
-  padding-top: 400px;
-  padding-right: 20px;
-
-
-}
-
-.About-Us-Diego-Pardo-button-buton {
-  border: 5px solid #004eaa;
-  background-image: url("/Image/boton_chatbot.png");
-  border-radius: 100px;
-  width: 70px;
-  height: 70px;
-  background-size: 110%;
-  font-size: 40px;
-  box-shadow: 2px 3px 4px -2px #131313;
-  
-}
+/* ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓  SECCIONES DE ABAJO ELIMINAR Y MOVER A DESKTOP   ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ */
+/* ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓  */
 
 /* Sección Patrons */
 
 .patrons-title {
-  margin-left: var(--margin-left);
-  font-family: var(--font-family-lato);
-  font-weight: 700;
-  font-size: 35px;
-  color: var(--color-dos);
-  margin-top: 4rem;
-}
-
-.carousel-inner {
-  display: flex;
-}
-
-.carousel-item {
-  display: block;
-  margin-right: 0;
-  flex: 0 0 calc(100%/5);
-  padding: 1.2em 0.5em;
-  height: 26rem;
-}
-
-.card-contenedor {
-  width: 100%;
-  height: 100%;
-  background-color: var(--color-dos);
-  color: var(--color-uno);
-  border-radius: 8px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
-}
-
-.card-video {
-  border-radius: 8px;
-  background-color: black;
-  width: 500px;
-  height: 100%;
-}
-
-.card-imagen {
-  width: 100%;
-  border-radius: 8px 8px 8px 8px;
-}
-
-.card-titulo {
-  margin-top: 8px;
-}
-
-.card-descrip {
-  display: inline-block;
-  text-align: justify;
-  font-size: 13px;
-  width: 70%;
-}
-
-.card-add {
-  display: inline-block;
-  padding: 0 0 10px 15px;
-}
-
-.carousel-indicators {
-  position: static;
-}
-
-.carousel-indicators .carousel-indicator {
-  background-color: var(--color-dos);
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 100%;
-}
-
-.carousel-indicators .active {
-  background-color: var(--color-dos);
-  width: 1rem;
-  border-radius: 25% / 50%;
-}
-
-/* Secciión supporters */
-
-.text-supporters{
-  text-decoration: none;
-  font-family: var(--font-family-lato);
-  color: var(--color-dos);
-}
-
-#row-supporters{
-  padding-top: 50px;
-  margin: 0px;
-}
-
-.tittle-supporters {
-  margin-left: var(--margin-left);
-  font-family: var(--font-family-lato);
-  color: var(--color-dos);
-  margin-top: 4rem;
-}
-
-
-/* Sección footer - Mobile */
-
-.footer_container{
-  background-color: #001C3D;
-  height: 129px;;
-}
-
-.footer_body{
-  background-color: #001C3D;
-  height: 129px;
-}
-
-.footer_body a,
-.footer_body p{
-  text-decoration:none;
-  color: #FAFAFB;
-}
-
-.footer_redsocial{
-  display: flex;
-  justify-content: flex-start;
-  padding-left: .7em;
-  
-}
-
-.footer_redsocial img{
-  cursor: pointer;
-  margin-right:2em;
-}
-
-.footer_redsocial a{
-  display: none;
-}
-
-.footer_routes{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 3em;
-}
-
-.footer_routes_logo{
-  display: flex;
-  align-items: center;
-  margin-right: 1vw;
-  position: relative;
-  bottom: .1em;
-}
-
-.footer_routes_logo img{
-  width: 70px;
-  height: 70px;
-  position: relative;
-  bottom: .2em;
-}
-
-.footer_routes_logo p{
-  font-weight: bold;
-  padding-left: .3em;
-}
-
-.footer_routes_navigation div:nth-child(1){
-  display: none;
-}
-
-.footer_routes_navigation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  bottom: 5em;
-}
-
-.footer_routes_navigation div:nth-child(3),
-.footer_routes_navigation div:nth-child(4){
-  display: flex;
-  align-items: center;
-  border-radius: .5em;
-  width: 163px;
-  height: 48px;
-
-  /* estilos provisionales, quitar al hacer el "Mobile": position y top */
-  position: relative;
-  top: 4em;
-}
-
-.footer_routes_navigation div:nth-child(3) a,
-.footer_routes_navigation div:nth-child(4) a{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 163px;
-  height: 48px;
-}
-
-.footer_routes_navigation div:nth-child(3) {
-  border:3px solid #FAFAFB;
-  margin-right: 1em;
-  margin-left: 3vw;
-}
-
-.footer_routes_navigation div:nth-child(4){
-  background-color: #FFD500;
-}
-
-.footer_routes_navigation div:nth-child(4) a{
-  font-weight: bold;
-  color: #02397A;
-}
-
-/* ################ MEDIA QUERY - Tablet and Desktop - ################ */
-
-@media(min-width: 768px) {
-  /* Sección Navbar */
-
-  .navbar-contenedor-principal {
-    background-color: var(--color-dos);
-  }
-
-  .navbar-brand-logo {
-    left: 100px;
-  }
-
-  .navbar-brand-logo {
-    left: 100px;
-  }
-
-  .navbar-contenedor {
-    padding-top: 20px;
-
-  }
-
-  .bg-body-tertiary {
-    --bs-bg-opacity: 0;
-
-  }
-
-  .navbar-titulo {
-    margin-left: 0;
-    font-family: var(--font-family-lato);
-    color: var(--color-uno);
-  }
-
-  .navbar-logo {
-    margin-left: var(--margin-left)
-  }
-
-  .navbar-contenido {
-    font-family: var(--font-family-lato);
-    margin-right: 13.06%;
-
-  }
-
-  .navbar-link {
-    color: var(--color-uno);
-  }
-
-  .navbar-about-us {
-    margin-right: 61px;
-  }
-
-  .navbar-home {
-    margin-right: 24px;
-  }
-
-  .navbar-need-help {
-    margin-right: 16px;
-    color: var(--color-uno);
-    border: 2px solid var(--color-uno);
-    background-color: transparent;
-    border-radius: 8px;
-    padding: 0px 34px;
-  }
-
-  .navbar-donate {
-    color: var(--color-uno);
-    border-radius: 8px;
-    font-weight: 700;
-    color: var(--color-dos);
-    background-color: var(--color-tres);
-    padding: 0px 34px;
-  }
-
-  .contenedor-idiomas {
-    margin-top: 20px;
-  }
-
-  .navbar-ikp {
-    color: var(--color-uno);
-    border-radius: 8px 0 0 8px;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 0.7);
-    background-color: var(--color-uno);
-    width: 67.742px;
-    border: 0;
-  }
-
-  .navbar-en {
-    color: var(--color-uno);
-    border-radius: 0 8px 8px 0;
-    font-weight: 700;
-    color: var(--color-dos);
-    background-color: var(--color-tres);
-    width: 67.742px;
-    border: 0;
-  }
-
-  /*Seccion About Us que contiene la imagen de fondo*/
-
-  .about-us-imagen img {
-    z-index: -1;
-    position: relative;
-    background: rgba(0, 52, 125, 0.75);
-
-  }
-
-  .about-us-text {
-    width: 40%;
-    position: relative;
-    bottom: 500px;
-    left: 180px;
-  }
-
-  .about-us-titulo {
-    color: var(--color-tres);
-    font-size: 100px;
-    font-weight: 700;
-    font-family: 'Lato';
-    text-shadow: 0 0 5px #000000;
-
-  }
-
-
-  .about-us-parrafo {
-    color: #ffffff;
-    font-size: 25px;
-    font-family: 'Poppins';
-    text-shadow: 0 0 5px #000000;
-
-  }
-
-  .about-us-parrafo strong {
-    font-size: 27px;
-    font-weight: bold;
-  }
-
-
-  /* efecto wave*/
-
-  .wave {
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    margin-top: -985px;
-
-  }
-
-  .wave-1 {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    margin-top: 460px;
-    background-image: url(../Image/wave2.svg);
-  }
-
-  .about-us-history-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 150px;
-  }
-
-  .about-us-history {
-    width: 30%;
-    margin-left: 50px;
-
-  }
-
-  .about-us-history p {
-    font-size: 1rem;
-    text-align: justify;
-  }
-
-  .about-us-history img {
-    width: 423px;
-    height: 435px;
-  }
-
-  .history-titulo {
-    margin-left: 20%;
-  }
-
-  .circulo {
-
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 5px #02397A solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 50px;
-    top: 1500px;
-  }
-
-  .emoji-saludar {
-    font-size: 50px;
-
-  }
-
-
-  /* Sección About_us */
-
-  .About-Us-Diego-Pardo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .About-Us-Diego-Pardo-texto {
-    padding-left: 170px;
-    padding-right: 54px;
-    padding-top: 100px;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: last baseline;
-  }
-
-  .About-Us-Diego-Pardo-Image {
-    padding-right: 170px;
-    padding-left: 54px;
-    padding-top: 80px;
-  }
-
-  .About-Us-Diego-Pardo-Image_imagen {
-    width: 450px;
-    height: 350px;
-  }
-
-  .About-Us-Diego-Pardo-texto_buton {
-    border: 2px solid #004eaa;
-    padding: 12px 21px;
-    border-radius: 8px;
-    gap: 8px;
-    width: 121px;
-    height: 48px;
-    background-color: white;
-    color: #004eaa;
-  }
-
-  .About-Us-Diego-Pardo-button {
-    padding-top: 400px;
-    padding-right: 20px;
-  }
-
-  .About-Us-Diego-Pardo-button-buton {
-    background-image: url("/Image/boton_chatbot.png");
-    border-radius: 100px;
-    width: 70px;
-    height: 70px;
-    background-size: 110%;
-  }
-
-  /* Sección Patrons */
-
-  .patrons-title {
     margin-left: var(--margin-left);
     font-family: var(--font-family-lato);
     font-weight: 700;
     font-size: 35px;
     color: var(--color-dos);
     margin-top: 4rem;
-  }
+}
 
-  .carousel-inner {
+.carousel-inner {
     display: flex;
-  }
+}
 
-  .carousel-item {
+.carousel-item {
     display: block;
     margin-right: 0;
     flex: 0 0 calc(100%/5);
     padding: 1.2em 0.5em;
     height: 26rem;
-  }
+}
 
-  .video-background {
-    background-image: url('./Image/Imagen0_Reto.png');
-    background-size: cover; 
-    background-position: center;
-  }
-
-  .card-contenedor {
+.card-contenedor {
     width: 100%;
     height: 100%;
     background-color: var(--color-dos);
     color: var(--color-uno);
     border-radius: 8px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
-  }
+}
 
-  .card-video {
+.card-video {
     border-radius: 8px;
     background-color: black;
     width: 500px;
     height: 100%;
-  }
+}
 
-  .card-imagen {
-    display: block;
+.card-imagen {
     width: 100%;
-    border-radius: 10px 0;
-  }
+    border-radius: 8px 8px 8px 8px;
+}
 
-  .card-titulo {
+.card-titulo {
     margin-top: 8px;
-  }
+}
 
-  .card-descrip {
+.card-descrip {
     display: inline-block;
     text-align: justify;
     font-size: 13px;
     width: 70%;
-  }
+}
 
-  .card-add {
+.card-add {
     display: inline-block;
-    position: absolute;
-    top: 34px;
-    right: 18px;
-  }
+    padding: 0 0 10px 15px;
+}
 
-  .carousel-indicators {
+.carousel-indicators {
     position: static;
-  }
+}
 
-  .carousel-indicators .carousel-indicator {
+.carousel-indicators .carousel-indicator {
     background-color: var(--color-dos);
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 100%;
-  }
+}
 
-  .carousel-indicators .active {
+.carousel-indicators .active {
     background-color: var(--color-dos);
     width: 1rem;
     border-radius: 25% / 50%;
-  }
+}
 
-  /* Video card Sección */
+/* Secciión supporters */
 
-  .video-js button {
-    color: var(--color-cuatro);
-  }
+.text-supporters{
+    text-decoration: none;
+    font-family: var(--font-family-lato);
+    color: var(--color-dos);
+}
 
-  .video-js .vjs-control-bar {
-    background-color: #ffffff;
-    border: solid 1px var(--color-dos);
-    border-radius: 5px;
-  }
+#row-supporters{
+    padding-top: 50px;
+    margin: 0px;
+}
 
-  .video-js .vjs-volume-level {
-    background-color: var(--color-cuatro);
-  }
-
-  .video-js .vjs-progress-control .vjs-progress-holder {
-    color: var(--color-cuatro)
-  }
-
-  .video-js .vjs-big-play-button {
-    font-size: 3.5em;
-    height: 1.8em;
-    line-height: 1.8em;
-    background-color: var(--color-uno);
-  }
-
-  .vjs-progress-control .vjs-control {
-    background-color: var(--color-cuatro);
-  }
+.tittle-supporters {
+    margin-left: var(--margin-left);
+    font-family: var(--font-family-lato);
+    color: var(--color-dos);
+    margin-top: 4rem;
+}
 
 
-/* Section footer - Desktop */
-  .footer_container{
+/* Sección footer - Mobile */
+
+.footer_container{
     background-color: #001C3D;
-    height: 357px;
-  }
+    height: 129px;;
+}
 
-  .footer_body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.footer_body{
     background-color: #001C3D;
-    height: 357px;
-    max-width: 95vw;
-    margin: 0 auto;
-  }
+    height: 129px;
+}
 
-  .footer_body a,
-  .footer_body p{
+.footer_body a,
+.footer_body p{
     text-decoration:none;
     color: #FAFAFB;
-  }
+}
 
-  .footer_redsocial{
+.footer_redsocial{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-left: .7em;
-    position: relative;
-    top: 2em;
-    margin-bottom: 3em;
-  }
+}
 
-  .footer_redsocial img{
+.footer_redsocial img{
     cursor: pointer;
-    margin-right:0;
-  }
-  
-  .footer_redsocial a{
-    display: inline-block;
-    padding-left: 1em;
-  }
+    margin-right:2em;
+}
 
-  .footer_linea {
-    border-bottom: solid .1px #FAFAFB;
-    position: relative;
-    top: 1.5em;
-  }
+.footer_redsocial a{
+    display: none;
+}
 
-  .footer_routes{
+.footer_routes{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    top: 1em;
-  }
+    margin-top: 3em;
+}
 
-  .footer_routes_logo{
+.footer_routes_logo{
     display: flex;
     align-items: center;
     margin-right: 1vw;
     position: relative;
     bottom: .1em;
-  }
+}
 
-  .footer_routes_logo img{
-    width:91px;
-    height:104px;
+.footer_routes_logo img{
+    width: 70px;
+    height: 70px;
     position: relative;
     bottom: .2em;
-  }
+}
 
-  .footer_routes_logo p{
+.footer_routes_logo p{
     font-weight: bold;
     padding-left: .3em;
-  }
+}
 
-  .footer_routes_container_home_navigation{
+.footer_routes_navigation div:nth-child(1){
+    display: none;
+}
+
+.footer_routes_navigation {
     display: flex;
-    justify-content: space-between;
-    min-width: 51vw;
-  }
-
-  .footer_routes_home-aboutUs {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .footer_routes_home-aboutUs a:nth-child(1){
-    padding-right: 3vw;
-  }
-
-  .footer_routes_home-aboutUs div:nth-child(1){
+    flex-direction: column;
+    align-items: center;
     position: relative;
-    bottom: 0em;
-  }
+    bottom: 5em;
+}
 
-  .footer_routes_navigation {
-    display: flex;
-    flex-direction:row;
-    bottom: .6em;
-  }
-
-  .footer_routes_navigation div:nth-child(3),
-  .footer_routes_navigation div:nth-child(4){
+.footer_routes_navigation div:nth-child(3),
+.footer_routes_navigation div:nth-child(4){
     display: flex;
     align-items: center;
     border-radius: .5em;
+    width: 163px;
+    height: 48px;
 
     /* estilos provisionales, quitar al hacer el "Mobile": position y top */
-    position:relative;
-    top: 0;
-    /**/
-  }
+    position: relative;
+    top: 4em;
+}
 
-  .footer_routes_navigation div:nth-child(3) a,
-  .footer_routes_navigation div:nth-child(4) a{
+.footer_routes_navigation div:nth-child(3) a,
+.footer_routes_navigation div:nth-child(4) a{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 163px;
-    height: 48px; 
-  }
+    height: 48px;
+}
 
-  .footer_routes_navigation div:nth-child(3) {
+.footer_routes_navigation div:nth-child(3) {
     border:3px solid #FAFAFB;
     margin-right: 1em;
     margin-left: 3vw;
-  }
+}
 
-  .footer_routes_navigation div:nth-child(4){
+.footer_routes_navigation div:nth-child(4){
     background-color: #FFD500;
-  }
+}
 
-  .footer_routes_navigation div:nth-child(4) a{
+.footer_routes_navigation div:nth-child(4) a{
     font-weight: bold;
     color: #02397A;
-  }
- 
+}
+
+/* ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑  SECCIONES DE ARRIBA ELIMINAR Y MOVER A DESKTOP   ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ */
+/* ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ */
+
+/* ╔═════════════════════════════════════════════════════════════════╗ */
+/* ║                   MEDIA QUERY - 480 - Mobile                    ║ */
+/* ╚═════════════════════════════════════════════════════════════════╝ */
+
+@media(min-width: 480px) {
+
+}
+
+/* ╔═════════════════════════════════════════════════════════════════╗ */
+/* ║            MEDIA QUERY - 768 - Tablet and Desktop               ║ */
+/* ╚═════════════════════════════════════════════════════════════════╝ */
+
+@media(min-width: 768px) {
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* │ ► Luis Romano                                           │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    /*  Header - Sección Navbar  */
+
+    .navbar-brand-logo{
+        left: 100px;
+    }
+
+    .navbar-contenedor {
+        padding-top: 20px; 
+    }
+
+    .bg-body-tertiary {
+        --bs-bg-opacity: 0;
+    }
+
+    .navbar-titulo {
+        margin-left: 0;
+        font-family: var(--font-family-lato);
+        color: var(--color-uno);
+    }
+
+    .navbar-logo{
+        margin-left: var(--margin-left)
+    }
+
+    .navbar-contenido {
+        font-family: var(--font-family-lato);
+        margin-right: 13.06%;
+    }
+
+    .navbar-link {
+        color: var(--color-uno);
+    }
+
+    .navbar-about-us {
+        margin-right: 61px;
+    }
+
+    .navbar-home {
+        margin-right: 24px;
+    }
+
+    .navbar-need-help {
+        margin-right: 16px;
+        color: var(--color-uno);
+        border: 2px solid var(--color-uno);
+        background-color: transparent;
+        border-radius: 8px;
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+
+    .navbar-donate {
+        color: var(--color-uno);
+        border-radius: 8px;
+        font-weight: 700;
+        color: var(--color-dos);
+        background-color: var(--color-tres);
+        padding: 0px 34px;
+    }
+
+    /*  Header - Sección idiomas  */
+
+    .contenedor-idiomas {
+        margin-top: 20px;
+    }
+
+    .navbar-ikp {
+        color: var(--color-uno);
+        border-radius: 8px 0 0 8px;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.7);
+        background-color: var(--color-uno);
+        width: 67.742px;
+        border: 0;
+    }
+
+    .navbar-en {
+        color: var(--color-uno);
+        border-radius: 0 8px 8px 0;
+        font-weight: 700;
+        color: var(--color-dos);
+        background-color: var(--color-tres);
+        width: 67.742px;
+        border: 0;
+    }
+
+    /*  Header - Sección Títulos  */
+
+    .header-div {
+        margin-left: var(--margin-left);
+    }
+
+    .header-titulo {
+        color: var(--color-tres);
+        font-size: 100px;
+        font-family: var(--font-family-lato);
+        font-weight: 700;
+        line-height: 120px;
+    }
+
+    .header-subtitulo {
+        color: #ffffff;
+        font-size: 25px;
+        font-family: 'Poppins';
+        text-shadow: 0 0 5px #000000;
+    }
+
+    .header-subtitulo strong{
+        font-size: 27px;
+        font-weight: bold;
+    }
+
+    /* Header - Botón donate */
+
+    .home-btn {
+        background-color: var(--color-tres);
+        border-color: var(--color-tres);
+        position: absolute;
+        width: 254px;
+        height: 64px;
+        border-radius: 8px;
+        color: #004eaa;
+        font-size: 28px;
+        font-weight: 800;
+        font-family: 'Lato';
+    }
+
+    /* Header - Sección Background */
+
+    .navbar-contenedor-principal {
+        height: 800px;
+    }
+
+    .header-background-imagen {
+        position: absolute;
+        background: #02397A;
+        width: 100%;
+        height: 800px;
+        top: 0;
+        z-index: -1;
+        mix-blend-mode: multiply;
+    }
+
+    .header-background-mascara {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 800px;
+        background: #02397A;
+        border: 1px solid #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        z-index: -2;
+        mix-blend-mode: multiply;
+    }
+
+    /* Header - Efecto wave*/
+
+    .wave {
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        top: 650px;
+    }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO CHATBOT ■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .chatbot-button {
+        position: fixed;
+        right: 1%;
+        bottom: 50%;
+        background-image: url("/Image/boton_chatbot.png");
+        border-radius: 100px;
+        width: 70px;
+        height: 70px;
+        background-size: 110%;
+        z-index: 3;
+    }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN CHATBOT ■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+    
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■ INICIO ABOUT-US ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego Valentino Pardo Yepez                           │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .circulo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 5px #02397A solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 50px;
+        top: 1500px;
+    }
+
+    .emoji-saludar {
+        font-size: 50px;
+    }
+
+    .about-us {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-us-texto {
+        padding-left: 170px;
+        padding-right: 54px;
+        padding-top: 100px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: last baseline;
+    }
+
+    .about-us-image {
+        padding-right: 170px;
+        padding-left: 54px;
+        padding-top: 80px;
+    }
+
+    .about-us-image-imagen {
+        width: 450px;
+        height: 350px;
+    }
+
+    .about-us-texto-button {
+        border: 2px solid #004eaa;
+        padding: 12px 21px;
+        border-radius: 8px;
+        gap: 8px;
+        width: 121px;
+        height: 48px;
+        background-color: white;
+        color: #004eaa;
+    }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ FIN ABOUT-US ■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■ INICIO PATRONS ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* │ ► Vania Belén Carlos Camones                            │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .patrons-title {
+        margin-left: var(--margin-left);
+        font-family: var(--font-family-lato);
+        font-weight: 700;
+        font-size: 35px;
+        color: var(--color-dos);
+        margin-top: 4rem;
+    }
+
+    .carousel-inner {
+        display: flex;
+    }
+
+    .carousel-item {
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100%/5);
+        padding: 1.2em 0.5em;
+        height: 26rem;
+    }
+
+    .video-background {
+        background-image: url('./Image/Imagen0_Reto.png');
+        background-size: cover; 
+        background-position: center;
+    }
+
+    .card-contenedor {
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-dos);
+        color: var(--color-uno);
+        border-radius: 8px;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .card-video {
+        border-radius: 8px;
+        background-color: black;
+        width: 500px;
+        height: 100%;
+    }
+
+    .card-imagen {
+        display: block;
+        width: 100%;
+        border-radius: 10px 0;
+    }
+
+    .card-titulo {
+        margin-top: 8px;
+    }
+
+    .card-descrip {
+        display: inline-block;
+        text-align: justify;
+        font-size: 13px;
+        width: 70%;
+    }
+
+    .card-add {
+        display: inline-block;
+        position: absolute;
+        top: 34px;
+        right: 18px;
+    }
+
+    .carousel-indicators {
+        position: static;
+    }
+
+    .carousel-indicators .carousel-indicator {
+        background-color: var(--color-dos);
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 100%;
+    }
+
+    .carousel-indicators .active {
+        background-color: var(--color-dos);
+        width: 1rem;
+        border-radius: 25% / 50%;
+    }
+
+    /* Video card Sección */
+
+    .video-js button {
+        color: var(--color-cuatro);
+    }
+
+    .video-js .vjs-control-bar {
+        background-color: #ffffff;
+        border: solid 1px var(--color-dos);
+        border-radius: 5px;
+    }
+
+    .video-js .vjs-volume-level {
+        background-color: var(--color-cuatro);
+    }
+
+    .video-js .vjs-progress-control .vjs-progress-holder {
+        color: var(--color-cuatro)
+    }
+
+    .video-js .vjs-big-play-button {
+        font-size: 3.5em;
+        height: 1.8em;
+        line-height: 1.8em;
+        background-color: var(--color-uno);
+    }
+
+    .vjs-progress-control .vjs-control {
+        background-color: var(--color-cuatro);
+    }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN PATRONS ■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■ INICIO SUPPORTERS ■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Federico Manuel Peralta                               │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■ FIN SUPPORTERS ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■ INICIO PRESS-AND-NEWS ■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Luis Romano                                           │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■ FIN PRESS-AND-NEWS ■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego Valentino Pardo Yepez                           │ */
+    /* │ ► Santiago Elias Carranza                               │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .footer_container{
+        background-color: #001C3D;
+        height: 357px;
+    }
+
+    .footer_body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #001C3D;
+        height: 357px;
+        max-width: 95vw;
+        margin: 0 auto;
+    }
+
+    .footer_body a,
+    .footer_body p{
+        text-decoration:none;
+        color: #FAFAFB;
+    }
+
+    .footer_redsocial{
+        display: flex;
+        justify-content: space-between;
+        padding-left: .7em;
+        position: relative;
+        top: 2em;
+        margin-bottom: 3em;
+    }
+
+    .footer_redsocial img{
+        cursor: pointer;
+        margin-right:0;
+    }
+    
+    .footer_redsocial a{
+        display: inline-block;
+        padding-left: 1em;
+    }
+
+    .footer_linea {
+        border-bottom: solid .1px #FAFAFB;
+        position: relative;
+        top: 1.5em;
+    }
+
+    .footer_routes{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        top: 1em;
+    }
+
+    .footer_routes_logo{
+        display: flex;
+        align-items: center;
+        margin-right: 1vw;
+        position: relative;
+        bottom: .1em;
+    }
+
+    .footer_routes_logo img{
+        width:91px;
+        height:104px;
+        position: relative;
+        bottom: .2em;
+    }
+
+    .footer_routes_logo p{
+        font-weight: bold;
+        padding-left: .3em;
+    }
+
+    .footer_routes_container_home_navigation{
+        display: flex;
+        justify-content: space-between;
+        min-width: 51vw;
+    }
+
+    .footer_routes_home-aboutUs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer_routes_home-aboutUs a:nth-child(1){
+        padding-right: 3vw;
+    }
+
+    .footer_routes_home-aboutUs div:nth-child(1){
+        position: relative;
+        bottom: 0em;
+    }
+
+    .footer_routes_navigation {
+        display: flex;
+        flex-direction:row;
+        bottom: .6em;
+    }
+
+    .footer_routes_navigation div:nth-child(3),
+    .footer_routes_navigation div:nth-child(4){
+        display: flex;
+        align-items: center;
+        border-radius: .5em;
+
+        /* estilos provisionales, quitar al hacer el "Mobile": position y top */
+        position:relative;
+        top: 0;
+        /**/
+    }
+
+    .footer_routes_navigation div:nth-child(3) a,
+    .footer_routes_navigation div:nth-child(4) a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 163px;
+        height: 48px; 
+    }
+
+    .footer_routes_navigation div:nth-child(3) {
+        border:3px solid #FAFAFB;
+        margin-right: 1em;
+        margin-left: 3vw;
+    }
+
+    .footer_routes_navigation div:nth-child(4){
+        background-color: #FFD500;
+    }
+
+    .footer_routes_navigation div:nth-child(4) a{
+        font-weight: bold;
+        color: #02397A;
+    }
+    
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
 
 }
