@@ -1,4 +1,4 @@
-/*<<<<<<< HEAD
+
 /* ################ MEDIA QUERY - Movile - ################ */
 
 .navbar-contenedor-principal {
@@ -499,7 +499,7 @@
 .footer_routes_navigation div:nth-child(1){
     display: none;
 }
-/*<<<<<<< HEAD */
+
 @media (max-width: 767px) {
   
 }
@@ -601,67 +601,7 @@
     border: 0;
   }
 
-  /*Seccion About Us que contiene la imagen de fondo*/
-
-  .about-us-imagen img {
-    z-index: -1;
-    position: relative;
-    background: rgba(0, 52, 125, 0.75);
-
-  }
-
-  .about-us-text {
-    width: 40%;
-    position: relative;
-    bottom: 500px;
-    left: 180px;
-  }
-
-  .about-us-titulo {
-    color: var(--color-tres);
-    font-size: 100px;
-    font-weight: 700;
-    font-family: 'Lato';
-    text-shadow: 0 0 5px #000000;
-
-  }
-
-
-  .about-us-parrafo {
-    color: #ffffff;
-    font-size: 25px;
-    font-family: 'Poppins';
-    text-shadow: 0 0 5px #000000;
-
-  }
-
-  .about-us-parrafo strong {
-    font-size: 27px;
-    font-weight: bold;
-  }
-
-
-  /* efecto wave*/
-
-  .wave {
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    margin-top: -985px;
-
-  }
-
-  .wave-1 {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    margin-top: 460px;
-    background-image: url(../Image/wave2.svg);
-  }
-
-  /*.about-us-history-container {
-
- }*/
+  
 
 .footer_routes_navigation {
 
@@ -1150,6 +1090,84 @@
     /* └─────────────────────────────────────────────────────────┘ */
 
 
+.press{
+  margin-left: var(--margin-left);
+  font-family: var(--font-family-lato);
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--color-dos);
+  margin-top: 4rem;
+}
+.carousel-div{
+  width: 100%; 
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  }
+  
+  .imgCarousel{
+  width: 423px;
+  height: 300px;
+  margin-right: 1rem;
+  border-radius: 20px;
+  position: relative;
+  }
+  
+  .card-carousel{
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .texto-carousel{
+  color: #ffffff;
+  opacity: 0.9;
+  position: absolute;
+  padding: 10px;
+  }
+  
+  .btn-carousel{
+  border-radius: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: #F8D714;
+  border: #F8D714;
+  position: absolute;
+  top: 250px;
+  margin-left: 350px;
+  }
+
+  .btn-carousel a{
+    text-decoration: none;
+  }
+  
+  .contenedor-img{
+  display: flex;
+  flex-direction: row;
+  transform: translateX(-5%); 
+  }
+  
+  .imgCarousel.activo{
+  border: #004eaa 2px solid;
+  }
+  
+  .puntos{
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  }
+  .punto{
+  width: 1em;
+  height: 1em;
+  font-size: 2rem;
+  }
+  .punto.activo{
+  color: #004eaa;
+  }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■ FIN PRESS-AND-NEWS ■■■■■■■■■■■■■■■■■■ │ */
