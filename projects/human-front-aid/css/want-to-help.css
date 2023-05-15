@@ -33,12 +33,38 @@
     padding-bottom: 0px;
     margin: 3px;
 }
-.ONG_element_collapse .ONG_element_collapse_info{
-    font-size: 1rem;
-    padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
-    padding-top: 0px;
-    margin-bottom: 0px;
+.ONG_element_collapse_info{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 4px;
 }
+.ONG_element_collapse_info .ONG_element_collapse_info_item{
+    display: grid;
+    place-items: center;
+    width: 150px;
+    height: 60px;
+}
+.ONG_element_collapse_info .ONG_element_collapse_info_img{
+    background-color: white;
+    color: var(--color-dos);
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+.ONG_element_collapse_info .ONG_element_collapse_info_item .ONG_element_collapse_info_item_btn{
+    background-color: var(--color-tres);
+    color: var(--color-dos);
+}
+
+
+
+@media (min-width: 460px) {
+    .ONG_element_collapse_info .ONG_element_collapse_info_item{
+        width: 200px;
+        height: 80px;
+    }
+}
+
 @media (min-width: 992px) {
     .list-group{
         border-radius: 1.5rem;
@@ -50,7 +76,11 @@
         height: fit-content;
         margin-bottom: 1rem;
     }
-    .ONG_element_collapse .ONG_element_collapse_info{
-        margin-left: 1.8rem;
+    .ONG_element_collapse_info{
+        padding: 6px;
+    }
+    .ONG_element_collapse_info .ONG_element_collapse_info_item{
+        width: 300px;
+        height: 90px;
     }
 }

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Human Front Aid -</title>
+    <link rel="icon" type="image/x-icon" href="/Image/Layout/logo.ico">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,6 +31,7 @@
     <!-- JavaScript -->
     <script defer src="./js/carousel.js"></script>
     <script defer src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    
     <!-- VideoJS -->
     <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
     <script defer src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
@@ -56,118 +58,172 @@
 
 <body>
 
-    <!-- SECCIÓN HEADER-->
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Diego N. Cabrera                                      │ -->
+    <!-- │ ► Luis Romano                                           │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
 
     <header>
-        <!-- NAVBAR -->
+
+        <!--  Header - Sección Navbar  -->
 
         <div class="navbar-contenedor-principal">
+
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+                <!--  Contenedor del Navbar  -->
+
                 <div class="container-fluid navbar-contenedor">
-                    <img src="Image/logo.png">
-                    <img class="navbar-brand navbar-logo" src="Image/logo.png" alt="">
+
+                    <!--  Logo  -->
+                    <img class="navbar-brand navbar-logo" src="./Image/logo.png" alt="">
+
+                    <!--  Título  -->
                     <a class="navbar-brand navbar-titulo" href="./index.html">Human Front Aid</a>
+
+                    <!--  Opciones de Navegación  -->
                     <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
-                            <a class="nav-link navbar-link navbar-home" href="#">Home</a>
-                            <a class="nav-link navbar-link navbar-about-us" href="./about-us.html">About us</a>
-                            <a href="./need-help.html" class="btn btn-primary navbar-need-help">Need help?</a>
+                            <a class="nav-link navbar-link navbar-home" href="./index.html">Home</a>
+                            <a class="nav-link navbar-link navbar-about-us" href="./pages/about-us.html">About us</a>
+                          
+                            <a href="./need-help.html" class="btn btn-primary navbar-need-help" href="./pages/need-help.html">Need help?</a>
+                   
                             <button type="button" class="btn btn-warning navbar-donate">DONATE</button>
                         </div>
                     </div>
                 </div>
             </nav>
 
+            <!--  Header - Sección idiomas  -->
+
             <div class="navbar navbar-expand-lg bg-body-tertiary">
+
                 <div class="container-fluid contenedor-idiomas">
 
                     <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
+
+                            <!-- Opción Ukrania -->
                             <button type="button" class="btn btn-primary navbar-ikp">IKP</button>
+                            <!-- Opción Inglés -->
                             <button type="button" class="btn btn-warning navbar-en">EN</button>
                         </div>
                     </div>
-
                 </div>
             </div>
-        </div>
 
+            <!--  Header - Sección Título  -->
 
-        <!-- Home Cabecera-->
-
-        <section class="home-title">
-            <div class="home-imagen">
-                <img src="Image/home-title.png" alt="About Us">
-            </div>
-            <div class="home-textos">
-                <h2 class="home-titulo">Human Front Aid </h2>
-                <p class="home-parrafo">Our intention is to <strong>support projects regionally and locally.</strong>
+            <div class="header-div">
+                <h2 class="header-titulo">Human Front Aid</h2>
+                <p class="header-subtitulo">
+                    Our intention is to <strong>support projects regionally and locally.</strong>
                 </p>
-                <p class="home-parrafo">People knowing the local conditions can help.</p>
+                <p class="header-subtitulo">
+                    People knowing the local conditions can help.
+                </p>
                 <button class="home-btn">Donate</button>
             </div>
-        </section>
+
+            <!--  Header - Sección Backgrond  -->
+            
+            <!--  Imagen de fondo  -->
+
+            <img class="header-background-imagen" src="./Image/header-about-us.png" alt="About Us">
+
+            <!--  Máscara de filtro azul  -->
+
+            <div class="header-background-mascara"></div>
+
+            <!--  Efecto wave  -->
+
+            <img class="wave" src="./Image/wave.png" alt="" />
         
-        <!-- Inicio efecto wave-->
-        <divgit class="wave-home">
-            <div style="height: 150px; overflow: hidden;" >
-                <div style="height: 150px; overflow: hidden;" >
-                    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                        <path d="M-6.77,81.22 C152.37,-134.90 385.44,168.05 502.82,-4.63 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffffff;"></path>
-                    </svg>
-                </div>
-            </div>
         </div>
-        <!-- Fin efecto wave-->
 
     </header>
 
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
 
 
-    <!-- Sección Diego Pardo - About Us -->
 
-    <section class="About-Us-Diego-Pardo">
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■ INICIO CHATBOT ■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Diego N. Cabrera                                      │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
 
-        <!-- Sección Diego Pardo - About Us Texto-->
-        <section class="About-Us-Diego-Pardo-texto">
-            <p>Our intention is to support projects regionally and locally.
+    <button class="chatbot-button"></button>
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■■ FIN CHATBOT ■■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+    
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■ INICIO ABOUT-US ■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Diego Valentino Pardo Yepez                           │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+    <section class="about-us">
+
+        <!-- About Us - Sección Texto -->
+
+        <section class="about-us-texto">
+            <p>
+                Our intention is to support projects regionally and locally.
                 People knowing the local conditions can help effectively by
                 adapting to the situation on ground immediately. They know
                 best what is required at any moment, and we believe this is
-                a reassurance that the resources are used in the best way possible.</p>
-
-            <p>We will continue supporting on-going projects as long as it’s
+                a reassurance that the resources are used in the best way possible.
+            </p>
+            <p>
+                We will continue supporting on-going projects as long as it’s
                 needed. At the same time, we have all ears and eyes open for
                 new ways of supporting as directly as we can, wherever it is.
                 We find this crucial in order to stay open to new possibilities
-                of helping in the most effective manner.</p>
-            <button class="About-Us-Diego-Pardo-texto_buton">About us</button>
+                of helping in the most effective manner.
+            </p>
+            
+            <button class="about-us-texto-button">About us</button>
         </section>
 
-        <!-- Sección Diego Pardo - About Us Image-->
-        <section class="About-Us-Diego-Pardo-Image">
+        <!-- About Us - Sección image -->
 
-            <img class="About-Us-Diego-Pardo-Image_imagen" src="Image/Image-about-us.png" alt="About_us">
-        </section>
-
-        <!-- Sección Diego Pardo - About Us button-->
-       
-        <section class="About-Us-Diego-Pardo-button">
-            <div id="toTop">  
-                <button  type="button" class="About-Us-Diego-Pardo-button-buton" alt="boton_chatbot"></button>
-            </div>
+        <section class="about-us-image">
+            <img class="about-us-image-imagen" src="Image/Image-about-us.png" alt="About_us">
         </section>
 
     </section>
 
-    <!-- SECCIÓN PATRONS -->
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■ FIN ABOUT-US ■■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+    
 
-    <!-- Patrons Título -->
 
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■ INICIO PATRONS ■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Diego N. Cabrera                                      │ -->
+    <!-- │ ► Vania Belén Carlos Camones                            │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+    <!-- Patrons - Sección Título -->
     <p class="patrons-title">Patrons</p>
-
-    <!-- Patrons Carousel -->
-
+    
+    <!-- Patrons - Sección Carousel -->
     <div id="carouselExampleCaptions" class="carousel">
         <div class="carousel-inner">
 
@@ -185,20 +241,10 @@
                 </div>
             </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item video-background">
                 <!-- Carta nº2 video probando como etiqueta iframe -->
-
                 <video id="my-video" class="card-video video-js" controls preload="auto" width="640" height="264"
-                    poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
-
-                <video
-                    id="my-video"
-                    class="card-video video-js"
-                    controls
-                    preload="auto"
-                    data-setup="{}"
-                >
-
+                     data-setup='{}'>
                     <source src="./video/VID-20221107-WA0019.mp4" type="video/mp4" />
                 </video>
             </div>
@@ -206,10 +252,14 @@
             <div class="carousel-item">
                 <!-- Carta nº3 normal-->
                 <div class="card-contenedor">
-                    <img src="./img/imagen-card.png" class="d-block card-imagen" alt="...">
+                    <img src="./image/Imagen_Reto.png" class="d-block card-imagen" alt="...">
                     <div class="d-none d-md-block text-center card-info">
                         <h5 class="card-titulo">Reto Nause</h5>
-                        <p class="card-descrip">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="card-descrip">Gemeinderat Stadt Bern <br>
+                            Direktor für Sicherheit, <br>
+                            Umwelt und Energie <br>
+                            <b>Die Mitte</b>
+                        </p>
                         <img src="./img/add.png" class="card-add" alt="+">
                     </div>
                 </div>
@@ -218,10 +268,14 @@
             <div class="carousel-item">
                 <!-- Carta nº4 normal-->
                 <div class="card-contenedor">
-                    <img src="./img/imagen-card.png" class="d-block card-imagen" alt="...">
+                    <img src="./Image/Imagen_Kathrin.png" class="d-block card-imagen" alt="...">
                     <div class="d-none d-md-block text-center card-info">
-                        <h5 class="card-titulo">Reto Nause</h5>
-                        <p class="card-descrip">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h5 class="card-titulo">Kathrin Bertschy</h5>
+                        <p class="card-descrip">Nationalrätin<br>
+                            Kanton Bern<br>
+                            <br>
+                            <b>GLP</b>
+                        </p>
                         <img src="./img/add.png" class="card-add" alt="+">
                     </div>
                 </div>
@@ -281,7 +335,17 @@
         </div>
     </div>
 
-    <!--SECCIÓN SUPPORTERS -->
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■■ FIN PATRONS ■■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■ INICIO SUPPORTERS ■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Federico Manuel Peralta                               │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
 
     <div class="tittle-supporters">
         <h3> <strong> Supporters</strong></h3>
@@ -383,61 +447,87 @@
         </div>
     </div>
 
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■ FIN SUPPORTERS ■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
 
 
-    <!-- SECCIÓN FOOTER -->
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■ INICIO PRESS-AND-NEWS ■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Luis Romano                                           │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
 
-    <!-- SECCIÓN FOOTER -->
 
-    <footer class="Secction_footer_Diego_pardo">
-        <section class="Section_footer_Diego_body">
-            <section class="Section_footer_Diego_body_title">
-                <p class="Section_footer_Diego_body_title_p">
-                    Human Front Aid
-                </p>
-            </section>
 
-            <section class="Section_footer_Diego_body_network">
-                <section class="Section_footer_Diego_body_network_Instagram">
-                    <button class="Section_footer_Diego_body_network_Instagram_button"></button>
-                    <p class="Section_footer_Diego_body_network_instagram_p">Instagram</p>
-                </section>
-                <section class="Section_footer_Diego_body_network_Whatsapp">
-                    <button class="Section_footer_Diego_body_network_button_whatsapp"></button>
-                    <p class="Section_footer_Diego_body_network_whatsapp_p">WhatsApp</p>
-                </section>
-                <section class="Section_footer_Diego_body_network_facebook">
-                    <button class="Section_footer_Diego_body_network_facebook_button"></button>
-                    <p class="Section_footer_Diego_body_network_facebook_p">Facebook</p>
-                </section>
-            </section>
-            <hr class="Section_footer_Diego_body_network_line">
-            <div class="navbar_contenedor_principal_footer">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="container-fluid navbar-contenedor">
-                        <img class="navbar-brand navbar-logo" src="Image/logo.png" alt="">
-                        <a class="navbar-brand navbar-titulo" href="./index.html">Human Front Aid</a>
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■ FIN PRESS-AND-NEWS ■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
 
-                        <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
-                            <div class="navbar-nav ms-auto">
-                                <a class="nav-link navbar-link navbar-home" href="#">Home</a>
-                                <a class="nav-link navbar-link navbar-about-us" href="#">About us</a>
-                                <button type="button" class="btn btn-primary navbar-need-help">Need help?</button>
-                                <button type="button" class="btn btn-warning navbar-donate">DONATE</button>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
 
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Diego Valentino Pardo Yepez                           │ -->
+    <!-- │ ► Santiago Elias Carranza                               │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+    <footer class="footer_container">
+        <div class="footer_body">
+
+            <div class="footer_redsocial">
+                <div class="footer_redsocial_whatsapp">
+                    <img src="./Image/WhatsApp_logo.png" onclick="location.href=``" width="35px" height="35px" alt="Icono de Whatsapp"> 
+                    <a href="">Whatsapp</a>
+                </div>
+                <div class="footer_redsocial_instragram">
+                    <img src="./Image/Instagram_logo.png" onclick="location.href=`https://www.instagram.com/humanfrontaid/`" width="35px" height="35px" alt="Icono de Instagram">
+                    <a href="https://www.instagram.com/humanfrontaid/">Instagram</a>
+                </div>
+                <div class="footer_redsocial_facebook">
+                    <img src="./Image/Facebook_logo.png" onclick="location.href=`https://www.facebook.com/HUMANFRONTAID/`" width="35px" height="35px" alt="Icono de Facebook">
+                    <a href="https://www.facebook.com/HUMANFRONTAID/">Facebook</a>
+                </div>
             </div>
 
-        </section>
+            <div class="footer_linea"></div>
+            
+            <div class="footer_routes">
+                <div class="footer_routes_logo">
+                    <img src="./Image/logo.png" width="91px" height="104px" alt="Logo de Human Front Aid">
+                    <p>Human Front Aid</p>
+                </div>
+                
+                <div class="footer_routes_container_home_navigation">
+                    <div class="footer_routes_home-aboutUs">
+                        <a href="">Home</a>
+                        <a href="/pages/about-us.html">About us</a>
+                    </div>
+                    <div class="footer_routes_navigation">
+                        <div>
+                        </div>
+                        <div>
+                        </div>
+                        <div>
+                            <a href="./need-help.html">Need help?</a>
+                        </div>
+                        <div>
+                            <a href="">DONATE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
     </footer>
 
-
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
 
 </body>
-
-
 </html>
 
