@@ -99,115 +99,6 @@
 }
 
 
-/* Sección footer - Mobile */
-
-.footer_container{
-    background-color: #001C3D;
-    height: 129px;;
-}
-
-.footer_body{
-    background-color: #001C3D;
-    height: 129px;
-}
-
-.footer_body a,
-.footer_body p{
-    text-decoration:none;
-    color: #FAFAFB;
-}
-
-.footer_redsocial{
-    display: flex;
-    justify-content: flex-start;
-    padding-left: .7em;
-}
-
-.footer_redsocial img{
-    cursor: pointer;
-    margin-right:2em;
-}
-
-.footer_redsocial a{
-    display: none;
-}
-
-.footer_routes{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 3em;
-}
-
-.footer_routes_logo{
-    display: flex;
-    align-items: center;
-    margin-right: 1vw;
-    position: relative;
-    bottom: .1em;
-}
-
-.footer_routes_logo img{
-    width: 70px;
-    height: 70px;
-    position: relative;
-    bottom: .2em;
-}
-
-.footer_routes_logo p{
-    font-weight: bold;
-    padding-left: .3em;
-}
-
-.footer_routes_navigation div:nth-child(1){
-    display: none;
-}
-
-.footer_routes_navigation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    bottom: 5em;
-}
-
-.footer_routes_navigation div:nth-child(3),
-.footer_routes_navigation div:nth-child(4){
-    display: flex;
-    align-items: center;
-    border-radius: .5em;
-    width: 163px;
-    height: 48px;
-
-    /* estilos provisionales, quitar al hacer el "Mobile": position y top */
-    position: relative;
-    top: 4em;
-}
-
-.footer_routes_navigation div:nth-child(3) a,
-.footer_routes_navigation div:nth-child(4) a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 163px;
-    height: 48px;
-}
-
-.footer_routes_navigation div:nth-child(3) {
-    border:3px solid #FAFAFB;
-    margin-right: 1em;
-    margin-left: 3vw;
-}
-
-.footer_routes_navigation div:nth-child(4){
-    background-color: #FFD500;
-}
-
-.footer_routes_navigation div:nth-child(4) a{
-    font-weight: bold;
-    color: #02397A;
-}
-
 /* ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑  SECCIONES DE ARRIBA ELIMINAR Y MOVER A DESKTOP   ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ */
 /* ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ */
 
@@ -796,6 +687,7 @@
         align-items: center;
         position: relative;
         top: 1em;
+        margin-top: 3em;
     }
 
     .footer_routes_logo{
@@ -841,6 +733,7 @@
     .footer_routes_navigation {
         display: flex;
         flex-direction:row;
+        position: relative;
         bottom: .6em;
     }
 
@@ -849,11 +742,8 @@
         display: flex;
         align-items: center;
         border-radius: .5em;
-
-        /* estilos provisionales, quitar al hacer el "Mobile": position y top */
-        position:relative;
-        top: 0;
-        /**/
+        width: 163px;
+        height: 48px;
     }
 
     .footer_routes_navigation div:nth-child(3) a,
@@ -883,5 +773,4 @@
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
     /* └─────────────────────────────────────────────────────────┘ */
-
 }
