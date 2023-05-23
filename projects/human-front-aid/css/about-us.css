@@ -2,9 +2,13 @@
 
 @media(min-width: 768px) {
 
-    /* ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ */
-    /* ■■ COLABORADORES ■■ */
-    /* ■■ Diego N. Cabrera ■■ Luis Romano ■■ */
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* │ ► Luis Romano                                           │ */
+    /* └─────────────────────────────────────────────────────────┘ */
 
     /*  Header - Sección Navbar  */
 
@@ -14,12 +18,10 @@
 
     .navbar-contenedor {
         padding-top: 20px; 
-        
     }
 
     .bg-body-tertiary {
         --bs-bg-opacity: 0;
-        
     }
 
     .navbar-titulo {
@@ -35,7 +37,6 @@
     .navbar-contenido {
         font-family: var(--font-family-lato);
         margin-right: 13.06%;
-
     }
 
     .navbar-link {
@@ -66,7 +67,8 @@
         font-weight: 700;
         color: var(--color-dos);
         background-color: var(--color-tres);
-        padding: 0px 34px;
+        padding-left: 34px;
+        padding-right: 34px;
     }
 
     /*  Header - Sección idiomas  */
@@ -121,6 +123,21 @@
         font-weight: bold;
     }
 
+    /* Header - Botón donate */
+
+    .home-btn {
+        background-color: var(--color-tres);
+        border-color: var(--color-tres);
+        position: absolute;
+        width: 254px;
+        height: 64px;
+        border-radius: 8px;
+        color: #004eaa;
+        font-size: 28px;
+        font-weight: 800;
+        font-family: 'Lato';
+    }
+
     /* Header - Sección Background */
 
     .navbar-contenedor-principal {
@@ -158,7 +175,9 @@
         top: 650px;
     }
 
-    /* ■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■ */
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
 
     /* ■■■■■■■■■■■■■■■■■■■■ INICIO ABOUT-US ■■■■■■■■■■■■■■■■■■■■ */
     /* ■■ COLABORADORES ■■ */
