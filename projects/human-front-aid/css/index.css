@@ -27,12 +27,12 @@
 }
 
 .navbar-logo{
-    margin-left: var(--margin-left)
+    margin-left: var(--margin-desktop-2)
 }
 
 .navbar-contenido {
     font-family: var(--font-family-lato);
-    margin-right: 13.06%;
+    margin-right: var(--margin-desktop-2);
 }
 
 .navbar-link {
@@ -96,7 +96,7 @@
 /*  Header - Sección Títulos  */
 
 .header-div {
-    margin-left: var(--margin-left);
+    margin-left: var(--margin-desktop-2);
 }
 
 .header-titulo {
@@ -281,13 +281,8 @@
 /* │ ► Vania Belén Carlos Camones                            │ */
 /* └─────────────────────────────────────────────────────────┘ */
 
-.patrons-title {
-    margin-left: var(--margin-left);
-    font-family: var(--font-family-lato);
-    font-weight: 700;
-    font-size: 35px;
-    color: var(--color-dos);
-    margin-top: 4rem;
+.carousel {
+	margin-top: 100px;
 }
 
 .carousel-inner {
@@ -422,10 +417,12 @@
 }
 
 .tittle-supporters {
-    margin-left: var(--margin-left);
+    margin-left: var(--margin-desktop-2);
     font-family: var(--font-family-lato);
     color: var(--color-dos);
     margin-top: 4rem;
+	font-weight: 700;
+	font-size: 40px;
 }
 
 /* ┌─────────────────────────────────────────────────────────┐ */
@@ -441,10 +438,10 @@
 /* └─────────────────────────────────────────────────────────┘ */
 
 .press {
-    margin-left: var(--margin-left);
+    margin-left: var(--margin-desktop-2);
     font-family: var(--font-family-lato);
     font-weight: 700;
-	font-size: 40px;
+    font-size: 40px;
     color: var(--color-dos);
     margin-top: 4rem;
 }
@@ -679,7 +676,7 @@
 /* ║                   MEDIA QUERY - 576 - Mobile                    ║ */
 /* ╚═════════════════════════════════════════════════════════════════╝ */
 
-@media (min-width: 0 ) and (max-width: 576) {
+@media (min-width: 0px ) and (max-width: 576px) {
 
 }
 
@@ -687,7 +684,7 @@
 /* ║                   MEDIA QUERY - 992 - Mobile                    ║ */
 /* ╚═════════════════════════════════════════════════════════════════╝ */
 
-@media (min-width: 577 ) and (max-width: 992px) {
+@media (min-width: 577px ) and (max-width: 992px) {
 
 }
 
@@ -695,7 +692,7 @@
 /* ║                   MEDIA QUERY - 1200 - Desktop                  ║ */
 /* ╚═════════════════════════════════════════════════════════════════╝ */
 
-@media(min-width: 993px) and (max-width: 1366px) {
+@media(min-width: 993px) and (max-width: 1299px) {
 
 	/* ┌─────────────────────────────────────────────────────────┐ */
 	/* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
@@ -705,41 +702,24 @@
 	/* │ ► Luis Romano                                           │ */
 	/* └─────────────────────────────────────────────────────────┘ */
 
+	/*  Header - Sección Navbar  */
 
+	.navbar-logo{
+		margin-left: var(--margin-desktop-1);
+	}
+
+	.navbar-contenido {
+		margin-right: var(--margin-desktop-1);
+	}
+
+	/*  Header - Sección Títulos  */
+
+	.header-div {
+		margin-left: var(--margin-desktop-1);
+	}
 
 	/* ┌─────────────────────────────────────────────────────────┐ */
 	/* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
-	/* └─────────────────────────────────────────────────────────┘ */
-
-
-		
-	/* ┌─────────────────────────────────────────────────────────┐ */
-	/* │ ■■■■■■■■■■■■■■■■■■ INICIO ABOUT-US ■■■■■■■■■■■■■■■■■■■■ │ */
-	/* │                                                         │ */
-	/* │   COLABORADORES:                                        │ */
-	/* │ ► Diego Valentino Pardo Yepez                           │ */
-	/* └─────────────────────────────────────────────────────────┘ */
-
-
-
-	/* ┌─────────────────────────────────────────────────────────┐ */
-	/* │ ■■■■■■■■■■■■■■■■■■■■ FIN ABOUT-US ■■■■■■■■■■■■■■■■■■■■■ │ */
-	/* └─────────────────────────────────────────────────────────┘ */
-
-
-
-	/* ┌─────────────────────────────────────────────────────────┐ */
-	/* │ ■■■■■■■■■■■■■■■■■■■ INICIO PATRONS ■■■■■■■■■■■■■■■■■■■■ │ */
-	/* │                                                         │ */
-	/* │   COLABORADORES:                                        │ */
-	/* │ ► Diego N. Cabrera                                      │ */
-	/* │ ► Vania Belén Carlos Camones                            │ */
-	/* └─────────────────────────────────────────────────────────┘ */
-
-
-
-	/* ┌─────────────────────────────────────────────────────────┐ */
-	/* │ ■■■■■■■■■■■■■■■■■■■■■ FIN PATRONS ■■■■■■■■■■■■■■■■■■■■■ │ */
 	/* └─────────────────────────────────────────────────────────┘ */
 
 
@@ -751,10 +731,17 @@
 	/* │ ► Federico Manuel Peralta                               │ */
 	/* └─────────────────────────────────────────────────────────┘ */
 
+	.tittle-supporters {
+		margin-left: var(--margin-desktop-1);
+		font-family: var(--font-family-lato);
+		color: var(--color-dos);
+		margin-top: 4rem;
+	}
 
 	/* ┌─────────────────────────────────────────────────────────┐ */
 	/* │ ■■■■■■■■■■■■■■■■■■■ FIN SUPPORTERS ■■■■■■■■■■■■■■■■■■■■ │ */
 	/* └─────────────────────────────────────────────────────────┘ */
+
 
 
 	/* ┌─────────────────────────────────────────────────────────┐ */
@@ -764,26 +751,12 @@
 	/* │ ► Luis Romano                                           │ */
 	/* └─────────────────────────────────────────────────────────┘ */
 
-
+	.press {
+		margin-left: var(--margin-desktop-1);
+	}
 
 	/* ┌─────────────────────────────────────────────────────────┐ */
 	/* │ ■■■■■■■■■■■■■■■■■ FIN PRESS-AND-NEWS ■■■■■■■■■■■■■■■■■■ │ */
-	/* └─────────────────────────────────────────────────────────┘ */
-
-
-
-	/* ┌─────────────────────────────────────────────────────────┐ */
-	/* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
-	/* │                                                         │ */
-	/* │   COLABORADORES:                                        │ */
-	/* │ ► Diego Valentino Pardo Yepez                           │ */
-	/* │ ► Santiago Elias Carranza                               │ */
-	/* └─────────────────────────────────────────────────────────┘ */
-
-
-		
-	/* ┌─────────────────────────────────────────────────────────┐ */
-	/* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
 	/* └─────────────────────────────────────────────────────────┘ */
 }
 
@@ -791,6 +764,6 @@
 /* ║              MEDIA QUERY - Extra Large - Desktop                ║ */
 /* ╚═════════════════════════════════════════════════════════════════╝ */
 
-@media(min-width: 1368px) {
+@media(min-width: 1300px) {
 
 }
