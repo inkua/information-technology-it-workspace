@@ -26,7 +26,6 @@
     <!-- JQuery v3.6.4 -->
     <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-    <script src="./js/chatbot.js"></script>
 
     <!-- JavaScript -->
     <script defer src="./js/carousel.js"></script>
@@ -48,7 +47,6 @@
 
     <!-- JavaScript -->
     <script defer src="./js/carousel.js"></script>
-
 </head>
 
 <body>
@@ -87,7 +85,7 @@
                           
                             <a href="./need-help.html" class="btn btn-primary navbar-need-help" href="./pages/need-help.html">Need help?</a>
                    
-                            <button type="button" class="btn btn-warning navbar-donate">DONATE</button>
+                            <a type="button" class="btn btn-warning navbar-donate" href="./pages/want-to-help.html">DONATE</a>
                         </div>
                     </div>
                 </div>
@@ -128,7 +126,7 @@
             
             <!--  Imagen de fondo  -->
 
-            <img class="header-background-imagen" src="./Image/header-about-us.png" alt="About Us">
+            <img class="header-background-imagen" src="./Image/home-background.png" alt="About Us">
 
             <!--  Máscara de filtro azul  -->
 
@@ -214,9 +212,6 @@
     <!-- │ ► Diego N. Cabrera                                      │ -->
     <!-- │ ► Vania Belén Carlos Camones                            │ -->
     <!-- └─────────────────────────────────────────────────────────┘ -->
-
-    <!-- Patrons - Sección Título -->
-    <p class="patrons-title">Patrons</p>
     
     <!-- Patrons - Sección Carousel -->
     <div id="carouselExampleCaptions" class="carousel">
@@ -224,20 +219,8 @@
 
             <!-- Carousel de Cartas y Videos -->
 
-            <div class="carousel-item active">
-                <!-- Carta nº1 normal -->
-                <div class="card-contenedor">
-                    <img src="./img/imagen-card.png" class="d-block card-imagen" alt="...">
-                    <div class="text-center card-info">
-                        <h5 class="card-titulo">Reto Nause</h5>
-                        <p class="card-descrip">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <img src="./img/add.png" class="card-add" alt="+">
-                    </div>
-                </div>
-            </div>
-
             <div class="carousel-item video-background">
-                <!-- Carta nº2 video probando como etiqueta iframe -->
+                <!-- Carta nº1 video probando como etiqueta iframe -->
                 <video id="my-video" class="card-video video-js" controls preload="auto" width="640" height="264"
                      data-setup='{}'>
                     <source src="./video/VID-20221107-WA0019.mp4" type="video/mp4" />
@@ -245,7 +228,7 @@
             </div>
 
             <div class="carousel-item">
-                <!-- Carta nº3 normal-->
+                <!-- Carta nº2 normal-->
                 <div class="card-contenedor">
                     <img src="./image/Imagen_Reto.png" class="d-block card-imagen" alt="...">
                     <div class="d-none d-md-block text-center card-info">
@@ -261,7 +244,7 @@
             </div>
 
             <div class="carousel-item">
-                <!-- Carta nº4 normal-->
+                <!-- Carta nº3 normal-->
                 <div class="card-contenedor">
                     <img src="./Image/Imagen_Kathrin.png" class="d-block card-imagen" alt="...">
                     <div class="d-none d-md-block text-center card-info">
@@ -277,24 +260,81 @@
             </div>
 
             <div class="carousel-item">
-                <!-- Carta nº5 normal-->
+                <!-- Carta nº4 normal-->
                 <div class="card-contenedor">
-                    <img src="./img/imagen-card.png" class="d-block card-imagen" alt="...">
+                    <img src="./Image/Image_Matthias.png" class="d-block card-imagen" alt="...">
                     <div class="d-none d-md-block text-center card-info">
-                        <h5 class="card-titulo">Reto Nause</h5>
-                        <p class="card-descrip">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h5 class="card-titulo">Matthias Aebischer</h5>
+                        <p class="card-descrip">Nationalrat<br>
+                            Kanton Bern<br>
+                            <br>
+                            <b>SP</b>
+                        </p>
                         <img src="./img/add.png" class="card-add" alt="+">
                     </div>
                 </div>
             </div>
 
             <div class="carousel-item">
-                <!-- Carta nº6 normal -->
+                <!-- Carta nº5 normal-->
                 <div class="card-contenedor">
-                    <img src="./img/imagen-card.png" class="d-block card-imagen" alt="...">
-                    <div class="text-center card-info">
-                        <h5 class="card-titulo">Reto Nause</h5>
-                        <p class="card-descrip">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <img src="./Image/Image_Gerhard1.png" class="d-block card-imagen" alt="...">
+                    <div class="d-none d-md-block text-center card-info">
+                        <h5 class="card-titulo">Gerhard Pfister</h5>
+                        <p class="card-descrip">Nationalrat<br>
+                            Kanton Zug<br>
+                            <br>
+                            <b>Die Mitte</b>
+                        </p>
+                        <img src="./img/add.png" class="card-add" alt="+">
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <!-- Carta nº6 normal-->
+                <div class="card-contenedor">
+                    <img src="./Image/Image_Beatrice.png" class="d-block card-imagen" alt="...">
+                    <div class="d-none d-md-block text-center card-info">
+                        <h5 class="card-titulo">Beatrice Simone-Jungi</h5>
+                        <p class="card-descrip">Ehem.<br>
+                            Regierungsrätin<br>
+                            Finanzdirektion
+                            <br>
+                            <b>Kanton Bern</b>
+                        </p>
+                        <img src="./img/add.png" class="card-add" alt="+">
+                    </div>
+                </div>
+            </div>
+           
+            <div class="carousel-item">
+                <!-- Carta nº7 normal-->
+                <div class="card-contenedor">
+                    <img src="./Image/Image_Bernd.png" class="d-block card-imagen" alt="...">
+                    <div class="d-none d-md-block text-center card-info">
+                        <h5 class="card-titulo">Bernd Schildger</h5>
+                        <p class="card-descrip">Ehem. Direktor<br>
+                            <br>
+                            <br>
+                            <b>Tierpark Bern</b>
+                        </p>
+                        <img src="./img/add.png" class="card-add" alt="+">
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <!-- Carta nº8 normal-->
+                <div class="card-contenedor">
+                    <img src="./Image/Image_Wanja1.png" class="d-block card-imagen" alt="...">
+                    <div class="d-none d-md-block text-center card-info">
+                        <h5 class="card-titulo">Wanja Greuel</h5>
+                        <p class="card-descrip">COE, BSC Young <br>
+                            Boys<br>
+                            <br>
+                            <b>Reto Nause</b>
+                        </p>
                         <img src="./img/add.png" class="card-add" alt="+">
                     </div>
                 </div>
@@ -343,7 +383,7 @@
     <!-- └─────────────────────────────────────────────────────────┘ -->
 
     <div class="tittle-supporters">
-        <h3> <strong> Supporters</strong></h3>
+        <p>Supporters</p>
     </div>
 
     <div id="row-supporters" class="row">
@@ -577,7 +617,7 @@
             <div class="footer_routes">
                 <div class="footer_routes_logo">
                     <img src="./Image/logo.png" width="91px" height="104px" alt="Logo de Human Front Aid">
-                    <p>Human Front Aid</p>
+                    <p>Human <span>Front Aid</span></p>
                 </div>
                 
                 <div class="footer_routes_container_home_navigation">
