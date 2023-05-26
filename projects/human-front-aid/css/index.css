@@ -647,7 +647,8 @@
         background-color: #001C3D;
         height: 357px;
         max-width: 95vw;
-        margin: 0 auto;
+        margin-right: 13.06%;
+        margin-left: 13.06%;
     }
 
     .footer_body a,
@@ -713,7 +714,7 @@
     .footer_routes_container_home_navigation{
         display: flex;
         justify-content: space-between;
-        min-width: 51vw;
+        width: 39vw;
     }
 
     .footer_routes_home-aboutUs {
@@ -722,7 +723,7 @@
     }
 
     .footer_routes_home-aboutUs a:nth-child(1){
-        padding-right: 3vw;
+        padding-right: 2em;
     }
 
     .footer_routes_home-aboutUs div:nth-child(1){
