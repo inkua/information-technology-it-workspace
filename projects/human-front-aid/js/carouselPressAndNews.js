@@ -23,7 +23,7 @@ punto.forEach( ( cadaPunto , i )=> {
 
         // movemos el contenedor
         contenedor.style.transform = `translateX(${ operacion }%)`
-        
+
 
         // Recorremos todos los punto
         punto.forEach( ( cadaPunto , i )=>{
