@@ -26,6 +26,23 @@
     color: var(--color-uno);
 }
 
+.navbar-titulo:after {
+    display:block;
+    content: '';
+    border-bottom: solid 1px var(--color-uno);
+    transform: scaleX(0);  
+    transition: transform 150ms ease-in-out;
+}
+
+.navbar-titulo:hover:after {
+    color: var(--color-uno);
+    transform: scaleX(1); 
+}
+
+.navbar-titulo:hover {
+    color: var(--color-uno);
+}
+
 .navbar-logo{
     margin-left: var(--margin-desktop-2)
 }
@@ -43,8 +60,46 @@
     margin-right: 61px;
 }
 
+.navbar-about-us:hover {
+    color: var(--color-uno);
+    text-shadow: var(--text-shadow);
+    transition: all ease 0.5s;
+}
+
+.navbar-about-us:after {
+    display:block;
+    content: '';
+    border-bottom: solid 1px var(--color-uno);
+    transform: scaleX(0);  
+    transition: transform 150ms ease-in-out;
+}
+
+.navbar-about-us:hover:after {
+    color: var(--color-uno);
+    transform: scaleX(1); 
+}
+
 .navbar-home {
     margin-right: 24px;
+}
+
+.navbar-home:hover {
+    color: var(--color-uno);
+    text-shadow: var(--text-shadow);
+    transition: all ease 0.5s;
+}
+
+.navbar-home:after {
+    display:block;
+    content: '';
+    border-bottom: solid 1px var(--color-uno);
+    transform: scaleX(0);  
+    transition: transform 150ms ease-in-out;
+}
+
+.navbar-home:hover:after {
+    color: var(--color-uno);
+    transform: scaleX(1); 
 }
 
 .navbar-need-help {
@@ -57,6 +112,17 @@
     padding-right: 34px;
 }
 
+.navbar-need-help:hover {
+    color: var(--color-uno);
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: var(--color-uno);
+    border: 2px solid var(--color-uno);
+    text-shadow: var(--shadow-01);
+    box-shadow: var(--shadow-01);
+    transition: all ease 0.5s;
+}
+
 .navbar-donate {
     color: var(--color-uno);
     border-radius: 8px;
@@ -67,13 +133,20 @@
     padding-right: 34px;
 }
 
+.navbar-donate:hover {
+    color: var(--color-dos);
+    background: var(--color-tres);
+    box-shadow: var(--shadow-02);
+    transition: all ease 0.5s;
+}
+
 /*  Header - Sección idiomas  */
 
 .contenedor-idiomas {
     margin-top: 20px;
 }
 
-.navbar-ikp {
+.navbar-ykp {
     color: var(--color-uno);
     border-radius: 8px 0 0 8px;
     font-weight: 700;
@@ -81,6 +154,13 @@
     background-color: var(--color-uno);
     width: 67.742px;
     border: 0;
+}
+
+.navbar-ykp:hover {
+    color: rgba(0, 0, 0, 0.7);
+    background: var(--color-uno);
+    box-shadow: var(--shadow-01);
+    transition: all ease 0.5s;    
 }
 
 .navbar-en {
@@ -91,6 +171,13 @@
     background-color: var(--color-tres);
     width: 67.742px;
     border: 0;
+}
+
+.navbar-en:hover {
+    color: var(--color-dos);
+    background: var(--color-tres);
+    box-shadow: var(--shadow-02);
+    transition: all ease 0.5s;   
 }
 
 /*  Header - Sección Títulos  */
@@ -108,13 +195,15 @@
 }
 
 .header-subtitulo {
+    margin-top: 20px;
     color: #ffffff;
     font-size: 25px;
     font-family: 'Poppins';
     text-shadow: 0 0 5px #000000;
+    width: 440px;
 }
 
-.header-subtitulo strong{
+.header-subtitulo strong {
     font-size: 27px;
     font-weight: bold;
 }
@@ -128,10 +217,18 @@
     width: 254px;
     height: 64px;
     border-radius: 8px;
-    color: #004eaa;
+    color: var(--color-dos);
     font-size: 28px;
     font-weight: 800;
     font-family: 'Lato';
+    margin-top: 20px;
+}
+
+.home-btn:hover {
+    color: var(--color-dos);
+    background: var(--color-tres);
+    box-shadow: var(--shadow-02);
+    transition: all ease 0.5s;
 }
 
 /* Header - Sección Background */
@@ -144,7 +241,7 @@
     position: absolute;
     background: #02397A;
     width: 100%;
-    height: 800px;
+    height: 850px;
     top: 0;
     z-index: -1;
     mix-blend-mode: multiply;
@@ -167,8 +264,8 @@
 .wave {
     position: absolute;
     width: 100%;
-    height: 200px;
-    top: 650px;
+    height: 160px;
+    top: 700px;
 }
 
 /* ┌─────────────────────────────────────────────────────────┐ */
@@ -188,7 +285,7 @@
     position: fixed;
     right: 1%;
     bottom: 50%;
-    background-image: url("/Image/boton_chatbot.png");
+    background-image: url("../Image/boton_chatbot.png");
     border-radius: 100px;
     width: 70px;
     height: 70px;
@@ -430,6 +527,7 @@
 /* └─────────────────────────────────────────────────────────┘ */
 
 
+
 /* ┌─────────────────────────────────────────────────────────┐ */
 /* │ ■■■■■■■■■■■■■■■■ INICIO PRESS-AND-NEWS ■■■■■■■■■■■■■■■■ │ */
 /* │                                                         │ */
@@ -524,6 +622,7 @@
 /* └─────────────────────────────────────────────────────────┘ */
 
 
+
 /* ┌─────────────────────────────────────────────────────────┐ */
 /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
 /* │                                                         │ */
@@ -531,6 +630,7 @@
 /* │ ► Diego Valentino Pardo Yepez                           │ */
 /* │ ► Santiago Elias Carranza                               │ */
 /* └─────────────────────────────────────────────────────────┘ */
+
 .footer_container{
     background-color: #001C3D;
     height: 357px;
@@ -666,6 +766,7 @@
     font-weight: bold;
     color: #02397A;
 }
+
 /* ┌─────────────────────────────────────────────────────────┐ */
 /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
 /* └─────────────────────────────────────────────────────────┘ */
@@ -675,21 +776,25 @@
 /* ╔═════════════════════════════════════════════════════════════════╗ */
 /* ║                   MEDIA QUERY - 576 - Mobile                    ║ */
 /* ╚═════════════════════════════════════════════════════════════════╝ */
+
 @media (min-width: 0px ) and (max-width: 576px) {
+    
 }
 
 /* ╔═════════════════════════════════════════════════════════════════╗ */
 /* ║                   MEDIA QUERY - 992 - Mobile                    ║ */
 /* ╚═════════════════════════════════════════════════════════════════╝ */
+
 @media (min-width: 577px ) and (max-width: 992px) {
 
-/* ┌─────────────────────────────────────────────────────────┐ */
-/* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
-/* │                                                         │ */
-/* │   COLABORADORES:                                        │ */
-/* │ ► Diego Valentino Pardo Yepez                           │ */
-/* │ ► Santiago Elias Carranza                               │ */
-/* └─────────────────────────────────────────────────────────┘ */
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego Valentino Pardo Yepez                           │ */
+    /* │ ► Santiago Elias Carranza                               │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
     .footer_routes_logo img {
         width: 81px;
         height: 81px;
@@ -736,9 +841,11 @@
         margin-right: 0;
         margin-left: 0;
     }
-/* ┌─────────────────────────────────────────────────────────┐ */
-/* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
-/* └─────────────────────────────────────────────────────────┘ */
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
 }
 
 
@@ -746,15 +853,16 @@
 /* ╔═════════════════════════════════════════════════════════════════╗ */
 /* ║                   MEDIA QUERY - 1200 - Desktop                  ║ */
 /* ╚═════════════════════════════════════════════════════════════════╝ */
+
 @media(min-width: 993px) and (max-width: 1299px) {
 
-/* ┌─────────────────────────────────────────────────────────┐ */
-/* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
-/* │                                                         │ */
-/* │   COLABORADORES:                                        │ */
-/* │ ► Diego N. Cabrera                                      │ */
-/* │ ► Luis Romano                                           │ */
-/* └─────────────────────────────────────────────────────────┘ */
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* │ ► Luis Romano                                           │ */
+    /* └─────────────────────────────────────────────────────────┘ */
 
 	/*  Header - Sección Navbar  */
 
@@ -772,18 +880,18 @@
 		margin-left: var(--margin-desktop-1);
 	}
 
-/* ┌─────────────────────────────────────────────────────────┐ */
-/* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
-/* └─────────────────────────────────────────────────────────┘ */
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
 
 
 
-/* ┌─────────────────────────────────────────────────────────┐ */
-/* │ ■■■■■■■■■■■■■■■■■■ INICIO SUPPORTERS ■■■■■■■■■■■■■■■■■■ │ */
-/* │                                                         │ */
-/* │   COLABORADORES:                                        │ */
-/* │ ► Federico Manuel Peralta                               │ */
-/* └─────────────────────────────────────────────────────────┘ */
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■ INICIO SUPPORTERS ■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Federico Manuel Peralta                               │ */
+    /* └─────────────────────────────────────────────────────────┘ */
 
 	.tittle-supporters {
 		margin-left: var(--margin-desktop-1);
@@ -792,34 +900,35 @@
 		margin-top: 4rem;
 	}
 
-/* ┌─────────────────────────────────────────────────────────┐ */
-/* │ ■■■■■■■■■■■■■■■■■■■ FIN SUPPORTERS ■■■■■■■■■■■■■■■■■■■■ │ */
-/* └─────────────────────────────────────────────────────────┘ */
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■ FIN SUPPORTERS ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
 
 
 
-/* ┌─────────────────────────────────────────────────────────┐ */
-/* │ ■■■■■■■■■■■■■■■■ INICIO PRESS-AND-NEWS ■■■■■■■■■■■■■■■■ │ */
-/* │                                                         │ */
-/* │   COLABORADORES:                                        │ */
-/* │ ► Luis Romano                                           │ */
-/* └─────────────────────────────────────────────────────────┘ */
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■ INICIO PRESS-AND-NEWS ■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Luis Romano                                           │ */
+    /* └─────────────────────────────────────────────────────────┘ */
 
 	.press {
 		margin-left: var(--margin-desktop-1);
 	}
 
-/* ┌─────────────────────────────────────────────────────────┐ */
-/* │ ■■■■■■■■■■■■■■■■■ FIN PRESS-AND-NEWS ■■■■■■■■■■■■■■■■■■ │ */
-/* └─────────────────────────────────────────────────────────┘ */
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■ FIN PRESS-AND-NEWS ■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
 
-/* ┌─────────────────────────────────────────────────────────┐ */
-/* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
-/* │                                                         │ */
-/* │   COLABORADORES:                                        │ */
-/* │ ► Diego Valentino Pardo Yepez                           │ */
-/* │ ► Santiago Elias Carranza                               │ */
-/* └─────────────────────────────────────────────────────────┘ */
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego Valentino Pardo Yepez                           │ */
+    /* │ ► Santiago Elias Carranza                               │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
     .footer_routes_container_home_navigation {
         width: 41vw;
     }
@@ -832,9 +941,11 @@
     width: 146px;
     height: 48px;
     }
-/* ┌─────────────────────────────────────────────────────────┐ */
-/* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
-/* └─────────────────────────────────────────────────────────┘ */
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+    
 }
 
 
@@ -842,6 +953,7 @@
 /* ╔═════════════════════════════════════════════════════════════════╗ */
 /* ║              MEDIA QUERY - Extra Large - Desktop                ║ */
 /* ╚═════════════════════════════════════════════════════════════════╝ */
+
 @media(min-width: 1300px) {
 
 }

@@ -1,497 +1,727 @@
-/* ################ MEDIA QUERY - Movile - ################ */
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
+/* │                                                         │ */
+/* │   COLABORADORES:                                        │ */
+/* │ ► Diego N. Cabrera                                      │ */
+/* │ ► Luis Romano                                           │ */
+/* └─────────────────────────────────────────────────────────┘ */
 
-@media (max-width: 767px) {
-  
+/*  Header - Sección Navbar  */
+
+.navbar-brand-logo{
+  left: 100px;
 }
 
-/* ################ MEDIA QUERY - Tablet and Desktop - ################ */
+.navbar-contenedor {
+  padding-top: 20px; 
+}
 
-@media(min-width: 768px) {
-  /* Sección Navbar */
+.bg-body-tertiary {
+  --bs-bg-opacity: 0;
+}
 
-  .navbar-contenedor-principal {
-    background-color: var(--color-dos); 
-    height: 0;
-  }
+.navbar-titulo {
+  margin-left: 0;
+  font-family: var(--font-family-lato);
+  color: var(--color-uno);
+}
 
-  .navbar-brand-logo{
-    left: 100px;
-  }
+.navbar-titulo:after {
+  display:block;
+  content: '';
+  border-bottom: solid 1px var(--color-uno);
+  transform: scaleX(0);  
+  transition: transform 150ms ease-in-out;
+}
 
-  .navbar-contenedor {
-    padding-top: 20px; 
-    
-  }
+.navbar-titulo:hover:after {
+  color: var(--color-uno);
+  transform: scaleX(1); 
+}
 
-  .bg-body-tertiary {
-    --bs-bg-opacity: 0;
-    
-  }
+.navbar-titulo:hover {
+  color: var(--color-uno);
+}
 
-  .navbar-titulo {
-    margin-left: 0;
-    font-family: var(--font-family-lato);
-    color: var(--color-uno);
-  }
+.navbar-logo{
+  margin-left: var(--margin-desktop-2)
+}
 
-  .navbar-logo{
-    margin-left: var(--margin-left)
-  }
+.navbar-contenido {
+  font-family: var(--font-family-lato);
+  margin-right: var(--margin-desktop-2);
+}
 
-  .navbar-contenido {
-    font-family: var(--font-family-lato);
-    margin-right: 13.06%;
+.navbar-link {
+  color: var(--color-uno);
+}
 
-  }
+.navbar-about-us {
+  margin-right: 61px;
+}
 
-  .navbar-link {
-    color: var(--color-uno);
-  }
+.navbar-about-us:hover {
+  color: var(--color-uno);
+  text-shadow: var(--text-shadow);
+  transition: all ease 0.5s;
+}
 
-  .navbar-need-help {
-    margin-right: 61px;
-  }
+.navbar-about-us:after {
+  display:block;
+  content: '';
+  border-bottom: solid 1px var(--color-uno);
+  transform: scaleX(0);  
+  transition: transform 150ms ease-in-out;
+}
 
-  .navbar-home {
-    margin-right: 24px;
-  }
+.navbar-about-us:hover:after {
+  color: var(--color-uno);
+  transform: scaleX(1); 
+}
 
-  .navbar-need-help {
-    margin-right: 16px;
-    color: var(--color-uno);
-    border: 2px solid var(--color-uno);
-    background-color: transparent;
-    border-radius: 8px;
-    padding: 0px 34px;
-  }
+.navbar-home {
+  margin-right: 24px;
+}
 
-  .navbar-donate {
-    color: var(--color-uno);
-    border-radius: 8px;
-    font-weight: 700;
+.navbar-home:hover {
+  color: var(--color-uno);
+  text-shadow: var(--text-shadow);
+  transition: all ease 0.5s;
+}
+
+.navbar-home:after {
+  display:block;
+  content: '';
+  border-bottom: solid 1px var(--color-uno);
+  transform: scaleX(0);  
+  transition: transform 150ms ease-in-out;
+}
+
+.navbar-home:hover:after {
+  color: var(--color-uno);
+  transform: scaleX(1); 
+}
+
+.navbar-need-help {
+  margin-right: 16px;
+  color: var(--color-uno);
+  border: 2px solid var(--color-uno);
+  background-color: transparent;
+  border-radius: 8px;
+  padding-left: 34px;
+  padding-right: 34px;
+}
+
+.navbar-need-help:hover {
+  color: var(--color-uno);
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.7);
+  background-color: var(--color-uno);
+  border: 2px solid var(--color-uno);
+  text-shadow: var(--shadow-01);
+  box-shadow: var(--shadow-01);
+  transition: all ease 0.5s;
+}
+
+.navbar-donate {
+  color: var(--color-uno);
+  border-radius: 8px;
+  font-weight: 700;
+  color: var(--color-dos);
+  background-color: var(--color-tres);
+  padding-left: 34px;
+  padding-right: 34px;
+}
+
+.navbar-donate:hover {
+  color: var(--color-dos);
+  background: var(--color-tres);
+  box-shadow: var(--shadow-02);
+  transition: all ease 0.5s;
+}
+
+/*  Header - Sección idiomas  */
+
+.contenedor-idiomas {
+  margin-top: 20px;
+}
+
+.navbar-ykp {
+  color: var(--color-uno);
+  border-radius: 8px 0 0 8px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.7);
+  background-color: var(--color-uno);
+  width: 67.742px;
+  border: 0;
+}
+
+.navbar-ykp:hover {
+  color: rgba(0, 0, 0, 0.7);
+  background: var(--color-uno);
+  box-shadow: var(--shadow-01);
+  transition: all ease 0.5s;    
+}
+
+.navbar-en {
+  color: var(--color-uno);
+  border-radius: 0 8px 8px 0;
+  font-weight: 700;
+  color: var(--color-dos);
+  background-color: var(--color-tres);
+  width: 67.742px;
+  border: 0;
+}
+
+.navbar-en:hover {
+  color: var(--color-dos);
+  background: var(--color-tres);
+  box-shadow: var(--shadow-02);
+  transition: all ease 0.5s;   
+}
+
+/*  Header - Sección Títulos  */
+
+.header-div {
+  margin-left: var(--margin-desktop-2);
+}
+
+.header-titulo {
+  color: var(--color-tres);
+  font-size: 100px;
+  font-family: var(--font-family-lato);
+  font-weight: 700;
+  line-height: 120px;
+}
+
+.header-subtitulo {
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 25px;
+  font-family: 'Poppins';
+  text-shadow: 0 0 5px #000000;
+  width: 440px;
+}
+
+.header-subtitulo strong {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+/* Header - Botón donate */
+
+.home-btn {
+  background-color: var(--color-tres);
+  border-color: var(--color-tres);
+  position: absolute;
+  width: 254px;
+  height: 64px;
+  border-radius: 8px;
+  color: var(--color-dos);
+  font-size: 28px;
+  font-weight: 800;
+  font-family: 'Lato';
+  margin-top: 20px;
+}
+
+.home-btn:hover {
+  color: var(--color-dos);
+  background: var(--color-tres);
+  box-shadow: var(--shadow-02);
+  transition: all ease 0.5s;
+}
+
+/* Header - Sección Background */
+
+.navbar-contenedor-principal {
+  height: 800px;
+}
+
+.header-background-imagen {
+  position: absolute;
+  background: #02397A;
+  width: 100%;
+  height: 850px;
+  top: 0;
+  z-index: -1;
+  mix-blend-mode: multiply;
+}
+
+.header-background-mascara {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 800px;
+  background: #02397A;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: -2;
+  mix-blend-mode: multiply;
+}
+
+/* Header - Efecto wave*/
+
+.wave {
+  position: absolute;
+  width: 100%;
+  height: 160px;
+  top: 700px;
+}
+
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
+
+
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■ INICIO CONTENIDO ■■■■■■■■■■■■■■■■■■■ │ */
+/* │                                                         │ */
+/* │   COLABORADORES:                                        │ */
+/* │ ► Manuel Florez                                         │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
+.list-group{
+    border-radius: unset;
+}
+.list-group-item{
+    border-radius: unset;
+    border: 1.5px solid var(--color-dos);
+    padding: 0;
+}
+.ONG_element{
+    display: flex;
+    flex-direction: row;
+    padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
+}
+.ONG_element_title{
+    margin-bottom: 0;
+    font-size: 1.4rem;
     color: var(--color-dos);
-    background-color: var(--color-tres);
-    padding: 0px 34px;
-  }
-
-  .contenedor-idiomas {
-    margin-top: 20px;
-  }
-
-  .navbar-ikp {
-    color: var(--color-uno);
-    border-radius: 8px 0 0 8px;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 0.7);
-    background-color: var(--color-uno);
-    width: 67.742px;
-    border: 0;
-  }
-
-  .navbar-en {
-    color: var(--color-uno);
-    border-radius: 0 8px 8px 0;
-    font-weight: 700;
+}
+.ONG_element_title_arrow{
+    margin-left: auto;
     color: var(--color-dos);
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+.ONG_element_collapse{
+    background-color: var(--color-dos);
+    color: white;
+    padding: 0;
+}
+.ONG_element_collapse .ONG_element_collapse_title{
+    font-size: 1.4rem;
+    padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
+    padding-bottom: 0px;
+    margin: 3px;
+}
+.ONG_element_collapse_info{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 4px;
+}
+.ONG_element_collapse_info .ONG_element_collapse_info_item{
+    display: grid;
+    place-items: center;
+    width: 150px;
+    height: 60px;
+}
+.ONG_element_collapse_info .ONG_element_collapse_info_img{
+    background-color: white;
+    color: var(--color-dos);
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+.ONG_element_collapse_info .ONG_element_collapse_info_item .ONG_element_collapse_info_item_btn{
     background-color: var(--color-tres);
-    width: 67.742px;
-    border: 0;
-  }
+    color: var(--color-dos);
+}
 
-  /*Seccion About Us que contiene la imagen de fondo*/
-
-  .need-help-div {
-    height: 800px;
-  }
-
-  .need-help-imagen img {
-    z-index: -1;
-    position: relative;
-    background: #02397A;
-    width: 100%;
-    height: 100%;
-    mix-blend-mode: multiply;
-  }
-
-  .header-background-mascara {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    height: 800px;
-    background: #02397A;
-    border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    z-index: -2;
-    mix-blend-mode: multiply;
-  }
-
-  .need-help-text {
-  width: 40%;
-  position: relative;
-  bottom: 500px;
-  left: 180px;
-  }
-
-  .need-help-titulo {
-    color: var(--color-tres);
-    font-size: 100px;
-    font-weight: 700;
-    font-family: 'Lato';
-    text-shadow: 0 0 5px #000000;
-  }
-
-  .need-help-parrafo{
-    color: #ffffff;
-    font-size: 25px;
-    font-family: 'Poppins';
-    text-shadow: 0 0 5px #000000;
-  }
-
-  .need-help-parrafo strong{
-    font-size: 27px;
-    font-weight: bold;
-  }
-
-  /* efecto wave*/
-  .wave {
-    position: absolute;
-    width: 100%;
-    height: 200px;
-    top: 650px;
-  }
-
-  .need-help-history-container{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 150px;
-  }
-
-  .need-help-history{
-    width: 30%;
-    margin-left: 50px;
-
-  }
-
-  .need-help-history p{
-    font-size: 1rem;
-    text-align: justify;
-  }
-
-  .need-help-history img{
-    width: 423px;
-    height: 435px;
-  }
-
-  .history-titulo{
-    margin-left: 20%;
-  }
-
-  .circulo{
-  
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 5px #02397A solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 50px;
-    top: 1500px;
-   
-  }
-  .emoji-saludar{
-    font-size: 50px;
-
-  }
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■ FIN CONTENIDO ■■■■■■■■■■■■■■■■■■■■ │ */
+/* └─────────────────────────────────────────────────────────┘ */
 
 
-  /* Sección About_us */
-  .need-help-Diego-Pardo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
-  .need-help-Diego-Pardo-texto {
-    padding-left: 170px;
-    padding-right: 54px;
-    padding-top: 100px;
-    text-align: justify;
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
+/* │                                                         │ */
+/* │   COLABORADORES:                                        │ */
+/* │ ► Diego Valentino Pardo Yepez                           │ */
+/* │ ► Santiago Elias Carranza                               │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
+.footer_container{
+    background-color: #001C3D;
+    height: 357px;
+}
+
+.footer_body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
-    align-items: last baseline;
-  }
+    background-color: #001C3D;
+    height: 357px;
+    max-width: 95vw;
+    margin-right:  var(--margin-desktop-2);
+    margin-left:  var(--margin-desktop-2);
+}
 
-  .need-help-Diego-Pardo-Image {
-    padding-right: 170px;
-    padding-left: 54px;
-    padding-top: 80px;
-  }
+.footer_body a,
+.footer_body p{
+    text-decoration:none;
+    color: #FAFAFB;
+}
 
-  .need-help-Diego-Pardo-Image_imagen {
-    width: 450px;
-    height: 350px;
-  }
+.footer_redsocial{
+    display: flex;
+    justify-content: space-between;
+    padding-left: .7em;
+    position: relative;
+    top: 2em;
+    margin-bottom: 3em;
+}
 
-  .need-help-Diego-Pardo-texto_buton {
-    border: 2px solid #004eaa;
-    padding: 12px 21px;
-    border-radius: 8px;
-    gap: 8px;
-    width: 121px;
-    height: 48px;
-    background-color: white;
-    color: #004eaa;
+.footer_redsocial img{
+    cursor: pointer;
+    margin-right:0;
+}
     
-  }
-
-  .need-help-Diego-Pardo-button {
-    padding-top: 400px;
-    padding-right: 20px;
-  }
-
-  .need-help-Diego-Pardo-button-buton {
-    background-image: url("/Image/boton_chatbot.png");
-    border-radius: 100px;
-    width: 70px;
-    height: 70px;
-    background-size: 110%;
-  
-  }
-   
-
-  /* Sección Patrons */
-
-  .patrons-title {
-    margin-left: var(--margin-left);
-    font-family: var(--font-family-lato);
-    font-weight: 700;
-    font-size: 35px;
-    color: var(--color-dos);
-    margin-top: 4rem;
-  }
-
-  .carousel-inner {
-    display: flex;
-  }
-
-  .carousel-item {
-    display: block;
-    margin-right: 0;
-    flex: 0 0 calc(100%/5);
-    padding: 1.2em 0.5em;
-    height: 26rem;
-  }
-
-  .card-contenedor {
-    width: 100%;
-    height: 100%;
-    background-color: var(--color-dos);
-    color: var(--color-uno);
-    border-radius: 8px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
-  }
-
-  .card-video {
-    border-radius: 8px;
-    background-color: black;
-    width: 500px;
-    height: 100%;
-  }
-
-  .card-imagen {
-    display: block;
-    width: 100%;
-    border-radius: 10px 0;
-  }
-
-  .card-titulo {
-    margin-top: 8px;
-  }
-
-  .card-descrip {
+.footer_redsocial a{
     display: inline-block;
-    text-align: justify;
-    font-size: 13px;
-    width: 70%;
-  }
+    padding-left: 1em;
+}
 
-  .card-add {
-    display: inline-block;
-    padding: 0 0 10px 15px;
-  }
+.footer_linea {
+    border-bottom: solid .1px #FAFAFB;
+    position: relative;
+    top: 1.5em;
+}
 
-  .carousel-indicators {
-    position: static;
-  }
+.footer_routes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 1em;
+    margin-top: 3em;
+}
 
-  .carousel-indicators .carousel-indicator {
-    background-color: var(--color-dos);
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 100%;
-  }
+.footer_routes_logo{
+    display: flex;
+    align-items: center;
+    margin-right: 1vw;
+    position: relative;
+	bottom: .1em;
+}
 
-  .carousel-indicators .active {
-    background-color: var(--color-dos);
-    width: 1rem;
-    border-radius: 25% / 50%;
-  }
+.footer_routes_logo img{
+    width:91px;
+    height:104px;
+    position: relative;
+    bottom: .2em;
+}
 
-  /* Video card Sección */
+.footer_routes_logo p{
+    font-weight: bold;
+    padding-left: .3em;
+}
 
-  .video-js button {
-    color: var(--color-cuatro);
-  }
+.footer_routes_container_home_navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 39vw;
+}
 
-  .video-js .vjs-control-bar {
-    background-color: #ffffff;
-    border: solid 1px var(--color-dos);
-    border-radius: 5px;
-  }
+.footer_routes_home-aboutUs {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-  .video-js .vjs-volume-level {
-    background-color: var(--color-cuatro);
-  }
+.footer_routes_home-aboutUs a:nth-child(1){
+    padding-right: 2em;
+}
 
-  .video-js .vjs-progress-control .vjs-progress-holder {
-    color: var(--color-cuatro)
-  }
+.footer_routes_home-aboutUs div:nth-child(1){
+    position: relative;
+    bottom: 0em;
+}
 
-  .video-js .vjs-big-play-button {
-    font-size: 3.5em;
-    height: 1.8em;
-    line-height: 1.8em;
-    background-color: var(--color-uno);
-  }
+.footer_routes_navigation {
+    display: flex;
+    flex-direction:row;
+    position: relative;
+    bottom: .6em;
+}
 
-  .vjs-progress-control .vjs-control {
-    background-color: var(--color-cuatro);
-  }
+.footer_routes_navigation div:nth-child(3),
+.footer_routes_navigation div:nth-child(4){
+    display: flex;
+    align-items: center;
+    border-radius: .5em;
+    width: 163px;
+    height: 48px;
+}
 
-  /* Section footer */
-
-  .Secction_footer_Diego_pardo {
-    margin-top: 100px;
-  }
-
-  .Section_footer_Diego_body {
-    background: rgb(6, 83, 175);
-    background: linear-gradient(180deg,
-        rgba(6, 83, 175, 1) 4%,
-        rgba(2, 41, 88, 1) 41%,
-        rgba(0, 35, 75, 1) 55%);
-  }
-
-  .Section_footer_Diego_body_title {
+.footer_routes_navigation div:nth-child(3) a,
+.footer_routes_navigation div:nth-child(4) a{
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+    width: 163px;
+    height: 48px; 
+}
 
-  .Section_footer_Diego_body_title_p {
-    background: linear-gradient(180deg,
-        #02397a 16.98%,
-        #001c3d 75.31%,
-        #001c3d 100%);
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding-top: 30px;
-  }
+.footer_routes_navigation div:nth-child(3) {
+    border:3px solid #FAFAFB;
+    margin-right: 1em;
+    margin-left: 3vw;
+}
 
-  .Section_footer_Diego_body_network {
+.footer_routes_navigation div:nth-child(4){
+    background-color: #FFD500;
+}
+
+.footer_routes_navigation div:nth-child(4) a{
+    font-weight: bold;
+    color: #02397A;
+}
+
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
+
+
+/* ╔═════════════════════════════════════════════════════════════════╗ */
+/* ║                   MEDIA QUERY - 576 - Mobile                    ║ */
+/* ╚═════════════════════════════════════════════════════════════════╝ */
+
+@media (min-width: 0px ) and (max-width: 576px) {
+    
+}
+
+
+
+
+/* ╔═════════════════════════════════════════════════════════════════╗ */
+/* ║                   MEDIA QUERY - 992 - Mobile                    ║ */
+/* ╚═════════════════════════════════════════════════════════════════╝ */
+
+@media (min-width: 577px ) and (max-width: 992px) {
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■ INICIO CONTENIDO ■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Manuel Florez                                         │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .ONG_element_collapse_info .ONG_element_collapse_info_item{
+        width: 200px;
+        height: 80px;
+    }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ FIN CONTENIDO ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+    
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego Valentino Pardo Yepez                           │ */
+    /* │ ► Santiago Elias Carranza                               │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .footer_routes_logo img {
+        width: 81px;
+        height: 81px;
+        position: relative;
+        bottom: 0.2em;
+    }
+
+    .footer_routes_logo p span{
+        display: block;
+    }
+
+    .footer_routes_container_home_navigation {
+        width: 42vw;
+    }
+
+    .footer_routes_home-aboutUs {
+        position: relative;
+        top: .4em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_routes_navigation {
+        display: flex;
+        flex-direction:column;
+        position: relative;
+        bottom: .6em;
+    }
+
+    .footer_routes_navigation div:nth-child(3),
+    .footer_routes_navigation div:nth-child(4){
+        position: relative;
+        top: -.2em;
+        width: 106px;
+        height: 38px;
+    }
+
+    .footer_routes_navigation div:nth-child(4){
+        position: relative;        
+        top: 1px;
+    }
+
+    .footer_routes_navigation div:nth-child(3) {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+}
+
+
+
+/* ╔═════════════════════════════════════════════════════════════════╗ */
+/* ║                   MEDIA QUERY - 1200 - Desktop                  ║ */
+/* ╚═════════════════════════════════════════════════════════════════╝ */
+
+@media(min-width: 993px) and (max-width: 1299px) {
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* │ ► Luis Romano                                           │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+	/*  Header - Sección Navbar  */
+
+	.navbar-logo{
+		margin-left: var(--margin-desktop-1);
+	}
+
+	.navbar-contenido {
+		margin-right: var(--margin-desktop-1);
+	}
+
+	/*  Header - Sección Títulos  */
+
+	.header-div {
+		margin-left: var(--margin-desktop-1);
+	}
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■ INICIO CONTENIDO ■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Manuel Florez                                         │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .list-group{
+        border-radius: 1.5rem;
+    }
+    .list-group-item{
+        border: 2px solid var(--color-dos) !important;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        height: fit-content;
+        margin-bottom: 1rem;
+    }
+    .ONG_element_collapse_info{
+        padding: 6px;
+    }
+    .ONG_element_collapse_info .ONG_element_collapse_info_item{
+        width: 300px;
+        height: 90px;
+    }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ FIN CONTENIDO ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+    
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego Valentino Pardo Yepez                           │ */
+    /* │ ► Santiago Elias Carranza                               │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .footer_routes_container_home_navigation {
+        width: 41vw;
+    }
+
+    .footer_routes_navigation div:nth-child(3),
+    .footer_routes_navigation div:nth-child(4){
     display: flex;
     align-items: center;
-    justify-content: center;
-  }
+    border-radius: .5em;
+    width: 146px;
+    height: 48px;
+    }
 
-  .Section_footer_Diego_body_network_Instagram {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 166px;
-  }
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
 
-  .Section_footer_Diego_body_network_Whatsapp {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 100px;
-    padding-right: 190px;
-  }
+}
 
-  .Section_footer_Diego_body_network_facebook {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 100px;
-  }
 
-  .Section_footer_Diego_body_network_instagram_p {
-    color: #ffffff;
-    margin-top: 12px;
-    font-family: 'Lato';
-    font-style: normal;
 
-  }
+/* ╔═════════════════════════════════════════════════════════════════╗ */
+/* ║              MEDIA QUERY - Extra Large - Desktop                ║ */
+/* ╚═════════════════════════════════════════════════════════════════╝ */
 
-  .Section_footer_Diego_body_network_whatsapp_p {
-    color: #ffffff;
-    margin-top: 12px;
-    font-family: 'Lato';
-    font-style: normal;
-  }
+@media(min-width: 1300px) {
 
-  .Section_footer_Diego_body_network_facebook_p {
-    color: #ffffff;
-    margin-top: 12px;
-    font-family: 'Lato';
-    font-style: normal;
-  }
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■ INICIO CONTENIDO ■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Manuel Florez                                         │ */
+    /* └─────────────────────────────────────────────────────────┘ */
 
-  .Section_footer_Diego_body_network_Instagram_button {
-    background-image: url("/Image/Instagram_logo.png");
-    border-radius: 5px;
-    width: 30px;
-    height: 30px;
-    background-size: 100%;
-    margin-right: 12px;
-  }
+    .list-group{
+        border-radius: 1.5rem;
+    }
+    .list-group-item{
+        border: 2px solid var(--color-dos) !important;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        height: fit-content;
+        margin-bottom: 1rem;
+    }
+    .ONG_element_collapse_info{
+        padding: 6px;
+    }
+    .ONG_element_collapse_info .ONG_element_collapse_info_item{
+        width: 300px;
+        height: 90px;
+    }
+    
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ FIN CONTENIDO ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
 
-  .Section_footer_Diego_body_network_button_whatsapp {
-    background-image: url("/Image/WhatsApp_logo.png");
-    border-radius: 100px;
-    width: 30px;
-    height: 30px;
-    background-size: 89%;
-    margin-right: 12px;
-  }
-
-  .Section_footer_Diego_body_network_facebook_button {
-    background-image: url("/Image/Facebook_logo.png");
-    border-radius: 100px;
-    width: 30px;
-    height: 30px;
-    background-size: 89%;
-    margin-right: 12px;
-  }
-
-  .Section_footer_Diego_body_network_line {
-    background-color: rgba(250, 251, 251, 1);
-    border: none;
-    height: 1px;
-    margin: 10px 10px;
-    margin-left: 183px;
-    margin-right: 183px;
-    margin-top: 40px;
-  }
 }
