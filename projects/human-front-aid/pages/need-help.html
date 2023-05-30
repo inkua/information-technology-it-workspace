@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Need Help </title>
+
+    <title>Need Help</title>
     <link rel="icon" type="image/x-icon" href="/Image/Layout/logo.ico">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,180 +20,502 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
 
     <!-- JQuery v3.6.4 -->
     <script defer src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     
-    <!-- VideoJS -->
-    <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
-    <script defer src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
-
-    <!-- SwiperJS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-    
     <!-- Estilos CSS3 -->
-    <link rel="stylesheet" href="./css/general-styles.css">
-    <link rel="stylesheet" href="./css/need-help.css">
-
-    <!-- JavaScript -->
-    <script defer src="./js/carousel.js"></script>
-
+    <link rel="stylesheet" href="../css/general-styles.css">
+    <link rel="stylesheet" href="../css/need-help.css">
 
 </head>
+
 <body>
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Diego N. Cabrera                                      │ -->
+    <!-- │ ► Luis Romano                                           │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
     <header>
-          <!-- SECCIÓN NAVBAR -->
-          <div class="navbar-contenedor-principal">
+
+        <!--  Header - Sección Navbar  -->
+
+        <div class="navbar-contenedor-principal">
 
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
 
-                <!-- Contenedor del Navbar -->
+                <!--  Contenedor del Navbar  -->
 
                 <div class="container-fluid navbar-contenedor">
 
-                    <!-- Logo -->
-                    <img class="navbar-brand navbar-logo" src="Image/logo.png" alt="">
+                    <!--  Logo  -->
+                    <img class="navbar-brand navbar-logo" src="../Image/logo.png" alt="">
 
-                    <!-- Título -->
+                    <!--  Título  -->
                     <a class="navbar-brand navbar-titulo" href="./index.html">Human Front Aid</a>
 
-                    <!-- Opciones de Navegación -->
+                    <!--  Opciones de Navegación  -->
                     <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
-                            <a class="nav-link navbar-link navbar-home" href="./index.html">Home</a>
+                            <a class="nav-link navbar-link navbar-home" href="../index.html">Home</a>
                             <a class="nav-link navbar-link navbar-about-us" href="./about-us.html">About us</a>
-                            <button type="button" class="btn btn-primary navbar-need-help">Need help?</button>
-                            <button type="button" class="btn btn-warning navbar-donate">DONATE</button>
+                          
+                            <a class="btn btn-primary navbar-need-help" href="./need-help.html">Need help?</a>
+                   
+                            <a type="button" class="btn btn-warning navbar-donate" href="./want-to-help.html">DONATE</a>
                         </div>
                     </div>
                 </div>
             </nav>
 
-            <!-- Sección de Idiomas -->
+            <!--  Header - Sección idiomas  -->
+
             <div class="navbar navbar-expand-lg bg-body-tertiary">
+
                 <div class="container-fluid contenedor-idiomas">
 
                     <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
+
                             <!-- Opción Ukrania -->
-                            <button type="button" class="btn btn-primary navbar-ikp">IKP</button>
+                            <button type="button" class="btn btn-primary navbar-ykp">YKP</button>
                             <!-- Opción Inglés -->
                             <button type="button" class="btn btn-warning navbar-en">EN</button>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!--  Header - Sección Título  -->
+
+            <div class="header-div">
+                <h2 class="header-titulo">Human Front Aid</h2>
+                <p class="header-subtitulo">
+                    Our intention is to <strong>support projects regionally and locally.</strong>
+                </p>
+                <p class="header-subtitulo">
+                    People knowing the local conditions can help.
+                </p>
+                <button class="home-btn">DONATE</button>
+            </div>
+
+            <!--  Header - Sección Backgrond  -->
+            
+            <!--  Imagen de fondo  -->
+
+            <img class="header-background-imagen" src="../Image/header-need-help-background.png" alt="About Us">
+
+            <!--  Máscara de filtro azul  -->
+
+            <div class="header-background-mascara"></div>
+
+            <!--  Efecto wave  -->
+
+            <img class="wave" src="../Image/wave.png" alt="" />
+        
         </div>
 
-        <!-- SECCIÓN TÍTULO -->
-
-        <!-- ... ... ... ... -->
-        <!-- ... ... ... ... -->
-        <!-- ... ... ... ... -->
-        <!-- ... ... ... ... -->
-
-        <!-- Imagen de fondo-->
-
-        <div class="need-help-imagen need-help-div">
-            <img src="Image/need-help.png" alt="Need Help">
-        </div>
-
-        <!-- Máscara de filtro azul -->
-
-        <div class="header-background-mascara"></div>
-
-        <!-- Efecto wave-->
-
-        <img class="wave" src="./Image/wave.png"></img>
     </header>
-    <section class="need-help-imagen">
 
-        <div class="need-help-text">
-            <h2 class="need-help-titulo">Need Help? </h2>
-            <p class="need-help-parrafo"><strong>If you need help or know somebody that needs help</strong>, here you have a list of organizations eager to help you. You are not alone!</p>
-        </div>
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
 
-     
 
-       
-         
-    </section>
 
-    
-</body>
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■ INICIO CONTENIDO ■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Diego Valentino Pardo Yepez                           │ -->
+    <!-- │ ► Santiago Elias Carranza                               │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
 
-<footer class="Secction_footer_Diego_pardo">
-    <section class="Section_footer_Diego_body">
-        <section class="Section_footer_Diego_body_title">
-            <p class="Section_footer_Diego_body_title_p">
-                Human Front Aid
-            </p>
-        </section>
+    <main class="container">
+        <ul class="list-group">
 
-        <section class="Section_footer_Diego_body_network">
-            <section class="Section_footer_Diego_body_network_Instagram">
-                <button class="Section_footer_Diego_body_network_Instagram_button"></button>
-                <p class="Section_footer_Diego_body_network_instagram_p">Instagram</p>
-            </section>
-            <section class="Section_footer_Diego_body_network_Whatsapp">
-                <button class="Section_footer_Diego_body_network_button_whatsapp"></button>
-                <p class="Section_footer_Diego_body_network_whatsapp_p">WhatsApp</p>
-            </section>
-            <section class="Section_footer_Diego_body_network_facebook">
-                <button class="Section_footer_Diego_body_network_facebook_button"></button>
-                <p class="Section_footer_Diego_body_network_facebook_p">Facebook</p>
-            </section>
-        </section>
-        <hr class="Section_footer_Diego_body_network_line">
-        <div class="navbar_contenedor_principal_footer">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid navbar-contenedor">
-                    <img class="navbar-brand navbar-logo" src="Image/logo.png" alt="">
-                    <a class="navbar-brand navbar-titulo" href="./index.html">Human Front Aid</a>
+            <li class="list-group-item">
+                <div class="ONG_element" data-bs-toggle="collapse" href="#collapseA" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                    <p class="ONG_element_title">Switzerland with Ukranie</p>
+                    <p class="dropdown-toggle ONG_element_title_arrow"></p>
+                </div>
 
-                    <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
-                        <div class="navbar-nav ms-auto">
-                            <a class="nav-link navbar-link navbar-home" href="#">Home</a>
-                            <a class="nav-link navbar-link navbar-about-us" href="#">About us</a>
-                            <button type="button" class="btn btn-primary navbar-need-help">Need help?</button>
-                            <button type="button" class="btn btn-warning navbar-donate">DONATE</button>
+                <div class="collapse multi-collapse ONG_element_collapse" id="collapseA">
+                    <p class="ONG_element_collapse_title"> Switzerland with Ukranie</p>
+
+                    <div class="ONG_element_collapse_info">
+                        <div class="ONG_element_collapse_info_item ONG_element_collapse_info_img">
+                            <img src="../Image/needONG/switzerland-with-ukranie.jpg" alt="Switzerland with Ukranie logo" height=100%>
+                        </div>
+                        <div class="ONG_element_collapse_info_item">
+                            <a class="ONG_element_collapse_info_item_btn btn" target="_blank" href="https://www.facebook.com/groups/529855118408513"> See More</a>
+                        </div>
+                    </div>
+
+                </div>
+            </li>
+            
+            <li class="list-group-item">
+                <div class="ONG_element" data-bs-toggle="collapse" href="#collapseB" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                    <p class="ONG_element_title">Ukranie Japan 2022</p>
+                    <p class="dropdown-toggle ONG_element_title_arrow"></p>
+                </div>
+
+                <div class="collapse multi-collapse ONG_element_collapse" id="collapseB">
+                    <p class="ONG_element_collapse_title"> Ukranie Japan 2022</p>
+                    <div class="ONG_element_collapse_info">
+                        <div class="ONG_element_collapse_info_item ONG_element_collapse_info_img">
+                            <img src="../Image/needONG/Ukranie-Japan.jpg" alt="Ukranie Japan logo" height=100%>
+                        </div>
+                        <div class="ONG_element_collapse_info_item">
+                            <a class="ONG_element_collapse_info_item_btn btn" target="_blank" href="http://www.facebook.com/ukrainejapan2022"> See More</a>
                         </div>
                     </div>
                 </div>
-            </nav>
+            </li>
 
+            <li class="list-group-item">
+                <div class="ONG_element" data-bs-toggle="collapse" href="#collapseC" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                    <p class="ONG_element_title">XA Moldova</p>
+                    <p class="dropdown-toggle ONG_element_title_arrow"></p>
+                </div>
+
+                <div class="collapse multi-collapse ONG_element_collapse" id="collapseC">
+                    <p class="ONG_element_collapse_title"> XA Moldova</p>
+                    <div class="ONG_element_collapse_info">
+                        <div class="ONG_element_collapse_info_item ONG_element_collapse_info_img">
+                            <img src="../Image/needONG/XA-Moldova.png" alt="XA Moldova logo" height=100%>
+                        </div>
+                        <div class="ONG_element_collapse_info_item">
+                            <a class="ONG_element_collapse_info_item_btn btn" target="_blank" href="https://www.facebook.com/xamoldova/"> See More</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="ONG_element" data-bs-toggle="collapse" href="#collapseD" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                    <p class="ONG_element_title">Ajuta un Om</p>
+                    <p class="dropdown-toggle ONG_element_title_arrow"></p>
+                </div>
+
+                <div class="collapse multi-collapse ONG_element_collapse" id="collapseD">
+                    <p class="ONG_element_collapse_title"> Ajuta un Om</p>
+                    <div class="ONG_element_collapse_info">
+                        <div class="ONG_element_collapse_info_item ONG_element_collapse_info_img">
+                            <img src="../Image/needONG/Ajuta-un-Om.jpg" alt="Ajuta un Om logo" height=100%>
+                        </div>
+                        <div class="ONG_element_collapse_info_item">
+                            <a class="ONG_element_collapse_info_item_btn btn" target="_blank" href="http://www.facebook.com/ajutaunom"> See More</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="ONG_element" data-bs-toggle="collapse" href="#collapseE" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                    <p class="ONG_element_title">BF Plicho Plich</p>
+                    <p class="dropdown-toggle ONG_element_title_arrow"></p>
+                </div>
+
+                <div class="collapse multi-collapse ONG_element_collapse" id="collapseE">
+                    <p class="ONG_element_collapse_title"> BF Plicho Plich - Side By Side</p>
+                    <div class="ONG_element_collapse_info">
+                        <div class="ONG_element_collapse_info_item ONG_element_collapse_info_img">
+                            <img src="../Image/needONG/plicho-plich.jpg" alt="BF Plicho Plich logo" height=100%>
+                        </div>
+                        <div class="ONG_element_collapse_info_item">
+                            <a class="ONG_element_collapse_info_item_btn btn" target="_blank" href="https://plich-o-plich.org.ua/"> See More</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="ONG_element" data-bs-toggle="collapse" href="#collapseF" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                    <p class="ONG_element_title" style="color: red;">San Sanych</p>
+                    <p class="dropdown-toggle ONG_element_title_arrow"></p>
+                </div>
+
+                <div class="collapse multi-collapse ONG_element_collapse" id="collapseF">
+                    <p class="ONG_element_collapse_title"> San Sanych</p>
+                    <div class="ONG_element_collapse_info">
+                        <div class="ONG_element_collapse_info_item ONG_element_collapse_info_img">
+                            <img src="../Image/needONG/plicho-plich.jpg" alt="San Sanych logo" height=100%>
+                        </div>
+                        <div class="ONG_element_collapse_info_item">
+                            <a class="ONG_element_collapse_info_item_btn btn" target="_blank" href="https://plich-o-plich.org.ua/"> See More</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="ONG_element" data-bs-toggle="collapse" href="#collapseG" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                    <p class="ONG_element_title">State Secretariat for Migration SEM</p>
+                    <p class="dropdown-toggle ONG_element_title_arrow"></p>
+                </div>
+
+                <div class="collapse multi-collapse ONG_element_collapse" id="collapseG">
+                    <p class="ONG_element_collapse_title"> State Secretariat for Migration SEM</p>
+                    <div class="ONG_element_collapse_info">
+                        <div class="ONG_element_collapse_info_item ONG_element_collapse_info_img">
+                            <img src="../Image/needONG/sem.png" alt="SEM logo" width=100%>
+                        </div>
+                        <div class="ONG_element_collapse_info_item">
+                            <a class="ONG_element_collapse_info_item_btn btn" target="_blank" href="https://www.sem.admin.ch/sem/en/home/asyl/ukraine/ukraine-ukr.html"> See More</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="ONG_element" data-bs-toggle="collapse" href="#collapseH" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                    <p class="ONG_element_title">Embassy of Ukranie in the Swiss Confederation</p>
+                    <p class="dropdown-toggle ONG_element_title_arrow"></p>
+                </div>
+
+                <div class="collapse multi-collapse ONG_element_collapse" id="collapseH">
+                    <p class="ONG_element_collapse_title"> Embassy of Ukranie in the Swiss Confederation</p>
+                    <div class="ONG_element_collapse_info">
+                        <div class="ONG_element_collapse_info_item ONG_element_collapse_info_img">
+                            <img src="../Image/needONG/Embassy-UK-in-SW.png" alt="Embassy of Ukranie logo" height=100%>
+                        </div>
+                        <div class="ONG_element_collapse_info_item">
+                            <a class="ONG_element_collapse_info_item_btn btn" target="_blank" href="https://switzerland.mfa.gov.ua/en"> See More</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="list-group-item">
+                <div class="ONG_element" data-bs-toggle="collapse" href="#collapseJ" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                    <p class="ONG_element_title">Ukranie Assistant Organization</p>
+                    <p class="dropdown-toggle ONG_element_title_arrow"></p>
+                </div>
+
+                <div class="collapse multi-collapse ONG_element_collapse" id="collapseJ">
+                    <p class="ONG_element_collapse_title"> Ukranie Assistant Organization</p>
+                    <div class="ONG_element_collapse_info">
+                        <div class="ONG_element_collapse_info_item ONG_element_collapse_info_img">
+                            <img src="../Image/needONG/UAO.jpg" alt="UAO logo" height=100%>
+                        </div>
+                        <div class="ONG_element_collapse_info_item">
+                            <a class="ONG_element_collapse_info_item_btn btn" target="_blank" href="https://giveuao.org/"> See More</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="ONG_element" data-bs-toggle="collapse" href="#collapseK" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                    <p class="ONG_element_title">Refugee support</p>
+                    <p class="dropdown-toggle ONG_element_title_arrow"></p>
+                </div>
+
+                <div class="collapse multi-collapse ONG_element_collapse" id="collapseK">
+                    <p class="ONG_element_collapse_title"> Refugee support</p>
+                    <div class="ONG_element_collapse_info">
+                        <div class="ONG_element_collapse_info_item ONG_element_collapse_info_img">
+                            <img src="../Image/needONG/refugee-support.png" alt="Refugee support logo" height=100%>
+                        </div>
+                        <div class="ONG_element_collapse_info_item">
+                            <a class="ONG_element_collapse_info_item_btn btn" target="_blank" href="https://www.refugeesupporteu.com/projects/ukraine/"> See More</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="ONG_element" data-bs-toggle="collapse" href="#collapseL" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                    <p class="ONG_element_title">Manifestmira</p>
+                    <p class="dropdown-toggle ONG_element_title_arrow"></p>
+                </div>
+
+                <div class="collapse multi-collapse ONG_element_collapse" id="collapseL">
+                    <p class="ONG_element_collapse_title"> Manifestmira</p>
+                    <div class="ONG_element_collapse_info">
+                        <div class="ONG_element_collapse_info_item ONG_element_collapse_info_img">
+                            <img src="../Image/needONG/manifestmira.jpg" alt="Manifestmira logo" height=100%>
+                        </div>
+                        <div class="ONG_element_collapse_info_item">
+                            <a class="ONG_element_collapse_info_item_btn btn" target="_blank" href="https://www.manifestmira.org/uk/"> See More</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="ONG_element" data-bs-toggle="collapse" href="#collapseM" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                    <p class="ONG_element_title">No violent peace force</p>
+                    <p class="dropdown-toggle ONG_element_title_arrow"></p>
+                </div>
+
+                <div class="collapse multi-collapse ONG_element_collapse" id="collapseM">
+                    <p class="ONG_element_collapse_title"> No violent peace force</p>
+                    <div class="ONG_element_collapse_info">
+                        <div class="ONG_element_collapse_info_item ONG_element_collapse_info_img">
+                            <img src="../Image/needONG/noviolent.jpg" alt="No violent peace force logo" height=100%>
+                        </div>
+                        <div class="ONG_element_collapse_info_item">
+                            <a class="ONG_element_collapse_info_item_btn btn" target="_blank" href="https://nonviolentpeaceforce.org/"> See More</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="ONG_element" data-bs-toggle="collapse" href="#collapseN" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                    <p class="ONG_element_title">Art front Ukranie</p>
+                    <p class="dropdown-toggle ONG_element_title_arrow"></p>
+                </div>
+
+                <div class="collapse multi-collapse ONG_element_collapse" id="collapseN">
+                    <p class="ONG_element_collapse_title"> Art front Ukranie</p>
+                    <div class="ONG_element_collapse_info">
+                        <div class="ONG_element_collapse_info_item ONG_element_collapse_info_img">
+                            <img src="../Image/needONG/art-front-ukranie.jpg" alt="Art front Ukranie logo" height=100%>
+                        </div>
+                        <div class="ONG_element_collapse_info_item">
+                            <a class="ONG_element_collapse_info_item_btn btn" target="_blank" href="https://artfrontukraine.com/"> See More</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="ONG_element" data-bs-toggle="collapse" href="#collapseO" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                    <p class="ONG_element_title" style="color: red;">Help Odessa</p>
+                    <p class="dropdown-toggle ONG_element_title_arrow"></p>
+                </div>
+
+                <div class="collapse multi-collapse ONG_element_collapse" id="collapseO">
+                    <p class="ONG_element_collapse_title"> Help Odessa</p>
+                    <div class="ONG_element_collapse_info">
+                        <div class="ONG_element_collapse_info_item ONG_element_collapse_info_img">
+                            <img src="../Image/needONG/art-front-ukranie.jpg" alt="Help Odessa logo" height=100%>
+                        </div>
+                        <div class="ONG_element_collapse_info_item">
+                            <a class="ONG_element_collapse_info_item_btn btn" target="_blank" href="https://help-odesa.com/"> See More</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="ONG_element" data-bs-toggle="collapse" href="#collapseP" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                    <p class="ONG_element_title">Baobab Experience</p>
+                    <p class="dropdown-toggle ONG_element_title_arrow"></p>
+                </div>
+
+                <div class="collapse multi-collapse ONG_element_collapse" id="collapseP">
+                    <p class="ONG_element_collapse_title"> Baobab Experience</p>
+                    <div class="ONG_element_collapse_info">
+                        <div class="ONG_element_collapse_info_item ONG_element_collapse_info_img">
+                            <img src="../Image/needONG/Baobab.png" alt="Baobab logo" height=100%>
+                        </div>
+                        <div class="ONG_element_collapse_info_item">
+                            <a class="ONG_element_collapse_info_item_btn btn" target="_blank" href="https://baobabexperience.org/"> See More</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="ONG_element" data-bs-toggle="collapse" href="#collapseQ" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                    <p class="ONG_element_title">Be an angel</p>
+                    <p class="dropdown-toggle ONG_element_title_arrow"></p>
+                </div>
+
+                <div class="collapse multi-collapse ONG_element_collapse" id="collapseQ">
+                    <p class="ONG_element_collapse_title"> Be an angel</p>
+                    <div class="ONG_element_collapse_info">
+                        <div class="ONG_element_collapse_info_item ONG_element_collapse_info_img">
+                            <img src="../Image/needONG/logo-be-an-angel.png" alt="Be an angel logo" height=100%>
+                        </div>
+                        <div class="ONG_element_collapse_info_item">
+                            <a class="ONG_element_collapse_info_item_btn btn" target="_blank" href="https://be-an-angel.org/"> See More</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </main>
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■ FIN CONTENIDO ■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Diego Valentino Pardo Yepez                           │ -->
+    <!-- │ ► Santiago Elias Carranza                               │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+    <footer class="footer_container">
+        <div class="footer_body">
+
+            <div class="footer_redsocial">
+                <div class="footer_redsocial_whatsapp">
+                    <img src="../Image/WhatsApp_logo.png" onclick="location.href=``" width="35px" height="35px" alt="Icono de Whatsapp"> 
+                    <a href="">Whatsapp</a>
+                </div>
+                <div class="footer_redsocial_instragram">
+                    <img src="../Image/Instagram_logo.png" onclick="location.href=`https://www.instagram.com/humanfrontaid/`" width="35px" height="35px" alt="Icono de Instagram">
+                    <a href="https://www.instagram.com/humanfrontaid/">Instagram</a>
+                </div>
+                <div class="footer_redsocial_facebook">
+                    <img src="../Image/Facebook_logo.png" onclick="location.href=`https://www.facebook.com/HUMANFRONTAID/`" width="35px" height="35px" alt="Icono de Facebook">
+                    <a href="https://www.facebook.com/HUMANFRONTAID/">Facebook</a>
+                </div>
+            </div>
+
+            <div class="footer_linea"></div>
+            
+            <div class="footer_routes">
+                <div class="footer_routes_logo">
+                    <img src="../Image/logo.png" width="91px" height="104px" alt="Logo de Human Front Aid">
+                    <p>Human <span>Front Aid</span></p>
+                </div>
+                
+                <div class="footer_routes_container_home_navigation">
+                    <div class="footer_routes_home-aboutUs">
+                        <a href="">Home</a>
+                        <a href="./pages/about-us.html">About us</a>
+                    </div>
+                    <div class="footer_routes_navigation">
+                        <div>
+                        </div>
+                        <div>
+                        </div>
+                        <div>
+                            <a href="./pages/need-help.html">Need help?</a>
+                        </div>
+                        <div>
+                            <a href="">DONATE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
         </div>
+    </footer>
 
-    </section>
-</footer>
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+</body>
 </html>
-<style>
-    
-    #toTop{
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-        cursor: pointer;
-        display: none;
-    }
-    </style>
-    
-    <script>
-    $(document).ready(function(){
-          $('body').append('<div id="toTop" class="emoji-saludar"></div>');
-            $(window).scroll(function () {
-                if ($(this).scrollTop() != 0) {
-                    $('#toTop').fadeIn();
-                } else {
-                    $('#toTop').fadeOut();
-                }
-            }); 
-        $('#toTop').click(function(){
-            $("html, body").animate({ scrollTop: 0 }, 600);
-            return false;
-        });
-    });
-    </script>
