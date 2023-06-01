@@ -1,3 +1,19 @@
+.ongs-legend{
+    color: var(--color-dos);
+    font-family: var(--font-family-lato);
+    font-weight: 400;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.3rem;
+}
+
+.list-group-title{
+    color: var(--color-dos);
+    font-family: var(--font-family-lato);
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
 .list-group{
     border-radius: unset;
 }
@@ -59,6 +75,10 @@
 
 
 @media (min-width: 460px) {
+    .ongs-legend-span{
+        font-weight: 900;
+    }
+
     .ONG_element_collapse_info .ONG_element_collapse_info_item{
         width: 200px;
         height: 80px;
@@ -66,6 +86,10 @@
 }
 
 @media (min-width: 992px) {
+    .ongs-legend{
+        font-size: 1.8rem;
+    }
+    
     .list-group{
         border-radius: 1.5rem;
     }
