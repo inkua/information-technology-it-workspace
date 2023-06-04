@@ -351,6 +351,7 @@
 .about-us-image-imagen {
     width: 450px;
     height: 350px;
+    border-radius: 25px;
 }
 
 .about-us-texto-button {
@@ -363,7 +364,13 @@
     background-color: white;
     color: #004eaa;
 }
-
+.box-about-us{
+    flex: 0 0 auto;
+    width: 700px;
+    height: 400px;
+    margin: 10px;
+     
+}
 /* ┌─────────────────────────────────────────────────────────┐ */
 /* │ ■■■■■■■■■■■■■■■■■■■■ FIN ABOUT-US ■■■■■■■■■■■■■■■■■■■■■ │ */
 /* └─────────────────────────────────────────────────────────┘ */
