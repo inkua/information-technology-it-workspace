@@ -290,7 +290,7 @@
 
 .chatbot-button {
     position: fixed;
-    right: 1%;
+    right: 3%;
     bottom: 50%;
     background-image: url("../Image/boton_chatbot.png");
     border-radius: 100px;
