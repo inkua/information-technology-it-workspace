@@ -311,6 +311,7 @@
 /* │                                                         │ */
 /* │   COLABORADORES:                                        │ */
 /* │ ► Luis Fernando Callisaya Surco                         │ */
+/* │ ► Diego N. Cabrera                                      │ */
 /* │ ► Diego Valentino Pardo Yepez                           │ */
 /* └─────────────────────────────────────────────────────────┘ */
 
@@ -340,11 +341,11 @@
 }
 
 .about-us-texto {
-    padding-left: var(--margin-desktop-1);
+    padding-left: var(--margin-desktop-2);
     padding-right: 54px;
-    padding-top: 100px;
-    width: 40%;
-    font-size: 1.7vw;
+    padding-top: 150px;
+    width: 20%;
+    font-size: 1.5vw;
     text-align: justify;
     display: flex;
     flex-direction: column;
@@ -357,10 +358,9 @@
 .about-us-image-imagen {
     display: flex;
     margin-top: 100px;
-    margin-right: var(--margin-desktop-1);
-    width: 40%;
-    height: 40%;
-
+    margin-right: var(--margin-desktop-2);
+    width: 35%;
+    height: 35%;
     border-radius: 25px;
 }
 
@@ -385,7 +385,7 @@
 
 .box-about-us{
     flex: auto;
-    width: 700px;
+    width: 400px;
     height: 400px;
     margin: 10px;
 }
@@ -908,6 +908,41 @@
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■ INICIO ABOUT-US ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Luis Fernando Callisaya Surco                         │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* │ ► Diego Valentino Pardo Yepez                           │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .about-us-texto {
+        padding-left: var(--margin-desktop-1);
+        padding-top: 130px;
+        width: 40%;
+        font-size: 1.7vw;
+    }
+
+    .about-us-image-imagen {
+        margin-right: var(--margin-desktop-1);
+        width: 40%;
+        height: 40%;
+    }
+
+    .box-about-us{
+        flex: auto;
+        width: 700px;
+        height: 400px;
+        margin: 10px;
+    }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ FIN ABOUT-US ■■■■■■■■■■■■■■■■■■■■■ │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
 
