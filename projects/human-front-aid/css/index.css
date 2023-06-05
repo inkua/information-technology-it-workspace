@@ -114,7 +114,6 @@
 
 .navbar-need-help:hover {
     color: var(--color-uno);
-    font-weight: 700;
     color: rgba(0, 0, 0, 0.7);
     background-color: var(--color-uno);
     border: 2px solid var(--color-uno);
@@ -124,9 +123,12 @@
 }
 
 .navbar-donate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--color-uno);
     border-radius: 8px;
-    font-weight: 700;
+    font-weight: 900;
     color: var(--color-dos);
     background-color: var(--color-tres);
     padding-left: 34px;
@@ -208,6 +210,7 @@
 /* Header - Botón donate */
 
 .home-btn {
+    display: flex;
     background-color: var(--color-tres);
     border-color: var(--color-tres);
     position: absolute;
@@ -216,13 +219,20 @@
     border-radius: 8px;
     color: var(--color-dos);
     font-size: 28px;
-    font-weight: 800;
     font-family: 'Lato';
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     margin-top: 20px;
 }
 
 .home-btn:hover {
     color: var(--color-dos);
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 30px;
     background: var(--color-tres);
     box-shadow: var(--shadow-02);
     transition: all ease 0.5s;
@@ -237,6 +247,7 @@
 .header-background-imagen {
     position: absolute;
     background: #02397A;
+    object-fit: cover;
     width: 100%;
     height: 970px;
     top: 0;
@@ -340,6 +351,7 @@
     justify-content: center;
     align-content: center;
     align-items: last baseline;
+    color: var(--color-cinco);
 }
 
 .about-us-image-imagen {
@@ -353,7 +365,7 @@
 }
 
 .about-us-texto-button {
-    border: 2px solid #004eaa;
+    border: 2px solid var(--color-seis);
     padding: 10px 2px;
     text-align: center;
     border-radius: 8px;
@@ -361,6 +373,14 @@
     background-color: white;
     color: #004eaa;
     text-decoration: none;
+}
+
+.about-us-texto-button:hover {
+    color: var(--color-uno);
+    background-color: var(--color-cuatro);
+    border: 2px solid var(--color-seis);
+    box-shadow: var(--shadow-03);
+    transition: all ease 0.5s;
 }
 
 .box-about-us{
