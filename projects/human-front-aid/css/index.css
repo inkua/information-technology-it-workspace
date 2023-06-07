@@ -114,7 +114,6 @@
 
 .navbar-need-help:hover {
     color: var(--color-uno);
-    font-weight: 700;
     color: rgba(0, 0, 0, 0.7);
     background-color: var(--color-uno);
     border: 2px solid var(--color-uno);
@@ -124,9 +123,12 @@
 }
 
 .navbar-donate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--color-uno);
     border-radius: 8px;
-    font-weight: 700;
+    font-weight: 900;
     color: var(--color-dos);
     background-color: var(--color-tres);
     padding-left: 34px;
@@ -141,10 +143,6 @@
 }
 
 /*  Header - Sección idiomas  */
-
-.contenedor-idiomas {
-    margin-top: 20px;
-}
 
 .navbar-ykp {
     color: var(--color-uno);
@@ -192,6 +190,7 @@
     font-family: var(--font-family-lato);
     font-weight: 700;
     line-height: 120px;
+    width: 442px;
 }
 
 .header-subtitulo {
@@ -211,6 +210,7 @@
 /* Header - Botón donate */
 
 .home-btn {
+    display: flex;
     background-color: var(--color-tres);
     border-color: var(--color-tres);
     position: absolute;
@@ -219,13 +219,20 @@
     border-radius: 8px;
     color: var(--color-dos);
     font-size: 28px;
-    font-weight: 800;
     font-family: 'Lato';
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     margin-top: 20px;
 }
 
 .home-btn:hover {
     color: var(--color-dos);
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 30px;
     background: var(--color-tres);
     box-shadow: var(--shadow-02);
     transition: all ease 0.5s;
@@ -240,8 +247,9 @@
 .header-background-imagen {
     position: absolute;
     background: #02397A;
+    object-fit: cover;
     width: 100%;
-    height: 850px;
+    height: 970px;
     top: 0;
     z-index: -1;
     mix-blend-mode: multiply;
@@ -251,10 +259,9 @@
     position: absolute;
     width: 100%;
     top: 0;
-    height: 800px;
+    height: 970px;
     background: #02397A;
     border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: -2;
     mix-blend-mode: multiply;
 }
@@ -265,7 +272,7 @@
     position: absolute;
     width: 100%;
     height: 160px;
-    top: 700px;
+    top: 812px;
 }
 
 /* ┌─────────────────────────────────────────────────────────┐ */
@@ -283,7 +290,7 @@
 
 .chatbot-button {
     position: fixed;
-    right: 1%;
+    right: 3%;
     bottom: 50%;
     background-image: url("../Image/boton_chatbot.png");
     border-radius: 100px;
@@ -303,20 +310,22 @@
 /* │ ■■■■■■■■■■■■■■■■■■ INICIO ABOUT-US ■■■■■■■■■■■■■■■■■■■■ │ */
 /* │                                                         │ */
 /* │   COLABORADORES:                                        │ */
+/* │ ► Luis Fernando Callisaya Surco                         │ */
+/* │ ► Diego N. Cabrera                                      │ */
 /* │ ► Diego Valentino Pardo Yepez                           │ */
 /* └─────────────────────────────────────────────────────────┘ */
 
 .circulo {
-    width: 100px;
-    height: 100px;
     border-radius: 50%;
     border: 5px #02397A solid;
     display: flex;
+    width: 100px;
+    height: 100px;
     justify-content: center;
     align-items: center;
     position: absolute;
     right: 50px;
-    top: 1500px;
+    top: 1600px;
 }
 
 .emoji-saludar {
@@ -328,49 +337,59 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
 }
 
 .about-us-texto {
-    padding-left: 170px;
+    padding-left: var(--margin-desktop-2);
     padding-right: 54px;
-    padding-top: 100px;
+    padding-top: 150px;
+    width: 20%;
+    font-size: 1.5vw;
     text-align: justify;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: last baseline;
-}
-
-.about-us-image {
-    padding-right: 170px;
-    padding-left: 54px;
-    padding-top: 80px;
+    color: var(--color-cinco);
 }
 
 .about-us-image-imagen {
-    width: 450px;
-    height: 350px;
+    display: flex;
+    margin-top: 100px;
+    margin-right: var(--margin-desktop-2);
+    width: 35%;
+    height: 35%;
     border-radius: 25px;
 }
 
 .about-us-texto-button {
-    border: 2px solid #004eaa;
-    padding: 12px 21px;
+    border: 2px solid var(--color-seis);
+    padding: 10px 2px;
+    text-align: center;
     border-radius: 8px;
-    gap: 8px;
-    width: 121px;
-    height: 48px;
+    width: 25%;
     background-color: white;
     color: #004eaa;
+    text-decoration: none;
 }
+
+.about-us-texto-button:hover {
+    color: var(--color-uno);
+    background-color: var(--color-cuatro);
+    border: 2px solid var(--color-seis);
+    box-shadow: var(--shadow-03);
+    transition: all ease 0.5s;
+}
+
 .box-about-us{
-    flex: 0 0 auto;
-    width: 700px;
+    flex: auto;
+    width: 400px;
     height: 400px;
     margin: 10px;
-     
 }
+
 /* ┌─────────────────────────────────────────────────────────┐ */
 /* │ ■■■■■■■■■■■■■■■■■■■■ FIN ABOUT-US ■■■■■■■■■■■■■■■■■■■■■ │ */
 /* └─────────────────────────────────────────────────────────┘ */
@@ -889,6 +908,41 @@
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■ INICIO ABOUT-US ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Luis Fernando Callisaya Surco                         │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* │ ► Diego Valentino Pardo Yepez                           │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .about-us-texto {
+        padding-left: var(--margin-desktop-1);
+        padding-top: 130px;
+        width: 40%;
+        font-size: 1.7vw;
+    }
+
+    .about-us-image-imagen {
+        margin-right: var(--margin-desktop-1);
+        width: 40%;
+        height: 40%;
+    }
+
+    .box-about-us{
+        flex: auto;
+        width: 700px;
+        height: 400px;
+        margin: 10px;
+    }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ FIN ABOUT-US ■■■■■■■■■■■■■■■■■■■■■ │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
 

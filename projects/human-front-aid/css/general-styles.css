@@ -12,11 +12,13 @@
     --color-tres: #F8D714;
     --color-cuatro: #005BBB;
     --color-cinco: #001C3D;
+    --color-seis: #004EAA;
 
     /* Efecto de hover */
 
     --shadow-01: 0 0 10px var(--color-uno);
     --shadow-02: 0 0 10px var(--color-tres);
+    --shadow-03: 0 0 10px var(--color-cuatro);
 
     /* Margenes Laterales */
     --margin-desktop-1: 5.06%;
