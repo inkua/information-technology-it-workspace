@@ -805,6 +805,131 @@
 
 @media (min-width: 0px ) and (max-width: 576px) {
     
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego Valentino Pardo Yepez                           │ */
+    /* │ ► Santiago Elias Carranza                               │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+.footer_container{
+    height: 0px;
+}
+
+.footer_body{
+    background-color: #001C3D;
+    height: 150px;
+    max-width: 100vw;
+    margin-right: 0;
+    margin-left:  0;
+    padding-bottom: 1em;
+}
+
+.footer_redsocial{
+    justify-content: flex-end;
+    flex-direction:row-reverse;
+    top: 1.2em;
+    padding-left: 1.5em;
+    margin-bottom: 0;
+}
+
+.footer_redsocial img{
+    cursor: pointer;
+    margin-right:2.9em;
+    width: 27px;
+    height: 27px;
+}
+
+.footer_redsocial_instragram img{
+    border-radius: 100%;
+    width: 29px;
+    height: 29px;
+    position: relative;
+    right:4.6em; 
+}
+
+.footer_redsocial_facebook img{
+    position: relative;
+    right:-4.7em;
+}
+
+.footer_redsocial a{
+    display: none;
+}
+
+.footer_linea{
+    display: none;
+}
+
+.footer_routes{
+    margin-top: 2em;
+}
+
+.footer_routes_logo{
+    margin-right: 0;
+}
+
+.footer_routes_logo img{
+    width:52px;
+    height:54px;
+    position: relative;
+    bottom: .2em;
+    margin-left:1em;
+}
+
+.footer_routes_logo p{
+    font-weight:normal;
+    width: 150px;
+    padding-left: .7em;
+    position: relative;
+    top: .3em;
+}
+
+.footer_routes_container_home_navigation{
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer_routes_home-aboutUs{
+    display: none;
+}
+
+.footer_routes_navigation{
+    display: flex;
+    flex-direction:row-reverse;
+    position: relative;
+    bottom: .5em;
+    padding-right: 1.5em;
+}
+
+.footer_routes_navigation div:nth-child(3) {
+    border:3px solid #FAFAFB;
+    margin-right: 0em;
+    margin-left: 0vw;
+}
+
+.footer_routes_navigation div:nth-child(3),
+.footer_routes_navigation div:nth-child(4){
+    display: flex;
+    align-items: center;
+    width: 103px;
+    height: 35px;
+}
+
+.footer_routes_navigation div:nth-child(4){
+    border-radius:8px; 
+    position: relative;
+    top: -3.7em;
+    left: 6.4em;
+}
+    
+        /* ┌─────────────────────────────────────────────────────────┐ */
+        /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+        /* └─────────────────────────────────────────────────────────┘ */
+
+
 }
 
 /* ╔═════════════════════════════════════════════════════════════════╗ */
@@ -821,52 +946,117 @@
     /* │ ► Santiago Elias Carranza                               │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-    .footer_routes_logo img {
-        width: 81px;
-        height: 81px;
-        position: relative;
-        bottom: 0.2em;
-    }
+.footer_container{
+    height: 0px;
+}
 
-    .footer_routes_logo p span{
-        display: block;
-    }
+.footer_body{
+    background-color: #001C3D;
+    height: 150px;
+    max-width: 100vw;
+    margin-right: 0;
+    margin-left:  0;
+    padding-bottom: 1em;
+}
 
-    .footer_routes_container_home_navigation {
-        width: 42vw;
-    }
+.footer_redsocial{
+    justify-content: flex-end;
+    flex-direction:row-reverse;
+    top: 1.2em;
+    padding-left: 1.5em;
+    margin-bottom: 0;
+}
 
-    .footer_routes_home-aboutUs {
-        position: relative;
-        top: .4em;
-        display: flex;
-        flex-direction: column;
-    }
+.footer_redsocial img{
+    cursor: pointer;
+    margin-right:2.9em;
+    width: 27px;
+    height: 27px;
+}
 
-    .footer_routes_navigation {
-        display: flex;
-        flex-direction:column;
-        position: relative;
-        bottom: .6em;
-    }
+.footer_redsocial_instragram img{
+    border-radius: 100%;
+    width: 29px;
+    height: 29px;
+    position: relative;
+    right:4.6em; 
+}
 
-    .footer_routes_navigation div:nth-child(3),
-    .footer_routes_navigation div:nth-child(4){
-        position: relative;
-        top: -.2em;
-        width: 106px;
-        height: 38px;
-    }
+.footer_redsocial_facebook img{
+    position: relative;
+    right:-4.7em;
+}
 
-    .footer_routes_navigation div:nth-child(4){
-        position: relative;        
-        top: 1px;
-    }
+.footer_redsocial a{
+    display: none;
+}
 
-    .footer_routes_navigation div:nth-child(3) {
-        margin-right: 0;
-        margin-left: 0;
-    }
+.footer_linea{
+    display: none;
+}
+
+.footer_routes{
+    margin-top: 2em;
+}
+
+.footer_routes_logo{
+    margin-right: 0;
+}
+
+.footer_routes_logo img{
+    width:52px;
+    height:54px;
+    position: relative;
+    bottom: .2em;
+    margin-left:1em;
+}
+
+.footer_routes_logo p{
+    font-weight:normal;
+    width: 150px;
+    padding-left: .7em;
+    position: relative;
+    top: .3em;
+}
+
+.footer_routes_container_home_navigation{
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer_routes_home-aboutUs{
+    display: none;
+}
+
+.footer_routes_navigation{
+    display: flex;
+    flex-direction:row-reverse;
+    position: relative;
+    bottom: .5em;
+    padding-right: 1.5em;
+}
+
+.footer_routes_navigation div:nth-child(3) {
+    border:3px solid #FAFAFB;
+    margin-right: 0em;
+    margin-left: 0vw;
+}
+
+.footer_routes_navigation div:nth-child(3),
+.footer_routes_navigation div:nth-child(4){
+    display: flex;
+    align-items: center;
+    width: 103px;
+    height: 35px;
+}
+
+.footer_routes_navigation div:nth-child(4){
+    border-radius:8px; 
+    position: relative;
+    top: -3.7em;
+    left: 6.4em;
+}
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
@@ -990,18 +1180,18 @@
     /* │ ► Santiago Elias Carranza                               │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-    .footer_routes_container_home_navigation {
-        width: 41vw;
-    }
+.footer_routes_container_home_navigation {
+    width: 41vw;
+}
 
-    .footer_routes_navigation div:nth-child(3),
-    .footer_routes_navigation div:nth-child(4){
+.footer_routes_navigation div:nth-child(3),
+.footer_routes_navigation div:nth-child(4){
     display: flex;
     align-items: center;
     border-radius: .5em;
     width: 146px;
     height: 48px;
-    }
+}
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
