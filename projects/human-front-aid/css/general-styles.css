@@ -28,8 +28,28 @@
 
 html,
 body {
-  position: relative;
-  height: 100%;
-  background-color: var(--color-uno);
-  z-index: -3;
+    position: relative;
+    height: 100%;
+    background-color: var(--color-uno);
+    z-index: -3;
+}
+
+@media (min-width: 320px ) and (max-width: 480px) {
+    .mobile { display: block; }
+    .desktop { display: none; }
+}
+
+@media (min-width: 481px ) and (max-width: 992px) {
+    .mobile { display: none; }
+    .desktop { display: block; }
+}
+
+@media (min-width: 993px ) and (max-width: 1299px) {
+    .mobile { display: none; }
+    .desktop { display: block; }
+}
+
+@media(min-width: 1300px) {
+    .mobile { display: none; }
+    .desktop { display: block; }
 }
