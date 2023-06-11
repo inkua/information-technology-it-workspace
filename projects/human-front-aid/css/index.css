@@ -686,15 +686,17 @@
     cursor: pointer;
     margin-right:0;
 }
-    
-.footer_redsocial a{
-    display: inline-block;
-    padding-left: 1em;
-}
 
 .link-whatsapp {
     text-decoration: none;
     color: var(--color-uno);
+}
+
+.link-whatsapp-text {
+    position: relative;
+    display: inline-block;
+    padding-left: 1em;
+    top: 2px;
 }
 
 .link-instagram {
@@ -702,9 +704,23 @@
     color: var(--color-uno);
 }
 
+.link-instagram-text {
+    position: relative;
+    display: inline-block;
+    padding-left: 1em;
+    top: 2px;
+}
+
 .link-facebook {
     text-decoration: none;
     color: var(--color-uno);
+}
+
+.link-facebook-text {
+    position: relative;
+    display: inline-block;
+    padding-left: 1em;
+    top: 2px;
 }
 
 /* Footer - Línea intermedia */
@@ -717,7 +733,7 @@
 
 /* Footer - Routes */
 
-.footer_routes{
+.footer_routes {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -726,7 +742,7 @@
     margin-top: 3em;
 }
 
-.footer_routes_logo{
+.footer_routes_logo {
     display: flex;
     align-items: center;
     margin-right: 1vw;
@@ -734,19 +750,19 @@
 	bottom: .1em;
 }
 
-.footer_routes_logo img{
+.footer_routes_logo img {
     width:91px;
     height:104px;
     position: relative;
     bottom: .2em;
 }
 
-.footer_routes_logo p{
+.footer_routes_logo p {
     font-weight: bold;
     padding-left: .3em;
 }
 
-.footer_routes_container_home_navigation{
+.footer_routes_container_home_navigation {
     display: flex;
     justify-content: space-between;
     width: 39vw;
@@ -793,7 +809,7 @@
 
     /* Footer - Contenedor principal */
 
-    .footer_container{
+    .footer_container {
         background-color: #001C3D;
         height: 130px;
         padding-left: 14px;
@@ -803,7 +819,7 @@
 
     /* Footer - Redes Sociales */
 
-    .footer_redsocial{
+    .footer_redsocial {
         justify-content: flex-start;
         flex-direction: row;
         top: 23%;
@@ -811,13 +827,13 @@
         width: 50%;
     }
 
-    .footer_redsocial img{
+    .footer_redsocial img {
         cursor: pointer;
         width: 27px;
         height: 27px;
     }
 
-    .footer_redsocial_instragram img{
+    .footer_redsocial_instragram img {
         border-radius: 100%;
         width: 29px;
         height: 29px;
@@ -825,32 +841,40 @@
         right: 0; 
     }
 
-    .footer_redsocial_facebook img{
+    .footer_redsocial_facebook img {
         position: relative;
         right:-4.7em;
     }
 
-    .footer_redsocial a{
+    .link-instagram-text {
+        display: none;
+    }
+
+    .link-facebook-text {
+        display: none;
+    }
+
+    .link-whatsapp-text {
         display: none;
     }
 
     /* Footer - Línea intermedia */
 
-    .footer_linea{
+    .footer_linea {
         display: none;
     }
 
     /* Footer - Routes */
 
-    .footer_routes{
+    .footer_routes {
         margin-top: 0.8em;
     }
 
-    .footer_routes_logo{
+    .footer_routes_logo {
         margin-right: -2px;
     }
 
-    .footer_routes_logo img{
+    .footer_routes_logo img {
         width: 52px;
         height: 52px;
     }
@@ -865,11 +889,11 @@
         letter-spacing: 0.005em;
     }
 
-    .footer_routes_home-aboutUs{
+    .footer_routes_home-aboutUs {
         display: none;
     }
 
-    .footer_routes_navigation{
+    .footer_routes_navigation {
         display: flex;
         flex-direction: column;
         position: relative;
