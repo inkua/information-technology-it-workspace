@@ -532,11 +532,7 @@
     text-decoration: none;
     font-family: var(--font-family-lato);
     color: var(--color-dos);
-}
-
-#row-supporters{
-    padding-top: 50px;
-    margin: 0px;
+    padding-left: 15%;
 }
 
 .tittle-supporters {
@@ -547,6 +543,27 @@
 	font-weight: 700;
 	font-size: 40px;
 }
+
+.swiper {
+    width: 80%;
+    height: 20%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    height: 70%;
+  }
+
+  .img-supporters {
+    display: block;
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+  }
 
 /* ┌─────────────────────────────────────────────────────────┐ */
 /* │ ■■■■■■■■■■■■■■■■■■■ FIN SUPPORTERS ■■■■■■■■■■■■■■■■■■■■ │ */
