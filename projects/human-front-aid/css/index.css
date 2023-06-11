@@ -420,11 +420,6 @@
     height: 26rem;
 }
 
-.video-background {
-    background-image: url('./Image/Imagen0_Reto.png');
-    background-size: cover; 
-    background-position: center;
-}
 
 .card-contenedor {
     width: 100%;
