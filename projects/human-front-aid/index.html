@@ -218,11 +218,9 @@
     
     <!-- Patrons - Sección Carousel -->
     <div id="carouselExampleCaptions" class="carousel">
+        
         <div class="carousel-inner">
-
-            <!-- Carousel de Cartas y Videos -->
-
-            <div class="carousel-item video-background">
+            <div class="carousel-item active">
                 <!-- Carta nº1 video probando como etiqueta iframe -->
                 <video id="my-video" class="card-video video-js" controls preload="auto" width="640" height="264"
                      data-setup='{}'>
@@ -344,9 +342,7 @@
             </div>
 
         </div>
-
         <!-- Carousel Indicators -->
-
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -358,21 +354,25 @@
             <span class="visually-hidden">Next</span>
         </button>
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+            <button type="button" id="indicator-0" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
                 class="carousel-indicator active" aria-current="true" aria-label="Slide 0"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            <button type="button" id="indicator-1" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
                 class="carousel-indicator" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            <button type="button" id="indicator-2" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                 class="carousel-indicator" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            <button type="button" id="indicator-3" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
                 class="carousel-indicator" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+            <button type="button" id="indicator-4" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
                 class="carousel-indicator" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+            <button type="button" id="indicator-5" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
                 class="carousel-indicator" aria-label="Slide 5"></button>
+            <button type="button" id="indicator-6" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                class="carousel-indicator" aria-label="Slide 6"></button>
+            <button type="button" id="indicator-7" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+                class="carousel-indicator" aria-label="Slide 7"></button>
         </div>
     </div>
-
+    
     <!-- ┌─────────────────────────────────────────────────────────┐ -->
     <!-- │ ■■■■■■■■■■■■■■■■■■■■■ FIN PATRONS ■■■■■■■■■■■■■■■■■■■■■ │ -->
     <!-- └─────────────────────────────────────────────────────────┘ -->
@@ -389,101 +389,68 @@
         <p>Supporters</p>
     </div>
 
-    <div id="row-supporters" class="row">
-        <div class="col-3 offset-2">
-            <div id="card-supporters" class="card">
-                <div class="row g-0">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
 
-                    <div class="col-md-3">
-                        <img src="./img/hotelodessa.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-9">
-                        <div class="card-body text-center text">
-                            <a class="text-supporters" href="https://bristol-hotel.com.ua/"><h5><strong>Bristol Hotel  <br> Odessa</h5></strong></a>
-                        </div>
-                    </div>
-                </div>
+            <div class="swiper-slide">
+                <img class="img-supporters" src="./img/hotelodessa.jpg" class="img-fluid rounded-start" alt="...">
+                <a class="text-supporters" href="https://bristol-hotel.com.ua/"><h5><strong>Bristol Hotel  <br> Odessa</h5></strong></a>
+            </div>
+
+            <div class="swiper-slide">
+                <img class="img-supporters" src="./img/oldoak.jpg" class="img-fluid rounded-start" alt="...">
+                <a class="text-supporters" href="https://www.instagram.com/enoteca.old_oak/"><h5><strong>Old Oak   <br> wine & more</strong></h5></a>
+            </div>
+
+            <div class="swiper-slide">
+                <img class="img-supporters" src="./img/salsasalat.jpg" class="img-fluid rounded-start" alt="...">
+                <a class="text-supporters" href="https://www.salatundsandwich.ch/"><h5><strong>Salsa   <br> Salat & Sandwich</strong></h5></a>
+            </div>
+
+            <div class="swiper-slide">
+                <img class="img-supporters" src="./img/fourtwenty.jpg" class="img-fluid rounded-start" alt="...">
+                <a class="text-supporters" href="fourtwenty.ch"><h5><strong>Fourtwenty <br> fourtwenty.ch </strong></h5></a>
+            </div>
+
+            <div class="swiper-slide">
+                <img class="img-supporters" src="./img/amanahair.jpg" class="img-fluid rounded-start" alt="...">
+                <a class="text-supporters" href="www.amana-hair.ch/"><h5><strong>Amana   <br> amana hair</strong></h5></a>
+            </div>
+
+            <div class="swiper-slide">
+                <img class="img-supporters" src="./img/rotary1980.jpg" class="img-fluid rounded-start" alt="...">
+                <a class="text-supporters" href="rotary1980.ch"><h5><strong>Rotary  <br> distrikt 1980</strong></h5></a>
+            </div>
+
+            <div class="swiper-slide">
+                <img class="img-supporters" src="./img/supportbus.jpg" class="img-fluid rounded-start" alt="...">
+                <a class="text-supporters" href="rotary1980.ch"><h5><strong>Ukraine Japan <br> support bus</strong></h5></a>
+            </div>
+
+            <div class="swiper-slide">
+                <img class="img-supporters" src="./img/hoststar.jpg" class="img-fluid rounded-start" alt="...">
+                <a class="text-supporters" href="rotary1980.ch"><h5><strong>Hoststar  <br> Go live</strong></h5></a>
             </div>
         </div>
-
-        <div class="col-3 ">
-            <div class="card">
-                <div class="row g-0">
-                    <div class="col-md-3">
-                        <img src="./img/oldoak.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-9">
-                        <div class="card-body text-center">
-                            <a class="text-supporters" href="https://www.instagram.com/enoteca.old_oak/"><h5><strong>Old Oak   <br> wine & more</strong></h5></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-3">
-            <div class="card">
-                <div class="row g-0">
-                    <div class="col-md-3">
-                        <img src="./img/salsasalat.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-9">
-                        <div class="card-body text-center">
-                            <a class="text-supporters" href="https://www.salatundsandwich.ch/"><h5><strong>Salsa   <br> Salat & Sandwich</strong></h5></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="swiper-pagination"></div>
     </div>
-
-    <div id="row-supporters" class="row">
-        <div class="col-3 offset-2">
-            <div class="card">
-                <div class="row g-0">
-
-                    <div class="col-md-3">
-                        <img src="./img/fourtwenty.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-9">
-                        <div class="card-body text-center text">
-                            <a class="text-supporters" href="fourtwenty.ch"><h5><strong>Fourtwenty <br> fourtwenty.ch </strong></h5></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-3 ">
-            <div class="card">
-                <div class="row g-0">
-                    <div class="col-md-3">
-                        <img src="./img/amanahair.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-9">
-                        <div class="card-body text-center">
-                            <a class="text-supporters" href="www.amana-hair.ch/"><h5><strong>Amana   <br> amana hair</strong></h5></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-3">
-            <div class="card">
-                <div class="row g-0">
-                    <div class="col-md-3">
-                        <img src="./img/rotary1980.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-9">
-                        <div class="card-body text-center">
-                            <a class="text-supporters" href="rotary1980.ch"><h5><strong>Rotary  <br> distrikt 1980</strong></h5></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          loop: true,
+          centeredSlides: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
 
     <!-- ┌─────────────────────────────────────────────────────────┐ -->
     <!-- │ ■■■■■■■■■■■■■■■■■■■ FIN SUPPORTERS ■■■■■■■■■■■■■■■■■■■■ │ -->
@@ -497,97 +464,86 @@
     <!-- │ ► Luis Romano                                           │ -->
     <!-- └─────────────────────────────────────────────────────────┘ -->
 
-    <p class="press">Press & News</p>
+                <!-- Swiper -->
+    
+     <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
 
-    <div class="carousel-div">
-
-        <div class="contenedor-img">
-    
-            <div class="card-carousel">
-
-                <iframe
-                    src="https://www.baerntoday.ch/bern/darum-unterstuetzt-reto-nause-berner-helfer-bei-der-spendensuche-150309138"
-                    class="imgCarousel">
-                </iframe>
-                <h4 class="texto-carousel">baerntoday.ch</h4>
-                <button class="btn-carousel"><a
-                        href="https://www.baerntoday.ch/bern/darum-unterstuetzt-reto-nause-berner-helfer-bei-der-spendensuche-150309138"
-                        target="_blank">→</a>
-                </button>
-            </div>
-    
-            <div class="card-carousel">
-                <iframe
-                    src="https://www.nau.ch/news/europa/ukraine-krieg-hier-denkt-keiner-daran-dass-wir-verlieren-konnten-66428857"
-                     class="imgCarousel activo">
-                </iframe>
-                <h4 class="texto-carousel">Nau.ch</h4>
-                <button class="btn-carousel"><a
-                        href="https://www.nau.ch/news/europa/ukraine-krieg-hier-denkt-keiner-daran-dass-wir-verlieren-konnten-66428857"
-                        target="_blank">→</a>
-                </button>
-            </div>
-    
-            <div class="card-carousel">
-                <iframe 
-                    src="https://baernerbaer.ch/portraits/ich-nehme-diesen-krieg-persoenlich"  class="imgCarousel">
-                </iframe>
-                <h4 class="texto-carousel">baernerbaer.ch</h4>
-                <button class="btn-carousel"><a href="https://baernerbaer.ch/portraits/ich-nehme-diesen-krieg-persoenlich" target="_blank">→</a>
-                </button>
-            </div>
-    
-            <div class="card-carousel">
-                <iframe
-                    src="https://www.telebaern.tv/telebaern-news/berner-rettet-fluechtlinge-aus-der-ukraine-146097989"
-                     class="imgCarousel">
-                </iframe>
-                <h4 class="texto-carousel">telebaern.tv</h4>
-                <button class="btn-carousel"><a
-                        href="https://www.telebaern.tv/telebaern-news/berner-rettet-fluechtlinge-aus-der-ukraine-146097989"
-                        target="_blank">→</a></button>
-            </div>
-    
-            <div class="card-carousel">
-                <iframe
-                    src="https://www.nau.ch/news/videos/ukraine-krieg-gefluchtete-schlafen-nur-drei-stunden-pro-nacht-66126580?utm_source=usr&utm_medium=55492"
-                     class="imgCarousel ">
-                </iframe>
-                <h4 class="texto-carousel">nau.ch</h4>
-                <button class="btn-carousel">
-                    <a href="https://www.nau.ch/news/videos/ukraine-krieg-gefluchtete-schlafen-nur-drei-stunden-pro-nacht-66126580?utm_source=usr&utm_medium=55492"
-                        target="_blank">→</a>
-                </button>
-            </div>
-    
-            <div class="card-carousel">
-                <iframe
-                    src="https://www.blick.ch/ausland/der-berner-musiker-baenz-margot-44-hilft-im-armen-moldawien-ukrainischen-fluechtlingen-sie-verehren-uns-hier-wie-goetter-id17365356.html"
-                     class="imgCarousel">
-                </iframe>
-                <h4 class="texto-carousel">blick.ch</h4>
-                <button class="btn-carousel"><a
-                        href="https://www.blick.ch/ausland/der-berner-musiker-baenz-margot-44-hilft-im-armen-moldawien-ukrainischen-fluechtlingen-sie-verehren-uns-hier-wie-goetter-id17365356.html"
-                        target="_blank">→</a>
-                </button>
-            </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-1.png" alt="">
+            <a class="swiper-slide-btn" href="https://www.baerntoday.ch/bern/darum-unterstuetzt-reto-nause-berner-helfer-bei-der-spendensuche-150309138" target="_blank">→</a>
         </div>
-    </div>
-    
-    <ul class="puntos">
-        <li class="punto"></li>
-        <li class="punto activo"></li>
-        <li class="punto"></li>
-        <li class="punto"></li>
-        <li class="punto"></li>
-        <li class="punto"></li>
-    </ul>
+
+          <div class="swiper-slide">
+            <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-2.png" alt="">
+            <a class="swiper-slide-btn" href="https://www.nau.ch/news/europa/ukraine-krieg-hier-denkt-keiner-daran-dass-wir-verlieren-konnten-66428857" target="_blank">→</a>
+        </div>
+
+          <div class="swiper-slide">
+            <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-3.png" alt="">
+            <a class="swiper-slide-btn" href="https://baernerbaer.ch/portraits/ich-nehme-diesen-krieg-persoenlich/" target="_blank">→</a>
+        </div>
+
+          <div class="swiper-slide">
+            <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-4.png" alt="">
+            <a class="swiper-slide-btn" href="https://www.aargauerzeitung.ch/international/ukraine-konflikt-der-krieg-tobte-in-mir-reportage-aus-dem-groessten-freiwilligencenter-der-ukraine-in-odessa-ld.2328453?reduced=true" target="_blank">→</a>
+        </div>
+
+          <div class="swiper-slide">
+            <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-5.png" alt="">
+            <a class="swiper-slide-btn" href="https://www.nau.ch/news/videos/ukraine-krieg-gefluchtete-schlafen-nur-drei-stunden-pro-nacht-66126580" target="_blank">→</a>
+        </div>
+
+          <div class="swiper-slide">
+            <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-6.png" alt="">
+            <a class="swiper-slide-btn" href="https://www.blick.ch/ausland/der-berner-musiker-baenz-margot-44-hilft-im-armen-moldawien-ukrainischen-fluechtlingen-sie-verehren-uns-hier-wie-goetter-id17365356.html?utm_medium=social&utm_campaign=share-button&utm_source=whatsapp" target="_blank">→</a>
+        </div>
+
+          <div class="swiper-slide">
+            <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-7.png" alt="">
+            <a class="swiper-slide-btn" href="https://www.telebaern.tv/telebaern-news/berner-rettet-fluechtlinge-aus-der-ukraine-146097989" target="_blank">→</a>
+        </div>
+
+          <div class="swiper-slide">
+            <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-8.png" alt="">
+            <a class="swiper-slide-btn" href="https://www.bernerzeitung.ch/ein-berner-leistet-hilfe-an-vorderster-front-313233754380" target="_blank">→</a>
+        </div>
+
+          <div class="swiper-slide">
+            <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-9.png" alt="">
+            <a class="swiper-slide-btn" href="https://www.swissinfo.ch/ger/briefing/heute-in-der-schweiz/47527078" target="_blank">→</a>
+        </div>
+
+        <div class="swiper-slide">
+            <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-10.png" alt="">
+            <a class="swiper-slide-btn" href="https://www.20min.ch/story/berner-musiker-evakuiert-ukrainerinnen-und-ukrainer-aus-odessa-235788657968" target="_blank">→</a>
+        </div>
+        
+        <div class="swiper-slide">
+            <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-11.png" alt="">
+            <a class="swiper-slide-btn" href="https://www.instagram.com/tv/CdLWwWFKCPF/?igshid=YmMyMTA2M2Y%3D" target="_blank">→</a>
+        </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>  
+      
 
     <!-- ┌─────────────────────────────────────────────────────────┐ -->
     <!-- │ ■■■■■■■■■■■■■■■■■ FIN PRESS-AND-NEWS ■■■■■■■■■■■■■■■■■■ │ -->
     <!-- └─────────────────────────────────────────────────────────┘ -->
 
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■ INICIO MAPA ■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
 
+    <div id="map-container">
+        <iframe style="width:1400px;height:500px" src="https://liveuamap.com" allowfullscreen></iframe>
+    </div>
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■ FIN MAPA ■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
 
     <!-- ┌─────────────────────────────────────────────────────────┐ -->
     <!-- │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ -->
