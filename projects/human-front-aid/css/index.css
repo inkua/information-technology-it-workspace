@@ -582,78 +582,66 @@
     margin-top: 4rem;
 }
     
-.carousel-div {
-    width: 100%; 
-    padding: 10px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-}
-    
-.imgCarousel {
-    width: 423px;
-    height: 300px;
-    margin-right: 1rem;
-    border-radius: 20px;
+body {
     position: relative;
-}
-    
-.card-carousel {
-    display: flex;
-    flex-direction: column;
-}
-    
-.texto-carousel {
-    color: #ffffff;
-    opacity: 0.9;
-    position: absolute;
-    padding: 10px;
-}
-    
-.btn-carousel {
-    border-radius: 20px;
-    width: 30px;
-    height: 30px;
-    background-color: #F8D714;
-    border: #F8D714;
-    position: absolute;
-    top: 250px;
-    margin-left: 350px;
-}
+    height: 100%;
+  }
 
-.btn-carousel a {
-    text-decoration: none;
-}
-    
-.contenedor-img {
+
+  .swiper {
+    width: 80%;
+    height: 480px;
+    margin-left: auto;
+    margin-right: auto; 
+
+  }
+
+  .swiper-slide {
+    height: calc((100% - 50px) / 2);
+    border-radius: 20px;
+    /* Center slide text vertically */
     display: flex;
-    flex-direction: row;
-    transform: translateX(-5%); 
-}
-    
-.imgCarousel.activo {
-    border: #004eaa 2px solid;
-}
-    
-.puntos {
-    width: 100%;
-    padding: 1em;
-    display: flex;
-    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-}
+    box-shadow: 5px -5px 3px 0px rgba(0,0,0,0.12);    
+  }
 
-.punto {
-    width: 1em;
-    height: 1em;
-    font-size: 2rem;
-    }
+  .swiper-slide:hover{
+    transform: scale(1.05);
+    transition: 2s;
+  }
 
-.punto.activo {
-    color: #004eaa;
-}
+  .swiper-slide-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+  }
+
+  .swiper-slide-btn{
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    background: #FFD500;
+    border: #FFD500;
+  }
+
+  a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
+  .swiper-wrapper{
+    bottom: 20px;
+    padding-top: 10px;
+  }
+  
+
 
 /* ┌─────────────────────────────────────────────────────────┐ */
 /* │ ■■■■■■■■■■■■■■■■■ FIN PRESS-AND-NEWS ■■■■■■■■■■■■■■■■■■ │ */
@@ -817,6 +805,20 @@
 
 @media (min-width: 0px ) and (max-width: 576px) {
     
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■ INICIO PRESS-AND-NEWS ■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Luis Romano                                           │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+.swiper-pagination{
+    margin-bottom: 200px;    
+}
+    
+
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
     /* │                                                         │ */
