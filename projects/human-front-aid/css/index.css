@@ -123,6 +123,7 @@
 }
 
 .navbar-donate {
+    font-family: var(--font-family-lato);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -657,27 +658,20 @@ body {
 /* │ ► Santiago Elias Carranza                               │ */
 /* └─────────────────────────────────────────────────────────┘ */
 
-.footer_container{
-    background-color: #001C3D;
-    height: 357px;
-}
+/* Footer - Contenedor principal */
 
-.footer_body{
+.footer_container {
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
-    background-color: #001C3D;
+    background-color: var(--color-cinco);
     height: 357px;
-    max-width: 95vw;
-    margin-right:  var(--margin-desktop-2);
-    margin-left:  var(--margin-desktop-2);
+    padding-right: var(--margin-desktop-2);
+    padding-left: var(--margin-desktop-2);
 }
 
-.footer_body a,
-.footer_body p{
-    text-decoration:none;
-    color: #FAFAFB;
-}
+/* Footer - Redes Sociales */
 
 .footer_redsocial{
     display: flex;
@@ -692,11 +686,44 @@ body {
     cursor: pointer;
     margin-right:0;
 }
-    
-.footer_redsocial a{
+
+.link-whatsapp {
+    text-decoration: none;
+    color: var(--color-uno);
+}
+
+.link-whatsapp-text {
+    position: relative;
     display: inline-block;
     padding-left: 1em;
+    top: 2px;
 }
+
+.link-instagram {
+    text-decoration: none;
+    color: var(--color-uno);
+}
+
+.link-instagram-text {
+    position: relative;
+    display: inline-block;
+    padding-left: 1em;
+    top: 2px;
+}
+
+.link-facebook {
+    text-decoration: none;
+    color: var(--color-uno);
+}
+
+.link-facebook-text {
+    position: relative;
+    display: inline-block;
+    padding-left: 1em;
+    top: 2px;
+}
+
+/* Footer - Línea intermedia */
 
 .footer_linea {
     border-bottom: solid .1px #FAFAFB;
@@ -704,7 +731,9 @@ body {
     top: 1.5em;
 }
 
-.footer_routes{
+/* Footer - Routes */
+
+.footer_routes {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -713,7 +742,7 @@ body {
     margin-top: 3em;
 }
 
-.footer_routes_logo{
+.footer_routes_logo {
     display: flex;
     align-items: center;
     margin-right: 1vw;
@@ -721,19 +750,19 @@ body {
 	bottom: .1em;
 }
 
-.footer_routes_logo img{
+.footer_routes_logo img {
     width:91px;
     height:104px;
     position: relative;
     bottom: .2em;
 }
 
-.footer_routes_logo p{
+.footer_routes_logo p {
     font-weight: bold;
     padding-left: .3em;
 }
 
-.footer_routes_container_home_navigation{
+.footer_routes_container_home_navigation {
     display: flex;
     justify-content: space-between;
     width: 39vw;
@@ -744,53 +773,11 @@ body {
     flex-wrap: wrap;
 }
 
-.footer_routes_home-aboutUs a:nth-child(1){
-    padding-right: 2em;
-}
-
-.footer_routes_home-aboutUs div:nth-child(1){
-    position: relative;
-    bottom: 0em;
-}
-
 .footer_routes_navigation {
     display: flex;
     flex-direction:row;
     position: relative;
     bottom: .6em;
-}
-
-.footer_routes_navigation div:nth-child(3),
-.footer_routes_navigation div:nth-child(4){
-    display: flex;
-    align-items: center;
-    border-radius: .5em;
-    width: 163px;
-    height: 48px;
-}
-
-.footer_routes_navigation div:nth-child(3) a,
-.footer_routes_navigation div:nth-child(4) a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 163px;
-    height: 48px; 
-}
-
-.footer_routes_navigation div:nth-child(3) {
-    border:3px solid #FAFAFB;
-    margin-right: 1em;
-    margin-left: 3vw;
-}
-
-.footer_routes_navigation div:nth-child(4){
-    background-color: #FFD500;
-}
-
-.footer_routes_navigation div:nth-child(4) a{
-    font-weight: bold;
-    color: #02397A;
 }
 
 /* ┌─────────────────────────────────────────────────────────┐ */
@@ -799,11 +786,18 @@ body {
 
 
 
-/* ╔═════════════════════════════════════════════════════════════════╗ */
-/* ║                   MEDIA QUERY - 576 - Mobile                    ║ */
-/* ╚═════════════════════════════════════════════════════════════════╝ */
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ████████████████████████ MEDIA QUERY MOBILE ███████████████████████ ║
+    ║ ████████████████████████████ 320 - 480  ███████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
 
-@media (min-width: 0px ) and (max-width: 576px) {
+@media (min-width: 320px ) and (max-width: 480px) {
     
 
 
@@ -827,117 +821,113 @@ body {
     /* │ ► Santiago Elias Carranza                               │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-.footer_container{
-    height: 0px;
-}
+    /* Footer - Contenedor principal */
 
-.footer_body{
-    background-color: #001C3D;
-    height: 150px;
-    max-width: 100vw;
-    margin-right: 0;
-    margin-left:  0;
-    padding-bottom: 1em;
-}
+    .footer_container {
+        background-color: #001C3D;
+        height: 130px;
+        padding-left: 14px;
+        padding-right: 14px;
+        overflow: hidden;
+    }
 
-.footer_redsocial{
-    justify-content: flex-end;
-    flex-direction:row-reverse;
-    top: 1.2em;
-    padding-left: 1.5em;
-    margin-bottom: 0;
-}
+    /* Footer - Redes Sociales */
 
-.footer_redsocial img{
-    cursor: pointer;
-    margin-right:2.9em;
-    width: 27px;
-    height: 27px;
-}
+    .footer_redsocial {
+        justify-content: flex-start;
+        flex-direction: row;
+        top: 23%;
+        margin-bottom: 0;
+        width: 50%;
+    }
 
-.footer_redsocial_instragram img{
-    border-radius: 100%;
-    width: 29px;
-    height: 29px;
-    position: relative;
-    right:4.6em; 
-}
+    .footer_redsocial img {
+        cursor: pointer;
+        width: 27px;
+        height: 27px;
+    }
 
-.footer_redsocial_facebook img{
-    position: relative;
-    right:-4.7em;
-}
+    .footer_redsocial_instragram img {
+        border-radius: 100%;
+        width: 29px;
+        height: 29px;
+        position: relative;
+        right: 0; 
+    }
 
-.footer_redsocial a{
-    display: none;
-}
+    .footer_redsocial_facebook img {
+        position: relative;
+        right:-4.7em;
+    }
 
-.footer_linea{
-    display: none;
-}
+    .link-instagram-text {
+        display: none;
+    }
 
-.footer_routes{
-    margin-top: 2em;
-}
+    .link-facebook-text {
+        display: none;
+    }
 
-.footer_routes_logo{
-    margin-right: 0;
-}
+    .link-whatsapp-text {
+        display: none;
+    }
 
-.footer_routes_logo img{
-    width:52px;
-    height:54px;
-    position: relative;
-    bottom: .2em;
-    margin-left:1em;
-}
+    /* Footer - Línea intermedia */
 
-.footer_routes_logo p{
-    font-weight:normal;
-    width: 150px;
-    padding-left: .7em;
-    position: relative;
-    top: .3em;
-}
+    .footer_linea {
+        display: none;
+    }
 
-.footer_routes_container_home_navigation{
-    width: 100vw;
-    display: flex;
-    justify-content: flex-end;
-}
+    /* Footer - Routes */
 
-.footer_routes_home-aboutUs{
-    display: none;
-}
+    .footer_routes {
+        margin-top: 0.8em;
+    }
 
-.footer_routes_navigation{
-    display: flex;
-    flex-direction:row-reverse;
-    position: relative;
-    bottom: .5em;
-    padding-right: 1.5em;
-}
+    .footer_routes_logo {
+        margin-right: -2px;
+    }
 
-.footer_routes_navigation div:nth-child(3) {
-    border:3px solid #FAFAFB;
-    margin-right: 0em;
-    margin-left: 0vw;
-}
+    .footer_routes_logo img {
+        width: 52px;
+        height: 52px;
+    }
 
-.footer_routes_navigation div:nth-child(3),
-.footer_routes_navigation div:nth-child(4){
-    display: flex;
-    align-items: center;
-    width: 103px;
-    height: 35px;
-}
+    .footer-titulo {
+        margin-bottom: 12px;
+        margin-left: 5px;
+        font-family: var(--font-family-poppins);
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 10px;
+        letter-spacing: 0.005em;
+    }
 
-.footer_routes_navigation div:nth-child(4){
-    border-radius:8px; 
-    position: relative;
-    top: -3.7em;
-    left: 6.4em;
-}
+    .footer_routes_home-aboutUs {
+        display: none;
+    }
+
+    .footer_routes_navigation {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        border-radius:8px; 
+        position: relative;
+        top: -2.7em;
+        left: 15%;
+    }
+
+    .footer-need-help {
+        margin-top: 10px;
+        width: 110px;
+        white-space: nowrap;
+        padding-left: 14px;
+    }
+
+    .footer-donate {
+        width: 110px;
+        margin-top: 12px;
+    }
     
         /* ┌─────────────────────────────────────────────────────────┐ */
         /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
@@ -946,11 +936,18 @@ body {
 
 }
 
-/* ╔═════════════════════════════════════════════════════════════════╗ */
-/* ║                   MEDIA QUERY - 992 - Mobile                    ║ */
-/* ╚═════════════════════════════════════════════════════════════════╝ */
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ████████████████████████ MEDIA QUERY TABLET ███████████████████████ ║
+    ║ ████████████████████████████ 481 - 992  ███████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
 
-@media (min-width: 577px ) and (max-width: 992px) {
+@media (min-width: 481px ) and (max-width: 992px) {
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
@@ -961,11 +958,7 @@ body {
     /* └─────────────────────────────────────────────────────────┘ */
 
 .footer_container{
-    height: 0px;
-}
-
-.footer_body{
-    background-color: #001C3D;
+    background-color: var(--color-cinco);
     height: 150px;
     max-width: 100vw;
     margin-right: 0;
@@ -1018,11 +1011,11 @@ body {
 }
 
 .footer_routes_logo img{
-    width:52px;
-    height:54px;
+    width: 52px;
+    height: 54px;
     position: relative;
     bottom: .2em;
-    margin-left:1em;
+    margin-left: 1em;
 }
 
 .footer_routes_logo p{
@@ -1045,31 +1038,8 @@ body {
 
 .footer_routes_navigation{
     display: flex;
-    flex-direction:row-reverse;
+    flex-direction: column;
     position: relative;
-    bottom: .5em;
-    padding-right: 1.5em;
-}
-
-.footer_routes_navigation div:nth-child(3) {
-    border:3px solid #FAFAFB;
-    margin-right: 0em;
-    margin-left: 0vw;
-}
-
-.footer_routes_navigation div:nth-child(3),
-.footer_routes_navigation div:nth-child(4){
-    display: flex;
-    align-items: center;
-    width: 103px;
-    height: 35px;
-}
-
-.footer_routes_navigation div:nth-child(4){
-    border-radius:8px; 
-    position: relative;
-    top: -3.7em;
-    left: 6.4em;
 }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
@@ -1080,9 +1050,16 @@ body {
 
 
 
-/* ╔═════════════════════════════════════════════════════════════════╗ */
-/* ║                   MEDIA QUERY - 1200 - Desktop                  ║ */
-/* ╚═════════════════════════════════════════════════════════════════╝ */
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████ MEDIA QUERY DESKTOP ███████████████████████ ║
+    ║ ███████████████████████████ 993 - 1299  ███████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
 
 @media(min-width: 993px) and (max-width: 1299px) {
 
@@ -1194,18 +1171,10 @@ body {
     /* │ ► Santiago Elias Carranza                               │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-.footer_routes_container_home_navigation {
-    width: 41vw;
-}
-
-.footer_routes_navigation div:nth-child(3),
-.footer_routes_navigation div:nth-child(4){
-    display: flex;
-    align-items: center;
-    border-radius: .5em;
-    width: 146px;
-    height: 48px;
-}
+    .footer_container {
+        padding-right: var(--margin-desktop-1);
+        padding-left: var(--margin-desktop-1);
+    }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
@@ -1215,9 +1184,16 @@ body {
 
 
 
-/* ╔═════════════════════════════════════════════════════════════════╗ */
-/* ║              MEDIA QUERY - Extra Large - Desktop                ║ */
-/* ╚═════════════════════════════════════════════════════════════════╝ */
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ██████████████████████ MEDIA QUERY DESKTOP HD █████████████████████ ║
+    ║ ████████████████████████████ 1300 - ∞  ████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
 
 @media(min-width: 1300px) {
 
