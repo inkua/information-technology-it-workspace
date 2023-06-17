@@ -543,7 +543,7 @@
 .swiper {
     width: 80%;
     height: 20%;
-  }
+}
 
   .swiper-slide {
     text-align: center;
@@ -552,14 +552,14 @@
     display: flex;
     align-items: center;
     height: 70%;
-  }
+}
 
   .img-supporters {
     display: block;
     width: 30%;
     height: 100%;
     object-fit: cover;
-  }
+}
 
 /* ┌─────────────────────────────────────────────────────────┐ */
 /* │ ■■■■■■■■■■■■■■■■■■■ FIN SUPPORTERS ■■■■■■■■■■■■■■■■■■■■ │ */
@@ -586,7 +586,7 @@
 body {
     position: relative;
     height: 100%;
-  }
+}
 
 
   .swiper {
@@ -594,10 +594,9 @@ body {
     height: 480px;
     margin-left: auto;
     margin-right: auto; 
+}
 
-  }
-
-  .swiper-slide {
+.swiper-slide {
     height: calc((100% - 50px) / 2);
     border-radius: 20px;
     /* Center slide text vertically */
@@ -605,22 +604,22 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: 5px -5px 3px 0px rgba(0,0,0,0.12);    
-  }
+}
 
-  .swiper-slide:hover{
+.swiper-slide:hover {
     transform: scale(1.05);
     transition: 2s;
-  }
+}
 
-  .swiper-slide-img{
+.swiper-slide-img {
     width: 100%;
     height: 100%;
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto; 
-  }
+}
 
-  .swiper-slide-btn{
+.swiper-slide-btn {
     border-radius: 50px;
     width: 32px;
     height: 32px;
@@ -629,24 +628,66 @@ body {
     bottom: 15px;
     background: #FFD500;
     border: #FFD500;
-  }
+}
 
-  a{
+a {
     text-decoration: none;
     text-align: center;
     font-size: 1.25rem;
-  }
+}
 
-  .swiper-wrapper{
+.swiper-wrapper {
     bottom: 20px;
     padding-top: 10px;
-  }
+}
   
 
 
 /* ┌─────────────────────────────────────────────────────────┐ */
 /* │ ■■■■■■■■■■■■■■■■■ FIN PRESS-AND-NEWS ■■■■■■■■■■■■■■■■■■ │ */
 /* └─────────────────────────────────────────────────────────┘ */
+
+
+
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■■ INICIO MAP ■■■■■■■■■■■■■■■■■■■■■■ │ */
+/* │                                                         │ */
+/* │   COLABORADORES:                                        │ */
+/* │ ► Diego N. Cabrera                                      │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
+#map-off {
+    padding: 0 var(--margin-desktop-1);
+    width: 100%;
+    margin-top: 50px;
+    height: 500px;
+    text-align: center;
+    background-color: var(--color-uno);
+    margin-bottom: 50px;
+}
+
+#map-off:hover {
+    cursor: pointer;
+}
+
+#map-on {
+    display: none;
+    padding: 0 var(--margin-desktop-1);
+    width: 100%;
+    margin-top: 50px;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+.map-img {
+    margin-top: 80px;
+    height: 350px;
+}
+
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■■■ FIN MAP ■■■■■■■■■■■■■■■■■■■■■■■■ │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
 
 
 
@@ -832,9 +873,29 @@ body {
     /* │ ► Luis Romano                                           │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-.swiper-pagination{
-    margin-bottom: 200px;    
-}
+    .swiper-pagination{
+        margin-bottom: 200px;    
+    }
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ INICIO MAP ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    #map-on {
+        padding: 0 var(--margin-desktop-1);
+        margin-bottom: 20px;
+    }
+
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■■ FIN MAP ■■■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
     
 
     /* ┌─────────────────────────────────────────────────────────┐ */
@@ -953,9 +1014,9 @@ body {
         margin-top: 12px;
     }
     
-        /* ┌─────────────────────────────────────────────────────────┐ */
-        /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
-        /* └─────────────────────────────────────────────────────────┘ */
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
 
 
 }

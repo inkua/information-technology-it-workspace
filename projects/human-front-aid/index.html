@@ -28,9 +28,10 @@
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 
     <!-- JavaScript -->
+    <script defer src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script defer src="./js/carousel.js"></script>
     <script defer src="js/carouselPressAndNews.js"></script>
-    <script defer src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script defer src="js/apimap.js"></script>
     
     <!-- VideoJS -->
     <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
@@ -44,9 +45,6 @@
     <!-- Estilos CSS3 -->
     <link rel="stylesheet" href="./css/general-styles.css">
     <link rel="stylesheet" href="./css/index.css">
-
-    <!-- JavaScript -->
-    <script defer src="./js/carousel.js"></script>
 </head>
 
 <body>
@@ -464,86 +462,95 @@
     <!-- │ ► Luis Romano                                           │ -->
     <!-- └─────────────────────────────────────────────────────────┘ -->
 
-                <!-- Swiper -->
+    <!-- Swiper -->
     
-     <div class="swiper mySwiper">
+    <div class="swiper mySwiper">
         <div class="swiper-wrapper">
 
-          <div class="swiper-slide">
-            <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-1.png" alt="">
-            <a class="swiper-slide-btn" href="https://www.baerntoday.ch/bern/darum-unterstuetzt-reto-nause-berner-helfer-bei-der-spendensuche-150309138" target="_blank">→</a>
-        </div>
+            <div class="swiper-slide">
+                <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-1.png" alt="">
+                <a class="swiper-slide-btn" href="https://www.baerntoday.ch/bern/darum-unterstuetzt-reto-nause-berner-helfer-bei-der-spendensuche-150309138" target="_blank">→</a>
+            </div>
 
-          <div class="swiper-slide">
-            <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-2.png" alt="">
-            <a class="swiper-slide-btn" href="https://www.nau.ch/news/europa/ukraine-krieg-hier-denkt-keiner-daran-dass-wir-verlieren-konnten-66428857" target="_blank">→</a>
-        </div>
+            <div class="swiper-slide">
+                <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-2.png" alt="">
+                <a class="swiper-slide-btn" href="https://www.nau.ch/news/europa/ukraine-krieg-hier-denkt-keiner-daran-dass-wir-verlieren-konnten-66428857" target="_blank">→</a>
+            </div>
 
-          <div class="swiper-slide">
-            <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-3.png" alt="">
-            <a class="swiper-slide-btn" href="https://baernerbaer.ch/portraits/ich-nehme-diesen-krieg-persoenlich/" target="_blank">→</a>
-        </div>
+            <div class="swiper-slide">
+                <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-3.png" alt="">
+                <a class="swiper-slide-btn" href="https://baernerbaer.ch/portraits/ich-nehme-diesen-krieg-persoenlich/" target="_blank">→</a>
+            </div>
 
-          <div class="swiper-slide">
-            <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-4.png" alt="">
-            <a class="swiper-slide-btn" href="https://www.aargauerzeitung.ch/international/ukraine-konflikt-der-krieg-tobte-in-mir-reportage-aus-dem-groessten-freiwilligencenter-der-ukraine-in-odessa-ld.2328453?reduced=true" target="_blank">→</a>
-        </div>
+            <div class="swiper-slide">
+                <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-4.png" alt="">
+                <a class="swiper-slide-btn" href="https://www.aargauerzeitung.ch/international/ukraine-konflikt-der-krieg-tobte-in-mir-reportage-aus-dem-groessten-freiwilligencenter-der-ukraine-in-odessa-ld.2328453?reduced=true" target="_blank">→</a>
+            </div>
 
-          <div class="swiper-slide">
-            <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-5.png" alt="">
-            <a class="swiper-slide-btn" href="https://www.nau.ch/news/videos/ukraine-krieg-gefluchtete-schlafen-nur-drei-stunden-pro-nacht-66126580" target="_blank">→</a>
-        </div>
+            <div class="swiper-slide">
+                <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-5.png" alt="">
+                <a class="swiper-slide-btn" href="https://www.nau.ch/news/videos/ukraine-krieg-gefluchtete-schlafen-nur-drei-stunden-pro-nacht-66126580" target="_blank">→</a>
+            </div>
 
-          <div class="swiper-slide">
-            <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-6.png" alt="">
-            <a class="swiper-slide-btn" href="https://www.blick.ch/ausland/der-berner-musiker-baenz-margot-44-hilft-im-armen-moldawien-ukrainischen-fluechtlingen-sie-verehren-uns-hier-wie-goetter-id17365356.html?utm_medium=social&utm_campaign=share-button&utm_source=whatsapp" target="_blank">→</a>
-        </div>
+            <div class="swiper-slide">
+                <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-6.png" alt="">
+                <a class="swiper-slide-btn" href="https://www.blick.ch/ausland/der-berner-musiker-baenz-margot-44-hilft-im-armen-moldawien-ukrainischen-fluechtlingen-sie-verehren-uns-hier-wie-goetter-id17365356.html?utm_medium=social&utm_campaign=share-button&utm_source=whatsapp" target="_blank">→</a>
+            </div>
 
-          <div class="swiper-slide">
-            <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-7.png" alt="">
-            <a class="swiper-slide-btn" href="https://www.telebaern.tv/telebaern-news/berner-rettet-fluechtlinge-aus-der-ukraine-146097989" target="_blank">→</a>
-        </div>
+            <div class="swiper-slide">
+                <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-7.png" alt="">
+                <a class="swiper-slide-btn" href="https://www.telebaern.tv/telebaern-news/berner-rettet-fluechtlinge-aus-der-ukraine-146097989" target="_blank">→</a>
+            </div>
 
-          <div class="swiper-slide">
-            <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-8.png" alt="">
-            <a class="swiper-slide-btn" href="https://www.bernerzeitung.ch/ein-berner-leistet-hilfe-an-vorderster-front-313233754380" target="_blank">→</a>
-        </div>
+            <div class="swiper-slide">
+                <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-8.png" alt="">
+                <a class="swiper-slide-btn" href="https://www.bernerzeitung.ch/ein-berner-leistet-hilfe-an-vorderster-front-313233754380" target="_blank">→</a>
+            </div>
 
-          <div class="swiper-slide">
-            <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-9.png" alt="">
-            <a class="swiper-slide-btn" href="https://www.swissinfo.ch/ger/briefing/heute-in-der-schweiz/47527078" target="_blank">→</a>
-        </div>
+            <div class="swiper-slide">
+                <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-9.png" alt="">
+                <a class="swiper-slide-btn" href="https://www.swissinfo.ch/ger/briefing/heute-in-der-schweiz/47527078" target="_blank">→</a>
+            </div>
 
-        <div class="swiper-slide">
-            <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-10.png" alt="">
-            <a class="swiper-slide-btn" href="https://www.20min.ch/story/berner-musiker-evakuiert-ukrainerinnen-und-ukrainer-aus-odessa-235788657968" target="_blank">→</a>
-        </div>
-        
-        <div class="swiper-slide">
-            <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-11.png" alt="">
-            <a class="swiper-slide-btn" href="https://www.instagram.com/tv/CdLWwWFKCPF/?igshid=YmMyMTA2M2Y%3D" target="_blank">→</a>
-        </div>
+            <div class="swiper-slide">
+                <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-10.png" alt="">
+                <a class="swiper-slide-btn" href="https://www.20min.ch/story/berner-musiker-evakuiert-ukrainerinnen-und-ukrainer-aus-odessa-235788657968" target="_blank">→</a>
+            </div>
+            
+            <div class="swiper-slide">
+                <img class="swiper-slide-img" src="Image/pressAndNews/press-and-news-11.png" alt="">
+                <a class="swiper-slide-btn" href="https://www.instagram.com/tv/CdLWwWFKCPF/?igshid=YmMyMTA2M2Y%3D" target="_blank">→</a>
+            </div>
 
         </div>
         <div class="swiper-pagination"></div>
-      </div>  
+    </div>  
       
 
     <!-- ┌─────────────────────────────────────────────────────────┐ -->
     <!-- │ ■■■■■■■■■■■■■■■■■ FIN PRESS-AND-NEWS ■■■■■■■■■■■■■■■■■■ │ -->
     <!-- └─────────────────────────────────────────────────────────┘ -->
 
+
+
     <!-- ┌─────────────────────────────────────────────────────────┐ -->
-    <!-- │ ■■■■■■■■■■■■■■■■■ INICIO MAPA ■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■■ INICIO MAP ■■■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Diego N. Cabrera                                      │ -->
     <!-- └─────────────────────────────────────────────────────────┘ -->
 
-    <div id="map-container">
-        <iframe style="width:1400px;height:500px" src="https://liveuamap.com" allowfullscreen></iframe>
+    <div id="map-off" onclick="showMap()">
+        <img class="map-img" src="./Image/map_icon.png"/>
     </div>
+    
+    <iframe id="map-on" src="https://liveuamap.com" scrolling="no"></iframe>
 
     <!-- ┌─────────────────────────────────────────────────────────┐ -->
-    <!-- │ ■■■■■■■■■■■■■■■■■ FIN MAPA ■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■■■ FIN MAP ■■■■■■■■■■■■■■■■■■■■■■■■ │ -->
     <!-- └─────────────────────────────────────────────────────────┘ -->
+
+
 
     <!-- ┌─────────────────────────────────────────────────────────┐ -->
     <!-- │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ -->
