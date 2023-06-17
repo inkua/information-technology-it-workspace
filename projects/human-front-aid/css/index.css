@@ -800,7 +800,31 @@ body {
 @media (min-width: 320px ) and (max-width: 480px) {
     
 
-
+ /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■ INICIO PRESS-AND-NEWS ■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Luis Fernando Callisaya Surco                         │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+    .about-us {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 65px 0;
+      }
+      .about-us .about-us-texto {
+        width: 90%;
+        padding: 40px 0;
+        margin: 0 auto;
+        justify-content: space-around;
+        font-size: 16px;
+      }
+      .about-us .about-us-image-imagen {
+        width: 80%;
+        margin: 0 auto;
+        height: 283px;
+        margin: 10px;
+        padding: 1px;
+      }
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■ INICIO PRESS-AND-NEWS ■■■■■■■■■■■■■■■■ │ */
     /* │                                                         │ */
@@ -948,6 +972,33 @@ body {
 */
 
 @media (min-width: 481px ) and (max-width: 992px) {
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■ INICIO PRESS-AND-NEWS ■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Luis Fernando Callisaya Surco                         │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+    .about-us {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 65px 0;
+      }
+      .about-us .about-us-texto {
+        width: 90%;
+        padding: 40px 0;
+        margin: 0 auto;
+        justify-content: space-around;
+        font-size: 16px;
+      }
+      .about-us .about-us-image-imagen {
+        width: 80%;
+        margin: 0 auto;
+        height: 283px;
+        margin: 10px;
+        padding: 1px;
+      }
+    
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
