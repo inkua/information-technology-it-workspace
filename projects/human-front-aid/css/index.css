@@ -839,33 +839,148 @@ a {
 */
 
 @media (min-width: 320px ) and (max-width: 480px) {
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* │ ► Luis Romano                                           │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .mobile-navbar-container {
+        padding-top: 8px;
+        background-color: var(--color-cinco)!important;
+    }
+
+    /* Header - Navbar menu button */
+
+    .dropdown-toggle-nav {
+        padding-left: 20px;
+        border-radius: 0;
+        margin-left: -15px;
+    }
+
+    .dropdown-toggle::after {
+        content: none;
+    }
+
+    .dropdown-navigation {
+        left: 0;
+        right: 0;
+        border-radius: 0;
+        background-color: var(--color-cinco);
+        --bs-dropdown-border-color: 0;
+    }
+
+    .dropdown-navigation[data-bs-popper] {
+        margin-top: 0;
+    }
+
+    .dropdown-item-nav {
+        padding-left: 24px;
+        padding-bottom: 10px;
+    }
+
+    /* Header - Navbar languages button */
+
+    .dropdown-languages {
+        right: 2px;
+        border-radius: 0;
+        background-color: var(--color-cinco);
+    }
+
+    .dropdown-languages[data-bs-popper] {
+        left: auto;
+    }
+
+    .dropdown-item {
+        color: var(--color-uno);
+        font-family: var(--font-family-lato);
+    }
+
+    /* Header - Opciones */
+
+    .header-options {
+        margin-top: 8px;
+        color: var(--color-uno);
+        height: 55px;
+    }
+
+    .header-options-cuadro {
+        margin: auto;
+        width: 98%;
+        background-color: var(--color-seis);
+        border-radius: 10px;
+        height: 43px;
+        
+    }
+
+    .option-donate {
+        display: inline-block;
+        background-color: var(--color-siete);
+        font-family: var(--font-family-lato);
+        color: var(--color-uno);
+        margin: 2px;
+        padding-top: 4px;
+        border-radius: 10px;
+        width: 50%;
+        height: 90%;
+        text-align: center;
+    }
+
+    .option-need-help {
+        display: inline-block;
+        color: var(--color-uno);
+        font-family: var(--font-family-lato);
+        margin: 2px;
+        padding-top: 4px;
+        border-radius: 10px;
+        width: 45%;
+        height: 90%;
+        text-align: center;
+    }
+
+    /* Header - Encabezado con títulos */
+
     
 
- /* ┌─────────────────────────────────────────────────────────┐ */
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■ INICIO PRESS-AND-NEWS ■■■■■■■■■■■■■■■■ │ */
     /* │                                                         │ */
     /* │   COLABORADORES:                                        │ */
     /* │ ► Luis Fernando Callisaya Surco                         │ */
     /* └─────────────────────────────────────────────────────────┘ */
+    
     .about-us {
         display: flex;
         flex-direction: column-reverse;
         padding: 65px 0;
-      }
-      .about-us .about-us-texto {
+    }
+
+    .about-us .about-us-texto {
         width: 90%;
         padding: 40px 0;
         margin: 0 auto;
         justify-content: space-around;
         font-size: 16px;
-      }
-      .about-us .about-us-image-imagen {
+    }
+
+    .about-us .about-us-image-imagen {
         width: 80%;
         margin: 0 auto;
         height: 283px;
         margin: 10px;
         padding: 1px;
-      }
+    }
+
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■ INICIO PRESS-AND-NEWS ■■■■■■■■■■■■■■■■ │ */
     /* │                                                         │ */
