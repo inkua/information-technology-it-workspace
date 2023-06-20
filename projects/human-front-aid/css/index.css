@@ -851,10 +851,13 @@ a {
 
     .mobile-navbar-container {
         padding-top: 8px;
-        background-color: var(--color-cinco)!important;
     }
 
     /* Header - Navbar menu button */
+
+    .mobile-navbar-container {
+        background-color: var(--color-cinco)!important;
+    }
 
     .dropdown-toggle-nav {
         padding-left: 20px;
@@ -903,9 +906,10 @@ a {
     /* Header - Opciones */
 
     .header-options {
-        margin-top: 8px;
+        padding-top: 8px;
         color: var(--color-uno);
-        height: 55px;
+        height: 60px;
+        background-color: var(--color-cinco);
     }
 
     .header-options-cuadro {
@@ -942,9 +946,87 @@ a {
         text-align: center;
     }
 
+
     /* Header - Encabezado con títulos */
 
-    
+    .tittles-container {
+        height: 698px;
+    }
+
+    /* Header - Background */
+
+    .bg-home-mobile {
+        position: absolute;
+        width: 100%;
+        height: 700px;
+        top: 54px;
+        z-index: -1;
+        mix-blend-mode: multiply;
+        background-blend-mode: luminosity;
+    }
+
+    /* Header - Máscara de color azul */
+
+    .header-background-mascara {
+        position: absolute;
+        width: 100%;
+        height: 758px;
+        top: 0;
+        background: #02397A;
+        border: 0px solid;
+        z-index: -2;
+        mix-blend-mode: multiply;
+    }
+
+    /* Header - Efecto de wave */
+
+    .wave-mobile {
+        position: absolute;
+        top: 720px;
+        width: 100%;
+    }
+
+    /* Header - Títulos */
+
+    .titulos {
+        margin-left: 4%;
+    }
+
+    .header-titulo {
+        font-size: 56px;
+        width: 80%;
+        line-height: 56px;
+        padding-top: 50px;
+    }
+
+    .header-subtitulo {
+        font-family: var(--font-family-poppins);
+        font-weight: 200;
+        font-size: 17px;
+        width: 65%;
+        line-height: 24px;  
+        margin-top: 25px;
+    }
+
+    .header-subtitulo strong {
+        font-size: 17px;
+        font-weight: 600;
+        width: 80%;
+        line-height: 24px;          
+    }
+
+    .home-btn {
+        width: 150px;
+        height: 38px;
+        border-radius: 8px;
+        color: var(--color-dos);
+        font-size: 19px;
+        margin-top: 40px;
+    }
+
+    .home-btn:hover {
+        font-size: 20px;
+    }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
@@ -960,9 +1042,10 @@ a {
     /* └─────────────────────────────────────────────────────────┘ */
     
     .about-us {
+        margin-top: 0;
         display: flex;
         flex-direction: column-reverse;
-        padding: 65px 0;
+        padding: 0px 0;
     }
 
     .about-us .about-us-texto {
