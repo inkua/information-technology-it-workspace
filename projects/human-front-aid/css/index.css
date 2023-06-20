@@ -540,12 +540,12 @@
 	font-size: 40px;
 }
 
-.swiper {
+.swiperSupporters {
     width: 80%;
     height: 20%;
 }
 
-  .swiper-slide {
+.slideSupporters {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -554,7 +554,7 @@
     height: 70%;
 }
 
-  .img-supporters {
+.img-supporters {
     display: block;
     width: 30%;
     height: 100%;
@@ -588,8 +588,9 @@ body {
     height: 100%;
 }
 
+/* estos swipers hay que ponerles un nombre solo para la seccion como "swiper-press" */
 
-  .swiper {
+.swiper {
     width: 80%;
     height: 480px;
     margin-left: auto;
@@ -599,7 +600,7 @@ body {
 .swiper-slide {
     height: calc((100% - 50px) / 2);
     border-radius: 20px;
-    /* Center slide text vertically */
+    /*Center slide text vertically*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -873,9 +874,27 @@ a {
     /* │ ► Luis Romano                                           │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
+    /* ponerle nombre al swiper */
+
     .swiper-pagination{
         margin-bottom: 200px;    
     }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■ INICIO SUPPORTERS ■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Federico Manuel Peralta                               │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+     .swiperSupporters {
+        height: 15%;
+    }
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■ FIN SUPPORTERS ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
 
 
     /* ┌─────────────────────────────────────────────────────────┐ */
@@ -1059,6 +1078,55 @@ a {
         margin: 10px;
         padding: 1px;
       }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■ INICIO SUPPORTERS ■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Federico Manuel Peralta                               │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .text-supporters{
+        text-decoration: none;
+        font-family: var(--font-family-lato);
+        color: var(--color-dos);
+        padding-left: 15%;
+    }
+    
+    .tittle-supporters {
+        margin-left: var(--margin-desktop-2);
+        font-family: var(--font-family-lato);
+        color: var(--color-dos);
+        margin-top: 4rem;
+        font-weight: 700;
+        font-size: 40px;
+    }
+    
+    .swiperSupporters {
+        width: 80%;
+        height: 20%;
+    }
+    
+    .slideSupporters {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        height: 70%;
+    }
+    
+    .img-supporters {
+        display: block;
+        width: 30%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■ FIN SUPPORTERS ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
     
 
     /* ┌─────────────────────────────────────────────────────────┐ */
