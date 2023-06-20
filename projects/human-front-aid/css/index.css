@@ -840,33 +840,251 @@ a {
 */
 
 @media (min-width: 320px ) and (max-width: 480px) {
-    
 
- /* ┌─────────────────────────────────────────────────────────┐ */
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* │ ► Luis Romano                                           │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .mobile-navbar-container {
+        padding-top: 8px;
+    }
+
+    /* Header - Navbar menu button */
+
+    .mobile-navbar-container {
+        background-color: var(--color-cinco)!important;
+    }
+
+    .dropdown-toggle-nav {
+        padding-left: 20px;
+        border-radius: 0;
+        margin-left: -15px;
+    }
+
+    .dropdown-toggle::after {
+        content: none;
+    }
+
+    .dropdown-navigation {
+        left: 0;
+        right: 0;
+        border: solid 1px black;
+        border-radius: 0;
+        background-color: var(--color-cinco);
+        --bs-dropdown-border-color: 0;
+    }
+
+    .dropdown-navigation[data-bs-popper] {
+        margin-top: 0;
+    }
+
+    .dropdown-item-nav {
+        padding-left: 24px;
+        padding-bottom: 10px;
+    }
+
+    /* Header - Navbar languages button */
+
+    .dropdown-languages {
+        right: 2px;
+        border: solid 1px black;
+        border-radius: 0;
+        background-color: var(--color-cinco);
+    }
+
+    .dropdown-languages[data-bs-popper] {
+        left: auto;
+    }
+
+    .dropdown-item {
+        color: var(--color-uno);
+        font-family: var(--font-family-lato);
+    }
+
+    /* Header - Opciones */
+
+    .header-options {
+        padding-top: 8px;
+        color: var(--color-uno);
+        height: 60px;
+        background-color: var(--color-cinco);
+    }
+
+    .header-options-cuadro {
+        margin: auto;
+        width: 98%;
+        background-color: var(--color-seis);
+        border-radius: 10px;
+        height: 43px;
+        
+    }
+
+    .option-donate {
+        display: inline-block;
+        background-color: var(--color-siete);
+        font-family: var(--font-family-lato);
+        color: var(--color-uno);
+        margin: 2px;
+        padding-top: 4px;
+        border-radius: 10px;
+        width: 50%;
+        height: 90%;
+        text-align: center;
+    }
+
+    .option-need-help {
+        display: inline-block;
+        color: var(--color-uno);
+        font-family: var(--font-family-lato);
+        margin: 2px;
+        padding-top: 4px;
+        border-radius: 10px;
+        width: 45%;
+        height: 90%;
+        text-align: center;
+    }
+
+
+    /* Header - Encabezado con títulos */
+
+    .tittles-container {
+        height: 698px;
+    }
+
+    /* Header - Background */
+
+    .bg-home-mobile {
+        position: absolute;
+        width: 100%;
+        height: 700px;
+        top: 54px;
+        z-index: -1;
+        mix-blend-mode: multiply;
+        background-blend-mode: luminosity;
+    }
+
+    /* Header - Máscara de color azul */
+
+    .header-background-mascara {
+        position: absolute;
+        width: 100%;
+        height: 758px;
+        top: 0;
+        background: #02397A;
+        border: 0px solid;
+        z-index: -2;
+        mix-blend-mode: multiply;
+    }
+
+    /* Header - Efecto de wave */
+
+    .wave-mobile {
+        position: absolute;
+        top: 720px;
+        width: 100%;
+    }
+
+    /* Header - Títulos */
+
+    .titulos {
+        margin-left: 4%;
+    }
+
+    .header-titulo {
+        font-size: 56px;
+        width: 80%;
+        line-height: 56px;
+        padding-top: 50px;
+    }
+
+    .header-subtitulo {
+        font-family: var(--font-family-poppins);
+        font-weight: 200;
+        font-size: 17px;
+        width: 65%;
+        line-height: 24px;  
+        margin-top: 25px;
+    }
+
+    .header-subtitulo strong {
+        font-size: 17px;
+        font-weight: 600;
+        width: 80%;
+        line-height: 24px;          
+    }
+
+    .home-btn {
+        width: 150px;
+        height: 38px;
+        border-radius: 8px;
+        color: var(--color-dos);
+        font-size: 19px;
+        margin-top: 40px;
+    }
+
+    .home-btn:hover {
+        font-size: 20px;
+    }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO CHATBOT ■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .chatbot-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN CHATBOT ■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■ INICIO PRESS-AND-NEWS ■■■■■■■■■■■■■■■■ │ */
     /* │                                                         │ */
     /* │   COLABORADORES:                                        │ */
     /* │ ► Luis Fernando Callisaya Surco                         │ */
     /* └─────────────────────────────────────────────────────────┘ */
+    
     .about-us {
+        margin-top: 0;
         display: flex;
         flex-direction: column-reverse;
-        padding: 65px 0;
-      }
-      .about-us .about-us-texto {
+        padding: 0px 0;
+    }
+
+    .about-us .about-us-texto {
         width: 90%;
         padding: 40px 0;
         margin: 0 auto;
         justify-content: space-around;
         font-size: 16px;
-      }
-      .about-us .about-us-image-imagen {
+    }
+
+    .about-us .about-us-image-imagen {
         width: 80%;
         margin: 0 auto;
         height: 283px;
         margin: 10px;
         padding: 1px;
-      }
+    }
+
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■ INICIO PRESS-AND-NEWS ■■■■■■■■■■■■■■■■ │ */
     /* │                                                         │ */
@@ -1052,6 +1270,135 @@ a {
 */
 
 @media (min-width: 481px ) and (max-width: 992px) {
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* │ ► Luis Romano                                           │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    /* Header - Navbar */
+
+    .navbar-mobile {
+        margin-left: var(--margin-desktop-1);
+        margin-right: var(--margin-desktop-1);
+    }
+
+    .navbar-logo{
+        margin-left: 0;
+    }
+
+    .navbar-contenedor {
+        margin-right: 0;
+    }
+
+    .navbar-titulo {
+        display: none;
+    }
+    
+    .navbar-contenido {
+        font-family: var(--font-family-lato);
+        margin-right: var(--margin-desktop-1);
+    }
+
+    .navbar-home {
+        font-size: 0.9em;
+        margin-right: 1%;
+    }
+
+    .navbar-about-us {
+        font-size: 0.9em;
+        margin-right: 2%;
+        white-space: nowrap;
+    }
+
+    .navbar-need-help {
+        margin-right: 2%;
+        border: 1px solid var(--color-uno);
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    .navbar-donate {
+        color: var(--color-uno);
+        border-radius: 8px;
+        font-weight: 900;
+        color: var(--color-dos);
+        background-color: var(--color-tres);
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: -24px;
+    }
+
+    /*  Header - Sección idiomas  */
+
+    .navbar-en {
+        margin-right: 20%;
+    }
+
+    /* Header - Sección Títulos */
+
+    .header-div {
+        margin-left: var(--margin-desktop-1);
+    }
+
+    .header-titulo {
+        font-size: 80px;
+        font-family: var(--font-family-lato);
+        font-weight: 700;
+        line-height: 100px;
+        width: 442px;
+    }
+    
+    .header-subtitulo {
+        font-size: 20px;
+        font-family: 'Poppins';
+        text-shadow: 0 0 5px #000000;
+        width: 440px;
+    }
+    
+    .header-subtitulo strong {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;  
+    }
+
+    /* Header - Background */
+    
+    .header-background-imagen {
+        height: 870px;
+    }
+
+    /* Header - Máscara azul */
+
+    .header-background-mascara {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 870px;
+        background: #02397A;
+        border: 1px solid #000000;
+        z-index: -2;
+        mix-blend-mode: multiply;
+    }
+    
+    /* Header - Efecto wave*/
+    
+    .wave {
+        position: absolute;
+        width: 100%;
+        height: 130px;
+        top: 772px;
+    }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■ INICIO PRESS-AND-NEWS ■■■■■■■■■■■■■■■■ │ */
