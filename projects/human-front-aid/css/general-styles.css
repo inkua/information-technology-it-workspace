@@ -35,6 +35,10 @@ body {
     z-index: -3;
 }
 
+@media (max-width: 319px ) {
+    body { display: none; }
+}
+
 @media (min-width: 320px ) and (max-width: 480px) {
     .mobile { display: block; }
     .desktop { display: none; }

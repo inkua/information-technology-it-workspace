@@ -1,6 +1,586 @@
-/* ################ MEDIA QUERY - Tablet and Desktop - ################ */
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
+/* │                                                         │ */
+/* │   COLABORADORES:                                        │ */
+/* │ ► Diego N. Cabrera                                      │ */
+/* │ ► Luis Romano                                           │ */
+/* └─────────────────────────────────────────────────────────┘ */
 
-@media(min-width: 768px) {
+/*  Header - Sección Navbar  */
+
+.navbar-brand-logo{
+    left: 100px;
+}
+
+.navbar-contenedor {
+    padding-top: 20px; 
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 0;
+}
+
+.navbar-titulo {
+    margin-left: 0;
+    font-family: var(--font-family-lato);
+    color: var(--color-uno);
+}
+
+.navbar-titulo:after {
+    display:block;
+    content: '';
+    border-bottom: solid 1px var(--color-uno);
+    transform: scaleX(0);  
+    transition: transform 150ms ease-in-out;
+}
+
+.navbar-titulo:hover:after {
+    color: var(--color-uno);
+    transform: scaleX(1); 
+}
+
+.navbar-titulo:hover {
+    color: var(--color-uno);
+}
+
+.navbar-logo{
+    margin-left: var(--margin-desktop-2)
+}
+
+.navbar-contenido {
+    font-family: var(--font-family-lato);
+    margin-right: var(--margin-desktop-2);
+}
+
+.navbar-link {
+    color: var(--color-uno);
+}
+
+.navbar-about-us {
+    margin-right: 61px;
+}
+
+.navbar-about-us:hover {
+    color: var(--color-uno);
+    text-shadow: var(--text-shadow);
+    transition: all ease 0.5s;
+}
+
+.navbar-about-us:after {
+    display:block;
+    content: '';
+    border-bottom: solid 1px var(--color-uno);
+    transform: scaleX(0);  
+    transition: transform 150ms ease-in-out;
+}
+
+.navbar-about-us:hover:after {
+    color: var(--color-uno);
+    transform: scaleX(1); 
+}
+
+.navbar-home {
+    margin-right: 24px;
+}
+
+.navbar-home:hover {
+    color: var(--color-uno);
+    text-shadow: var(--text-shadow);
+    transition: all ease 0.5s;
+}
+
+.navbar-home:after {
+    display:block;
+    content: '';
+    border-bottom: solid 1px var(--color-uno);
+    transform: scaleX(0);  
+    transition: transform 150ms ease-in-out;
+}
+
+.navbar-home:hover:after {
+    color: var(--color-uno);
+    transform: scaleX(1); 
+}
+
+.navbar-need-help {
+    margin-right: 16px;
+    color: var(--color-uno);
+    border: 2px solid var(--color-uno);
+    background-color: transparent;
+    border-radius: 8px;
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
+.navbar-need-help:hover {
+    color: var(--color-uno);
+    color: rgba(0, 0, 0, 0.7);
+    background-color: var(--color-uno);
+    border: 2px solid var(--color-uno);
+    text-shadow: var(--shadow-01);
+    box-shadow: var(--shadow-01);
+    transition: all ease 0.5s;
+}
+
+.navbar-donate {
+    font-family: var(--font-family-lato);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-uno);
+    border-radius: 8px;
+    font-weight: 900;
+    color: var(--color-dos);
+    background-color: var(--color-tres);
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
+.navbar-donate:hover {
+    color: var(--color-dos);
+    background: var(--color-tres);
+    box-shadow: var(--shadow-02);
+    transition: all ease 0.5s;
+}
+
+/*  Header - Sección idiomas  */
+
+.navbar-ykp {
+    color: var(--color-uno);
+    border-radius: 8px 0 0 8px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: var(--color-uno);
+    width: 67.742px;
+    border: 0;
+}
+
+.navbar-ykp:hover {
+    color: rgba(0, 0, 0, 0.7);
+    background: var(--color-uno);
+    box-shadow: var(--shadow-01);
+    transition: all ease 0.5s;    
+}
+
+.navbar-en {
+    color: var(--color-uno);
+    border-radius: 0 8px 8px 0;
+    font-weight: 700;
+    color: var(--color-dos);
+    background-color: var(--color-tres);
+    width: 67.742px;
+    border: 0;
+}
+
+.navbar-en:hover {
+    color: var(--color-dos);
+    background: var(--color-tres);
+    box-shadow: var(--shadow-02);
+    transition: all ease 0.5s;   
+}
+
+/*  Header - Sección Títulos  */
+
+.header-div {
+    margin-left: var(--margin-desktop-2);
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.header-titulo {
+    color: var(--color-tres);
+    font-size: 100px;
+    font-family: var(--font-family-lato);
+    font-weight: 700;
+    line-height: 120px;
+    width: 442px;
+}
+
+.header-subtitulo {
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Poppins';
+    text-shadow: 0 0 5px #000000;
+    width: 440px;
+}
+
+.header-subtitulo strong {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+/* Header - Botón donate */
+
+.home-btn {
+    display: flex;
+    background-color: var(--color-tres);
+    border-color: var(--color-tres);
+    position: absolute;
+    width: 254px;
+    height: 64px;
+    border-radius: 8px;
+    color: var(--color-dos);
+    font-size: 28px;
+    font-family: 'Lato';
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.home-btn:hover {
+    color: var(--color-dos);
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 30px;
+    background: var(--color-tres);
+    box-shadow: var(--shadow-02);
+    transition: all ease 0.5s;
+}
+
+/* Header - Sección Background */
+
+.navbar-contenedor-principal {
+    height: 800px;
+}
+
+.header-background-imagen {
+    position: absolute;
+    background: #02397A;
+    object-fit: cover;
+    width: 100%;
+    height: 970px;
+    top: 0;
+    z-index: -1;
+    mix-blend-mode: multiply;
+}
+
+.header-background-mascara {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 970px;
+    background: #02397A;
+    border: 1px solid #000000;
+    z-index: -2;
+    mix-blend-mode: multiply;
+}
+
+/* Header - Efecto wave*/
+
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    top: 812px;
+}
+
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
+
+
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■ INICIO CHATBOT ■■■■■■■■■■■■■■■■■■■ │ */
+/* │                                                         │ */
+/* │   COLABORADORES:                                        │ */
+/* │ ► Diego N. Cabrera                                      │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
+.chatbot-button {
+    position: fixed;
+    right: 3%;
+    bottom: 50%;
+    background-image: url("../Image/boton_chatbot.png");
+    border-radius: 100px;
+    width: 70px;
+    height: 70px;
+    background-size: 110%;
+    z-index: 3;
+}
+
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■■ FIN CHATBOT ■■■■■■■■■■■■■■■■■■■■■ │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
+
+
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■ INICIO ABOUT-US ■■■■■■■■■■■■■■■■■■■■ │ */
+/* │                                                         │ */
+/* │   COLABORADORES:                                        │ */
+/* │ ► Luis Romano                                           │ */
+/* │ ► Luis Fernando Callisaya Surco                         │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
+.about-us-history-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+    width: 500px; /* Ancho fijo del contenedor */
+    height: 300px; /* Altura fija del contenedor */
+    max-width: 500px; /* Ancho máximo del contenedor */
+    max-height: 300px; /* Altura máxima del contenedor */
+    overflow: auto; 
+
+}
+
+.about-us-history {
+    width: 30%;
+    margin-left: 50px;
+
+}
+
+.about-us-history p {
+    font-size: 1rem;
+    text-align: justify;
+    padding-top: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 141.52%;
+    max-width: 100%;
+    height: auto;
+        
+}
+
+.about-us-history img {
+    width: 423px;
+    height: 435px;
+      
+    border-radius: 40px;
+     
+}
+
+.history-titulo{
+    margin-left: 20%;
+}
+
+.about-us-imagen img {
+    z-index: -1;
+    position: absolute;
+    background: #02397A;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+
+.About-Us-Diego-Pardo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.About-Us-Diego-Pardo-texto {
+    padding-left: 170px;
+    padding-right: 54px;
+    padding-top: 100px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: last baseline;
+}
+
+.About-Us-Diego-Pardo-Image {
+    padding-right: 170px;
+    padding-left: 54px;
+    padding-top: 80px;
+}
+
+.About-Us-Diego-Pardo-Image_imagen {
+    width: 450px;
+    height: 350px;
+}
+
+.About-Us-Diego-Pardo-texto_buton {
+    border: 2px solid #004eaa;
+    padding: 12px 21px;
+    border-radius: 8px;
+    gap: 8px;
+    width: 121px;
+    height: 48px;
+    background-color: white;
+    color: #004eaa;
+        
+}
+
+.About-Us-Diego-Pardo-button {
+    padding-top: 400px;
+    padding-right: 20px;
+}
+
+.About-Us-Diego-Pardo-button-buton {
+    background-image: url("/Image/boton_chatbot.png");
+    border-radius: 100px;
+    width: 70px;
+    height: 70px;
+    background-size: 110%;
+    
+}
+    
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■ FIN ABOUT-US ■■■■■■■■■■■■■■■■■■■■■ │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
+
+
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
+/* │                                                         │ */
+/* │   COLABORADORES:                                        │ */
+/* │ ► Diego Valentino Pardo Yepez                           │ */
+/* │ ► Santiago Elias Carranza                               │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
+/* Footer - Contenedor principal */
+
+.footer_container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-cinco);
+    height: 357px;
+    padding-right: var(--margin-desktop-2);
+    padding-left: var(--margin-desktop-2);
+}
+
+/* Footer - Redes Sociales */
+
+.footer_redsocial{
+    display: flex;
+    justify-content: space-between;
+    padding-left: .7em;
+    position: relative;
+    top: 2em;
+    margin-bottom: 3em;
+}
+
+.footer_redsocial img{
+    cursor: pointer;
+    margin-right:0;
+}
+
+.link-whatsapp {
+    text-decoration: none;
+    color: var(--color-uno);
+}
+
+.link-whatsapp-text {
+    position: relative;
+    display: inline-block;
+    padding-left: 1em;
+    top: 2px;
+}
+
+.link-instagram {
+    text-decoration: none;
+    color: var(--color-uno);
+}
+
+.link-instagram-text {
+    position: relative;
+    display: inline-block;
+    padding-left: 1em;
+    top: 2px;
+}
+
+.link-facebook {
+    text-decoration: none;
+    color: var(--color-uno);
+}
+
+.link-facebook-text {
+    position: relative;
+    display: inline-block;
+    padding-left: 1em;
+    top: 2px;
+}
+
+/* Footer - Línea intermedia */
+
+.footer_linea {
+    border-bottom: solid .1px #FAFAFB;
+    position: relative;
+    top: 1.5em;
+}
+
+/* Footer - Routes */
+
+.footer_routes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 1em;
+    margin-top: 3em;
+}
+
+.footer_routes_logo {
+    display: flex;
+    align-items: center;
+    margin-right: 1vw;
+    position: relative;
+	bottom: .1em;
+}
+
+.footer_routes_logo img {
+    width:91px;
+    height:104px;
+    position: relative;
+    bottom: .2em;
+}
+
+.footer_routes_logo p {
+    font-weight: bold;
+    padding-left: .3em;
+}
+
+.footer_routes_container_home_navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 39vw;
+}
+
+.footer_routes_home-aboutUs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_routes_navigation {
+    display: flex;
+    flex-direction:row;
+    position: relative;
+    bottom: .6em;
+}
+
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
+
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ████████████████████████ MEDIA QUERY MOBILE ███████████████████████ ║
+    ║ ████████████████████████████ 320 - 480  ███████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
+
+@media (min-width: 320px ) and (max-width: 480px) {
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
@@ -10,540 +590,201 @@
     /* │ ► Luis Romano                                           │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-    /*  Header - Sección Navbar  */
-
-    .navbar-brand-logo{
-        left: 100px;
+    .mobile-navbar-container {
+        padding-top: 8px;
     }
 
-    .navbar-contenedor {
-        padding-top: 20px; 
+    /* Header - Navbar menu button */
+
+    .mobile-navbar-container {
+        background-color: var(--color-cinco)!important;
     }
 
-    .bg-body-tertiary {
-        --bs-bg-opacity: 0;
+    .dropdown-toggle-nav {
+        padding-left: 20px;
+        border-radius: 0;
+        margin-left: -15px;
     }
 
-    .navbar-titulo {
-        margin-left: 0;
+    .dropdown-toggle::after {
+        content: none;
+    }
+
+    .dropdown-navigation {
+        left: 0;
+        right: 0;
+        border: solid 1px black;
+        border-radius: 0;
+        background-color: var(--color-cinco);
+        --bs-dropdown-border-color: 0;
+    }
+
+    .dropdown-navigation[data-bs-popper] {
+        margin-top: 0;
+    }
+
+    .dropdown-item-nav {
+        padding-left: 24px;
+        padding-bottom: 10px;
+    }
+
+    /* Header - Navbar languages button */
+
+    .dropdown-languages {
+        right: 2px;
+        border: solid 1px black;
+        border-radius: 0;
+        background-color: var(--color-cinco);
+    }
+
+    .dropdown-languages[data-bs-popper] {
+        left: auto;
+    }
+
+    .dropdown-item {
+        color: var(--color-uno);
+        font-family: var(--font-family-lato);
+    }
+
+    /* Header - Opciones */
+
+    .header-options {
+        padding-top: 8px;
+        color: var(--color-uno);
+        height: 60px;
+        background-color: var(--color-cinco);
+    }
+
+    .header-options-cuadro {
+        margin: auto;
+        width: 98%;
+        background-color: var(--color-seis);
+        border-radius: 10px;
+        height: 43px;
+        
+    }
+
+    .option-donate {
+        display: inline-block;
+        background-color: var(--color-siete);
         font-family: var(--font-family-lato);
         color: var(--color-uno);
+        margin: 2px;
+        padding-top: 4px;
+        border-radius: 10px;
+        width: 50%;
+        height: 90%;
+        text-align: center;
     }
 
-    .navbar-logo{
-        margin-left: var(--margin-left)
-    }
-
-    .navbar-contenido {
+    .option-need-help {
+        display: inline-block;
+        color: var(--color-uno);
         font-family: var(--font-family-lato);
-        margin-right: 13.06%;
+        margin: 2px;
+        padding-top: 4px;
+        border-radius: 10px;
+        width: 45%;
+        height: 90%;
+        text-align: center;
     }
 
-    .navbar-link {
-        color: var(--color-uno);
+
+    /* Header - Encabezado con títulos */
+
+    .tittles-container {
+        height: 698px;
     }
 
-    .navbar-about-us {
-        margin-right: 61px;
-    }
+    /* Header - Background */
 
-    .navbar-home {
-        margin-right: 24px;
-    }
-
-    .navbar-need-help {
-        margin-right: 16px;
-        color: var(--color-uno);
-        border: 2px solid var(--color-uno);
-        background-color: transparent;
-        border-radius: 8px;
-        padding-left: 34px;
-        padding-right: 34px;
-    }
-
-    .navbar-donate {
-        color: var(--color-uno);
-        border-radius: 8px;
-        font-weight: 700;
-        color: var(--color-dos);
-        background-color: var(--color-tres);
-        padding-left: 34px;
-        padding-right: 34px;
-    }
-
-    /*  Header - Sección idiomas  */
-
-    .contenedor-idiomas {
-        margin-top: 20px;
-    }
-
-    .navbar-ikp {
-        color: var(--color-uno);
-        border-radius: 8px 0 0 8px;
-        font-weight: 700;
-        color: rgba(0, 0, 0, 0.7);
-        background-color: var(--color-uno);
-        width: 67.742px;
-        border: 0;
-    }
-
-    .navbar-en {
-        color: var(--color-uno);
-        border-radius: 0 8px 8px 0;
-        font-weight: 700;
-        color: var(--color-dos);
-        background-color: var(--color-tres);
-        width: 67.742px;
-        border: 0;
-    }
-
-    /*  Header - Sección Títulos  */
-
-    .header-div {
-        margin-left: var(--margin-left);
-    }
-
-    .header-titulo {
-        color: var(--color-tres);
-        font-size: 100px;
-        font-family: var(--font-family-lato);
-        font-weight: 700;
-        line-height: 120px;
-    }
-
-    .header-subtitulo {
-        color: #ffffff;
-        font-size: 25px;
-        font-family: 'Poppins';
-        text-shadow: 0 0 5px #000000;
-    }
-
-    .header-subtitulo strong{
-        font-size: 27px;
-        font-weight: bold;
-    }
-
-    /* Header - Botón donate */
-
-    .home-btn {
-        background-color: var(--color-tres);
-        border-color: var(--color-tres);
+    .bg-home-mobile {
         position: absolute;
-        width: 254px;
-        height: 64px;
-        border-radius: 8px;
-        color: #004eaa;
-        font-size: 28px;
-        font-weight: 800;
-        font-family: 'Lato';
-    }
-
-    /* Header - Sección Background */
-
-    .navbar-contenedor-principal {
-        height: 800px;
-    }
-
-    .header-background-imagen {
-        position: absolute;
-        background: #02397A;
         width: 100%;
-        height: 800px;
-        top: 0;
+        height: 700px;
+        top: 54px;
         z-index: -1;
         mix-blend-mode: multiply;
+        background-blend-mode: luminosity;
     }
+
+    /* Header - Máscara de color azul */
 
     .header-background-mascara {
         position: absolute;
         width: 100%;
+        height: 758px;
         top: 0;
-        height: 800px;
         background: #02397A;
-        border: 1px solid #000000;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border: 0px solid;
         z-index: -2;
         mix-blend-mode: multiply;
     }
 
-    /* Header - Efecto wave*/
+    /* Header - Efecto de wave */
 
-    .wave {
+    .wave-mobile {
         position: absolute;
+        top: 720px;
         width: 100%;
-        height: 200px;
-        top: 650px;
+    }
+
+    /* Header - Títulos */
+
+    .titulos {
+        margin-left: 4%;
+    }
+
+    .header-titulo {
+        font-size: 56px;
+        width: 80%;
+        line-height: 56px;
+        padding-top: 50px;
+    }
+
+    .header-subtitulo {
+        font-family: var(--font-family-poppins);
+        font-weight: 200;
+        font-size: 17px;
+        width: 55%;
+        line-height: 24px;  
+        margin-top: 25px;
+    }
+
+    .header-subtitulo strong {
+        font-size: 17px;
+        font-weight: 600;
+        width: 80%;
+        line-height: 24px;          
+    }
+
+    .home-btn {
+        width: 150px;
+        height: 38px;
+        border-radius: 8px;
+        color: var(--color-dos);
+        font-size: 19px;
+        margin-top: 40px;
+    }
+
+    .home-btn:hover {
+        font-size: 20px;
     }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-    /* ■■■■■■■■■■■■■■■■■■■■ INICIO ABOUT-US ■■■■■■■■■■■■■■■■■■■■ */
-    /* ■■ COLABORADORES ■■ */
-    /* ■■ Luis Romano ■■ Diego N. Cabrera ■■ */
-
-    .about-us-history-container {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 150px;
-        width: 500px; /* Ancho fijo del contenedor */
-  height: 300px; /* Altura fija del contenedor */
-  max-width: 500px; /* Ancho máximo del contenedor */
-  max-height: 300px; /* Altura máxima del contenedor */
-  overflow: auto; 
-
-    }
-
-    .about-us-history {
-        width: 30%;
-        margin-left: 50px;
-
-    }
-
-    .about-us-history p {
-        font-size: 1rem;
-        text-align: justify;
-        padding-top: 50px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 141.52%;
-        max-width: 100%;
-        height: auto;
-        
-    }
-
-    .about-us-history img {
-        width: 423px;
-        height: 435px;
-      
-        border-radius: 40px;
-     
-    }
-
-    .history-titulo{
-        margin-left: 20%;
-    }
-
-    .about-us-imagen img {
-        z-index: -1;
-        position: absolute;
-        background: #02397A;
-        width: 100%;
-        height: 100%;
-        mix-blend-mode: multiply;
-    }
-
-    .About-Us-Diego-Pardo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .About-Us-Diego-Pardo-texto {
-        padding-left: 170px;
-        padding-right: 54px;
-        padding-top: 100px;
-        text-align: justify;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: last baseline;
-    }
-
-    .About-Us-Diego-Pardo-Image {
-        padding-right: 170px;
-        padding-left: 54px;
-        padding-top: 80px;
-    }
-
-    .About-Us-Diego-Pardo-Image_imagen {
-        width: 450px;
-        height: 350px;
-    }
-
-    .About-Us-Diego-Pardo-texto_buton {
-        border: 2px solid #004eaa;
-        padding: 12px 21px;
-        border-radius: 8px;
-        gap: 8px;
-        width: 121px;
-        height: 48px;
-        background-color: white;
-        color: #004eaa;
-        
-    }
-
-    .About-Us-Diego-Pardo-button {
-        padding-top: 400px;
-        padding-right: 20px;
-    }
-
-    .About-Us-Diego-Pardo-button-buton {
-        background-image: url("/Image/boton_chatbot.png");
-        border-radius: 100px;
-        width: 70px;
-        height: 70px;
-        background-size: 110%;
-    
-    }
-    
-    /* ■■■■■■■■■■■■■■■■■■■■ FIN ABOUT-US ■■■■■■■■■■■■■■■■■■■■ */
-
-    /* ■■■■■■■■■■■■■■■■■■■■ INICIO PATRONS ■■■■■■■■■■■■■■■■■■■■ */
-    /* ■■ COLABORADORES ■■ */
-    /* ■■ Diego N. Cabrera ■■ */
-
-    .patrons-title {
-        margin-left: var(--margin-left);
-        font-family: var(--font-family-lato);
-        font-weight: 700;
-        font-size: 35px;
-        color: var(--color-dos);
-        margin-top: 4rem;
-    }
-
-    .carousel-inner {
-        display: flex;
-    }
-
-    .carousel-item {
-        display: block;
-        margin-right: 0;
-        flex: 0 0 calc(100%/5);
-        padding: 1.2em 0.5em;
-        height: 26rem;
-    }
-
-    .card-contenedor {
-        width: 100%;
-        height: 100%;
-        background-color: var(--color-dos);
-        color: var(--color-uno);
-        border-radius: 8px;
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
-    }
-
-    .card-video {
-        border-radius: 8px;
-        background-color: black;
-        width: 500px;
-        height: 100%;
-    }
-
-    .card-imagen {
-        display: block;
-        width: 100%;
-        border-radius: 10px 0;
-    }
-
-    .card-titulo {
-        margin-top: 8px;
-    }
-
-    .card-descrip {
-        display: inline-block;
-        text-align: justify;
-        font-size: 13px;
-        width: 70%;
-    }
-
-    .card-add {
-        display: inline-block;
-        padding: 0 0 10px 15px;
-    }
-
-    .carousel-indicators {
-        position: static;
-    }
-
-    .carousel-indicators .carousel-indicator {
-        background-color: var(--color-dos);
-        width: 0.5rem;
-        height: 0.5rem;
-        border-radius: 100%;
-    }
-
-    .carousel-indicators .active {
-        background-color: var(--color-dos);
-        width: 1rem;
-        border-radius: 25% / 50%;
-    }
-
-    /* Patrons - Sección Video card*/
-
-    .video-js button {
-        color: var(--color-cuatro);
-    }
-
-    .video-js .vjs-control-bar {
-        background-color: #ffffff;
-        border: solid 1px var(--color-dos);
-        border-radius: 5px;
-    }
-
-    .video-js .vjs-volume-level {
-        background-color: var(--color-cuatro);
-    }
-
-    .video-js .vjs-progress-control .vjs-progress-holder {
-        color: var(--color-cuatro)
-    }
-
-    .video-js .vjs-big-play-button {
-        font-size: 3.5em;
-        height: 1.8em;
-        line-height: 1.8em;
-        background-color: var(--color-uno);
-    }
-
-    .vjs-progress-control .vjs-control {
-        background-color: var(--color-cuatro);
-    }
-
-    /* ■■■■■■■■■■■■■■■■■■■■ FIN PATRONS ■■■■■■■■■■■■■■■■■■■■ */
-
-    /* ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ */
-    /* ■■ COLABORADORES ■■ */
-    /* ■■ Diego V. P. Yepez ■■ */
-
-    .Secction_footer_Diego_pardo {
-        margin-top: 100px;
-    }
-
-    .Section_footer_Diego_body {
-        background: rgb(6, 83, 175);
-        background: linear-gradient(180deg,
-            rgba(6, 83, 175, 1) 4%,
-            rgba(2, 41, 88, 1) 41%,
-            rgba(0, 35, 75, 1) 55%);
-    }
-
-    .Section_footer_Diego_body_title {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .Section_footer_Diego_body_title_p {
-        background: linear-gradient(180deg,
-            #02397a 16.98%,
-            #001c3d 75.31%,
-            #001c3d 100%);
-        font-family: "Lato";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 36px;
-        background-clip: text;
-        color: transparent;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        padding-top: 30px;
-    }
-
-    .Section_footer_Diego_body_network {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .Section_footer_Diego_body_network_Instagram {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-right: 166px;
-    }
-
-    .Section_footer_Diego_body_network_Whatsapp {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-left: 100px;
-        padding-right: 190px;
-    }
-
-    .Section_footer_Diego_body_network_facebook {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-left: 100px;
-    }
-
-    .Section_footer_Diego_body_network_instagram_p {
-        color: #ffffff;
-        margin-top: 12px;
-        font-family: 'Lato';
-        font-style: normal;
-
-    }
-
-    .Section_footer_Diego_body_network_whatsapp_p {
-        color: #ffffff;
-        margin-top: 12px;
-        font-family: 'Lato';
-        font-style: normal;
-    }
-
-    .Section_footer_Diego_body_network_facebook_p {
-        color: #ffffff;
-        margin-top: 12px;
-        font-family: 'Lato';
-        font-style: normal;
-    }
-
-    .Section_footer_Diego_body_network_Instagram_button {
-        background-image: url("/Image/Instagram_logo.png");
-        border-radius: 5px;
-        width: 30px;
-        height: 30px;
-        background-size: 100%;
-        margin-right: 12px;
-    }
-
-    .Section_footer_Diego_body_network_button_whatsapp {
-        background-image: url("/Image/WhatsApp_logo.png");
-        border-radius: 100px;
-        width: 30px;
-        height: 30px;
-        background-size: 89%;
-        margin-right: 12px;
-    }
-
-    .Section_footer_Diego_body_network_facebook_button {
-        background-image: url("/Image/Facebook_logo.png");
-        border-radius: 100px;
-        width: 30px;
-        height: 30px;
-        background-size: 89%;
-        margin-right: 12px;
-    }
-
-    .Section_footer_Diego_body_network_line {
-        background-color: rgba(250, 251, 251, 1);
-        border: none;
-        height: 1px;
-        margin: 10px 10px;
-        margin-left: 183px;
-        margin-right: 183px;
-        margin-top: 40px;
-    }
-
-    /* ■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■ */
-}
-
-/* ################ MEDIA QUERY - Movile - ################ */
-
-@media (max-width: 767px) {
-  
-}
-
-/* ################ MEDIA QUERY - Movile - ################ */
 
 
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■ INICIO ABOUT-US ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Luis Romano                                           │ */
+    /* │ ► Luis Fernando Callisaya Surco                         │ */
+    /* └─────────────────────────────────────────────────────────┘ */
 
-@media (min-width: 0px ) and (max-width: 576px) {
     .about-us-history-container {
         display: flex;
         flex-direction: column-reverse;
@@ -566,5 +807,454 @@
         padding: 1px;
     }
 
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ FIN ABOUT-US ■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego Valentino Pardo Yepez                           │ */
+    /* │ ► Santiago Elias Carranza                               │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    /* Footer - Contenedor principal */
+
+    .footer_container {
+        background-color: #001C3D;
+        height: 130px;
+        padding-left: 14px;
+        padding-right: 14px;
+        overflow: hidden;
+    }
+
+    /* Footer - Redes Sociales */
+
+    .footer_redsocial {
+        justify-content: flex-start;
+        flex-direction: row;
+        top: 23%;
+        margin-bottom: 0;
+        width: 50%;
+    }
+
+    .footer_redsocial img {
+        cursor: pointer;
+        width: 27px;
+        height: 27px;
+    }
+
+    .footer_redsocial_instragram img {
+        border-radius: 100%;
+        width: 29px;
+        height: 29px;
+        position: relative;
+        right: 0; 
+    }
+
+    .footer_redsocial_facebook img {
+        position: relative;
+        right:-4.7em;
+    }
+
+    .link-instagram-text {
+        display: none;
+    }
+
+    .link-facebook-text {
+        display: none;
+    }
+
+    .link-whatsapp-text {
+        display: none;
+    }
+
+    /* Footer - Línea intermedia */
+
+    .footer_linea {
+        display: none;
+    }
+
+    /* Footer - Routes */
+
+    .footer_routes {
+        margin-top: 0.8em;
+    }
+
+    .footer_routes_logo {
+        margin-right: -2px;
+    }
+
+    .footer_routes_logo img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .footer-titulo {
+        margin-bottom: 12px;
+        margin-left: 5px;
+        font-family: var(--font-family-poppins);
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 10px;
+        letter-spacing: 0.005em;
+    }
+
+    .footer_routes_home-aboutUs {
+        display: none;
+    }
+
+    .footer_routes_navigation {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        border-radius:8px; 
+        position: relative;
+        top: -2.7em;
+        left: 15%;
+    }
+
+    .footer-need-help {
+        margin-top: 10px;
+        width: 110px;
+        white-space: nowrap;
+        padding-left: 14px;
+    }
+
+    .footer-donate {
+        width: 110px;
+        margin-top: 12px;
+    }
+    
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+}
+
+
+
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ████████████████████████ MEDIA QUERY TABLET ███████████████████████ ║
+    ║ ████████████████████████████ 481 - 992  ███████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
+
+@media (min-width: 481px ) and (max-width: 992px) {
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* │ ► Luis Romano                                           │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    /* Header - Navbar */
+
+    .navbar-mobile {
+        margin-left: var(--margin-desktop-1);
+        margin-right: var(--margin-desktop-1);
+    }
+
+    .navbar-logo{
+        margin-left: 0;
+    }
+
+    .navbar-contenedor {
+        margin-right: 0;
+    }
+
+    .navbar-titulo {
+        display: none;
+    }
+    
+    .navbar-contenido {
+        font-family: var(--font-family-lato);
+        margin-right: var(--margin-desktop-1);
+    }
+
+    .navbar-home {
+        font-size: 0.9em;
+        margin-right: 1%;
+    }
+
+    .navbar-about-us {
+        font-size: 0.9em;
+        margin-right: 2%;
+        white-space: nowrap;
+    }
+
+    .navbar-need-help {
+        margin-right: 2%;
+        border: 1px solid var(--color-uno);
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    .navbar-donate {
+        color: var(--color-uno);
+        border-radius: 8px;
+        font-weight: 900;
+        color: var(--color-dos);
+        background-color: var(--color-tres);
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: -24px;
+    }
+
+    /*  Header - Sección idiomas  */
+
+    .navbar-en {
+        margin-right: 20%;
+    }
+
+    /* Header - Sección Títulos */
+
+    .header-div {
+        margin-left: var(--margin-desktop-1);
+    }
+
+    .header-titulo {
+        font-size: 80px;
+        font-family: var(--font-family-lato);
+        font-weight: 700;
+        line-height: 100px;
+        width: 442px;
+    }
+    
+    .header-subtitulo {
+        font-size: 20px;
+        font-family: 'Poppins';
+        text-shadow: 0 0 5px #000000;
+        width: 440px;
+    }
+    
+    .header-subtitulo strong {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;  
+    }
+
+    /* Header - Background */
+    
+    .header-background-imagen {
+        height: 870px;
+    }
+
+    /* Header - Máscara azul */
+
+    .header-background-mascara {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 870px;
+        background: #02397A;
+        border: 1px solid #000000;
+        z-index: -2;
+        mix-blend-mode: multiply;
+    }
+    
+    /* Header - Efecto wave*/
+    
+    .wave {
+        position: absolute;
+        width: 100%;
+        height: 130px;
+        top: 772px;
+    }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego Valentino Pardo Yepez                           │ */
+    /* │ ► Santiago Elias Carranza                               │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .footer_container{
+        background-color: var(--color-cinco);
+        height: 150px;
+        max-width: 100vw;
+        margin-right: 0;
+        margin-left:  0;
+        padding-bottom: 1em;
+    }
+
+    .footer_redsocial{
+        justify-content: flex-end;
+        flex-direction:row-reverse;
+        top: 1.2em;
+        padding-left: 1.5em;
+        margin-bottom: 0;
+    }
+
+    .footer_redsocial img{
+        cursor: pointer;
+        margin-right:2.9em;
+        width: 27px;
+        height: 27px;
+    }
+
+    .footer_redsocial_instragram img{
+        border-radius: 100%;
+        width: 29px;
+        height: 29px;
+        position: relative;
+        right:4.6em; 
+    }
+
+    .footer_redsocial_facebook img{
+        position: relative;
+        right:-4.7em;
+    }
+
+    .footer_redsocial a{
+        display: none;
+    }
+
+    .footer_linea{
+        display: none;
+    }
+
+    .footer_routes{
+        margin-top: 2em;
+    }
+
+    .footer_routes_logo{
+        margin-right: 0;
+    }
+
+    .footer_routes_logo img{
+        width: 52px;
+        height: 54px;
+        position: relative;
+        bottom: .2em;
+        margin-left: 1em;
+    }
+
+    .footer_routes_logo p{
+        font-weight:normal;
+        width: 150px;
+        padding-left: .7em;
+        position: relative;
+        top: .3em;
+    }
+
+    .footer_routes_container_home_navigation{
+        width: 100vw;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .footer_routes_home-aboutUs{
+        display: none;
+    }
+
+    .footer_routes_navigation{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+}
+
+
+
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████ MEDIA QUERY DESKTOP ███████████████████████ ║
+    ║ ███████████████████████████ 993 - 1299  ███████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
+
+@media(min-width: 993px) and (max-width: 1299px) {
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* │ ► Luis Romano                                           │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+	/*  Header - Sección Navbar  */
+
+	.navbar-logo{
+		margin-left: var(--margin-desktop-1);
+	}
+
+	.navbar-contenido {
+		margin-right: var(--margin-desktop-1);
+	}
+
+	/*  Header - Sección Títulos  */
+
+	.header-div {
+		margin-left: var(--margin-desktop-1);
+	}
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego Valentino Pardo Yepez                           │ */
+    /* │ ► Santiago Elias Carranza                               │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .footer_container {
+        padding-right: var(--margin-desktop-1);
+        padding-left: var(--margin-desktop-1);
+    }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+    
+}
+
+
+
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ██████████████████████ MEDIA QUERY DESKTOP HD █████████████████████ ║
+    ║ ████████████████████████████ 1300 - ∞  ████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
+
+@media(min-width: 1300px) {
 
 }

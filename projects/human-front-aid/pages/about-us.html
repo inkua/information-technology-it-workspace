@@ -38,13 +38,13 @@
     <!-- │ ► Luis Romano                                           │ -->
     <!-- └─────────────────────────────────────────────────────────┘ -->
 
-    <header>
+    <header class="desktop">
 
         <!--  Header - Sección Navbar  -->
 
         <div class="navbar-contenedor-principal">
 
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navbar navbar-expand bg-body-tertiary navbar-mobile">
 
                 <!--  Contenedor del Navbar  -->
 
@@ -60,11 +60,11 @@
                     <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
                             <a class="nav-link navbar-link navbar-home" href="../index.html">Home</a>
-                            <a class="nav-link navbar-link navbar-about-us" href="#">About us</a>
+                            <a class="nav-link navbar-link navbar-about-us" href="./about-us.html">About us</a>
                           
-                            <a href="./need-help.html" class="btn btn-primary navbar-need-help">Need help?</a>
+                            <a class="btn btn-primary navbar-need-help" href="./need-help.html">Need help?</a>
                    
-                            <a type="button" class="btn btn-warning navbar-donate" href="./want-to-help.html">DONATE</a>
+                            <a class="btn btn-warning navbar-donate" href="./want-to-help.html">DONATE</a>
                         </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
 
             <!--  Header - Sección idiomas  -->
 
-            <div class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="navbar navbar-expand bg-body-tertiary">
 
                 <div class="container-fluid contenedor-idiomas">
 
@@ -80,7 +80,7 @@
                         <div class="navbar-nav ms-auto">
 
                             <!-- Opción Ukrania -->
-                            <button type="button" class="btn btn-primary navbar-ikp">IKP</button>
+                            <button type="button" class="btn btn-primary navbar-ykp">YKP</button>
                             <!-- Opción Inglés -->
                             <button type="button" class="btn btn-warning navbar-en">EN</button>
                         </div>
@@ -93,8 +93,7 @@
             <div class="header-div">
                 <h2 class="header-titulo">About us</h2>
                 <p class="header-subtitulo">
-                    Know more about our <strong>mission</strong>,<br />
-                    <strong>projects</strong> and <strong>history.</strong>
+                    Know more about our <strong>mission, projects</strong> and <strong>history.</strong>
                 </p>
             </div>
 
@@ -102,7 +101,7 @@
             
             <!--  Imagen de fondo  -->
 
-            <img class="header-background-imagen" src="../Image/header-about-us.png" alt="About Us">
+            <img class="header-background-imagen" src="../Image/bg-about-us-desktop.png" alt="home_img">
 
             <!--  Máscara de filtro azul  -->
 
@@ -111,6 +110,75 @@
             <!--  Efecto wave  -->
 
             <img class="wave" src="../Image/wave.png" alt="" />
+        
+        </div>
+
+    </header>
+
+    <!-- Header Mobile Version -->
+
+    <header class="mobile">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary mobile-navbar-container">
+            <div class="container-fluid">
+
+                <!-- Navbar - Menu options -->
+
+                <a class="nav-link dropdown-toggle-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../Image/menuphone.png"/>
+                </a>
+                <ul class="dropdown-menu dropdown-navigation">
+                    <li><a class="dropdown-item dropdown-item-nav" href="../index.html">Home</a></li>
+                    <li><a class="dropdown-item dropdown-item-nav" href="./about-us.html">About us</a></li>
+                    <li><a class="dropdown-item dropdown-item-nav" href="./need-help.html">Need Help</a></li>
+                    <li><a class="dropdown-item dropdown-item-nav" href="./want-to-help.html">Want to Help</a></li>
+                </ul>
+
+                <!-- Navbar - Languages options -->
+
+                <a class="nav-link dropdown-toggle-lang" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../Image/carbon_overflow-menu-vertical.png"/>
+                </a>
+                <ul class="dropdown-menu dropdown-languages">
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                    <li><a class="dropdown-item" href="#">Ukrainian</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Header - Optiones -->
+
+        <div class="container-fluid header-options">
+            <div class="header-options-cuadro">
+                <a class="option-donate" href="./want-to-help.html">Donate</a>
+                <a class="option-need-help" href="./need-help.html">Need Help?</a>
+            </div>
+        </div>
+
+
+        <!-- Header - Encabezado con títulos -->
+
+        <div class="tittles-container">
+
+            <!-- Header - Background image -->
+
+            <img class="bg-home-mobile" src="../Image/bg-home-mobile.png" alt="home_img">
+
+            <!--  Máscara de filtro azul  -->
+
+            <div class="header-background-mascara"></div>
+
+            <!--  Efecto wave  -->
+            
+            <img class="wave-mobile" src="../Image/wave.png" alt="" />
+
+            <div class="titulos">
+                <h2 class="header-titulo">About us</h2>
+                <p class="header-subtitulo">
+                    Know more about our <strong>mission, projects</strong> and <strong>history.</strong>
+                </p>
+            </div>
+            
 
         </div>
 
@@ -120,12 +188,29 @@
     <!-- │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ -->
     <!-- └─────────────────────────────────────────────────────────┘ -->
 
+
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■ INICIO CHATBOT ■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Diego N. Cabrera                                      │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+    <button class="chatbot-button"></button>
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■■ FIN CHATBOT ■■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+    
+
+
     <!-- ┌─────────────────────────────────────────────────────────┐ -->
     <!-- │ ■■■■■■■■■■■■■■■■■■ INICIO ABOUT-US ■■■■■■■■■■■■■■■■■■■■ │ -->
     <!-- │                                                         │ -->
     <!-- │   COLABORADORES:                                        │ -->
     <!-- │ ► Luis Romano                                           │ -->
-    <!-- │ ► Diego N. Cabrera                                      │ -->
+    <!-- │ ► Luis Fernando Callisaya Surco                         │ -->
     <!-- └─────────────────────────────────────────────────────────┘ -->
     
     <section>
@@ -185,6 +270,7 @@
     <!-- │ ■■■■■■■■■■■■■■■■■■■■ FIN ABOUT-US ■■■■■■■■■■■■■■■■■■■■■ │ -->
     <!-- └─────────────────────────────────────────────────────────┘ -->
     
+    
 
     <!-- ┌─────────────────────────────────────────────────────────┐ -->
     <!-- │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ -->
@@ -194,49 +280,54 @@
     <!-- │ ► Santiago Elias Carranza                               │ -->
     <!-- └─────────────────────────────────────────────────────────┘ -->
 
-    <footer class="Secction_footer_Diego_pardo">
-        <section class="Section_footer_Diego_body">
-            <section class="Section_footer_Diego_body_title">
-                <p class="Section_footer_Diego_body_title_p">
-                    Human Front Aid
-                </p>
-            </section>
+    <footer class="footer_container">
 
-            <section class="Section_footer_Diego_body_network">
-                <section class="Section_footer_Diego_body_network_Instagram">
-                    <button class="Section_footer_Diego_body_network_Instagram_button"></button>
-                    <p class="Section_footer_Diego_body_network_instagram_p">Instagram</p>
-                </section>
-                <section class="Section_footer_Diego_body_network_Whatsapp">
-                    <button class="Section_footer_Diego_body_network_button_whatsapp"></button>
-                    <p class="Section_footer_Diego_body_network_whatsapp_p">WhatsApp</p>
-                </section>
-                <section class="Section_footer_Diego_body_network_facebook">
-                    <button class="Section_footer_Diego_body_network_facebook_button"></button>
-                    <p class="Section_footer_Diego_body_network_facebook_p">Facebook</p>
-                </section>
-            </section>
-            <hr class="Section_footer_Diego_body_network_line">
-            <div class="navbar_contenedor_principal_footer">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="container-fluid navbar-contenedor">
-                        <img class="navbar-brand navbar-logo" src="../Image/logo.png" alt="">
-                        <a class="navbar-brand navbar-titulo" href="../index.html">Human Front Aid</a>
-
-                        <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
-                            <div class="navbar-nav ms-auto">
-                                <a class="nav-link navbar-link navbar-home" href="#">Home</a>
-                                <a class="nav-link navbar-link navbar-about-us" href="#">About us</a>
-                                <button type="button" class="btn btn-primary navbar-need-help">Need help?</button>
-                                <button type="button" class="btn btn-warning navbar-donate">DONATE</button>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-
+        <div class="footer_redsocial">
+            <div class="footer_redsocial_instragram">
+                <a class="link-instagram" href="https://www.instagram.com/humanfrontaid/" target="_blank">
+                    <img src="../Image/Instagram_logo.png" width="35px" height="35px" alt="Icono de Instagram">
+                    <p class="link-instagram-text">Instagram</p>
+                </a>
             </div>
+            <div class="footer_redsocial_facebook">
+                <a class="link-facebook" href="https://www.facebook.com/HUMANFRONTAID/" target="_blank">
+                    <img src="../Image/Facebook_logo.png" width="35px" height="35px" alt="Icono de Facebook">
+                    <p class="link-facebook-text">Facebook</p>
+                </a>
+            </div>
+            <div class="footer_redsocial_whatsapp">
+                <a class="link-whatsapp" href="https://wa.me/+41335333344" target="_blank">
+                    <img src="../Image/WhatsApp_logo.png" width="35px" height="35px" alt="Icono de Whatsapp"> 
+                    <p class="link-whatsapp-text">Whatsapp</p>
+                </a>
+            </div>
+        </div>
 
-        </section>
+        <div class="footer_linea"></div>
+            
+        <div class="footer_routes">
+            <div class="footer_routes_logo">
+                <img src="../Image/logo.png" alt="Logo de Human Front Aid">
+                <a class="navbar-brand navbar-titulo footer-titulo" href="../index.html">Human Front Aid</a>
+            </div>
+                
+            <div class="footer_routes_container_home_navigation">
+
+                <div class="footer_routes_home-aboutUs">
+                        <a class="nav-link navbar-link navbar-home" href="../index.html">Home</a>
+                        <a class="nav-link navbar-link navbar-about-us" href="./about-us.html">About us</a>
+                </div>
+
+                <div class="footer_routes_navigation">
+
+                    <a class="btn btn-primary navbar-need-help footer-need-help" href="./need-help.html">Need help?</a>
+
+                    <a class="btn btn-warning navbar-donate footer-donate" href="./want-to-help.html">DONATE</a>
+
+                </div>
+            </div>
+        </div>
+    
     </footer>
 
     <!-- ┌─────────────────────────────────────────────────────────┐ -->
