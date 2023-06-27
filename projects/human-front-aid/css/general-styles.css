@@ -33,6 +33,11 @@ body {
     height: 100%;
     background-color: var(--color-uno);
     z-index: -3;
+    box-sizing: border-box;
+}
+
+@media (max-width: 319px ) {
+    body { display: none; }
 }
 
 @media (min-width: 320px ) and (max-width: 480px) {

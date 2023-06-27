@@ -1,6 +1,6 @@
 /*CAROUSEL PRESS AND NEWS */
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".swiperPressAndNews", {
 
 
     pagination: {
