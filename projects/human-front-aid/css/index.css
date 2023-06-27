@@ -641,13 +641,10 @@ a {
 /* └─────────────────────────────────────────────────────────┘ */
 
 #map-off {
-    padding: 0 var(--margin-desktop-1);
     width: 100%;
     margin-top: 50px;
-    height: 500px;
     text-align: center;
     background-color: var(--color-uno);
-    margin-bottom: 50px;
 }
 
 #map-off:hover {
@@ -664,8 +661,9 @@ a {
 }
 
 .map-img {
+    width: 100%;
     margin-top: 80px;
-    height: 350px;
+    height: 80%;
 }
 
 /* ┌─────────────────────────────────────────────────────────┐ */
