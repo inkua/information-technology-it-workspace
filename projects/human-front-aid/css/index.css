@@ -405,110 +405,98 @@
 /* │ ► Vania Belén Carlos Camones                            │ */
 /* └─────────────────────────────────────────────────────────┘ */
 
-.carousel {
-	margin-top: 100px;
+.Carrousel {
+    margin-top: 100px;
+    height: fit-content;
+    display: grid;
+    place-items: center;
+    width: 100%;
 }
 
-.carousel-inner {
+.swiper-p {
+    padding: 0px;
+    margin: 0px;
+    height: 280px;
+    width: 100%;
+}
+
+.swiper-slide-p {
+    font-size: 18px;
     display: flex;
+    justify-content: center;
+    width: fit-content;  
 }
 
-.carousel-item {
-    display: block;
-    margin-right: 0;
-    flex: 0 0 calc(100%/5);
-    padding: 1.2em 0.5em;
-    height: 26rem;
-}
-
-
-.card-contenedor {
-    width: 100%;
-    height: 100%;
-    background-color: var(--color-dos);
-    color: var(--color-uno);
-    border-radius: 10px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
-}
-
-.card-video {
-    border-radius: 8px;
-    background-color: black;
-    width: 500px;
-    height: 100%;
-}
-
-.card-imagen {
+.swiper-slide-p img {
     display: block;
     width: 100%;
-    border-radius: 10px 10px;
-    height: 245px;
+    height: 100%;
+    object-fit: cover;
 }
 
-.card-titulo {
-    margin-top: 8px;
-}
-
-.card-descrip {
+.memberCard {
+    background-color:#003A7D;
+    width: 145px;
+    height: fit-content;
+    color: black;
+    text-decoration: none;
     display: inline-block;
-    text-align: justify;
-    font-size: 13px;
-    width: 70%;
-}
-
-.card-add {
-    display: inline-block;
-    position: absolute;
-    top: 34px;
-    right: 18px;
-}
-
-.carousel-indicators {
-    position: static;
-}
-
-.carousel-indicators .carousel-indicator {
-    background-color: var(--color-dos);
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 100%;
-}
-
-.carousel-indicators .active {
-    background-color: var(--color-dos);
-    width: 1rem;
-    border-radius: 25% / 50%;
-}
-
-/* Video card Sección */
-
-.video-js button {
-    color: var(--color-cuatro);
-}
-
-.video-js .vjs-control-bar {
-    background-color: #ffffff;
-    border: solid 1px var(--color-dos);
     border-radius: 5px;
+    overflow: hidden;
 }
-
-.video-js .vjs-volume-level {
-    background-color: var(--color-cuatro);
+.memberCard-one{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
 }
-
-.video-js .vjs-progress-control .vjs-progress-holder {
-    color: var(--color-cuatro)
+.memberCard .memberImage{
+    background-image: url('../Image/Imagen_Reto.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 145px;
+    height: 145px;
+    display: flex;
+    justify-content: right;
 }
-
-.video-js .vjs-big-play-button {
-    font-size: 3.5em;
-    height: 1.8em;
-    line-height: 1.8em;
-    background-color: var(--color-uno);
+.memberCard .memberImage .memberMoreInfo{
+    width: 23px;
+    height: 23px;
+    background-color: #F8D714;
+    color: #003A7D;
+    padding: 0px;
+    font-size: 1rem;
+    border-radius: 12px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 5px;
 }
-
-.vjs-progress-control .vjs-control {
-    background-color: var(--color-cuatro);
+.memberCard .memberImage .memberMoreInfo .i{ margin: 0px;}
+.memberCard .memberContent{
+    color: #fff;
+    width: 145px;
+    height: 90px;
+    padding-left: 2px;
+    display: flex;
+    flex-direction: column;
+}
+.memberCard .memberContent .memberName{
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin: 0px;
+}
+.memberCard .memberContent .memberInfo{
+    width: 80%;
+    font-weight: 300;
+    font-size: x-small;
+    margin: 2px 0px 0px 0px;
+}
+.memberCard .memberContent .memberorg{
+    margin: auto 0px 0px 0px;
+    padding-bottom: 2px;
+    font-size: 0.8rem;
 }
 
 /* ┌─────────────────────────────────────────────────────────┐ */
@@ -582,22 +570,17 @@
     color: var(--color-dos);
     margin-top: 4rem;
 }
-    
-body {
-    position: relative;
-    height: 100%;
-}
 
 /* estos swipers hay que ponerles un nombre solo para la seccion como "swiper-press" */
 
-.swiper {
+.swiperPressAndNews {
     width: 80%;
     height: 480px;
     margin-left: auto;
     margin-right: auto; 
 }
 
-.swiper-slide {
+.swiper-slide-pan {
     height: calc((100% - 50px) / 2);
     border-radius: 20px;
     /*Center slide text vertically*/
@@ -607,7 +590,7 @@ body {
     box-shadow: 5px -5px 3px 0px rgba(0,0,0,0.12);    
 }
 
-.swiper-slide:hover {
+.swiper-slide-pan:hover {
     transform: scale(1.05);
     transition: 2s;
 }
@@ -637,7 +620,7 @@ a {
     font-size: 1.25rem;
 }
 
-.swiper-wrapper {
+.swiper-wrapper-pan {
     bottom: 20px;
     padding-top: 10px;
 }
@@ -1056,7 +1039,7 @@ a {
 
 
     /* ┌─────────────────────────────────────────────────────────┐ */
-    /* │ ■■■■■■■■■■■■■■■■ INICIO PRESS-AND-NEWS ■■■■■■■■■■■■■■■■ │ */
+    /* │ ■■■■■■■■■■■■■■■■■■■ INICIO ABOUT US ■■■■■■■■■■■■■■■■■■■ │ */
     /* │                                                         │ */
     /* │   COLABORADORES:                                        │ */
     /* │ ► Luis Fernando Callisaya Surco                         │ */
@@ -1086,6 +1069,43 @@ a {
     }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN ABOUT US ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■ INICIO PATRONS ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* │ ► Vania Belén Carlos Camones                            │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .swiper-p {
+        height: 310px;
+    }
+
+    .memberCard {
+        width: 180px;
+    }
+
+    .memberCard .memberImage {
+        width: 180px;
+        height: 180px;
+    }
+
+    .memberCard .memberContent {
+        width: 180px;
+    }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN PATRONS ■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■ INICIO PRESS-AND-NEWS ■■■■■■■■■■■■■■■■ │ */
     /* │                                                         │ */
     /* │   COLABORADORES:                                        │ */
@@ -1094,9 +1114,15 @@ a {
 
     /* ponerle nombre al swiper */
 
-    .swiper-pagination{
+    .swiper-pagination-pan {
         margin-bottom: 200px;    
     }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■ FIN PRESS-AND-NEWS ■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■ INICIO SUPPORTERS ■■■■■■■■■■■■■■■■■■ │ */
@@ -1109,10 +1135,10 @@ a {
         height: 15%;
     }
 
-
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■ FIN SUPPORTERS ■■■■■■■■■■■■■■■■■■■■ │ */
     /* └─────────────────────────────────────────────────────────┘ */
+
 
 
     /* ┌─────────────────────────────────────────────────────────┐ */
@@ -1126,8 +1152,6 @@ a {
         padding: 0 var(--margin-desktop-1);
         margin-bottom: 20px;
     }
-
-
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■■■ FIN MAP ■■■■■■■■■■■■■■■■■■■■■■■■ │ */
@@ -1401,11 +1425,14 @@ a {
 
 
     /* ┌─────────────────────────────────────────────────────────┐ */
-    /* │ ■■■■■■■■■■■■■■■■ INICIO PRESS-AND-NEWS ■■■■■■■■■■■■■■■■ │ */
+    /* │ ■■■■■■■■■■■■■■■■■■ INICIO ABOUT-US ■■■■■■■■■■■■■■■■■■■■ │ */
     /* │                                                         │ */
     /* │   COLABORADORES:                                        │ */
     /* │ ► Luis Fernando Callisaya Surco                         │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* │ ► Diego Valentino Pardo Yepez                           │ */
     /* └─────────────────────────────────────────────────────────┘ */
+
     .about-us {
         display: flex;
         flex-direction: column-reverse;
@@ -1425,6 +1452,72 @@ a {
         margin: 10px;
         padding: 1px;
       }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN ABOUT US ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■ INICIO PATRONS ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* │ ► Vania Belén Carlos Camones                            │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .swiper-p {
+        height: 380px;
+    }
+
+    .memberCard {
+        width: 200px;
+        border-radius: 10px;
+    }
+
+    .memberCard-one {
+        width: 400px;
+    }
+
+    .memberCard .memberImage {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .memberCard .memberImage .memberMoreInfo {
+        margin: 10px;
+    }
+
+    .memberCard .memberContent {
+        width: 200px;
+        height: 120px;
+    }
+
+    .memberCard .memberContent .memberName {
+        font-weight: 400;
+        font-size: 1rem;
+        margin: 2px 0px 0px 0px;
+    }
+
+    .memberCard .memberContent .memberInfo {
+        width: 80%;
+        font-weight: 300;
+        font-size: 0.8rem;
+        margin: 4px 0px 0px 0px;
+    }
+
+    .memberCard .memberContent .memberorg {
+        font-size: 1rem;
+        padding-bottom: 5px;
+    }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN PATRONS ■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■ INICIO SUPPORTERS ■■■■■■■■■■■■■■■■■■ │ */
@@ -1484,90 +1577,90 @@ a {
     /* │ ► Santiago Elias Carranza                               │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-.footer_container{
-    background-color: var(--color-cinco);
-    height: 150px;
-    max-width: 100vw;
-    margin-right: 0;
-    margin-left:  0;
-    padding-bottom: 1em;
-}
+    .footer_container{
+        background-color: var(--color-cinco);
+        height: 150px;
+        max-width: 100vw;
+        margin-right: 0;
+        margin-left:  0;
+        padding-bottom: 1em;
+    }
 
-.footer_redsocial{
-    justify-content: flex-end;
-    flex-direction:row-reverse;
-    top: 1.2em;
-    padding-left: 1.5em;
-    margin-bottom: 0;
-}
+    .footer_redsocial{
+        justify-content: flex-end;
+        flex-direction:row-reverse;
+        top: 1.2em;
+        padding-left: 1.5em;
+        margin-bottom: 0;
+    }
 
-.footer_redsocial img{
-    cursor: pointer;
-    margin-right:2.9em;
-    width: 27px;
-    height: 27px;
-}
+    .footer_redsocial img{
+        cursor: pointer;
+        margin-right:2.9em;
+        width: 27px;
+        height: 27px;
+    }
 
-.footer_redsocial_instragram img{
-    border-radius: 100%;
-    width: 29px;
-    height: 29px;
-    position: relative;
-    right:4.6em; 
-}
+    .footer_redsocial_instragram img{
+        border-radius: 100%;
+        width: 29px;
+        height: 29px;
+        position: relative;
+        right:4.6em; 
+    }
 
-.footer_redsocial_facebook img{
-    position: relative;
-    right:-4.7em;
-}
+    .footer_redsocial_facebook img{
+        position: relative;
+        right:-4.7em;
+    }
 
-.footer_redsocial a{
-    display: none;
-}
+    .footer_redsocial a{
+        display: none;
+    }
 
-.footer_linea{
-    display: none;
-}
+    .footer_linea{
+        display: none;
+    }
 
-.footer_routes{
-    margin-top: 2em;
-}
+    .footer_routes{
+        margin-top: 2em;
+    }
 
-.footer_routes_logo{
-    margin-right: 0;
-}
+    .footer_routes_logo{
+        margin-right: 0;
+    }
 
-.footer_routes_logo img{
-    width: 52px;
-    height: 54px;
-    position: relative;
-    bottom: .2em;
-    margin-left: 1em;
-}
+    .footer_routes_logo img{
+        width: 52px;
+        height: 54px;
+        position: relative;
+        bottom: .2em;
+        margin-left: 1em;
+    }
 
-.footer_routes_logo p{
-    font-weight:normal;
-    width: 150px;
-    padding-left: .7em;
-    position: relative;
-    top: .3em;
-}
+    .footer_routes_logo p{
+        font-weight:normal;
+        width: 150px;
+        padding-left: .7em;
+        position: relative;
+        top: .3em;
+    }
 
-.footer_routes_container_home_navigation{
-    width: 100vw;
-    display: flex;
-    justify-content: flex-end;
-}
+    .footer_routes_container_home_navigation{
+        width: 100vw;
+        display: flex;
+        justify-content: flex-end;
+    }
 
-.footer_routes_home-aboutUs{
-    display: none;
-}
+    .footer_routes_home-aboutUs{
+        display: none;
+    }
 
-.footer_routes_navigation{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
+    .footer_routes_navigation{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
@@ -1656,6 +1749,68 @@ a {
 
 
     /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■ INICIO PATRONS ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* │ ► Vania Belén Carlos Camones                            │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .swiper-p {
+        height: 560px;
+    }
+
+    .memberCard {
+        width: 300px;
+    }
+
+    .memberCard-one {
+        width: 700px;
+    }
+
+    .memberCard .memberImage {
+        width: 300px;
+        height: 300px;
+    }
+
+    .memberCard .memberImage .memberMoreInfo {
+        width: 30px;
+        height: 30px;
+        margin: 20px;
+        font-size: 1.3rem;
+    }
+
+    .memberCard .memberContent {
+        width: 300px;
+        height: 190px;
+        padding-left: 10px;
+    }
+
+    .memberCard .memberContent .memberName {
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .memberCard .memberContent .memberInfo {
+        width: 80%;
+        font-weight: 400;
+        font-size: 1rem;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .memberCard .memberContent .memberorg {
+        font-size: 1.2rem;
+        padding-bottom: 8px;
+    }    
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN PATRONS ■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■ INICIO SUPPORTERS ■■■■■■■■■■■■■■■■■■ │ */
     /* │                                                         │ */
     /* │   COLABORADORES:                                        │ */
@@ -1723,5 +1878,65 @@ a {
 */
 
 @media(min-width: 1300px) {
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■ INICIO PATRONS ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* │ ► Vania Belén Carlos Camones                            │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .swiper-p {
+        height: 560px;
+    }
+
+    .memberCard {
+        width: 300px;
+    }
+
+    .memberCard-one {
+        width: 700px;
+    }
+
+    .memberCard .memberImage {
+        width: 300px;
+        height: 300px;
+    }
+
+    .memberCard .memberImage .memberMoreInfo {
+        width: 30px;
+        height: 30px;
+        margin: 20px;
+        font-size: 1.3rem;
+    }
+
+    .memberCard .memberContent {
+        width: 300px;
+        height: 190px;
+        padding-left: 10px;
+    }
+
+    .memberCard .memberContent .memberName {
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .memberCard .memberContent .memberInfo {
+        width: 80%;
+        font-weight: 400;
+        font-size: 1rem;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .memberCard .memberContent .memberorg {
+        font-size: 1.2rem;
+        padding-bottom: 8px;
+    }    
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN PATRONS ■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
 
 }
