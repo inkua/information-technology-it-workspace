@@ -457,7 +457,7 @@ a {
 
 /* Footer - Redes Sociales */
 
-.footer_redsocial{
+.footer_redsocial {
     display: flex;
     justify-content: space-between;
     padding-left: .7em;
@@ -466,7 +466,7 @@ a {
     margin-bottom: 3em;
 }
 
-.footer_redsocial img{
+.footer_redsocial img {
     cursor: pointer;
     margin-right:0;
 }

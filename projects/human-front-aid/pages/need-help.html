@@ -12,8 +12,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700;900&display=swap" rel="stylesheet">
 
     <!-- Bootstrap v5.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -42,13 +42,13 @@
     <!-- │ ► Luis Romano                                           │ -->
     <!-- └─────────────────────────────────────────────────────────┘ -->
 
-    <header>
+    <header class="desktop">
 
         <!--  Header - Sección Navbar  -->
 
         <div class="navbar-contenedor-principal">
 
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navbar navbar-expand bg-body-tertiary navbar-mobile">
 
                 <!--  Contenedor del Navbar  -->
 
@@ -58,7 +58,7 @@
                     <img class="navbar-brand navbar-logo" src="../Image/logo.png" alt="">
 
                     <!--  Título  -->
-                    <a class="navbar-brand navbar-titulo" href="./index.html">Human Front Aid</a>
+                    <a class="navbar-brand navbar-titulo" href="../index.html">Human Front Aid</a>
 
                     <!--  Opciones de Navegación  -->
                     <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
@@ -68,7 +68,7 @@
                           
                             <a class="btn btn-primary navbar-need-help" href="./need-help.html">Need help?</a>
                    
-                            <a type="button" class="btn btn-warning navbar-donate" href="./want-to-help.html">DONATE</a>
+                            <a class="btn btn-warning navbar-donate" href="./want-to-help.html">DONATE</a>
                         </div>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
 
             <!--  Header - Sección idiomas  -->
 
-            <div class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="navbar navbar-expand bg-body-tertiary">
 
                 <div class="container-fluid contenedor-idiomas">
 
@@ -95,21 +95,17 @@
             <!--  Header - Sección Título  -->
 
             <div class="header-div">
-                <h2 class="header-titulo">Human Front Aid</h2>
+                <h2 class="header-titulo">About us</h2>
                 <p class="header-subtitulo">
-                    Our intention is to <strong>support projects regionally and locally.</strong>
+                    Know more about our <strong>mission, projects</strong> and <strong>history.</strong>
                 </p>
-                <p class="header-subtitulo">
-                    People knowing the local conditions can help.
-                </p>
-                <button class="home-btn">DONATE</button>
             </div>
 
             <!--  Header - Sección Backgrond  -->
             
             <!--  Imagen de fondo  -->
 
-            <img class="header-background-imagen" src="../Image/header-need-help-background.png" alt="About Us">
+            <img class="header-background-imagen" src="../Image/bg-needhelp-desktop.png" alt="home_img">
 
             <!--  Máscara de filtro azul  -->
 
@@ -123,8 +119,92 @@
 
     </header>
 
+    <!-- Header Mobile Version -->
+
+    <header class="mobile">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary mobile-navbar-container">
+            <div class="container-fluid">
+
+                <!-- Navbar - Menu options -->
+
+                <a class="nav-link dropdown-toggle-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../Image/menuphone.png"/>
+                </a>
+                <ul class="dropdown-menu dropdown-navigation">
+                    <li><a class="dropdown-item dropdown-item-nav" href="../index.html">Home</a></li>
+                    <li><a class="dropdown-item dropdown-item-nav" href="./about-us.html">About us</a></li>
+                    <li><a class="dropdown-item dropdown-item-nav" href="./need-help.html">Need Help</a></li>
+                    <li><a class="dropdown-item dropdown-item-nav" href="./want-to-help.html">Want to Help</a></li>
+                </ul>
+
+                <!-- Navbar - Languages options -->
+
+                <a class="nav-link dropdown-toggle-lang" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../Image/carbon_overflow-menu-vertical.png"/>
+                </a>
+                <ul class="dropdown-menu dropdown-languages">
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                    <li><a class="dropdown-item" href="#">Ukrainian</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Header - Optiones -->
+
+        <div class="container-fluid header-options">
+            <div class="header-options-cuadro">
+                <a class="option-donate" href="./want-to-help.html">Donate</a>
+                <a class="option-need-help" href="./need-help.html">Need Help?</a>
+            </div>
+        </div>
+
+
+        <!-- Header - Encabezado con títulos -->
+
+        <div class="tittles-container">
+
+            <!-- Header - Background image -->
+
+            <img class="bg-home-mobile" src="../Image/bg-home-mobile.png" alt="home_img">
+
+            <!--  Máscara de filtro azul  -->
+
+            <div class="header-background-mascara"></div>
+
+            <!--  Efecto wave  -->
+            
+            <img class="wave-mobile" src="../Image/wave.png" alt="" />
+
+            <div class="titulos">
+                <h2 class="header-titulo">About us</h2>
+                <p class="header-subtitulo">
+                    Know more about our <strong>mission, projects</strong> and <strong>history.</strong>
+                </p>
+            </div>
+            
+
+        </div>
+
+    </header>
+
     <!-- ┌─────────────────────────────────────────────────────────┐ -->
     <!-- │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■ INICIO CHATBOT ■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Diego N. Cabrera                                      │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+    <button class="chatbot-button"></button>
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■■ FIN CHATBOT ■■■■■■■■■■■■■■■■■■■■■ │ -->
     <!-- └─────────────────────────────────────────────────────────┘ -->
 
 
@@ -465,52 +545,53 @@
     <!-- └─────────────────────────────────────────────────────────┘ -->
 
     <footer class="footer_container">
-        <div class="footer_body">
 
-            <div class="footer_redsocial">
-                <div class="footer_redsocial_whatsapp">
-                    <img src="../Image/WhatsApp_logo.png" onclick="location.href=``" width="35px" height="35px" alt="Icono de Whatsapp"> 
-                    <a href="">Whatsapp</a>
-                </div>
-                <div class="footer_redsocial_instragram">
-                    <img src="../Image/Instagram_logo.png" onclick="location.href=`https://www.instagram.com/humanfrontaid/`" width="35px" height="35px" alt="Icono de Instagram">
-                    <a href="https://www.instagram.com/humanfrontaid/">Instagram</a>
-                </div>
-                <div class="footer_redsocial_facebook">
-                    <img src="../Image/Facebook_logo.png" onclick="location.href=`https://www.facebook.com/HUMANFRONTAID/`" width="35px" height="35px" alt="Icono de Facebook">
-                    <a href="https://www.facebook.com/HUMANFRONTAID/">Facebook</a>
-                </div>
+        <div class="footer_redsocial">
+            <div class="footer_redsocial_instragram">
+                <a class="link-instagram" href="https://www.instagram.com/humanfrontaid/" target="_blank">
+                    <img src="../Image/Instagram_logo.png" width="35px" height="35px" alt="Icono de Instagram">
+                    <p class="link-instagram-text">Instagram</p>
+                </a>
             </div>
-
-            <div class="footer_linea"></div>
-            
-            <div class="footer_routes">
-                <div class="footer_routes_logo">
-                    <img src="../Image/logo.png" width="91px" height="104px" alt="Logo de Human Front Aid">
-                    <p>Human <span>Front Aid</span></p>
-                </div>
-                
-                <div class="footer_routes_container_home_navigation">
-                    <div class="footer_routes_home-aboutUs">
-                        <a href="">Home</a>
-                        <a href="./pages/about-us.html">About us</a>
-                    </div>
-                    <div class="footer_routes_navigation">
-                        <div>
-                        </div>
-                        <div>
-                        </div>
-                        <div>
-                            <a href="./pages/need-help.html">Need help?</a>
-                        </div>
-                        <div>
-                            <a href="">DONATE</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="footer_redsocial_facebook">
+                <a class="link-facebook" href="https://www.facebook.com/HUMANFRONTAID/" target="_blank">
+                    <img src="../Image/Facebook_logo.png" width="35px" height="35px" alt="Icono de Facebook">
+                    <p class="link-facebook-text">Facebook</p>
+                </a>
             </div>
-    
+            <div class="footer_redsocial_whatsapp">
+                <a class="link-whatsapp" href="https://wa.me/+41335333344" target="_blank">
+                    <img src="../Image/WhatsApp_logo.png" width="35px" height="35px" alt="Icono de Whatsapp"> 
+                    <p class="link-whatsapp-text">Whatsapp</p>
+                </a>
+            </div>
         </div>
+
+        <div class="footer_linea"></div>
+            
+        <div class="footer_routes">
+            <div class="footer_routes_logo">
+                <img src="../Image/logo.png" alt="Logo de Human Front Aid">
+                <a class="navbar-brand navbar-titulo footer-titulo" href="../index.html">Human Front Aid</a>
+            </div>
+                
+            <div class="footer_routes_container_home_navigation">
+
+                <div class="footer_routes_home-aboutUs">
+                        <a class="nav-link navbar-link navbar-home" href="../index.html">Home</a>
+                        <a class="nav-link navbar-link navbar-about-us" href="./about-us.html">About us</a>
+                </div>
+
+                <div class="footer_routes_navigation">
+
+                    <a class="btn btn-primary navbar-need-help footer-need-help" href="./need-help.html">Need help?</a>
+
+                    <a class="btn btn-warning navbar-donate footer-donate" href="./want-to-help.html">DONATE</a>
+
+                </div>
+            </div>
+        </div>
+    
     </footer>
 
     <!-- ┌─────────────────────────────────────────────────────────┐ -->

@@ -9,267 +9,306 @@
 /*  Header - Sección Navbar  */
 
 .navbar-brand-logo{
-  left: 100px;
+    left: 100px;
 }
 
 .navbar-contenedor {
-  padding-top: 20px; 
+    padding-top: 20px; 
 }
 
 .bg-body-tertiary {
-  --bs-bg-opacity: 0;
+    --bs-bg-opacity: 0;
 }
 
 .navbar-titulo {
-  margin-left: 0;
-  font-family: var(--font-family-lato);
-  color: var(--color-uno);
+    margin-left: 0;
+    font-family: var(--font-family-lato);
+    color: var(--color-uno);
 }
 
 .navbar-titulo:after {
-  display:block;
-  content: '';
-  border-bottom: solid 1px var(--color-uno);
-  transform: scaleX(0);  
-  transition: transform 150ms ease-in-out;
+    display:block;
+    content: '';
+    border-bottom: solid 1px var(--color-uno);
+    transform: scaleX(0);  
+    transition: transform 150ms ease-in-out;
 }
 
 .navbar-titulo:hover:after {
-  color: var(--color-uno);
-  transform: scaleX(1); 
+    color: var(--color-uno);
+    transform: scaleX(1); 
 }
 
 .navbar-titulo:hover {
-  color: var(--color-uno);
+    color: var(--color-uno);
 }
 
 .navbar-logo{
-  margin-left: var(--margin-desktop-2)
+    margin-left: var(--margin-desktop-2)
 }
 
 .navbar-contenido {
-  font-family: var(--font-family-lato);
-  margin-right: var(--margin-desktop-2);
+    font-family: var(--font-family-lato);
+    margin-right: var(--margin-desktop-2);
 }
 
 .navbar-link {
-  color: var(--color-uno);
+    color: var(--color-uno);
 }
 
 .navbar-about-us {
-  margin-right: 61px;
+    margin-right: 61px;
 }
 
 .navbar-about-us:hover {
-  color: var(--color-uno);
-  text-shadow: var(--text-shadow);
-  transition: all ease 0.5s;
+    color: var(--color-uno);
+    text-shadow: var(--text-shadow);
+    transition: all ease 0.5s;
 }
 
 .navbar-about-us:after {
-  display:block;
-  content: '';
-  border-bottom: solid 1px var(--color-uno);
-  transform: scaleX(0);  
-  transition: transform 150ms ease-in-out;
+    display:block;
+    content: '';
+    border-bottom: solid 1px var(--color-uno);
+    transform: scaleX(0);  
+    transition: transform 150ms ease-in-out;
 }
 
 .navbar-about-us:hover:after {
-  color: var(--color-uno);
-  transform: scaleX(1); 
+    color: var(--color-uno);
+    transform: scaleX(1); 
 }
 
 .navbar-home {
-  margin-right: 24px;
+    margin-right: 24px;
 }
 
 .navbar-home:hover {
-  color: var(--color-uno);
-  text-shadow: var(--text-shadow);
-  transition: all ease 0.5s;
+    color: var(--color-uno);
+    text-shadow: var(--text-shadow);
+    transition: all ease 0.5s;
 }
 
 .navbar-home:after {
-  display:block;
-  content: '';
-  border-bottom: solid 1px var(--color-uno);
-  transform: scaleX(0);  
-  transition: transform 150ms ease-in-out;
+    display:block;
+    content: '';
+    border-bottom: solid 1px var(--color-uno);
+    transform: scaleX(0);  
+    transition: transform 150ms ease-in-out;
 }
 
 .navbar-home:hover:after {
-  color: var(--color-uno);
-  transform: scaleX(1); 
+    color: var(--color-uno);
+    transform: scaleX(1); 
 }
 
 .navbar-need-help {
-  margin-right: 16px;
-  color: var(--color-uno);
-  border: 2px solid var(--color-uno);
-  background-color: transparent;
-  border-radius: 8px;
-  padding-left: 34px;
-  padding-right: 34px;
+    margin-right: 16px;
+    color: var(--color-uno);
+    border: 2px solid var(--color-uno);
+    background-color: transparent;
+    border-radius: 8px;
+    padding-left: 34px;
+    padding-right: 34px;
 }
 
 .navbar-need-help:hover {
-  color: var(--color-uno);
-  font-weight: 700;
-  color: rgba(0, 0, 0, 0.7);
-  background-color: var(--color-uno);
-  border: 2px solid var(--color-uno);
-  text-shadow: var(--shadow-01);
-  box-shadow: var(--shadow-01);
-  transition: all ease 0.5s;
+    color: var(--color-uno);
+    color: rgba(0, 0, 0, 0.7);
+    background-color: var(--color-uno);
+    border: 2px solid var(--color-uno);
+    text-shadow: var(--shadow-01);
+    box-shadow: var(--shadow-01);
+    transition: all ease 0.5s;
 }
 
 .navbar-donate {
-  color: var(--color-uno);
-  border-radius: 8px;
-  font-weight: 700;
-  color: var(--color-dos);
-  background-color: var(--color-tres);
-  padding-left: 34px;
-  padding-right: 34px;
+    font-family: var(--font-family-lato);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-uno);
+    border-radius: 8px;
+    font-weight: 900;
+    color: var(--color-dos);
+    background-color: var(--color-tres);
+    padding-left: 34px;
+    padding-right: 34px;
 }
 
 .navbar-donate:hover {
-  color: var(--color-dos);
-  background: var(--color-tres);
-  box-shadow: var(--shadow-02);
-  transition: all ease 0.5s;
+    color: var(--color-dos);
+    background: var(--color-tres);
+    box-shadow: var(--shadow-02);
+    transition: all ease 0.5s;
 }
 
 /*  Header - Sección idiomas  */
 
-.contenedor-idiomas {
-  margin-top: 20px;
-}
-
 .navbar-ykp {
-  color: var(--color-uno);
-  border-radius: 8px 0 0 8px;
-  font-weight: 700;
-  color: rgba(0, 0, 0, 0.7);
-  background-color: var(--color-uno);
-  width: 67.742px;
-  border: 0;
+    color: var(--color-uno);
+    border-radius: 8px 0 0 8px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: var(--color-uno);
+    width: 67.742px;
+    border: 0;
 }
 
 .navbar-ykp:hover {
-  color: rgba(0, 0, 0, 0.7);
-  background: var(--color-uno);
-  box-shadow: var(--shadow-01);
-  transition: all ease 0.5s;    
+    color: rgba(0, 0, 0, 0.7);
+    background: var(--color-uno);
+    box-shadow: var(--shadow-01);
+    transition: all ease 0.5s;    
 }
 
 .navbar-en {
-  color: var(--color-uno);
-  border-radius: 0 8px 8px 0;
-  font-weight: 700;
-  color: var(--color-dos);
-  background-color: var(--color-tres);
-  width: 67.742px;
-  border: 0;
+    color: var(--color-uno);
+    border-radius: 0 8px 8px 0;
+    font-weight: 700;
+    color: var(--color-dos);
+    background-color: var(--color-tres);
+    width: 67.742px;
+    border: 0;
 }
 
 .navbar-en:hover {
-  color: var(--color-dos);
-  background: var(--color-tres);
-  box-shadow: var(--shadow-02);
-  transition: all ease 0.5s;   
+    color: var(--color-dos);
+    background: var(--color-tres);
+    box-shadow: var(--shadow-02);
+    transition: all ease 0.5s;   
 }
 
 /*  Header - Sección Títulos  */
 
 .header-div {
-  margin-left: var(--margin-desktop-2);
+    margin-left: var(--margin-desktop-2);
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.25rem;
 }
 
 .header-titulo {
-  color: var(--color-tres);
-  font-size: 100px;
-  font-family: var(--font-family-lato);
-  font-weight: 700;
-  line-height: 120px;
+    color: var(--color-tres);
+    font-size: 100px;
+    font-family: var(--font-family-lato);
+    font-weight: 700;
+    line-height: 120px;
+    width: 442px;
 }
 
 .header-subtitulo {
-  margin-top: 20px;
-  color: #ffffff;
-  font-size: 25px;
-  font-family: 'Poppins';
-  text-shadow: 0 0 5px #000000;
-  width: 440px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Poppins';
+    text-shadow: 0 0 5px #000000;
+    width: 440px;
 }
 
 .header-subtitulo strong {
-  font-size: 27px;
-  font-weight: bold;
+    font-size: 27px;
+    font-weight: bold;
 }
 
 /* Header - Botón donate */
 
 .home-btn {
-  background-color: var(--color-tres);
-  border-color: var(--color-tres);
-  position: absolute;
-  width: 254px;
-  height: 64px;
-  border-radius: 8px;
-  color: var(--color-dos);
-  font-size: 28px;
-  font-weight: 800;
-  font-family: 'Lato';
-  margin-top: 20px;
+    display: flex;
+    background-color: var(--color-tres);
+    border-color: var(--color-tres);
+    position: absolute;
+    width: 254px;
+    height: 64px;
+    border-radius: 8px;
+    color: var(--color-dos);
+    font-size: 28px;
+    font-family: 'Lato';
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 20px;
 }
 
 .home-btn:hover {
-  color: var(--color-dos);
-  background: var(--color-tres);
-  box-shadow: var(--shadow-02);
-  transition: all ease 0.5s;
+    color: var(--color-dos);
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 30px;
+    background: var(--color-tres);
+    box-shadow: var(--shadow-02);
+    transition: all ease 0.5s;
 }
 
 /* Header - Sección Background */
 
 .navbar-contenedor-principal {
-  height: 800px;
+    height: 800px;
 }
 
 .header-background-imagen {
-  position: absolute;
-  background: #02397A;
-  width: 100%;
-  height: 850px;
-  top: 0;
-  z-index: -1;
-  mix-blend-mode: multiply;
+    position: absolute;
+    background: #02397A;
+    object-fit: cover;
+    width: 100%;
+    height: 970px;
+    top: 0;
+    z-index: -1;
+    mix-blend-mode: multiply;
 }
 
 .header-background-mascara {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  height: 800px;
-  background: #02397A;
-  border: 1px solid #000000;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  z-index: -2;
-  mix-blend-mode: multiply;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 970px;
+    background: #02397A;
+    border: 1px solid #000000;
+    z-index: -2;
+    mix-blend-mode: multiply;
 }
 
 /* Header - Efecto wave*/
 
 .wave {
-  position: absolute;
-  width: 100%;
-  height: 160px;
-  top: 700px;
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    top: 812px;
 }
 
 /* ┌─────────────────────────────────────────────────────────┐ */
 /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
+
+
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■ INICIO CHATBOT ■■■■■■■■■■■■■■■■■■■ │ */
+/* │                                                         │ */
+/* │   COLABORADORES:                                        │ */
+/* │ ► Diego N. Cabrera                                      │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
+.chatbot-button {
+    position: fixed;
+    right: 3%;
+    bottom: 50%;
+    background-image: url("../Image/boton_chatbot.png");
+    border-radius: 100px;
+    width: 70px;
+    height: 70px;
+    background-size: 110%;
+    z-index: 3;
+}
+
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■■ FIN CHATBOT ■■■■■■■■■■■■■■■■■■■■■ │ */
 /* └─────────────────────────────────────────────────────────┘ */
 
 
@@ -281,60 +320,70 @@
 /* │ ► Manuel Florez                                         │ */
 /* └─────────────────────────────────────────────────────────┘ */
 
-.list-group{
+.list-group {
     border-radius: unset;
 }
-.list-group-item{
+
+.list-group-item {
     border-radius: unset;
     border: 1.5px solid var(--color-dos);
     padding: 0;
 }
-.ONG_element{
+
+.ONG_element {
     display: flex;
     flex-direction: row;
     padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
 }
-.ONG_element_title{
+
+.ONG_element_title {
     margin-bottom: 0;
     font-size: 1.4rem;
     color: var(--color-dos);
 }
-.ONG_element_title_arrow{
+
+.ONG_element_title_arrow {
     margin-left: auto;
     color: var(--color-dos);
     font-size: 1.5rem;
     margin-bottom: 0;
 }
-.ONG_element_collapse{
+
+.ONG_element_collapse {
     background-color: var(--color-dos);
     color: white;
     padding: 0;
 }
-.ONG_element_collapse .ONG_element_collapse_title{
+
+.ONG_element_collapse .ONG_element_collapse_title {
     font-size: 1.4rem;
     padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
     padding-bottom: 0px;
     margin: 3px;
 }
-.ONG_element_collapse_info{
+
+.ONG_element_collapse_info {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     padding: 4px;
 }
-.ONG_element_collapse_info .ONG_element_collapse_info_item{
+
+.ONG_element_collapse_info .ONG_element_collapse_info_item {
     display: grid;
     place-items: center;
     width: 150px;
     height: 60px;
 }
-.ONG_element_collapse_info .ONG_element_collapse_info_img{
+
+.ONG_element_collapse_info .ONG_element_collapse_info_img {
     background-color: white;
     color: var(--color-dos);
     border-radius: 1.5rem;
     overflow: hidden;
 }
-.ONG_element_collapse_info .ONG_element_collapse_info_item .ONG_element_collapse_info_item_btn{
+
+.ONG_element_collapse_info .ONG_element_collapse_info_item .ONG_element_collapse_info_item_btn {
     background-color: var(--color-tres);
     color: var(--color-dos);
 }
@@ -353,29 +402,22 @@
 /* │ ► Santiago Elias Carranza                               │ */
 /* └─────────────────────────────────────────────────────────┘ */
 
-.footer_container{
-    background-color: #001C3D;
-    height: 357px;
-}
+/* Footer - Contenedor principal */
 
-.footer_body{
+.footer_container {
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
-    background-color: #001C3D;
+    background-color: var(--color-cinco);
     height: 357px;
-    max-width: 95vw;
-    margin-right:  var(--margin-desktop-2);
-    margin-left:  var(--margin-desktop-2);
+    padding-right: var(--margin-desktop-2);
+    padding-left: var(--margin-desktop-2);
 }
 
-.footer_body a,
-.footer_body p{
-    text-decoration:none;
-    color: #FAFAFB;
-}
+/* Footer - Redes Sociales */
 
-.footer_redsocial{
+.footer_redsocial {
     display: flex;
     justify-content: space-between;
     padding-left: .7em;
@@ -384,15 +426,48 @@
     margin-bottom: 3em;
 }
 
-.footer_redsocial img{
+.footer_redsocial img {
     cursor: pointer;
     margin-right:0;
 }
-    
-.footer_redsocial a{
+
+.link-whatsapp {
+    text-decoration: none;
+    color: var(--color-uno);
+}
+
+.link-whatsapp-text {
+    position: relative;
     display: inline-block;
     padding-left: 1em;
+    top: 2px;
 }
+
+.link-instagram {
+    text-decoration: none;
+    color: var(--color-uno);
+}
+
+.link-instagram-text {
+    position: relative;
+    display: inline-block;
+    padding-left: 1em;
+    top: 2px;
+}
+
+.link-facebook {
+    text-decoration: none;
+    color: var(--color-uno);
+}
+
+.link-facebook-text {
+    position: relative;
+    display: inline-block;
+    padding-left: 1em;
+    top: 2px;
+}
+
+/* Footer - Línea intermedia */
 
 .footer_linea {
     border-bottom: solid .1px #FAFAFB;
@@ -400,7 +475,9 @@
     top: 1.5em;
 }
 
-.footer_routes{
+/* Footer - Routes */
+
+.footer_routes {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -409,27 +486,27 @@
     margin-top: 3em;
 }
 
-.footer_routes_logo{
+.footer_routes_logo {
     display: flex;
     align-items: center;
     margin-right: 1vw;
     position: relative;
-	bottom: .1em;
+    bottom: .1em;
 }
 
-.footer_routes_logo img{
+.footer_routes_logo img {
     width:91px;
     height:104px;
     position: relative;
     bottom: .2em;
 }
 
-.footer_routes_logo p{
+.footer_routes_logo p {
     font-weight: bold;
     padding-left: .3em;
 }
 
-.footer_routes_container_home_navigation{
+.footer_routes_container_home_navigation {
     display: flex;
     justify-content: space-between;
     width: 39vw;
@@ -440,53 +517,11 @@
     flex-wrap: wrap;
 }
 
-.footer_routes_home-aboutUs a:nth-child(1){
-    padding-right: 2em;
-}
-
-.footer_routes_home-aboutUs div:nth-child(1){
-    position: relative;
-    bottom: 0em;
-}
-
 .footer_routes_navigation {
     display: flex;
     flex-direction:row;
     position: relative;
     bottom: .6em;
-}
-
-.footer_routes_navigation div:nth-child(3),
-.footer_routes_navigation div:nth-child(4){
-    display: flex;
-    align-items: center;
-    border-radius: .5em;
-    width: 163px;
-    height: 48px;
-}
-
-.footer_routes_navigation div:nth-child(3) a,
-.footer_routes_navigation div:nth-child(4) a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 163px;
-    height: 48px; 
-}
-
-.footer_routes_navigation div:nth-child(3) {
-    border:3px solid #FAFAFB;
-    margin-right: 1em;
-    margin-left: 3vw;
-}
-
-.footer_routes_navigation div:nth-child(4){
-    background-color: #FFD500;
-}
-
-.footer_routes_navigation div:nth-child(4) a{
-    font-weight: bold;
-    color: #02397A;
 }
 
 /* ┌─────────────────────────────────────────────────────────┐ */
@@ -495,22 +530,497 @@
 
 
 
-/* ╔═════════════════════════════════════════════════════════════════╗ */
-/* ║                   MEDIA QUERY - 576 - Mobile                    ║ */
-/* ╚═════════════════════════════════════════════════════════════════╝ */
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ████████████████████████ MEDIA QUERY MOBILE ███████████████████████ ║
+    ║ ████████████████████████████ 320 - 480  ███████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
 
-@media (min-width: 0px ) and (max-width: 576px) {
+@media (min-width: 320px ) and (max-width: 480px) {
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* │ ► Luis Romano                                           │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .mobile-navbar-container {
+        padding-top: 8px;
+    }
+
+    /* Header - Navbar menu button */
+
+    .mobile-navbar-container {
+        background-color: var(--color-cinco)!important;
+    }
+
+    .dropdown-toggle-nav {
+        padding-left: 20px;
+        border-radius: 0;
+        margin-left: -15px;
+    }
+
+    .dropdown-toggle::after {
+        content: none;
+    }
+
+    .dropdown-navigation {
+        left: 0;
+        right: 0;
+        border: solid 1px black;
+        border-radius: 0;
+        background-color: var(--color-cinco);
+        --bs-dropdown-border-color: 0;
+    }
+
+    .dropdown-navigation[data-bs-popper] {
+        margin-top: 0;
+    }
+
+    .dropdown-item-nav {
+        padding-left: 24px;
+        padding-bottom: 10px;
+    }
+
+    /* Header - Navbar languages button */
+
+    .dropdown-languages {
+        right: 2px;
+        border: solid 1px black;
+        border-radius: 0;
+        background-color: var(--color-cinco);
+    }
+
+    .dropdown-languages[data-bs-popper] {
+        left: auto;
+    }
+
+    .dropdown-item {
+        color: var(--color-uno);
+        font-family: var(--font-family-lato);
+    }
+
+    /* Header - Opciones */
+
+    .header-options {
+        padding-top: 8px;
+        color: var(--color-uno);
+        height: 60px;
+        background-color: var(--color-cinco);
+    }
+
+    .header-options-cuadro {
+        margin: auto;
+        width: 98%;
+        background-color: var(--color-seis);
+        border-radius: 10px;
+        height: 43px;
+        
+    }
+
+    .option-donate {
+        display: inline-block;
+        background-color: var(--color-siete);
+        font-family: var(--font-family-lato);
+        color: var(--color-uno);
+        margin: 2px;
+        padding-top: 4px;
+        border-radius: 10px;
+        width: 50%;
+        height: 90%;
+        text-align: center;
+    }
+
+    .option-need-help {
+        display: inline-block;
+        color: var(--color-uno);
+        font-family: var(--font-family-lato);
+        margin: 2px;
+        padding-top: 4px;
+        border-radius: 10px;
+        width: 45%;
+        height: 90%;
+        text-align: center;
+    }
+
+
+    /* Header - Encabezado con títulos */
+
+    .tittles-container {
+        height: 698px;
+    }
+
+    /* Header - Background */
+
+    .bg-home-mobile {
+        position: absolute;
+        width: 100%;
+        height: 700px;
+        top: 54px;
+        z-index: -1;
+        mix-blend-mode: multiply;
+        background-blend-mode: luminosity;
+    }
+
+    /* Header - Máscara de color azul */
+
+    .header-background-mascara {
+        position: absolute;
+        width: 100%;
+        height: 758px;
+        top: 0;
+        background: #02397A;
+        border: 0px solid;
+        z-index: -2;
+        mix-blend-mode: multiply;
+    }
+
+    /* Header - Efecto de wave */
+
+    .wave-mobile {
+        position: absolute;
+        top: 720px;
+        width: 100%;
+    }
+
+    /* Header - Títulos */
+
+    .titulos {
+        margin-left: 4%;
+    }
+
+    .header-titulo {
+        font-size: 56px;
+        width: 80%;
+        line-height: 56px;
+        padding-top: 50px;
+    }
+
+    .header-subtitulo {
+        font-family: var(--font-family-poppins);
+        font-weight: 200;
+        font-size: 17px;
+        width: 55%;
+        line-height: 24px;  
+        margin-top: 25px;
+    }
+
+    .header-subtitulo strong {
+        font-size: 17px;
+        font-weight: 600;
+        width: 80%;
+        line-height: 24px;          
+    }
+
+    .home-btn {
+        width: 150px;
+        height: 38px;
+        border-radius: 8px;
+        color: var(--color-dos);
+        font-size: 19px;
+        margin-top: 40px;
+    }
+
+    .home-btn:hover {
+        font-size: 20px;
+    }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+  
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO CHATBOT ■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .chatbot-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN CHATBOT ■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego Valentino Pardo Yepez                           │ */
+    /* │ ► Santiago Elias Carranza                               │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    /* Footer - Contenedor principal */
+
+    .footer_container {
+        background-color: #001C3D;
+        height: 130px;
+        padding-left: 14px;
+        padding-right: 14px;
+        overflow: hidden;
+    }
+
+    /* Footer - Redes Sociales */
+
+    .footer_redsocial {
+        justify-content: flex-start;
+        flex-direction: row;
+        top: 23%;
+        margin-bottom: 0;
+        width: 50%;
+    }
+
+    .footer_redsocial img {
+        cursor: pointer;
+        width: 27px;
+        height: 27px;
+    }
+
+    .footer_redsocial_instragram img {
+        border-radius: 100%;
+        width: 29px;
+        height: 29px;
+        position: relative;
+        right: 0; 
+    }
+
+    .footer_redsocial_facebook img {
+        position: relative;
+        right:-4.7em;
+    }
+
+    .link-instagram-text {
+        display: none;
+    }
+
+    .link-facebook-text {
+        display: none;
+    }
+
+    .link-whatsapp-text {
+        display: none;
+    }
+
+    /* Footer - Línea intermedia */
+
+    .footer_linea {
+        display: none;
+    }
+
+    /* Footer - Routes */
+
+    .footer_routes {
+        margin-top: 0.8em;
+    }
+
+    .footer_routes_logo {
+        margin-right: -2px;
+    }
+
+    .footer_routes_logo img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .footer-titulo {
+        margin-bottom: 12px;
+        margin-left: 5px;
+        font-family: var(--font-family-poppins);
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 10px;
+        letter-spacing: 0.005em;
+    }
+
+    .footer_routes_home-aboutUs {
+        display: none;
+    }
+
+    .footer_routes_navigation {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        border-radius:8px; 
+        position: relative;
+        top: -2.7em;
+        left: 15%;
+    }
+
+    .footer-need-help {
+        margin-top: 10px;
+        width: 110px;
+        white-space: nowrap;
+        padding-left: 14px;
+    }
+
+    .footer-donate {
+        width: 110px;
+        margin-top: 12px;
+    }
     
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
 }
 
 
 
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ████████████████████████ MEDIA QUERY TABLET ███████████████████████ ║
+    ║ ████████████████████████████ 481 - 992  ███████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
 
-/* ╔═════════════════════════════════════════════════════════════════╗ */
-/* ║                   MEDIA QUERY - 992 - Mobile                    ║ */
-/* ╚═════════════════════════════════════════════════════════════════╝ */
+@media (min-width: 481px ) and (max-width: 992px) {
 
-@media (min-width: 577px ) and (max-width: 992px) {
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* │ ► Luis Romano                                           │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    /* Header - Navbar */
+
+    .navbar-mobile {
+        margin-left: var(--margin-desktop-1);
+        margin-right: var(--margin-desktop-1);
+    }
+
+    .navbar-logo{
+        margin-left: 0;
+    }
+
+    .navbar-contenedor {
+        margin-right: 0;
+    }
+
+    .navbar-titulo {
+        display: none;
+    }
+    
+    .navbar-contenido {
+        font-family: var(--font-family-lato);
+        margin-right: var(--margin-desktop-1);
+    }
+
+    .navbar-home {
+        font-size: 0.9em;
+        margin-right: 1%;
+    }
+
+    .navbar-about-us {
+        font-size: 0.9em;
+        margin-right: 2%;
+        white-space: nowrap;
+    }
+
+    .navbar-need-help {
+        margin-right: 2%;
+        border: 1px solid var(--color-uno);
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    .navbar-donate {
+        color: var(--color-uno);
+        border-radius: 8px;
+        font-weight: 900;
+        color: var(--color-dos);
+        background-color: var(--color-tres);
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: -24px;
+    }
+
+    /*  Header - Sección idiomas  */
+
+    .navbar-en {
+        margin-right: 20%;
+    }
+
+    /* Header - Sección Títulos */
+
+    .header-div {
+        margin-left: var(--margin-desktop-1);
+    }
+
+    .header-titulo {
+        font-size: 80px;
+        font-family: var(--font-family-lato);
+        font-weight: 700;
+        line-height: 100px;
+        width: 442px;
+    }
+    
+    .header-subtitulo {
+        font-size: 20px;
+        font-family: 'Poppins';
+        text-shadow: 0 0 5px #000000;
+        width: 440px;
+    }
+    
+    .header-subtitulo strong {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;  
+    }
+
+    /* Header - Background */
+    
+    .header-background-imagen {
+        height: 870px;
+    }
+
+    /* Header - Máscara azul */
+
+    .header-background-mascara {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 870px;
+        background: #02397A;
+        border: 1px solid #000000;
+        z-index: -2;
+        mix-blend-mode: multiply;
+    }
+    
+    /* Header - Efecto wave*/
+    
+    .wave {
+        position: absolute;
+        width: 100%;
+        height: 130px;
+        top: 772px;
+    }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■ INICIO CONTENIDO ■■■■■■■■■■■■■■■■■■■ │ */
@@ -519,7 +1029,7 @@
     /* │ ► Manuel Florez                                         │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-    .ONG_element_collapse_info .ONG_element_collapse_info_item{
+    .ONG_element_collapse_info .ONG_element_collapse_info_item {
         width: 200px;
         height: 80px;
     }
@@ -529,7 +1039,7 @@
     /* └─────────────────────────────────────────────────────────┘ */
 
 
-    
+
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
     /* │                                                         │ */
@@ -538,51 +1048,89 @@
     /* │ ► Santiago Elias Carranza                               │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-    .footer_routes_logo img {
-        width: 81px;
-        height: 81px;
+    .footer_container{
+        background-color: var(--color-cinco);
+        height: 150px;
+        max-width: 100vw;
+        margin-right: 0;
+        margin-left:  0;
+        padding-bottom: 1em;
+    }
+
+    .footer_redsocial{
+        justify-content: flex-end;
+        flex-direction:row-reverse;
+        top: 1.2em;
+        padding-left: 1.5em;
+        margin-bottom: 0;
+    }
+
+    .footer_redsocial img{
+        cursor: pointer;
+        margin-right:2.9em;
+        width: 27px;
+        height: 27px;
+    }
+
+    .footer_redsocial_instragram img{
+        border-radius: 100%;
+        width: 29px;
+        height: 29px;
         position: relative;
-        bottom: 0.2em;
+        right:4.6em; 
     }
 
-    .footer_routes_logo p span{
-        display: block;
-    }
-
-    .footer_routes_container_home_navigation {
-        width: 42vw;
-    }
-
-    .footer_routes_home-aboutUs {
+    .footer_redsocial_facebook img{
         position: relative;
-        top: .4em;
+        right:-4.7em;
+    }
+
+    .footer_redsocial a{
+        display: none;
+    }
+
+    .footer_linea{
+        display: none;
+    }
+
+    .footer_routes{
+        margin-top: 2em;
+    }
+
+    .footer_routes_logo{
+        margin-right: 0;
+    }
+
+    .footer_routes_logo img{
+        width: 52px;
+        height: 54px;
+        position: relative;
+        bottom: .2em;
+        margin-left: 1em;
+    }
+
+    .footer_routes_logo p{
+        font-weight:normal;
+        width: 150px;
+        padding-left: .7em;
+        position: relative;
+        top: .3em;
+    }
+
+    .footer_routes_container_home_navigation{
+        width: 100vw;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .footer_routes_home-aboutUs{
+        display: none;
+    }
+
+    .footer_routes_navigation{
         display: flex;
         flex-direction: column;
-    }
-
-    .footer_routes_navigation {
-        display: flex;
-        flex-direction:column;
         position: relative;
-        bottom: .6em;
-    }
-
-    .footer_routes_navigation div:nth-child(3),
-    .footer_routes_navigation div:nth-child(4){
-        position: relative;
-        top: -.2em;
-        width: 106px;
-        height: 38px;
-    }
-
-    .footer_routes_navigation div:nth-child(4){
-        position: relative;        
-        top: 1px;
-    }
-
-    .footer_routes_navigation div:nth-child(3) {
-        margin-right: 0;
-        margin-left: 0;
     }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
@@ -593,9 +1141,16 @@
 
 
 
-/* ╔═════════════════════════════════════════════════════════════════╗ */
-/* ║                   MEDIA QUERY - 1200 - Desktop                  ║ */
-/* ╚═════════════════════════════════════════════════════════════════╝ */
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████ MEDIA QUERY DESKTOP ███████████████████████ ║
+    ║ ███████████████████████████ 993 - 1299  ███████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
 
 @media(min-width: 993px) and (max-width: 1299px) {
 
@@ -636,20 +1191,23 @@
     /* │ ► Manuel Florez                                         │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-    .list-group{
+    .list-group {
         border-radius: 1.5rem;
     }
-    .list-group-item{
+
+    .list-group-item {
         border: 2px solid var(--color-dos) !important;
         border-radius: 1.5rem;
         overflow: hidden;
         height: fit-content;
         margin-bottom: 1rem;
     }
-    .ONG_element_collapse_info{
+
+    .ONG_element_collapse_info {
         padding: 6px;
     }
-    .ONG_element_collapse_info .ONG_element_collapse_info_item{
+
+    .ONG_element_collapse_info .ONG_element_collapse_info_item {
         width: 300px;
         height: 90px;
     }
@@ -659,7 +1217,7 @@
     /* └─────────────────────────────────────────────────────────┘ */
 
 
-    
+
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
     /* │                                                         │ */
@@ -668,30 +1226,29 @@
     /* │ ► Santiago Elias Carranza                               │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-    .footer_routes_container_home_navigation {
-        width: 41vw;
-    }
-
-    .footer_routes_navigation div:nth-child(3),
-    .footer_routes_navigation div:nth-child(4){
-    display: flex;
-    align-items: center;
-    border-radius: .5em;
-    width: 146px;
-    height: 48px;
+    .footer_container {
+        padding-right: var(--margin-desktop-1);
+        padding-left: var(--margin-desktop-1);
     }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
     /* └─────────────────────────────────────────────────────────┘ */
-
+    
 }
 
 
 
-/* ╔═════════════════════════════════════════════════════════════════╗ */
-/* ║              MEDIA QUERY - Extra Large - Desktop                ║ */
-/* ╚═════════════════════════════════════════════════════════════════╝ */
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ██████████████████████ MEDIA QUERY DESKTOP HD █████████████████████ ║
+    ║ ████████████████████████████ 1300 - ∞  ████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
 
 @media(min-width: 1300px) {
 
