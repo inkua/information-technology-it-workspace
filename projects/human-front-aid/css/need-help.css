@@ -197,7 +197,7 @@ a {
     font-family: var(--font-family-lato);
     font-weight: 700;
     line-height: 120px;
-    width: 442px;
+    width: 600px;
 }
 
 .header-subtitulo {
@@ -206,7 +206,7 @@ a {
     font-size: 25px;
     font-family: 'Poppins';
     text-shadow: 0 0 5px #000000;
-    width: 440px;
+    width: 600px;
 }
 
 .header-subtitulo strong {
@@ -248,7 +248,7 @@ a {
 /* Header - Sección Background */
 
 .navbar-contenedor-principal {
-    height: 800px;
+    height: 1000px;
 }
 
 .header-background-imagen {
@@ -319,6 +319,30 @@ a {
 /* │   COLABORADORES:                                        │ */
 /* │ ► Manuel Florez                                         │ */
 /* └─────────────────────────────────────────────────────────┘ */
+
+.content-container {
+    margin-bottom: 25px;
+}
+
+.ongs-legend {
+    color: var(--color-dos);
+    font-family: var(--font-family-lato);
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.3rem;
+}
+
+.ongs-legend-span {
+    font-weight: 800;
+}
+
+.list-group-title {
+    color: var(--color-dos);
+    font-family: var(--font-family-lato);
+    font-weight: 800;
+    font-size: 1.5rem;
+}
 
 .list-group {
     border-radius: unset;
@@ -567,10 +591,6 @@ a {
         margin-left: -15px;
     }
 
-    .dropdown-toggle::after {
-        content: none;
-    }
-
     .dropdown-navigation {
         left: 0;
         right: 0;
@@ -622,30 +642,30 @@ a {
         background-color: var(--color-seis);
         border-radius: 10px;
         height: 43px;
-        
     }
 
     .option-donate {
         display: inline-block;
-        background-color: var(--color-siete);
-        font-family: var(--font-family-lato);
         color: var(--color-uno);
+        font-family: var(--font-family-lato);
         margin: 2px;
         padding-top: 4px;
         border-radius: 10px;
-        width: 50%;
+        width: 46.3%;
         height: 90%;
         text-align: center;
     }
 
     .option-need-help {
         display: inline-block;
-        color: var(--color-uno);
+        background-color: var(--color-tres);
         font-family: var(--font-family-lato);
+        color: var(--color-cinco);
+        font-weight: 700;
         margin: 2px;
         padding-top: 4px;
         border-radius: 10px;
-        width: 45%;
+        width: 50%;
         height: 90%;
         text-align: center;
     }
@@ -707,9 +727,10 @@ a {
         font-family: var(--font-family-poppins);
         font-weight: 200;
         font-size: 17px;
-        width: 55%;
+        width: 60%;
         line-height: 24px;  
         margin-top: 25px;
+        text-align: justify;
     }
 
     .header-subtitulo strong {
@@ -1029,6 +1050,10 @@ a {
     /* │ ► Manuel Florez                                         │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
+    .ongs-legend-span {
+        font-weight: 900;
+    }
+
     .ONG_element_collapse_info .ONG_element_collapse_info_item {
         width: 200px;
         height: 80px;
@@ -1191,6 +1216,10 @@ a {
     /* │ ► Manuel Florez                                         │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
+    .ongs-legend {
+        font-size: 1.8rem;
+    }
+
     .list-group {
         border-radius: 1.5rem;
     }
@@ -1259,20 +1288,27 @@ a {
     /* │ ► Manuel Florez                                         │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-    .list-group{
+    .ongs-legend {
+        font-size: 1.8rem;
+    }
+
+    .list-group {
         border-radius: 1.5rem;
     }
-    .list-group-item{
+
+    .list-group-item {
         border: 2px solid var(--color-dos) !important;
         border-radius: 1.5rem;
         overflow: hidden;
         height: fit-content;
         margin-bottom: 1rem;
     }
-    .ONG_element_collapse_info{
+
+    .ONG_element_collapse_info {
         padding: 6px;
     }
-    .ONG_element_collapse_info .ONG_element_collapse_info_item{
+
+    .ONG_element_collapse_info .ONG_element_collapse_info_item {
         width: 300px;
         height: 90px;
     }
