@@ -8,12 +8,12 @@
 
 /*  Header - Sección Navbar  */
 
-.navbar-brand-logo{
+.navbar-brand-logo {
     left: 100px;
 }
 
 .navbar-contenedor {
-    padding-top: 20px; 
+    padding-top: 20px;
 }
 
 .bg-body-tertiary {
@@ -27,23 +27,23 @@
 }
 
 .navbar-titulo:after {
-    display:block;
+    display: block;
     content: '';
     border-bottom: solid 1px var(--color-uno);
-    transform: scaleX(0);  
+    transform: scaleX(0);
     transition: transform 150ms ease-in-out;
 }
 
 .navbar-titulo:hover:after {
     color: var(--color-uno);
-    transform: scaleX(1); 
+    transform: scaleX(1);
 }
 
 .navbar-titulo:hover {
     color: var(--color-uno);
 }
 
-.navbar-logo{
+.navbar-logo {
     margin-left: var(--margin-desktop-2)
 }
 
@@ -67,16 +67,16 @@
 }
 
 .navbar-about-us:after {
-    display:block;
+    display: block;
     content: '';
     border-bottom: solid 1px var(--color-uno);
-    transform: scaleX(0);  
+    transform: scaleX(0);
     transition: transform 150ms ease-in-out;
 }
 
 .navbar-about-us:hover:after {
     color: var(--color-uno);
-    transform: scaleX(1); 
+    transform: scaleX(1);
 }
 
 .navbar-home {
@@ -90,16 +90,16 @@
 }
 
 .navbar-home:after {
-    display:block;
+    display: block;
     content: '';
     border-bottom: solid 1px var(--color-uno);
-    transform: scaleX(0);  
+    transform: scaleX(0);
     transition: transform 150ms ease-in-out;
 }
 
 .navbar-home:hover:after {
     color: var(--color-uno);
-    transform: scaleX(1); 
+    transform: scaleX(1);
 }
 
 .navbar-need-help {
@@ -159,7 +159,7 @@
     color: rgba(0, 0, 0, 0.7);
     background: var(--color-uno);
     box-shadow: var(--shadow-01);
-    transition: all ease 0.5s;    
+    transition: all ease 0.5s;
 }
 
 .navbar-en {
@@ -176,7 +176,7 @@
     color: var(--color-dos);
     background: var(--color-tres);
     box-shadow: var(--shadow-02);
-    transition: all ease 0.5s;   
+    transition: all ease 0.5s;
 }
 
 /*  Header - Sección Títulos  */
@@ -306,7 +306,7 @@
 /* └─────────────────────────────────────────────────────────┘ */
 
 
-    
+
 /* ┌─────────────────────────────────────────────────────────┐ */
 /* │ ■■■■■■■■■■■■■■■■■■ INICIO ABOUT-US ■■■■■■■■■■■■■■■■■■■■ │ */
 /* │                                                         │ */
@@ -384,7 +384,7 @@
     transition: all ease 0.5s;
 }
 
-.box-about-us{
+.box-about-us {
     flex: auto;
     width: 400px;
     height: 400px;
@@ -424,7 +424,7 @@
     font-size: 18px;
     display: flex;
     justify-content: center;
-    width: fit-content;  
+    width: fit-content;
 }
 
 .swiper-slide-p img {
@@ -435,7 +435,7 @@
 }
 
 .memberCard {
-    background-color:#003A7D;
+    background-color: #003A7D;
     width: 145px;
     height: fit-content;
     color: black;
@@ -444,13 +444,15 @@
     border-radius: 5px;
     overflow: hidden;
 }
-.memberCard-one{
+
+.memberCard-one {
     width: 100vw;
     height: auto;
     display: flex;
     align-items: center;
 }
-.memberCard .memberImage{
+
+.memberCard .memberImage {
     background-image: url('../Image/Imagen_Reto.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -460,7 +462,8 @@
     display: flex;
     justify-content: right;
 }
-.memberCard .memberImage .memberMoreInfo{
+
+.memberCard .memberImage .memberMoreInfo {
     width: 23px;
     height: 23px;
     background-color: #F8D714;
@@ -472,8 +475,12 @@
     border-radius: 15px;
     margin: 5px;
 }
-.memberCard .memberImage .memberMoreInfo .i{ margin: 0px;}
-.memberCard .memberContent{
+
+.memberCard .memberImage .memberMoreInfo .i {
+    margin: 0px;
+}
+
+.memberCard .memberContent {
     color: #fff;
     width: 145px;
     height: 90px;
@@ -481,19 +488,22 @@
     display: flex;
     flex-direction: column;
 }
-.memberCard .memberContent .memberName{
+
+.memberCard .memberContent .memberName {
     text-align: center;
     font-weight: 400;
     font-size: 0.8rem;
     margin: 0px;
 }
-.memberCard .memberContent .memberInfo{
+
+.memberCard .memberContent .memberInfo {
     width: 80%;
     font-weight: 300;
     font-size: x-small;
     margin: 2px 0px 0px 0px;
 }
-.memberCard .memberContent .memberorg{
+
+.memberCard .memberContent .memberorg {
     margin: auto 0px 0px 0px;
     padding-bottom: 2px;
     font-size: 0.8rem;
@@ -512,7 +522,7 @@
 /* │ ► Federico Manuel Peralta                               │ */
 /* └─────────────────────────────────────────────────────────┘ */
 
-.text-supporters{
+.text-supporters {
     text-decoration: none;
     font-family: var(--font-family-lato);
     color: var(--color-dos);
@@ -524,8 +534,8 @@
     font-family: var(--font-family-lato);
     color: var(--color-dos);
     margin-top: 4rem;
-	font-weight: 700;
-	font-size: 40px;
+    font-weight: 700;
+    font-size: 40px;
 }
 
 .swiperSupporters {
@@ -577,7 +587,7 @@
     width: 80%;
     height: 480px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
 
 .swiper-slide-pan {
@@ -587,7 +597,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 5px -5px 3px 0px rgba(0,0,0,0.12);    
+    box-shadow: 5px -5px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .swiper-slide-pan:hover {
@@ -600,7 +610,7 @@
     height: 100%;
     border-radius: 20px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
 
 .swiper-slide-btn {
@@ -624,7 +634,11 @@ a {
     bottom: 20px;
     padding-top: 10px;
 }
-  
+
+.swiper-pagination-pan {
+    margin-bottom: 225px;
+}
+
 
 
 /* ┌─────────────────────────────────────────────────────────┐ */
@@ -696,7 +710,7 @@ a {
 
 /* Footer - Redes Sociales */
 
-.footer_redsocial{
+.footer_redsocial {
     display: flex;
     justify-content: space-between;
     padding-left: .7em;
@@ -705,9 +719,9 @@ a {
     margin-bottom: 3em;
 }
 
-.footer_redsocial img{
+.footer_redsocial img {
     cursor: pointer;
-    margin-right:0;
+    margin-right: 0;
 }
 
 .link-whatsapp {
@@ -770,12 +784,12 @@ a {
     align-items: center;
     margin-right: 1vw;
     position: relative;
-	bottom: .1em;
+    bottom: .1em;
 }
 
 .footer_routes_logo img {
-    width:91px;
-    height:104px;
+    width: 91px;
+    height: 104px;
     position: relative;
     bottom: .2em;
 }
@@ -798,7 +812,7 @@ a {
 
 .footer_routes_navigation {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     position: relative;
     bottom: .6em;
 }
@@ -820,7 +834,7 @@ a {
     ╚═════════════════════════════════════════════════════════════════════╝
 */
 
-@media (min-width: 320px ) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
 
 
     /* ┌─────────────────────────────────────────────────────────┐ */
@@ -838,7 +852,7 @@ a {
     /* Header - Navbar menu button */
 
     .mobile-navbar-container {
-        background-color: var(--color-cinco)!important;
+        background-color: var(--color-cinco) !important;
     }
 
     .dropdown-toggle-nav {
@@ -901,7 +915,7 @@ a {
         width: 98%;
         background-color: var(--color-seis);
         border-radius: 10px;
-        height: 43px; 
+        height: 43px;
     }
 
     .option-donate {
@@ -987,7 +1001,7 @@ a {
         font-weight: 200;
         font-size: 17px;
         width: 65%;
-        line-height: 24px;  
+        line-height: 24px;
         margin-top: 25px;
     }
 
@@ -995,7 +1009,7 @@ a {
         font-size: 17px;
         font-weight: 600;
         width: 80%;
-        line-height: 24px;          
+        line-height: 24px;
     }
 
     .home-btn {
@@ -1041,7 +1055,7 @@ a {
     /* │   COLABORADORES:                                        │ */
     /* │ ► Luis Fernando Callisaya Surco                         │ */
     /* └─────────────────────────────────────────────────────────┘ */
-    
+
     .about-us {
         margin-top: 0;
         display: flex;
@@ -1112,7 +1126,7 @@ a {
     /* ponerle nombre al swiper */
 
     .swiper-pagination-pan {
-        margin-bottom: 200px;    
+        margin-bottom: 225px;
     }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
@@ -1128,7 +1142,7 @@ a {
     /* │ ► Federico Manuel Peralta                               │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-     .swiperSupporters {
+    .swiperSupporters {
         height: 15%;
     }
 
@@ -1154,7 +1168,7 @@ a {
     /* │ ■■■■■■■■■■■■■■■■■■■■■■ FIN MAP ■■■■■■■■■■■■■■■■■■■■■■■■ │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-    
+
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
@@ -1195,12 +1209,12 @@ a {
         width: 29px;
         height: 29px;
         position: relative;
-        right: 0; 
+        right: 0;
     }
 
     .footer_redsocial_facebook img {
         position: relative;
-        right:-4.7em;
+        right: -4.7em;
     }
 
     .link-instagram-text {
@@ -1254,7 +1268,7 @@ a {
         display: flex;
         flex-direction: column;
         position: relative;
-        border-radius:8px; 
+        border-radius: 8px;
         position: relative;
         top: -2.7em;
         left: 15%;
@@ -1271,7 +1285,7 @@ a {
         width: 110px;
         margin-top: 12px;
     }
-    
+
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
     /* └─────────────────────────────────────────────────────────┘ */
@@ -1290,7 +1304,7 @@ a {
     ╚═════════════════════════════════════════════════════════════════════╝
 */
 
-@media (min-width: 481px ) and (max-width: 992px) {
+@media (min-width: 481px) and (max-width: 992px) {
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
@@ -1307,7 +1321,7 @@ a {
         margin-right: var(--margin-desktop-1);
     }
 
-    .navbar-logo{
+    .navbar-logo {
         margin-left: 0;
     }
 
@@ -1318,7 +1332,7 @@ a {
     .navbar-titulo {
         display: none;
     }
-    
+
     .navbar-contenido {
         font-family: var(--font-family-lato);
         margin-right: var(--margin-desktop-1);
@@ -1373,22 +1387,22 @@ a {
         line-height: 100px;
         width: 442px;
     }
-    
+
     .header-subtitulo {
         font-size: 20px;
         font-family: 'Poppins';
         text-shadow: 0 0 5px #000000;
         width: 440px;
     }
-    
+
     .header-subtitulo strong {
         font-size: 20px;
         font-weight: 600;
-        line-height: 24px;  
+        line-height: 24px;
     }
 
     /* Header - Background */
-    
+
     .header-background-imagen {
         height: 870px;
     }
@@ -1405,9 +1419,9 @@ a {
         z-index: -2;
         mix-blend-mode: multiply;
     }
-    
+
     /* Header - Efecto wave*/
-    
+
     .wave {
         position: absolute;
         width: 100%;
@@ -1434,21 +1448,23 @@ a {
         display: flex;
         flex-direction: column-reverse;
         padding: 65px 0;
-      }
-      .about-us .about-us-texto {
+    }
+
+    .about-us .about-us-texto {
         width: 90%;
         padding: 40px 0;
         margin: 0 auto;
         justify-content: space-around;
         font-size: 16px;
-      }
-      .about-us .about-us-image-imagen {
+    }
+
+    .about-us .about-us-image-imagen {
         width: 80%;
         margin: 0 auto;
         height: 283px;
         margin: 10px;
         padding: 1px;
-      }
+    }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN ABOUT US ■■■■■■■■■■■■■■■■■■■■ │ */
@@ -1523,13 +1539,13 @@ a {
     /* │ ► Federico Manuel Peralta                               │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-    .text-supporters{
+    .text-supporters {
         text-decoration: none;
         font-family: var(--font-family-lato);
         color: var(--color-dos);
         padding-left: 15%;
     }
-    
+
     .tittle-supporters {
         margin-left: var(--margin-desktop-2);
         font-family: var(--font-family-lato);
@@ -1538,12 +1554,12 @@ a {
         font-weight: 700;
         font-size: 40px;
     }
-    
+
     .swiperSupporters {
         width: 80%;
         height: 20%;
     }
-    
+
     .slideSupporters {
         text-align: center;
         font-size: 18px;
@@ -1552,7 +1568,7 @@ a {
         align-items: center;
         height: 70%;
     }
-    
+
     .img-supporters {
         display: block;
         width: 30%;
@@ -1564,7 +1580,23 @@ a {
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■ FIN SUPPORTERS ■■■■■■■■■■■■■■■■■■■■ │ */
     /* └─────────────────────────────────────────────────────────┘ */
-    
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■ INICIO PRESS-AND-NEWS ■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Luis Romano                                           │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .press {
+        margin-left: var(--margin-desktop-1);
+    }
+
+    .swiper-pagination-pan {
+        margin-bottom: 230px;
+    }
+
+
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
@@ -1574,60 +1606,60 @@ a {
     /* │ ► Santiago Elias Carranza                               │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-    .footer_container{
+    .footer_container {
         background-color: var(--color-cinco);
         height: 150px;
         max-width: 100vw;
         margin-right: 0;
-        margin-left:  0;
+        margin-left: 0;
         padding-bottom: 1em;
     }
 
-    .footer_redsocial{
+    .footer_redsocial {
         justify-content: flex-end;
-        flex-direction:row-reverse;
+        flex-direction: row-reverse;
         top: 1.2em;
         padding-left: 1.5em;
         margin-bottom: 0;
     }
 
-    .footer_redsocial img{
+    .footer_redsocial img {
         cursor: pointer;
-        margin-right:2.9em;
+        margin-right: 2.9em;
         width: 27px;
         height: 27px;
     }
 
-    .footer_redsocial_instragram img{
+    .footer_redsocial_instragram img {
         border-radius: 100%;
         width: 29px;
         height: 29px;
         position: relative;
-        right:4.6em; 
+        right: 4.6em;
     }
 
-    .footer_redsocial_facebook img{
+    .footer_redsocial_facebook img {
         position: relative;
-        right:-4.7em;
+        right: -4.7em;
     }
 
-    .footer_redsocial a{
+    .footer_redsocial a {
         display: none;
     }
 
-    .footer_linea{
+    .footer_linea {
         display: none;
     }
 
-    .footer_routes{
+    .footer_routes {
         margin-top: 2em;
     }
 
-    .footer_routes_logo{
+    .footer_routes_logo {
         margin-right: 0;
     }
 
-    .footer_routes_logo img{
+    .footer_routes_logo img {
         width: 52px;
         height: 54px;
         position: relative;
@@ -1635,25 +1667,25 @@ a {
         margin-left: 1em;
     }
 
-    .footer_routes_logo p{
-        font-weight:normal;
+    .footer_routes_logo p {
+        font-weight: normal;
         width: 150px;
         padding-left: .7em;
         position: relative;
         top: .3em;
     }
 
-    .footer_routes_container_home_navigation{
+    .footer_routes_container_home_navigation {
         width: 100vw;
         display: flex;
         justify-content: flex-end;
     }
 
-    .footer_routes_home-aboutUs{
+    .footer_routes_home-aboutUs {
         display: none;
     }
 
-    .footer_routes_navigation{
+    .footer_routes_navigation {
         display: flex;
         flex-direction: column;
         position: relative;
@@ -1688,21 +1720,21 @@ a {
     /* │ ► Luis Romano                                           │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-	/*  Header - Sección Navbar  */
+    /*  Header - Sección Navbar  */
 
-	.navbar-logo{
-		margin-left: var(--margin-desktop-1);
-	}
+    .navbar-logo {
+        margin-left: var(--margin-desktop-1);
+    }
 
-	.navbar-contenido {
-		margin-right: var(--margin-desktop-1);
-	}
+    .navbar-contenido {
+        margin-right: var(--margin-desktop-1);
+    }
 
-	/*  Header - Sección Títulos  */
+    /*  Header - Sección Títulos  */
 
-	.header-div {
-		margin-left: var(--margin-desktop-1);
-	}
+    .header-div {
+        margin-left: var(--margin-desktop-1);
+    }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
@@ -1732,7 +1764,7 @@ a {
         height: 40%;
     }
 
-    .box-about-us{
+    .box-about-us {
         flex: auto;
         width: 700px;
         height: 400px;
@@ -1799,7 +1831,7 @@ a {
     .memberCard .memberContent .memberorg {
         font-size: 1.2rem;
         padding-bottom: 8px;
-    }    
+    }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN PATRONS ■■■■■■■■■■■■■■■■■■■■■ │ */
@@ -1814,12 +1846,12 @@ a {
     /* │ ► Federico Manuel Peralta                               │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-	.tittle-supporters {
-		margin-left: var(--margin-desktop-1);
-		font-family: var(--font-family-lato);
-		color: var(--color-dos);
-		margin-top: 4rem;
-	}
+    .tittle-supporters {
+        margin-left: var(--margin-desktop-1);
+        font-family: var(--font-family-lato);
+        color: var(--color-dos);
+        margin-top: 4rem;
+    }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■ FIN SUPPORTERS ■■■■■■■■■■■■■■■■■■■■ │ */
@@ -1834,9 +1866,14 @@ a {
     /* │ ► Luis Romano                                           │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-	.press {
-		margin-left: var(--margin-desktop-1);
-	}
+    .press {
+        margin-left: var(--margin-desktop-1);
+    }
+
+    .swiper-pagination-pan {
+        margin-bottom: 10px;
+    }
+
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■ FIN PRESS-AND-NEWS ■■■■■■■■■■■■■■■■■■ │ */
@@ -1858,7 +1895,7 @@ a {
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
     /* └─────────────────────────────────────────────────────────┘ */
-    
+
 }
 
 
@@ -1930,10 +1967,27 @@ a {
     .memberCard .memberContent .memberorg {
         font-size: 1.2rem;
         padding-bottom: 8px;
-    }    
+    }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN PATRONS ■■■■■■■■■■■■■■■■■■■■■ │ */
     /* └─────────────────────────────────────────────────────────┘ */
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■ INICIO PRESS-AND-NEWS ■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Luis Romano                                           │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .press {
+        margin-left: var(--margin-desktop-1);
+    }
+
+    .swiper-pagination-pan {
+        margin-bottom: 10px;
+    }
+
 
 }
