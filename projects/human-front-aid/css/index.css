@@ -1018,6 +1018,10 @@ a {
         line-height: 24px;          
     }
 
+    .header-subtitulo-languageC{
+        display: inline-block;
+    }
+
     .home-btn {
         width: 150px;
         height: 38px;
