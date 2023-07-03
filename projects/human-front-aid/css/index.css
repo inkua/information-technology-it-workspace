@@ -901,8 +901,7 @@ a {
         width: 98%;
         background-color: var(--color-seis);
         border-radius: 10px;
-        height: 43px;
-        
+        height: 43px; 
     }
 
     .option-donate {

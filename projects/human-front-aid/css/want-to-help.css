@@ -641,22 +641,10 @@ a {
         width: 98%;
         background-color: var(--color-seis);
         border-radius: 10px;
-        height: 43px;
+        height: 43px; 
     }
 
     .option-donate {
-        display: inline-block;
-        color: var(--color-uno);
-        font-family: var(--font-family-lato);
-        margin: 2px;
-        padding-top: 4px;
-        border-radius: 10px;
-        width: 46.3%;
-        height: 90%;
-        text-align: center;
-    }
-
-    .option-need-help {
         display: inline-block;
         background-color: var(--color-tres);
         font-family: var(--font-family-lato);
@@ -666,6 +654,18 @@ a {
         padding-top: 4px;
         border-radius: 10px;
         width: 50%;
+        height: 90%;
+        text-align: center;
+    }
+
+    .option-need-help {
+        display: inline-block;
+        color: var(--color-uno);
+        font-family: var(--font-family-lato);
+        margin: 2px;
+        padding-top: 4px;
+        border-radius: 10px;
+        width: 45%;
         height: 90%;
         text-align: center;
     }
@@ -727,7 +727,7 @@ a {
         font-family: var(--font-family-poppins);
         font-weight: 200;
         font-size: 17px;
-        width: 60%;
+        width: 73%;
         line-height: 24px;  
         margin-top: 25px;
         text-align: justify;
