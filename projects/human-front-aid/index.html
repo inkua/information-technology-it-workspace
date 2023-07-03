@@ -37,6 +37,7 @@
     <script defer src="js/apimap.js"></script>
     <script defer src="js/swiper-supporters.js"></script>
     
+
     <!-- VideoJS -->
     <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
     <script defer src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
@@ -53,7 +54,7 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
-<body>
+<body data-section="index">
 
     <!-- ┌─────────────────────────────────────────────────────────┐ -->
     <!-- │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ -->
@@ -84,12 +85,12 @@
                     <!--  Opciones de Navegación  -->
                     <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
-                            <a class="nav-link navbar-link navbar-home" href="./index.html">Home</a>
-                            <a class="nav-link navbar-link navbar-about-us" href="./pages/about-us.html">About us</a>
+                            <a class="nav-link navbar-link navbar-home" href="./index.html" data-translate="home" >Home</a>
+                            <a class="nav-link navbar-link navbar-about-us" href="./pages/about-us.html"data-translate="about" >About us</a>
                           
-                            <a class="btn btn-primary navbar-need-help" href="./pages/need-help.html">Need help?</a>
+                            <a class="btn btn-primary navbar-need-help" href="./pages/need-help.html" data-translate="needHelp">Need help?</a>
                    
-                            <a class="btn btn-warning navbar-donate" href="./pages/want-to-help.html">DONATE</a>
+                            <a class="btn btn-warning navbar-donate" href="./pages/want-to-help.html" data-translate="DONATION">DONATION</a>
                         </div>
                     </div>
                 </div>
@@ -105,9 +106,9 @@
                         <div class="navbar-nav ms-auto">
 
                             <!-- Opción Ukrania -->
-                            <button type="button" class="btn btn-primary navbar-ykp">YKP</button>
+                            <button type="button" onclick="changeLanguage('language_uc_data'); return false;" class="btn btn-primary navbar-ykp">YKP</button>
                             <!-- Opción Inglés -->
-                            <button type="button" class="btn btn-warning navbar-en">EN</button>
+                            <button type="button" onclick="changeLanguage('language_en_data'); return false;" class="btn btn-warning navbar-en">EN</button>
                         </div>
                     </div>
                 </div>
@@ -117,13 +118,13 @@
 
             <div class="header-div">
                 <h2 class="header-titulo">Human Front Aid</h2>
-                <p class="header-subtitulo">
-                    Our intention is to <strong>support projects regionally and locally.</strong>
-                </p>
-                <p class="header-subtitulo">
+                <p class="header-subtitulo" data-translate="headerSubtitle1">
+                    Our intention is to
+                    <strong data-translate="headerSubtitleStrong">support projects regionally and locally.</strong></p>
+                <p class="header-subtitulo" data-translate="headerSubtitle2">
                     People knowing the local conditions can help.
                 </p>
-                <button class="home-btn">DONATE</button>
+                <button class="home-btn" data-translate="DONATION">DONATION</button>
             </div>
 
             <!--  Header - Sección Backgrond  -->
@@ -157,10 +158,10 @@
                     <img src="./Image/menuphone.png"/>
                 </a>
                 <ul class="dropdown-menu dropdown-navigation">
-                    <li><a class="dropdown-item dropdown-item-nav" href="./index.html">Home</a></li>
-                    <li><a class="dropdown-item dropdown-item-nav" href="./pages/about-us.html">About us</a></li>
-                    <li><a class="dropdown-item dropdown-item-nav" href="./pages/need-help.html">Need Help</a></li>
-                    <li><a class="dropdown-item dropdown-item-nav" href="./pages/want-to-help.html">Want to Help</a></li>
+                    <li><a class="dropdown-item dropdown-item-nav" href="./index.html" data-translate="Home">Home</a></li>
+                    <li><a class="dropdown-item dropdown-item-nav" href="./pages/about-us.html"data-translate="about" >About us</a></li>
+                    <li><a class="dropdown-item dropdown-item-nav" href="./pages/need-help.html"data-translate="needHelp" >Need Help</a></li>
+                    <li><a class="dropdown-item dropdown-item-nav" href="./pages/want-to-help.html"data-translate="" >Want to Help</a></li>
                 </ul>
 
                 <!-- Navbar - Languages options -->
@@ -179,8 +180,13 @@
 
         <div class="container-fluid header-options">
             <div class="header-options-cuadro">
+<<<<<<< HEAD
                 <a class="option-donate" href="./pages/want-to-help.html">Donate</a>
                 <a class="option-need-help" href="./pages/need-help.html">Need help?</a>
+=======
+                <a class="option-donate" href="./pages/want-to-help.html" data-translate="donation">Donation</a>
+                <a class="option-need-help" href="./pages/need-help.html" data-translate="needHelp">Need Help?</a>
+>>>>>>> traduccion
             </div>
         </div>
 
@@ -203,13 +209,13 @@
 
             <div class="titulos">
                 <h2 class="header-titulo">Human Front Aid</h2>
-                <p class="header-subtitulo">
-                    Our intention is to <strong>support projects regionally and locally.</strong>
+                <p class="header-subtitulo"data-translate="headerSubtitle1" >
+                    Our intention is to <strong data-translate="headerSubtitleStrong" >support projects regionally and locally.</strong>
                 </p>
-                <p class="header-subtitulo">
+                <p class="header-subtitulo"data-translate="headerSubtitle2" >
                     People knowing the local conditions can help.
                 </p>
-                <button class="home-btn">DONATE</button>
+                <button class="home-btn"data-translate="DONATION" >DONATION</button>
             </div>
             
 
@@ -254,14 +260,14 @@
 
         <section class="about-us-texto box-about-us">
 
-            <p>
+            <p  data-translate="sectionAboutUsP1">
                 Our intention is to support projects regionally and locally.
                 People knowing the local conditions can help effectively by
                 adapting to the situation on ground immediately. They know
                 best what is required at any moment, and we believe this is
                 a reassurance that the resources are used in the best way possible.
             </p>
-            <p>
+            <p data-translate="sectionAboutUsP2">
                 We will continue supporting on-going projects as long as it’s
                 needed. At the same time, we have all ears and eyes open for
                 new ways of supporting as directly as we can, wherever it is.
@@ -269,7 +275,7 @@
                 of helping in the most effective manner.
             </p>
             
-            <a class="about-us-texto-button" href="./pages/about-us.html">About us</a>
+            <a class="about-us-texto-button" href="./pages/about-us.html" data-translate="about">About us</a>
 
         </section>
 
@@ -447,7 +453,7 @@
     <!-- └─────────────────────────────────────────────────────────┘ -->
 
     <div class="tittle-supporters">
-        <p>Supporters</p>
+        <p data-translate="sectionSupportersTittle">Supporters</p>
     </div>
 
     <div class="swiper swiperSupporters">
@@ -455,7 +461,7 @@
 
             <div class="swiper-slide slideSupporters">
                 <img class="img-supporters" src="./img/hotelodessa.jpg" class="img-fluid rounded-start" alt="...">
-                <a class="text-supporters" href="https://bristol-hotel.com.ua/"><h5><strong>Bristol Hotel  <br> Odessa</h5></strong></a>
+                <a class="text-supporters" href="https://bristol-hotel.com.ua/"><h5><strong >Bristol Hotel  <br> Odessa</h5></strong></a>
             </div>
 
             <div class="swiper-slide slideSupporters">
@@ -475,7 +481,7 @@
 
             <div class="swiper-slide slideSupporters">
                 <img class="img-supporters" src="./img/amanahair.jpg" class="img-fluid rounded-start" alt="...">
-                <a class="text-supporters" href="www.amana-hair.ch/"><h5><strong>Amana   <br> amana hair</strong></h5></a>
+                <a class="text-supporters" href="www.amana-hair.ch/"><h5><strong >Amana<br> amana hair</strong></h5></a>
             </div>
 
             <div class="swiper-slide slideSupporters">
@@ -655,7 +661,7 @@
 
                     <a class="btn btn-primary navbar-need-help footer-need-help" href="./pages/need-help.html">Need help?</a>
 
-                    <a class="btn btn-warning navbar-donate footer-donate" href="./pages/want-to-help.html">DONATE</a>
+                    <a class="btn btn-warning navbar-donate footer-donate" href="./pages/want-to-help.html">DONATION</a>
 
                 </div>
             </div>
@@ -667,5 +673,6 @@
     <!-- │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ -->
     <!-- └─────────────────────────────────────────────────────────┘ -->
 
+    <script defer src="js/language/language.js"></script>
 </body>
 </html>
