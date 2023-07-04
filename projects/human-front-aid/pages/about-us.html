@@ -28,7 +28,7 @@
 
 </head>
 
-<body>
+<body data-section="about">
 
     <!-- ┌─────────────────────────────────────────────────────────┐ -->
     <!-- │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ -->
@@ -60,7 +60,11 @@
                     <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
                             <a class="nav-link navbar-link navbar-home" href="../index.html">Home</a>
+<<<<<<< HEAD
                             <a class="nav-link navbar-link navbar-about-us" href="./about-us.html">About us</a>
+=======
+                            <a class="nav-link navbar-link navbar-about-us" href="#" data-translate="about">About us</a>
+>>>>>>> traduccion
                           
                             <a class="btn btn-primary navbar-need-help" href="./need-help.html">Need help?</a>
                    
@@ -80,9 +84,13 @@
                         <div class="navbar-nav ms-auto">
 
                             <!-- Opción Ukrania -->
+<<<<<<< HEAD
                             <button type="button" class="btn btn-primary navbar-ykp">YKP</button>
+=======
+                            <button type="button" onclick="changeLanguage('language_uc_data'); return false;" class="btn btn-primary navbar-ykp">YKP</button>
+>>>>>>> traduccion
                             <!-- Opción Inglés -->
-                            <button type="button" class="btn btn-warning navbar-en">EN</button>
+                            <button type="button" onclick="changeLanguage('language_en_data'); return false;" class="btn btn-warning navbar-en">EN</button>
                         </div>
                     </div>
                 </div>
@@ -334,6 +342,7 @@
     <!-- │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ -->
     <!-- └─────────────────────────────────────────────────────────┘ -->
 
+    <script defer src="../js/language/language.js"></script>
 </body>
 
 </html>
