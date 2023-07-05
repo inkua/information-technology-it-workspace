@@ -16,8 +16,8 @@ var translations = {
      
     },
     about: {
-      home: "Home ingles",
-      about: "About",
+      home: "Home",
+      about: "About us",
       services: "Services",
       contact: "Contact",
       lorem: "Lorem in English"
