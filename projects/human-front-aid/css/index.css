@@ -1116,7 +1116,16 @@ a {
     /* ponerle nombre al swiper */
 
     .swiper-pagination-pan {
-        margin-bottom: 225px;
+        margin: 0; 
+        padding: 0;
+    }
+    .swiperPressAndNews{ 
+        height: auto; 
+        margin-bottom: -130px;    
+    }
+
+    .swiper-pagination{
+        margin-bottom: 100px;
     }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
@@ -1578,14 +1587,18 @@ a {
     /* │ ► Luis Romano                                           │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-    .press {
-        margin-left: var(--margin-desktop-1);
-    }
-
     .swiper-pagination-pan {
-        margin-bottom: 230px;
+        margin: 0; 
+        padding: 0;
+    }
+    .swiperPressAndNews{ 
+        height: auto; 
+        margin-bottom: -90px;    
     }
 
+    .swiper-pagination{
+        margin-bottom: 70px;
+    }
 
 
     /* ┌─────────────────────────────────────────────────────────┐ */

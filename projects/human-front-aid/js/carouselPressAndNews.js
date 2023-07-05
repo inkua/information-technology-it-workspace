@@ -8,11 +8,11 @@ var swiper = new Swiper(".swiperPressAndNews", {
       clickable: true,
     },
     breakpoints: {
-      576: {
+      480: {
         slidesPerView: 2,
         spaceBetween: 10,
       },
-      950: {
+      993: {
         slidesPerView: 3,
         spaceBetween: 10,
         grid: {
