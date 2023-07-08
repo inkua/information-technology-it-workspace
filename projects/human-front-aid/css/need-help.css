@@ -363,8 +363,10 @@ a {
 }
 
 .ONG_element_title {
-    margin-bottom: 0;
+    margin-top: 7px;
+    margin-bottom: 7px;
     font-size: 1.4rem;
+    font-weight: 200;
     color: var(--color-dos);
 }
 
@@ -1216,10 +1218,15 @@ a {
 
     .list-group-item {
         border: 2px solid var(--color-dos) !important;
-        border-radius: 1.5rem;
+        border-radius: 1.1rem;
         overflow: hidden;
         height: fit-content;
         margin-bottom: 1rem;
+    }
+    .ONG_element_title{
+        margin-top: 3px;
+        margin-bottom: 3px;
+        font-weight: 400;
     }
 
     .ONG_element_collapse_info {
@@ -1292,6 +1299,11 @@ a {
         overflow: hidden;
         height: fit-content;
         margin-bottom: 1rem;
+    }
+    .ONG_element_title{
+        margin-top: 3px;
+        margin-bottom: 3px;
+        font-weight: 400;
     }
 
     .ONG_element_collapse_info {
