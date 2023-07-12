@@ -18,22 +18,26 @@ var translations = {
     about: {
       home: "Home",
       about: "About us",
-      services: "Services",
-      contact: "Contact",
-      lorem: "Lorem in English"
+      needHelp: "Need help?",
+      DONATION: "DONATION",
+      donation:"Donation",
+      headerSubtitle1:"Know more about our ",
+      headerSubtitleStrong1:"mission, projects ",
+      headerSubtitle2:"and ",
+      headerSubtitleStrong2:"history.",
     },
     needHelp: {
-      home: "Home en ingles",
-      about: "About",
-      services: "Services",
-      contact: "Contact",
-      lorem: "Lorem in English"
+      home: "Home",
+      about: "About us",
+      needHelp: "Need help?",
+      DONATION: "DONATION",
+      donation:"Donation",
     },
     wantToHelp: {
-      home: "Home  desde index",
-      about: "About",
-      services: "Services",
-      contact: "Contact",
-      lorem: "Lorem in English"
+      home: "Home",
+      about: "About us",
+      needHelp: "Need help?",
+      DONATION: "DONATION",
+      donation:"Donation",
     }
   };

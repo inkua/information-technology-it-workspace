@@ -17,22 +17,22 @@ var translations = {
     about: {
       home: "Головна",
       about: "Про нас",
-      services: "Послуги",
-      contact: "Контакти",
-      lorem:"lorem en ucraniano"
+      needHelp: "Допомога?",
+      DONATION: "ПОЖЕРТВА",
+      donation:"Пожертва",
     },
     needHelp: {
-      home: "Головна ",
+      home: "Головна",
       about: "Про нас",
-      services: "Послуги",
-      contact: "Контакти",
-      lorem:"lorem en ucraniano"
+      needHelp: "Допомога?",
+      DONATION: "ПОЖЕРТВА",
+      donation:"Пожертва",
     },
     wantToHelp: {
-      home: "Головна ",
+      home: "Головна",
       about: "Про нас",
-      services: "Послуги",
-      contact: "Контакти",
-      lorem:"lorem en ucraniano"
+      needHelp: "Допомога?",
+      DONATION: "ПОЖЕРТВА",
+      donation:"Пожертва",
     }
   };
