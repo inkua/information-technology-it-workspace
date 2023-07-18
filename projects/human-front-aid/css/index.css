@@ -364,8 +364,10 @@
     margin-top: 100px;
     margin-right: var(--margin-desktop-2);
     width: 35%;
-    height: 35%;
-    border-radius: 25px;
+
+    border-radius: 8px;
+    max-width: 100%;
+      height: auto;
 }
 
 .about-us-texto-button {
@@ -562,6 +564,7 @@
     display: flex;
     align-items: center;
     height: 70%;
+    border-radius: 10px;
 }
 
 .img-supporters {
@@ -569,6 +572,7 @@
     width: 30%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 /* ┌─────────────────────────────────────────────────────────┐ */
@@ -1071,11 +1075,16 @@ a {
     }
 
     .about-us .about-us-image-imagen {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
-        height: 283px;
+    
         margin: 10px;
-        padding: 1px;
+        padding-bottom: 25px;
+        max-width: 100%;
+      height: auto;
+    }
+    .about-us-texto-button{
+        max-width: 100%;
     }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
@@ -1557,6 +1566,7 @@ a {
         margin-top: 4rem;
         font-weight: 700;
         font-size: 40px;
+        
     }
 
     .swiperSupporters {
@@ -1571,6 +1581,8 @@ a {
         display: flex;
         align-items: center;
         height: 70%;
+       
+        
     }
 
     .img-supporters {
@@ -1578,6 +1590,7 @@ a {
         width: 30%;
         height: 100%;
         object-fit: cover;
+       
     }
 
 
