@@ -4,6 +4,7 @@
 /* │   COLABORADORES:                                        │ */
 /* │ ► Diego N. Cabrera                                      │ */
 /* │ ► Luis Romano                                           │ */
+/* │ ► Federico Peralta                                      │ */
 /* └─────────────────────────────────────────────────────────┘ */
 
 /*  Header - Sección Navbar  */
@@ -221,7 +222,9 @@ a {
 }
 
 .imagen-qr{
-    margin-left: 200px;
+    margin-left: 120px;
+    width: 30%;
+    height: 30%;
     margin-top: -300px;
 }
 
@@ -576,6 +579,7 @@ a {
     /* │   COLABORADORES:                                        │ */
     /* │ ► Diego N. Cabrera                                      │ */
     /* │ ► Luis Romano                                           │ */
+    /* │ ► Federico Peralta                                      │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
     .mobile-navbar-container {
@@ -671,6 +675,22 @@ a {
         width: 45%;
         height: 90%;
         text-align: center;
+    }
+
+    .boton-qr{
+        border-radius: 50%;
+        margin-top: 0px;
+        margin-left: 30px;
+        width: 15%;
+        height: 15%;
+    }
+    
+    .imagen-qr{
+        margin-left: 15%;
+        width: 45%;
+        height: 45%;
+        margin-top: 0px;
+        margin-bottom: -40%;
     }
 
 
@@ -906,6 +926,7 @@ a {
     /* │   COLABORADORES:                                        │ */
     /* │ ► Diego N. Cabrera                                      │ */
     /* │ ► Luis Romano                                           │ */
+    /* │ ► Federico Peralta                                      │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
     /* Header - Navbar */
@@ -995,11 +1016,31 @@ a {
         line-height: 24px;  
     }
 
+    .boton-qr{
+        border-radius: 50%;
+        margin-top: 0px;
+        margin-left: 50px;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .imagen-qr{
+        margin-left: -300px;
+        width: 270px;
+        height: 270px;
+        margin-top: 0px;
+        margin-bottom: -350px;
+    }
+
+    .navbar-contenedor-principal{
+        height: 1200px;
+    }
+
 
     /* Header - Background */
     
     .header-background-imagen {
-        height: 870px;
+        height: 1070px;
     }
 
     /* Header - Máscara azul */
@@ -1008,7 +1049,7 @@ a {
         position: absolute;
         width: 100%;
         top: 0;
-        height: 870px;
+        height: 1070px;
         background: #02397A;
         border: 1px solid #000000;
         z-index: -2;
@@ -1021,7 +1062,7 @@ a {
         position: absolute;
         width: 100%;
         height: 130px;
-        top: 772px;
+        top: 972px;
     }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
@@ -1172,6 +1213,7 @@ a {
     /* │   COLABORADORES:                                        │ */
     /* │ ► Diego N. Cabrera                                      │ */
     /* │ ► Luis Romano                                           │ */
+    /* │ ► Federico Peralta                                      │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
 	/*  Header - Sección Navbar  */
