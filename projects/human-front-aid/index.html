@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;900&display=swap" rel="stylesheet">
 
     <!-- Font Awesome v6.4.0 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -36,8 +36,8 @@
     <script defer src="js/carouselPressAndNews.js"></script>
     <script defer src="js/apimap.js"></script>
     <script defer src="js/swiper-supporters.js"></script>
+    <script defer src="js/chatbot.js"></script>
     
-
     <!-- VideoJS -->
     <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
     <script defer src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
@@ -231,8 +231,34 @@
     <!-- │ ► Diego N. Cabrera                                      │ -->
     <!-- └─────────────────────────────────────────────────────────┘ -->
 
-    <button class="chatbot-button">
+    <button class="chatbot-button" onclick="openChat()">
     </button>
+
+    <div id="chatbot-ventana-container">
+
+        <i class="fa-solid fa-circle-xmark chatbot-closeicon" onclick="closeChat()"></i>
+
+        <div class="chatbot-seccionchat">
+            <p class="chatbot-messagewaiting">
+                <i class="fa-solid fa-circle waiting-circle"></i>
+                <i class="fa-solid fa-circle waiting-circle"></i>
+                <i class="fa-solid fa-circle waiting-circle"></i>
+            </p>
+            <p class="chatbot-messagebot">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="chatbot-messageuser">OTRO TEXTO PARA COMO FUNCIONAN ESPACIOS</p>
+            <p class="chatbot-messagebot">UN TEXTO PARA VER COMO FUNCIONAN LOS ESPACIOS</p>
+            <p class="chatbot-messageuser">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <p class="chatbot-messagebot">UN TEXTO PARA VER COMO FUNCIONAN LOS ESPACIOS</p>
+        </div>
+
+        <div class="chatbot-seccionwrite">
+            <div class="chatbot-seccionchoose">
+                <p class="chatbot-choosetext">Choose a message</p>
+                <img class="chatbot-chooseicon mood" src="./Image/mood.png"/>
+                <img class="chatbot-chooseicon send" src="./Image/send.png"/>
+            </div>
+        </div>
+    </div>
 
     <!-- ┌─────────────────────────────────────────────────────────┐ -->
     <!-- │ ■■■■■■■■■■■■■■■■■■■■■ FIN CHATBOT ■■■■■■■■■■■■■■■■■■■■■ │ -->
