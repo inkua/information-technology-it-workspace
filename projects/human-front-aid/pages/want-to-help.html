@@ -26,7 +26,8 @@
     <link rel="stylesheet" href="../css/want-to-help.css">
         
 </head>
-<body>
+
+<body data-section="wantToHelp">
 
     <!-- ┌─────────────────────────────────────────────────────────┐ -->
     <!-- │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ -->
@@ -57,12 +58,12 @@
                     <!--  Opciones de Navegación  -->
                     <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
-                            <a class="nav-link navbar-link navbar-home" href="../index.html">Home</a>
-                            <a class="nav-link navbar-link navbar-about-us" href="./about-us.html">About us</a>
+                            <a class="nav-link navbar-link navbar-home" href="../index.html" data-translate="home">Home</a>
+                            <a class="nav-link navbar-link navbar-about-us" href="./about-us.html" data-translate="about">About us</a>
                           
-                            <a class="btn btn-primary navbar-need-help" href="./need-help.html">Need help?</a>
+                            <a class="btn btn-primary navbar-need-help" href="./need-help.html" data-translate="needHelp">Need help?</a>
                    
-                            <a class="btn btn-warning navbar-donate" href="./want-to-help.html">DONATE</a>
+                            <a class="btn btn-warning navbar-donate" href="./want-to-help.html" data-translate="DONATE">DONATE</a>
                         </div>
                     </div>
                 </div>
@@ -78,9 +79,9 @@
                         <div class="navbar-nav ms-auto">
 
                             <!-- Opción Ukrania -->
-                            <button type="button" class="btn btn-primary navbar-ykp">YKP</button>
+                            <button type="button" onclick="changeLanguage('language_uc_data'); return false;" class="btn btn-primary navbar-ykp">YKP</button>
                             <!-- Opción Inglés -->
-                            <button type="button" class="btn btn-warning navbar-en">EN</button>
+                            <button type="button" onclick="changeLanguage('language_en_data'); return false;" class="btn btn-warning navbar-en">EN</button>
                         </div>
                     </div>
                 </div>
@@ -89,14 +90,13 @@
             <!--  Header - Sección Título  -->
 
             <div class="header-div">
-                <h2 class="header-titulo">Want to help?</h2>
-                <p class="header-subtitulo">
+                <h2 class="header-titulo" data-translate="wantToHelp">Want to help?</h2>
+                <p class="header-subtitulo" data-translate="headerSubtitle1">
                     If you are committed to helping others just like 
                     we are, here you have a list of organizations 
-                    ready to recieve your help. </br>
-                </p>
+                    ready to recieve your help. </br></p>
                 <p class="header-subtitulo last-line">    
-                    <strong>Yes, we can! Better together.</strong>
+                    <strong data-translate="headerSubtitleStrong1">Yes, we can! Better together.</strong>
                 </p>
 
                 <input type="image" class="boton-qr"  src="../img/paypal.jpg" alt="PayPal" onclick="cambiarQR('../img/QRpaypal.png')">
@@ -140,10 +140,10 @@
                     <img src="../Image/menuphone.png"/>
                 </a>
                 <ul class="dropdown-menu dropdown-navigation">
-                    <li><a class="dropdown-item dropdown-item-nav" href="../index.html">Home</a></li>
-                    <li><a class="dropdown-item dropdown-item-nav" href="./about-us.html">About us</a></li>
-                    <li><a class="dropdown-item dropdown-item-nav" href="./need-help.html">Need Help</a></li>
-                    <li><a class="dropdown-item dropdown-item-nav" href="./want-to-help.html">Want to Help</a></li>
+                    <li><a class="dropdown-item dropdown-item-nav" href="../index.html" data-translate="home">Home</a></li>
+                    <li><a class="dropdown-item dropdown-item-nav" href="./about-us.html" data-translate="about">About us</a></li>
+                    <li><a class="dropdown-item dropdown-item-nav" href="./need-help.html" data-translate="needHelp">Need Help</a></li>
+                    <li><a class="dropdown-item dropdown-item-nav" href="./want-to-help.html" data-translate="wantToHelp">Want to Help</a></li>
                 </ul>
 
                 <!-- Navbar - Languages options -->
@@ -152,8 +152,8 @@
                     <img src="../Image/carbon_overflow-menu-vertical.png"/>
                 </a>
                 <ul class="dropdown-menu dropdown-languages">
-                    <li><a class="dropdown-item" href="#">English</a></li>
-                    <li><a class="dropdown-item" href="#">Ukrainian</a></li>
+                    <li><a class="dropdown-item" onclick="changeLanguage('language_en_data'); return false;" href="#">English</a></li>
+                    <li><a class="dropdown-item" onclick="changeLanguage('language_uc_data'); return false;" href="#">Ukrainian</a></li>
                 </ul>
             </div>
         </nav>
@@ -162,8 +162,8 @@
 
         <div class="container-fluid header-options">
             <div class="header-options-cuadro">
-                <a class="option-donate" href="./want-to-help.html">Donate</a>
-                <a class="option-need-help" href="./need-help.html">Need help?</a>
+                <a class="option-donate" href="./want-to-help.html" data-translate="donate">Donate</a>
+                <a class="option-need-help" href="./need-help.html" data-translate="needHelp">Need help?</a>
             </div>
         </div>
 
@@ -185,14 +185,14 @@
             <img class="wave-mobile" src="../Image/wave.png" alt="" />
 
             <div class="titulos">
-                <h2 class="header-titulo">Want to help?</h2>
-                <p class="header-subtitulo">
+                <h2 class="header-titulo" data-translate="wantToHelp">Want to help?</h2>
+                <p class="header-subtitulo" data-translate="headerSubtitle1">
                     If you are committed to helping others just like 
                     we are, here you have a list of organizations 
                     ready to recieve your help. </br>
                 </p>
                 <p class="header-subtitulo last-line">    
-                    <strong>Yes, we can! Better together.</strong>
+                    <strong data-translate="headerSubtitleStrong1">Yes, we can! Better together.</strong>
                 </p>
 
                 <input type="image" class="boton-qr"  src="../img/paypal.jpg" alt="PayPal" onclick="cambiarQR('../img/QRpaypal.png')">
@@ -236,8 +236,8 @@
     <!-- └─────────────────────────────────────────────────────────┘ -->
 
     <main class="container content-container">
-        <p class="ongs-legend">Here you have some <span class="ongs-legend-span">useful links</span> to get <span class="ongs-legend-span">help</span></p>
-        <p class="list-group-title">ONG's</p>
+        <p class="ongs-legend" data-translate="contentparagraph1">Here you have some <span class="ongs-legend-span" data-translate="contentparagraphSpan1">useful links</span><span data-translate="contentparagraphSpan2"> to get </span><span class="ongs-legend-span" data-translate="contentparagraphSpan3">help</span></p>
+        <p class="list-group-title" data-translate="contentOng">ONG's</p>
 
         <ul class="list-group">
 
@@ -600,15 +600,15 @@
             <div class="footer_routes_container_home_navigation">
 
                 <div class="footer_routes_home-aboutUs">
-                        <a class="nav-link navbar-link navbar-home" href="../index.html">Home</a>
-                        <a class="nav-link navbar-link navbar-about-us" href="./about-us.html">About us</a>
+                        <a class="nav-link navbar-link navbar-home" href="../index.html" data-translate='home'>Home</a>
+                        <a class="nav-link navbar-link navbar-about-us" href="./about-us.html" data-translate='about'>About us</a>
                 </div>
 
                 <div class="footer_routes_navigation">
 
-                    <a class="btn btn-primary navbar-need-help footer-need-help" href="./need-help.html">Need help?</a>
+                    <a class="btn btn-primary navbar-need-help footer-need-help" href="./need-help.html" data-translate='needHelp'>Need help?</a>
 
-                    <a class="btn btn-warning navbar-donate footer-donate" href="./want-to-help.html">DONATE</a>
+                    <a class="btn btn-warning navbar-donate footer-donate" href="./want-to-help.html" data-translate='DONATE'>DONATE</a>
 
                 </div>
             </div>
@@ -622,5 +622,6 @@
     <!-- │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ -->
     <!-- └─────────────────────────────────────────────────────────┘ -->
 
+    <script defer src="../js/language/language.js"></script>
 </body>
 </html>
