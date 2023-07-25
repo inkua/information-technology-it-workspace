@@ -447,6 +447,7 @@ a {
 
 /* Footer - Contenedor principal */
 
+
 .footer_container {
     display: flex;
     width: 100%;
@@ -456,116 +457,117 @@ a {
     height: 357px;
     padding-right: var(--margin-desktop-2);
     padding-left: var(--margin-desktop-2);
-}
-
-/* Footer - Redes Sociales */
-
-.footer_redsocial {
+  }
+  
+  /* Footer - Redes Sociales */
+  
+  .footer_redsocial {
     display: flex;
     justify-content: space-between;
-    padding-left: .7em;
+    padding-left: 0.7em;
     position: relative;
     top: 2em;
     margin-bottom: 3em;
-}
-
-.footer_redsocial img {
+  }
+  
+  .footer_redsocial img {
     cursor: pointer;
-    margin-right:0;
-}
-
-.link-whatsapp {
+    margin-right: 0;
+  }
+  
+  .link-whatsapp {
     text-decoration: none;
     color: var(--color-uno);
-}
-
-.link-whatsapp-text {
+  }
+  
+  .link-whatsapp-text {
     position: relative;
     display: inline-block;
     padding-left: 1em;
     top: 2px;
-}
-
-.link-instagram {
+  }
+  
+  .link-instagram {
     text-decoration: none;
     color: var(--color-uno);
-}
-
-.link-instagram-text {
+  }
+  
+  .link-instagram-text {
     position: relative;
     display: inline-block;
     padding-left: 1em;
     top: 2px;
-}
-
-.link-facebook {
+  }
+  
+  .link-facebook {
     text-decoration: none;
     color: var(--color-uno);
-}
-
-.link-facebook-text {
+  }
+  
+  .link-facebook-text {
     position: relative;
     display: inline-block;
     padding-left: 1em;
     top: 2px;
-}
-
-/* Footer - Línea intermedia */
-
-.footer_linea {
-    border-bottom: solid .1px #FAFAFB;
+  }
+  
+  /* Footer - Línea intermedia */
+  
+  .footer_linea {
+    border-bottom: solid 0.1px #fafafb;
     position: relative;
     top: 1.5em;
-}
-
-/* Footer - Routes */
-
-.footer_routes {
+  }
+  
+  /* Footer - Routes */
+  
+  .footer_routes {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     top: 1em;
     margin-top: 3em;
-}
-
-.footer_routes_logo {
+  }
+  
+  .footer_routes_logo {
     display: flex;
     align-items: center;
     margin-right: 1vw;
     position: relative;
-	bottom: .1em;
-}
-
-.footer_routes_logo img {
-    width:91px;
-    height:104px;
+    bottom: 0.1em;
+  }
+  
+  .footer_routes_logo img {
+    width: 91px;
+    height: 104px;
     position: relative;
-    bottom: .2em;
-}
-
-.footer_routes_logo p {
+    bottom: 0.2em;
+  }
+  
+  .footer_routes_logo a {
     font-weight: bold;
-    padding-left: .3em;
-}
-
-.footer_routes_container_home_navigation {
+    padding-left: 0.3em;
+  }
+  
+  .footer_routes_container_home_navigation {
     display: flex;
     justify-content: space-between;
-    width: 39vw;
-}
-
-.footer_routes_home-aboutUs {
+    width: 59vw;
+  }
+  
+  .footer_routes_home-aboutUs {
     display: flex;
     flex-wrap: wrap;
-}
-
-.footer_routes_navigation {
+  }
+  
+  .footer_routes_navigation {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     position: relative;
-    bottom: .6em;
-}
+    bottom: 0.6em;
+  }
+  
 
 /* ┌─────────────────────────────────────────────────────────┐ */
 /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
@@ -815,128 +817,110 @@ a {
     /* └─────────────────────────────────────────────────────────┘ */
 
 
-
     /* ┌─────────────────────────────────────────────────────────┐ */
-    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
-    /* │                                                         │ */
-    /* │   COLABORADORES:                                        │ */
-    /* │ ► Diego Valentino Pardo Yepez                           │ */
-    /* │ ► Santiago Elias Carranza                               │ */
-    /* └─────────────────────────────────────────────────────────┘ */
+  /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
+  /* │                                                         │ */
+  /* │   COLABORADORES:                                        │ */
+  /* │ ► Diego Valentino Pardo Yepez                           │ */
+  /* │ ► Santiago Elias Carranza                               │ */
+  /* └─────────────────────────────────────────────────────────┘ */
 
-    /* Footer - Contenedor principal */
+  /* Footer - Contenedor principal */
 
-    .footer_container {
-        background-color: #001C3D;
-        height: 130px;
-        padding-left: 14px;
-        padding-right: 14px;
-        overflow: hidden;
-    }
+  .footer_container {
+    display: flex;
+    width: 100%;
+    height: fit-content;
 
-    /* Footer - Redes Sociales */
+  }
 
-    .footer_redsocial {
-        justify-content: flex-start;
-        flex-direction: row;
-        top: 23%;
-        margin-bottom: 0;
-        width: 50%;
-    }
+  /* Footer - Redes Sociales */
 
-    .footer_redsocial img {
-        cursor: pointer;
-        width: 27px;
-        height: 27px;
-    }
+  .footer_redsocial {
+    justify-content: space-between;
+    flex-direction: row;
+    width: 50%;
+    left: -41px;
+    position: relative;
+  }
 
-    .footer_redsocial_instragram img {
-        border-radius: 100%;
-        width: 29px;
-        height: 29px;
-        position: relative;
-        right: 0; 
-    }
+  .footer_redsocial img {
+    cursor: pointer;
+    width: 27px;
+    height: 27px;
+  }
 
-    .footer_redsocial_facebook img {
-        position: relative;
-        right:-4.7em;
-    }
+  .link-instagram-text {
+    display: none;
+  }
 
-    .link-instagram-text {
-        display: none;
-    }
+  .link-facebook-text {
+    display: none;
+  }
 
-    .link-facebook-text {
-        display: none;
-    }
+  .link-whatsapp-text {
+    display: none;
+  }
 
-    .link-whatsapp-text {
-        display: none;
-    }
+  /* Footer - Línea intermedia */
 
-    /* Footer - Línea intermedia */
+  .footer_linea {
+    display: none;
+  }
 
-    .footer_linea {
-        display: none;
-    }
+  /* Footer - Routes */
 
-    /* Footer - Routes */
+  .footer_routes {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 
-    .footer_routes {
-        margin-top: 0.8em;
-    }
+  .footer_routes_logo {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    bottom: 80px;
+  }
 
-    .footer_routes_logo {
-        margin-right: -2px;
-    }
+  .footer_routes_logo img {
+    width: 52px;
+    height: 52px;
+  }
 
-    .footer_routes_logo img {
-        width: 52px;
-        height: 52px;
-    }
+  .footer-titulo {
+    font-family: var(--font-family-poppins);
+    font-size: 10px;
+  }
 
-    .footer-titulo {
-        margin-bottom: 12px;
-        margin-left: 5px;
-        font-family: var(--font-family-poppins);
-        font-size: 10px;
-        font-weight: 400;
-        line-height: 10px;
-        letter-spacing: 0.005em;
-    }
+  .footer_routes_home-aboutUs {
+    display: none;
+  }
 
-    .footer_routes_home-aboutUs {
-        display: none;
-    }
+  .footer_routes_navigation {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 110px;
+    border-radius: 8px;
+  }
 
-    .footer_routes_navigation {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        border-radius:8px; 
-        position: relative;
-        top: -2.7em;
-        left: 15%;
-    }
+  .footer-need-help {
+    width: 100%;
+  }
 
-    .footer-need-help {
-        margin-top: 10px;
-        width: 110px;
-        white-space: nowrap;
-        padding-left: 14px;
-    }
+  .footer-donate {
+    width: 100%;
+    margin-top: 10px;
+  }
 
-    .footer-donate {
-        width: 110px;
-        margin-top: 12px;
-    }
-    
-    /* ┌─────────────────────────────────────────────────────────┐ */
-    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
-    /* └─────────────────────────────────────────────────────────┘ */
-
+  /* ┌─────────────────────────────────────────────────────────┐ */
+  /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+  /* └─────────────────────────────────────────────────────────┘ */
 }
+    
+
 
 
 
@@ -1091,90 +1075,90 @@ a {
     /* │ ► Santiago Elias Carranza                               │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-    .footer_container{
+    .footer_container {
         background-color: var(--color-cinco);
         height: 150px;
         max-width: 100vw;
         margin-right: 0;
-        margin-left:  0;
+        margin-left: 0;
         padding-bottom: 1em;
-    }
-
-    .footer_redsocial{
-        justify-content: flex-end;
-        flex-direction:row-reverse;
+      }
+    
+      .footer_redsocial {
         top: 1.2em;
-        padding-left: 1.5em;
+        padding-left: 0;
         margin-bottom: 0;
-    }
-
-    .footer_redsocial img{
+      }
+    
+      .footer_redsocial img {
         cursor: pointer;
-        margin-right:2.9em;
         width: 27px;
         height: 27px;
-    }
-
-    .footer_redsocial_instragram img{
-        border-radius: 100%;
-        width: 29px;
-        height: 29px;
+      }
+    
+      .footer_redsocial_instragram img {
         position: relative;
-        right:4.6em; 
-    }
-
-    .footer_redsocial_facebook img{
+        margin-right: 0.1rem;
+      }
+    
+      .footer_redsocial_facebook img {
         position: relative;
-        right:-4.7em;
-    }
-
-    .footer_redsocial a{
-        display: none;
-    }
-
-    .footer_linea{
-        display: none;
-    }
-
-    .footer_routes{
+        margin-right: 0.1rem;
+      }
+    
+      .footer_redsocial_whatsapp img {
+        position: relative;
+        margin-right: 0.1rem;
+      }
+    
+      .footer_redsocial a {
+        display: flex;
+        flex-direction: row;
+        font-size: 1rem;
+      }
+    
+      .footer_linea {
+        display: flex;
+      }
+    
+      .footer_routes {
         margin-top: 2em;
-    }
-
-    .footer_routes_logo{
-        margin-right: 0;
-    }
-
-    .footer_routes_logo img{
+      }
+    
+      .footer_routes_logo img {
         width: 52px;
         height: 54px;
         position: relative;
-        bottom: .2em;
-        margin-left: 1em;
-    }
-
-    .footer_routes_logo p{
-        font-weight:normal;
+      }
+    
+      .footer_routes_logo p {
+        font-weight: normal;
         width: 150px;
-        padding-left: .7em;
+        padding-left: 0.7em;
         position: relative;
-        top: .3em;
-    }
-
-    .footer_routes_container_home_navigation{
+        top: 0.3em;
+      }
+      .footer-titulo {
+        display: flex;
+        font-size: 1rem;
+      }
+    
+      .footer_routes_container_home_navigation {
         width: 100vw;
         display: flex;
         justify-content: flex-end;
-    }
-
-    .footer_routes_home-aboutUs{
+        padding: 10px;
+      }
+    
+      .footer_routes_home-aboutUs {
         display: none;
-    }
-
-    .footer_routes_navigation{
+      }
+    
+      .footer_routes_navigation {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         position: relative;
-    }
+      }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */

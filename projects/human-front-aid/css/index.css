@@ -1146,76 +1146,76 @@ a {
   /* Footer - Contenedor principal */
 
   .footer_container {
-    background-color: #001c3d;
+    background-color: #001C3D;
     height: 130px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 14px;
+    padding-right: 14px;
+    overflow: hidden;
+}
 
-  }
+/* Footer - Redes Sociales */
 
-  /* Footer - Redes Sociales */
-
-  .footer_redsocial {
-    justify-content: space-between;
+.footer_redsocial {
+    justify-content: flex-start;
     flex-direction: row;
-    top: 50%;
+    top: 23%;
     margin-bottom: 0;
     width: 50%;
-  }
+}
 
-  .footer_redsocial img {
+.footer_redsocial img {
     cursor: pointer;
     width: 27px;
     height: 27px;
-  }
+}
 
-  .footer_redsocial_instragram img {
+.footer_redsocial_instragram img {
     border-radius: 100%;
     width: 29px;
     height: 29px;
     position: relative;
-    right: 0;
-  }
+    right: 0; 
+}
 
-  .footer_redsocial_facebook img {
+.footer_redsocial_facebook img {
     position: relative;
-    right: 0;
-  }
+    right:-4.7em;
+}
 
-  .link-instagram-text {
+.link-instagram-text {
     display: none;
-  }
+}
 
-  .link-facebook-text {
+.link-facebook-text {
     display: none;
-  }
+}
 
-  .link-whatsapp-text {
+.link-whatsapp-text {
     display: none;
-  }
+}
 
-  /* Footer - Línea intermedia */
+/* Footer - Línea intermedia */
 
-  .footer_linea {
+.footer_linea {
     display: none;
-  }
+}
 
-  /* Footer - Routes */
+/* Footer - Routes */
 
-  .footer_routes {
+.footer_routes {
     margin-top: 0.8em;
-  }
+}
 
-  .footer_routes_logo {
+.footer_routes_logo {
     margin-right: -2px;
-  }
+}
 
-  .footer_routes_logo img {
+.footer_routes_logo img {
     width: 52px;
     height: 52px;
-  }
+}
 
-  .footer-titulo {
+.footer-titulo {
     margin-bottom: 12px;
     margin-left: 5px;
     font-family: var(--font-family-poppins);
@@ -1223,31 +1223,35 @@ a {
     font-weight: 400;
     line-height: 10px;
     letter-spacing: 0.005em;
-  }
+}
 
-  .footer_routes_home-aboutUs {
+.footer_routes_home-aboutUs {
     display: none;
-  }
+}
 
-  .footer_routes_navigation {
+.footer_routes_navigation {
     display: flex;
     flex-direction: column;
-    border-radius: 8px;
-    left: 30%;
-    margin-bottom: 45px;
-  }
+    position: relative;
+    border-radius:8px; 
+    position: relative;
+    top: -2.7em;
+    left: 15%;
+}
 
-  .footer-need-help {
+.footer-need-help {
     margin-top: 10px;
     width: 110px;
     white-space: nowrap;
     padding-left: 14px;
-  }
+}
 
-  .footer-donate {
+.footer-donate {
     width: 110px;
     margin-top: 12px;
-  }
+}
+
+
 
   /* ┌─────────────────────────────────────────────────────────┐ */
   /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
@@ -1584,17 +1588,17 @@ a {
 
   .footer_redsocial_instragram img {
     position: relative;
-    margin-right: -15px;
+    margin-right: 0.1rem;
   }
 
   .footer_redsocial_facebook img {
     position: relative;
-    margin-right: -15px;
+    margin-right: 0.1rem;
   }
 
   .footer_redsocial_whatsapp img {
     position: relative;
-    margin-right: -15px;
+    margin-right: 0.1rem;
   }
 
   .footer_redsocial a {
@@ -1624,7 +1628,7 @@ a {
     position: relative;
     top: 0.3em;
   }
-  .footer-titulo{
+  .footer-titulo {
     display: flex;
     font-size: 1rem;
   }
