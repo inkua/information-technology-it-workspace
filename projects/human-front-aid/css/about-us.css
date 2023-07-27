@@ -320,61 +320,40 @@ a {
 /* │ ■■■■■■■■■■■■■■■■■■ INICIO ABOUT-US ■■■■■■■■■■■■■■■■■■■■ │ */
 /* │                                                         │ */
 /* │   COLABORADORES:                                        │ */
+/* │ ► Federico Peralta                                      │ */
 /* │ ► Luis Romano                                           │ */
 /* │ ► Luis Fernando Callisaya Surco                         │ */
 /* └─────────────────────────────────────────────────────────┘ */
 
-.about-us-history-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 150px;
-    width: 500px; /* Ancho fijo del contenedor */
-    height: 300px; /* Altura fija del contenedor */
-    max-width: 500px; /* Ancho máximo del contenedor */
-    max-height: 300px; /* Altura máxima del contenedor */
-    overflow: auto; 
-
-}
-
-.about-us-history {
-    width: 30%;
-    margin-left: 50px;
-
-}
-
-.about-us-history p {
-    font-size: 1rem;
-    text-align: justify;
-    padding-top: 50px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 141.52%;
+.about-us-main p{
+    font-size: 120%;
+    color: var(--color-cinco);
     max-width: 100%;
-    height: auto;
-        
+    font-family: var(--font-family-poppins);
+    font-weight: 570;
 }
 
-.about-us-history img {
-    width: 423px;
-    height: 435px;
-      
-    border-radius: 40px;
-     
+.about-us-main-img{
+    max-width: 100%;
+}
+
+
+.about-us-main{
+    margin-bottom: 100px;
+}
+
+.about-us-history-img{
+    max-width: 150%;
+    
 }
 
 .history-titulo{
-    margin-left: 20%;
+    color: var(--color-dos);
+    font-family: var(--font-family-lato);
+    font-weight: 570;
+    margin-bottom: 50px;
 }
 
-.about-us-imagen img {
-    z-index: -1;
-    position: absolute;
-    background: #02397A;
-    width: 100%;
-    height: 100%;
-    mix-blend-mode: multiply;
-}
 
 .About-Us-Diego-Pardo {
     display: flex;
@@ -786,30 +765,30 @@ a {
     /* │ ■■■■■■■■■■■■■■■■■■ INICIO ABOUT-US ■■■■■■■■■■■■■■■■■■■■ │ */
     /* │                                                         │ */
     /* │   COLABORADORES:                                        │ */
+    /* │ ► Federico Peralta                                      │ */
     /* │ ► Luis Romano                                           │ */
     /* │ ► Luis Fernando Callisaya Surco                         │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-    .about-us-history-container {
-        display: flex;
-        flex-direction: column-reverse;
-        padding: 65px 0;
-    }
-    .about-us-history p {
-        width: 90%;
-        padding: 40px 0;
-        margin: 0 auto;
-        justify-content: space-around;
-        font-size: 16px;
+    .about-us-main p{
+        font-size: 90%;
     }
 
-    .about-us-history img {
-       
-        width: 80%;
-        margin: 0 auto;
-        height: 283px;
-        margin: 10px;
-        padding: 1px;
+    .about-us-main{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .history-titulo{
+        font-size: 250%;
+    }
+
+    .about-us-text{
+        font-size: 120%;
+    }
+
+    .about-us-main-img{
+        margin-bottom: 20px;
     }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
@@ -1066,6 +1045,39 @@ a {
     /* └─────────────────────────────────────────────────────────┘ */
 
 
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■ INICIO ABOUT-US ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Federico Peralta                                      │ */
+    /* │ ► Luis Romano                                           │ */
+    /* │ ► Luis Fernando Callisaya Surco                         │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .about-us-main p{
+        font-size: 120%;
+    }
+
+    .about-us-main{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .about-us-text{
+        margin-bottom: 30px;
+    }
+
+    .history-titulo{
+        font-size: 250%;
+    }
+
+    .about-us-main-img{
+        margin-bottom: 30px;
+    }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ FIN ABOUT-US ■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
