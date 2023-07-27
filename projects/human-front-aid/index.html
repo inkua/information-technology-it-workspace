@@ -239,19 +239,27 @@
         <i class="fa-solid fa-circle-xmark chatbot-closeicon" onclick="closeChat()"></i>
 
         <div class="chatbot-seccionchat">
-            <p class="chatbot-messagewaiting">
+
+            <!-- Los puntitos de escribir del bot -->
+            <p id="waitingBuble" class="chatbot-messagewaiting msg">
                 <i class="fa-solid fa-circle waiting-circle"></i>
                 <i class="fa-solid fa-circle waiting-circle"></i>
                 <i class="fa-solid fa-circle waiting-circle"></i>
             </p>
-            <p class="chatbot-messagebot">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p class="chatbot-messageuser">OTRO TEXTO PARA COMO FUNCIONAN ESPACIOS</p>
-            <p class="chatbot-messagebot">UN TEXTO PARA VER COMO FUNCIONAN LOS ESPACIOS</p>
-            <p class="chatbot-messageuser">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            <p class="chatbot-messagebot">UN TEXTO PARA VER COMO FUNCIONAN LOS ESPACIOS</p>
+
+            <!-- Primer mensaje del bot -->
+            <p class="chatbot-messagebot msg">
+                Hello, I am a bot made to help and answer your questions.
+            </p>
+
+            <!-- Preguntas Pre-determinadas -->
+            <p id="question04" class="chatbot-messagechoose" onclick="anserMessage(this)">Who built this website?</p>
+            <p id="question03" class="chatbot-messagechoose" onclick="anserMessage(this)">Where is the organization located?</p>
+            <p id="question02" class="chatbot-messagechoose" onclick="anserMessage(this)">Who is the founder?</p>
+            <p id="question01" class="chatbot-messagechoose" onclick="anserMessage(this)">Where do the donations go?</p>
         </div>
 
-        <div class="chatbot-seccionwrite">
+        <div class="chatbot-seccionwrite" onclick="chooseMessage()">
             <div class="chatbot-seccionchoose">
                 <p class="chatbot-choosetext">Choose a message</p>
                 <img class="chatbot-chooseicon mood" src="./Image/mood.png"/>

@@ -322,6 +322,7 @@
     z-index: 5;
     border-radius: 4%;
     overflow: hidden;
+    border: solid 2px #8EBFF9;
     box-shadow: 0px 0px 5px black;
 }
 
@@ -332,6 +333,7 @@
     padding: 20px;
     height: 80%;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .chatbot-seccionwrite {
@@ -363,7 +365,24 @@
     cursor: pointer;
 }
 
-.chatbot-messagebot {
+.chatbot-messagechoose {
+    display: none;
+    background-color: #8EBFF9;
+    color: black;
+    font-family: var(--font-family-poppins);
+    font-weight: 400;
+    bottom: 0;
+    padding: 10px;
+    width: 250px;
+    margin-left: 40px;
+    border-radius: 15px 15px 15px 15px;  
+}
+
+.chatbot-messagechoose:hover {
+    cursor: pointer;
+}
+
+.chatbot-messageuser {
     display: block;
     background-color: #02397A;
     color: #FAFAFB;
@@ -373,27 +392,33 @@
     padding: 15px;
     width: 250px;
     margin-left: 40px;
+    margin-bottom: 0;
+    margin-top: 1em;
     border-radius: 15px 15px 0 15px;
 }
 
-.chatbot-messageuser {
+.chatbot-messagebot {
     display: block;
     background-color: #FFD500;
     color: #02397A;
     font-family: var(--font-family-poppins);
     font-weight: 400;
-    bottom: 0;
+    font-size: 15px;
     padding: 15px;
+    margin-bottom: 0;
+    margin-top: 1em;
     width: 250px;
     border-radius: 15px 15px 15px 0;
 }
 
 .chatbot-messagewaiting {
-    display: flex;
+    display: none;
     flex-direction: row;
     background-color: #F2F2F2;
     padding: 28px 15px 20px 15px;
     width: 80px;
+    margin-bottom: 0;
+    margin-top: 1em;
     border-radius: 15px;
     overflow: hidden;
     animation: burbuja 1.5s infinite;
@@ -444,6 +469,36 @@
 
     to {
         font-size: 6px;
+    }
+}
+
+.entrychat {
+    animation: entrychat 0.5s;
+}
+
+@keyframes entrychat {
+    from {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+
+    40% {
+        padding-top: 13px;
+        padding-bottom: 13px;
+        font-size: 16.2px;
+    }
+
+    60% {
+        padding-top: 13px;
+        padding-bottom: 13px;
+        font-size: 16.2px;
+    }
+
+    to {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 16px;
     }
 }
 
