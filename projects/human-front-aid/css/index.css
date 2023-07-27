@@ -644,7 +644,7 @@ a {
 }
 
 .swiper-pagination-pan {
-  margin-bottom: 225px;
+  margin-bottom: 10px;
 }
 
 /* ┌─────────────────────────────────────────────────────────┐ */
@@ -1159,9 +1159,19 @@ a {
 
     /* ponerle nombre al swiper */
 
-    .swiper-pagination-pan {
-        margin-bottom: 225px;
-    }
+/* ponerle nombre al swiper */
+
+.swiper-pagination-pan {
+  margin: 0;
+  padding: 0;
+}
+#swiper-pan {
+  height: auto;
+  margin-bottom: -130px;
+}
+#swiper-pagination-indicator {
+  margin-bottom: 100px;
+}
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■ FIN PRESS-AND-NEWS ■■■■■■■■■■■■■■■■■■ │ */
@@ -1399,7 +1409,8 @@ a {
     margin-bottom: -130px;
   }
   #swiper-pagination-indicator {
-    margin-bottom: 100px;
+    margin-bottom: 90px;
+    margin-top: 0px;
   }
 
   /* ┌─────────────────────────────────────────────────────────┐ */
@@ -1885,12 +1896,17 @@ a {
     /* │ ► Luis Romano                                           │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-    .press {
-        margin-left: var(--margin-desktop-1);
-    }
-
     .swiper-pagination-pan {
-        margin-bottom: 230px;
+      margin: 0;
+      padding: 0;
+    }
+    #swiper-pan {
+      height: auto;
+      margin-bottom: -100px;
+    }
+    #swiper-pagination-indicator {
+      margin-bottom: 50px;
+      margin-top: 0px;
     }
 
 
