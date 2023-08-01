@@ -86,11 +86,11 @@
                     <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
                             <a class="nav-link navbar-link navbar-home" href="./index.html" data-translate="home" >Home</a>
-                            <a class="nav-link navbar-link navbar-about-us" href="./pages/about-us.html"data-translate="about" >About us</a>
+                            <a class="nav-link navbar-link navbar-about-us" href="./pages/about-us.html" data-translate="about" >About us</a>
                           
                             <a class="btn btn-primary navbar-need-help" href="./pages/need-help.html" data-translate="needHelp">Need help?</a>
                    
-                            <a class="btn btn-warning navbar-donate" href="./pages/want-to-help.html" data-translate="DONATION">DONATION</a>
+                            <a class="btn btn-warning navbar-donate" href="./pages/want-to-help.html" data-translate="DONATE">DONATE</a>
                         </div>
                     </div>
                 </div>
@@ -124,7 +124,7 @@
                 <p class="header-subtitulo" data-translate="headerSubtitle2">
                     People knowing the local conditions can help.
                 </p>
-                <button class="home-btn" data-translate="DONATION">DONATION</button>
+                <button class="home-btn" data-translate="DONATE">DONATE</button>
             </div>
 
             <!--  Header - Sección Backgrond  -->
@@ -158,10 +158,10 @@
                     <img src="./Image/menuphone.png"/>
                 </a>
                 <ul class="dropdown-menu dropdown-navigation">
-                    <li><a class="dropdown-item dropdown-item-nav" href="./index.html" data-translate="Home">Home</a></li>
+                    <li><a class="dropdown-item dropdown-item-nav" href="./index.html" data-translate="home">Home</a></li>
                     <li><a class="dropdown-item dropdown-item-nav" href="./pages/about-us.html"data-translate="about" >About us</a></li>
                     <li><a class="dropdown-item dropdown-item-nav" href="./pages/need-help.html"data-translate="needHelp" >Need Help</a></li>
-                    <li><a class="dropdown-item dropdown-item-nav" href="./pages/want-to-help.html"data-translate="" >Want to Help</a></li>
+                    <li><a class="dropdown-item dropdown-item-nav" href="./pages/want-to-help.html"data-translate="wantToHelp" >Want to Help</a></li>
                 </ul>
 
                 <!-- Navbar - Languages options -->
@@ -170,8 +170,8 @@
                     <img src="./Image/carbon_overflow-menu-vertical.png"/>
                 </a>
                 <ul class="dropdown-menu dropdown-languages">
-                    <li><a class="dropdown-item" href="#">English</a></li>
-                    <li><a class="dropdown-item" href="#">Ukrainian</a></li>
+                    <li><a class="dropdown-item" onclick="changeLanguage('language_en_data'); return false;" class="btn btn-warning navbar-en" href="#">English</a></li>
+                    <li><a class="dropdown-item" onclick="changeLanguage('language_uc_data'); return false;" class="btn btn-primary navbar-ykp" href="#">Ukrainian</a></li>
                 </ul>
             </div>
         </nav>
@@ -180,7 +180,7 @@
 
         <div class="container-fluid header-options">
             <div class="header-options-cuadro">
-                <a class="option-donate" href="./pages/want-to-help.html" data-translate="donation">Donation</a>
+                <a class="option-donate" href="./pages/want-to-help.html" data-translate="donate">DONATE</a>
                 <a class="option-need-help" href="./pages/need-help.html" data-translate="needHelp">Need Help?</a>
             </div>
         </div>
@@ -210,7 +210,7 @@
                 <p class="header-subtitulo"data-translate="headerSubtitle2" >
                     People knowing the local conditions can help.
                 </p>
-                <button class="home-btn"data-translate="DONATION" >DONATION</button>
+                <button class="home-btn"data-translate="DONATE" >DONATE</button>
             </div>
             
 
@@ -332,7 +332,7 @@
     
     <!-- Patrons - Sección Carousel -->
     <div class="container-md mobile-titles">
-        <h2 class="body-tittles">Patrons</h2>
+        <h2 class="body-tittles" data-translate='sectionPatronsTittle'>Patrons</h2>
 
     </div>
 
@@ -491,7 +491,7 @@
         <p data-translate="sectionSupportersTittle">Supporters</p>
     </div>
     <div class="container-md mobile-titles">
-        <h2 class="body-tittles">Supporters</h2>
+        <h2 class="body-tittles" data-translate="sectionSupportersTittle">Supporters</h2>
     </div>
 
     <div class="swiper swiperSupporters">
@@ -562,10 +562,10 @@
     <!-- Swiper -->
 
     <div class="tittle-supporters desktop-titles">
-        <p>Press and News</p>
+        <p data-translate="SwiperPressAndNews">Press and News</p>
     </div>
     <div class="container-md mobile-titles">
-        <h2 class="body-tittles">Press & News</h2>
+        <h2 class="body-tittles" data-translate="SwiperPressAndNews">Press & News</h2>
     </div>
     
     <div class="swiper swiperPressAndNews">
@@ -698,15 +698,15 @@
             <div class="footer_routes_container_home_navigation">
 
                 <div class="footer_routes_home-aboutUs">
-                        <a class="nav-link navbar-link navbar-home" href="./index.html">Home</a>
-                        <a class="nav-link navbar-link navbar-about-us" href="./pages/about-us.html">About us</a>
+                        <a class="nav-link navbar-link navbar-home" href="./index.html" data-translate='home'>Home</a>
+                        <a class="nav-link navbar-link navbar-about-us" href="./pages/about-us.html" data-translate='about'>About us</a>
                 </div>
 
                 <div class="footer_routes_navigation">
 
-                    <a class="btn btn-primary navbar-need-help footer-need-help" href="./pages/need-help.html">Need help?</a>
+                    <a class="btn btn-primary navbar-need-help footer-need-help" href="./pages/need-help.html" data-translate='needHelp'>Need help?</a>
 
-                    <a class="btn btn-warning navbar-donate footer-donate" href="./pages/want-to-help.html">DONATION</a>
+                    <a class="btn btn-warning navbar-donate footer-donate" href="./pages/want-to-help.html" data-translate='DONATE'>DONATE</a>
 
                 </div>
             </div>
