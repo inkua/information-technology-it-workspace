@@ -697,7 +697,7 @@ a {
     /* Header - Encabezado con títulos */
 
     .tittles-container {
-        height: 698px;
+        height: 798px;
     }
 
     /* Header - Background */
@@ -705,7 +705,7 @@ a {
     .bg-home-mobile {
         position: absolute;
         width: 100%;
-        height: 700px;
+        height: 810px;
         top: 54px;
         z-index: -1;
         mix-blend-mode: multiply;
@@ -717,7 +717,7 @@ a {
     .header-background-mascara {
         position: absolute;
         width: 100%;
-        height: 758px;
+        height: 870px;
         top: 0;
         background: #02397A;
         border: 0px solid;
@@ -729,7 +729,7 @@ a {
 
     .wave-mobile {
         position: absolute;
-        top: 720px;
+        top: 830px;
         width: 100%;
     }
 
