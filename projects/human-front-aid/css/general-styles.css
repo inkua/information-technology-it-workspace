@@ -25,8 +25,11 @@
     /* Margenes Laterales */
     --margin-desktop-1: 5.06%;
     --margin-desktop-2: 13.06%;
+    --margin-mobile: 4%;
 
 }
+
+/* Estilos generales en Desktop y tablet */
 
 html,
 body {
@@ -37,6 +40,20 @@ body {
     box-sizing: border-box;
 }
 
+.contenttitles {
+    padding-left: var(--margin-desktop-2);
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.contenttitles__h3 {
+    display: unset;
+    font-family: var(--font-family-lato);
+    color: var(--color-dos);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
 @media (max-width: 319px ) {
     body { display: none; }
 }
@@ -44,11 +61,30 @@ body {
 @media (min-width: 320px ) and (max-width: 480px) {
     .mobile { display: block; }
     .desktop { display: none; }
+
+    /* Estilos generales en Mobile */
+
+    .contenttitles {
+        padding-left: var(--margin-mobile);
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+
+    .contenttitles__h3 {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
 }
 
 @media (min-width: 481px ) and (max-width: 992px) {
     .mobile { display: none; }
     .desktop { display: block; }
+
+    /* Estilos generales en Tablet */
+    .contenttitles {
+        padding-left: var(--margin-desktop-1);
+    }
+
 }
 
 @media (min-width: 993px ) and (max-width: 1299px) {
