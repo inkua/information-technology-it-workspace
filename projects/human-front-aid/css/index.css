@@ -642,14 +642,7 @@
 /* │ ► Vania Belén Carlos Camones                            │ */
 /* │ ► Manuel Florez                                         │ */
 /* └─────────────────────────────────────────────────────────┘ */
-.body-tittles{
-    margin: 20px 0px 12px 15px;
-    color: var(--color-ocho);
-    font-weight: 500;
-}
-.desktop-titles{
-    display: none;
-}
+
 .Carrousel {
     margin-top: 0px;
     height: fit-content;
@@ -772,15 +765,6 @@
     font-family: var(--font-family-lato);
     color: var(--color-dos);
     padding-left: 15%;
-}
-
-.tittle-supporters {
-    margin-left: var(--margin-desktop-2);
-    font-family: var(--font-family-lato);
-    color: var(--color-dos);
-    margin-top: 4rem;
-    font-weight: 700;
-    font-size: 40px;
 }
 
 .swiperSupporters {
@@ -1719,12 +1703,7 @@ a {
     /* │ ► Vania Belén Carlos Camones                            │ */
     /* │ ► Manuel Florez                                         │ */
     /* └─────────────────────────────────────────────────────────┘ */
-    .mobile-titles{
-        display: none;
-    }    
-    .desktop-titles{
-        display: unset;
-    }
+
     .swiper-p {
         height: 380px;
     }
@@ -1782,23 +1761,6 @@ a {
     /* │   COLABORADORES:                                        │ */
     /* │ ► Federico Manuel Peralta                               │ */
     /* └─────────────────────────────────────────────────────────┘ */
-
-    .text-supporters {
-        text-decoration: none;
-        font-family: var(--font-family-lato);
-        color: var(--color-dos);
-        padding-left: 15%;
-    }
-
-    .tittle-supporters {
-        margin-left: var(--margin-desktop-2);
-        font-family: var(--font-family-lato);
-        color: var(--color-dos);
-        margin-top: 4rem;
-        font-weight: 700;
-        font-size: 40px;
-        
-    }
 
     .swiperSupporters {
         width: 80%;
@@ -2038,12 +2000,7 @@ a {
     /* │ ► Diego N. Cabrera                                      │ */
     /* │ ► Vania Belén Carlos Camones                            │ */
     /* └─────────────────────────────────────────────────────────┘ */
-    .mobile-titles{
-        display: none;
-    }   
-    .desktop-titles{
-        display: unset;
-    }
+
     .Carrousel{
         margin-top: 100px;
     }
@@ -2097,26 +2054,6 @@ a {
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN PATRONS ■■■■■■■■■■■■■■■■■■■■■ │ */
-    /* └─────────────────────────────────────────────────────────┘ */
-
-
-
-    /* ┌─────────────────────────────────────────────────────────┐ */
-    /* │ ■■■■■■■■■■■■■■■■■■ INICIO SUPPORTERS ■■■■■■■■■■■■■■■■■■ │ */
-    /* │                                                         │ */
-    /* │   COLABORADORES:                                        │ */
-    /* │ ► Federico Manuel Peralta                               │ */
-    /* └─────────────────────────────────────────────────────────┘ */
-
-    .tittle-supporters {
-        margin-left: var(--margin-desktop-1);
-        font-family: var(--font-family-lato);
-        color: var(--color-dos);
-        margin-top: 4rem;
-    }
-
-    /* ┌─────────────────────────────────────────────────────────┐ */
-    /* │ ■■■■■■■■■■■■■■■■■■■ FIN SUPPORTERS ■■■■■■■■■■■■■■■■■■■■ │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
 
@@ -2182,12 +2119,6 @@ a {
     /* │ ► Diego N. Cabrera                                      │ */
     /* │ ► Vania Belén Carlos Camones                            │ */
     /* └─────────────────────────────────────────────────────────┘ */
-    .mobile-titles{
-        display: none;
-    }   
-    .desktop-titles{
-        display: unset;
-    }
 
     .swiper-p {
         height: 560px;
