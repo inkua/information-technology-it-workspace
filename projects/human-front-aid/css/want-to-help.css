@@ -228,6 +228,30 @@ a {
     margin-top: -300px;
 }
 
+#icono-paypal{
+    content: url(../img/iconopaypal.jpg);
+}
+
+#icono-twint{
+    content: url(../img/iconotwint.jpg);
+}
+
+#icono-zahlteil{
+    content: url(../img/iconozahlteil.jpg);
+}
+
+#icono-paypal:hover{
+    content: url(../img/iconopaypalalt.jpg);
+}
+
+#icono-twint:hover{
+    content: url(../img/iconotwintalt.jpg);
+}
+
+#icono-zahlteil:hover{
+    content: url(../img/iconozahlteilalt.jpg);
+}
+
 /* Header - Botón donate */
 
 .home-btn {
