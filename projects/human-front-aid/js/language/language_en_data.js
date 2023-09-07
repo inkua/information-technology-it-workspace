@@ -45,7 +45,7 @@ var translations = {
       wantToHelp:"Want to help?",
       headerSubtitle1:"If you ",
       headerSubtitleStrong1:"need help or know somebody that needs help, ",
-      headerSubtitle2:"here you have a list of organizations eager to help you. ",
+      headerSubtitle2:"here you have a list of organizations eager to help you.",
       headerSubtitleStrong2:"You are not alone!",
       contentparagraph1:"Here you have some ",
       contentparagraphSpan1:"useful links",
