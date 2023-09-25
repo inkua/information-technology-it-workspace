@@ -1,0 +1,3 @@
+[submodule "projects/maqueta-ong"]
+	path = projects/maqueta-ong
+	url = https://github.com/inkua/maqueta-ong.git
