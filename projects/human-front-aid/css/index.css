@@ -296,7 +296,7 @@
     right: 3%;
     bottom: 50%;
     background-color: transparent;
-    background-image: url("../Image/btn-chatbot-mobile.png");
+    background-image: url("../img/chatbot/btn-chatbot-mobile.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -691,7 +691,7 @@
 }
 
 .memberCard .memberImage {
-    background-image: url('../Image/Imagen_Reto.png');
+    background-image: url('../img/patrons/card-Reto.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1906,9 +1906,11 @@ a {
     /* └─────────────────────────────────────────────────────────┘ */
 
 }
+
+
 @media (min-width: 481px) {
     .chatbot-button {
-        background-image: url("../Image/btn-chatbot.png");
+        background-image: url("../img/chatbot/btn-chatbot.png");
         width: 70px;
         height: 70px;
     }
