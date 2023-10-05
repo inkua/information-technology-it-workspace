@@ -229,27 +229,27 @@ a {
 }
 
 #icono-paypal{
-    content: url(../img/iconopaypal.jpg);
+    content: url(../img/donate/icon-paypal-disabled.jpg);
 }
 
 #icono-twint{
-    content: url(../img/iconotwint.jpg);
+    content: url(../img/donate/icon-twint-disabled.jpg);
 }
 
 #icono-zahlteil{
-    content: url(../img/iconozahlteil.jpg);
+    content: url(../img/donate/icon-zahlteil-disabled.jpg);
 }
 
 #icono-paypal:hover{
-    content: url(../img/iconopaypalalt.jpg);
+    content: url(../img/donate/icon-paypal-enabled.jpg);
 }
 
 #icono-twint:hover{
-    content: url(../img/iconotwintalt.jpg);
+    content: url(../img/donate/icon-twint-enabled.jpg);
 }
 
 #icono-zahlteil:hover{
-    content: url(../img/iconozahlteilalt.jpg);
+    content: url(../img/donate/icon-zahlteil-enabled.jpg);
 }
 
 /* Header - Botón donate */
@@ -340,7 +340,7 @@ a {
     right: 3%;
     bottom: 50%;
     background-color: transparent;
-    background-image: url("../Image/btn-chatbot-mobile.png");
+    background-image: url("../img/chatbot/btn-chatbot-mobile.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -353,7 +353,7 @@ a {
 
 @media (min-width: 481px) {
     .chatbot-button {
-        background-image: url("../Image/btn-chatbot.png");
+        background-image: url("../img/chatbot/btn-chatbot.png");
         width: 70px;
         height: 70px;
     }
