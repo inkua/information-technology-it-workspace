@@ -310,7 +310,7 @@
 /* Chatbot - seccion ventana - containers */
 
 #chatbot-ventana-container {
-    display: block;
+    display: none;
     position: fixed;
     bottom: 0;
     right: 0;
