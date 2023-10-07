@@ -324,45 +324,6 @@ a {
 /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
 /* └─────────────────────────────────────────────────────────┘ */
 
-/* ┌─────────────────────────────────────────────────────────┐ */
-/* │ ■■■■■■■■■■■■■■■■■■■■ INICIO CHATBOT ■■■■■■■■■■■■■■■■■■■ │ */
-/* │                                                         │ */
-/* │   COLABORADORES:                                        │ */
-/* │ ► Diego N. Cabrera                                      │ */
-/* │ ► Manuel Florez                                         │ */
-/* └─────────────────────────────────────────────────────────┘ */
-
-/* Chatbot - sección botón */
-
-
-.chatbot-button {
-    position: fixed;
-    right: 3%;
-    bottom: 50%;
-    background-color: transparent;
-    background-image: url("../img/chatbot/btn-chatbot-mobile.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 100px;
-    border: 1px transparent solid ;
-    width: 60px;
-    height: 60px;
-    z-index: 3;
-}
-
-@media (min-width: 481px) {
-    .chatbot-button {
-        background-image: url("../img/chatbot/btn-chatbot.png");
-        width: 70px;
-        height: 70px;
-    }
-}
-
-/* ┌─────────────────────────────────────────────────────────┐ */
-/* │ ■■■■■■■■■■■■■■■■■■■■■ FIN CHATBOT ■■■■■■■■■■■■■■■■■■■■■ │ */
-/* └─────────────────────────────────────────────────────────┘ */
-
 
 
 /* ┌─────────────────────────────────────────────────────────┐ */
