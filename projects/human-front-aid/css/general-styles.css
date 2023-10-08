@@ -326,6 +326,13 @@ body {
         height: 60px;
     }
 
+    /* Chatbot - Ventana de chat completa en Mobile */
+
+    #chatbot-ventana-container {
+        width: 95%;
+        height: 80%;
+    }
+
 }
 
 @media (min-width: 481px ) and (max-width: 992px) {
