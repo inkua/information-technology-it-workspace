@@ -77,7 +77,7 @@ body {
 /* Chatbot - seccion ventana - containers */
 
 #chatbot-ventana-container {
-    display: flex;
+    display: none;
     flex-direction: column;
     position: fixed;
     bottom: 0;
@@ -294,6 +294,7 @@ body {
 }
 
 .mood {
+    display: inline;
     margin-left: 60px;
 }
 
