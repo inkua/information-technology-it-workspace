@@ -289,13 +289,16 @@ body {
 }
 
 .chatbot-chooseicon {
-    display: inline-block;
+    display: inline;
+    float: right;
     width: 20px;
+    margin-top: 3px;
 }
 
-.mood {
+.send {
     display: inline;
-    margin-left: 60px;
+    margin-right: 8px;
+    margin-left: 5px;
 }
 
 @media (max-width: 319px ) {
@@ -330,8 +333,11 @@ body {
     /* Chatbot - Ventana de chat completa en Mobile */
 
     #chatbot-ventana-container {
-        width: 95%;
+        width: 94%;
         height: 80%;
+        left: 0;
+        right: 0;
+        margin-left: 3%;
     }
 
 }
