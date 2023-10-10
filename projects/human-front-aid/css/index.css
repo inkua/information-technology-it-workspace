@@ -313,9 +313,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 100px;
-    margin-bottom: 100px;
-    
-
+    margin-bottom: 10px;
 }
 
 .about-us-texto {
@@ -344,16 +342,18 @@
       height: auto;
 }
 
+.about-btnBox{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
 .about-us-texto-button {
+    border-radius: 7px;
     border: 2px solid var(--color-seis);
-    margin-bottom: 10px;
-    padding: 10px 2px;
-    text-align: center;
-    border-radius: 8px;
-    width: 25%;
-    background-color: white;
-    color: #004eaa;
-    text-decoration: none;
+    background-color: transparent;
+    color: var(--color-seis);
+    padding: 5px 10px;
 }
 
 .about-us-texto-button:hover {
@@ -1054,6 +1054,11 @@ a {
         max-width: 100%;
       height: auto;
     }
+    .about-btnBox{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
     .about-us-texto-button{
         max-width: 100%;
     }
@@ -1426,23 +1431,28 @@ a {
     .about-us {
         display: flex;
         flex-direction: column-reverse;
-        padding: 65px 0;
+        padding-top: 65px;
     }
 
     .about-us .about-us-texto {
         width: 90%;
-        padding: 40px 0;
+        padding: 0px 0;
         margin: 0 auto;
         justify-content: space-around;
         font-size: 16px;
     }
 
     .about-us .about-us-image-imagen {
-        width: 80%;
-        margin: 0 auto;
-        height: 283px;
         margin: 10px;
-        padding: 1px;
+        padding-bottom: 25px;
+        height: 500px;
+        width: 90%;
+        object-fit: cover;
+    }
+    .about-btnBox{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
     }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
@@ -1947,67 +1957,6 @@ a {
 
 /* tablets */
 @media (min-width: 481px) {
-    /* .swiper-p {
-        padding: 0px;
-        margin: 0px;
-        height: 280px;
-        width: 100%;
-    }
-    
-    .swiper-slide-p {
-        font-size: 18px;
-        display: flex;
-        justify-content: center;
-        width: fit-content;
-    }
-    
-    .swiper-slide-p img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    
-    .memberCard {
-        background-color: #003A7D;
-        width: 145px;
-        height: fit-content;
-        color: black;
-        text-decoration: none;
-        display: inline-block;
-        border-radius: 5px;
-        overflow: hidden;
-    }
-    .memberCard-one {
-        width: 100vw;
-        height: auto;
-        display: flex;
-        align-items: center;
-    }
-    
-    .memberCard .memberImage {
-        background-image: url('../img/patrons/card-Reto.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 145px;
-        height: 145px;
-        display: flex;
-        justify-content: right;
-    }
-    
-    .memberCard .memberImage .memberMoreInfo {
-        width: 23px;
-        height: 23px;
-        background-color: #F8D714;
-        color: #003A7D;
-        padding: 0px;
-        font-size: 1rem;
-        border-radius: 12px;
-        text-align: center;
-        border-radius: 15px;
-        margin: 5px;
-    } */
     .memberCard-one {
         height: 320px;
     }
@@ -2015,8 +1964,8 @@ a {
         height: 100%;
         width: 100%;
     }
-
 }
+
 /* desktop */
 @media (min-width: 993px) {
     .memberCard-one {
