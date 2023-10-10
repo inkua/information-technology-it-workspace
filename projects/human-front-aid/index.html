@@ -39,8 +39,7 @@
     <script defer src="js/chatbot.js"></script>
     
     <!-- VideoJS -->
-    <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
-    <script defer src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
+    <link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet" />
 
     <!-- SwiperJS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
@@ -344,12 +343,27 @@
         <div class="swiper swiper-p mySwiperP">
             <div class="swiper-wrapper">
 
-                <div class="swiper-slide swiper-slide-p">
-                <div class="memberCard-one">
+                <!-- <div class="swiper-slide swiper-slide-p">
+                    <div class="memberCard-one">
                         <video class="member-video img-fluid" controls>
                             <source src="./video/VID-20221107-WA0019.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video> 
+                    </div>
+                </div> -->
+                <div class="swiper-slide swiper-slide-p">
+                    <div class="memberCard-one">
+
+                        <video id="my-video" class="card-video video-js vjs-default-skin" controls preload="auto" 
+                        poster="./img/patrons/video-preload.png" data-setup="{}" height="100%">
+
+                        <source src="./video/VID-20221107-WA0019.mp4" class="member-video img-fluid card-video video-js" controls id="my-video"  data-setup="{}" type="video/mp4">
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that
+                            <a href="https://videojs.com/html5-video-support/" target="_blank">
+                                supports HTML5 video</a>
+
                     </div>
                 </div>
                 <div class="swiper-slide swiper-slide-p">
@@ -729,5 +743,7 @@
     <!-- └─────────────────────────────────────────────────────────┘ -->
 
     <script defer src="js/language/language.js"></script>
+    <!-- video js -->
+    <script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
 </body>
 </html>
