@@ -227,7 +227,12 @@ a {
     height: 30%;
     margin-top: -300px;
 }
-
+.imagen-qr-mobile{
+    margin-left: 120px;
+    width: 30%;
+    height: 30%;
+    margin-top: -300px;
+}
 #icono-paypal{
     content: url(../img/donate/icon-paypal-disabled.jpg);
 }
@@ -705,6 +710,14 @@ a {
         margin-bottom: -40%;
     }
 
+    .imagen-qr-mobile{
+        margin-left: 15%;
+        width: 45%;
+        height: 45%;
+        margin-top: 0px;
+        margin-bottom: -40%;
+    }
+
 
     /* Header - Encabezado con títulos */
 
@@ -1037,6 +1050,13 @@ a {
     }
     
     .imagen-qr{
+        margin-left: -300px;
+        width: 270px;
+        height: 270px;
+        margin-top: 0px;
+        margin-bottom: -350px;
+    }
+    .imagen-qr-mobile{
         margin-left: -300px;
         width: 270px;
         height: 270px;
