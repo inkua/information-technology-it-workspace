@@ -469,28 +469,31 @@ a {
     }
 
     .option-donate {
-        display: inline-block;
+        display: inline;
+        float: left;
         background-color: var(--color-siete);
         font-family: var(--font-family-lato);
         color: var(--color-uno);
         margin: 2px;
         padding-top: 4px;
         border-radius: 10px;
-        width: 50%;
+        width: calc(50% - 4px);
         height: 90%;
         text-align: center;
     }
 
     .option-need-help {
-        display: inline-block;
+        display: inline;
+        float: right;
         color: var(--color-uno);
         font-family: var(--font-family-lato);
         margin: 2px;
         padding-top: 4px;
         border-radius: 10px;
-        width: 45%;
+        width: calc(50% - 4px);
         height: 90%;
         text-align: center;
+        white-space: nowrap;
     }
 
 
