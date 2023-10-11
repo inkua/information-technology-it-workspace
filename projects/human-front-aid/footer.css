@@ -1,0 +1,320 @@
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
+/* │                                                         │ */
+/* │   COLABORADORES:                                        │ */
+/* │ ► Diego Valentino Pardo Yepez                           │ */
+/* │ ► Santiago Elias Carranza                               │ */
+/* │ ► Manuel Florez Lopez                                   │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ █████████████████████████████  MOBILE █████████████████████████████ ║
+    ║ ███████████████████████████ hasta 499px  ██████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
+footer {
+    background-color: var(--color-cinco);
+    height: 150px;
+    width: 100vw;
+}
+.footer-desktop {
+    display: none;
+}
+.footer-mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+.footer-mobile .footer-column-one {
+    width: 60%;
+    height: 100px;
+    padding-right: 10px;
+}
+.footer-mobile .footer-column-one .footer-sm-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    max-width: 180px;
+}
+.footer-mobile .footer-column-one .footer-sm-box .footer-sm-item .footer-logo-sm {
+    width: 25px;
+    height: 25px;
+}
+.footer-mobile .footer-column-one .footer-logo-box {
+    display: flex;
+    align-items: center;
+}
+.footer-mobile .footer-column-one .footer-logo-box .footer-logo-img {
+    background-image: url('./img/Layout/logo.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-right: 2px;
+}
+.footer-mobile .footer-column-one .footer-logo-box .footer-span {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: white;
+}
+.footer-mobile .footer-column-two {
+    width: 40%;
+    height: 100px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.footer-mobile .footer-column-two .footer-donate-btn {
+    background-color: var(--color-tres);
+    color: var(--color-dos);
+    width: 100px;
+    border-radius: 7px;
+    font-size: 1rem;
+    padding: 9px 2px;
+    display: block;
+    margin-bottom: 15px;
+}
+.footer-mobile .footer-column-two .footer-need-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    width: 100px;
+    border-radius: 7px;
+    font-size: 1rem;
+    padding: 5px 2px;
+    display: block;
+}
+
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ████████████████████████ MEDIA QUERY PHABLET ██████████████████████ ║
+    ║ ██████████████████████████  desde - 500px  ████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
+@media (min-width: 500px) {
+    footer {
+        background-color: var(--color-cinco);
+        height: 170px;
+    }
+    .footer-mobile {
+        justify-content: center;
+        padding: 20px 40px;
+    }
+    .footer-mobile .footer-column-one {
+        max-width: 288px;
+    }
+    .footer-mobile .footer-column-one .footer-logo-box .footer-logo-img {
+        width: 60px;
+        height: 60px;
+    }
+    .footer-mobile .footer-column-one .footer-logo-box .footer-span {
+        font-size: 0.8rem;
+    }
+    .footer-mobile .footer-column-two {
+        max-width: 192px;
+    }
+}
+
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ████████████████████████ MEDIA QUERY TABLET ███████████████████████ ║
+    ║ ██████████████████████████ desde - 750px  █████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
+@media (min-width: 750px) {
+    footer {
+        height: 250px;
+    }
+    .footer-mobile {
+        display: none;
+    }
+    .footer-desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100%;
+        padding: 40px 60px;
+    }
+    .footer-desktop .footer-sm-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .footer-desktop .footer-sm-box .footer-sm-item .footer-logo-sm {
+        width: 30px;
+        height: 30px;
+    }
+    .footer-desktop .footer-sm-box .footer-sm-item .footer-span-logo {
+        color: white;
+        font-size: 0.8rem;
+        margin-left: 5px;
+    }
+    .footer-desktop .footer-hr {
+        border-width: 2px;
+        width: 100%;
+        color: white;
+    }
+    .footer-nav {
+        width: 100%;
+    }
+    .footer-nav .footer-nav-ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+    .footer-nav .footer-nav-ul .footer-nav-li .footer-home-btn {
+        font-size: 0.9rem;
+        color: white;
+        margin-right: 5px;
+    }
+    .footer-nav .footer-nav-ul .footer-nav-li .footer-about-btn {
+        font-size: 0.9rem;
+        color: white;
+        margin-right: 25px;
+    }
+    .footer-nav .footer-nav-ul .footer-nav-li:first-child {
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+    }
+    .footer-nav .footer-nav-ul .footer-nav-li:first-child .footer-logo-img {
+        width: 50px;
+        height: 50px;
+        background-image: url(./img/Layout/logo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: 5px;
+    }
+    .footer-nav .footer-nav-ul .footer-nav-li:first-child .footer-span {
+        font-size: 1rem;
+        font-weight: 400;
+        color: white;
+    }
+    .footer-donate-btn {
+        background-color: var(--color-tres);
+        color: var(--color-dos);
+        width: 100px;
+        border-radius: 7px;
+        font-size: 1rem;
+        padding: 9px 2px;
+        display: block;
+    }
+    .footer-need-btn {
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+        width: 100px;
+        border-radius: 7px;
+        font-size: 1rem;
+        padding: 5px 2px;
+        display: block;
+    }
+}
+
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ████████████████████████ MEDIA QUERY DESKTOP ██████████████████████ ║
+    ║ ██████████████████████████ desde - 1024px █████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
+@media (min-width: 1024px) {
+    footer {
+        height: 400px;
+    }
+    .footer-desktop {
+        padding: 50px 100px;
+    }
+    .footer-desktop .footer-sm-box {
+        max-width: 1450px;
+        margin-bottom: 30px;
+    }
+    .footer-desktop .footer-sm-box .footer-sm-item .footer-logo-sm {
+        width: 40px;
+        height: 40px;
+    }
+    .footer-desktop .footer-sm-box .footer-sm-item .footer-span-logo {
+        font-size: 1.2rem;
+        padding-top: 5px;
+        margin-left: 7px;
+    }
+    .footer-desktop .footer-hr {
+        border-width: 3px;
+        max-width: 1450px;
+        margin-bottom: 40px;
+    }
+    .footer-nav {
+        max-width: 1450px;
+    }
+    .footer-nav .footer-nav-ul {
+        gap: 20px;
+    }
+    .footer-nav .footer-nav-ul .footer-nav-li .footer-home-btn {
+        font-size: 1rem;
+        margin-right: 15px;
+    }
+    .footer-nav .footer-nav-ul .footer-nav-li .footer-about-btn {
+        font-size: 1rem;
+        margin-right: 100px;
+    }
+    .footer-nav .footer-nav-ul .footer-nav-li:first-child {
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+    }
+    .footer-nav .footer-nav-ul .footer-nav-li:first-child .footer-logo-img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+    .footer-nav .footer-nav-ul .footer-nav-li:first-child .footer-span {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .footer-donate-btn {
+        width: 150px;
+        border-radius: 7px;
+        font-size: 1.4rem;
+        padding: 5px 5px;
+    }
+    .footer-need-btn {
+        width: 150px;
+        border-radius: 7px;
+        font-size: 1.4rem;
+        padding: 5px 5px;
+    }
+}
+
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+/* └─────────────────────────────────────────────────────────┘ */
