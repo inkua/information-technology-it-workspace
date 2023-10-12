@@ -1085,7 +1085,7 @@ footer {
     align-items: center;
 }
 .footer-mobile .footer-column-one .footer-logo-box .footer-logo-img {
-    background-image: url('../img/Layout/logo.png');
+    background-image: url('../img/Layout/footer_logo.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1238,7 +1238,7 @@ footer {
     .footer-nav .footer-nav-ul .footer-nav-li:first-child .footer-logo-img {
         width: 50px;
         height: 50px;
-        background-image: url(../img/Layout/logo.png);
+        background-image: url(../img/Layout/footer_logo.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
