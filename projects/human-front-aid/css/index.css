@@ -8,272 +8,18 @@
 
 /*  Header - Sección Navbar  */
 
-.navbar-brand-logo {
-    left: 100px;
-}
-
-.navbar-contenedor {
-    padding-top: 20px;
-}
-
-.bg-body-tertiary {
-    --bs-bg-opacity: 0;
-}
-
-.navbar-titulo {
-    margin-left: 0;
-    font-family: var(--font-family-lato);
-    color: var(--color-uno);
-}
-
-.navbar-titulo:after {
-    display: block;
-    content: '';
-    border-bottom: solid 1px var(--color-uno);
-    transform: scaleX(0);
-    transition: transform 150ms ease-in-out;
-}
-
-.navbar-titulo:hover:after {
-    color: var(--color-uno);
-    transform: scaleX(1);
-}
-
-.navbar-titulo:hover {
-    color: var(--color-uno);
-}
-
-.navbar-logo {
-    margin-left: var(--margin-desktop-2)
-}
-
-.navbar-contenido {
-    font-family: var(--font-family-lato);
-    margin-right: var(--margin-desktop-2);
-}
-
-.navbar-link {
-    color: var(--color-uno);
-}
-
-.navbar-about-us {
-    margin-right: 61px;
-}
-
-.navbar-about-us:hover {
-    color: var(--color-uno);
-    text-shadow: var(--text-shadow);
-    transition: all ease 0.5s;
-}
-
-.navbar-about-us:after {
-    display: block;
-    content: '';
-    border-bottom: solid 1px var(--color-uno);
-    transform: scaleX(0);
-    transition: transform 150ms ease-in-out;
-}
-
-.navbar-about-us:hover:after {
-    color: var(--color-uno);
-    transform: scaleX(1);
-}
-
-.navbar-home {
-    margin-right: 24px;
-}
-
-.navbar-home:hover {
-    color: var(--color-uno);
-    text-shadow: var(--text-shadow);
-    transition: all ease 0.5s;
-}
-
-.navbar-home:after {
-    display: block;
-    content: '';
-    border-bottom: solid 1px var(--color-uno);
-    transform: scaleX(0);
-    transition: transform 150ms ease-in-out;
-}
-
-.navbar-home:hover:after {
-    color: var(--color-uno);
-    transform: scaleX(1);
-}
-
-.navbar-need-help {
-    margin-right: 16px;
-    color: var(--color-uno);
-    border: 2px solid var(--color-uno);
-    background-color: transparent;
-    border-radius: 8px;
-    padding-left: 34px;
-    padding-right: 34px;
-}
-
-.navbar-need-help:hover {
-    color: var(--color-uno);
-    color: rgba(0, 0, 0, 0.7);
-    background-color: var(--color-uno);
-    border: 2px solid var(--color-uno);
-    text-shadow: var(--shadow-01);
-    box-shadow: var(--shadow-01);
-    transition: all ease 0.5s;
-}
-
-.navbar-donate {
-    font-family: var(--font-family-lato);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--color-uno);
-    border-radius: 8px;
-    font-weight: 900;
-    color: var(--color-dos);
-    background-color: var(--color-tres);
-    padding-left: 34px;
-    padding-right: 34px;
-}
-
-.navbar-donate:hover {
-    color: var(--color-dos);
-    background: var(--color-tres);
-    box-shadow: var(--shadow-02);
-    transition: all ease 0.5s;
-}
-
-/*  Header - Sección idiomas  */
-
-.navbar-ykp {
-    color: var(--color-uno);
-    border-radius: 8px 0 0 8px;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 0.7);
-    background-color: var(--color-uno);
-    width: 67.742px;
-    border: 0;
-}
-
-.navbar-ykp:hover {
-    color: rgba(0, 0, 0, 0.7);
-    background: var(--color-uno);
-    box-shadow: var(--shadow-01);
-    transition: all ease 0.5s;
-}
-
-.navbar-en {
-    color: var(--color-uno);
-    border-radius: 0 8px 8px 0;
-    font-weight: 700;
-    color: var(--color-dos);
-    background-color: var(--color-tres);
-    width: 67.742px;
-    border: 0;
-}
-
-.navbar-en:hover {
-    color: var(--color-dos);
-    background: var(--color-tres);
-    box-shadow: var(--shadow-02);
-    transition: all ease 0.5s;
+header {
+    height: 970px;
 }
 
 /*  Header - Sección Títulos  */
 
-.header-div {
-    margin-left: var(--margin-desktop-2);
-}
-
 .header-titulo {
-    color: var(--color-tres);
-    font-size: 100px;
-    font-family: var(--font-family-lato);
-    font-weight: 700;
-    line-height: 120px;
     width: 442px;
 }
 
 .header-subtitulo {
-    margin-top: 20px;
-    color: #ffffff;
-    font-size: 25px;
-    font-family: 'Poppins';
-    text-shadow: 0 0 5px #000000;
     width: 440px;
-}
-
-.header-subtitulo strong {
-    font-size: 27px;
-    font-weight: bold;
-}
-
-/* Header - Botón donate */
-
-.home-btn {
-    display: flex;
-    background-color: var(--color-tres);
-    border-color: var(--color-tres);
-    position: absolute;
-    width: 254px;
-    height: 64px;
-    border-radius: 8px;
-    color: var(--color-dos);
-    font-size: 28px;
-    font-family: 'Lato';
-    font-weight: 900;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    margin-top: 20px;
-}
-
-.home-btn:hover {
-    color: var(--color-dos);
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-size: 30px;
-    background: var(--color-tres);
-    box-shadow: var(--shadow-02);
-    transition: all ease 0.5s;
-}
-
-/* Header - Sección Background */
-
-.navbar-contenedor-principal {
-    height: 800px;
-}
-
-.header-background-imagen {
-    position: absolute;
-    background: #02397A;
-    object-fit: cover;
-    width: 100%;
-    height: 970px;
-    top: 0;
-    z-index: -1;
-    mix-blend-mode: multiply;
-}
-
-.header-background-mascara {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    height: 970px;
-    background: #02397A;
-    border: 1px solid #000000;
-    z-index: -2;
-    mix-blend-mode: multiply;
-}
-
-/* Header - Efecto wave*/
-
-.wave {
-    position: absolute;
-    width: 100%;
-    height: 160px;
-    top: 812px;
 }
 
 /* ┌─────────────────────────────────────────────────────────┐ */
@@ -312,7 +58,6 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
     margin-bottom: 10px;
 }
 
@@ -685,7 +430,6 @@ a {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
     /* │                                                         │ */
@@ -694,191 +438,20 @@ a {
     /* │ ► Luis Romano                                           │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-    .mobile-navbar-container {
-        padding-top: 8px;
+    /*  Header - Sección Navbar  */
+
+    header {
+        height: auto;
     }
 
-    /* Header - Navbar menu button */
-
-    .mobile-navbar-container {
-        background-color: var(--color-cinco) !important;
-    }
-
-    .dropdown-toggle-nav {
-        padding-left: 20px;
-        border-radius: 0;
-        margin-left: -15px;
-    }
-
-    .dropdown-toggle::after {
-        content: none;
-    }
-
-    .dropdown-navigation {
-        left: 0;
-        right: 0;
-        border: solid 1px black;
-        border-radius: 0;
-        background-color: var(--color-cinco);
-        --bs-dropdown-border-color: 0;
-    }
-
-    .dropdown-navigation[data-bs-popper] {
-        margin-top: 0;
-    }
-
-    .dropdown-item-nav {
-        padding-left: 24px;
-        padding-bottom: 10px;
-    }
-
-    /* Header - Navbar languages button */
-
-    .dropdown-languages {
-        right: 2px;
-        border: solid 1px black;
-        border-radius: 0;
-        background-color: var(--color-cinco);
-    }
-
-    .dropdown-languages[data-bs-popper] {
-        left: auto;
-    }
-
-    .dropdown-item {
-        color: var(--color-uno);
-        font-family: var(--font-family-lato);
-    }
-
-    /* Header - Opciones */
-
-    .header-options {
-        padding-top: 8px;
-        color: var(--color-uno);
-        height: 60px;
-        background-color: var(--color-cinco);
-    }
-
-    .header-options-cuadro {
-        margin: auto;
-        width: 98%;
-        background-color: var(--color-seis);
-        border-radius: 10px;
-        height: 43px;
-    }
-
-    .option-donate {
-        display: inline;
-        float: left;
-        background-color: var(--color-siete);
-        font-family: var(--font-family-lato);
-        color: var(--color-uno);
-        margin: 2px;
-        padding-top: 4px;
-        border-radius: 10px;
-        width: calc(50% - 4px);
-        height: 90%;
-        text-align: center;
-    }
-
-    .option-need-help {
-        display: inline;
-        float: right;
-        color: var(--color-uno);
-        font-family: var(--font-family-lato);
-        margin: 2px;
-        padding-top: 4px;
-        border-radius: 10px;
-        width: calc(50% - 4px);
-        height: 90%;
-        text-align: center;
-        white-space: nowrap;
-    }
-
-
-    /* Header - Encabezado con títulos */
-
-    .tittles-container {
-        height: 698px;
-    }
-
-    /* Header - Background */
-
-    .bg-home-mobile {
-        position: absolute;
-        width: 100%;
-        height: 700px;
-        top: 54px;
-        z-index: -1;
-        mix-blend-mode: multiply;
-        background-blend-mode: luminosity;
-    }
-
-    /* Header - Máscara de color azul */
-
-    .header-background-mascara {
-        position: absolute;
-        width: 100%;
-        height: 758px;
-        top: 0;
-        background: #02397A;
-        border: 0px solid;
-        z-index: -2;
-        mix-blend-mode: multiply;
-    }
-
-    /* Header - Efecto de wave */
-
-    .wave-mobile {
-        position: absolute;
-        top: 720px;
-        width: 100%;
-    }
-
-    /* Header - Títulos */
-
-    .titulos {
-        margin-left: 4%;
-    }
+    /*  Header - Sección Títulos  */
 
     .header-titulo {
-        font-size: 56px;
         width: 80%;
-        line-height: 56px;
-        padding-top: 50px;
     }
 
     .header-subtitulo {
-        font-family: var(--font-family-poppins);
-        font-weight: 200;
-        font-size: 17px;
         width: 65%;
-        line-height: 24px;
-        margin-top: 25px;
-    }
-
-    .header-subtitulo strong {
-        font-size: 17px;
-        font-weight: 600;
-        width: 80%;
-        line-height: 24px;
-    }
-
-    .header-subtitulo-languageC{
-        display: inline-block;
-    }
-
-    .home-btn {
-        width: 150px;
-        height: 38px;
-        border-radius: 8px;
-        color: var(--color-dos);
-        font-size: 19px;
-        margin-top: 40px;
-    }
-
-    .home-btn:hover {
-        font-size: 20px;
     }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
@@ -1039,120 +612,7 @@ a {
     /* │ ► Luis Romano                                           │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-    /* Header - Navbar */
 
-    .navbar-mobile {
-        margin-left: var(--margin-desktop-1);
-        margin-right: var(--margin-desktop-1);
-    }
-
-    .navbar-logo {
-        margin-left: 0;
-    }
-
-    .navbar-contenedor {
-        margin-right: 0;
-    }
-
-    .navbar-titulo {
-        display: none;
-    }
-
-    .navbar-contenido {
-        font-family: var(--font-family-lato);
-        margin-right: var(--margin-desktop-1);
-    }
-
-    .navbar-home {
-        font-size: 0.9em;
-        margin-right: 1%;
-    }
-
-    .navbar-about-us {
-        font-size: 0.9em;
-        margin-right: 2%;
-        white-space: nowrap;
-    }
-
-    .navbar-need-help {
-        margin-right: 2%;
-        border: 1px solid var(--color-uno);
-        padding-left: 10px;
-        padding-right: 10px;
-        white-space: nowrap;
-    }
-
-    .navbar-donate {
-        color: var(--color-uno);
-        border-radius: 8px;
-        font-weight: 900;
-        color: var(--color-dos);
-        background-color: var(--color-tres);
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-right: -24px;
-    }
-
-    /*  Header - Sección idiomas  */
-
-    .navbar-en {
-        margin-right: 20%;
-    }
-
-    /* Header - Sección Títulos */
-
-    .header-div {
-        margin-left: var(--margin-desktop-1);
-    }
-
-    .header-titulo {
-        font-size: 80px;
-        font-family: var(--font-family-lato);
-        font-weight: 700;
-        line-height: 100px;
-        width: 442px;
-    }
-
-    .header-subtitulo {
-        font-size: 20px;
-        font-family: 'Poppins';
-        text-shadow: 0 0 5px #000000;
-        width: 440px;
-    }
-
-    .header-subtitulo strong {
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 24px;
-    }
-
-    /* Header - Background */
-
-    .header-background-imagen {
-        height: 870px;
-    }
-
-    /* Header - Máscara azul */
-
-    .header-background-mascara {
-        position: absolute;
-        width: 100%;
-        top: 0;
-        height: 870px;
-        background: #02397A;
-        border: 1px solid #000000;
-        z-index: -2;
-        mix-blend-mode: multiply;
-    }
-
-    /* Header - Efecto wave*/
-
-    .wave {
-        position: absolute;
-        width: 100%;
-        height: 130px;
-        top: 772px;
-    }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
@@ -1328,36 +788,6 @@ a {
 */
 
 @media(min-width: 993px) and (max-width: 1299px) {
-
-    /* ┌─────────────────────────────────────────────────────────┐ */
-    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
-    /* │                                                         │ */
-    /* │   COLABORADORES:                                        │ */
-    /* │ ► Diego N. Cabrera                                      │ */
-    /* │ ► Luis Romano                                           │ */
-    /* └─────────────────────────────────────────────────────────┘ */
-
-    /*  Header - Sección Navbar  */
-
-    .navbar-logo {
-        margin-left: var(--margin-desktop-1);
-    }
-
-    .navbar-contenido {
-        margin-right: var(--margin-desktop-1);
-    }
-
-    /*  Header - Sección Títulos  */
-
-    .header-div {
-        margin-left: var(--margin-desktop-1);
-    }
-
-    /* ┌─────────────────────────────────────────────────────────┐ */
-    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
-    /* └─────────────────────────────────────────────────────────┘ */
-
-
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■ INICIO ABOUT-US ■■■■■■■■■■■■■■■■■■■■ │ */
@@ -1569,8 +999,15 @@ a {
 
 }
 
-
-
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████ EXTRA MEDIA QUERYS  ███████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
 
 /* patreosn quieries */
 
