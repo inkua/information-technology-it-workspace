@@ -4,6 +4,8 @@
 
 ### [Enlace del Taller](https://sites.google.com/inkua.de/internal-website-test/proyectos/mejora-continua?authuser=0)
 
+[<p align="center"><img src="./img/ScreenshotTaller.png" width="800" /></p>](https://sites.google.com/inkua.de/internal-website-test/proyectos/mejora-continua?authuser=0)
+
 En este taller, los participantes adquirieron conocimientos esenciales para diseñar sitios web responsivos de manera accesible y efectiva utilizando Flex. Los aspectos clave cubiertos incluyeron:
 
 - **Introducción a Flex**: Los asistentes comprendieron la importancia de Flex como una técnica fundamental para crear diseños web que se adapten a diferentes dispositivos y tamaños de pantalla.
