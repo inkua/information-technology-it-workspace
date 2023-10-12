@@ -265,36 +265,6 @@ header {
 @media(min-width: 993px) and (max-width: 1299px) {
 
     /* ┌─────────────────────────────────────────────────────────┐ */
-    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
-    /* │                                                         │ */
-    /* │   COLABORADORES:                                        │ */
-    /* │ ► Diego N. Cabrera                                      │ */
-    /* │ ► Luis Romano                                           │ */
-    /* └─────────────────────────────────────────────────────────┘ */
-
-	/*  Header - Sección Navbar  */
-
-	.navbar-logo{
-		margin-left: var(--margin-desktop-1);
-	}
-
-	.navbar-contenido {
-		margin-right: var(--margin-desktop-1);
-	}
-
-	/*  Header - Sección Títulos  */
-
-	.header-div {
-		margin-left: var(--margin-desktop-1);
-	}
-
-    /* ┌─────────────────────────────────────────────────────────┐ */
-    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
-    /* └─────────────────────────────────────────────────────────┘ */
-
-
-
-    /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■ INICIO CONTENIDO ■■■■■■■■■■■■■■■■■■■ │ */
     /* │                                                         │ */
     /* │   COLABORADORES:                                        │ */
