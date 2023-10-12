@@ -506,7 +506,7 @@ html {
     top: 123px;
     right: 45px;
     transform: scale(3, 3);
-    animation: T-animation 4.3s ease normal;
+    animation: T-animation 2.3s ease normal;
 }
 @keyframes T-animation {
     0% {
@@ -521,7 +521,7 @@ html {
     margin-top: 160px;
     position: relative;
     transform: scale(3, 3);
-    animation: T-animation 4.3s ease normal;
+    animation: T-animation 2.3s ease normal;
 }
 @keyframes T-animation {
     0% {
