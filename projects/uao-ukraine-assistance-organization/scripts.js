@@ -15,10 +15,16 @@ $(document).ready(function () {
 
     var swiper = new Swiper(".mySwiper", {
         effect: "coverflow",
-        initialSlide: 2,
+        // initialSlide: 2,
         grabCursor: true,
         centeredSlides: true,
+        loopedSlides: 2,
+        loop: true,
         slidesPerView: "auto",
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
         coverflowEffect: {
             rotate: 0,
             stretch: 0,
@@ -32,6 +38,7 @@ $(document).ready(function () {
         },
         pagination: {
             el: ".swiper-pagination",
+            clickable: true,
         },
     });
 });

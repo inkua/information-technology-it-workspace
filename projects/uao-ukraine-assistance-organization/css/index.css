@@ -917,6 +917,7 @@ html {
 
 .swiper {
     width: 100%;
+    max-width: 1250px;
     padding-top: 50px;
     padding-bottom: 50px;
 }
