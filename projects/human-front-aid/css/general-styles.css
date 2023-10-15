@@ -29,7 +29,7 @@
 
 }
 
-/* Estilos generales en Desktop y tablet */
+/* Estilos generales */
 
 html,
 body {
@@ -58,6 +58,30 @@ a {
     text-decoration: none;
     text-align: center;
     font-size: 1.25rem;
+}
+
+.nav-btn-effect-01:hover {
+    color: var(--color-uno);
+    color: rgba(0, 0, 0, 0.7);
+    background-color: var(--color-uno);
+    border: 2px solid var(--color-uno);
+    text-shadow: var(--shadow-01);
+    box-shadow: var(--shadow-01);
+    transition: all ease 0.5s;
+}
+
+.nav-btn-effect-02:hover {
+    color: var(--color-dos);
+    background: var(--color-tres);
+    box-shadow: var(--shadow-02);
+    transition: all ease 0.5s;
+}
+
+.nav-btn-effect-03:hover {
+    color: rgba(0, 0, 0, 0.7);
+    background: var(--color-uno);
+    box-shadow: var(--shadow-01);
+    transition: all ease 0.5s;
 }
 
 /* ┌─────────────────────────────────────────────────────────┐ */
@@ -182,16 +206,6 @@ a {
     padding-right: 34px;
 }
 
-.navbar-need-help:hover {
-    color: var(--color-uno);
-    color: rgba(0, 0, 0, 0.7);
-    background-color: var(--color-uno);
-    border: 2px solid var(--color-uno);
-    text-shadow: var(--shadow-01);
-    box-shadow: var(--shadow-01);
-    transition: all ease 0.5s;
-}
-
 .navbar-donate {
     font-family: var(--font-family-lato);
     display: flex;
@@ -206,13 +220,6 @@ a {
     padding-right: 34px;
 }
 
-.navbar-donate:hover {
-    color: var(--color-dos);
-    background: var(--color-tres);
-    box-shadow: var(--shadow-02);
-    transition: all ease 0.5s;
-}
-
 /*  Header - Sección idiomas  */
 
 .navbar-ykp {
@@ -225,13 +232,6 @@ a {
     border: 0;
 }
 
-.navbar-ykp:hover {
-    color: rgba(0, 0, 0, 0.7);
-    background: var(--color-uno);
-    box-shadow: var(--shadow-01);
-    transition: all ease 0.5s;
-}
-
 .navbar-en {
     color: var(--color-uno);
     border-radius: 0 8px 8px 0;
@@ -240,13 +240,6 @@ a {
     background-color: var(--color-tres);
     width: 67.742px;
     border: 0;
-}
-
-.navbar-en:hover {
-    color: var(--color-dos);
-    background: var(--color-tres);
-    box-shadow: var(--shadow-02);
-    transition: all ease 0.5s;
 }
 
 /*  Header - Sección Títulos  */
@@ -1123,22 +1116,26 @@ footer {
 .footer-mobile .footer-column-two .footer-donate-btn {
     background-color: var(--color-tres);
     color: var(--color-dos);
-    width: 100px;
+    width: 110px;
     border-radius: 7px;
     font-size: 1rem;
-    padding: 9px 2px;
+    font-family: var(--font-family-lato);
+    padding: 8px 6px;
+    font-weight: 900;
     display: block;
     margin-bottom: 15px;
+    height: 2.4rem;
 }
 .footer-mobile .footer-column-two .footer-need-btn {
     background-color: transparent;
     border: 2px solid white;
     color: white;
-    width: 100px;
+    width: 110px;
     border-radius: 7px;
     font-size: 1rem;
-    padding: 5px 2px;
+    padding: 6px 6px;
     display: block;
+    height: 2.4rem;
 }
 
 /*
@@ -1266,20 +1263,32 @@ footer {
         background-color: var(--color-tres);
         color: var(--color-dos);
         width: 100px;
-        border-radius: 7px;
+        font-family: var(--font-family-lato);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        font-weight: 900;
+        padding-left: 34px;
+        padding-right: 34px;
         font-size: 1rem;
         padding: 9px 2px;
         display: block;
+        height: 41px;
     }
     .footer-need-btn {
         background-color: transparent;
-        border: 2px solid white;
-        color: white;
-        width: 100px;
-        border-radius: 7px;
+        border: 2px solid var(--color-uno);
+        color: var(--color-uno);
+        width: 110px;
+        border-radius: 8px;
         font-size: 1rem;
         padding: 5px 2px;
         display: block;
+        font-size: 1rem;
+        padding: 5px 5px;
+        padding-top: 6px;
+        height: 41px;
     }
 }
 
@@ -1349,15 +1358,29 @@ footer {
     }
     .footer-donate-btn {
         width: 150px;
-        border-radius: 7px;
-        font-size: 1.4rem;
-        padding: 5px 5px;
+        font-family: var(--font-family-lato);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        font-weight: 900;
+        color: var(--color-dos);
+        background-color: var(--color-tres);
+        padding-left: 34px;
+        padding-right: 34px;
+        font-size: 1rem;
+        padding-top: 10px;
     }
     .footer-need-btn {
         width: 150px;
-        border-radius: 7px;
-        font-size: 1.4rem;
+        color: var(--color-uno);
+        border: 2px solid var(--color-uno);
+        background-color: transparent;
+        border-radius: 8px;
+        font-size: 1rem;
         padding: 5px 5px;
+        padding-top: 6px;
+        height: 41px;
     }
 }
 
