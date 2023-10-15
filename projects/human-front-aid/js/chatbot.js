@@ -1,11 +1,15 @@
 function openChat() {
     document.getElementsByClassName('chatbot-button')[0].setAttribute('style', 'display: none;');
     document.getElementById('chatbot-ventana-container').setAttribute('style', 'display: block;');
+    if (screen.width >= 320 && screen.width <= 480) {
+        document.getElementById('focus').setAttribute('style', 'display: block;');
+    }
 }
 
 function closeChat() {
     document.getElementsByClassName('chatbot-button')[0].setAttribute('style', 'display: block;');
     document.getElementById('chatbot-ventana-container').setAttribute('style', 'display: none;');
+    document.getElementById('focus').setAttribute('style', 'display: none;');
 }
 
 $(document).bind('keydown',function(eEvento){    

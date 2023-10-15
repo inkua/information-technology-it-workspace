@@ -29,7 +29,7 @@
 
 }
 
-/* Estilos generales en Desktop y tablet */
+/* Estilos generales */
 
 html,
 body {
@@ -53,6 +53,665 @@ body {
     font-weight: 700;
     font-size: 2rem;
 }
+
+a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.nav-btn-effect-01:hover {
+    color: var(--color-uno);
+    color: rgba(0, 0, 0, 0.7);
+    background-color: var(--color-uno);
+    border: 2px solid var(--color-uno);
+    text-shadow: var(--shadow-01);
+    box-shadow: var(--shadow-01);
+    transition: all ease 0.5s;
+}
+
+.nav-btn-effect-02:hover {
+    color: var(--color-dos);
+    background: var(--color-tres);
+    box-shadow: var(--shadow-02);
+    transition: all ease 0.5s;
+}
+
+.nav-btn-effect-03:hover {
+    color: rgba(0, 0, 0, 0.7);
+    background: var(--color-uno);
+    box-shadow: var(--shadow-01);
+    transition: all ease 0.5s;
+}
+
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
+/* │                                                         │ */
+/* │   COLABORADORES:                                        │ */
+/* │ ► Diego N. Cabrera                                      │ */
+/* │ ► Luis Romano                                           │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████ DESKTOP 2 █████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
+
+/*  Header - Sección Navbar  */
+
+.navbar-brand-logo {
+    left: 100px;
+}
+
+.navbar-contenedor {
+    padding-top: 20px;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 0;
+}
+
+.navbar-titulo {
+    margin-left: 0;
+    font-family: var(--font-family-lato);
+    color: var(--color-uno);
+}
+
+.navbar-titulo:after {
+    display: block;
+    content: '';
+    border-bottom: solid 1px var(--color-uno);
+    transform: scaleX(0);
+    transition: transform 150ms ease-in-out;
+}
+
+.navbar-titulo:hover:after {
+    color: var(--color-uno);
+    transform: scaleX(1);
+}
+
+.navbar-titulo:hover {
+    color: var(--color-uno);
+}
+
+.navbar-logo {
+    margin-left: var(--margin-desktop-2)
+}
+
+.navbar-contenido {
+    font-family: var(--font-family-lato);
+    margin-right: var(--margin-desktop-2);
+}
+
+.navbar-link {
+    color: var(--color-uno);
+}
+
+.navbar-about-us {
+    margin-right: 61px;
+}
+
+.navbar-about-us:hover {
+    color: var(--color-uno);
+    text-shadow: var(--text-shadow);
+    transition: all ease 0.5s;
+}
+
+.navbar-about-us:after {
+    display: block;
+    content: '';
+    border-bottom: solid 1px var(--color-uno);
+    transform: scaleX(0);
+    transition: transform 150ms ease-in-out;
+}
+
+.navbar-about-us:hover:after {
+    color: var(--color-uno);
+    transform: scaleX(1);
+}
+
+.navbar-home {
+    margin-right: 24px;
+}
+
+.navbar-home:hover {
+    color: var(--color-uno);
+    text-shadow: var(--text-shadow);
+    transition: all ease 0.5s;
+}
+
+.navbar-home:after {
+    display: block;
+    content: '';
+    border-bottom: solid 1px var(--color-uno);
+    transform: scaleX(0);
+    transition: transform 150ms ease-in-out;
+}
+
+.navbar-home:hover:after {
+    color: var(--color-uno);
+    transform: scaleX(1);
+}
+
+.navbar-need-help {
+    margin-right: 16px;
+    color: var(--color-uno);
+    border: 2px solid var(--color-uno);
+    background-color: transparent;
+    border-radius: 8px;
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
+.navbar-donate {
+    font-family: var(--font-family-lato);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-uno);
+    border-radius: 8px;
+    font-weight: 900;
+    color: var(--color-dos);
+    background-color: var(--color-tres);
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
+/*  Header - Sección idiomas  */
+
+.navbar-ykp {
+    color: var(--color-uno);
+    border-radius: 8px 0 0 8px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: var(--color-uno);
+    width: 67.742px;
+    border: 0;
+}
+
+.navbar-en {
+    color: var(--color-uno);
+    border-radius: 0 8px 8px 0;
+    font-weight: 700;
+    color: var(--color-dos);
+    background-color: var(--color-tres);
+    width: 67.742px;
+    border: 0;
+}
+
+/*  Header - Sección Títulos  */
+
+.header-div {
+    margin-left: var(--margin-desktop-2);
+}
+
+.header-titulo {
+    color: var(--color-tres);
+    font-size: 100px;
+    font-family: var(--font-family-lato);
+    font-weight: 700;
+    line-height: 120px;
+    width: 442px;
+}
+
+.header-subtitulo {
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Poppins';
+    text-shadow: 0 0 5px #000000;
+    width: 440px;
+}
+
+.header-subtitulo strong {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+/* Header - Botón donate */
+
+.home-btn {
+    display: flex;
+    background-color: var(--color-tres);
+    border-color: var(--color-tres);
+    position: absolute;
+    width: 254px;
+    height: 64px;
+    border-radius: 8px;
+    color: var(--color-dos);
+    font-size: 28px;
+    font-family: 'Lato';
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.home-btn:hover {
+    color: var(--color-dos);
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 30px;
+    background: var(--color-tres);
+    box-shadow: var(--shadow-02);
+    transition: all ease 0.5s;
+}
+
+/* Header - Sección Background */
+
+.navbar-contenedor-principal {
+    height: 800px;
+}
+
+.header-background-imagen {
+    position: absolute;
+    background: #02397A;
+    object-fit: cover;
+    width: 100%;
+    height: 970px;
+    top: 0;
+    z-index: -1;
+    mix-blend-mode: multiply;
+}
+
+.header-background-mascara {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 970px;
+    background: #02397A;
+    border: 1px solid #000000;
+    z-index: -2;
+    mix-blend-mode: multiply;
+}
+
+/* Header - Efecto wave*/
+
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    top: 812px;
+}
+
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ █████████████████████████████ MOBILE ██████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .mobile-navbar-container {
+        padding-top: 8px;
+    }
+
+    /* Header - Navbar menu button */
+
+    .mobile-navbar-container {
+        background-color: var(--color-cinco) !important;
+    }
+
+    .dropdown-toggle-nav {
+        padding-left: 20px;
+        border-radius: 0;
+        margin-left: -15px;
+    }
+
+    .dropdown-toggle::after {
+        content: none;
+    }
+
+    .dropdown-navigation {
+        left: 0;
+        right: 0;
+        border: solid 1px black;
+        border-radius: 0;
+        background-color: var(--color-cinco);
+        --bs-dropdown-border-color: 0;
+    }
+
+    .dropdown-navigation[data-bs-popper] {
+        margin-top: 0;
+    }
+
+    .dropdown-item-nav {
+        padding-left: 24px;
+        padding-bottom: 10px;
+    }
+
+    /* Header - Navbar languages button */
+
+    .dropdown-languages {
+        right: 2px;
+        border: solid 1px black;
+        border-radius: 0;
+        background-color: var(--color-cinco);
+    }
+
+    .dropdown-languages[data-bs-popper] {
+        left: auto;
+    }
+
+    .dropdown-item {
+        color: var(--color-uno);
+        font-family: var(--font-family-lato);
+    }
+
+    /* Header - Opciones */
+
+    .header-options {
+        padding-top: 8px;
+        color: var(--color-uno);
+        height: 60px;
+        background-color: var(--color-cinco);
+    }
+
+    .header-options-cuadro {
+        margin: auto;
+        width: 98%;
+        background-color: var(--color-seis);
+        border-radius: 10px;
+        height: 43px;
+    }
+
+    .option-donate {
+        display: inline;
+        float: left;
+        background-color: var(--color-siete);
+        font-family: var(--font-family-lato);
+        color: var(--color-uno);
+        margin: 2px;
+        padding-top: 4px;
+        border-radius: 10px;
+        width: calc(50% - 4px);
+        height: 90%;
+        text-align: center;
+    }
+
+    .option-need-help {
+        display: inline;
+        float: right;
+        color: var(--color-uno);
+        font-family: var(--font-family-lato);
+        margin: 2px;
+        padding-top: 4px;
+        border-radius: 10px;
+        width: calc(50% - 4px);
+        height: 90%;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+
+    /* Header - Encabezado con títulos */
+
+    .tittles-container {
+        height: 698px;
+    }
+
+    /* Header - Background */
+
+    .bg-home-mobile {
+        position: absolute;
+        width: 100%;
+        height: 700px;
+        top: 54px;
+        z-index: -1;
+        mix-blend-mode: multiply;
+        background-blend-mode: luminosity;
+    }
+
+    /* Header - Máscara de color azul */
+
+    .header-background-mascara {
+        position: absolute;
+        width: 100%;
+        height: 758px;
+        top: 0;
+        background: #02397A;
+        border: 0px solid;
+        z-index: -2;
+        mix-blend-mode: multiply;
+    }
+
+    /* Header - Efecto de wave */
+
+    .wave-mobile {
+        position: absolute;
+        top: 720px;
+        width: 100%;
+    }
+
+    /* Header - Títulos */
+
+    .titulos {
+        margin-left: 4%;
+    }
+
+    .header-titulo {
+        font-size: 56px;
+        width: 80%;
+        line-height: 56px;
+        padding-top: 50px;
+    }
+
+    .header-subtitulo {
+        font-family: var(--font-family-poppins);
+        font-weight: 200;
+        font-size: 17px;
+        width: 65%;
+        line-height: 24px;
+        margin-top: 25px;
+    }
+
+    .header-subtitulo strong {
+        font-size: 17px;
+        font-weight: 600;
+        width: 80%;
+        line-height: 24px;
+    }
+
+    .header-subtitulo-languageC{
+        display: inline-block;
+    }
+
+    .home-btn {
+        width: 150px;
+        height: 38px;
+        border-radius: 8px;
+        color: var(--color-dos);
+        font-size: 19px;
+        margin-top: 40px;
+    }
+
+    .home-btn:hover {
+        font-size: 20px;
+    }
+    
+}
+
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ █████████████████████████████ TABLET ██████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
+
+@media (min-width: 481px) and (max-width: 992px) {
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* │ ► Luis Romano                                           │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    /* Header - Navbar */
+
+    .navbar-mobile {
+        margin-left: var(--margin-desktop-1);
+        margin-right: var(--margin-desktop-1);
+    }
+
+    .navbar-logo {
+        margin-left: 0;
+    }
+
+    .navbar-contenedor {
+        margin-right: 0;
+    }
+
+    .navbar-titulo {
+        display: none;
+    }
+
+    .navbar-contenido {
+        font-family: var(--font-family-lato);
+        margin-right: var(--margin-desktop-1);
+    }
+
+    .navbar-home {
+        font-size: 0.9em;
+        margin-right: 1%;
+    }
+
+    .navbar-about-us {
+        font-size: 0.9em;
+        margin-right: 2%;
+        white-space: nowrap;
+    }
+
+    .navbar-need-help {
+        margin-right: 2%;
+        border: 1px solid var(--color-uno);
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    .navbar-donate {
+        color: var(--color-uno);
+        border-radius: 8px;
+        font-weight: 900;
+        color: var(--color-dos);
+        background-color: var(--color-tres);
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: -24px;
+    }
+
+    /*  Header - Sección idiomas  */
+
+    .navbar-en {
+        margin-right: 20%;
+    }
+
+    /* Header - Sección Títulos */
+
+    .header-div {
+        margin-left: var(--margin-desktop-1);
+    }
+
+    .header-titulo {
+        font-size: 80px;
+        font-family: var(--font-family-lato);
+        font-weight: 700;
+        line-height: 100px;
+        width: 442px;
+    }
+
+    .header-subtitulo {
+        font-size: 20px;
+        font-family: 'Poppins';
+        text-shadow: 0 0 5px #000000;
+        width: 440px;
+    }
+
+    .header-subtitulo strong {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+
+    /* Header - Background */
+
+    .header-background-imagen {
+        height: 870px;
+    }
+
+    /* Header - Máscara azul */
+
+    .header-background-mascara {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 870px;
+        background: #02397A;
+        border: 1px solid #000000;
+        z-index: -2;
+        mix-blend-mode: multiply;
+    }
+
+    /* Header - Efecto wave*/
+
+    .wave {
+        position: absolute;
+        width: 100%;
+        height: 130px;
+        top: 772px;
+    }
+
+}
+
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ████████████████████████████ DESKTOP 1 ████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
+
+@media(min-width: 993px) and (max-width: 1299px) {
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* │ ► Luis Romano                                           │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    /*  Header - Sección Navbar  */
+
+    .navbar-logo {
+        margin-left: var(--margin-desktop-1);
+    }
+
+    .navbar-contenido {
+        margin-right: var(--margin-desktop-1);
+    }
+
+    /*  Header - Sección Títulos  */
+
+    .header-div {
+        margin-left: var(--margin-desktop-1);
+    }
+
+}
+
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+/* └─────────────────────────────────────────────────────────┘ */
 
 /* Estilos del Chatbot en Desktop y tablet */
 
@@ -301,6 +960,19 @@ body {
     margin-left: 5px;
 }
 
+/* Extra Effects - Focus */
+
+#focus {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 3;
+    opacity: 0.6;
+}
+
 @media (max-width: 319px ) {
     body { display: none; }
 }
@@ -362,3 +1034,380 @@ body {
     .mobile { display: none; }
     .desktop { display: block; }
 }
+
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ */
+/* │                                                         │ */
+/* │   COLABORADORES:                                        │ */
+/* │ ► Diego Valentino Pardo Yepez                           │ */
+/* │ ► Santiago Elias Carranza                               │ */
+/* │ ► Manuel Florez Lopez                                   │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ █████████████████████████████  MOBILE █████████████████████████████ ║
+    ║ ███████████████████████████ hasta 499px  ██████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
+footer {
+    background-color: var(--color-cinco);
+    height: 140px;
+    width: 100%;
+    overflow-x: hidden;
+}
+.footer-desktop {
+    display: none;
+}
+.footer-mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+.footer-mobile .footer-column-one {
+    width: 60%;
+    height: 100px;
+    padding-right: 10px;
+}
+.footer-mobile .footer-column-one .footer-sm-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    max-width: 180px;
+}
+.footer-mobile .footer-column-one .footer-sm-box .footer-sm-item .footer-logo-sm {
+    width: 25px;
+    height: 25px;
+}
+.footer-mobile .footer-column-one .footer-logo-box {
+    display: flex;
+    align-items: center;
+}
+.footer-mobile .footer-column-one .footer-logo-box .footer-logo-img {
+    background-image: url('../img/Layout/footer_logo.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-right: 2px;
+}
+.footer-mobile .footer-column-one .footer-logo-box .footer-span {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: white;
+}
+.footer-mobile .footer-column-two {
+    width: 40%;
+    height: 100px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.footer-mobile .footer-column-two .footer-donate-btn {
+    background-color: var(--color-tres);
+    color: var(--color-dos);
+    width: 110px;
+    border-radius: 7px;
+    font-size: 1rem;
+    font-family: var(--font-family-lato);
+    padding: 8px 6px;
+    font-weight: 900;
+    display: block;
+    margin-bottom: 15px;
+    height: 2.4rem;
+}
+.footer-mobile .footer-column-two .footer-need-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    width: 110px;
+    border-radius: 7px;
+    font-size: 1rem;
+    padding: 6px 6px;
+    display: block;
+    height: 2.4rem;
+}
+
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ████████████████████████ MEDIA QUERY PHABLET ██████████████████████ ║
+    ║ ██████████████████████████  desde - 500px  ████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
+@media (min-width: 500px) {
+    footer {
+        background-color: var(--color-cinco);
+        height: 210px;
+    }
+    .footer-mobile {
+        justify-content: center;
+        padding: 20px 40px;
+    }
+    .footer-mobile .footer-column-one {
+        max-width: 288px;
+    }
+    .footer-mobile .footer-column-one .footer-logo-box .footer-logo-img {
+        width: 60px;
+        height: 60px;
+    }
+    .footer-mobile .footer-column-one .footer-logo-box .footer-span {
+        font-size: 0.8rem;
+    }
+    .footer-mobile .footer-column-two {
+        max-width: 192px;
+    }
+}
+
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ████████████████████████ MEDIA QUERY TABLET ███████████████████████ ║
+    ║ ██████████████████████████ desde - 750px  █████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
+@media (min-width: 750px) {
+    footer {
+        height: 210px;
+    }
+    .footer-mobile {
+        display: none;
+    }
+    .footer-desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100%;
+        padding: 40px 60px;
+    }
+    .footer-desktop .footer-sm-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .footer-desktop .footer-sm-box .footer-sm-item .footer-logo-sm {
+        width: 30px;
+        height: 30px;
+    }
+    .footer-desktop .footer-sm-box .footer-sm-item .footer-span-logo {
+        color: white;
+        font-size: 0.8rem;
+        margin-left: 5px;
+    }
+    .footer-desktop .footer-hr {
+        border-width: 2px;
+        width: 100%;
+        color: white;
+    }
+    .footer-nav {
+        width: 100%;
+    }
+    .footer-nav .footer-nav-ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+    .footer-nav .footer-nav-ul .footer-nav-li .footer-home-btn {
+        font-size: 0.9rem;
+        color: white;
+        margin-right: 5px;
+    }
+    .footer-nav .footer-nav-ul .footer-nav-li .footer-about-btn {
+        font-size: 0.9rem;
+        color: white;
+        margin-right: 25px;
+    }
+    .footer-nav .footer-nav-ul .footer-nav-li:first-child {
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+    }
+    .footer-nav .footer-nav-ul .footer-nav-li:first-child .footer-logo-img {
+        width: 50px;
+        height: 50px;
+        background-image: url(../img/Layout/footer_logo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: 5px;
+    }
+    .footer-nav .footer-nav-ul .footer-nav-li:first-child .footer-span {
+        font-size: 1rem;
+        font-weight: 400;
+        color: white;
+    }
+    .footer-donate-btn {
+        background-color: var(--color-tres);
+        color: var(--color-dos);
+        width: 100px;
+        font-family: var(--font-family-lato);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        font-weight: 900;
+        padding-left: 34px;
+        padding-right: 34px;
+        font-size: 1rem;
+        padding: 9px 2px;
+        display: block;
+        height: 41px;
+    }
+    .footer-need-btn {
+        background-color: transparent;
+        border: 2px solid var(--color-uno);
+        color: var(--color-uno);
+        width: 110px;
+        border-radius: 8px;
+        font-size: 1rem;
+        padding: 5px 2px;
+        display: block;
+        font-size: 1rem;
+        padding: 5px 5px;
+        padding-top: 6px;
+        height: 41px;
+    }
+}
+
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ████████████████████████ MEDIA QUERY DESKTOP ██████████████████████ ║
+    ║ ██████████████████████████ desde - 1024px █████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
+@media (min-width: 1024px) {
+    footer {
+        height: 350px;
+    }
+    .footer-desktop {
+        padding: 50px 100px;
+        padding-top: 80px;
+    }
+    .footer-desktop .footer-sm-box {
+        max-width: 1450px;
+        margin-bottom: 30px;
+    }
+    .footer-desktop .footer-sm-box .footer-sm-item .footer-logo-sm {
+        width: 40px;
+        height: 40px;
+    }
+    .footer-desktop .footer-sm-box .footer-sm-item .footer-span-logo {
+        font-size: 1rem;
+        padding-top: 5px;
+        margin-left: 7px;
+    }
+    .footer-desktop .footer-hr {
+        border-width: 3px;
+        max-width: 1450px;
+        margin-bottom: 40px;
+    }
+    .footer-nav {
+        max-width: 1450px;
+    }
+    .footer-nav .footer-nav-ul {
+        gap: 20px;
+    }
+    .footer-nav .footer-nav-ul .footer-nav-li .footer-home-btn {
+        font-size: 1rem;
+        margin-right: 15px;
+    }
+    .footer-nav .footer-nav-ul .footer-nav-li .footer-about-btn {
+        font-size: 1rem;
+        margin-right: 100px;
+    }
+    .footer-nav .footer-nav-ul .footer-nav-li:first-child {
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+    }
+    .footer-nav .footer-nav-ul .footer-nav-li:first-child .footer-logo-img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+    .footer-nav .footer-nav-ul .footer-nav-li:first-child .footer-span {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .footer-donate-btn {
+        width: 150px;
+        font-family: var(--font-family-lato);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        font-weight: 900;
+        color: var(--color-dos);
+        background-color: var(--color-tres);
+        padding-left: 34px;
+        padding-right: 34px;
+        font-size: 1rem;
+        padding-top: 10px;
+    }
+    .footer-need-btn {
+        width: 150px;
+        color: var(--color-uno);
+        border: 2px solid var(--color-uno);
+        background-color: transparent;
+        border-radius: 8px;
+        font-size: 1rem;
+        padding: 5px 5px;
+        padding-top: 6px;
+        height: 41px;
+    }
+}
+
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ██████████████████████████ Extra Querys ███████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
+
+@media (min-width: 481px) {
+    .footer-mobile {
+        padding: 40px var(--margin-desktop-1);
+    }
+    .footer-desktop {
+        padding: 40px var(--margin-desktop-1);
+        padding-top: 60px;
+    }
+}
+@media (min-width: 1300px) {
+    .footer-desktop {
+        padding: 50px var(--margin-desktop-2);
+        padding-top: 80px;
+    }
+}
+
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+/* └─────────────────────────────────────────────────────────┘ */

@@ -27,6 +27,7 @@
 
     <!-- JavaScript -->
     <script defer src="../js/chatbot.js"></script>
+    <script defer src="../js/language/language.js"></script>
 
     <!-- Estilos CSS3 -->
     <link rel="stylesheet" href="../css/general-styles.css"/>
@@ -57,7 +58,7 @@
                 <div class="container-fluid navbar-contenedor">
 
                     <!--  Logo  -->
-                    <img class="navbar-brand navbar-logo" src="../img/layout/logo.png" alt="">
+                    <img class="navbar-brand navbar-logo" src="../img/layout/header_logo.png" alt="">
 
                     <!--  Título  -->
                     <a class="navbar-brand navbar-titulo" href="../index.html">Human Front Aid</a>
@@ -68,9 +69,25 @@
                             <a class="nav-link navbar-link navbar-home" href="../index.html" data-translate="home">Home</a>
                             <a class="nav-link navbar-link navbar-about-us" href="./about-us.html" data-translate="about">About us</a>
                           
-                            <a class="btn btn-primary navbar-need-help" href="./need-help.html" data-translate="needHelp">Need help?</a>
+                            <a class="
+                                btn 
+                                btn-primary 
+                                navbar-need-help
+                                nav-btn-effect-01" 
+                                href="./need-help.html" 
+                                data-translate="needHelp">
+                                    Need help?
+                            </a>
                    
-                            <a class="btn btn-warning navbar-donate" href="./want-to-help.html" data-translate="DONATE">DONATE</a>
+                            <a class="
+                                btn 
+                                btn-warning 
+                                navbar-donate
+                                nav-btn-effect-02" 
+                                href="./want-to-help.html" 
+                                data-translate="DONATE">
+                                    DONATE
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -86,9 +103,26 @@
                         <div class="navbar-nav ms-auto">
 
                             <!-- Opción Ukrania -->
-                            <button type="button" onclick="changeLanguage('language_uc_data'); return false;" class="btn btn-primary navbar-ykp">YKP</button>
+                            <button 
+                                type="button" 
+                                onclick="changeLanguage('language_uc_data'); return false;" 
+                                class="
+                                    btn 
+                                    btn-primary 
+                                    navbar-ykp
+                                    nav-btn-effect-03">
+                                        YKP
+                            </button>
                             <!-- Opción Inglés -->
-                            <button type="button" onclick="changeLanguage('language_en_data'); return false;" class="btn btn-warning navbar-en">EN</button>
+                            <button 
+                                type="button" 
+                                onclick="changeLanguage('language_en_data'); return false;" 
+                                class="btn 
+                                btn-warning 
+                                navbar-en
+                                nav-btn-effect-02">
+                                    EN
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -319,63 +353,91 @@
     <!-- │   COLABORADORES:                                        │ -->
     <!-- │ ► Diego Valentino Pardo Yepez                           │ -->
     <!-- │ ► Santiago Elias Carranza                               │ -->
+    <!-- │ ► Manuel Esteban Florez Lopez                           │ -->
     <!-- └─────────────────────────────────────────────────────────┘ -->
 
-    <footer class="footer_container">
-
-        <div class="footer_redsocial">
-            <div class="footer_redsocial_instragram">
-                <a class="link-instagram" href="https://www.instagram.com/humanfrontaid/" target="_blank">
-                    <img src="../img/layout/ig_logo.png" width="35px" height="35px" alt="Icono de Instagram">
-                    <p class="link-instagram-text">Instagram</p>
-                </a>
+    <footer>
+        <section class="footer-mobile" role="landmark">
+            <div class="footer-column-one">
+                <div class="footer-sm-box" role="list">
+                    <a class="footer-sm-item" role="listitem" href="https://www.instagram.com/humanfrontaid/" target="_blank">
+                        <img src="../img/Layout/ig_logo.png" alt="instagram logo" class="footer-logo-sm">
+                    </a>
+                    <a class="footer-sm-item" role="listitem" href="https://www.facebook.com/HUMANFRONTAID/" target="_blank">
+                        <img src="../img/Layout/fb_logo.png" alt="facebook logo" class="footer-logo-sm">
+                    </a>
+                    <a class="footer-sm-item" role="listitem" href="https://wa.me/+41335333344" target="_blank">
+                        <img src="../img/Layout/wpp_logo.png" alt="whatsapp logo" class="footer-logo-sm">
+                    </a>
+                </div>
+                <div class="footer-logo-box">
+                    <div class="footer-logo-img"></div>
+                    <span class="footer-span">Human Front Aid</span>
+                </div>
             </div>
-            <div class="footer_redsocial_facebook">
-                <a class="link-facebook" href="https://www.facebook.com/HUMANFRONTAID/" target="_blank">
-                    <img src="../img/layout/fb_logo.png" width="35px" height="35px" alt="Icono de Facebook">
-                    <p class="link-facebook-text">Facebook</p>
-                </a>
-            </div>
-            <div class="footer_redsocial_whatsapp">
-                <a class="link-whatsapp" href="https://wa.me/+41335333344" target="_blank">
-                    <img src="../img/layout/wpp_logo.png" width="35px" height="35px" alt="Icono de Whatsapp"> 
-                    <p class="link-whatsapp-text">Whatsapp</p>
-                </a>
-            </div>
-        </div>
-
-        <div class="footer_linea"></div>
             
-        <div class="footer_routes">
-            <div class="footer_routes_logo">
-                <img src="../img/layout/logo.png" alt="Logo de Human Front Aid">
-                <a class="navbar-brand navbar-titulo footer-titulo" href="../index.html">Human Front Aid</a>
+            <div class="footer-column-two">
+                <a class="footer-donate-btn nav-btn-effect-02" type="btn" href="./want-to-help.html" data-translate='DONATE'>DONATE</a>
+                <a class="footer-need-btn nav-btn-effect-01" type="btn" href="./need-help.html" data-translate='needHelp'>need-help?</a>
             </div>
-                
-            <div class="footer_routes_container_home_navigation">
+        </section>
 
-                <div class="footer_routes_home-aboutUs">
-                        <a class="nav-link navbar-link navbar-home" href="../index.html" data-translate='home'>Home</a>
-                        <a class="nav-link navbar-link navbar-about-us" href="./about-us.html" data-translate='about'>About us</a>
-                </div>
-
-                <div class="footer_routes_navigation">
-
-                    <a class="btn btn-primary navbar-need-help footer-need-help" href="./need-help.html" data-translate='needHelp'>Need help?</a>
-
-                    <a class="btn btn-warning navbar-donate footer-donate" href="./want-to-help.html" data-translate='DONATE'>DONATE</a>
-
-                </div>
+        <section class="footer-desktop" role="landmark">
+            <div class="footer-sm-box" role="list">
+                <a class="footer-sm-item" role="listitem" href="https://wa.me/+41335333344" target="_blank">
+                    <img src="../img/Layout/wpp_logo.png" alt="whatsapp logo" class="footer-logo-sm">
+                    <span class="footer-span-logo">Whatsapp</span>
+                </a>
+                <a class="footer-sm-item" role="listitem" href="https://www.instagram.com/humanfrontaid/" target="_blank">
+                    <img src="../img/Layout/ig_logo.png" alt="instagram logo" class="footer-logo-sm">
+                    <span class="footer-span-logo">Instagram</span>
+                </a>
+                <a class="footer-sm-item" role="listitem" href="https://www.facebook.com/HUMANFRONTAID/" target="_blank">
+                    <img src="../img/Layout/fb_logo.png" alt="facebook logo" class="footer-logo-sm">
+                    <span class="footer-span-logo">Facebook</span>
+                </a>
             </div>
-        </div>
-    
+            <hr class="footer-hr"></hr>
+            <nav class="footer-nav">
+                <ul class="footer-nav-ul">
+                    <li class="footer-nav-li">
+                        <div class="footer-logo-img"></div>
+                        <span class="footer-span">Human Front Aid</span>
+                    </li>
+                    <li class="footer-nav-li">
+                        <a class="footer-home-btn" href="../index.html" data-translate='home'>Home</a>
+                    </li>
+                    <li class="footer-nav-li">
+                        <a class="footer-about-btn" href="#" data-translate='about'>About us</a>
+                    </li>
+                    <li class="footer-nav-li">
+                        <a class="footer-need-btn nav-btn-effect-01" type="btn" href="./need-help.html" data-translate='needHelp'>Need help?</a>
+                    </li>
+                    <li class="footer-nav-li">
+                        <a class="footer-donate-btn nav-btn-effect-02" type="btn" href="./want-to-help.html" data-translate='DONATE'>DONATE</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
     </footer>
 
     <!-- ┌─────────────────────────────────────────────────────────┐ -->
     <!-- │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ -->
     <!-- └─────────────────────────────────────────────────────────┘ -->
 
-    <script defer src="../js/language/language.js"></script>
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■ EXTRA EFFECTS ■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Diego N. Cabrera                                      │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+    <div id="focus"></div>
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■ EXTRA EFFECTS ■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
 </body>
 
 </html>
