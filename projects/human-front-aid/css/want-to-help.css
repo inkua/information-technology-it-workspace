@@ -26,9 +26,12 @@ header {
 /* Header - Sección Donaciones */
 
 .boton-qr{
+    display: inline-block;
     border-radius: 50%;
     margin-top: 20px;
     margin-left: 30px;
+    width: 9rem;
+    height: 9rem;
 }
 
 .imagen-qr{
@@ -37,12 +40,14 @@ header {
     height: 30%;
     margin-top: -300px;
 }
+
 .imagen-qr-mobile{
     margin-left: 120px;
     width: 30%;
     height: 30%;
     margin-top: -300px;
 }
+
 #icono-paypal{
     content: url(../img/donate/icon-paypal-disabled.jpg);
 }
@@ -56,15 +61,30 @@ header {
 }
 
 #icono-paypal:hover{
+    cursor: pointer;
     content: url(../img/donate/icon-paypal-enabled.jpg);
 }
 
 #icono-twint:hover{
+    cursor: pointer;
     content: url(../img/donate/icon-twint-enabled.jpg);
 }
 
 #icono-zahlteil:hover{
+    cursor: pointer;
     content: url(../img/donate/icon-zahlteil-enabled.jpg);
+}
+
+.donate-active {
+    -webkit-box-shadow: 0px 0px 10px 5px var(--color-tres);
+    -moz-box-shadow: 0px 0px 10px 5px var(--color-tres);
+    box-shadow: 0px 0px 10px 5px var(--color-tres);
+}
+
+.donate-active:hover {
+    -webkit-box-shadow: 0px 0px 10px 5px var(--color-tres);
+    -moz-box-shadow: 0px 0px 10px 5px var(--color-tres);
+    box-shadow: 0px 0px 10px 5px var(--color-tres);
 }
 
 /* ┌─────────────────────────────────────────────────────────┐ */
