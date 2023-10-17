@@ -60,6 +60,23 @@ a {
     font-size: 1.25rem;
 }
 
+.nav-effect:after {
+    display: block;
+    content: '';
+    border-bottom: solid 1px var(--color-uno);
+    transform: scaleX(0);
+    transition: transform 150ms ease-in-out;
+}
+
+.nav-effect:hover:after {
+    color: var(--color-uno);
+    transform: scaleX(1);
+}
+
+.nav-effect:hover {
+    color: var(--color-uno);
+}
+
 .nav-btn-effect-01:hover {
     color: var(--color-uno);
     color: rgba(0, 0, 0, 0.7);
@@ -120,23 +137,6 @@ a {
     color: var(--color-uno);
 }
 
-.navbar-titulo:after {
-    display: block;
-    content: '';
-    border-bottom: solid 1px var(--color-uno);
-    transform: scaleX(0);
-    transition: transform 150ms ease-in-out;
-}
-
-.navbar-titulo:hover:after {
-    color: var(--color-uno);
-    transform: scaleX(1);
-}
-
-.navbar-titulo:hover {
-    color: var(--color-uno);
-}
-
 .navbar-logo {
     margin-left: var(--margin-desktop-2)
 }
@@ -154,46 +154,8 @@ a {
     margin-right: 61px;
 }
 
-.navbar-about-us:hover {
-    color: var(--color-uno);
-    text-shadow: var(--text-shadow);
-    transition: all ease 0.5s;
-}
-
-.navbar-about-us:after {
-    display: block;
-    content: '';
-    border-bottom: solid 1px var(--color-uno);
-    transform: scaleX(0);
-    transition: transform 150ms ease-in-out;
-}
-
-.navbar-about-us:hover:after {
-    color: var(--color-uno);
-    transform: scaleX(1);
-}
-
 .navbar-home {
     margin-right: 24px;
-}
-
-.navbar-home:hover {
-    color: var(--color-uno);
-    text-shadow: var(--text-shadow);
-    transition: all ease 0.5s;
-}
-
-.navbar-home:after {
-    display: block;
-    content: '';
-    border-bottom: solid 1px var(--color-uno);
-    transform: scaleX(0);
-    transition: transform 150ms ease-in-out;
-}
-
-.navbar-home:hover:after {
-    color: var(--color-uno);
-    transform: scaleX(1);
 }
 
 .navbar-need-help {
@@ -1231,11 +1193,15 @@ footer {
         gap: 10px;
     }
     .footer-nav .footer-nav-ul .footer-nav-li .footer-home-btn {
+        display: block;
+        align-items: center;
         font-size: 0.9rem;
         color: white;
         margin-right: 5px;
     }
     .footer-nav .footer-nav-ul .footer-nav-li .footer-about-btn {
+        display: block;
+        align-items: center;
         font-size: 0.9rem;
         color: white;
         margin-right: 25px;
@@ -1340,7 +1306,6 @@ footer {
     }
     .footer-nav .footer-nav-ul .footer-nav-li .footer-about-btn {
         font-size: 1rem;
-        margin-right: 100px;
     }
     .footer-nav .footer-nav-ul .footer-nav-li:first-child {
         margin-right: auto;
@@ -1396,6 +1361,7 @@ footer {
     .footer-mobile {
         padding: 40px var(--margin-desktop-1);
     }
+
     .footer-desktop {
         padding: 40px var(--margin-desktop-1);
         padding-top: 60px;
