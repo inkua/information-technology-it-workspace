@@ -303,6 +303,12 @@ header {
     /* │ ► Federico Peralta                                      │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
+    /*  Header - Sección Navbar  */
+
+    header {
+        height: 1250px;
+    }
+
     /* Header - Sección Títulos */
     
     .header-subtitulo {
@@ -311,27 +317,21 @@ header {
 
     /* Header - Sección Donaciones */
 
-    .boton-qr{
+    .boton-qr {
         border-radius: 50%;
-        margin-top: 0px;
-        margin-left: 50px;
+        margin-top: 150px;
+        margin-left: 0;
+        margin-right: 50px;
         width: 80px;
         height: 80px;
     }
     
-    .imagen-qr{
-        margin-left: -300px;
+    .imagen-qr {
+        display: block;
+        margin: auto;
         width: 270px;
         height: 270px;
-        margin-top: 0px;
-        margin-bottom: -350px;
-    }
-    .imagen-qr-mobile{
-        margin-left: -300px;
-        width: 270px;
-        height: 270px;
-        margin-top: 0px;
-        margin-bottom: -350px;
+        margin-top: 200px;
     }
 
 
