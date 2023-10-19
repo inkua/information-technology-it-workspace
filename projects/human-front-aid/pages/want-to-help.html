@@ -31,6 +31,8 @@
     <script defer src="../js/chatbot.js"></script>
     <script defer src="../js/language/language.js"></script>
     <script defer type="text/javascript" src="../js/cambioQR.js"></script>
+    <script defer type="text/javascript" src="../js/cambioBotonActivo.js"></script>
+
     
     <!-- Estilos CSS3 -->
     <link rel="stylesheet" href="../css/general-styles.css">
@@ -145,9 +147,9 @@
                     <strong data-translate="headerSubtitleStrong1">Yes, we can! Better together.</strong>
                 </p>
                 
-                <input id="icono-paypal" type="image" class="boton-qr donate-active"  alt="PayPal" onclick="cambiarQR('../img/donate/QRpaypal.png')">
-                <input id="icono-twint" type="image" class="boton-qr"  alt="Twint" onclick="cambiarQR('../img/donate/QRtwint.png')">
-                <input id="icono-zahlteil" type="image" class="boton-qr"  alt="Zahlteil" onclick="cambiarQR('../img/donate/QRzahlteil.png')">
+                <input id="icono-paypal" type="image" class="boton-qr donate-active"  alt="PayPal" onclick="cambiarQR('../img/donate/QRpaypal.png');cambiarBotonActivo('icono-paypal');">
+                <input id="icono-twint" type="image" class="boton-qr"  alt="Twint" onclick="cambiarQR('../img/donate/QRtwint.png');cambiarBotonActivo('icono-twint');">
+                <input id="icono-zahlteil" type="image" class="boton-qr"  alt="Zahlteil" onclick="cambiarQR('../img/donate/QRzahlteil.png');cambiarBotonActivo('icono-zahlteil');">
 
                 <img class="imagen-qr donate-active" src="../img/donate/QRpaypal.png" alt="QR">
 
