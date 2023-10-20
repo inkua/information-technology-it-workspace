@@ -334,6 +334,12 @@ header {
     }
 
     /* Header - Sección Títulos */
+
+    .header-titulo {
+        width: 100%;
+        overflow-x: hidden;
+        white-space: nowrap;
+    }
     
     .header-subtitulo {
         width: 440px;
