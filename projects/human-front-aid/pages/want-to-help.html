@@ -147,9 +147,9 @@
                     <strong data-translate="headerSubtitleStrong1">Yes, we can! Better together.</strong>
                 </p>
                 
-                <input id="icono-paypal" type="image" class="boton-qr donate-active"  alt="PayPal" onclick="cambiarQR('../img/donate/QRpaypal.png');cambiarBotonActivo('icono-paypal');">
-                <input id="icono-twint" type="image" class="boton-qr"  alt="Twint" onclick="cambiarQR('../img/donate/QRtwint.png');cambiarBotonActivo('icono-twint');">
-                <input id="icono-zahlteil" type="image" class="boton-qr"  alt="Zahlteil" onclick="cambiarQR('../img/donate/QRzahlteil.png');cambiarBotonActivo('icono-zahlteil');">
+                <input id="icono-paypal" type="image" class="boton-qr donate-active icono-paypal-active"  alt="PayPal" onclick="cambiarQR('../img/donate/QRpaypal.png');cambiarBotonActivo(this.id);">
+                <input id="icono-twint" type="image" class="boton-qr icono-twint-unactive"  alt="Twint" onclick="cambiarQR('../img/donate/QRtwint.png');cambiarBotonActivo(this.id);">
+                <input id="icono-zahlteil" type="image" class="boton-qr icono-zahlteil-unactive"  alt="Zahlteil" onclick="cambiarQR('../img/donate/QRzahlteil.png');cambiarBotonActivo(this.id);">
 
                 <img class="imagen-qr donate-active" src="../img/donate/QRpaypal.png" alt="QR">
 
@@ -242,9 +242,9 @@
                     <strong data-translate="headerSubtitleStrong1">Yes, we can! Better together.</strong>
                 </p>
 
-                <input id="icono-paypal" type="image" class="boton-qr donate-active"  alt="PayPal" ontouchend="cambiarQR_mobile('../img/donate/QRpaypal.png')">
-                <input id="icono-twint" type="image" class="boton-qr"  alt="Twint" ontouchend="cambiarQR_mobile('../img/donate/QRtwint.png')">
-                <input id="icono-zahlteil" type="image" class="boton-qr"  alt="Zahlteil" ontouchend="cambiarQR_mobile('../img/donate/QRzahlteil.png')">
+                <input id="icono-paypal" type="image" class="boton-qr donate-active"  alt="PayPal" ontouchend="cambiarQR_mobile('../img/donate/QRpaypal.png'); cambiarBotonActivo();">
+                <input id="icono-twint" type="image" class="boton-qr"  alt="Twint" ontouchend="cambiarQR_mobile('../img/donate/QRtwint.png'); cambiarBotonActivo();">
+                <input id="icono-zahlteil" type="image" class="boton-qr"  alt="Zahlteil" ontouchend="cambiarQR_mobile('../img/donate/QRzahlteil.png'); cambiarBotonActivo();">
 
                 <img class="imagen-qr-mobile donate-active" src="../img/donate/QRpaypal.png" alt="QR">
                 
