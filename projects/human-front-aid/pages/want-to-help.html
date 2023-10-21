@@ -31,6 +31,9 @@
     <script defer src="../js/chatbot.js"></script>
     <script defer src="../js/language/language.js"></script>
     <script defer type="text/javascript" src="../js/cambioQR.js"></script>
+    <script defer type="text/javascript" src="../js/cambioBotonActivo.js"></script>
+    <script defer type="text/javascript" src="../js/cambiarBotonActivoMobile.js"></script>
+
     
     <!-- Estilos CSS3 -->
     <link rel="stylesheet" href="../css/general-styles.css">
@@ -145,9 +148,9 @@
                     <strong data-translate="headerSubtitleStrong1">Yes, we can! Better together.</strong>
                 </p>
                 
-                <input id="icono-paypal" type="image" class="boton-qr donate-active"  alt="PayPal" onclick="cambiarQR('../img/donate/QRpaypal.png')">
-                <input id="icono-twint" type="image" class="boton-qr"  alt="Twint" onclick="cambiarQR('../img/donate/QRtwint.png')">
-                <input id="icono-zahlteil" type="image" class="boton-qr"  alt="Zahlteil" onclick="cambiarQR('../img/donate/QRzahlteil.png')">
+                <input id="icono-paypal" type="image" class="boton-qr donate-active icono-paypal-active"  alt="PayPal" onclick="cambiarQR('../img/donate/QRpaypal.png');cambiarBotonActivo(this.id);">
+                <input id="icono-twint" type="image" class="boton-qr icono-twint-unactive"  alt="Twint" onclick="cambiarQR('../img/donate/QRtwint.png');cambiarBotonActivo(this.id);">
+                <input id="icono-zahlteil" type="image" class="boton-qr icono-zahlteil-unactive"  alt="Zahlteil" onclick="cambiarQR('../img/donate/QRzahlteil.png');cambiarBotonActivo(this.id);">
 
                 <img class="imagen-qr donate-active" src="../img/donate/QRpaypal.png" alt="QR">
 
@@ -239,10 +242,11 @@
                 <p class="header-subtitulo last-line">    
                     <strong data-translate="headerSubtitleStrong1">Yes, we can! Better together.</strong>
                 </p>
+                <script defer type="text/javascript" src="../js/cambioBotonActivo.js"></script>
 
-                <input id="icono-paypal" type="image" class="boton-qr donate-active"  alt="PayPal" ontouchend="cambiarQR_mobile('../img/donate/QRpaypal.png')">
-                <input id="icono-twint" type="image" class="boton-qr"  alt="Twint" ontouchend="cambiarQR_mobile('../img/donate/QRtwint.png')">
-                <input id="icono-zahlteil" type="image" class="boton-qr"  alt="Zahlteil" ontouchend="cambiarQR_mobile('../img/donate/QRzahlteil.png')">
+                <input id="icono-paypal-mobile" type="image" class="boton-qr donate-active icono-paypal-active"  alt="PayPal" ontouchend="cambiarQR_mobile('../img/donate/QRpaypal.png'); auxCambioBoton(this.id);">
+                <input id="icono-twint-mobile" type="image" class="boton-qr icono-twint-unactive"  alt="Twint" ontouchend="cambiarQR_mobile('../img/donate/QRtwint.png'); auxCambioBoton(this.id);">
+                <input id="icono-zahlteil-mobile" type="image" class="boton-qr icono-zahlteil-unactive"  alt="Zahlteil" ontouchend="cambiarQR_mobile('../img/donate/QRzahlteil.png'); auxCambioBoton(this.id);">
 
                 <img class="imagen-qr-mobile donate-active" src="../img/donate/QRpaypal.png" alt="QR">
                 
@@ -252,6 +256,12 @@
                     imagen[0].src = rutaImagen;
                     }
                 </script>
+                <script>
+                    function auxCambioBoton(botonID){
+                        cambiarBotonActivoMobile(botonID);
+                    }
+                </script>
+                
                 
             </div>
             

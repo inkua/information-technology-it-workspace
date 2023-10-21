@@ -47,32 +47,56 @@ header {
     height: 30%;
     margin-top: -300px;
 }
-
-#icono-paypal{
+/*ICONS BOTONS*/
+.icono-paypal-unactive{
     content: url(../img/donate/icon-paypal-disabled.jpg);
 }
 
-#icono-twint{
+.icono-twint-unactive{
     content: url(../img/donate/icon-twint-disabled.jpg);
 }
 
-#icono-zahlteil{
+.icono-zahlteil-unactive{
     content: url(../img/donate/icon-zahlteil-disabled.jpg);
 }
 
-#icono-paypal:hover{
+.icono-paypal-unactive:hover{
     cursor: pointer;
     content: url(../img/donate/icon-paypal-enabled.jpg);
 }
 
-#icono-twint:hover{
+.icono-twint-unactive:hover {
     cursor: pointer;
     content: url(../img/donate/icon-twint-enabled.jpg);
 }
 
-#icono-zahlteil:hover{
+.icono-zahlteil-unactive:hover {
     cursor: pointer;
     content: url(../img/donate/icon-zahlteil-enabled.jpg);
+}
+
+.icono-paypal-active{
+    content: url(../img/donate/icon-paypal-enabled.jpg);
+}
+
+.icono-twint-active{
+    content: url(../img/donate/icon-twint-enabled.jpg);
+}
+
+.icono-zahlteil-active{
+    content: url(../img/donate/icon-zahlteil-enabled.jpg);
+}
+
+.icono-paypal-active:hover{
+    content: url(../img/donate/icon-paypal-disabled.jpg);
+}
+
+.icono-twint-active:hover{
+    content: url(../img/donate/icon-twint-disabled.jpg);
+}
+
+.icono-zahlteil-active:hover{
+    content: url(../img/donate/icon-zahlteil-disabled.jpg);
 }
 
 .donate-active {
