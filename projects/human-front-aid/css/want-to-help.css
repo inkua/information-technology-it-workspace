@@ -21,11 +21,12 @@ header {
 
 .header-subtitulo {
     width: 600px;
+    text-align: justify;
 }
 
 /* Header - Sección Donaciones */
 
-.boton-qr{
+.boton-qr {
     display: inline-block;
     border-radius: 50%;
     margin-top: 20px;
@@ -34,33 +35,30 @@ header {
     height: 9rem;
 }
 
-.imagen-qr{
+.imagen-qr {
     margin-left: 120px;
     width: 30%;
     height: 30%;
-    margin-top: -300px;
+    max-width: 340px;
+    max-height: 340px;
+    margin-top: -340px;
 }
 
-.imagen-qr-mobile{
-    margin-left: 120px;
-    width: 30%;
-    height: 30%;
-    margin-top: -300px;
-}
 /*ICONS BOTONS*/
-.icono-paypal-unactive{
+
+.icono-paypal-unactive {
     content: url(../img/donate/icon-paypal-disabled.jpg);
 }
 
-.icono-twint-unactive{
+.icono-twint-unactive {
     content: url(../img/donate/icon-twint-disabled.jpg);
 }
 
-.icono-zahlteil-unactive{
+.icono-zahlteil-unactive {
     content: url(../img/donate/icon-zahlteil-disabled.jpg);
 }
 
-.icono-paypal-unactive:hover{
+.icono-paypal-unactive:hover {
     cursor: pointer;
     content: url(../img/donate/icon-paypal-enabled.jpg);
 }
@@ -75,27 +73,27 @@ header {
     content: url(../img/donate/icon-zahlteil-enabled.jpg);
 }
 
-.icono-paypal-active{
+.icono-paypal-active {
     content: url(../img/donate/icon-paypal-enabled.jpg);
 }
 
-.icono-twint-active{
+.icono-twint-active {
     content: url(../img/donate/icon-twint-enabled.jpg);
 }
 
-.icono-zahlteil-active{
+.icono-zahlteil-active {
     content: url(../img/donate/icon-zahlteil-enabled.jpg);
 }
 
-.icono-paypal-active:hover{
+.icono-paypal-active:hover {
     content: url(../img/donate/icon-paypal-disabled.jpg);
 }
 
-.icono-twint-active:hover{
+.icono-twint-active:hover {
     content: url(../img/donate/icon-twint-disabled.jpg);
 }
 
-.icono-zahlteil-active:hover{
+.icono-zahlteil-active:hover {
     content: url(../img/donate/icon-zahlteil-disabled.jpg);
 }
 
@@ -259,7 +257,6 @@ header {
 
     .header-subtitulo {
         width: 73%;
-        text-align: justify;
     }
     
     /* Header - Opciones */
@@ -278,14 +275,6 @@ header {
         margin-left: 30px;
         width: 15%;
         height: 15%;
-    }
-    
-    .imagen-qr{
-        margin-left: 15%;
-        width: 45%;
-        height: 45%;
-        margin-top: 0px;
-        margin-bottom: -40%;
     }
 
     .imagen-qr-mobile{
@@ -342,7 +331,7 @@ header {
     }
     
     .header-subtitulo {
-        width: 440px;
+        width: 480px;
     }
 
     /* Header - Sección Donaciones */
@@ -507,4 +496,26 @@ header {
     /* │ ■■■■■■■■■■■■■■■■■■■■ FIN CONTENIDO ■■■■■■■■■■■■■■■■■■■■ │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
+}
+
+
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ██████████████████████████ Extra Querys ███████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
+
+@media(min-width: 1450px) {
+    /* Header - Sección Donaciones */
+
+    .imagen-qr {
+        margin-left: 17%;
+        width: 30%;
+        height: 30%;
+        max-width: 400px;
+        max-height: 400px;
+        margin-top: -340px;
+    }
 }
