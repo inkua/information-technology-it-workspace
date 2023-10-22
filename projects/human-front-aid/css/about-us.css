@@ -36,15 +36,24 @@ header {
 /* └─────────────────────────────────────────────────────────┘ */
 
 .about-us-main p{
-    font-size: 120%;
+    font-size: 1.5vw;
     color: var(--color-cinco);
     max-width: 100%;
     font-family: var(--font-family-poppins);
     font-weight: 570;
+    text-align: justify;
+    height: auto;
+    
+
 }
 
 .about-us-main-img{
+    display: flex;
+
     max-width: 100%;
+    margin-bottom: 50px;
+    border-radius: 10px;
+
 }
 
 
