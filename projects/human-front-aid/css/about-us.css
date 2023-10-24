@@ -40,7 +40,7 @@ header {
     color: var(--color-cinco);
     max-width: 100%;
     font-family: var(--font-family-poppins);
-    font-weight: 570;
+    font-weight: 500;
     text-align: justify;
     height: auto;
 }
