@@ -35,7 +35,7 @@ header {
 /* │ ► Luis Fernando Callisaya Surco                         │ */
 /* └─────────────────────────────────────────────────────────┘ */
 
-.about-us-main p{
+.about-us-main p {
     font-size: 1.5vw;
     color: var(--color-cinco);
     max-width: 100%;
@@ -43,76 +43,29 @@ header {
     font-weight: 570;
     text-align: justify;
     height: auto;
-    
-
 }
 
-.about-us-main-img{
+.about-us-main-img {
     display: flex;
-
     max-width: 100%;
     margin-bottom: 50px;
     border-radius: 10px;
-
 }
 
 
-.about-us-main{
+.about-us-main {
     margin-bottom: 100px;
 }
 
-.about-us-history-img{
+.about-us-history-img {
     max-width: 150%;
-    
 }
 
-.history-titulo{
+.history-titulo {
     color: var(--color-dos);
     font-family: var(--font-family-lato);
     font-weight: 570;
     margin-bottom: 50px;
-}
-
-
-.About-Us-Diego-Pardo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.About-Us-Diego-Pardo-texto {
-    padding-left: 170px;
-    padding-right: 54px;
-    padding-top: 100px;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: last baseline;
-}
-
-.About-Us-Diego-Pardo-Image {
-    padding-right: 170px;
-    padding-left: 54px;
-    padding-top: 80px;
-}
-
-.About-Us-Diego-Pardo-Image_imagen {
-    width: 450px;
-    height: 350px;
-}
-
-.About-Us-Diego-Pardo-texto_buton {
-    border: 2px solid #004eaa;
-    padding: 12px 21px;
-    border-radius: 8px;
-    gap: 8px;
-    width: 121px;
-    height: 48px;
-    background-color: white;
-    color: #004eaa;
-        
 }
     
 /* ┌─────────────────────────────────────────────────────────┐ */
@@ -173,24 +126,24 @@ header {
     /* │ ► Luis Fernando Callisaya Surco                         │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-    .about-us-main p{
+    .about-us-main p {
         font-size: 90%;
     }
 
-    .about-us-main{
+    .about-us-main {
         margin-left: 10px;
         margin-right: 10px;
     }
 
-    .history-titulo{
+    .history-titulo {
         font-size: 250%;
     }
 
-    .about-us-text{
+    .about-us-text {
         font-size: 120%;
     }
 
-    .about-us-main-img{
+    .about-us-main-img {
         margin-bottom: 20px;
     }
 
@@ -239,24 +192,24 @@ header {
     /* │ ► Luis Fernando Callisaya Surco                         │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-    .about-us-main p{
+    .about-us-main p {
         font-size: 120%;
     }
 
-    .about-us-main{
+    .about-us-main {
         margin-left: 10px;
         margin-right: 10px;
     }
 
-    .about-us-text{
+    .about-us-text {
         margin-bottom: 30px;
     }
 
-    .history-titulo{
+    .history-titulo {
         font-size: 250%;
     }
 
-    .about-us-main-img{
+    .about-us-main-img {
         margin-bottom: 30px;
     }
 
