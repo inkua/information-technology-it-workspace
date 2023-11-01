@@ -21,6 +21,7 @@ header {
 
 .header-subtitulo {
     width: 600px;
+    height: 121px;
     text-align: justify;
 }
 
@@ -331,7 +332,7 @@ header {
     }
     
     .header-subtitulo {
-        width: 480px;
+        width: 420px;
     }
 
     /* Header - Sección Donaciones */
@@ -350,7 +351,7 @@ header {
         margin: auto;
         width: 270px;
         height: 270px;
-        margin-top: 200px;
+        margin-top: 210px;
     }
 
 
