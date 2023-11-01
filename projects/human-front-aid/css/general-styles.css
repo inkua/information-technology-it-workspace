@@ -522,15 +522,22 @@ a {
 
     .navbar-mobile {
         margin-left: var(--margin-desktop-1);
-        margin-right: var(--margin-desktop-1);
+        margin-right: 0;
     }
 
     .navbar-logo {
         margin-left: 0;
+        width: 70px;
     }
 
     .navbar-contenedor {
         margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .contenedor-idiomas {
+        padding: 0;
     }
 
     .navbar-titulo {
@@ -544,16 +551,18 @@ a {
 
     .navbar-home {
         font-size: 0.9em;
-        margin-right: 1%;
+        margin-right: 10px;
     }
 
     .navbar-about-us {
         font-size: 0.9em;
         margin-right: 2%;
         white-space: nowrap;
+        margin-right: 30px;
     }
 
     .navbar-need-help {
+        width: 130px;
         margin-right: 2%;
         border: 1px solid var(--color-uno);
         padding-left: 10px;
@@ -562,6 +571,7 @@ a {
     }
 
     .navbar-donate {
+        width: 120px;
         color: var(--color-uno);
         border-radius: 8px;
         font-weight: 900;
@@ -569,13 +579,14 @@ a {
         background-color: var(--color-tres);
         padding-left: 10px;
         padding-right: 10px;
-        margin-right: -24px;
+        margin-right: 0px;
+        margin-left: 10px;
     }
 
     /*  Header - Sección idiomas  */
 
     .navbar-en {
-        margin-right: 20%;
+        margin-right: 0;
     }
 
     /* Header - Sección Títulos */
@@ -1367,6 +1378,56 @@ footer {
         padding-top: 60px;
     }
 }
+
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■ QUERY FOR HEADER TABLET ■■■■■■■■■■■■■■■■ │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
+@media (min-width: 481px) and (max-width: 580px) {
+
+    /* Header - Navbar */
+
+    .navbar-contenido {
+        font-family: var(--font-family-lato);
+        margin-right: var(--margin-desktop-1);
+    }
+
+    .navbar-home {
+        font-size: 0.9em;
+        margin-right: 2px;
+    }
+
+    .navbar-about-us {
+        font-size: 0.9em;
+        margin-right: 2%;
+        white-space: nowrap;
+        margin-right: 15px;
+    }
+
+    .navbar-need-help {
+        width: 100px;
+        margin-right: 2%;
+        border: 1px solid var(--color-uno);
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    .navbar-donate {
+        width: 100px;
+        color: var(--color-uno);
+        border-radius: 8px;
+        font-weight: 900;
+        color: var(--color-dos);
+        background-color: var(--color-tres);
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 0px;
+        margin-left: 5px;
+    }
+
+}
+
 @media (min-width: 1300px) {
     .footer-desktop {
         padding: 50px var(--margin-desktop-2);
