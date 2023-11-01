@@ -304,17 +304,6 @@ header {
 /* │ ► Luis Romano                                           │ */
 /* └─────────────────────────────────────────────────────────┘ */
 
-.press {
-    margin-left: var(--margin-desktop-2);
-    font-family: var(--font-family-lato);
-    font-weight: 700;
-    font-size: 40px;
-    color: var(--color-dos);
-    margin-top: 4rem;
-}
-
-/* estos swipers hay que ponerles un nombre solo para la seccion como "swiper-press" */
-
 .swiperPressAndNews {
     width: 80%;
     height: 480px;
@@ -366,12 +355,6 @@ a {
     bottom: 20px;
     padding-top: 10px;
 }
-
-.swiper-pagination-pan {
-    margin-bottom: 225px;
-}
-
-
 
 /* ┌─────────────────────────────────────────────────────────┐ */
 /* │ ■■■■■■■■■■■■■■■■■ FIN PRESS-AND-NEWS ■■■■■■■■■■■■■■■■■■ │ */
@@ -545,10 +528,24 @@ a {
     /* │ ► Luis Romano                                           │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-    /* ponerle nombre al swiper */
+    .swiperPressAndNews {
+        width: auto;
+        height: 260px;
+        margin-left: var(--margin-mobile);
+        margin-right: var(--margin-mobile);
+        padding: 5px;
+    }
 
-    .swiper-pagination-pan {
-        margin-bottom: 225px;
+    .swiper-wrapper-pan {
+        bottom: unset;
+        padding-top: 0;
+    }
+
+    .swiper-slide-pan {
+        height: calc(100% - 35px);
+        margin-top: 0;
+        border-radius: 20px;
+        box-shadow: 0px 0px 5px 1px #00000040;
     }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
@@ -764,10 +761,6 @@ a {
     /* │   COLABORADORES:                                        │ */
     /* │ ► Luis Romano                                           │ */
     /* └─────────────────────────────────────────────────────────┘ */
-
-    .press {
-        margin-left: var(--margin-desktop-1);
-    }
 
     .swiper-pagination-pan {
         margin-bottom: 230px;
