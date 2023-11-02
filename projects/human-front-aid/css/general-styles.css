@@ -375,6 +375,10 @@ a {
         height: 60px;
         background-color: var(--color-cinco);
     }
+    .QR-container{    
+        padding-top: 8px;
+        height: 300px;
+    }
 
     .header-options-cuadro {
         margin: auto;
@@ -416,7 +420,8 @@ a {
     /* Header - Encabezado con títulos */
 
     .tittles-container {
-        height: 698px;
+        /*height: 698px;*/
+        height: 650px;
     }
 
     /* Header - Background */
