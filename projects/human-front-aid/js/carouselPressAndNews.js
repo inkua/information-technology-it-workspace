@@ -20,14 +20,14 @@ var swiper = new Swiper(".swiperPressAndNews", {
           rows: 1,
         },
       },
-      576: {
+      481: {
         slidesPerView: 2,
         spaceBetween: 10,
         loop: true,
       },
-      950: {
+      993: {
         slidesPerView: 3,
-        spaceBetween: 10,
+        spaceBetween: 15,
         grid: {
           rows: 2,
         },
