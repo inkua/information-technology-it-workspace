@@ -86,18 +86,6 @@ header {
     content: url(../img/donate/icon-zahlteil-enabled.jpg);
 }
 
-.icono-paypal-active:hover {
-    content: url(../img/donate/icon-paypal-disabled.jpg);
-}
-
-.icono-twint-active:hover {
-    content: url(../img/donate/icon-twint-disabled.jpg);
-}
-
-.icono-zahlteil-active:hover {
-    content: url(../img/donate/icon-zahlteil-disabled.jpg);
-}
-
 .donate-active {
     -webkit-box-shadow: 0px 0px 10px 5px var(--color-tres);
     -moz-box-shadow: 0px 0px 10px 5px var(--color-tres);
