@@ -6,9 +6,14 @@ var currentSection = document.body.getAttribute("data-section");
 
 
 function insertScript(language) {
+  
   return new Promise(function(resolve, reject) {
     var script = document.createElement("script");
-    script.src = "../js/language/" + language + ".js";
+    script.src = "../js/language/" + language + ".js"; 
+    if(currentSection=="index")
+    { 
+      script.src = "./js/language/" + language + ".js";
+    }
     script.onload = resolve;
     script.onerror = reject;
     document.head.appendChild(script);
