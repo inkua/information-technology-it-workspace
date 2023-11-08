@@ -44,7 +44,6 @@ header {
     text-align: justify;
     height: auto;
     padding: 0px 40px;
-
 }
 
 .about-us-main-img {
@@ -52,9 +51,6 @@ header {
     max-width: 100%;
     margin-bottom: 50px;
     border-radius: 10px;
-    
-    
-
 }
 
 
@@ -138,11 +134,8 @@ header {
     }
 
     .about-us-main {
-        margin-left: 10px;
-        margin-right: 20px; 
-       
-
-
+        margin-left: 0px;
+        margin-right: 0px; 
     }
 
     .history-titulo {
@@ -153,17 +146,11 @@ header {
     .about-us-text {
         font-size: 120%;
         margin-bottom: 30px;
-      
-        margin-top: 50px
-
-
-       
+        margin-top: 50px       
     }
 
     .about-us-main-img {
         margin-bottom: 20px;
-
-
     }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
