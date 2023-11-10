@@ -269,8 +269,10 @@ header {
 }
 
 .swiperSupporters {
-    width: 80%;
-    height: 20%;
+    height: 165px;
+    margin-left: var(--margin-desktop-2);
+    margin-right: var(--margin-desktop-2);
+    padding: 0 10px;
 }
 
 .slideSupporters {
@@ -279,14 +281,16 @@ header {
     background: #fff;
     display: flex;
     align-items: center;
-    height: 70%;
+    height: 100px;
     border-radius: 10px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
 }
 
 .img-supporters {
     display: block;
-    width: 30%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -566,7 +570,8 @@ header {
     /* └─────────────────────────────────────────────────────────┘ */
 
     .swiperSupporters {
-        height: 15%;
+        margin-left: var(--margin-mobile);
+        margin-right: var(--margin-mobile);
     }
 
     .slideSupporters {
@@ -735,33 +740,15 @@ header {
     /* └─────────────────────────────────────────────────────────┘ */
 
     .swiperSupporters {
-        width: 80%;
-        height: 20%;
+        margin-left: var(--margin-desktop-1);
+        margin-right: var(--margin-desktop-1);
     }
-
-    .slideSupporters {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        align-items: center;
-        height: 70%;
-       
-        
-    }
-
-    .img-supporters {
-        display: block;
-        width: 30%;
-        height: 100%;
-        object-fit: cover;
-       
-    }
-
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■ FIN SUPPORTERS ■■■■■■■■■■■■■■■■■■■■ │ */
     /* └─────────────────────────────────────────────────────────┘ */
+
+    
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■ INICIO PRESS-AND-NEWS ■■■■■■■■■■■■■■■■ │ */
