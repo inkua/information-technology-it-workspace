@@ -332,6 +332,18 @@ header {
     transition: all 0.4s;
 }
 
+.swiper-slide-pan::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(17, 17, 17, 0.8), rgba(0, 0, 0, 0));
+    pointer-events: none;
+    border-radius: 10px;
+  }
+
 .swiper-slide-pan:hover {
     transform: scale(1.04);
 }
@@ -906,6 +918,10 @@ header {
     .swiperPressAndNews {
         width: auto;
     }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■ FIN PRESS-AND-NEWS ■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
 }
 
 
