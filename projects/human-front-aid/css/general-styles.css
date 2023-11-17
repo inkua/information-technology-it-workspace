@@ -15,6 +15,7 @@
     --color-seis: #004EAA;
     --color-siete: #0C4180;
     --color-ocho: #02397A;
+    --color-nueve: #94C0F3;
 
     /* Efecto de hover */
 
@@ -99,6 +100,19 @@ a {
     background: var(--color-uno);
     box-shadow: var(--shadow-01);
     transition: all ease 0.5s;
+}
+
+/* Swiper Carousels */
+
+.swiper-pagination-bullet {
+    background-color: var(--color-nueve);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    width: 20px;
+    border-radius: 25px;
+    background-color: var(--color-ocho);
 }
 
 /* ┌─────────────────────────────────────────────────────────┐ */
