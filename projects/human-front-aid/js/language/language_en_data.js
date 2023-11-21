@@ -7,7 +7,8 @@ var translations = {
       needHelp: "Need help?",
       DONATE: "DONATE",
       donate:"Donate",
-      wantToHelp:"Want to help?",
+      
+      donateTitle: "DONATE",
       headerSubtitle1:"Our intention is to ",
       headerSubtitleStrong: "support projects regionally and locally.",
       headerSubtitle2:"People knowing the local conditions can help.",
@@ -24,7 +25,8 @@ var translations = {
       needHelp: "Need help?",
       DONATE: "DONATE",
       donate:"Donate",
-      wantToHelp:"Want to help?",
+      
+      donateTitle: "DONATE",
       headerSubtitle1:"Know more about our ",
       headerSubtitleStrong1:"mission, projects ",
       headerSubtitle2:"and ",
@@ -42,7 +44,8 @@ var translations = {
       needHelp: "Need help?",
       DONATE: "DONATE",
       donate:"Donate",
-      wantToHelp:"Want to help?",
+      
+      donateTitle: "DONATE",
       headerSubtitle1:"If you ",
       headerSubtitleStrong1:"need help or know somebody that needs help, ",
       headerSubtitle2:"here you have a list of organizations eager to help you.",
@@ -53,13 +56,14 @@ var translations = {
       contentparagraphSpan3:"help",
       contentOng:"ONG's"
     },
-    wantToHelp: {
+    donate: {
       home: "Home",
       about: "About us",
       needHelp: "Need help?",
       DONATE: "DONATE",
       donate:"Donate",
-      wantToHelp:"Want to help?",
+      
+      donateTitle: "DONATE",
       headerSubtitle1:"If you are committed to helping others just like we are, here you have a list of organizations ready to recieve your help. ",
       headerSubtitleStrong1:"Yes, we can! Better together.",
       contentparagraph1:"Here you have some ",
