@@ -388,30 +388,17 @@ header {
 /* │ ► Diego N. Cabrera                                      │ */
 /* └─────────────────────────────────────────────────────────┘ */
 
-#map-off {
-    width: 100%;
-    margin-top: 50px;
-    text-align: center;
-    background-color: var(--color-uno);
-}
-
-#map-off:hover {
-    cursor: pointer;
-}
-
-#map-on {
-    display: none;
+#map {
+    display: block;
     padding: 0 var(--margin-desktop-1);
     width: 100%;
-    margin-top: 50px;
     height: 500px;
+    max-width: 1000px;
+    padding: 0;
+    margin: auto;
+    margin-top: 50px;
     margin-bottom: 50px;
-}
-
-.map-img {
-    width: 100%;
-    margin-top: 80px;
-    height: 80%;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.12);
 }
 
 /* ┌─────────────────────────────────────────────────────────┐ */
@@ -615,9 +602,8 @@ header {
     /* │ ► Diego N. Cabrera                                      │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
-    #map-on {
-        padding: 0 var(--margin-desktop-1);
-        margin-bottom: 20px;
+    #map {
+        width: 90%;
     }
 
     /* ┌─────────────────────────────────────────────────────────┐ */

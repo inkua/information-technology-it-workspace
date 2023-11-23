@@ -31,6 +31,13 @@ var swiper = new Swiper(".swiperPressAndNews", {
         grid: {
           rows: 2,
         },
+      },
+      1600: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        grid: {
+          rows: 2,
+        },
       }
     },
   });
