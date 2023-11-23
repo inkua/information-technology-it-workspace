@@ -381,14 +381,6 @@
         <div class="swiper swiper-p mySwiperP">
             <div class="swiper-wrapper">
 
-                <!-- <div class="swiper-slide swiper-slide-p">
-                    <div class="memberCard-one">
-                        <video class="member-video img-fluid" controls>
-                            <source src="./video/VID-20221107-WA0019.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video> 
-                    </div>
-                </div> -->
                 <div class="swiper-slide swiper-slide-p">
                     <div class="memberCard-one">
 
@@ -407,7 +399,7 @@
                 <div class="swiper-slide swiper-slide-p">
                     <div class="memberCard" >
                         <div class="memberImage" style="background-image: url('./img/patrons/card-Reto.png');">
-                            <a class="memberMoreInfo" href="https://www.google.com" target="_blank">
+                            <a class="memberMoreInfo" target="_blank">
                                 <i class="fa-solid fa-plus"></i>
                             </a>
                         </div>
@@ -421,7 +413,7 @@
                 <div class="swiper-slide swiper-slide-p">
                     <div class="memberCard">
                         <div class="memberImage" style="background-image: url('./img/patrons/card-Kathrin.png');">
-                            <a class="memberMoreInfo" href="https://www.google.com" target="_blank">
+                            <a class="memberMoreInfo"  target="_blank">
                                 <i class="fa-solid fa-plus"></i>
                             </a>
                         </div>
@@ -435,7 +427,7 @@
                 <div class="swiper-slide swiper-slide-p">
                     <div class="memberCard" >
                         <div class="memberImage" style="background-image: url('./img/patrons/card-Matthias.png');">
-                            <a class="memberMoreInfo" href="https://www.google.com" target="_blank">
+                            <a class="memberMoreInfo"  target="_blank">
                                 <i class="fa-solid fa-plus"></i>
                             </a>
                         </div>
@@ -449,7 +441,7 @@
                 <div class="swiper-slide swiper-slide-p">
                     <div class="memberCard">
                         <div class="memberImage" style="background-image: url('./img/patrons/card-Gerhard.png');">
-                            <a class="memberMoreInfo" href="https://www.google.com" target="_blank">
+                            <a class="memberMoreInfo"  target="_blank">
                                 <i class="fa-solid fa-plus"></i>
                             </a>
                         </div>
@@ -463,7 +455,7 @@
                 <div class="swiper-slide swiper-slide-p">
                     <div class="memberCard" >
                         <div class="memberImage" style="background-image: url('./img/patrons/card-beatrice.png');">
-                            <a class="memberMoreInfo" href="https://www.google.com" target="_blank">
+                            <a class="memberMoreInfo"  target="_blank">
                                 <i class="fa-solid fa-plus"></i>
                             </a>
                         </div>
@@ -478,7 +470,7 @@
                 <div class="swiper-slide swiper-slide-p">
                     <div class="memberCard">
                         <div class="memberImage" style="background-image: url('./img/patrons/card-Bernd.png');">
-                            <a class="memberMoreInfo" href="https://www.google.com" target="_blank">
+                            <a class="memberMoreInfo"  target="_blank">
                                 <i class="fa-solid fa-plus"></i>
                             </a>
                         </div>
@@ -492,7 +484,7 @@
                 <div class="swiper-slide swiper-slide-p">
                     <div class="memberCard" >
                         <div class="memberImage" style="background-image: url('./img/patrons/card-Wanja.png');">
-                            <a class="memberMoreInfo" href="https://www.google.com" target="_blank">
+                            <a class="memberMoreInfo"  target="_blank">
                                 <i class="fa-solid fa-plus"></i>
                             </a>
                         </div>
@@ -504,8 +496,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+
             <div class="swiper-pagination"></div>
         </div>
     </div>
@@ -518,15 +509,12 @@
             loop: true,
             /* autoplay: {
                 delay: 2500,
-                disableOnInteraction: false,
             }, */
+            speed: 200,
+            loop: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
             },
         });
 
