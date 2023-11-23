@@ -58,7 +58,7 @@ var translations = {
       needHelp: "Допомога?",
       DONATE: "ВНЕСКИ",
       donate:"Внески",
-      donateTitle: "ВНЕСКИ",
+      donateTitle: "Хочете допомогти?",
       headerSubtitle1:"Якщо ви віддані допомозі іншим так само, як і ми, ось список організацій, готових прийняти вашу допомогу. ",
       headerSubtitleStrong1:"Так, ми зможемо! Разом краще.",
       contentparagraph1:"Ось декілька ",
