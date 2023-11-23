@@ -63,7 +63,7 @@ var translations = {
       DONATE: "DONATE",
       donate:"Donate",
       
-      donateTitle: "DONATE",
+      donateTitle: "Want to Help?",
       headerSubtitle1:"If you are committed to helping others just like we are, here you have a list of organizations ready to recieve your help. ",
       headerSubtitleStrong1:"Yes, we can! Better together.",
       contentparagraph1:"Here you have some ",
