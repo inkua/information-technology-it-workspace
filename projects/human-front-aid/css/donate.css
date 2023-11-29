@@ -48,42 +48,51 @@ header {
 /*ICONS BOTONS*/
 
 .icono-paypal-unactive {
-    content: url(../img/donate/icon-paypal-disabled.jpg);
+    background-image: url(../img/donate/icon-paypal-disabled.jpg);
+    background-size: contain;
 }
 
 .icono-twint-unactive {
-    content: url(../img/donate/icon-twint-disabled.jpg);
+    background-image: url(../img/donate/icon-twint-disabled.jpg);
+    background-size: contain;
 }
 
 .icono-zahlteil-unactive {
-    content: url(../img/donate/icon-zahlteil-disabled.jpg);
+    background-image: url(../img/donate/icon-zahlteil-disabled.jpg);
+    background-size: contain;
 }
 
 .icono-paypal-unactive:hover {
     cursor: pointer;
-    content: url(../img/donate/icon-paypal-enabled.jpg);
+    background-image: url(../img/donate/icon-paypal-enabled.jpg);
+    background-size: contain;
 }
 
 .icono-twint-unactive:hover {
     cursor: pointer;
-    content: url(../img/donate/icon-twint-enabled.jpg);
+    background-image: url(../img/donate/icon-twint-enabled.jpg);
+    background-size: contain;
 }
 
 .icono-zahlteil-unactive:hover {
     cursor: pointer;
-    content: url(../img/donate/icon-zahlteil-enabled.jpg);
+    background-image: url(../img/donate/icon-zahlteil-enabled.jpg);
+    background-size: contain;
 }
 
 .icono-paypal-active {
-    content: url(../img/donate/icon-paypal-enabled.jpg);
+    background-image: url(../img/donate/icon-paypal-enabled.jpg);
+    background-size: contain;
 }
 
 .icono-twint-active {
-    content: url(../img/donate/icon-twint-enabled.jpg);
+    background-image: url(../img/donate/icon-twint-enabled.jpg);
+    background-size: contain;
 }
 
 .icono-zahlteil-active {
-    content: url(../img/donate/icon-zahlteil-enabled.jpg);
+    background-image: url(../img/donate/icon-zahlteil-enabled.jpg);
+    background-size: contain;
 }
 
 .donate-active {
@@ -315,10 +324,11 @@ header {
         justify-content: center;
         align-items: center;
         width: 95%;
-        padding: 0;
+        padding: 1px;
         margin: auto;
         margin-top: 0;
         margin-bottom: 30px;
+        font-size: 0.62rem;
     }
 
     /* ┌─────────────────────────────────────────────────────────┐ */
