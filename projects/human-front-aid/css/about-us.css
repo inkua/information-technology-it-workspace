@@ -44,31 +44,119 @@ header {
     text-align: justify;
     height: auto;
     padding: 0px 40px;
+    
 }
 
 .about-us-main-img {
     display: flex;
-    max-width: 100%;
+    max-width: 90%;
     margin-bottom: 50px;
     border-radius: 10px;
 }
 
 
-.about-us-main {
-    margin-bottom: 100px;
+/*La regla @media screen permite generar diferentes dispocion segun el tamño de la pantall*/
+
+
+/*posicion en mobile*/
+@media screen and (max-width: 480px) {
+    .position-of-image1 {
+      position: relative;
+      width: 90%;
+      margin-left: 10%;
+      margin-top: 10%;
+
+    }
+    .about-us-text1 {
+        font-size: 120%;
+        margin-bottom: 30px;
+        margin-top: 10%;
+        left: 50%;
+        
+    }
+    .history-titulo {
+        color: var(--color-dos);
+        font-family: var(--font-family-lato);
+        font-weight: 570;
+        margin-bottom: 5%;
+        font-size: 200%;
+        margin-left: 13%;
+    }
+
+    .position-of-image2 {
+        position: relative;
+        width: 90%;
+        margin-left: 10%;
+  
+      }
+      .about-us-text2 {
+        font-size: 120%;
+        margin-bottom: 30px;
+        margin-top: 0px;
+        left: 50%;
+          
+      }
+  }
+  /*posicion en desktop*/
+  @media screen and (min-width: 481px) {
+    .position-of-image1 {
+       position: relative;
+       margin-bottom: 5%;
+       margin-top: 50px;
+       left: 45%;
+       right: auto;    
+    }
+    .about-us-text1 {
+        position: relative;
+        font-size: 120%;
+        margin-bottom: 5%;
+        margin-top: 50px;
+        left: auto;
+        right: 45%;
+        margin-left: 10%;
+       
+    
+    }
+
+    .history-titulo {
+        color: var(--color-dos);
+        font-family: var(--font-family-lato);
+        font-weight: 570;
+        margin-bottom: 2%;
+        
+        margin-left: 10%;
+    }
+    
+    .position-of-image2 {
+        position: relative;
+        margin-bottom: 0%;
+        margin-top: 0%;
+        left: auto;
+        right: 45%;
+        margin-left: 12%;
+
+    }
+    .about-us-text2 {
+
+        position: relative;
+        font-size: 120%;
+        margin-bottom: 0%;
+        margin-top: 0%;
+        left: 45%;
+        right: auto; 
+    }
    
+  }
+.about-us-main {
+    margin-bottom: 20px;
+    
 }
 
 .about-us-history-img {
     max-width: 150%;
 }
 
-.history-titulo {
-    color: var(--color-dos);
-    font-family: var(--font-family-lato);
-    font-weight: 570;
-    margin-bottom: 50px;
-}
+
     
 /* ┌─────────────────────────────────────────────────────────┐ */
 /* │ ■■■■■■■■■■■■■■■■■■■■ FIN ABOUT-US ■■■■■■■■■■■■■■■■■■■■■ │ */
@@ -137,17 +225,7 @@ header {
         margin-left: 0px;
         margin-right: 0px; 
     }
-
-    .history-titulo {
-        font-size: 250%;
-        margin-bottom: 30px;
-    }
-
-    .about-us-text {
-        font-size: 120%;
-        margin-bottom: 30px;
-        margin-top: 50px       
-    }
+  
 
     .about-us-main-img {
         margin-bottom: 20px;
@@ -207,16 +285,12 @@ header {
         margin-right: 10px;
     }
 
-    .about-us-text {
-        margin-bottom: 30px;
-        margin-top: 50px;
-    }
-
     .history-titulo {
         font-size: 250%;
     }
 
     .about-us-main-img {
+
         margin-bottom: 30px;
     }
 
