@@ -50,49 +50,67 @@ header {
 .icono-paypal-unactive {
     background-image: url(../img/donate/icon-paypal-disabled.jpg);
     background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .icono-twint-unactive {
     background-image: url(../img/donate/icon-twint-disabled.jpg);
     background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .icono-zahlteil-unactive {
     background-image: url(../img/donate/icon-zahlteil-disabled.jpg);
     background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .icono-paypal-unactive:hover {
     cursor: pointer;
     background-image: url(../img/donate/icon-paypal-enabled.jpg);
     background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .icono-twint-unactive:hover {
     cursor: pointer;
     background-image: url(../img/donate/icon-twint-enabled.jpg);
     background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .icono-zahlteil-unactive:hover {
     cursor: pointer;
     background-image: url(../img/donate/icon-zahlteil-enabled.jpg);
     background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .icono-paypal-active {
     background-image: url(../img/donate/icon-paypal-enabled.jpg);
     background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .icono-twint-active {
     background-image: url(../img/donate/icon-twint-enabled.jpg);
     background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .icono-zahlteil-active {
     background-image: url(../img/donate/icon-zahlteil-enabled.jpg);
     background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .donate-active {
@@ -294,8 +312,8 @@ header {
         border-radius: 50%;
         margin-top: 0px;
         margin-left: 30px;
-        width: 18%;
-        height: 18%;
+        width: 60px;
+        height: 60px;
     }
 
     .imagen-qr-mobile{
