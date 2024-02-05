@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CV Interactivo - Santiago Larrosa</title>
+        <meta
+            name="description"
+            content="Aplicacion web interactiva basada en mi currículum. Link de mi curriculum original: https://www.santiagolarrosa.tech/cv/cv_santiago_larrosa.pdf"
+        />
+        <!-- Estilos -->
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            :root {
+                --negro: #4a454b;
+                --blanco: #f5f5f5;
+                --azul: #0f172a;
+            }
+
+            html {
+                font-family: Arial, Helvetica, sans-serif;
+                color: var(--negro);
+            }
+
+            body {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                max-width: 48rem;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 2rem;
+                text-transform: uppercase;
+                font-weight: 800;
+                margin-bottom: 0.55rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                font-weight: 400;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+
+            h4 {
+                margin-bottom: 1.5rem;
+            }
+
+            h5 {
+                font-size: 1.25rem;
+                width: fit-content;
+            }
+
+            p {
+                letter-spacing: 0.1rem;
+                text-align: left;
+            }
+
+            span {
+                width: fit-content;
+            }
+
+            .cabecera {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+                padding-inline: 1rem;
+            }
+
+            .cabecera > picture {
+                width: 10rem;
+                height: 10rem;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+
+            .cabecera > picture img {
+                width: 100%;
+            }
+
+            .decoracion_superior {
+                width: 100%;
+                height: 5rem;
+                background-color: var(--azul);
+            }
+
+            .linea_decorativa {
+                display: block;
+                width: 100%;
+                height: 0.1rem;
+                margin-top: 0.55rem;
+                background-color: var(--negro);
+            }
+
+            .contenido_principal section {
+                padding-inline: 1rem;
+                margin: 2rem auto;
+            }
+
+            .formulario {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                background-color: var(--blanco);
+                padding: 1rem;
+                margin: 4rem auto 1rem;
+                border-radius: 1rem;
+                width: fit-content;
+                overflow: hidden;
+                box-shadow: 0 2px 1px 2px #00000019;
+            }
+
+            .formulario input,
+            .formulario button {
+                padding: 0.25rem;
+            }
+
+            .formulario button {
+                cursor: pointer;
+            }
+
+            .formacion {
+                width: 20rem;
+                margin: 0 auto;
+                position: relative;
+                padding-left: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0.25rem;
+                padding-bottom: 2rem;
+            }
+
+            .formacion .barra_lateral {
+                position: absolute;
+                left: 0;
+                height: 100%;
+                width: 0.1rem;
+                background-color: var(--negro);
+            }
+
+            .formacion .circulo {
+                position: absolute;
+                left: 0;
+                height: 1rem;
+                width: 1rem;
+                margin-left: -0.45rem;
+                border-radius: 50%;
+                background-color: var(--negro);
+            }
+
+            /* desktop */
+            @media (min-width: 48rem) {
+                html {
+                    letter-spacing: 0.2rem;
+                }
+
+                body {
+                    text-align: left;
+                }
+
+                .formacion {
+                    margin: 0;
+                }
+
+                .cabecera {
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+
+                .formulario {
+                    position: absolute;
+                    z-index: 1000;
+                    right: 0;
+                    top: 0;
+                    margin-left: auto;
+                    margin-right: 0;
+                }
+            }
+        </style>
+        <!-- Fin de los estilos -->
+    </head>
+
+    <body>
+        <!-- Cabecera -->
+        <div class="decoracion_superior"></div>
+        <header class="cabecera">
+            <picture>
+                <img
+                    src="https://media.licdn.com/dms/image/D4D03AQH_4VRldDUSiA/profile-displayphoto-shrink_800_800/0/1697972283086?e=1711584000&v=beta&t=GqHK6sTbzZgWfmkuiTuzZev7T-9RMcfC4ROZ0NYDYKU"
+                    alt="Fotografia estilo foto carnet en Linkedin de Santiago Larrosa"
+                />
+            </picture>
+            <div>
+                <h1>Santiago Larrosa</h1>
+                <h2>Desarrollador Full Stack</h2>
+                <span class="linea_decorativa"></span>
+            </div>
+        </header>
+        <!-- Fin de la cabecera  -->
+
+        <!-- Contenido principal -->
+        <main class="contenido_principal">
+            <!-- Perfil Personal -->
+            <section>
+                <h3>Perfil Personal</h3>
+                <p>
+                    Soy responsable, organizado y proactivo, con buenas habilidades de
+                    comunicación y un enfoque efectivo en la resolución de problemas.
+                    Disfruto de trabajar en equipo y siempre busco oportunidades para
+                    seguir aprendiendo y creciendo profesionalmente.
+                </p>
+            </section>
+
+            <!-- Formacion academica -->
+            <section style="position: relative">
+                <h3>Formación Académica</h3>
+                <!-- Contenedor de las formaciones -->
+                <div id="idFormacion">
+                    <!-- Formacion de ejemplo -->
+                    <div class="formacion">
+                        <div class="circulo"></div>
+                        <div class="barra_lateral"></div>
+                        <span>-- Ejemplo --</span>
+                        <span>Jan 2023</span>
+                        <span>Universidad ORT | Montevideo</span>
+                        <h5>Ingeniería en Sistemas</h5>
+                        <p>Cursando segundo semestre.</p>
+                    </div>
+                </div>
+
+                <!-- Formulario para agregar formaciones -->
+                <form id="idFormulario" class="formulario">
+                    <h4>Agregar formación</h4>
+                    <input
+                        id="idFecha"
+                        type="date"
+                        placeholder="Fecha de inicio"
+                        required
+                    />
+                    <input id="idLugar" type="text" placeholder="Lugar" required />
+                    <input
+                        id="idNombreDelCurso"
+                        type="text"
+                        placeholder="Nombre del curso/carrera"
+                        required
+                    />
+                    <input
+                        id="idEstadoActual"
+                        type="text"
+                        placeholder="Estado actual"
+                        required
+                    />
+                    <button id="idBotonFormulario" type="submit">Agregar</button>
+                    <button id="idBotonEliminarFormaciones" type="button">
+                        Eliminar todas
+                    </button>
+                </form>
+            </section>
+        </main>
+        <!-- Fin del contenido principal -->
+
+        <!-- Scripts -->
+        <script>
+            window.addEventListener('load', programa);
+
+            let formacionesGuardadas = localStorage.getItem('formaciones');
+
+            if (formacionesGuardadas) {
+                try {
+                    formacionesGuardadas = JSON.parse(formacionesGuardadas);
+                } catch (e) {
+                    console.log(e);
+                }
+            } else {
+                formacionesGuardadas = [];
+            }
+
+            function programa() {
+                renderizarFormaciones();
+
+                document
+                    .getElementById('idBotonFormulario')
+                    .addEventListener('click', agregarFormacion);
+
+                document
+                    .getElementById('idBotonEliminarFormaciones')
+                    .addEventListener('click', (evento) => {
+                        evento.preventDefault();
+                        formacionesGuardadas = [];
+                        localStorage.clear();
+                        document.getElementById('idFormacion').innerHTML = '';
+                    });
+            }
+
+            function agregarFormacion(evento) {
+                evento.preventDefault();
+                if (!document.getElementById('idFormulario').reportValidity()) {
+                    return;
+                }
+
+                // Obtengo el mes y el año de la fecha ingresada
+                let fecha = new Date(document.getElementById('idFecha').value)
+                    .toString()
+                    .split(' ');
+
+                fecha = fecha[1] + ' ' + fecha[3];
+
+                const lugar = document.getElementById('idLugar').value;
+                const nombreDelCurso = document.getElementById('idNombreDelCurso').value;
+                const estadoActual = document.getElementById('idEstadoActual').value;
+
+                const datosParaFormacionNueva = {
+                    fecha,
+                    lugar,
+                    nombreDelCurso,
+                    estadoActual,
+                };
+
+                const formacionNueva = crearFormacion(datosParaFormacionNueva);
+                document.getElementById('idFormacion').appendChild(formacionNueva);
+
+                // Se actualizan las formaciones guardadas
+                formacionesGuardadas.push(datosParaFormacionNueva);
+                try {
+                    localStorage.setItem(
+                        'formaciones',
+                        JSON.stringify(formacionesGuardadas)
+                    );
+                } catch (e) {
+                    console.log(e);
+                }
+            }
+
+            function crearFormacion(datos) {
+                const contenedor = document.createElement('div');
+                contenedor.classList.add('formacion');
+
+                const barraLateral = document.createElement('div');
+                barraLateral.classList.add('barra_lateral');
+
+                const circulo = document.createElement('div');
+                circulo.classList.add('circulo');
+
+                const fecha = document.createElement('span');
+                fecha.textContent = datos.fecha;
+
+                const lugar = document.createElement('span');
+                lugar.textContent = datos.lugar;
+
+                const nombreDelCurso = document.createElement('h5');
+                nombreDelCurso.textContent = datos.nombreDelCurso;
+
+                const estadoActual = document.createElement('p');
+                estadoActual.textContent = datos.estadoActual;
+
+                const elementosHijos = [
+                    circulo,
+                    barraLateral,
+                    fecha,
+                    lugar,
+                    nombreDelCurso,
+                    estadoActual,
+                ];
+                for (let elemento of elementosHijos) {
+                    contenedor.appendChild(elemento);
+                }
+                return contenedor;
+            }
+
+            function renderizarFormaciones() {
+                formacionesGuardadas.forEach((datos) => {
+                    const contenedorDeFormaciones =
+                        document.getElementById('idFormacion');
+
+                    const formacionNueva = crearFormacion(datos);
+                    contenedorDeFormaciones.appendChild(formacionNueva);
+                });
+            }
+        </script>
+    </body>
+</html>
