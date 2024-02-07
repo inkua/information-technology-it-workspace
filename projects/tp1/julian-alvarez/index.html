@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julian Alvarez</title>
+</head>
+
+<style>
+    body {
+        background-color: black;
+        color: aliceblue;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .main {
+        margin: 0 auto;
+        max-width: 80%;
+        border: 1px solid wheat;
+    }
+
+    .mainTitle h1 {
+        text-align: center;
+    }
+
+    .description {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    .description p {
+        text-align: justify;
+    }
+
+    .technologies {
+        border: 1px solid wheat;
+        height: 105px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .technologies li {
+        display: inline;
+        margin-right: 50px;
+    }
+
+    .technologies li:nth-child(8) {
+        margin-right: 0px;
+    }
+
+    .education {
+        border: 1px solid wheat;
+        margin: 0 auto;
+        height: 300px;
+        text-align: center;
+    }
+
+    .education h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    .education .card1, .education .card2, .education .card3 {
+        border: 1px solid wheat;
+        max-width: 270px;
+        height: 140px;
+        margin: 0 auto;
+        padding: 10px;
+        background-color: wheat;
+        border-radius: 30px;
+    }
+
+    .education .card1 p,.education .card2 p,.education .card3 p {
+        font-size: 20px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    .education li {
+        display: inline;
+    }
+
+    .education .cards {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .education button {
+        background-color: antiquewhite;
+        border-radius: 10px;
+        width: 120px;
+        margin-bottom: 20px;
+    }
+
+    .workExperience {
+        border: 1px solid wheat;
+        height: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .workExperience h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    .workExperience .card1, .workExperience .card2, .workExperience .card3 {
+        border: 1px solid wheat;
+        width: 270px;
+        height: 140px;
+        margin: 0 auto;
+        padding: 10px;
+        background-color: wheat;
+        border-radius: 30px;
+    }
+
+    .workExperience .card1 p,.workExperience .card2 p,.workExperience .card3 p {
+        font-size: 20px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    .workExperience li {
+        display: inline;
+    }
+
+    .workExperience .cardsExperience {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .workExperience button {
+        background-color: antiquewhite;
+        border-radius: 10px;
+        width: 120px;
+        margin-bottom: 20px;
+    }
+
+    .networks {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .listNetworks {
+        margin: 0 auto;
+    }
+
+    .listNetworks ul {
+        list-style: none;
+    }
+
+    .listNetworks li {
+        display: inline;
+        padding-right: 50px;
+    }
+
+   
+
+    .networks .listNetworks ul li a {
+        color: white;
+    }
+
+    .saludo {
+        height: 60px;
+        text-align: center;
+    }
+
+    .bienvenida {
+        margin-top: 5px;
+        max-width: 50px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="main">
+
+        <div class="mainTitle">
+            <h1>Desarrollador de software</h1>
+        </div>
+
+        <div class="description">
+            <p>Mi nombre es Julian Alvarez, tengo 20 años. Estudio la carrera de desarrollador de software
+                en la ciudad de Cordoba. Manejo tecnologias actuales como C#, .NET Framework, entre otras.
+                Soy una persona activa para trabajar, y eficaz al momento de rendir el servicio.
+            </p>
+        </div>
+
+        <div class="technologies">
+            <h2>Tecnologias</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>JAVA</li>
+                <li>Python</li>
+                <li>C#</li>
+                <li>.NET</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+
+        <div id="education" class="education">
+            <h2>Educación</h2>
+
+            <button onclick="mostrarEstudios()">Ocultar/mostrar estudios</button>
+
+            <div id="cards" class="cards">
+
+                <div class="card1">
+                    <p>Desarrollador web full stack</p>
+                    <p>06/2022 - 07/2023</p>
+                    <p>Egg Educacion</p>
+                </div>
+
+                <div class="card2">
+                        <p>Desarrollador de software</p>
+                        <p>04/2023 - Actualidad.</p>
+                        <p>Instituto superior santo Domingo</p>
+                </div>
+
+                <div class="card3">
+                        <p>Desarrollador de C# con .NET F</p>
+                        <p>01/2024 - Actualidad.</p>
+                        <p>Udemy academy</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div id="workExperience" class="workExperience">
+            <h2>Experiencia laboral</h2>
+
+            <button onclick="mostrarExperiencia()">Ocultar/mostrar experiencia</button>
+
+            <div id="cardsExperience" class="cardsExperience">
+
+            <div class="card1">
+                <p>Programador web</p>
+                <p>06/2020 - Actualidad.</p>
+                <p>Trabajos autonomos</p>
+            </div>
+
+            <div class="card2">
+                <p>Programador web y Cronometrador</p>
+                <p>04/2021 - Actualidad.</p>
+                <p>SuperCrono</p>
+            </div>
+
+            <div class="card3">
+                <p>CEO</p>
+                <p>01/2020 - 03/2022</p>
+                <p>MBA Host</p>
+            </div>
+
+             </div>
+        </div>
+
+        <div class="networks">
+            <h2>Redes personales</h2>
+            <div class="listNetworks">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/julian-alvarez-713172246/" target="_blank">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/julian.alvarez243" target="_blank">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/542477363959" target="_blank">Whatsapp</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        
+        <div class="saludo">
+            <hr>
+            <div id="bienvenida"></div>
+        </div>
+
+    </div>
+
+    <script>
+    
+
+    var nombreUsuario = prompt("¡Bienvenido! ¿Cuál es tu nombre?");
+    var mensajeBienvenida = "¡Hola" + (", " + nombreUsuario + "") + "! Gracias por tomarte el tiempo analizar mi proyecto. Desde ya muchas gracias por su oportunidad en esta organizacion.";
+
+    // Muestra el mensaje de bienvenida en el elemento con id "bienvenida"
+    document.getElementById('bienvenida').textContent = mensajeBienvenida;    
+
+        function mostrarExperiencia() {
+            var experienciaDiv = document.getElementById("cardsExperience");
+            var experienciaMain = document.getElementById("workExperience")
+            if (experienciaDiv.style.display === "none") {
+                experienciaDiv.style.display = "flex";
+                experienciaMain.style.height = "300px";
+                
+            } else {
+                experienciaDiv.style.display = "none";
+                experienciaMain.style.height = "110px";
+            }
+        }
+    
+        function mostrarEstudios() {
+            var formacionDiv = document.getElementById("cards");
+            var formacionMain = document.getElementById("education");
+            if (formacionDiv.style.display === "none") {
+                formacionDiv.style.display = "flex";
+                formacionMain.style.height = "300px";
+            } else {
+                formacionDiv.style.display = "none";
+                formacionMain.style.height = "130px"
+            }
+        }
+    </script>
+
+</body>
+</html>
+
