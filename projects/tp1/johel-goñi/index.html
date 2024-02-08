@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Interactivo</title>
+    <meta
+        name="description"
+        content="Aplicación web interactiva basada en un currículum."
+    />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header input[type="text"] {
+            padding: 8px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        header button {
+            padding: 10px 20px;
+            background-color: #0056b3;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        button#cambiarPerfilPersonal {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 10px; /* Espacio entre el botón y el textarea */
+    }
+
+    button#cambiarPerfilPersonal:hover {
+        background-color: #0056b3;
+    }
+        h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .formulario input[type="text"],
+        .formulario input[type="date"],
+        .formulario textarea {
+            width: calc(50% - 10px);
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .formulario button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .formulario button:hover {
+            background-color: #0056b3;
+        }
+
+        .contenedor-elemento {
+            border-left: 3px solid #007bff;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contenedor-elemento h5 {
+            font-size: 20px;
+            margin-bottom: 5px;
+            color: #007bff;
+        }
+
+        .contenedor-elemento p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="nombre">Johel Goñi</h1>
+        <input type="text" id="nuevoNombre" placeholder="Nuevo nombre" />
+        <button onclick="cambiarNombre()">Cambiar Nombre</button>
+    </header>
+
+
+    <main>
+        <section>
+            <h3>Sobre mi</h3>
+            <p id="perfilPersonal">
+                Proactivo, flexible y comprometido, con experiencia destacada en roles de mesa de ayuda, centrado en la resolución eficiente y precisa de problemas.<br>
+                Hoy en día busco dar un giro a mi carrera hacia el area de Desarrollo de Software.
+
+            </p>
+            <textarea id="nuevoPerfilPersonal" placeholder="Aquí puedes presentar tu perfil profesional, resaltando tus habilidades, experiencia y logros más sobresalientes."></textarea>
+            <button onclick="cambiarPerfilPersonal()">Cambiar</button>
+        </section>
+
+        <section>
+            <h3>Educación</h3>
+            <div id="formacionAcademica" class="contenedor-elemento">
+                <h5> Ingeniería en Computación</h5>
+                <p>Facultad de Ingeniería, UDELAR</p>
+                <p>Cursando materias de tercer y cuarto semestre.</p>
+                <p>Fecha de inicio: 2019-02-26</p>
+            </div>
+
+            <form id="formAgregarFormacionAcademica" class="formulario">
+                <h4>Agrega tu formacion academica</h4>
+                <input id="fechaFormacionAcademica" type="date" placeholder="Fecha de inicio" required />
+                <input id="lugarFormacionAcademica" type="text" placeholder="Lugar" required />
+                <input id="nombreCursoFormacionAcademica" type="text" placeholder="Nombre del curso/carrera" required />
+                <input id="estadoActualFormacionAcademica" type="text" placeholder="Estado actual" required />
+                <button id="botonAgregarFormacionAcademica" type="button" onclick="agregarFormacionAcademica()">Agregar</button>
+                <button id="botonEliminarFormacionesAcademicas" type="button" onclick="eliminarFormacionAcademica()">Eliminar todas</button>
+            </form>
+        </section>
+
+        <section>
+            <h3>Experiencia</h3>
+            <div id="experienciaLaboral" class="contenedor-elemento">
+                <h5>Asistente TI</h5>
+                <p>Berkes</p>
+                <p>Proporcionar soporte para la infraestructura y aplicaciones de la organización, gestionar los recursos del departamento y contribuir a la mejora continua</p>
+                <p>Desde: 2023-08-14</p>
+            </div>
+
+            <form id="formAgregarExperienciaLaboral" class="formulario">
+                <h4>Agrega tu experiencia laboral</h4>
+                <input id="fechaInicioExperiencia" type="date" placeholder="Fecha de inicio" required />
+                <input id="fechaFinExperiencia" type="date" placeholder="Fecha de fin" required />
+                <input id="lugarExperiencia" type="text" placeholder="Lugar de trabajo" required />
+                <input id="puestoExperiencia" type="text" placeholder="Puesto de trabajo" required />
+                <textarea id="descripcionExperiencia" placeholder="Descripción de las responsabilidades" required></textarea>
+                <button id="botonAgregarExperiencia" type="button" onclick="agregarExperienciaLaboral()">Agregar</button>
+                <button id="botonEliminarExperiencias" type="button" onclick="eliminarExperienciaLaboral()">Eliminar todas</button>
+            </form>
+        </section>
+    </main>
+
+
+    <script>
+        function cambiarNombre() {
+            const nuevoNombre = document.getElementById('nuevoNombre').value;
+            document.getElementById('nombre').textContent = nuevoNombre;
+        }
+
+        function cambiarPerfilPersonal() {
+            const nuevoPerfilPersonal = document.getElementById('nuevoPerfilPersonal').value;
+            document.getElementById('perfilPersonal').textContent = nuevoPerfilPersonal;
+        }
+
+        function eliminarFormacionAcademica() {
+            const formacionAcademica = document.getElementById('formacionAcademica');
+            formacionAcademica.innerHTML = '';
+        }
+
+        function eliminarExperienciaLaboral() {
+            const experienciaLaboral = document.getElementById('experienciaLaboral');
+            experienciaLaboral.innerHTML = '';
+        }
+
+        function agregarFormacionAcademica() {
+            const fecha = document.getElementById('fechaFormacionAcademica').value;
+            const lugar = document.getElementById('lugarFormacionAcademica').value;
+            const nombreCurso = document.getElementById('nombreCursoFormacionAcademica').value;
+            const estadoActual = document.getElementById('estadoActualFormacionAcademica').value;
+
+            const div = document.createElement('div');
+            div.classList.add('contenedor-elemento');
+
+            const h5 = document.createElement('h5');
+            h5.textContent = nombreCurso;
+
+            const p1 = document.createElement('p');
+            p1.textContent = lugar;
+
+            const p2 = document.createElement('p');
+            p2.textContent = estadoActual;
+
+            const p3 = document.createElement('p');
+            p3.textContent = `Fecha de inicio: ${fecha}`;
+
+            div.appendChild(h5);
+            div.appendChild(p1);
+            div.appendChild(p2);
+            div.appendChild(p3);
+
+            document.getElementById('formacionAcademica').appendChild(div);
+        }
+
+        function agregarExperienciaLaboral() {
+            const fechaInicio = document.getElementById('fechaInicioExperiencia').value;
+            const fechaFin = document.getElementById('fechaFinExperiencia').value;
+            const lugar = document.getElementById('lugarExperiencia').value;
+            const puesto = document.getElementById('puestoExperiencia').value;
+            const descripcion = document.getElementById('descripcionExperiencia').value;
+
+            const div = document.createElement('div');
+            div.classList.add('contenedor-elemento');
+
+            const h5 = document.createElement('h5');
+            h5.textContent = puesto;
+
+            const p1 = document.createElement('p');
+            p1.textContent = lugar;
+
+            const p2 = document.createElement('p');
+            p2.textContent = descripcion;
+
+            const p3 = document.createElement('p');
+            p3.textContent = `Desde: ${fechaInicio} hasta: ${fechaFin}`;
+
+            div.appendChild(h5);
+            div.appendChild(p1);
+            div.appendChild(p2);
+            div.appendChild(p3);
+
+            document.getElementById('experienciaLaboral').appendChild(div);
+        }
+    </script>
+
+</body>
+</html>

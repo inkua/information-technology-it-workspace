@@ -1,0 +1,3 @@
+Mi nombre es Johel tengo 27 años, soy estudiante de Ingenieria en Computacion y en momento trabajo como Soporte Tecnico, y estoy buscando cambiar al area de Desarrollo de Software. Actualmente me encuentro aprendiendo sobre Django, y he comenzado un curso de Frontend en Codecademy.
+
+Para este trabajo practico he utilizado las tecnologias HTML, CSS y JS, si bien no le he podido dedicar el tiempo que me hubiese gustado, este trabajo me ha servido como puntapie inicial para un proyecto que tengo pensando hacer a futuro que es una web donde un usuario puede hacer su CV y luego descargarlo.
