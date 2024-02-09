@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gonzalo Vega</title>
+
+    <style>
+        :root {
+            --alternative-color: #0a2b62;
+            --gradient-f: #460078;
+            --gradient-s: #0085cc;
+            --gradient-t: #09b574;
+            --text: #ffffff;
+            --btn-color: #0a2b62;
+        }
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            color: var(--text);
+            text-align: center;
+            text-decoration: none;
+            font-family: 'Arial Black';
+            list-style-type: none;
+            scroll-behavior: smooth;
+            scrollbar-color: #3e4144 #16181c;
+        }
+
+        body {
+            background-color: var(--main-color);
+        }
+
+        .common {
+            background: white;
+        }
+
+        .common-title {
+            color: var(--alternative-color);
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .alternative {
+            background: linear-gradient(45deg, var(--gradient-f), var(--gradient-s), var(--gradient-t));
+        }
+
+        .alternative-title {
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 70px 0px 70px 0px;
+        }
+
+        /*--------- Loader ---------*/
+        .div-loader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--gradient-f), var(--gradient-s), var(--gradient-t));
+            z-index: 9999;
+            transition: all .4s;
+        }
+
+        .loader {
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border-top: 3px solid #FFF;
+            border-right: 3px solid transparent;
+            animation: rotation 1s linear infinite;
+        }
+
+        @keyframes rotation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /*--------- Nav ---------*/
+        .navbar {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            backdrop-filter: blur(10px);
+            z-index: 999;
+        }
+
+        .nav-active {
+            background-image: linear-gradient(60deg, var(--gradient-f), var(--gradient-s), var(--gradient-t));
+            box-shadow: 2px 2px 7px black;
+            transition: all 1s;
+        }
+
+        .nav-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .nav-item h1 {
+            font-size: 18px;
+        }
+
+        .nav-item:hover {
+            cursor: pointer;
+            scale: 1.04;
+            background-color: #00397e;
+            transition: all .2s;
+        }
+
+        /*--------- Banner ---------*/
+        .banner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: calc(100vh + 80px);
+            background: linear-gradient(45deg, var(--gradient-f), var(--gradient-s), var(--gradient-t));
+            clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+        }
+
+        .ban-name h1 {
+            font-size: 30px;
+            text-align: center;
+            text-shadow: 5px 5px 10px var(--gradient-f);
+            user-select: none;
+        }
+
+        .ban-welcome h1 {
+            font-family: 'Freestyle Script';
+            font-size: 200px;
+            text-shadow: 5px 5px 10px var(--gradient-f);
+            user-select: none;
+        }
+
+        .ban-wel-text {
+            color: white;
+            font-family: 'Freestyle Script';
+            font-size: 100px;
+            text-shadow: 5px 5px 10px var(--gradient-f);
+            user-select: none;
+        }
+
+        .ban-input {
+            width: 50%;
+            margin-bottom: 20px;
+        }
+
+        .ban-input input {
+            width: 40%;
+            font-size: 18px;
+            color: #001074;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .button {
+            font-size: 22px;
+            padding: 10px 20px 10px 20px;
+            border-radius: 20px;
+            border: none;
+            background: var(--btn-color);
+            box-shadow: 0px 5px 0px white;
+            cursor: pointer;
+            transition: all .1s;
+        }
+
+        .button:hover {
+            background: #1e1e1e;
+        }
+
+        .button:active {
+            translate: 0px 5px;
+            box-shadow: none;
+        }
+
+        /*--------- Educación ---------*/
+        .edu-title {
+            margin-bottom: 20px;
+        }
+
+        .edu-grid {
+            display: grid;
+            width: 70%;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 2%;
+        }
+
+        .edu-items {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            padding: 20px;
+            background: linear-gradient(45deg, var(--gradient-f), var(--gradient-s), var(--gradient-t));
+            border-radius: 40px;
+            transition: all .2s;
+            box-shadow: 0px 0px 20px #00000077;
+        }
+
+        .edu-items h1 {
+            font-size: 26px;
+            text-align: center;
+        }
+
+        .edu-items h2 {
+            font-size: 16px;
+            text-align: center;
+            color: #e8e8e8
+        }
+
+        .edu-items:hover {
+            cursor: pointer;
+            translate: 0px -5px;
+        }
+
+        /*--------- Experiencia ---------*/
+        .exp-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 2%;
+            width: 70%;
+        }
+
+        .exp-item {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            padding: 15px;
+            border-radius: 20px;
+            background-image: linear-gradient(25deg, var(--main-color-3) 0%, var(--main-color-2) 20%, var(--main-color-2) 80%, var(--main-color-3) 100%);
+            cursor: pointer;
+            box-shadow: 0px 0px 20px #00000077, inset 0 0 0 6px white;
+            transition: all .2s;
+        }
+
+        .exp-item::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            transform: skewX(25deg);
+            transition: all .2s;
+        }
+
+        .exp-item:hover {
+            transform: scale(1.05);
+        }
+
+        .exp-item:hover::after {
+            transform: skewX(40deg);
+        }
+
+        .exp-item h1 {
+            width: 70%;
+            padding: 10px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 26px;
+            background: linear-gradient(60deg, var(--gradient-f), var(--gradient-s), var(--gradient-t));
+            border-radius: 50px;
+            z-index: 99;
+        }
+
+        .exp-item h2 {
+            color: var(--alternative-color);
+            text-align: center;
+            font-size: 22px;
+            z-index: 99;
+        }
+
+        .exp-item h3 {
+            color: var(--alternative-color);
+            text-align: center;
+            font-size: 18px;
+            z-index: 99;
+        }
+
+        /*--------- Certificaciones ---------*/
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 2%;
+            width: 70%;
+        }
+
+        .cert-item {
+            width: 100%;
+            background: linear-gradient(60deg, var(--gradient-f), var(--gradient-s), var(--gradient-t));
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px #00000077;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all .2s;
+        }
+
+        .cert-item:hover {
+            translate: 0px -5px;
+        }
+
+        .cert-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 40%;
+            background-color: #16181c;
+            border-bottom: 5px solid white;
+        }
+
+        .cert-title h1 {
+            font-size: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .cert-sub {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            height: 60%;
+            padding: 40px 10px 40px 10px;
+        }
+
+        .cert-sub h2 {
+            text-align: center;
+            font-size: 18px;
+            width: 100%;
+            color: white;
+        }
+
+        /*--------- Habilidades ---------*/
+        .hab-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 2%;
+            row-gap: 10%;
+            width: 70%;
+        }
+
+        .hab-item {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border-radius: 20px;
+            padding: 5px 10px 5px 10px;
+            background-color: #232323;
+            box-shadow: 0px 0px 20px #00000077;
+            cursor: pointer;
+            transition: all .2s;
+        }
+
+        .hab-item:hover {
+            translate: 0px -5px;
+        }
+
+        .hab-item::after {
+            content: "";
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            background: white;
+            transform: skewX(45deg);
+            transition: all .3s;
+        }
+
+        .hab-item:hover::after {
+            transform: translateX(100%);
+        }
+
+        .hab-item h1 {
+            text-align: center;
+            font-size: 24px;
+            color: rgb(0, 30, 70);
+            padding: 15px 0 15px;
+            z-index: 9;
+            transition: all .2s;
+        }
+
+        .hab-item:hover h1 {
+            color: white;
+        }
+
+        /*--------- Proyectos ---------*/
+        .proy-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 2%;
+            row-gap: 10%;
+            width: 70%;
+        }
+
+        .proy-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            padding: 50px;
+            background: linear-gradient(60deg, var(--gradient-f), var(--gradient-s), var(--gradient-t));
+            box-shadow: 0px 0px 20px #00000077;
+            cursor: pointer;
+            transition: all .2s;
+        }
+
+        .proy-item:hover {
+            translate: 0px -5px;
+        }
+
+        .proy-button {
+            margin-top: 20px;
+        }
+
+        /*--------- Footer ---------*/
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 20vh;
+            background: linear-gradient(60deg, var(--gradient-f), var(--gradient-s), var(--gradient-t));
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+        }
+
+        .foot-credit {
+            font-family: 'Arial';
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-item">
+                <h1>EDUCACIÓN</h1>
+            </div>
+            <div class="nav-item">
+                <h1>CERTIFICACIONES</h1>
+            </div>
+            <div class="nav-item">
+                <h1>EXPERIENCIA</h1>
+            </div>
+            <div class="nav-item">
+                <h1>PROYECTOS</h1>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="div-loader">
+            <span class="loader"></span>
+        </div>
+
+        <div class="banner">
+            <div class="ban-name">
+                <h1>GONZALO EZEQUIEL</h1>
+                <h1>VEGA ECHEVERRÍA</h1>
+            </div>
+            <div class="ban-welcome">
+                <h1>Bienvenido</h1>
+            </div>
+            <div class="ban-input">
+                <input type="text" placeholder='¿Cual es tu nombre?' maxLength='50' class="ban-text">
+            </div>
+            <div class="ban-button">
+                <button class="button" onclick="welcome()">Continuar</button>
+                <a href="#education"><button class="button">Ver Más</button></a>
+            </div>
+        </div>
+
+        <div id='education' class="section common">
+            <div class='edu-title'>
+                <h1 class="common-title">EDUCACIÓN</h1>
+            </div>
+            <div class="edu-grid">
+                <div class="edu-items">
+                    <h1>Instituto Presidente Manuel Quintana</h1>
+                    <h2>2008 - 2013</h2>
+                </div>
+
+                <div class="edu-items">
+                    <h1>Instituto Presidente Manuel Quintana</h1>
+                    <h2>2008 - 2013</h2>
+                </div>
+
+                <div class="edu-items">
+                    <h1>Instituto Presidente Manuel Quintana</h1>
+                    <h2>2008 - 2013</h2>
+                </div>
+            </div>
+        </div>
+
+        <div id='experience' class="section alternative">
+            <div class="title">
+                <h1 class="alternative-title">EXPERIENCIA</h1>
+            </div>
+
+            <div class="exp-grid">
+                <div class="exp-item">
+                    <h1>MERCADO LIBRE</h1>
+                    <h2>Representante de envíos</h2>
+                    <h3>Nov. 2021 - Feb. 2022</h3>
+                </div>
+
+                <div class="exp-item">
+                    <h1>CARREFOUR</h1>
+                    <h2>Cajero</h2>
+                    <h3>Mar. 2022 - Jun. 2022</h3>
+                </div>
+            </div>
+        </div>
+
+        <div id='certifications' class="section common">
+            <div class="title">
+                <h1 class="common-title">CERTIFICACIONES</h1>
+            </div>
+
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <div class="cert-title">
+                        <h1>Full Stack Python</h1>
+                    </div>
+                    <div class="cert-sub">
+                        <h2>Codo a Codo 4.0</h2>
+                    </div>
+                </div>
+
+                <div class="cert-item">
+                    <div class="cert-title">
+                        <h1>Excel Avanzado</h1>
+                    </div>
+                    <div class="cert-sub">
+                        <h2>Universidad Tecnológica Nacional</h2>
+                    </div>
+                </div>
+
+                <div class="cert-item">
+                    <div class="cert-title">
+                        <h1>Word Avanzado</h1>
+                    </div>
+                    <div class="cert-sub">
+                        <h2>Universidad Tecnológica Nacional</h2>
+                    </div>
+                </div>
+
+                <div class="cert-item">
+                    <div class="cert-title">
+                        <h1>Power Point Avanzado</h1>
+                    </div>
+                    <div class="cert-sub">
+                        <h2>Universidad Tecnológica Nacional</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id='habilities' class="section alternative">
+            <div class="title">
+                <h1 class="alternative-title">HABILIDADES</h1>
+            </div>
+
+            <div class="hab-grid">
+                <div class="hab-item">
+                    <h1>Microsoft Office</h1>
+                </div>
+                <div class="hab-item">
+                    <h1>Adobe Illustrator</h1>
+                </div>
+                <div class="hab-item">
+                    <h1>Adobe Photoshop</h1>
+                </div>
+                <div class="hab-item">
+                    <h1>MySQL</h1>
+                </div>
+                <div class="hab-item">
+                    <h1>C | C++ | C#</h1>
+                </div>
+                <div class="hab-item">
+                    <h1>JavaScript</h1>
+                </div>
+                <div class="hab-item">
+                    <h1>Python</h1>
+                </div>
+                <div class="hab-item">
+                    <h1>HTML | CSS</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id='projects' class="section common">
+            <div class="title">
+                <h1 class="common-title">PROYECTOS</h1>
+            </div>
+            <div class="proy-grid">
+                <div class="proy-item">
+                    <h1>Gen. Camisetas</h1>
+                    <p>Proyecto final presentado en Codo a Codo 4.0</p>
+                    <div class="proy-button">
+                        <button class="button" onclick="redirect('codocodo-proy.netlify.app')">Visitar</button>
+                        <button class="button"
+                            onclick="redirect('github.com/gevega/Gen.-Camisetas-de-Futbol')">GitHub</button>
+                    </div>
+                </div>
+                <div class="proy-item">
+                    <h1>Muestra ITEL</h1>
+                    <p>Proyecto para muestra escolar</p>
+                    <div class="proy-button">
+                        <button class="button" onclick="redirect('muestra-itel.netlify.app')">Visitar</button>
+                        <button class="button" onclick="redirect('github.com/gevega/muestra-itel')">GitHub</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <h1 class='foot-credit'>Powered by gxnzx</h1>
+        </div>
+    </footer>
+</body>
+
+<script>
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            const loader = document.querySelector('.div-loader')
+            loader.style.opacity = 0
+            loader.style.visibility = 'hidden'
+        }, 500);
+
+    })
+
+    window.addEventListener('scroll', () => {
+        let height = (document.documentElement.clientHeight)
+        let menu = document.querySelector('.navbar')
+
+        if (window.scrollY > height - 40) {
+            menu.classList.add('nav-active')
+        } else {
+            menu.classList.remove('nav-active')
+        }
+    })
+
+    loadHTML()
+
+    function loadHTML() {
+        let div = document.querySelector('.ban-input')
+        let button = document.querySelector('.ban-button')
+
+        if (localStorage.getItem('Name')) {
+            div.innerHTML = `<h1 class='ban-wel-text'>${localStorage.getItem('Name')}</h1>`
+            button.innerHTML = `<button class="button" onclick="deleteName()">¿No eres tú?</button>
+                            <a href="#education"><button class="button">Ver Más</button></a>`
+        }
+    }
+
+    function redirect(link) {
+        location.href = 'https://' + link
+    }
+
+    function welcome() {
+        let input = document.querySelector('.ban-text')
+        let div = document.querySelector('.ban-input')
+        let button = document.querySelector('.ban-button')
+
+        if (input.value != '') {
+            localStorage.setItem('Name', input.value)
+            div.innerHTML = `<h1 class='ban-wel-text'>${input.value}</h1>`
+            button.innerHTML = `<button class="button" onclick="deleteName()">¿No eres tú?</button>
+                            <a href="#education"><button class="button">Ver Más</button></a>`
+        }
+    }
+
+    function deleteName() {
+        let div = document.querySelector('.ban-input')
+        let button = document.querySelector('.ban-button')
+        localStorage.removeItem('Name', '')
+        div.innerHTML = `<input type="text" placeholder='¿Cual es tu nombre?' maxLength='50' class="ban-text">`
+        button.innerHTML = `<button class="button" onclick="welcome()">Continuar</button>
+                            <a href="#education"><button class="button">Ver Más</button></a>`
+    }
+</script>
+
+</html>
