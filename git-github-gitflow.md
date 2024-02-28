@@ -1,7 +1,8 @@
 # Git - GitHub - Git Flow
 ## _Apuntes_
 
-logo de inkua
+![Inkua](https://github.com/manuel14mds/inkua-it/assets/89274119/91d50c86-c384-4c02-9377-e195e242855b)
+
 ## 1. Comandos básicos de Git
 Para empezar a trabajar con Git, es fundamental conocer una serie de comandos básicos que permitirán al equipo gestionar las versiones del proyecto de manera eficiente.
 
@@ -114,6 +115,7 @@ git pull origin <nombre-de-la-rama>
 ## 3. Pull Request:
 Un Pull Request (PR) es una solicitud para integrar cambios de una rama a otra dentro del mismo repositorio o en un fork de un repositorio. Se utiliza para revisar el código antes de fusionarlo.
 
+Puedes ver el tutorial de como contribuir en un repositorio en: [Video](https://drive.google.com/file/d/1eydeAOTsdM9_RMVwy2s5OtootmB_nFH_/view?usp=drive_link).
 
 ## 4. Git Flow:
 Git Flow es un modelo de ramificación para Git que define un conjunto estricto de reglas para el lanzamiento de proyectos y la gestión de ramas.
@@ -123,8 +125,13 @@ Git Flow es un modelo de ramificación para Git que define un conjunto estricto 
 - Ramas por cada pull request: Se crean para desarrollar nuevas características o corregir bugs.
 - Nombre de las ramas: Utiliza una nomenclatura que incluya el tipo de tarea y las iniciales del responsable, por ejemplo: F1-feat/JCaesar
 - Anatomía de un pull request: tener como titulo el nombre de la rama y como comentario decir una breve descripción de tu contribución, si es necesario aclaraciones e imágenes.
+  
+<img width="400" alt="GitFlow" src="https://github.com/manuel14mds/inkua-it/assets/89274119/c91f11ba-ba89-439a-8344-e84a538cb86f">
 
-imagen de gitflow
+
+
+
+Para profundizar mas en el tema, visita el siguiente enlace: [GIT FLOW](https://www.atlassian.com/es/git/tutorials/comparing-workflows/gitflow-workflow).
 
 ## 5. Conflictos de código:
 Los conflictos ocurren cuando dos o más desarrollos se solapan en las mismas líneas de código. Aquí te dejo una guía paso a paso para resolverlos:
@@ -162,3 +169,23 @@ git add .
 ```
 git push origin <id-ticket>-feat/<inicial nombre + apellido>
 ```
+
+
+## 6. Commits como un pro:
+< prefijo > : <descripción>
+
+```
+git commit -m “feat: add new search feature”
+```
+
+En caso de requerir más detalle utilizar git commit, que nos abrirá una pantalla en el editor
+de texto predeterminado en nuestro entorno.
+Sobre el tipo de cambio, no es obligatorio utilizar un prefijo pero es bueno diferenciar
+mínimo entre fix y feat.
+
+Hay muchos mas tipos de commits, estas sugerencias de prefijos las hacemos con la convención de Angular Framework. visita [Angular Commits Docs](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)
+
+
+## 6. Más recursos externos:
+[git rebase -  git mege](https://medium.com/@MiguelCasas/diferencia-entre-git-rebase-y-git-merge-workshop-de-git-8622dedde2d7).
+[rebasing vs merging](https://www.atlassian.com/git/tutorials/merging-vs-rebasing).
