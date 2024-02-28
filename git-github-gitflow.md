@@ -169,3 +169,22 @@ git add .
 ```
 git push origin <id-ticket>-feat/<inicial nombre + apellido>
 ```
+
+
+## 6. Commits como un pro:
+<tipo-de-commit>: <descripción>
+```
+git commit -m “feat: add new search feature”
+```
+
+En caso de requerir más detalle utilizar git commit, que nos abrirá una pantalla en el editor
+de texto predeterminado en nuestro entorno.
+Sobre el tipo de cambio, no es obligatorio utilizar un prefijo pero es bueno diferenciar
+mínimo entre fix y feat.
+
+Hay muchos mas tipos de commits, estas sugerencias de prefijos las hacemos con la convención de Angular Framework. visita [Angular Commits Docs](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)
+
+
+## 6. Más recursos externos:
+[git rebase -  git mege](https://medium.com/@MiguelCasas/diferencia-entre-git-rebase-y-git-merge-workshop-de-git-8622dedde2d7).
+[rebasing vs merging](https://www.atlassian.com/git/tutorials/merging-vs-rebasing).
