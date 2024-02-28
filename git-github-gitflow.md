@@ -172,7 +172,8 @@ git push origin <id-ticket>-feat/<inicial nombre + apellido>
 
 
 ## 6. Commits como un pro:
-<tipo-de-commit>: <descripción>
+< prefijo > : <descripción>
+
 ```
 git commit -m “feat: add new search feature”
 ```
