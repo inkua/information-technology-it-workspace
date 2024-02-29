@@ -1,0 +1,1 @@
+Gonzalo Ezequiel Vega Echeverría [enlace](https://www.linkedin.com/in/gevegaeche/)
