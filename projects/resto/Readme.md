@@ -6,4 +6,4 @@ Melani Depetris [enlace](https://www.linkedin.com/in/melani-depetris/)
 
 Faustino Harriague [enlace](https://www.linkedin.com/in/faustino-harriague-26532299/)
 
-Faustino Harriague [enlace](https://www.linkedin.com/in/jgoni/)
+Johel Goñi [enlace](https://www.linkedin.com/in/jgoni/)
