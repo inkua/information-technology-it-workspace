@@ -6,7 +6,6 @@ Hay que mantener este repositorio actualizado.
 ## Link Equipo Sistemas:
 
 -   En Github: [Link](https://github.com/orgs/inkua/teams/sistemas) (Van a ver un error 404 si no son miembros. Creen un Issue o comenten en Discussions para que se los agregue como miembros)
--   Santiago Larrosa - Linkedin: [Link](https://www.linkedin.com/in/santiago-larrosa-bauz%C3%A1-99b740251/)
 
 ## Reuniones:
 
