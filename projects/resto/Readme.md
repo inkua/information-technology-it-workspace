@@ -9,3 +9,6 @@ Gonzalo Ezequiel Vega Echeverría [enlace](https://www.linkedin.com/in/gevegaech
 Faustino Harriague [enlace](https://www.linkedin.com/in/faustino-harriague-26532299/)
 
 Johel Goñi [enlace](https://www.linkedin.com/in/jgoni/)
+
+Julian Alvares [enlace](https://www.linkedin.com/in/julian-alvarez-713172246/)
+
