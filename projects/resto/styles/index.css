@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rancho&display=swap');
+
+
+:root{
+    --ff-one: "Rancho", cursive; /* regular 400 */
+    --ff-two: "Josefin Sans", sans-serif; /* 100 - 700 + italic */
+
+    --color-1: #2A9D8F;
+    --color-2: #E76F51;
+    --color-3: #EFEFEF;
+    --color-4: #333333;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Break Points - Mobile first */
+@media (min-width: 576px) {
+} /* pantalla mediana */
+@media (min-width: 992px) {
+} /* pantalla grande */
+@media (min-width: 1200px) {
+    main{
+        max-width: 1290px;
+        margin: 0 auto;
+    }
+} /* pantalla extra grande */
