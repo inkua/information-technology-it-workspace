@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Reservation</title>
+  <link rel="stylesheet" href="styles/reservation.css">
+</head>
+<body>
+  <div class="container">
+	<form class="reservation-form">
+    <p class="reservation-greetings">Te esperamos</p> 
+  	<h1 class="reservation-text">Reservacion</h1>
+  	<div class="form-group">
+    	<input type="text" placeholder="Nombre" id="name" name="name" required>
+  	</div>
+  	<div class="form-group">
+    	<input type="email" placeholder="Email" id="email" name="email" required>
+  	</div>
+  	<div class="form-group">
+    	<input type="tel" placeholder="Telefono" id="phone" name="phone" required>
+  	</div>
+  	<div class="form-group">
+    	<input type="time" placeholder="Hora" id="hour" name="hour" required>
+      	<input type="date" placeholder="Fecha" id="date" name="date" required>
+  	</div>
+  	<div class="form-group">
+    	<input type="number" placeholder="Cantidad de Personas" id="people" name="people" min="1" required>
+  	</div>
+  	<div class="form-group">
+    	<textarea id="message" placeholder="Mensaje" name="message" rows="4" required></textarea>
+  	</div>
+  	<button type="submit" class="submit-button">Encargar</button>
+	</form>
+  </div>
+</body>
+</html>
