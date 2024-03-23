@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* HEADER SIMPLE PRICING */
+.header-simple-pricing {
+  display: flex;
+  flex-direction: column;
+  padding: 64px 0px 64px 0px;
+  gap: 64px;
+}
+.conteiner-text-header {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px 0 16px;
+  gap: 32px;
+}
+.container-h {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.container-h h2 {
+  color: #7f56d9;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+}
+.container-h h3 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin: 0;
+  color: #101828;
+}
+.conteiner-text-header p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #667085;
+  margin: 0;
+}
+
+/* BODY SIMPLE PRICING */
+.body-simple-pricing {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 64px 0px;
+  gap: 48px;
+}
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px 0 16px;
+  gap: 48px;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.pricing-card {
+  border: 1px solid #eaecf0;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 4px 6px -2px #10182808;
+  box-shadow: 0px 12px 16px -4px #10182814;
+}
+.pricing-card-header {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 24px 0 24px;
+  gap: 16px;
+}
+.conteiner-coment-arrow {
+  position: relative;
+}
+.pricing-card-price {
+  font-size: 36px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #101828;
+  font-weight: 600;
+  line-height: 44px;
+}
+.coment-card1 {
+  position: absolute;
+  width: 100%;
+  top: -70px;
+  left: 200px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: #6941c6;
+}
+.svg-arrow {
+  position: absolute;
+  top: -65.67px;
+  left: 130px;
+  padding: 0.4690684378147125 0 0.8115960359573364 0;
+}
+.conteiner-title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.pricing-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  color: #101828;
+}
+.pricing-card-text {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #667085;
+}
+/* DESCRIPTION items */
+/* Estilos para el punto en la lista */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  padding-left: 38px;
+  position: relative;
+}
+
+li::before {
+  content: url("data:image/svg+xml,%3Csvg width='13' height='11' viewBox='0 0 13 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.0965 0.390159L3.9365 7.30016L2.0365 5.27016C1.6865 4.94016 1.1365 4.92016 0.736504 5.20016C0.346504 5.49016 0.236503 6.00016 0.476503 6.41016L2.7265 10.0702C2.9465 10.4102 3.3265 10.6202 3.7565 10.6202C4.1665 10.6202 4.5565 10.4102 4.7765 10.0702C5.1365 9.60016 12.0065 1.41016 12.0065 1.41016C12.9065 0.490159 11.8165 -0.31984 11.0965 0.38016V0.390159Z' fill='%2312B76A'/%3E%3C/svg%3E"); /* Establece el SVG como el contenido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background-color: #d1fadf;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 24px 32px 24px;
+  gap: 24px;
+}
+.pricing-card-description {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #667085;
+  gap: 16px;
+}
+.pricing-card-description li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.footer-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px 32px 24px;
+  gap: 24px;
+}
+.pricing-card-button {
+  display: flex;
+  width: 295px;
+  justify-content: center;
+  padding: 12px 20px 12px 20px;
+  gap: 8px;
+  border-radius: 8px;
+  background: #7f56d9;
+  border: 1px solid #7f56d9;
+  box-shadow: 0px 1px 2px 0px #1018280d;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #ffffff;
+}
+
+/* BREACKPOINTS HEADER */
+@media (min-width: 1200px) {
+  .title-simple-pricing {
+    font-size: 16px;
+  }
+  .simple-pricing h3 {
+    font-size: 48px;
+  }
+  .text-simple-pricing {
+    font-size: 20px;
+  }
+  .conteiner-text-header {
+    padding: 0 30px 0 100px;
+    gap: 32px;
+  }
+}
+
+/* BREACKPOINTS BODY */
+@media (min-width: 1200px) {
+  .body-simple-pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 0 96px 0;
+    gap: 64px;
+  }
+  .container-cards {
+    display: flex;
+    flex-direction: row;
+    padding: 0 32px 0 32px;
+    gap: 32px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+  .pricing-card-header {
+    padding: 40px 32px 0 32px;
+    gap: 16px;
+  }
+  .container-description {
+    padding: 32px 32px 40px 32px;
+    gap: 24px;
+  }
+  .svg-arrow {
+    top: -65.67px;
+    left: 200px;
+  }
+  .coment-card1 {
+    left: 265px;
+  }
+}

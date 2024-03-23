@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 20px;
+    padding: 20px;
+  }
+  @media only screen and (min-width: 600px) {
+    .container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto;
+    }
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ccc; /* Change this to your logo */
+  }
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .text {
+    font-size: 16px;
+  }
+  .image {
+    max-width: 100%;
+    height: auto;
+  }
