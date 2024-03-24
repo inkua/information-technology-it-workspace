@@ -22,8 +22,8 @@
 @media (min-width: 992px) {
 } /* pantalla grande */
 @media (min-width: 1200px) {
-  main {
-    max-width: 1290px;
-    margin: 0 auto;
-  }
+    main{
+        max-width: 1290px;
+        margin: 0 auto;
+    }
 } /* pantalla extra grande */
