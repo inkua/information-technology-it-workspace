@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resto - Restaurant</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <header id="navBar"></header>
+    <main>
+      <section></section>
+      <section></section>
+    </main>
+    <footer></footer>
+
+    <script>
+      // Función para cargar y mostrar contenido de archivos HTML
+      function includeHTML(file, target) {
+        $.get(file, function (data) {
+          $(target).html(data);
+        });
+      }
+
+      // Cargar el contenido de cada archivo HTML en su respectivo contenedor
+      includeHTML("components/header.html", "#navBar");
+    </script>
+  </body>
 </html>
