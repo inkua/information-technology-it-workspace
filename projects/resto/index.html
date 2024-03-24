@@ -18,7 +18,7 @@
             <h2>Testimonio</h2>
             <h3>Cosumidor Feliz</h3>
 
-            <div>
+            <div class="testimonials__card">
                 <img 
                     class="testimonials__carrousel_bg"
                     src="./assets/carrousel_1.png" 
@@ -31,14 +31,15 @@
                 </p>
                 <h4>Matias Sosa</h4>
 
-                <div class="testimonials__dots">
-                    <button class="testimonials__dots__previous" type="button">Anterior</button>
-                    <button class="testimonials__dots__next" type="button">Siguiente</button>
+                <div id="idTestimonialsBtns" class="testimonials__dots">
+                    <button id="idPreviousBtn" class="testimonials__dots__previous" type="button">Anterior</button>
+                    <button id="idNextBtn" class="testimonials__dots__next active" type="button">Siguiente</button>
                 </div>
             </div>
         </section>
         <!-- Fin de la sección testimonios -->
     </main>
     <footer></footer>
+    <script src="./js/carrousel.js"></script>
 </body>
 </html>
