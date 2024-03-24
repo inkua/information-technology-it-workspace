@@ -94,13 +94,16 @@
 
 .testimonials .testimonials__dots button {
     display: block;
-
     background-color: transparent;
+    color: transparent;
+    border-radius: 50%;
     border: 3px solid #fff;
+    
     width: 1rem;
     height: 1rem;
-    border-radius: 50%;
-    color: transparent;
+    
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .testimonials .testimonials__dots button.active {
@@ -113,6 +116,28 @@
 @media (min-width: 576px) {
 } /* pantalla mediana */
 @media (min-width: 992px) {
+    .testimonials h2 {
+        font-size: 1.5rem;
+    }
+
+    .testimonials  h3 {
+        font-size: 4rem;
+    }
+
+    .testimonials p {
+        font-size: 2rem;
+        line-height: 2.6rem;
+    }
+
+    .testimonials h4 {
+        font-size: 1.35rem;
+    }
+    
+
+    .testimonials .testimonials__dots button {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
 } /* pantalla grande */
 @media (min-width: 1200px) {
     main{
