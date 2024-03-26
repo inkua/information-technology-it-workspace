@@ -200,6 +200,7 @@ footer {
 
 }
 
+
 /* Break Points - Mobile first */
 @media (min-width: 576px) {
 } /* pantalla mediana */
@@ -226,7 +227,6 @@ footer {
         width: 1.4rem;
         height: 1.4rem;
     }
-
 } /* pantalla grande */
 @media (min-width: 1200px) {
     main{
@@ -242,14 +242,17 @@ footer {
     }
 
     .containerFooter {
-        padding-left: 50px;
-        padding-right: ;
+        
         flex-direction: column;
         justify-content: space-between;
     }
     .card1Footer {
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    .card1Footer ul li {
+        padding-right: 20px;
     }
 
     .card2Footer {
@@ -262,3 +265,4 @@ footer {
         margin-bottom: 20px;
     }
 }
+
