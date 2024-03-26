@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rancho&display=swap');
+
+
+:root{
+    --ff-one: "Rancho", cursive; /* regular 400 */
+    --ff-two: "Josefin Sans", sans-serif; /* 100 - 700 + italic */
+
+    --color-1: #2A9D8F;
+    --color-2: #E76F51;
+    --color-3: #EFEFEF;
+    --color-4: #333333;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+    padding-inline: 1.5rem;
+    max-width: 69.75rem;
+}
+
+.testimonials h2,
+.testimonials h3 {
+    font-weight: 400;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-family: var(--ff-two);
+    font-size: 1.375rem;
+    color: var(--color-2);
+}
+
+.testimonials h3 {
+    font-family: var(--ff-one);
+    font-size: 3rem;
+    color: var(--color-4);
+}
+
+.testimonials p {
+    color: #fff;
+    line-height: 1.35rem;
+
+    padding-inline: 1.75rem;
+
+    font-family: var(--ff-two);
+    font-weight: 300;
+    max-width: 50rem;
+    font-size: 1.125rem;
+}
+
+.testimonials h4 {
+    color: #fff;
+    font-family: var(--ff-two);
+    font-size: 1.25rem;
+}
+
+.testimonials .testimonials__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.8rem;
+
+    padding-block: 2rem;
+
+    overflow: hidden;
+    inset: 0;
+    position: relative;
+    width: 100%;
+    min-height: 26rem;
+}
+
+.testimonials .testimonials__carrousel_bg {
+    position: absolute;
+    z-index: -1;
+}
+
+.testimonials .testimonials__quotes{
+    margin-top: 2.8rem;
+}
+
+.testimonials .testimonials__dots {
+    display: flex;
+    gap: 3.5rem;
+}
+
+.testimonials .testimonials__dots button {
+    display: block;
+    background-color: transparent;
+    color: transparent;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    
+    width: 1rem;
+    height: 1rem;
+    
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.testimonials .testimonials__dots button.active {
+    background-color: #fff;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: var(--color-4);
+    height: 350px;
+    max-height: auto;
+    font-family: var(--ff-two);
+    color: white;
+    margin-top: 200px;
+    bottom: 0;
+}
+
+.containerFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.containerFooter h3 {
+    color: var(--color-2);
+}
+
+.containerFooter hr {
+    width: 100px;
+}
+
+.card1Footer {
+    max-width: 33%;
+}
+
+.card1Footer h2 {
+    font-family: var(--ff-one);
+    font-size: 3rem;
+}
+
+.card1Footer p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: justify;
+    
+}
+
+.card1Footer ul li {
+    display: inline;
+    padding-right: 40px;
+}
+
+.card1Footer ul li i {
+    font-size: 40px;
+}
+
+.card2Footer{
+    max-width: 33%;
+}
+
+.card2Footer .daysFooter {
+    display: flex;
+}
+
+.card2Footer .daysFooter li {
+    padding-bottom: 10px;
+}
+
+.card2Footer .daysFooter ul {
+    list-style: none;
+    padding-right: 10px;
+}
+
+.card2Footer hr{
+    margin-bottom: 10px;
+}
+
+.card3Footer {
+    max-width: 33%;
+}
+
+.card3Footer img {
+    max-width: 200px;
+}
+
+.copyFooter {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+/* Break Points - Mobile first */
+@media (min-width: 576px) {
+} /* pantalla mediana */
+@media (min-width: 992px) {
+    .testimonials h2 {
+        font-size: 1.5rem;
+    }
+
+    .testimonials  h3 {
+        font-size: 4rem;
+    }
+
+    .testimonials p {
+        font-size: 2rem;
+        line-height: 2.6rem;
+    }
+
+    .testimonials h4 {
+        font-size: 1.35rem;
+    }
+    
+
+    .testimonials .testimonials__dots button {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+
+} /* pantalla grande */
+@media (min-width: 1200px) {
+    main{
+        max-width: 1290px;
+        margin: 0 auto;
+    }
+} /* pantalla extra grande */
+
+@media (max-width: 992px) {
+    footer {
+        height: auto;
+        justify-content: center;
+    }
+
+    .containerFooter {
+        padding-left: 50px;
+        padding-right: ;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .card1Footer {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card2Footer {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card3Footer {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
