@@ -200,7 +200,6 @@ footer {
 
 }
 
-
 /* Break Points - Mobile first */
 @media (min-width: 576px) {
 } /* pantalla mediana */
@@ -242,7 +241,6 @@ footer {
     }
 
     .containerFooter {
-        
         flex-direction: column;
         justify-content: space-between;
     }
@@ -265,4 +263,3 @@ footer {
         margin-bottom: 20px;
     }
 }
-
