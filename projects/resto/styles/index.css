@@ -109,7 +109,95 @@
     background-color: #fff;
 }
 
+/*FOOTER*/
 
+footer {
+    background-color: var(--color-4);
+    height: 350px;
+    max-height: auto;
+    font-family: var(--ff-two);
+    color: white;
+    margin-top: 200px;
+    bottom: 0;
+}
+
+.containerFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.containerFooter h3 {
+    color: var(--color-2);
+}
+
+.containerFooter hr {
+    width: 100px;
+}
+
+.card1Footer {
+    max-width: 33%;
+}
+
+.card1Footer h2 {
+    font-family: var(--ff-one);
+    font-size: 3rem;
+}
+
+.card1Footer p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: justify;
+    
+}
+
+.card1Footer ul li {
+    display: inline;
+    padding-right: 40px;
+}
+
+.card1Footer ul li i {
+    font-size: 40px;
+}
+
+.card2Footer{
+    max-width: 33%;
+}
+
+.card2Footer .daysFooter {
+    display: flex;
+}
+
+.card2Footer .daysFooter li {
+    padding-bottom: 10px;
+}
+
+.card2Footer .daysFooter ul {
+    list-style: none;
+    padding-right: 10px;
+}
+
+.card2Footer hr{
+    margin-bottom: 10px;
+}
+
+.card3Footer {
+    max-width: 33%;
+}
+
+.card3Footer img {
+    max-width: 200px;
+}
+
+.copyFooter {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+
+}
 
 /* Break Points - Mobile first */
 @media (min-width: 576px) {
@@ -144,3 +232,35 @@
         margin: 0 auto;
     }
 } /* pantalla extra grande */
+
+
+@media (max-width: 992px) {
+    footer {
+        height: auto;
+        justify-content: center;
+    }
+
+    .containerFooter {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .card1Footer {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card1Footer ul li {
+        padding-right: 20px;
+    }
+
+    .card2Footer {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card3Footer {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
