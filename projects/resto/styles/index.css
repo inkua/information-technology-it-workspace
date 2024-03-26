@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rancho&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rancho&display=swap");
 
+:root {
+  --ff-one: "Rancho", cursive; /* regular 400 */
+  --ff-two: "Josefin Sans", sans-serif; /* 100 - 700 + italic */
 
-:root{
-    --ff-one: "Rancho", cursive; /* regular 400 */
-    --ff-two: "Josefin Sans", sans-serif; /* 100 - 700 + italic */
-
-    --color-1: #2A9D8F;
-    --color-2: #E76F51;
-    --color-3: #EFEFEF;
-    --color-4: #333333;
+  --color-1: #2a9d8f;
+  --color-2: #e76f51;
+  --color-3: #efefef;
+  --color-4: #333333;
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .testimonials {
@@ -234,6 +233,7 @@ footer {
     }
 } /* pantalla extra grande */
 
+
 @media (max-width: 992px) {
     footer {
         height: auto;
@@ -263,3 +263,4 @@ footer {
         margin-bottom: 20px;
     }
 }
+

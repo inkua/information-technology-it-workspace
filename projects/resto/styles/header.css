@@ -1,0 +1,86 @@
+
+.navBarMobile {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: 107px;
+    padding: 9px 20px 9px 28px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  .nameResto {
+    font-family: Rancho;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 89.44px;
+    text-align: left;
+    color: black;
+    text-decoration: none;
+  }
+  #buttonToggle {
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  .containerNavbarMenu {
+    display: none;
+    flex-direction: column;
+    width: auto;
+    height: 380px;
+    top: 107px;
+    box-shadow: 0px 15px 15px 0px #00000033;
+    background: #fefefe;
+    justify-content: center;
+    align-items: center;
+  }
+  .showMenu {
+    display: flex;
+  }
+  .containerOptionsIcons{
+    display: flex;
+  }
+  .navbarMenu {
+    display: flex;
+    flex-direction: column;
+    width: 247px;
+  height: 271px;
+    gap: 40px;
+  }
+  .liMenu {
+    font-family: Libre Franklin;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24.24px;
+    text-align: left;
+    list-style-type: none;
+  }
+  .liMenu a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  @media (min-width: 992px) {
+    .navBarMobile {
+      display: none;
+    }
+    .containerNavbarMenu {
+      display: none;
+    }
+  }
+  .navBarDesktop {
+    display: none;
+    height: 150px;
+    width: 100vw;
+  }
+  .containerNavBarDesktop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+  }
+  @media (min-width: 992px) {
+    .navBarDesktop {
+      display: block;
+    }
+  }
+  
