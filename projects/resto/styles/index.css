@@ -1,22 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rancho&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rancho&display=swap");
 
+:root {
+  --ff-one: "Rancho", cursive; /* regular 400 */
+  --ff-two: "Josefin Sans", sans-serif; /* 100 - 700 + italic */
 
-:root{
-    --ff-one: "Rancho", cursive; /* regular 400 */
-    --ff-two: "Josefin Sans", sans-serif; /* 100 - 700 + italic */
-
-    --color-1: #2A9D8F;
-    --color-2: #E76F51;
-    --color-3: #EFEFEF;
-    --color-4: #333333;
+  --color-1: #2a9d8f;
+  --color-2: #e76f51;
+  --color-3: #efefef;
+  --color-4: #333333;
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+/*--- Testimonios ---*/
 .testimonials {
     display: flex;
     flex-direction: column;
@@ -241,11 +241,14 @@ footer {
     }
 
     .containerFooter {
+        border: 1px solid white;
+        align-items: center;
         flex-direction: column;
         justify-content: space-between;
     }
     .card1Footer {
-        width: 100%;
+        max-width: 80%;
+        
         margin-bottom: 20px;
     }
 
@@ -254,12 +257,12 @@ footer {
     }
 
     .card2Footer {
-        width: 100%;
+        max-width: 80%;
         margin-bottom: 20px;
     }
 
     .card3Footer {
-        width: 100%;
+        max-width: 80%;
         margin-bottom: 20px;
     }
 }

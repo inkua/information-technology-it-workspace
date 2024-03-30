@@ -1,0 +1,145 @@
+/*--- Banner ---*/
+.banner
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 90%;
+    width: 100%;
+    row-gap: 2em;
+    margin: 2em 0 2em 0;
+}
+
+.banner-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2em;
+}
+
+.content-info
+{
+    display: flex;
+    justify-content: center;
+}
+
+.info-text
+{
+    font-family: Josefin Sans;
+    font-size: 2.2em;
+    color: #000000;
+    width: 100%;
+}
+
+.green
+{
+    color: #16a97d;
+}
+
+.content-show
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    column-gap: .5em;
+}
+
+.show-button
+{
+    font-family: sans-serif;
+    color: white;
+    background-color: #ed8c3c;
+    padding: .5em 1.5em;
+    border: none;
+    font-size: 1em;
+    border-radius: .5em;
+}
+
+.show-img
+{
+    width: 1em;
+}
+
+.show-text
+{
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.content-items
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+}
+
+.items-item
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: .5em;
+}
+
+.items-item:nth-child(2) {
+    border-left: 1.5px solid black;
+    border-right: 1.5px solid black;
+}
+
+.item-img
+{
+    width: 2em;
+}
+
+.item-title
+{
+    font-family: sans-serif;
+    font-size: .8em;
+}
+
+.banner-carrousel
+{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.carrousel-img
+{
+    width: 100%;
+}
+
+.carrousel-control
+{
+    position: absolute;
+    display: flex;
+    width: 30%;
+    background-color: #FFFFFF;
+}
+
+.control-arrow
+{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.arrow-img
+{
+    width: 2em;
+}
+/*--- End Banner ---*/
+
+@media (min-width: 768px)
+{
+    .banner
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 5em;
+    }
+}
