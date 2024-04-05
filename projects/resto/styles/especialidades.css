@@ -177,77 +177,63 @@ main {
   grid-column: span 1;
   grid-row: span 2;
 }
-/* ====================================================================================0000000 */
+/* ====================================================================================*/
 @media (max-width: 768px) {
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f2f2f2;
-      
-}
-main {
-  display: block;
-  flex-direction: column;
-  gap: 20px;
-  padding: 10px;
-  height: 2300px;
-}
-header {
-  background-color: #f2f2f2;
-  padding: 5px 5px;
-  width: 100%;
-}
-header h1{
-  margin-left: 20%;
-  color: #000;;
-  font-family: 'rancho', cursive;
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 0.5;
-}
-header h3{
-  color:#E76F51;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  border-bottom: 0px;
-  margin-left: 40%;
-  line-height: 0.5;
 
-}
-.specialty-item button {
-  background-color: #2A9D8F;
-  color: white;
-  border: none;
-  padding: 20px 40px;
-  cursor: pointer;
-  margin-left: 150px;
-  border-radius: 15px;
+  body {
+    width: 100%;     
+  }
+  header {
+    width: 100%;
+  }
+  main{
+    width: 100%;
+    display: block;
+    flex-direction: column;
+    height:2200px;
+  }
+  .specialty-item {
+    width: 80%;
+    word-spacing: 2%;
+  }
+ .specialty-item h3 {
+    font-size: 250%;
+  }
 
   
-}
-.price {
-  font-size: 30px;
   
-}
-.description{
-  color: #333333;
-  font-family: 'Libre Franklin', sans-serif;
-  margin-bottom:10%;
-  line-height: 1.4;
-  font-size: 22px;  
- 
 
-}
-
-
-#dish2Image{
-  margin-left: 0%;
-}
-#dish1Menu{
-  background-color: #f2f2f2;
-  margin-left: 0%;
-}
+  .specialty-item button {
+    background-color: #2A9D8F;
     
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 40%;
+    border-radius: 15px;
+  
+    
+  }
+  .image-item img {
+    width: 80%;
+    
+  }
+  header h1{
+    margin-left: 10%;
+    
+  
+  }
+  header h3{
+    margin-left: 30%;
+    
+  }
+  #dish1Menu{
+    margin-left: 0%;
+  }
+  #dish2Image{
+    margin-left: 0%;
+  }
+
+
 }
