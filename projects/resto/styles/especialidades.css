@@ -1,0 +1,253 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v32/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQbMhhLzTs.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v32/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQbMZhLw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/librefranklin/v14/jizOREVItHgc8qDIbSTKq4XkRg8T88bjFuXOnduhLsWkDtDJX-I.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/librefranklin/v14/jizOREVItHgc8qDIbSTKq4XkRg8T88bjFuXOnduhLsWkANDJ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Rancho';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/rancho/v21/46kulbzmXjLaqZRVam_h.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    
+  }
+  
+header {
+  background-color: #f2f2f2;
+  padding: 10px 10px;
+  width: 1440px;
+}
+header h1{
+  margin-left: 35%;
+  color: #000;;
+  font-family: 'rancho', cursive;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 0.5;
+}
+header h3{
+  color:#E76F51;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  border-bottom: 0px;
+  margin-left: 40%;
+  line-height: 0.5;
+
+}
+
+h2{
+  color:#E76F51;
+  font-family: 'Josefin Sans', sans-serif;
+  border-bottom: 1px solid #333333; 
+  font-weight: 400;
+  font-size: 24px;
+}
+ 
+h3{
+  color: #000;;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  border-bottom: 1px solid #333333; 
+}
+
+h3 p{
+  line-height: 0.5;
+}
+ 
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+  
+.specialty-item {
+  background-color: #f9f9f9;
+  padding: 10px;
+  width: 400px;
+  height: 416px;
+  grid-column: span 1;
+  grid-row: span 3
+}
+  
+.specialty-item h2,
+.specialty-item h3 {
+  margin: 0;
+}
+  
+.specialty-item p {
+  margin-top: 5px;
+}
+.price {
+  font-size: 24px;
+  
+}
+  
+.specialty-item button {
+  background-color: #2A9D8F;
+  
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 190px;
+  border-radius: 15px;
+
+  
+}
+  
+.image-item img {
+  max-width: 100%;
+  width: 400px;
+  height: 416px;
+}
+
+.content h3{
+  
+  margin-top: 10%;
+  
+}
+  
+.description{
+  color: #333333;
+  font-family: 'Libre Franklin', sans-serif;
+  margin-bottom:20%;
+  line-height: 1.3;
+
+}
+#dish1Menu{
+  background-color: #f2f2f2;
+  margin-left: 30%;
+}
+#dish2Image{
+  margin-left: 30%;
+}
+#dish2Menu{
+  background-color: #f2f2f2;
+  
+}
+
+.image-item {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.specialty-item:nth-child(2) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+/* ====================================================================================0000000 */
+@media (max-width: 768px) {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+      
+}
+main {
+  display: block;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  height: 2300px;
+}
+header {
+  background-color: #f2f2f2;
+  padding: 5px 5px;
+  width: 100%;
+}
+header h1{
+  margin-left: 20%;
+  color: #000;;
+  font-family: 'rancho', cursive;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 0.5;
+}
+header h3{
+  color:#E76F51;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  border-bottom: 0px;
+  margin-left: 40%;
+  line-height: 0.5;
+
+}
+.specialty-item button {
+  background-color: #2A9D8F;
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  cursor: pointer;
+  margin-left: 150px;
+  border-radius: 15px;
+
+  
+}
+.price {
+  font-size: 30px;
+  
+}
+.description{
+  color: #333333;
+  font-family: 'Libre Franklin', sans-serif;
+  margin-bottom:10%;
+  line-height: 1.4;
+  font-size: 22px;  
+ 
+
+}
+
+
+#dish2Image{
+  margin-left: 0%;
+}
+#dish1Menu{
+  background-color: #f2f2f2;
+  margin-left: 0%;
+}
+    
+}
