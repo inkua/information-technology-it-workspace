@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Santiago Larrosa</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html {
+                font-family: 'Inter', sans-serif;
+                padding: 4rem 1rem;
+            }
+
+            body {
+                display: flex;
+                flex-direction: column;
+                gap: 4rem;
+            }
+
+            h1 {
+                font-size: clamp(1.875rem, 5vw, 3rem);
+                max-width: 24rem;
+                font-weight: 600;
+            }
+
+            section {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            ul li {
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+
+                list-style-type: none;
+            }
+
+            ul li div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                background-color: #f4ebff;
+                width: 1.75rem;
+                height: 1.75rem;
+                border-radius: 50%;
+            }
+
+            ul li span {
+                font-size: 1.125rem;
+                color: #667085;
+            }
+
+            section > div {
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            div a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                color: #fff;
+                text-decoration: none;
+                padding: 0.75rem 1.25rem;
+                font-weight: 500;
+                border-radius: 0.5rem;
+                background-color: #7f56d9;
+                transition: all 140ms;
+            }
+
+            section img {
+                width: 100%;
+            }
+
+            .show_on_desktop {
+                display: none;
+            }
+
+            div a.alternative {
+                background-color: #fff;
+                color: #344054;
+                border: 1px solid #d0d5dd;
+            }
+
+            @media (min-width: 48rem) {
+                html {
+                    padding-right: 0;
+                }
+
+                body {
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                h1 {
+                    max-width: 40rem;
+                }
+
+                section > div {
+                    width: fit-content;
+                    flex-direction: row-reverse;
+                }
+
+                section img {
+                    max-width: 682px;
+                }
+
+                .show_on_desktop {
+                    display: block;
+                }
+
+                .show_on_mobile {
+                    display: none;
+                }
+
+                div a:hover {
+                    transform: scale(1.08);
+                }
+            }
+
+            @media (min-width: 68rem) {
+                html {
+                    padding: 7rem;
+                    padding-right: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <h1>Join 4,000+ startups growing with Untitled</h1>
+            <ul>
+                <li>
+                    <div>
+                        <svg
+                            width="15"
+                            height="13"
+                            viewBox="0 0 15 13"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M12.9459 0.62169L4.59253 8.68336L2.37586 6.31502C1.96753 5.93002 1.32586 5.90669 0.859193 6.23336C0.404193 6.57169 0.27586 7.16669 0.555859 7.64502L3.18086 11.915C3.43753 12.3117 3.88086 12.5567 4.38253 12.5567C4.86086 12.5567 5.31586 12.3117 5.57253 11.915C5.99253 11.3667 14.0075 1.81169 14.0075 1.81169C15.0575 0.738356 13.7859 -0.206643 12.9459 0.610023V0.62169Z"
+                                fill="#9E77ED"
+                            />
+                        </svg>
+                    </div>
+                    <span>30-day free trial</span>
+                </li>
+                <li>
+                    <div>
+                        <svg
+                            width="15"
+                            height="13"
+                            viewBox="0 0 15 13"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M12.9459 0.62169L4.59253 8.68336L2.37586 6.31502C1.96753 5.93002 1.32586 5.90669 0.859193 6.23336C0.404193 6.57169 0.27586 7.16669 0.555859 7.64502L3.18086 11.915C3.43753 12.3117 3.88086 12.5567 4.38253 12.5567C4.86086 12.5567 5.31586 12.3117 5.57253 11.915C5.99253 11.3667 14.0075 1.81169 14.0075 1.81169C15.0575 0.738356 13.7859 -0.206643 12.9459 0.610023V0.62169Z"
+                                fill="#9E77ED"
+                            />
+                        </svg>
+                    </div>
+                    <span>Peronalized onboarding</span>
+                </li>
+                <li>
+                    <div>
+                        <svg
+                            width="15"
+                            height="13"
+                            viewBox="0 0 15 13"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M12.9459 0.62169L4.59253 8.68336L2.37586 6.31502C1.96753 5.93002 1.32586 5.90669 0.859193 6.23336C0.404193 6.57169 0.27586 7.16669 0.555859 7.64502L3.18086 11.915C3.43753 12.3117 3.88086 12.5567 4.38253 12.5567C4.86086 12.5567 5.31586 12.3117 5.57253 11.915C5.99253 11.3667 14.0075 1.81169 14.0075 1.81169C15.0575 0.738356 13.7859 -0.206643 12.9459 0.610023V0.62169Z"
+                                fill="#9E77ED"
+                            />
+                        </svg>
+                    </div>
+                    <span>Access to all features</span>
+                </li>
+            </ul>
+            <div>
+                <a href="#">Get started</a>
+                <a class="alternative" href="#">Learn more</a>
+            </div>
+        </section>
+        <section>
+            <img
+                class="show_on_desktop"
+                src="https://i.ibb.co/ZdhJYf6/3-2-screen-mockup.jpg"
+                alt="Imagen de ejemplo de cómo se ve el sitio web, un diseño moderno con una paleta basada en el color violeta y detalles suaves."
+            />
+            <img
+                class="show_on_mobile"
+                src="https://i.ibb.co/3zm1YPF/Content.png"
+                alt="Imagen de ejemplo de cómo se ve el sitio web, un diseño moderno con una paleta basada en el color violeta y detalles suaves."
+            />
+        </section>
+    </body>
+</html>

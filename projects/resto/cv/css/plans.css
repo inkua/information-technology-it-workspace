@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+
+/*#######  Plans Header  #######*/
+.plans
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.plans-header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2em;
+    width: 100%;
+    height: 100vw;
+    background-color: #F9F5FF;
+}
+
+.header-info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1em;
+    width: 90%;
+}
+
+.info-sub
+{
+    color: #6941C6;
+    background-color: #f1e7ff;
+    padding: .5em;
+    border-radius: 50px;
+    text-align: center;
+    font-size: .8em;
+}
+
+.info-title
+{
+    color: #42307D;
+    text-align: center;
+    font-size: 2em;
+}
+
+.info-text
+{
+    color: #6941C6;
+    text-align: center;
+    font-size: 1em;
+}
+
+.promo-toggle
+{
+    display: flex;
+    justify-content: right;
+    width: 2em;
+    height: 1em;
+    background-color: #42307D;
+    border-radius: 50px;
+}
+
+.plans-promo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5em;
+}
+
+.toggle-button
+{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border-radius: 1em;
+    border: .15em solid #42307D;
+}
+
+.promo-sub
+{
+    color: #42307D;
+    text-align: center;
+    font-size: 1em;
+    font-weight: medium;
+}
+
+.promo-subAvg
+{
+    color: #6941C6;
+}
+
+/*#######  Plans Content  #######*/
+.plans-content
+{
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+    row-gap: 1em;
+}
+
+.content-card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: 5px 5px 20px #868686;
+    overflow: hidden;
+}
+
+.card-title
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em;
+    row-gap: .5em;
+}
+
+.title-img
+{
+    width: 2em;
+}
+
+.title-second
+{
+    color: #6941C6;
+    font-size: 1em;
+}
+
+.title-first
+{
+    color: #101828;
+    font-size: 2.2em;
+}
+
+.title-third
+{
+    color: #667085;
+    font-size: .8em;
+}
+
+.card-info
+{
+    width: 100%;
+    padding: 1.5em;
+}
+
+.info-list
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    list-style: none;
+}
+
+.list-item
+{
+    display: flex;
+    column-gap: .5em;
+    width: 100%;
+}
+
+.list-img
+{
+    width: 1.2em;
+}
+
+.item-text
+{
+    color: #667085;
+    font-size: .8em;
+}
+
+.card-button
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #F9FAFB;
+    padding: 1.5em;
+}
+
+.button-get
+{
+    width: 100%;
+    background-color: #7F56D9;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: .5em;
+    padding: .8em;
+}
+
+@media (min-width: 768px)
+{
+    .plans
+    {
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+    }
+
+    .plans-content
+    {
+        width: 70%;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2em;
+    }
+}
