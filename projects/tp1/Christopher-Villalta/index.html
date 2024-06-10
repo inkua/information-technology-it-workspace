@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHRISTOPHER VILLALTA | DEVELOPER</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=256&id=CZcJA5jraL8X&format=png" type="image/x-icon">
+
+    <!-- CSS -->
+    <style>
+        html {
+            box-sizing: border-box;
+            font-size: 62.5%
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 500;
+            background-color: #181a1b;
+            color: #ffffff;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25);
+            background-color: #131516;
+        }
+
+        .nav h3 {
+            color: #ffffff;
+            font-size: 2rem;
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #131516;
+            color: white;
+            text-align: center;
+            padding: .1rem 0;
+        }
+
+        #fechaActual {
+            font-size: 1.5rem;
+        }
+
+        /* MAIN */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .columna {
+            background-color: #ffffff;
+            color: #181a1b;
+            padding: 20px;
+            margin: 15px;
+            text-align: center;
+        }
+
+        .izquierda,
+        .derecha {
+            flex: 1;
+        }
+
+        .centro {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .centro .columna {
+            flex: 1;
+        }
+
+        /* MODAL */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #000000;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 35%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .sectionmodal {
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+
+        .sectionmodal input {
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+            padding: 10px;
+        }
+
+        .sectionmodal button {
+            font-size: 2rem;
+            padding: 5px;
+            background-color: #1db000;
+        }
+
+        .sectionmodal button:hover {
+            color: #000000;
+            background-color: #2bff00;
+        }
+    </style>
+    <!-- FIN CSS -->
+</head>
+
+<body>
+    <!-- SECCION NOMBRE NAV -->
+    <section class="nav">
+        <h3 class="logo">CHRISTOPHER VILLALTA | DEVELOPER 👨‍💻</h3>
+    </section>
+    <!-- FIN SECCION NAV -->
+
+    <!-- SECCION MAIN -->
+    <main class="container">
+        <div class="columna izquierda">
+            <h3>Educación</h3>
+            <div id="infoEducacion"></div>
+        </div>
+        <div class="centro">
+            <div class="columna">
+                <h3>Experiencia Laboral</h3>
+                <div id="infoTrabajo"></div>
+            </div>
+            <div class="columna">
+                <h3>Contacto</h3>
+                <div id="infoRedes"></div>
+            </div>
+        </div>
+        <div class="columna derecha">
+            <h3>Tecnologías</h3>
+            <div id="infoTecnologias"></div>
+            <h3>Estudiando</h3>
+            <div>
+                <ol>
+                    <li>React</li>
+                    <li>Next</li>
+                    <li>GitHub</li>
+                </ol>
+            </div>
+        </div>
+    </main>
+    <!-- FIN MAIN -->
+    <!-- FOOTER -->
+    <footer style="color: #ffffff;">
+        <p id="fechaActual"></p>
+    </footer>
+
+
+    <!-- MODAL BIENVENIDO -->
+    <div id="bienvenidoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="sectionmodal">
+                <p>Por favor, introduce tu nombre:</p>
+                <input type="text" id="nombre" placeholder="Tu nombre">
+                <button onclick="gudardarNombre()">Guardar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="saludoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="saludo"></p>
+        </div>
+    </div>
+    <!-- FIN MODAL -->
+
+    <!-- FIN FOOTER -->
+    <script>
+        //FECHA
+        let fechaActual = document.getElementById('fechaActual');
+        setInterval(function () {
+            var data = new Date();
+            fechaActual.innerHTML = data.toLocaleDateString();
+        });
+
+        //DATOS GENERALES
+        const educacion = [
+            {
+                nombreColegio: "Escuela Superior Franciscana Especializada",
+                duracionEstudio: "2023 - 2024",
+                descripcion: "Actualmente, cursando Técnico en Ingeniería de Desarrollo de Software."
+            },
+            {
+                nombreColegio: "Colegio Salarrué",
+                duracionEstudio: "2019 - 2021",
+                descripcion: "Bachillerato Técnico Vocacional en Desarrollo de Software."
+            },
+            {
+                nombreColegio: "Direct English Academy",
+                duracionEstudio: "2021 - 2022",
+                descripcion: "Curso de Inglés desde Básico hasta Avanzado"
+            }
+        ]
+
+        const experiencia = [
+            {
+                nombreTrabajo: "Variedades Gracia - Negocio Familiar",
+                duracionTrabajo: "2022 - Actualmente",
+                descripcionTrabajo: "Creación de productos publicitarios como Banners, Vinyles, Tarjetas de Presentación, Tazas, entre otros."
+            },
+            {
+                nombreTrabajo: "Programador Web Freelancer",
+                duracionTrabajo: "2019 - 2020",
+                descripcionTrabajo: "Creación de una página web responsiva estatica, utilizando HTML, CSS, JS, Bootstrap"
+            }
+        ]
+
+        const tecnlogias = [
+            {
+                nombretecnlogias: [
+                    "HTML",
+                    "CSS",
+                    "JS",
+                    "BOOTSTRAP",
+                    "C#",
+                    "ASP .NET CORE/FRAMEWORK",
+                    "SQL SERVER",
+                    "GIT",
+                    "SQL"
+                ]
+            }
+        ]
+
+        const redesSociales = [
+            {
+                nombreRed: "LinkedIn",
+                linkRed: "https://www.linkedin.com/in/chrisvillalta/",
+                imgRed: "https://img.icons8.com/?size=256&id=13930&format=png"
+            }
+        ]
+
+        //FUNCIÓN PARA MOSTRAR LA INFOR DE EDUCACION
+        function mostrarEducacion() {
+            let container = document.querySelector("#infoEducacion");
+            educacion.forEach(function (item) {
+
+                let h4 = document.createElement('h4');
+                h4.textContent = item.nombreColegio;
+
+                let h5 = document.createElement('h5');
+                h5.textContent = item.duracionEstudio;
+
+                let p = document.createElement('p');
+                p.textContent = item.descripcion;
+
+                let hr = document.createElement('hr');
+
+                container.appendChild(h4);
+                container.appendChild(h5);
+                container.appendChild(p);
+                container.appendChild(hr)
+            });
+        }
+
+        //FUNCION PARA MOSTRAR LA INFO DE TRABAJO
+        function mostrarTrabajo() {
+            let container = document.querySelector("#infoTrabajo");
+            experiencia.forEach(function (item) {
+
+                let h4 = document.createElement('h4');
+                h4.textContent = item.nombreTrabajo;
+
+                let h5 = document.createElement('h5');
+                h5.textContent = item.duracionTrabajo;
+
+                let p = document.createElement('p');
+                p.textContent = item.descripcionTrabajo;
+
+                let hr = document.createElement('hr');
+
+                container.appendChild(h4);
+                container.appendChild(h5);
+                container.appendChild(p);
+                container.appendChild(hr);
+            });
+        }
+
+        //FUNCION PARA MOSTRAR LA INFO DE TECNOLOGÍAS
+        function mostrarTecnologias() {
+            let container = document.querySelector("#infoTecnologias");
+            let listaOrdenada = document.createElement('ol'); // CREAR ELEMENTO DE LISTA ORDENADA
+
+            tecnlogias.forEach(function (tecnologia) {
+                tecnologia.nombretecnlogias.forEach(function (nombre) {
+                    let elementoLista = document.createElement('li');
+                    elementoLista.textContent = nombre;
+                    listaOrdenada.appendChild(elementoLista); // AGREGAR ELEMENTO DE LISTA A LA LISTA
+                });
+            });
+
+            container.appendChild(listaOrdenada); // AGREGAR LA LISTA AL CONTENEDOR
+        }
+
+        //FUNCION PARA MOSTRAR LA INFO DE REDES SOCIALES
+        function mostrarRedes() {
+            let container = document.querySelector("#infoRedes");
+            redesSociales.forEach(function (item) {
+                let a = document.createElement('a');
+                a.href = item.linkRed;
+                a.target = "_blank";
+
+                let h4 = document.createElement('h4');
+                h4.textContent = item.nombreRed;
+
+                let img = document.createElement('img');
+                img.src = item.imgRed;
+                img.alt = item.nombreRed;
+                img.style = "width: 50px; height: 50px;";
+
+
+                a.appendChild(img);
+                container.appendChild(h4);
+                container.appendChild(a);
+            });
+        }
+
+        //MOSTRAR LA INFORMACIÓN
+        window.addEventListener('load', mostrarEducacion);
+        window.addEventListener('load', mostrarTrabajo);
+        window.addEventListener('load', mostrarTecnologias);
+        window.addEventListener('load', mostrarRedes);
+
+
+        // FUNCIÓN DE MODAL MAS SALUDO
+        let bienvenidaModal = document.getElementById('bienvenidoModal');
+        let saludoModal = document.getElementById('saludoModal');
+
+        window.onload = function () {
+            if (!localStorage.getItem('name')) {
+                bienvenidaModal.style.display = "block";
+            } else {
+                saludoUsuario();
+            }
+        };
+
+        function gudardarNombre() {
+            var name = document.getElementById('nombre').value;
+            localStorage.setItem('name', name);
+            bienvenidaModal.style.display = "none";
+            saludoUsuario();
+        }
+
+        function saludoUsuario() {
+            var name = localStorage.getItem('name');
+            document.getElementById('saludo').innerHTML = "¡Bienvenido, " + name + "!" + " Gracias por tomarte el tiempo analizar mi proyecto.";
+            saludoModal.style.display = "block";
+        }
+
+        var cerrarButton = document.getElementsByClassName('close');
+        for (var i = 0; i < cerrarButton.length; i++) {
+            cerrarButton[i].onclick = function () {
+                this.parentElement.parentElement.style.display = 'none';
+            }
+        }
+
+    </script>
+</body>
+
+</html>
