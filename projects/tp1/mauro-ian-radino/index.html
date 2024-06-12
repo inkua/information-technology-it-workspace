@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mauro Radino CV</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: aliceblue;
+      }
+
+      /*ESTILOS NAVBAR*/
+      .listaNav {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        gap: 20px;
+        margin-top: 20px;
+      }
+      .liNav:hover {
+        text-decoration: underline;
+        text-decoration-color: rgb(0, 92, 213);
+      }
+      .aNav {
+        color: rgb(0, 110, 255);
+        font-family: "Jersey 15", sans-serif;
+        text-decoration: none;
+      }
+      /*ESTILOS NAVBAR*/
+
+      /*ESTILOS INICIO*/
+      .tituloHome {
+        color: rgb(0, 63, 236);
+        text-align: center;
+      }
+      .subtituloHome {
+        text-align: center;
+        color: rgb(134, 134, 134);
+      }
+      .divHomeWelcome {
+        margin-top: calc(50vh - 120px);
+      }
+      /*ESTILOS INICIO*/
+
+      /*ESTILOS SOBRE MI*/
+      .tituloProyectos,
+      .tituloEducacion,
+      .tituloContacto,
+      .tituloHabilidades,
+      .tituloSobreMi {
+        text-align: start;
+        color: rgb(0, 63, 236);
+        font-size: 40px;
+      }
+      .contenidoSobreMi {
+        width: 90%;
+        font-weight: 400;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+      /*ESTILOS SOBRE MI*/
+
+      /*ESTILOS HABILIDADES*/
+      .divProyectos,
+      .divEducacion,
+      .divSobreMi,
+      .divContacto,
+      .divHabilidades {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 600px;
+      }
+      .divContacto {
+        margin-bottom: 200px;
+      }
+      .contenidoHabilidades {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .habilidad {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgb(0, 63, 236);
+        padding: 10px;
+        border-radius: 8px;
+        align-items: center;
+        gap: 10px;
+        box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .textoHabilidad {
+        color: white;
+        font-weight: bold;
+      }
+      /*ESTILOS HABILIDADES*/
+
+      /*ESTILOS EDUCACION*/
+      .listaEducacion {
+        list-style-type: none;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+      .divCurso {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(0, 63, 236);
+        padding: 20px;
+        border-radius: 8px;
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 80%;
+      }
+      .divCurso p {
+        color: white;
+      }
+      /*ESTILOS EDUCACION*/
+      /*ESTILOS PROYECTOS*/
+      .divProyecto {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        height: 300px;
+        margin: 0 auto;
+        margin-top: 100px;
+        background-color: #003fec;
+        border-radius: 8px;
+        border: 1px solid rgba(111, 106, 106, 0.479);
+      }
+      .textosProyecto {
+        background-color: #003fec;
+        width: 45%;
+        margin-top: 20px;
+        text-align: start;
+        align-self: center;
+      }
+      .tituloProyecto {
+        background-color: #003fec;
+        font-size: 25px;
+        font-weight: 500;
+        color: white;
+      }
+      .subtituloProyecto {
+        font-size: 18px;
+        background-color: #003fec;
+        color: rgb(192, 192, 192);
+      }
+      .imagenProyecto {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        width: 50%;
+      }
+      .verBtn {
+        padding: 5px 10px 5px 10px;
+        width: max-content;
+        border: 1px solid rgb(0, 0, 0);
+        background-color: transparent;
+        color: white;
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+      /*ESTILOS PROYECTOS*/
+      /*ESTILOS CONTACTOS*/
+      .contenidoContacto {
+        display: flex;
+        margin-top: 20px;
+      }
+      .formulario {
+        display: block;
+        background-color: #003fec;
+        padding: 20px;
+        border-radius: 8px;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 40px;
+      }
+      .elementoFormulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5px;
+      }
+      label {
+        color: white;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .inputForm {
+        outline: none;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+      }
+      .enviarBtn {
+        display: flex;
+        justify-content: center;
+        background-color: aliceblue;
+        color: rgb(0, 63, 236);
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 10px;
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+      textarea {
+        resize: none;
+      }
+      /*ESTILOS CONTACTOS*/
+
+      /*MEDIA QUERYS*/
+      @media (width < 767px) {
+        .aNav {
+          font-size: 10px;
+        }
+      }
+      @media (width <= 768px) {
+        .divProyecto {
+          height: 250px;
+          width: 100%;
+          
+        }
+        .subtituloProyecto {
+          font-size: 10px;
+        }
+        .tituloProyecto {
+          margin-bottom: 5px;
+        }
+        .tituloContacto,
+        .tituloHabilidades,
+        .tituloSobreMi {
+          font-size: 25px;
+        }
+        .contenidoContacto {
+          flex-direction: column;
+        }
+        .grupo1Inicio {
+          display: flex !important;
+          flex-direction: column;
+        }
+        .ingresarNombre {
+          font-size: 20px !important;
+        }
+        .bienvenida {
+          width: max-content !important;
+          flex-direction: column;
+          align-items: center;
+        }
+        .tituloBienvenida {
+          font-size: 50px;
+          text-align: center;
+        }
+        .divCurso p {
+          font-size: 12px;
+        }
+        .imagenHabilidad {
+          width: 50px;
+        }
+        #pUsuario {
+          text-align: center !important ;
+        }
+      }
+      @media (1023px >= width >= 768px) {
+        .contenidoContacto {
+          justify-content: space-evenly;
+        }
+        .aNav {
+          font-size: 15px;
+        }
+        .bienvenida {
+          flex-direction: column;
+          width: 70% !important;
+        }
+        .tituloBienvenida {
+          font-size: 50px;
+        }
+        .imagenHabilidad {
+          width: 100px;
+        }
+        .bienvenida {
+          align-items: center;
+        }
+      }
+      @media (width >= 1024px) {
+        .contenidoContacto {
+          justify-content: space-evenly;
+        }
+        .tituloHome {
+          font-size: 80px;
+        }
+        .liEducacion {
+          font-size: 20px;
+        }
+        .imagenHabilidad {
+          width: 100px;
+        }
+        .bienvenida {
+          align-items: baseline;
+          width: 40% !important;
+        }
+        .tituloBienvenida {
+          font-size: 50px;
+        }
+      }
+      /*MEDIA QUERYS*/
+      .tituloBienvenida {
+        text-align: center;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        margin: 0 auto;
+        width: 100%;
+        background-color: aliceblue;
+        padding-bottom: 10px;
+      }
+      .liEducacion {
+        list-style-type: none;
+      }
+      .grupo1Inicio {
+        display: block;
+      }
+      #educacion,
+      #habilidades,
+      #sobreMi,
+      #contacto {
+        scroll-margin-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul class="listaNav">
+        <li class="liNav"><a class="aNav" href="#home">INICIO</a></li>
+        <li class="liNav"><a class="aNav" href="#sobreMi">SOBRE MI</a></li>
+        <li class="liNav">
+          <a class="aNav" href="#habilidades">HABILIDADES</a>
+        </li>
+        <li class="liNav"><a class="aNav" href="#educacion">EDUCACIÓN</a></li>
+        <li class="liNav"><a class="aNav" href="#contacto">CONTACTO</a></li>
+      </ul>
+    </header>
+    <main>
+      <div id="contenido" class="contenido">
+        <div id="home" class="divHomeWelcome">
+          <h1 class="tituloHome">Mauro Radino</h1>
+          <h2 class="subtituloHome">Desarrollador Frontend</h2>
+        </div>
+        <div id="sobreMi" class="divSobreMi">
+          <h2 class="tituloSobreMi">Sobre Mí</h2>
+          <h3 class="contenidoSobreMi">
+            Tengo 20 años, soy de Mendoza, Argentina, comencé a programar a los
+            15 años y estudio Desarrollo Frontend hace dos años, durante los
+            cuales finalice los cursos de Desarrollo web, Javascript y React.js
+            en Coderhouse. Más allá de mis habilidades técnicas, me considero
+            una persona proactiva y colaborativa, siempre buscando el éxito del
+            equipo. Me esfuerzo por comprender las necesidades de los usuarios y
+            aplicarlas en mis proyectos, con el objetivo de ofrecer soluciones
+            innovadoras y efectivas.
+          </h3>
+        </div>
+        <div id="habilidades" class="divHabilidades">
+          <h2 class="tituloHabilidades">Habilidades</h2>
+          <div class="contenidoHabilidades">
+            <div class="habilidad">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png"
+                class="imagenHabilidad"
+                alt="imagen habilidad"
+              />
+              <p class="textoHabilidad">HTML</p>
+            </div>
+            <div class="habilidad">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png"
+                class="imagenHabilidad"
+                alt="imagen habilidad"
+              />
+              <p class="textoHabilidad">CSS</p>
+            </div>
+            <div class="habilidad">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png"
+                class="imagenHabilidad"
+                alt="imagen habilidad"
+              />
+              <p class="textoHabilidad">TypeScript</p>
+            </div>
+            <div class="habilidad">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                class="imagenHabilidad"
+                alt="imagen habilidad"
+              />
+              <p class="textoHabilidad">JavaScript</p>
+            </div>
+            <div class="habilidad">
+              <img
+                src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+                class="imagenHabilidad"
+                alt="imagen habilidad"
+              />
+              <p class="textoHabilidad">React JS</p>
+            </div>
+            <div class="habilidad">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png"
+                class="imagenHabilidad"
+                alt="imagen habilidad"
+              />
+              <p class="textoHabilidad">Git</p>
+            </div>
+            <div class="habilidad">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
+                class="imagenHabilidad"
+                alt="imagen habilidad"
+              />
+              <p class="textoHabilidad">Bootstrap</p>
+            </div>
+          </div>
+        </div>
+        <div id="educacion" class="divEducacion">
+          <h2 class="tituloEducacion">Educación</h2>
+          <ul id="ulEducacion" class="listaEducacion"></ul>
+        </div>
+        <div class="divProyectos">
+          <h2 class="tituloProyectos">Proyectos</h2>
+          <div id="proyectos"></div>
+        </div>
+        <div id="contacto" class="divContacto">
+          <h2 class="tituloContacto">Contacto</h2>
+          <div class="contenidoContacto">
+            <div class="formulario">
+              <div class="elementoFormulario">
+                <label for="">Nombre y Apellido</label>
+                <input class="inputForm" type="text" />
+              </div>
+              <div class="elementoFormulario">
+                <label for="">Empresa</label>
+                <input class="inputForm" type="text" />
+              </div>
+              <div class="elementoFormulario">
+                <label for="">Correo Electronico</label>
+                <input class="inputForm" type="text" />
+              </div>
+              <div class="elementoFormulario">
+                <label for="">Mensaje</label>
+                <textarea class="inputForm" type="text"></textarea>
+              </div>
+              <button class="enviarBtn">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      window.onload = function () {
+        localStorage.clear();
+        const proyectos = [
+          {
+            titulo: "Talk-In",
+            enlace: "https://talk-in-f8a0d.web.app/",
+            subtitulo:
+              "Talk-In es una representación de una aplicación web en la cual estudiantes de idioma de todas partes del mundo pueden conectar.",
+            imagen:
+              "https://mauroradino2.web.app/static/media/imagenProyecto1.a2acbf3a9576eeee4d25.png",
+          },
+          {
+            titulo: "Fix Phone",
+            enlace: "https://fix-68c44.web.app/",
+            subtitulo:
+              "Fix Phone es una página desarrollada con React.js, para un local de reparación de celulares",
+            imagen:
+              "https://mauroradino2.web.app/static/media/imagenProyecto2.450b25d1b1e4090d415f.png",
+          },
+        ];
+        const cursos = [
+          "Desarrollo Web - Coderhouse",
+          "JavaScript - Coderhouse",
+          "React JS - Coderhouse",
+          "Angular (en curso) - OpenBootcamp",
+          "TypeScript (en curso) - Ieee ITBA",
+          "Desarrollo de Software (en curso) - Apx School",
+        ];
+        const ulEducacion = document.getElementById("ulEducacion");
+        const contenedorProyectos = document.getElementById("proyectos");
+        const contenido = document.getElementById("contenido");
+        let cursosHTML = "";
+        let proyectosHTML = "";
+
+        cursos.forEach((titulo) => {
+          cursosHTML += `
+    <li class="liEducacion">
+      <div class="divCurso"><p>${titulo}</p></div>
+    </li>
+  `;
+        });
+
+        ulEducacion.innerHTML = cursosHTML;
+
+        proyectos.forEach((proyecto) => {
+          proyectosHTML += `
+                <div class="divProyecto">
+                    <img class="imagenProyecto" src="${proyecto.imagen}" alt="imagen del proyecto" />
+                    <div class="textosProyecto">
+                        <p class="tituloProyecto">${proyecto.titulo}</p>
+                        <p class="subtituloProyecto">${proyecto.subtitulo}</p>
+                        <button class="verBtn" onclick="window.open('${proyecto.enlace}', '_blank')">Ver</button>
+                    </div>
+                </div>
+            `;
+        });
+        contenedorProyectos.innerHTML = proyectosHTML;
+
+        const nombreOnChange = (e) => {
+          nombreUsuario = e.target.value;
+        };
+      };
+    </script>
+  </body>
+</html>
