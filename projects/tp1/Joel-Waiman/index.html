@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <!-- CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #222831;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .sidebar {
+      position: fixed;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #31363F;
+      min-width: 15%;
+      min-height: 95vh;
+      border-radius: 0 0 40px 0;
+    }
+
+    .sidebar_list {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      min-height: 40%;
+      width: 100%;
+    }
+
+    .nav-item {
+      display: flex;
+      justify-content: center;
+      font-size: 24px;
+      text-decoration: none;
+      list-style: none;
+      color: #EEEEEE;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .nav-item.active {
+      display: flex;
+      justify-content: center;
+      width: 92%;
+      border-radius: 20px 0 0 20px;
+      padding: 10px 0;
+      background-color: #222831;
+      margin-left: 20px;
+    }
+
+    .name-container {
+      display: none;
+    }
+
+    .name-container.active {
+      display: block;
+      position: absolute;
+      top: 20px;
+      left: 40%;
+      width: 30%;
+      transition: all .5s ease-in-out;
+    }
+
+    .name-container input {
+      border-radius: 20px;
+      padding: 10px 20px;
+      width: 60%;
+      background-color: #EEEEEE;
+    }
+
+    .name-container button {
+      border-radius: 20px;
+      padding: 10px 20px;
+      background-color: #EEEEEE;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-color: #76ABAE;
+        cursor: pointer;
+      }
+    }
+
+    .main-content {
+      display: none;
+    }
+
+    .main-content.active {
+      display: flex;
+      justify-content: center;
+      min-width: 70vw;
+      align-items: center;
+      color: #EEEEEE;
+      margin: 20px 15%;
+      gap: 40px;
+      min-height: 95vh;
+    }
+
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      gap: 40px;
+    }
+
+    .main-content.active h2 {
+      font-size: 46px;
+      font-weight: bold;
+    }
+
+    .main-content.active h2 strong {
+      color: #76ABAE;
+    }
+
+    .main-content.active h3 {
+      font-size: 36px;
+      font-weight: normal;
+    }
+
+    .main-content.active p {
+      font-size: 22px;
+      font-weight: lighter;
+      margin: 20px 0;
+    }
+
+    .main-content.active img {
+      max-width: 250px;
+      border-radius: 50%;
+    }
+
+    .main-content.active .date {
+      background-color: #76ABAE;
+      padding: 2px 5px;
+      border-radius: 20px;
+    }
+
+    .project-list {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .project-list li {
+      list-style: none;
+      background-color: #31363F;
+      padding: 20px;
+      border-radius: 20px;
+      transition: all .3s ease-in-out;
+      &:hover{
+        scale: 1.025;
+      }
+    }
+
+    .project-list a {
+      text-decoration: none;
+      color: #76ABAE;
+    }
+
+    .contact-list {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .contact-list li {
+      list-style: none;
+      background-color: #31363F;
+      padding: 20px;
+      border-radius: 20px;
+      transition: all .3s ease-in-out;
+      &:hover{
+        scale: 1.025;
+      }
+    }
+
+    .contact-list a {
+      text-decoration: none;
+      color: #76ABAE;
+    }
+  </style>
+</head>
+
+<!-- HTML -->
+
+<body>
+  <section class="container">
+    <nav class="sidebar">
+      <ul class="sidebar_list">
+
+      </ul>
+    </nav>
+    <section class="content-section">
+      <aside class="main-content active" id="home">
+        <span class="name-container active">
+          <input type="text" placeholder="Ingresa tu nombre" class="input-name">
+          <button class="button-name">Ingresar</button>
+        </span>
+        <article class="text-container">
+          <h2>Hola, soy <strong>Joel</strong> <br>Frontend Developer</h2>
+          <h3 class="wecolme-text">
+            <h3 />
+            <p>Esta es una breve introducción sobre mí y mis habilidades al día de la fecha: <span class="date"></span>
+            </p>
+            <p>Mi stack tecnologico: HTML5, CSS, Javascript, ReactJS, NextJS, Tailwind, Git, Github.</p>
+        </article>
+        <img
+          src="https://lh3.googleusercontent.com/a/ACg8ocJpdxS7nNaM98M7MegEUI0tQJUZmu2Qr5RVLG-TXSlxqna0RCKk=s360-c-no"
+          alt="profile">
+      </aside>
+
+      <aside class="main-content" id="projects">
+        <article class="text-container">
+          <h2>Mis proyectos</h2>
+          <p>Aquí encontrarás algunos de los proyectos en los que he trabajado.</p>
+          <ul class="project-list">
+            <li>
+              <h2>
+                <a href="https://ecommerce-react-ten-phi.vercel.app/">E-commerce</a>
+              </h2>
+              <p>E-commerce completo creado con ReactJS. Uso de Hooks, States, Context y mas. Firebase como base de
+                datos.</p>
+            </li>
+            <li>
+              <h2>
+                <a href="https://twitter-clone-lime.vercel.app/">Twitter</a>
+              </h2>
+              <p>Proyecto hecho en ReactJS, con el objeto de crear una UI lo mas asemejada posible a la original.
+                Control de estados, localStorage.</p>
+            </li>
+            <li>
+              <h2>
+                <a href="https://burguers.vercel.app/">Smash Burgers</a>
+              </h2>
+              <p>Hamburguesería en proceso de creación para cliente local, con el fin de mostrar su trabajo y productos
+                disponibles.</p>
+            </li>
+          </ul>
+        </article>
+      </aside>
+
+      <aside class="main-content" id="contact">
+        <article class="text-container">
+          <h2>Contáctame</h2>
+          <p>No dudes en contactarme utilizando los siguientes métodos:</p>
+          <ul class="contact-list">
+            <li>
+              <h2>
+                <a href="https://www.linkedin.com/in/joel-waiman97/">Linkedin</a>
+              </h2>
+              <p>
+                Aca vas a poder encontrar toda mi actividad relacionada con proyectos, actividad y contactos.
+              </p>
+            </li>
+            <li>
+              <h2>
+                <a href="https://github.com/joelwaiman">Github</a>
+              </h2>
+              <p>En mi github estan todos los proyectos tanto, deployados como los sin deployar. Tiene una descripción mas tecnica de mis habilidades</p>
+            </li>
+            <li>
+              <h2>
+                <a href="waimanjoel@gmail.com">E-mail</a>
+              </h2>
+              <p>En caso de que necesites contactarme por temas importantes, no dudes en escribirme un mail :D</p>
+            </li>
+          </ul>
+        </article>
+      </aside>
+    </section>
+  </section>
+
+
+  <!-- JAVASCRIPT -->
+  <script>
+
+    const nav = [
+      { title: 'Home', to: '#home' },
+      { title: 'Proyectos', to: '#projects' },
+      { title: 'Contacto', to: '#contact' },
+    ];
+
+    const sidebar = document.querySelector('.sidebar_list');
+
+    // ITERO LOS ELEMENTOS DEL MENU
+    nav.map(item => {
+      const link = document.createElement('a');
+      link.href = item.to;
+      link.textContent = item.title;
+      link.classList.add('nav-item')
+      sidebar.appendChild(link);
+    })
+
+    //MUESTRO LOS ELEMENTOS DEPENDIENDO LA SECCION VIGENTE
+    const navItems = document.querySelectorAll('.nav-item');
+    const mainContents = document.querySelectorAll('.main-content');
+
+    navItems[0].classList.add('active');
+    mainContents[0].classList.add('active');
+
+    navItems.forEach(navItem => {
+      navItem.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        navItems.forEach(item => item.classList.remove('active'));
+        mainContents.forEach(content => content.classList.remove('active'));
+
+        this.classList.add('active');
+        const targetId = this.getAttribute('href').substring(1); // Extraer el ID de destino
+        const targetContent = document.getElementById(targetId);
+        targetContent.classList.add('active');
+      })
+    })
+
+    //CAPTURO EL NOMBRE EL CASO DE LO QUE INGRESE, PERSONALIZO EL TEXTO Y LO GUARDO EN LOCALSTORAGE
+
+    const nameContainer = document.querySelectorAll('.name-container');
+    const buttonName = document.querySelector('.button-name');
+    const inputName = document.querySelector('.input-name');
+    const welcomeText = document.querySelector('.wecolme-text');
+    const date = document.querySelector('.date')
+
+    document.body.onload = function () {
+      nameContainer.classList.add('active');
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const today = new Date();
+      const localDate = today.toLocaleDateString();
+      date.textContent = localDate
+    })
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const storedName = localStorage.getItem('userName');
+      if (storedName) {
+        welcomeText.textContent = `Bienvenido/a a mi cv ${storedName}`;
+      }
+    })
+
+    buttonName.addEventListener('click', function () {
+      const name = inputName.value.trim();
+      if (name) {
+        welcomeText.textContent = `Bienvenido/a a mi cv ${name}`;
+        name.classList.add('userName')
+        localStorage.setItem('userName', name)
+      } else {
+        welcomeText.textContent = 'Bienvenido/a a mi cv'
+      }
+    })
+
+  </script>
+</body>
+
+</html>
