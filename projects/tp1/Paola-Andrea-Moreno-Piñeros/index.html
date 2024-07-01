@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mercado Interactivo</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding-top: 20px;
+    }
+    #canvas {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: block;
+    margin: 0 auto;
+    }
+</style>
+</head>
+<body onload="init()">
+<div class="container">
+    <h1 class="text-center mb-4">Mercado Interactivo</h1>
+    <div class="row mb-4">
+        <div class="col-md-6 offset-md-3">
+            <input id="producto" type="text" class="form-control mb-2" placeholder="Ingrese un producto">
+            <div class="text-center">
+                <button id="agregar" class="btn btn-primary">Agregar</button>
+                <button id="limpiar" class="btn btn-danger">Limpiar</button>
+            </div>
+        </div>
+    </div>
+    <canvas id="canvas" width="400" height="200"></canvas>
+    <p id="mensaje" class="text-center mt-4"></p>
+</div>
+  <!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    let productos = [];
+    let canvas = document.getElementById('canvas');
+    let ctx = canvas.getContext('2d');
+    let productoInput = document.getElementById('producto');
+    let agregarBtn = document.getElementById('agregar');
+    let limpiarBtn = document.getElementById('limpiar');
+    let mensajeP = document.getElementById('mensaje');
+
+function init() {
+// Inicializar canvas
+ctx.fillStyle = '#fff';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.font = '24px Arial';
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'top';
+
+// Agregar eventos
+agregarBtn.onclick = agregarProducto;
+limpiarBtn.onclick = limpiarCanvas;
+productoInput.onkeyup = function(event) {
+    if (event.key === 'Enter') {
+    agregarProducto();
+        }
+    };
+}
+
+function agregarProducto() {
+    let producto = productoInput.value.trim();
+        if (producto !== '') {
+            productos.push(producto);
+            productoInput.value = '';
+            dibujarProductos();
+            guardarLocalStorage();
+    }
+}
+
+function dibujarProductos() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = '#fff';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = '#000';
+    ctx.font = '24px Arial';
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'top';
+    let y = 20;
+    for (let i = 0; i < productos.length; i++) {
+        ctx.fillText(productos[i], 20, y);
+        y += 30;
+    }
+}
+
+function limpiarCanvas() {
+    productos = [];
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = '#fff';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    guardarLocalStorage();
+}
+
+function guardarLocalStorage() {
+    localStorage.setItem('productos', JSON.stringify(productos));
+}
+
+function cargarLocalStorage() {
+    let storedProductos = localStorage.getItem('productos');
+    if (storedProductos) {
+        productos = JSON.parse(storedProductos);
+        dibujarProductos();
+    }
+}
+
+cargarLocalStorage();
+</script>
+</body>
+</html>
+
