@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - Interactivo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .form {
+            width: 100%;
+            max-width: 500px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        input,
+        textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #333;
+            outline: none;
+            box-sizing: border-box;
+        }
+        input:focus,
+        textarea:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .cv-container {
+            width: 100%;
+            max-width: 800px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            display: none;
+        }
+        h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        p, ul {
+            color: #555;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            background: #f9f9f9;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .d-none {
+            display: none;
+        }
+        img {
+            max-width: 100px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px;
+        }
+    </style>
+</head>
+<body onload="welcome()">
+    <section class="info">
+        <h1 id="name"></h1>
+        <p id="pInfo"></p>
+    </section>
+
+    <section class="description">
+        <p id="description_personal"></p>
+    </section>
+
+    <form id="infoForm" class="form">
+        <div>
+            <label for="photo">Foto de perfil:</label><br />
+            <input type="file" id="photo" accept="image/*" style="width: 100%" />
+            <img id="photoPreview" src=""  />
+        </div>
+        <div>
+            <label for="description">Información personal:</label><br />
+            <p>Ej: características, qué te diferencia, gustos, etc.</p>
+            <textarea id="description" rows="4" style="width: 100%"></textarea>
+        </div>
+        <div>
+            <label for="skills">Habilidades (mínimo 3, separadas por comas):</label><br />
+            <input type="text" id="skills" style="width: 100%" />
+        </div>
+        <div>
+            <label for="phone">Teléfono:</label><br />
+            <input type="text" id="phone" style="width: 100%" />
+        </div>
+        <div>
+            <label for="languages">Idiomas (separados por comas):</label><br />
+            <input type="text" id="languages" style="width: 100%" />
+        </div>
+        <div>
+            <label for="jobs">Tres experiencias anteriores (separados por comas):</label><br />
+            <input type="text" id="jobs" style="width: 100%" />
+        </div>
+        <button type="button" onclick="saveInfo()">Guardar Información</button>
+    </form>
+
+    <div class="cv-container">
+        <h1 id="nameUser"></h1>
+        <img id="cvPhoto" src="" alt="Foto de perfil" />
+        <h2>Información personal</h2>
+        <p id="cvDescription"></p>
+        <h2>Habilidades</h2>
+        <ul id="skillsList"></ul>
+        <h2>Teléfono</h2>
+        <p id="cvPhone"></p>
+        <h2>Idiomas</h2>
+        <ul id="languagesList"></ul>
+        <h2>Experiencias Anteriores</h2>
+        <ul id="jobsList"></ul>
+    </div>
+
+    <script>
+
+
+        // variables fuera de la función para que tengas un scope global 
+        const nameUser = document.getElementById("name");
+        const pInfo = document.getElementById("pInfo");
+        function welcome() {
+            let name = "";
+
+            while (name.length === 0) {
+                name = prompt("Hola, bienvenido. Por favor, ingresa tu nombre y apellido");
+                localStorage.setItem('nameUser', name);
+            }
+
+            nameUser.textContent = "Bienvenido, " + name;
+            pInfo.textContent = "A continuación te pediremos datos para completar tu CV de forma fácil y rápida";
+        }
+
+        document.getElementById('photo').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            const reader = new FileReader();
+
+            reader.onload = function(e) {
+                document.getElementById('photoPreview').src = e.target.result;
+            }
+
+            reader.readAsDataURL(file);
+        });
+
+
+        //al hacer click guarda la info en el local storage
+        function saveInfo() {
+            const description = document.getElementById("description").value;
+            const skills = document.getElementById("skills").value.split(",").map(skill => skill.trim());
+            const phone = document.getElementById("phone").value;
+            const languages = document.getElementById("languages").value.split(",").map(language => language.trim());
+            const jobs = document.getElementById("jobs").value.split(",").map(job => job.trim());
+            const photo = document.getElementById('photoPreview').src;
+
+            if (skills.length < 3) {
+                alert("Por favor, ingresa al menos 3 habilidades.");
+                return;
+            }
+
+            const userInfo = {
+                name: localStorage.getItem('nameUser'),
+                description: description,
+                skills: skills,
+                phone: phone,
+                languages: languages,
+                jobs: jobs,
+                photo: photo
+            };
+
+            localStorage.setItem("userInfo", JSON.stringify(userInfo));
+            alert("Información guardada correctamente.");
+            displayCV();
+        }
+
+
+        // función que muestra el cv terminado 
+        function displayCV() {
+            document.getElementById('infoForm').classList.add('d-none');
+
+            nameUser.textContent='Cv listo '
+            pInfo.textContent = 'Tu cv ha sido creado con éxito , en una nueva version podrás descargarlo y modificar sus colores'
+
+            const userInfo = JSON.parse(localStorage.getItem("userInfo"));
+            if (userInfo) {
+                document.getElementById("cvDescription").textContent = userInfo.description;
+                document.getElementById("nameUser").textContent = userInfo.name;
+
+                const skillsList = document.getElementById("skillsList");
+                skillsList.innerHTML = '';
+                userInfo.skills.forEach(skill => {
+                    const li = document.createElement("li");
+                    li.textContent = skill;
+                    skillsList.appendChild(li);
+                });
+
+                document.getElementById("cvPhone").textContent = userInfo.phone;
+
+                const languagesList = document.getElementById("languagesList");
+                languagesList.innerHTML = '';
+                userInfo.languages.forEach(language => {
+                    const li = document.createElement("li");
+                    li.textContent = language;
+                    languagesList.appendChild(li);
+                });
+
+                const jobsList = document.getElementById("jobsList");
+                jobsList.innerHTML = '';
+                userInfo.jobs.forEach(job => {
+                    const li = document.createElement("li");
+                    li.textContent = job;
+                    jobsList.appendChild(li);
+                });
+
+                document.getElementById("cvPhoto").src = userInfo.photo;
+                document.querySelector('.cv-container').style.display = 'block';
+            } else {
+                alert("No se encontró información en el almacenamiento local.");
+            }
+        }
+    </script>
+</body>
+</html>
