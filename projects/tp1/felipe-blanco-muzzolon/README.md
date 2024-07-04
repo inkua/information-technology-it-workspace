@@ -1,0 +1,1 @@
+Esto es lo que pude realizar en las 24 horas. Por el tiempo hubo algunas funcionalidades que no supe en qué parte agregarlas. Me gustó del trabajo reveer cosas sencillas como el manejo de html con javascript vainilla.

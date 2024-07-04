@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facundo Elorz</title>
+
+    <style>
+        body{
+            width: 100vw;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --darkColor: #2b2d42;
+            --ligthColor: #edf2f4;
+            --greyColor: #8d99ae;
+            --colorPrimario: #ef233c;
+            --colorSecundario: #ef233c;
+            background-color: var(--ligthColor);
+            color: var(--darkColor);
+            display: flex;
+            box-sizing: border-box;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+
+        header{
+            width: 100vw;
+            padding: 12px 0;
+            display: flex;
+            box-sizing: border-box;
+            align-items: center;
+            justify-content: flex-end;
+            box-shadow: 0px 5px 15px -5px var(--greyColor);
+            position: fixed;
+            z-index: 10;
+            background-color: var(--ligthColor);
+            gap: 24px;
+        }
+
+        header nav{
+            text-align: center;
+            width: 100%;
+            position: absolute;
+        }
+
+        header nav p{
+            font-weight: 500;
+        }
+
+        header div{
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        header button{
+            border: none;
+            background-color: transparent;
+            font-size: 17px;
+            font-weight: 500;
+            cursor: pointer;
+            color: var(--darkColor);
+            margin-right: 32px;
+        }
+
+        header input{
+            position: absolute;
+            z-index: 1;
+            right: 32px;
+            top: 0px;
+            padding: 3px;
+            font-size: 14px;
+        }
+
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            max-width: 1280px;
+            padding: 16px;
+            margin-top: 36px;
+        }
+
+        h1, h2, h3, h4, h5, h6, p {
+            margin: 0;
+        }
+
+        .titular{
+            display: flex;
+            flex-direction: column;
+            padding: 72px 0px;
+            text-align: center;
+        }
+
+        .titular h1{
+            font-size: 48px;
+        }
+
+        .titular p{
+            font-size: 18px;
+        }
+
+        .subdivision{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        #actividades{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        #action{
+            display: flex;
+            flex-direction: column;
+            margin: 48px 0;
+            box-shadow: 0px 5px 15px -5px var(--greyColor);
+            padding: 24px;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+            min-width: 280px;
+            position: relative;
+            border-radius: 5px;
+        }
+
+        #action button{
+            margin-top: 8px;
+            align-self: center;
+            font-size: 17px;
+            background-color: var(--colorSecundario);
+            color: var(--ligthColor);
+            box-shadow: 0px 5px 15px -5px var(--darkColor);
+            font-weight: 600;
+            border-radius: 15px;
+            padding: 5px 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #action button:hover{
+            background-color: white;
+            color: var(--darkColor);
+            box-shadow: 0px 5px 15px -5px var(--colorSecundario);
+        }
+
+        #action button:active{
+            transform: scale(.95);
+        }
+
+        #likeMsj{
+            position: absolute;
+            bottom: -24px;
+            right: 0;
+            font-weight: 500;
+        }
+
+        #tecnologiasDiv{
+            display: grid;
+            place-items: center;
+            grid-template-columns: repeat(auto-fit,minmax(280px, 1fr));
+            grid-template-rows: auto;
+            gap: 16px;
+            width: 100%;
+        }
+
+        #tecnologiasDiv article{
+            padding: 16px;
+            box-shadow: 0px 5px 15px -5px var(--greyColor);
+            border-radius: 14px;
+        }
+
+        footer{
+            padding: 16px;
+            margin-top: 36px;
+        }
+
+        .hidden{
+            display: none;
+        }
+
+        @media (max-width:768px) {
+            header{
+                justify-content: space-between;
+            }
+            header nav{
+                position: relative;
+                margin-left: 32px;
+                text-align: start;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <p>Contáctanos al +11-123-456789</p>
+        </nav>
+        <div>
+            <button>
+                Ingresar
+            </button>
+            <input type="text" class="hidden" placeholder="Nombre & 'Enter'">
+        </div>
+    </header>
+
+    <main>
+        <div class="titular">
+            <h1>Sitios interactivos</h1>
+            <p>Todas las tecnologías adaptadas a las necesidades de los usuarios</p>
+        </div>
+
+        <section id="actividades">
+            <div class="subdivision">
+                <h2>Valor de las actividades</h2>
+                <p>
+                    La propuesta principal es reconocer el compromiso que de la actividad que llega a nuestras manos corresponde.
+                </p>
+                <p>
+                    Conocer nuestras principales herramientas, y trabajar para la experiencia del usuario.
+                </p>
+            </div>
+
+        </section>
+
+        <section id="action">
+            <h2>Tu Feedback es importante</h2>
+            <h3>Danos Like!</h3>
+            <button>Like</button>
+            <p class="hidden" id="likeMsj"></p>
+        </section>
+
+        <section id="tecnologias">
+            <div class="subdivision">
+                <h2>Tecnologías</h2>
+            </div>
+            <div id="tecnologiasDiv"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <h5>by Facu</h5>
+    </footer>
+
+    <script>
+        const documentacion = [
+            {
+                _Id: 'articulo-1',
+                titulo: 'HTML',
+                subtitulo: 'HyperText Markup Language',
+                descripcion: 'HTML es un lenguaje de programación que se utiliza para crear páginas web y aplicaciones en línea. Es el componente más básico de la Web, y define el significado y la estructura del contenido web.',
+            },
+            {
+                _Id: 'articulo-1',
+                titulo: 'CSS',
+                subtitulo: 'Cascading Style Sheets',
+                descripcion: 'CSS es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado, como HTML o XML. Es utilizado para establecer el diseño visual de los documentos web.',
+            },
+            {
+                _Id: 'articulo-1',
+                titulo: 'JavaScript',
+                subtitulo: 'JavaScript',
+                descripcion: 'JavaScript es un lenguaje de programación interpretado. Se utiliza principalmente implementado como parte de un navegador web, permitiendo mejoras en la interfaz de usuario y páginas web dinámicas.',
+            }
+        ]
+
+        window.addEventListener('load', function(){
+
+            const usuarioEnSesion = JSON.parse(sessionStorage.getItem('userName'))
+
+            const $loginButton = document.querySelector('header button')
+            const $loginInput = document.querySelector('header input')
+            const $seccionDeArticulo = document.getElementById('tecnologiasDiv')
+
+            const $headerMsj = document.querySelector('nav p')
+
+            const $likeButton = document.querySelector('#action button')
+            const $likeMsj = document.getElementById('likeMsj')
+
+            let offerDate = new Date
+            offerDate.setHours(offerDate.getHours() + 48)
+            let offerDateString = offerDate.toLocaleString()
+
+            const msjsInterval = [
+                'Atención especial durante las próximas 48hs', `Disponible hasta ${offerDateString}`, 'Contactactanos al +11-123-456789'
+            ]
+
+            let total = msjsInterval.length;
+            let contador = 0;
+
+            const intervalo = setInterval(function(){
+                const posicion = contador % total;
+
+                $headerMsj.innerText = `${msjsInterval[posicion]}`
+
+                contador++;
+            }, 5000);
+            
+
+            if (usuarioEnSesion){
+                $loginButton.innerText = usuarioEnSesion
+            }
+
+            $loginButton.addEventListener('click', function(){
+
+                if (usuarioEnSesion) {
+                    if (confirm('Cerrar Sesión?')) {
+                        sessionStorage.clear()
+                        return window.location.reload()
+                    }
+                    return 0
+                }
+                $loginInput.classList.remove('hidden')
+                $loginInput.focus()
+            })
+            $loginInput.addEventListener('focusout', function(){
+                $loginInput.value = ''
+                $loginInput.classList.add('hidden')
+            })
+
+            login()
+            like()
+            
+            documentacion.forEach(articulo => {
+                $seccionDeArticulo.innerHTML+=`
+                    <article id='${articulo._Id}'>
+                        <h2>${articulo.titulo}</h2>
+                        <h3>${articulo.subtitulo}</h3>
+                        <p>${articulo.descripcion}</p>
+                    </article>
+                `
+            })
+
+            function login (){
+
+                let userName = ''
+
+                $loginInput.addEventListener('keydown', function(e){
+                    if(e.keyCode === 13){
+                        userName = $loginInput.value
+
+                        sessionStorage.setItem('userName', JSON.stringify(userName))
+                        window.location.reload()
+                    }
+                })
+            }
+
+            function like() {
+                $likeButton.addEventListener('click', function(){
+                    if (usuarioEnSesion) {
+                        $likeMsj.innerText=`Muchas Gracias ${usuarioEnSesion}!`
+                        $likeMsj.classList.remove('hidden')
+                        setTimeout(() => {
+                            $likeMsj.classList.add('hidden')
+                        }, 5000)
+                    }
+                    else{
+                        $likeMsj.innerText='Debes Ingresar al sitio.'
+                        $likeMsj.classList.remove('hidden')
+                        setTimeout(() => {
+                            $likeMsj.classList.add('hidden')
+                        }, 3000)
+                    }
+                })
+            }
+
+        })
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

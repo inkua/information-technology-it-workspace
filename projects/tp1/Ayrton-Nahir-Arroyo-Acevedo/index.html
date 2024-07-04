@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generador CV</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(255, 255, 255, 0.457);
+        color: rgb(249, 247, 247);
+        line-height: 1.6;
+        margin: 16px;
+        padding: 0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.736); /* 50% opaco */
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+        border-radius: 5px;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+        color: #810808;
+        margin-bottom: 5px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="number"],
+      textarea {
+        padding: 7px;
+        margin-bottom: 5px;
+        border: 1px solid #ebe2e2;
+        border-radius: 4px;
+        font-size: 16px;
+        width: 100%;
+      }
+      button {
+        padding: 5px;
+        background-color: #b20c0c;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background-color: aliceblue;
+        color: #b20c0c;
+        font-size: 20px;
+      }
+      #canvas {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 10px;
+        border: 2px solid #333;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #e0e0e0 25%, #ffffff);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body onload="draw()">
+    <div class="container">
+      <h1 id="greetings">Hola! bienvenido al generador de CV</h1>
+      <h2>Creador de CV Interactivo</h2>
+      <form id="cv-form">
+        <label for="name">Nombre completo</label>
+        <input type="text" id="name" required placeholder="Ayrton Acevedo" />
+
+        <label for="email">Correo electronico</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="name@gmail.com"
+        />
+
+        <label for="redSocial">Red Social</label>
+        <input
+          type="text"
+          id="redSocial"
+          name="redSocial"
+          placeholder="https://github.com/ayrtonacevedo"
+        />
+
+        <label for="phone">Telefono</label>
+        <input
+          type="text"
+          id="phone"
+          name="phone"
+          required
+          placeholder="341661626177"
+        />
+
+        <label for="address">Direccion</label>
+        <input
+          type="text"
+          name="address"
+          id="address"
+          required
+          placeholder="Santa Fe - Rosario"
+        />
+
+        <label for="experience">Experiencia Laboral</label>
+        <textarea
+          name="experience"
+          id="experience"
+          rows="4"
+          required
+          placeholder="Desarrollador fullstack, Frontend developer"
+        ></textarea>
+
+        <label for="education">Educacion</label>
+        <textarea
+          name="education"
+          id="education"
+          rows="4"
+          required
+          placeholder="Tecnicatura en desarrollo de software"
+        ></textarea>
+
+        <label for="skills">Habilidades</label>
+        <textarea
+          name="skills"
+          id="skills"
+          rows="4"
+          required
+          placeholder="React, NodeJs, TypeScript"
+        ></textarea>
+
+        <button type="button" onclick="generateCv()">Generar mi Cv</button>
+      </form>
+      <h1 id="result-name-display"></h1>
+      <div id="cv-generado"></div>
+      <div id="dateCV"></div>
+      <canvas id="canvas" width="700" height="150"></canvas>
+    </div>
+    <script>
+      const generateCv = () => {
+        const fields = [
+          { id: "name", label: "Nombre Completo" },
+          { id: "email", label: "Correo Electronico" },
+          { id: "phone", label: "Telefono" },
+          { id: "address", label: "Direccion" },
+          { id: "experience", label: "Experiencia Laboral" },
+          { id: "education", label: "Educacion" },
+          { id: "skills", label: "Habilidades" },
+        ];
+        for (const field of fields) {
+          const value = document.getElementById(field.id).value;
+          if (!value) {
+            alert(`Por favor, completa el campo: ${field.label}`);
+            return;
+          }
+        }
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const redSocial = document.getElementById("redSocial").value;
+        const phone = document.getElementById("phone").value;
+        const address = document.getElementById("address").value;
+        const experience = document.getElementById("experience").value;
+        const education = document.getElementById("education").value;
+        const skills = document.getElementById("skills").value;
+        const cvGenereado = `
+                <h2>${name}</h2>
+                <p><strong>Correo Electrónico:</strong> ${email}</p>
+                <p><strong>Teléfono:</strong> ${phone}</p>
+                <p><strong>Dirección:</strong> ${address}</p>
+                <h3>Presencia online</h3>
+                <p>${redSocial}</p>
+                <h3>Experiencia Laboral</h3>
+                <p>${experience}</p>
+                <h3>Educación</h3>
+                <p>${education}</p>
+                <h3>Habilidades</h3>
+                <p>${skills}</p>
+            `;
+        document.getElementById("cv-generado").innerHTML = cvGenereado;
+        saveName();
+        dateCv();
+      };
+      const saveName = () => {
+        const name = document.getElementById("name").value;
+        if (name) {
+          localStorage.setItem("name-user", name);
+          resultNameDisplay();
+        }
+      };
+      const resultNameDisplay = () => {
+        const resultNameDisplay = document.getElementById(
+          "result-name-display"
+        );
+        const name = localStorage.getItem("name-user");
+        resultNameDisplay.textContent = `${name} tu CV fue generado con éxito. `;
+      };
+      const dateCv = () => {
+        const date = new Date();
+        const dateCV = document.getElementById("dateCV");
+        dateCV.textContent = `Fecha de creación: ${date}`;
+      };
+      function draw() {
+        const canvas = document.getElementById("canvas");
+        if (canvas.getContext) {
+          const ctx = canvas.getContext("2d");
+
+          const colors = ["#b20c0c", "#e57373", "#f44336"];
+          let colorIndex = 0;
+
+          ctx.lineWidth = 2;
+          ctx.setLineDash([5, 5]);
+
+          function animateColor() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = colors[colorIndex];
+
+            ctx.font = "bold 80px Arial";
+            ctx.fillText("¡Sigue adelante!", 20, 100);
+
+            colorIndex = (colorIndex + 1) % colors.length;
+
+            setTimeout(animateColor, 1000);
+          }
+
+          animateColor();
+        }
+      }
+    </script>
+  </body>
+</html>

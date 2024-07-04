@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Currículum de Martín Alturria</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Lobster+Two&family=Lora:ital@0;1&family=Patrick+Hand&family=Permanent+Marker&family=Rubik+Glitch&family=Rubik+Wet+Paint&family=Satisfy&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                font-family: "Lora", serif;
+                margin: 0;
+                padding: 20px;
+                background: linear-gradient(
+                    90deg,
+                    rgba(2, 0, 36, 1) 0%,
+                    rgba(9, 104, 121, 1) 50%,
+                    rgba(0, 212, 255, 1) 100%
+                );
+                color: white;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                max-width: 1200px;
+                margin: auto;
+                padding: 20px;
+                background-color: rgba(0, 0, 0, 0.5);
+                border-radius: 10px;
+            }
+            h1{
+                font-family: "Lobster Two", cursive;
+                text-align: center;
+            }
+            .nav {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 20px;
+                flex-wrap: wrap;
+            }
+            .nav .menu-icon {
+                display: block;
+                cursor: pointer;
+                margin-right: 20px;
+            }
+            .nav .menu-icon div {
+                width: 25px;
+                height: 3px;
+                background-color: white;
+                margin: 5px;
+                transition: 0.4s;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .nav-links a {
+                color: white;
+                text-decoration: none;
+                padding: 10px 20px;
+                background-color: rgba(0, 150, 200, 1);
+                border-radius: 5px;
+                transition: background-color 0.3s, transform 0.3s;
+                margin-bottom: 10px;
+            }
+            .nav-links a:hover {
+                background-color: rgba(0, 180, 255, 1);
+                transform: scale(1.1);
+            }
+            .section {
+                padding: 20px;
+                background-color: rgba(255, 255, 255, 0.2);
+                border-radius: 10px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .form-section input,
+            .form-section textarea,
+            .form-section button {
+                width: calc(100% - 20px);
+                padding: 10px;
+                margin: 5px 0;
+                border: none;
+                border-radius: 5px;
+            }
+            .form-section textarea {
+                height: 100px;
+                resize: none;
+            }
+            .form-section button {
+                background-color: rgba(0, 150, 200, 1);
+                color: black;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+            .form-section button:hover {
+                background-color: rgba(0, 180, 255, 1);
+            }
+            .comments-section {
+                width: 100%;
+                text-align: center;
+                font-size: 1.2rem;
+            }
+            .comments {
+                background-color: rgba(255, 255, 255, 0.2);
+                padding: 10px;
+                border-radius: 5px;
+                margin: 10px auto;
+                text-align: center;
+                max-width: 400px;
+                font-size: 1.2rem;
+            }
+            .comments p {
+                margin: 0;
+            }
+            .comments .remove-btn {
+                color: red;
+                cursor: pointer;
+                transition: color 0.3s;
+            }
+            .comments .remove-btn:hover {
+                color: darkred;
+            }
+
+            @media (min-width: 1067px) {
+                .nav .menu-icon {
+                    display: none;
+                }
+                .nav-links {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 20px;
+                }
+                .grid-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 40px;
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
+                .comments-section {
+                    max-width: 600px;
+                }
+                .form-section input,
+                .form-section textarea,
+                .form-section button {
+                    max-width: 400px;
+                    margin: 10px auto;
+                }
+                .comments {
+                    max-width: 400px;
+                }
+                .card {
+                    perspective: 1000px;
+                    cursor: pointer;
+                    width: 100%;
+                    max-width: 500px;
+                    margin: 20px auto;
+                }
+                .card-inner {
+                    position: relative;
+                    width: 100%;
+                    height: 380px; 
+                    transition: transform 0.6s;
+                    transform-style: preserve-3d;
+                }
+                .card:hover .card-inner,
+                .card-inner.active {
+                    transform: rotateY(180deg);
+                }
+                .card-front,
+                .card-back {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    position: absolute;
+                    align-items: center;
+                    text-align: center;
+                    width: 100%;
+                    height: 100%;
+                    backface-visibility: hidden;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    border-radius: 15px;
+                    overflow: hidden;
+                }
+                .card-back {
+                    transform: rotateY(180deg);                     
+                    font-weight: bold;
+                }
+                button{
+                    font-size: 1.1rem;
+                }
+            }
+        </style>
+    </head>
+    <body onload="initPage()">
+        <div class="container">
+            <h1>Martín Alturria</h1>
+            <h4>
+                Desarrollador FullStack | Javascript | TypeScript | Python |
+                Django | Nodejs | Nest.js | Express | React | Flutter
+            </h4>
+            <div class="nav">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="nav-links">
+                    <a href="#about-me" onclick="flipCard('about-me-card')"
+                        >Sobre mí</a
+                    >
+                    <a href="#experience" onclick="flipCard('experience-card')"
+                        >Experiencia</a
+                    >
+                    <a
+                        href="#certifications"
+                        onclick="flipCard('certifications-card')"
+                        >Certificaciones</a
+                    >
+                    <a href="#education" onclick="flipCard('education-card')"
+                        >Educación</a
+                    >
+                    <a href="#languages" onclick="flipCard('languages-card')"
+                        >Idiomas</a
+                    >
+                    <a href="#skills" onclick="flipCard('skills-card')"
+                        >Habilidades</a
+                    >
+                    <a href="#comments" onclick="scrollToComments()"
+                        >Comentarios</a
+                    >
+                </div>
+            </div>
+            <div class="grid-container">
+                <section id="about-me" class="section">
+                    <div id="about-me-card" class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h2>Sobre mí</h2>
+                            </div>
+                            <div class="card-back">
+                                <p>
+                                    Soy Martin Alturria, un Programador Fullstack.
+                                    mi objetivo es contribuir con mis habilidades
+                                    técnicas y mi compromiso con la excelencia en el
+                                    desarrollo de software. En mi trayectoria, he
+                                    trabajado con tecnologías claves, incluyendo
+                                    JavaScript, TypeScript, Node.js y Python.
+                                    Utilizando frameworks como Nest.js, Express.js y
+                                    Django en el Back-End. <br /><br />
+                                    He participado en proyectos desafiantes
+                                    utilizando React, Redux, CSS, Vue.js,
+                                    Tailwindcss y Flutter en el Front-End. <br /><br />
+                                    Aporto: <br />- Desarrollo Back-End sólido y
+                                    eficiente. <br />- Desarrollo Front-End Funcional y
+                                    eficiente. <br />- Adaptabilidad rápida a diversas
+                                    tecnologías. <br />- Colaboración efectiva en equipos
+                                    ágiles. <br /><br /> Mi enfoque es no solo cumplir con los
+                                    requisitos técnicos, sino también aportar
+                                    creatividad y soluciones innovadoras a cada
+                                    proyecto.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="experience" class="section">
+                    <div id="experience-card" class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h2>Experiencia Laboral</h2>
+                            </div>
+                            <div class="card-back">
+                                <ul id="experience-list"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="certifications" class="section">
+                    <div id="certifications-card" class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h2>Certificaciones</h2>
+                            </div>
+                            <div class="card-back">
+                                <ul>
+                                    <li>Python 3: Análisis y visualización de datos</li>
+                                    <li>Python 3: Curso completo de cero a experto</li>
+                                    <li>Máster en Python 3</li>
+                                    <li>JavaScript con Node.js</li>
+                                    <li>HTML y CSS</li>
+                                    <li>Flutter</li>
+                                    <li>GIT</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="education" class="section">
+                    <div id="education-card" class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h2>Educación</h2>
+                            </div>
+                            <div class="card-back">
+                                <ul>
+                                    <li>
+                                        FullStack Developer, Programación informática en
+                                        HENRY (Marzo de 2023 - Julio de 2023)
+                                    </li>
+                                    <li>
+                                        Terciario, Analista en Sistemas en INSTITUTO
+                                        SUPERIOR SANTO DOMINGO (Marzo de 2011 - Diciembre de
+                                        2013)
+                                    </li>
+                                    <li>
+                                        Ingenieria en Telecomunicaciones en UNIVERSIDAD
+                                        NACIONAL DE RÍO CUARTO (Marzo de 2007 - Septiembre de
+                                        2010)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="languages" class="section">
+                    <div id="languages-card" class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h2>Idiomas</h2>
+                            </div>
+                            <div class="card-back">
+                                <ul>
+                                    <li>Español (Nativo)</li>
+                                    <li>Inglés (Elemental)</li>
+                                    <li>Portugués (Elemental)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="skills" class="section">
+                    <div id="skills-card" class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h2>Habilidades</h2>
+                            </div>
+                            <div class="card-back">
+                                <ul id="skills-list"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section id="comments" class="section comments-section">
+                <h2>Comentarios</h2>
+                <form id="comment-form" class="form-section">
+                    <input type="text" id="name" placeholder="Tu nombre" />
+                    <textarea
+                        id="comment"
+                        placeholder="Tu comentario"
+                        style="resize: none"
+                    ></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div id="comment-list"></div>
+            </section>
+        </div>
+        <script>
+            document
+                .querySelector("#comment-form")
+                .addEventListener("submit", addComment);
+            document.addEventListener("DOMContentLoaded", loadComments);
+
+            function initPage() {
+                loadExperiences();
+                loadSkills();
+            }
+
+            function loadExperiences() {
+                const experiences = [
+                    "Desarrollador FullStack en CODEa UNI - Enero de 2024 - Actualidad - Perú",
+                    "Desarrollador de FullStack en FRELANCE - Mayo de 2023 - Actualidad - Argentina",
+                    "Desarrollador Full Stack Web en DIUM - Julio de 2023 - Octubre de 2023 - Colombia",
+                    "Pasantía Profesional en Deep Skill Academy - Junio 2023 - Julio 2023 - Perú",
+                    "Servicio Técnico en Microelectrónica y Desarrollo WEB en INFORTEC Y ARROBAINFORMATICA PC - Noviembre 2010 - Junio 2022 - Argentina",
+                    "Encargado de instalaciones de Redes en EMPRENDINET - Abril 2014 - Septiembre 2016 - Argentina",
+                    "Servicio Técnico en NUCLEO PC Y CYBERBAGGINI - Mayo 2004 - Diciembre 2008 - Argentina",
+                ];
+                const experienceList =
+                    document.getElementById("experience-list");
+                experiences.forEach((exp) => {
+                    const li = document.createElement("li");
+                    li.textContent = exp;
+                    experienceList.appendChild(li);
+                });
+            }
+
+            function loadSkills() {
+                const skills = [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "TypeScript",
+                    "Python",
+                    "Dart",
+                    "Django",
+                    "Express",
+                    "Nest.js",
+                    "Django RestFramework",
+                    "MongoDB",
+                    "PostrgressSQL",
+                    "React",
+                    "Next",
+                    "Flutter",
+                ];
+                const skillsList = document.getElementById("skills-list");
+                skills.forEach((skill) => {
+                    const li = document.createElement("li");
+                    li.textContent = skill;
+                    skillsList.appendChild(li);
+                });
+            }
+
+            function addComment(event) {
+                event.preventDefault();
+                const name = document.getElementById("name").value;
+                const comment = document.getElementById("comment").value;
+                if (!name || !comment) {
+                    alert("Por favor, completa todos los campos.");
+                    return;
+                }
+                const commentObj = { id: Date.now(), name, comment };
+                let comments =
+                    JSON.parse(localStorage.getItem("comments")) || [];
+                comments.push(commentObj);
+                localStorage.setItem("comments", JSON.stringify(comments));
+                displayComment(commentObj);
+                document.getElementById("comment-form").reset();
+            }
+
+            function loadComments() {
+                const comments =
+                    JSON.parse(localStorage.getItem("comments")) || [];
+                comments.forEach((comment) => displayComment(comment));
+            }
+
+            function displayComment({ id, name, comment }) {
+                const commentList = document.getElementById("comment-list");
+                const div = document.createElement("div");
+                div.classList.add("comments");
+                const pName = document.createElement("p");
+                pName.textContent = `Nombre: ${name}`;
+                const pComment = document.createElement("p");
+                pComment.textContent = `Comentario: ${comment}`;
+                const removeBtn = document.createElement("span");
+                removeBtn.textContent = "✖";
+                removeBtn.classList.add("remove-btn");
+                removeBtn.onclick = () => removeComment(id);
+                div.appendChild(pName);
+                div.appendChild(pComment);
+                div.appendChild(removeBtn);
+                commentList.appendChild(div);
+            }
+
+            function removeComment(id) {
+                let comments =
+                    JSON.parse(localStorage.getItem("comments")) || [];
+                comments = comments.filter((comment) => comment.id !== id);
+                localStorage.setItem("comments", JSON.stringify(comments));
+                document.getElementById("comment-list").innerHTML = "";
+                loadComments();
+            }
+
+            function toggleMenu() {
+                document.querySelector(".nav-links").classList.toggle("active");
+                const icon = document.querySelector(".menu-icon");
+                icon.classList.toggle("active");
+            }
+
+            function flipCard(cardId) {
+                document
+                    .getElementById(cardId)
+                    .querySelector(".card-inner")
+                    .classList.toggle("active");
+            }
+
+            function scrollToComments() {
+                document
+                    .getElementById("comments")
+                    .scrollIntoView({ behavior: "smooth" });
+            }
+        </script>
+    </body>
+</html>

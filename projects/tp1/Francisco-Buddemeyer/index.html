@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francisco Buddemeyer Izzo - Full Stack Web Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .body_bg1{
+            background-color: #f0f0f0;
+        }
+
+        .body_bg2{
+            background-color: #8e8e8e;
+        }
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h1, h2, h3, h4 {
+            margin-bottom: 10px;
+        }
+        #section-sobre_mi {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #section-skills, #section-experiencia_laboral, #section-educacion {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #skills-list {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0;
+        }
+        #skills-list li {
+            background-color: #f0f0f0;
+            padding: 8px 12px;
+            border-radius: 20px;
+        }
+        #experiencia-list div, #education-list div {
+            border-left: 2px solid #3498db;
+            padding-left: 10px;
+            margin-left: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+
+        #welcomeMessage {
+            text-align: center;
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        #nameInput {
+            padding: 10px;
+            font-size: 1rem;
+            border: 2px solid #3498db;
+            border-radius: 4px;
+            margin-right: 10px;
+            width: 200px;
+        }
+        #nameInput:focus {
+            outline: none;
+            border-color: #2980b9;
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        #button_cambiar-fondo{
+            background-color: #3d6885
+        }
+
+        #button_cambiar-fondo:hover {
+            background-color: #2980b9;
+        }
+
+        canvas {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+    </style>
+</head>
+<body class="body_bg1">
+    <canvas id="myCanvas"></canvas>
+    <main>
+        <h1 id="welcomeMessage">Bienvenido</h1>
+        <input type="text" id="nameInput" placeholder="Ingresa tu nombre">
+        <button onclick="saveName()">Guardar Nombre</button>
+        <button id="button_cambiar-fondo" onclick="cambiarBgBody()">Cambiar fondo</button>
+        
+
+
+        <section id="section-sobre_mi">
+            <h4>Francisco Buddemeyer Izzo</h4>
+            <h1>Full Stack Web Developer</h1>
+            <div>
+                <p>
+                    Soy una persona pro activa, responsable y apasionado por mi trabajo. Cuento con experiencia
+                    en iDO Technologies, Inc. y Digital House.
+                </p>
+                <p>
+                    Especializado en desarrollo web, me destaco por
+                    mi capacidad para mejorar la calidad del código y mi enfoque abarca tanto el Front-End
+                    como el Back-End, asegurando una integración fluida y funcionalidad óptima. Me gusta
+                    trabajar en equipo, enseñar y aprender nuevas tecnologías para optimizar proyectos.
+                </p>
+            </div>
+        </section>
+
+        <section id="section-skills">
+            <h2>Skills</h2>
+            <ul id="skills-list"></ul>
+        </section>
+
+        <section id="section-experiencia_laboral">
+            <h2>Experiencia Laboral</h2>
+            <div id="experiencia-list"></div>
+        </section>
+
+        <section id="section-educacion">
+            <h2>Educación</h2>
+            <div id="education-list"></div>
+        </section>
+    </main>
+
+    <script>
+        const EXPERIENCIA_LABORAL = [
+            {
+                posicion: 'Ayudante Avanzado Full Stack',
+                empresa: 'Digital House',  
+                fecha: 'Agosto 2023 - Actualidad',
+                tareas: [
+                    'Colaboración en la creación de un ambiente de aprendizaje dinámico y enriquecedor',
+                    'Preparación de clases y diseño de materiales educativos',
+                    'Apoyo a los estudiantes en dudas y proyectos',
+                    'Evaluación de proyectos estudiantiles y retroalimentación constructiva',
+                    'Fomento del aprendizaje colaborativo entre los estudiantes',
+                    'Enseñando las siguientes skills: JavaScript, CSS, HTML, MySQL, Expres.js, API rest, Git, GitHub, Node.js, React.js, Scrum, Sequelize'
+                ]
+            },
+            {
+                posicion: 'Full Stack Developer',
+                empresa: 'iDO Technologies, Inc',  
+                fecha: 'Julio 2023 - Octubre 2023',
+                tareas: [
+                    'Encargado del mantenimiento y mejora del código para mejorar la calidad y el rendimiento general de las aplicaciones',
+                    'Creación de API para GraphQL',
+                    'Desarrollo tanto en el Front-End como en el Back-End',
+                    'Implementación de operaciones CRUD',
+                    'Utilización de nuevas tecnologías como TypeScript, GraphQL, CSS Modules, MongoDB, Docker, Gitlab CI y extensiones de Chrome',
+                    'Encargado de revisar los Pull Requests',
+                    'Compromiso en la realización de las tareas en tiempo y forma',
+                    'Proactividad al asumir múltiples tareas y responsabilidades',
+                    'Skills: Node.js, React.js, Postgres, MongoDB, TypeScript, Extensiones de Chrome, Docker, Gitlab'
+                ]
+            }
+        ];
+
+        const EDUCACION = [
+            {
+                posicion: 'Analista de Sistemas',
+                empresa: 'ORT',  
+                fecha: '2024 - Actualidad'
+            },
+            {
+                posicion: 'Programación Web Full Stack',
+                empresa: 'Digital House',  
+                fecha: '2022 - 2023'
+            },
+            {
+                posicion: 'Programación de Videojuegos',
+                empresa: 'Da Vinci | Primera Escuela de Arte Multimedial',  
+                fecha: 'Inconcluso'
+            }
+        ];
+
+        const SKILLS = [
+            'JavaScript', 'CSS', 'HTML', 'MySQL', 'Express.js', 'API rest',
+            'Git', 'GitHub', 'Node.js', 'React.js', 'Scrum', 'Sequelize',
+            'CSS Modules', 'TypeScript', 'Gitlab', 'GraphQL'
+        ];
+
+        const experienciaList = document.getElementById('experiencia-list');
+        const educationList = document.getElementById('education-list');
+        const skillsList = document.getElementById('skills-list');
+
+        EXPERIENCIA_LABORAL.forEach(exp => {
+            const div = document.createElement('div');
+            div.innerHTML = `
+                <h3>${exp.posicion}</h3>
+                <p>${exp.empresa} ${exp.fecha}</p>
+                <ul>
+                    ${exp.tareas.map(tarea => `<li>${tarea}</li>`).join('')}
+                </ul>
+            `;
+            experienciaList.appendChild(div);
+        });
+
+        EDUCACION.forEach(edu => {
+            const div = document.createElement('div');
+            div.innerHTML = `
+                <h3>${edu.posicion}</h3>
+                <p>${edu.empresa} ${edu.fecha}</p>
+            `;
+            educationList.appendChild(div);
+        });
+
+        SKILLS.forEach(skill => {
+            const li = document.createElement('li');
+            li.textContent = skill;
+            skillsList.appendChild(li);
+        });
+
+         function saveName() {
+            const name = document.getElementById('nameInput').value;
+            localStorage.setItem('userName', name);
+            displayWelcomeMessage();
+        }
+
+        function displayWelcomeMessage() {
+            const name = localStorage.getItem('userName');
+            if (name) {
+                document.getElementById('welcomeMessage').textContent = 'Bienvenido, ' + name;
+            }
+        }
+        
+        function cambiarBgBody () {
+            const body = document.body;
+            // body.classList.remove('body_bg1');
+            body.classList.toggle('body_bg2')
+        }
+
+         // Canvas effect
+         const canvas = document.getElementById('myCanvas');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        const ctx = canvas.getContext('2d');
+
+        let particlesArray = [];
+        const numberOfParticles = 50;
+
+        class Particle {
+            constructor(x, y, size) {
+                this.x = x;
+                this.y = y;
+                this.size = size;
+                this.weight = Math.random() * 2 + 1;
+                this.directionX = Math.random() * 2 - 1;
+                this.color = '#3498db';
+            }
+            update() {
+                if (this.y > canvas.height) {
+                    this.y = 0 - this.size;
+                    this.weight = Math.random() * 2 + 1;
+                    this.x = Math.random() * canvas.width * 1.3;
+                }
+                this.weight += 0.01;
+                this.y += this.weight;
+                this.x += this.directionX;
+
+                if (this.x > canvas.width || this.x < 0) {
+                    this.directionX = -this.directionX;
+                }
+            }
+            draw() {
+                ctx.fillStyle = this.color;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.closePath();
+                ctx.fill();
+            }
+        }
+
+        function init() {
+            particlesArray = [];
+            for (let i = 0; i < numberOfParticles; i++) {
+                const size = Math.random() * 5 + 1;
+                const x = Math.random() * (canvas.width * 1.3) - canvas.width * 0.3;
+                const y = Math.random() * canvas.height;
+                particlesArray.push(new Particle(x, y, size));
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particlesArray.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+            requestAnimationFrame(animate);
+        }
+
+        init();
+        animate();
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            init();
+        });
+
+
+        window.onload = displayWelcomeMessage;
+    </script>
+</body>
+</html>

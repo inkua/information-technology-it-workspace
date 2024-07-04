@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/tlh6lmt.css">
+    <title>Felipe Blanco Muzzolón</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: row;
+            width: 100vw;
+            min-height: 100dvh;
+            font-family: "stratos", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            overflow-x: hidden;
+            background-color: rgb(231, 228, 226);
+            position: relative;
+        }
+        aside {
+            width: 15vw;
+            background-color: rgb(37, 58, 150);
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+        h1 {
+            font-size: 2.6rem;
+            color: rgb(37, 58, 150);
+        }
+        h1:hover {
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 2px;
+        }
+        h2 {
+            color: rgba(124, 138, 204, 0.8);
+            font-size: 1.6rem;
+        }
+        main h3 {
+            font-size: 2.6rem;
+            color: rgb(37, 58, 150);
+        }
+        aside h3 {
+            color: rgb(223, 227, 245);
+            font-size: 1.6rem;
+        }
+        main h3 {
+            color: rgb(37, 58, 150);
+            font-size: 1.6rem;
+        }
+        h4 {
+            font-size: 1.2rem;
+            color: rgb(91, 106, 177);
+            font-weight: 400;
+        }
+        p{
+            font-size: 1rem;
+            color: rgba(124, 138, 204, 0.9);
+            font-weight: 400;
+        }
+        aside p {
+            color: rgb(223, 227, 245);
+            font-weight: 400;
+        }
+        aside p a {
+            color: rgb(165, 172, 201);
+            font-weight: 400;
+            text-decoration: none;
+            font-size: 0.8rem;
+        }
+        aside h4 {
+            color: rgb(223, 227, 245);
+        }
+        main {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            width: 85vw;
+            color: rgb(37, 58, 150);
+        }
+        .main-item {
+            width: 80%;
+            margin: 1rem;
+        }
+        .head {
+            margin-bottom: 1rem;
+        }
+        .head h2 {
+            margin-top: -0.4rem;
+        }
+        aside img {
+            border-radius: 50%;
+        }
+        .main-item img {
+            max-width: 2rem;
+        }
+        .main-item div {
+            margin-bottom: .4rem;
+        }
+
+        .tooltip {
+            position: relative;
+        }
+
+        .tooltip .tooltiptext img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 3.2rem;
+            height: 3.2rem;
+            background-color: rgba(0,0,0, 0);
+            border: none;;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 65%;
+            left: 18%;
+            margin-left: -100px;
+            opacity: 0;
+            transition: 0.3s;
+            border-radius: 50%;
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        .tooltip-i {
+            position: relative
+        }
+        .tooltip-i .tooltiptext-i img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .tooltip-i .tooltiptext-i {
+            visibility: hidden;
+            width: 4rem;
+            height: 4rem;
+            background-color: rgba(0,0,0, 0);
+            border: none;;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 0%;
+            left: 12%;
+            margin-left: -100px;
+            opacity: 0;
+            transition: 0.3s;
+            border-radius: 50%;
+        }
+        .tooltip-i:hover .tooltiptext-i {
+            visibility: visible;
+            opacity: 1;
+        }
+        .main-item form {
+            background-color: rgb(37, 58, 150);
+            width: 50%;
+            border-radius: 4px;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        .main-item form input {
+            border: none;
+            background-color: rgb(231, 228, 226);
+            padding: .3rem;
+            font-family: "stratos", sans-serif;
+            font-weight: 100;
+            font-size: 1rem;
+            width: 90%;
+            margin-bottom: 0.4rem;
+            color: rgb(37, 58, 150);
+            border-radius: 2px;
+        }
+        select {
+            background-color: rgb(231, 228, 226);
+            padding: .3rem;
+            font-family: "stratos", sans-serif;
+            font-weight: 100;
+            font-size: 1rem;
+            width: 90%;
+            margin-bottom: 0.4rem;
+            color: rgb(37, 58, 150);
+            border-radius: 2px;
+        }
+        textarea {
+            border: none;
+            background-color: rgb(231, 228, 226);
+            padding: .3rem;
+            font-family: "stratos", sans-serif;
+            font-weight: 100;
+            font-size: 1rem;
+            width: 90%;
+            height: 6rem;
+            margin-bottom: 0.4rem;
+            resize:none;
+            color: rgb(37, 58, 150);
+            border-radius: 2px;
+        }
+        .main-item form input:focus, textarea:focus {
+            outline: none;
+        }
+        button {
+            border: none;
+            outline: none;
+            background-color: rgb(231, 228, 226);
+            padding: .3rem;
+            color: rgb(37, 58, 150);
+            font-family: "stratos", sans-serif;
+            border-radius: 2px;
+            width: 5rem;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+        .image-container {
+            position: relative;
+            width: 16rem;
+            height: 16rem;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.1s;
+            opacity: 1;
+        }
+
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(231, 228, 226);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+            opacity: 1;
+            transition: 0.2s;
+            animation: fadeOut .4s;
+            animation-delay: 3s; /* 3 segundos antes de que comience a desvanecerse */
+        }
+        .preloader img {
+            width: 30rem;
+            height: 30rem;
+            z-index:9999;
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+                visibility: visible;
+            }
+            50% {
+                opacity: .5;
+            }
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        .content {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            animation-delay: 0s; /* 3 segundos de espera + 2 segundos de desvanecimiento */
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+
+        @media screen and (max-width: 540px) {
+            body {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            aside {
+                width: 100vw;
+            }
+            aside img {
+                width: 100%;
+            }
+            main {
+                width: 100vw;
+            }
+            .main-item {
+                width: 90%;
+            }
+            .main-item form {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+<body class="content" id="content">
+    <aside>
+        <div class="image-container">
+            <img src="https://res.cloudinary.com/dbzwohjic/image/upload/v1717811020/perfil_reb2ni.jpg" alt="foto de perfil" />
+        </div>
+        <div>
+            <h3>CONTACTO</h3>
+            <div>
+                <h4>GMAIL</h4>
+                <p><a href="mailto:felipeblanco114@gmail.com">felipeblanco114@gmail.com</a></p>
+            </div>
+            <div>
+                <h4>LINKEDIN</h4>
+                <p><a href="https://www.linkedin.com/in/felipe-blanco-muzzolon/" target="_blank">https://www.linkedin.com/in/felipe-blanco-muzzolon/</a></p>
+            </div>
+            <div>
+                <h4>GITHUB</h4>
+                <p><a href="https://github.com/felipeblanco114" target="_blank">https://github.com/felipeblanco114</a></p>
+            </div>
+            <div>
+                <h4>WHATSAPP</h4>
+                <p><a href='https://wa.me/542926462675' target='_blank' rel='noreferrer'>2926462675</a></p>
+            </div>
+            <h3>TECNOLOGÍAS</h3>
+            <div>
+                <h4>HTML</h4>
+            </div>
+            <div>
+                <h4>CSS</h4>
+            </div>
+            <div>
+                <h4>JAVASCRIPT</h4>
+            </div>
+            <div>
+                <h4>REACT</h4>
+            </div>
+            <div>
+                <h4>NODE</h4>
+            </div>
+            <div>
+                <h4>EXPRESS</h4>
+            </div>
+            <div>
+                <h4>POSTGRESQL</h4>
+            </div>
+            <div>
+                <h4>MONGODB</h4>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <div class="main-item head">
+            <h1>FELIPE BLANCO MUZZOLÓN</h1>
+            <h2>REACT JS DEVELOPER</h2>
+        </div>
+        <div class="main-item perfil">
+            <h3>SOBRE MI</h3>
+            <p>Argentino, 25 años, estudiante de la Tecnicatura Superior en Programación en
+                Teclab y en busca de un desafío profesional que me permita llevar
+                mis conocimientos a la práctica profesional.
+                Trabajé en proyectos con HTML, CSS, Bootstrap, Javascript, React,
+                Node, Express, PostgreSQL y MongoDB. Durante 4 años fui tutor en
+                Coderhouse del curso de Desarrollo Web, participando en más de
+                30 cursos con un promedio de 40 alumnos en cada uno de ellos.
+                </p>
+        </div>
+        <div class="main-item">
+            <h3>EXPERIENCIA</h3>
+            <div class="tooltip">
+                <h4>Coderhouse</h4>
+                <p>
+                Mi tarea como tutor del curso de Desarrollo Web consistía en brindar apoyo y soporte continuo a los alumnos. Por cada curso tenía un aproximado de 40 alumnos a los que les brindaba ayuda ante sus dudas, les compartía artículos y materiales de información y les corregía sus proyectos de cara a la entrega final.
+                </p>
+                <span class="tooltiptext"><img src="https://mir-s3-cdn-cf.behance.net/user/276/403d16459831423.5dea877440464.png" alt="coderhouse"/></span>
+            </div>
+            <div class="tooltip-i">
+                <h4>InkuA</h4>
+                <p>
+                Me desempeño en el área Front End en InkuA ONG, una fundación que busca generar impacto social gracias al trabajo colaborativo de personas en todo el mundo.
+                </p>
+                <span class="tooltiptext-i"><img src="https://cdn.filestackcontent.com/resize=width:600,height:315,fit:max/quality=value:90/lMWavqZTBOyO1EXU1w8Q" alt="inkua"/></span>  
+        </div> 
+        </div>
+        <div class="main-item">
+            <h3>EDUCACIÓN</h3>
+            <div>
+                <h4>Teclab Instituto Técnico Superior</h4>
+                <p>Tecnicatura, Programación informática · (agosto de 2023 - julio de 2025)</p>
+            </div>
+            <div>
+                <h4>Coderhouse</h4>
+                <p>Curso, React Js · (octubre de 2021 - diciembre de 2021)</p>
+                <p>Curso, Desarrollo Web · (febrero de 2020 - abril de 2020)</p>
+            </div>
+        </div>
+        <!-- FORMULARIO -->
+        <div class="main-item">
+            <h3>CONECTATE CONMIGO</h3>
+            <form id="tooltip-f">
+                <input type="text" placeholder="Nombre" name="name" id="name"/>
+                <input type="text" placeholder="Apellido" name="lastname" id="lastname"/>
+                <select name="select">
+                    <option value="value1">Oportunidad de empleo</option>
+                    <option value="value2">Colaboración</option>
+                    <option value="value3">Preguntas generales</option>
+                    <option value="value4">Feedback</option>
+                    <option value="value5">Propuesta</option>
+                    <option value="value6">Invitación</option>
+                    <option value="value7">Consultoría</option>
+                    <option value="value8">Asesoría</option>
+                    <option value="value9">Otro</option>
+                  </select>
+                <textarea type="text" placeholder="Mensaje" name="message" id="message"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="tooltip-f" class="tooltip-f">Enviado correctamente</div>
+        </div>
+    </main>
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+        // LOOP AVATAR
+        let images = [
+            "https://res.cloudinary.com/dbzwohjic/image/upload/v1717811020/perfil_reb2ni.jpg",
+            "https://res.cloudinary.com/dbzwohjic/image/upload/v1717794350/perfil-azul_yjz5py.jpg",
+            "https://res.cloudinary.com/dbzwohjic/image/upload/v1717794715/fbm-rjs_te3pp0.jpg",
+            "https://res.cloudinary.com/dbzwohjic/image/upload/v1717794911/fbm-azul_jac3xt.jpg"
+        ]
+        let currentImageIndex = 0;
+        let hoverInterval;
+        const imageContainer = document.querySelector('.image-container');
+        const imgElement = document.querySelector('.image-container img');
+
+        imageContainer.addEventListener('mouseenter', () => {
+            hoverInterval = setInterval(() => {
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                imgElement.classList.add('hidden');
+                setTimeout(() => {
+                    imgElement.src = images[currentImageIndex];
+                    imgElement.classList.remove('hidden');
+                }, 200); // Mitad de la duración.
+            }, 100);
+        });
+
+        imageContainer.addEventListener('mouseleave', () => {
+            clearInterval(hoverInterval);
+            imgElement.src = images[0];
+            currentImageIndex = 0;
+        });
+        // PRELOADER
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader');
+            const content = document.getElementById('content');
+            setTimeout(() => {
+                preloader.classList.add('hidden');
+                content.classList.add('visible');
+                document.body.style.overflowx = 'hidden';
+            }, 3000); 
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elvio Galeano</title>
+    <style>
+      * {
+        margin: 0;
+        color: white;
+      }
+      body {
+        background-color: #18181b;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+      ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+      }
+      .link:hover{
+        color: #01c38e;
+      }
+      .about_color {
+        color: #01c38e;
+      }
+      .about_picture {
+        max-width: 300px;
+        border-radius: 10px;
+      }
+      .about_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 400px;
+        align-items: center;
+      }
+      .about_description {
+        max-width: 400px;
+      }
+      .div_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .work_avatar {
+        width: 60px;
+        border-radius: 10px 0 0 10px;
+      }
+      .work_header {
+        display: flex;
+        gap: 10px;
+      }
+      .work_card {
+        max-width: 700px;
+        margin: 20px 0;
+        background-color: #27272a;
+        border-radius: 10px;
+      }
+      .work_description {
+        padding: 10px;
+      }
+      .work_color {
+        color: #71717a;
+      }
+      .work_titles {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .technologie_container {
+        max-width: 700px;
+      }
+      .technologie_card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px 0;
+      }
+      .technologie_icon {
+        width: 70px;
+        transition: .4s;
+      }
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .footer_info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+      }
+      .contact_list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+      }
+      .contact_link {
+        padding: 12px;
+        background-color: #121212;
+        border-radius: 30px;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all .4s;
+      }
+      .contact_link:hover{
+        color: #01c38e;
+      }
+      .like{
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        color: red;
+        cursor: pointer;
+      }
+      .about_title{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      a{
+        text-decoration: none;
+      }
+      .tech{
+        position: relative;
+      }
+      .tech_name {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            opacity: 0;
+            transition: .4s;
+        }
+        #id{
+          display: flex;
+        }
+
+        .tech:hover .tech_name {
+          opacity: 1;
+        }.tech:hover .technologie_icon {
+          opacity: 0.1;
+        }
+
+        .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+@media (max-width: 450px) {
+    ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #18181b;
+        padding: 10px;
+        gap: 10px;
+        border-radius: 5px;
+    }
+    ul.show {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>EG</h1>
+        <ul>
+          <li><a class="link" href="#home">Inicio</a></li>
+          <li><a class="link" href="#exp">Experiencia</a></li>
+          <li><a class="link" href="#contact">Contactame</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+      </nav>
+    </header>
+    <main>
+      <div id="home">
+        <div class="about_container">
+          <div class="about_description">
+            <div class="about_title">
+                <h2>¡Hola! soy <span class="about_color">Elvio</span>.</h2>
+                <button class="like">&#9825;</button>
+            </div>
+            <p>
+              Soy un
+              <span class="about_color">desarrollador web</span> especializado
+              en la creación de productos digitales, con un enfoque completo en
+              el desarrollo <span class="about_color">FullStack</span> para
+              ofrecer soluciones innovadoras.
+            </p>
+          </div>
+          <img
+            class="about_picture"
+            src="https://galeanoelvio.vercel.app/elvio-selfie.jpeg"
+            alt="Picture Elvio"
+          />
+        </div>
+
+        <div id="exp" class="div_container">
+          <div>
+            <h2>Experiencia Laboral</h2>
+            <div id="works_card"></div>
+          </div>
+        </div>
+
+        <div class="div_container">
+          <div class="technologie_container">
+            <h2>Tecnologias</h2>
+            <div>
+              <div id="technologies_card" class="technologie_card">
+                <div id="tech"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="contact">
+      <div class="div_container">
+        <div class="footer_info">
+          <h2 style="text-align: center;">Contactame</h2>
+          <div class="contact_list">
+            <a target="_blank" href="https://www.linkedin.com/in/elviogaleano-fullstack-developer/" class="contact_link">Linkedin</a>
+            <a target="_blank" href="https://github.com/elviog1" class="contact_link">Github</a>
+            <a target="_blank" href="mailto:elvio.galeano827@gmail.com" class="contact_link">Gmail</a>
+            <button id="discord" class="contact_link">Discord</button>
+
+          </div>
+          <div id="birthdayMessage"></div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        let like = document.querySelector(".like")
+        let discord = document.getElementById("discord")
+        let worksCard = document.getElementById("works_card")
+        let technologiesCard = document.getElementById("technologies_card")
+        let hamburger = document.getElementById("hamburger")
+        let navLinks = document.querySelector("nav ul")
+        let birthday = ""
+        const workExperience = [
+            {
+                title: "Desarrollador FullStack",
+                subtitle: "Blue Latam",
+                date: "Febrero 2024 - Abril 2024",
+                picture: "https://galeanoelvio.vercel.app/bluelatam.png",
+                description: "Durante un periodo de prácticas con una duración de tres meses, participé en el desarrollo de una aplicación diseñada para atender las necesidades específicas de los usuarios según su perfil. Mi responsabilidad principal consistió en la implementación y mejora continua de las funcionalidades del sistema, incluyendo la creación de componentes reutilizables y la identificación y solución de código mal estructurado o defectuoso. Este proyecto implicó el uso de una variedad de tecnologías, entre las cuales se incluyen HTML, CSS, Javascript, React, NestJS, Typescript y SQL."
+            },
+            {
+                title: "Desarrollador FullStack Jr.",
+                subtitle: "Vasak Group",
+                date: "Marzo 2023 - Enero 2024",
+                picture: "https://galeanoelvio.vercel.app/vasak.jpg",
+                description: "Desarrollar interfaces de usuario interactivas utilizando Vue, React u otras bibliotecas/frameworks.Implementar diseños responsivos utilizando Bootstrap.Integrar y consumir APIs para obtener datos dinámicamente.Utilizar Next.js para aplicaciones.Configurar y personalizar WordPress según los requisitos del proyecto.Desarrollar funciones personalizadas y temas para WordPress.Implementar lógica del lado del servidor según sea necesario.Conectar la aplicación front-end con el back-end mediante llamadas a API."
+            }
+        ]
+        const technologies = [
+          {
+            icon: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
+            name: "HTML"
+          },
+          {
+            icon: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000",
+            name: "CSS"
+          },{
+            icon: "https://img.icons8.com/?size=100&id=PXTY4q2Sq2lG&format=png&color=000000",
+            name: "Javascript"
+          },
+          {
+            icon: "https://img.icons8.com/?size=100&id=wPohyHO_qO1a&format=png&color=000000",
+            name:"React"
+          },{
+            icon: "https://img.icons8.com/?size=100&id=rY6agKizO9eb&format=png&color=000000",
+            name:"Vue"
+          },{
+            icon: "https://img.icons8.com/?size=100&id=MWiBjkuHeMVq&format=png&color=000000",
+            name:"Next"
+          },{
+            icon: "https://img.icons8.com/?size=100&id=9ESZMOeUioJS&format=png&color=000000",
+            name:"NestJS"
+          },{
+            icon: "https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000",
+            name:"MongoDB"
+          },{
+            icon: "https://img.icons8.com/?size=100&id=AZOZNnY73haj&format=png&color=000000",
+            name:"Git"
+          },{
+            icon: "https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000",
+            name:"Tailwind"
+          },
+        ]
+
+        discord.addEventListener("click", ()=> {
+          discord.innerText ="ElvioGaleano#3886"
+        })
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("show")
+        })
+
+        function renderWorkCards(){
+          let card = ""
+          for(let i = 0; i< workExperience.length; i++){
+            card += `<div class="work_card">
+              <div class="work_header">
+                <img
+                  class="work_avatar"
+                  src="${workExperience[i].picture}"
+                  alt=""
+                />
+                <div class="work_titles">
+                  <h3 class="about_color">${workExperience[i].title}</h3>
+                  <h4>${workExperience[i].subtitle}</h4>
+                  <h5 class="work_color">${workExperience[i].date}</h5>
+                </div>
+              </div>
+              <div class="work_description">
+                <p>
+                  ${workExperience[i].description}
+                </p>
+              </div>
+            </div>`
+            worksCard.innerHTML = card
+          }
+        }
+
+        function renderTechnologiesCards(){
+          let card = ""
+          for(let i = 0; i<technologies.length;i++){
+            card += `<div class="tech">
+                  <img
+                  class="technologie_icon"
+                  src="${technologies[i].icon}"
+                  alt="${technologies[i].name}"
+                  />
+                  <span class="tech_name">${technologies[i].name}</span>
+                </div>`
+                technologiesCard.innerHTML = card
+          }
+        }
+
+        function updateBirthdayMessage() {
+        const today = new Date()
+        const currentYear = today.getFullYear()
+        const birthday = new Date(currentYear, 8, 29)
+
+        if (today > birthday) {
+            birthday.setFullYear(currentYear + 1);
+        }
+
+        const timeDifference = birthday - today;
+        const daysUntilBirthday = Math.ceil(timeDifference / (1000 * 60 * 60 * 24))
+
+        const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' }
+        const formattedToday = today.toLocaleDateString(undefined, dateOptions)
+        const message = `🎉 Hoy es ${formattedToday}, faltan ${daysUntilBirthday} días para mi cumpleaños. 🎉`
+
+        document.getElementById("birthdayMessage").innerText = message
+    }
+
+        
+            if (localStorage.getItem("like") === "true") {
+                like.innerHTML = "&#9829;"
+            } else {
+                like.innerHTML = "&#9825;"
+            }
+
+            like.addEventListener("click", () => {
+                if (localStorage.getItem("like") === "true") {
+                    localStorage.setItem("like", "false")
+                    like.innerHTML = "&#9825;"
+                } else {
+                    localStorage.setItem("like", "true")
+                    like.innerHTML = "&#9829;"
+                }
+            });
+
+            renderWorkCards();
+            renderTechnologiesCards();
+            updateBirthdayMessage()
+        });
+    </script>
+  </body>
+</html>
