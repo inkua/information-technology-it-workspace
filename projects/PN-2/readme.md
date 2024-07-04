@@ -7,3 +7,4 @@ La idea de este espacio es que todoos los participantes puedana añadir el enlac
 - Elvio Galeano: https://www.linkedin.com/in/elviogaleano-fullstack-developer/
 - Joel Waiman: https://www.linkedin.com/in/joel-waiman97/
 - Facundo Elorz: https://www.linkedin.com/in/facundo-elorz/
+- Paola Moreno: https://www.linkedin.com/in/paolamoreno7/
