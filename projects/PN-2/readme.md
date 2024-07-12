@@ -9,3 +9,4 @@ La idea de este espacio es que todoos los participantes puedana añadir el enlac
 - Facundo Elorz: https://www.linkedin.com/in/facundo-elorz/
 - Paola Moreno: https://www.linkedin.com/in/paolamoreno7/
 - Francisco Buddemeyer: https://www.linkedin.com/in/francisco-buddemeyer-izzo/
+- Christopher Villalta: https://www.linkedin.com/in/chrisvillalta/
