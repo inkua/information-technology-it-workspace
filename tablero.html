@@ -72,30 +72,72 @@
         .links a:hover {
             background-color: #004494;
         }
+        .message {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #555;
+            margin-top: 20px;
+        }
+        .error {
+            color: red;
+        }
     </style>
 </head>
 <body>
 
     <h1>Tablero de Control Inkua</h1>
+    <div id="message-container" class="message">
+        Cargando repositorios...
+    </div>
     <div id="dashboard" class="dashboard">
         <!-- Cards will be injected here by JavaScript -->
     </div>
 
     <script>
-        const apiUrl = 'https://api.github.com/users/inkua/repos';
         const dashboard = document.getElementById('dashboard');
+        const messageContainer = document.getElementById('message-container');
 
-        async function fetchRepos() {
-            try {
-                const response = await fetch(apiUrl);
+        async function fetchAllRepos(orgName) {
+            let allRepos = [];
+            let page = 1;
+            let hasMore = true;
+
+            while (hasMore) {
+                const response = await fetch(`https://api.github.com/users/${orgName}/repos?per_page=100&page=${page}`);
+
                 if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
+                    throw new Error(`Error de red: ${response.status} ${response.statusText}`);
                 }
+
                 const repos = await response.json();
+
+                if (repos.length > 0) {
+                    allRepos = allRepos.concat(repos);
+                    page++;
+                } else {
+                    hasMore = false;
+                }
+            }
+            return allRepos;
+        }
+
+        async function init() {
+            try {
+                const repos = await fetchAllRepos('inkua');
+
+                messageContainer.style.display = 'none';
+
+                if (repos.length === 0) {
+                    messageContainer.textContent = 'No se encontraron repositorios.';
+                    messageContainer.style.display = 'block';
+                    return;
+                }
+
                 displayRepos(repos);
             } catch (error) {
                 console.error('Error fetching repositories:', error);
-                dashboard.innerHTML = `<p style="color: red; text-align: center;">Error al cargar los repositorios. Por favor, intenta de nuevo más tarde.</p>`;
+                messageContainer.textContent = 'Error al cargar los repositorios. Por favor, intenta de nuevo más tarde.';
+                messageContainer.classList.add('error');
             }
         }
 
@@ -105,32 +147,66 @@
                 const card = document.createElement('div');
                 card.className = 'card';
 
-                const description = repo.description ? repo.description : 'Sin descripción';
+                const contentTop = document.createElement('div');
 
-                card.innerHTML = `
-                    <div>
-                        <h2>${repo.name}</h2>
-                        <p>${description}</p>
-                    </div>
-                    <div>
-                        <div class="stats">
-                            <span>⭐ ${repo.stargazers_count}</span>
-                            <span>🍴 ${repo.forks_count}</span>
-                            <span>🐛 Issues: ${repo.open_issues_count}</span>
-                        </div>
-                        <div class="links">
-                            <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
-                            ${repo.homepage ? `<a href="${repo.homepage}" target="_blank" rel="noopener noreferrer">Sitio Web</a>` : ''}
-                        </div>
-                    </div>
-                `;
+                const title = document.createElement('h2');
+                title.textContent = repo.name;
+
+                const desc = document.createElement('p');
+                desc.textContent = repo.description || 'Sin descripción';
+
+                contentTop.appendChild(title);
+                contentTop.appendChild(desc);
+
+                const contentBottom = document.createElement('div');
+
+                const statsDiv = document.createElement('div');
+                statsDiv.className = 'stats';
+
+                const starsSpan = document.createElement('span');
+                starsSpan.textContent = `⭐ ${repo.stargazers_count}`;
+
+                const forksSpan = document.createElement('span');
+                forksSpan.textContent = `🍴 ${repo.forks_count}`;
+
+                const issuesSpan = document.createElement('span');
+                issuesSpan.textContent = `🐛 Issues: ${repo.open_issues_count}`;
+
+                statsDiv.appendChild(starsSpan);
+                statsDiv.appendChild(forksSpan);
+                statsDiv.appendChild(issuesSpan);
+
+                const linksDiv = document.createElement('div');
+                linksDiv.className = 'links';
+
+                const githubLink = document.createElement('a');
+                githubLink.href = repo.html_url;
+                githubLink.target = '_blank';
+                githubLink.rel = 'noopener noreferrer';
+                githubLink.textContent = 'Ver en GitHub';
+                linksDiv.appendChild(githubLink);
+
+                if (repo.homepage) {
+                    const siteLink = document.createElement('a');
+                    siteLink.href = repo.homepage;
+                    siteLink.target = '_blank';
+                    siteLink.rel = 'noopener noreferrer';
+                    siteLink.textContent = 'Sitio Web';
+                    linksDiv.appendChild(siteLink);
+                }
+
+                contentBottom.appendChild(statsDiv);
+                contentBottom.appendChild(linksDiv);
+
+                card.appendChild(contentTop);
+                card.appendChild(contentBottom);
 
                 dashboard.appendChild(card);
             });
         }
 
         // Fetch data on load
-        fetchRepos();
+        init();
     </script>
 
 </body>
