@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero de Control Inkua</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #0056b3;
+            font-size: 1.25rem;
+        }
+        .card p {
+            color: #555;
+            font-size: 0.95rem;
+            flex-grow: 1;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+        .stats span {
+            display: flex;
+            align-items: center;
+        }
+        .stats i {
+            margin-right: 5px;
+        }
+        .links {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+        }
+        .links a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #0056b3;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            text-align: center;
+            flex-grow: 1;
+        }
+        .links a:hover {
+            background-color: #004494;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tablero de Control Inkua</h1>
+    <div id="dashboard" class="dashboard">
+        <!-- Cards will be injected here by JavaScript -->
+    </div>
+
+    <script>
+        const apiUrl = 'https://api.github.com/users/inkua/repos';
+        const dashboard = document.getElementById('dashboard');
+
+        async function fetchRepos() {
+            try {
+                const response = await fetch(apiUrl);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const repos = await response.json();
+                displayRepos(repos);
+            } catch (error) {
+                console.error('Error fetching repositories:', error);
+                dashboard.innerHTML = `<p style="color: red; text-align: center;">Error al cargar los repositorios. Por favor, intenta de nuevo más tarde.</p>`;
+            }
+        }
+
+        function displayRepos(repos) {
+            dashboard.innerHTML = '';
+            repos.forEach(repo => {
+                const card = document.createElement('div');
+                card.className = 'card';
+
+                const description = repo.description ? repo.description : 'Sin descripción';
+
+                card.innerHTML = `
+                    <div>
+                        <h2>${repo.name}</h2>
+                        <p>${description}</p>
+                    </div>
+                    <div>
+                        <div class="stats">
+                            <span>⭐ ${repo.stargazers_count}</span>
+                            <span>🍴 ${repo.forks_count}</span>
+                            <span>🐛 Issues: ${repo.open_issues_count}</span>
+                        </div>
+                        <div class="links">
+                            <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+                            ${repo.homepage ? `<a href="${repo.homepage}" target="_blank" rel="noopener noreferrer">Sitio Web</a>` : ''}
+                        </div>
+                    </div>
+                `;
+
+                dashboard.appendChild(card);
+            });
+        }
+
+        // Fetch data on load
+        fetchRepos();
+    </script>
+
+</body>
+</html>
